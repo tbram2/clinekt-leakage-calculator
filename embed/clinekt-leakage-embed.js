@@ -30,7 +30,9 @@
   frame.title = "Clinekt Leakage Calculator";
   frame.loading = "lazy";
   frame.setAttribute("scrolling", "no");
-  frame.style.cssText = "width:100%;border:0;display:block;min-height:760px;background:transparent;overflow:hidden";
+  frame.style.cssText = "width:100%;max-width:100%;border:0;display:block;min-height:760px;background:transparent;overflow:hidden";
+  target.style.maxWidth = "100%";
+  target.style.overflowX = "hidden";
   target.appendChild(frame);
 
   var frameOrigin;
