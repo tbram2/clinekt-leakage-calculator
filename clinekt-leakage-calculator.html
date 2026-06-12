@@ -751,6 +751,12 @@
           body:JSON.stringify(data),keepalive:true}).catch(function(){});
         return;
       }
+      if(window.parent!==window){
+        // Webflow only stores submissions whose Origin matches the site's
+        // domains, so hand the lead to the embed loader on the parent page
+        window.parent.postMessage({clinektLead:data},"*");
+        return;
+      }
       var body=new URLSearchParams();
       body.append("name","Leakage Calculator");
       body.append("pageId",WF_PAGE_ID);

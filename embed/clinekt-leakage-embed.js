@@ -36,6 +36,26 @@
   var frameOrigin;
   try { frameOrigin = new URL(src, location.href).origin; } catch (e) { frameOrigin = null; }
 
+  // Lead capture relay: Webflow only stores form submissions whose Origin
+  // matches the site's domains, so the iframe posts lead data up to this
+  // script (running on the Webflow site) and we submit it from here.
+  var WF_FORM = "https://formdata.webflow.com/api/v1/form/698f93a6f3fe10ac9229e2b4";
+  var WF_PAGE_ID = "698f93a7f3fe10ac9229e7fc";
+  var WF_ELEMENT_ID = "2537b3c8-a4ee-a1b5-f95e-dec209ce3a62";
+  function submitLead(d) {
+    try {
+      var body = new URLSearchParams();
+      body.append("name", "Leakage Calculator");
+      body.append("pageId", WF_PAGE_ID);
+      body.append("elementId", WF_ELEMENT_ID);
+      body.append("source", location.href);
+      body.append("test", "false");
+      body.append("dolphin", "false");
+      Object.keys(d).forEach(function (k) { body.append("fields[" + k + "]", String(d[k])); });
+      fetch(WF_FORM, { method: "POST", body: body, keepalive: true }).catch(function () {});
+    } catch (err) {}
+  }
+
   window.addEventListener("message", function (e) {
     if (frameOrigin && e.origin !== frameOrigin) return;
     if (e.source !== frame.contentWindow) return;
@@ -43,5 +63,6 @@
       frame.style.height = (Math.ceil(e.data.clinektLeakageHeight) + 2) + "px";
       frame.style.minHeight = "0";
     }
+    if (e.data && e.data.clinektLead) submitLead(e.data.clinektLead);
   });
 })();
