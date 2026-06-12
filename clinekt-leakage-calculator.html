@@ -211,14 +211,14 @@
 
   /* Book a Demo, same treatment as the Clinekt widget's book-appointment CTA:
      breathing shadow pulse plus a periodic shimmer sweep */
-  .cta-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:9px;min-height:58px;font-family:inherit;font-size:18px;font-weight:600;letter-spacing:-0.022em;color:#fff;background:#FF3B30;border:none;border-radius:14px;padding:18px 24px;cursor:pointer;text-decoration:none;margin-top:18px;position:relative;overflow:hidden;box-shadow:0 7px 20px rgba(255,59,48,.28);transition:transform .15s ease,background .15s ease,box-shadow .15s ease;animation:ctaBreathe 2.8s ease-in-out infinite;user-select:none;-webkit-tap-highlight-color:transparent}
-  .cta-btn::after{content:'';position:absolute;top:0;left:0;bottom:0;width:40%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.22) 50%,transparent 100%);animation:ctaShine 5s ease-in-out infinite;animation-delay:1.4s;pointer-events:none}
-  .cta-btn:hover{background:#C9241A;box-shadow:0 9px 26px rgba(255,59,48,.4);animation-play-state:paused}
+  .cta-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:9px;min-height:58px;font-family:inherit;font-size:18px;font-weight:600;letter-spacing:-0.022em;color:#fff;background:linear-gradient(135deg,#2E90FF 0%,#0071FF 48%,#0051D5 100%);border:none;border-radius:14px;padding:18px 24px;cursor:pointer;text-decoration:none;margin-top:18px;position:relative;overflow:hidden;box-shadow:0 7px 20px rgba(0,113,255,.32);transition:transform .15s ease,filter .15s ease,box-shadow .15s ease;animation:ctaBreathe 2.8s ease-in-out infinite;user-select:none;-webkit-tap-highlight-color:transparent}
+  .cta-btn::after{content:'';position:absolute;top:0;left:0;bottom:0;width:40%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.25) 50%,transparent 100%);animation:ctaShine 5s ease-in-out infinite;animation-delay:1.4s;pointer-events:none}
+  .cta-btn:hover{filter:saturate(1.15) brightness(1.05);box-shadow:0 9px 26px rgba(0,113,255,.45);animation-play-state:paused}
   .cta-btn:hover::after{animation-play-state:paused}
-  .cta-btn:active{transform:scale(.98);background:#C9241A;box-shadow:0 4px 12px rgba(255,59,48,.2)}
+  .cta-btn:active{transform:scale(.98);filter:brightness(.95);box-shadow:0 4px 12px rgba(0,113,255,.25)}
   .cta-btn svg{transition:transform .2s ease}
   .cta-btn:hover svg{transform:translateX(3px)}
-  @keyframes ctaBreathe{0%,100%{box-shadow:0 7px 20px rgba(255,59,48,.28)}50%{box-shadow:0 11px 30px rgba(255,59,48,.42)}}
+  @keyframes ctaBreathe{0%,100%{box-shadow:0 7px 20px rgba(0,113,255,.32)}50%{box-shadow:0 11px 30px rgba(0,113,255,.5)}}
   @keyframes ctaShine{0%,72%{transform:translateX(-120%) skewX(-12deg)}100%{transform:translateX(260%) skewX(-12deg)}}
   .again-btn{width:100%;font-family:inherit;font-size:13px;font-weight:600;color:var(--ink-2);background:var(--field);border:1px solid var(--line-2);padding:10px;border-radius:99px;cursor:pointer;margin-top:10px;transition:background .15s}
   .again-btn:hover{background:#EAEAEF}
