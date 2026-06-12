@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Embed test, simulated Webflow homepage</title>
+  <style>
+    body { margin: 0; font-family: Georgia, serif; background: #fff; }
+    .fake-hero { background: #1a2b3c; color: #fff; text-align: center; padding: 70px 20px; }
+    .fake-section { background: #F5F5F7; padding: 40px 0; }
+    .fake-footer { background: #1a2b3c; color: #9ab; text-align: center; padding: 50px 20px; }
+  </style>
+</head>
+<body>
+  <div class="fake-hero"><h1>Fake Webflow homepage</h1><p>Hero section above the calculator</p></div>
+
+  <div class="fake-section">
+    <!-- This is what goes in the Webflow Embed element -->
+    <div id="clinekt-leakage-calculator"></div>
+    <script src="/embed/clinekt-leakage-embed.js"
+            data-src="/clinekt-leakage-calculator.html"></script>
+  </div>
+
+  <div class="fake-footer">Fake footer below the calculator</div>
+</body>
+</html>

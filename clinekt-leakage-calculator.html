@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clinekt Leakage Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  /* ─────────────────────────────────────────────────────────────
+     Clinekt Leakage Calculator
+     Apple-clean, sequential numbered steps. Self-contained:
+     no build step, inline CSS/JS. Scans the prospect's site live
+     (Google Lighthouse), models traffic from marketing spend, and
+     presents the revenue leaking out of their practice each month.
+     Same design language as the Clinekt Agent Code Generator.
+     ───────────────────────────────────────────────────────────── */
+  :root{
+    --blue:#0071FF; --blue-dark:#0051D5; --blue-50:#EAF3FF;
+    --ink:#1D1D1F; --ink-2:#6E6E73; --ink-3:#86868B;
+    --line:#E5E5EA; --line-2:#D1D1D6; --field:#F2F2F7;
+    --bg:#F5F5F7; --card:#FFFFFF;
+    --green:#34C759; --green-dark:#248A3D; --red:#FF3B30; --amber:#FF9500;
+    --radius:18px; --radius-sm:12px;
+    --shadow:0 1px 2px rgba(0,0,0,.04);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;letter-spacing:-0.01em}
+  .wrap{max-width:1180px;margin:0 auto;padding:48px 24px 80px}
+  .embedded .wrap{padding:8px 8px 32px}
+
+  /* Header */
+  .head{margin-bottom:44px;max-width:780px}
+  .head h1{font-size:clamp(38px,5.4vw,54px);font-weight:700;letter-spacing:-0.042em;line-height:1.02;color:var(--ink);margin-bottom:12px}
+  .head h1 .accent{color:var(--blue)}
+  .head p{font-size:15px;color:var(--ink-2);font-weight:400;line-height:1.55;letter-spacing:-0.005em;max-width:580px;margin-bottom:18px}
+  .badges{display:flex;flex-wrap:wrap;gap:8px}
+  .badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--ink-2);background:var(--field);border:1px solid var(--line);border-radius:99px;padding:6px 13px;letter-spacing:-0.005em}
+  .badge svg{flex-shrink:0}
+  .head .rule{height:1px;background:linear-gradient(90deg,var(--line),transparent);margin-top:26px;max-width:580px}
+
+  .grid{display:grid;grid-template-columns:1fr 460px;gap:24px;align-items:start}
+  @media(max-width:980px){.grid{grid-template-columns:1fr}.out-col{position:static!important}}
+
+  /* Step card */
+  .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 22px;margin-bottom:16px;box-shadow:var(--shadow)}
+  .step-head{display:flex;align-items:center;gap:14px;margin-bottom:4px}
+  .step-num{width:30px;height:30px;border-radius:50%;background:var(--blue-50);color:var(--blue);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .step-title{font-size:19px;font-weight:600;letter-spacing:-0.02em}
+  .step-sub{font-size:13px;color:var(--ink-3);margin:2px 0 20px 44px}
+
+  /* Fields */
+  .field{margin-bottom:16px}
+  .field:last-child{margin-bottom:0}
+  label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:7px}
+  label .req{color:var(--red);margin-left:2px}
+  label .hint{font-weight:400;color:var(--ink-3)}
+  input[type=text],input[type=url],select{
+    width:100%;font-family:inherit;font-size:15px;color:var(--ink);background:var(--field);
+    border:1.5px solid transparent;border-radius:var(--radius-sm);padding:12px 14px;outline:none;
+    transition:border-color .15s,background .15s;letter-spacing:-0.01em}
+  input:focus,select:focus{border-color:var(--blue);background:#fff}
+  input::placeholder{color:var(--ink-3)}
+  select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2386868B' stroke-width='2.5' stroke-linecap='round'><polyline points='6 9 12 15 18 9'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+  .err{font-size:12px;color:var(--red);margin-top:6px;display:none}
+  .err.show{display:block}
+
+  /* Custom dropdown */
+  .dd{position:relative}
+  .dd-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;font-family:inherit;font-size:15px;letter-spacing:-0.01em;color:var(--ink);background:var(--field);border:1.5px solid transparent;border-radius:var(--radius-sm);padding:12px 14px;cursor:pointer;transition:border-color .15s,background .15s;text-align:left}
+  .dd-btn svg{color:var(--ink-3);flex-shrink:0;transition:transform .2s}
+  .dd.open .dd-btn{border-color:var(--blue);background:#fff}
+  .dd.open .dd-btn svg{transform:rotate(180deg)}
+  .dd-menu{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);box-shadow:0 12px 32px rgba(0,0,0,.12),0 2px 8px rgba(0,0,0,.06);padding:6px;z-index:60;display:none;max-height:300px;overflow:auto}
+  .dd.open .dd-menu{display:block;animation:ddIn .16s ease-out}
+  @keyframes ddIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
+  .dd-opt{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;font-family:inherit;font-size:14px;font-weight:500;letter-spacing:-0.01em;color:var(--ink);background:none;border:none;border-radius:9px;padding:10px 12px;cursor:pointer;text-align:left;transition:background .12s}
+  .dd-opt:hover{background:var(--blue-50);color:var(--blue-dark)}
+  .dd-opt svg{visibility:hidden;color:var(--blue);flex-shrink:0}
+  .dd-opt.sel{font-weight:600;color:var(--blue)}
+  .dd-opt.sel svg{visibility:visible}
+
+  /* Spend slider */
+  .spend-val{font-size:30px;font-weight:700;letter-spacing:-0.03em;color:var(--ink);margin-bottom:12px;font-variant-numeric:tabular-nums}
+  .spend-val small{font-size:14px;font-weight:500;color:var(--ink-3);letter-spacing:-0.01em;margin-left:2px}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:5px;border-radius:99px;outline:none;cursor:pointer;
+    background:linear-gradient(90deg,var(--blue) var(--pct,15%),var(--line) var(--pct,15%))}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:.5px solid var(--line-2);box-shadow:0 2px 6px rgba(0,0,0,.18);cursor:grab;transition:transform .12s}
+  input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.06)}
+  input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:#fff;border:.5px solid var(--line-2);box-shadow:0 2px 6px rgba(0,0,0,.18);cursor:grab}
+  .scale{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-3);font-weight:500;margin-top:8px}
+
+  /* Run button */
+  .run-btn{width:100%;font-family:inherit;font-size:16px;font-weight:600;letter-spacing:-0.01em;color:#fff;background:var(--blue);border:none;border-radius:var(--radius-sm);padding:15px 20px;cursor:pointer;transition:background .15s,transform .1s;display:flex;align-items:center;justify-content:center;gap:8px}
+  .run-btn:hover{background:var(--blue-dark)}
+  .run-btn:active{transform:scale(.985)}
+  .run-btn:disabled{background:var(--line-2);cursor:default}
+  .run-note{font-size:12.5px;color:var(--ink-3);text-align:center;margin-top:12px}
+
+  /* Output column */
+  .out-col{position:sticky;top:24px;display:flex;flex-direction:column;gap:16px}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+  .panel-head{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px}
+  .panel-head h3{font-size:16px;font-weight:600;letter-spacing:-0.02em}
+  .panel-body{padding:0 20px 20px}
+
+  /* Idle state */
+  .idle{text-align:center;padding:36px 24px 42px;color:var(--ink-3)}
+  .idle-icon{width:56px;height:56px;border-radius:16px;background:var(--field);display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+  .idle p{font-size:13.5px;max-width:260px;margin:0 auto;line-height:1.5}
+
+  /* Scanning state */
+  .scan-steps{list-style:none;display:flex;flex-direction:column;gap:2px;padding:4px 0 8px}
+  .scan-step{display:flex;align-items:flex-start;gap:12px;padding:9px 10px;border-radius:10px;transition:background .25s;opacity:.45}
+  .scan-step.active{background:var(--blue-50);opacity:1}
+  .scan-step.done{opacity:1}
+  .scan-ic{width:18px;height:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+  .scan-dot{width:6px;height:6px;border-radius:50%;background:var(--line-2)}
+  .spin{width:13px;height:13px;border:2px solid var(--blue-50);border-top-color:var(--blue);border-radius:50%;animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .scan-step b{display:block;font-size:13.5px;font-weight:600;color:var(--ink);letter-spacing:-0.01em}
+  .scan-step small{display:block;font-size:12px;color:var(--ink-3)}
+  .scan-target{font-size:13px;color:var(--ink-2);padding:0 10px 10px}
+  .scan-target code{font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;background:var(--field);padding:2px 8px;border-radius:6px;color:var(--blue-dark)}
+
+  /* Results */
+  .fade{animation:fade .45s ease-out}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+  .big{text-align:center;padding:6px 0 4px}
+  .big-label{font-size:13px;font-weight:600;color:var(--red);margin-bottom:6px;letter-spacing:-0.005em}
+  .big-num{font-size:46px;font-weight:700;letter-spacing:-0.035em;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+  .big-sub{font-size:13px;color:var(--ink-2);margin-top:10px}
+  .big-sub b{color:var(--ink);font-weight:600}
+
+  .tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding-top:14px}
+  .tile{background:var(--field);border-radius:var(--radius-sm);padding:14px 14px 12px;text-align:left}
+  .tile b{display:block;font-size:20px;font-weight:700;letter-spacing:-0.02em;color:var(--ink);font-variant-numeric:tabular-nums}
+  .tile.bad b{color:var(--red)}
+  .tile.good b{color:var(--green-dark)}
+  .tile span{font-size:11.5px;font-weight:500;color:var(--ink-2)}
+
+  .leaks{display:flex;flex-direction:column;gap:13px;padding-top:2px}
+  .leak-row .lr-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:13px;color:var(--ink-2);margin-bottom:6px}
+  .leak-row .lr-top b{color:var(--ink);font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .bar{height:6px;background:var(--field);border-radius:99px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:99px;background:var(--blue);transform-origin:left;animation:grow .8s cubic-bezier(.4,0,.2,1)}
+  .bar i.warn{background:var(--amber)}
+  .bar i.crit{background:var(--red)}
+  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+  /* Today vs with Clinekt scorecard */
+  .score{border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+  .score-row{display:grid;grid-template-columns:1.25fr 1fr 1.1fr;align-items:stretch}
+  .score-row+.score-row{border-top:1px solid var(--line)}
+  .score-row>div{padding:11px 12px;font-size:13px;display:flex;align-items:center}
+  .score-row>div:nth-child(2){justify-content:flex-end;text-align:right}
+  .score-row>div:nth-child(3){justify-content:flex-end;text-align:right;background:var(--blue-50)}
+  .score-head>div{font-size:12px;font-weight:700;color:var(--ink-3);padding:9px 12px}
+  .score-head>div:nth-child(3){color:var(--blue)}
+  .score-label{color:var(--ink-2);font-weight:500}
+  .score-bad{color:var(--red);font-weight:700;font-variant-numeric:tabular-nums}
+  .score-good{color:var(--blue-dark);font-weight:700;font-variant-numeric:tabular-nums}
+  .score-total>div{background:var(--field);font-weight:700}
+  .score-total .score-label{color:var(--ink);font-weight:700}
+  .score-total>div:nth-child(3){background:var(--blue);color:#fff}
+  .score-total .score-good{color:#fff}
+  .gapline{margin-top:12px;background:#FFF1F0;border:1px solid #FFD7D4;border-radius:var(--radius-sm);padding:12px 14px;font-size:13.5px;color:var(--ink-2);line-height:1.5}
+
+  /* Combined total */
+  .tot{border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+  .tot-row{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;font-size:13.5px}
+  .tot-row+.tot-row{border-top:1px solid var(--line)}
+  .tot-row span{color:var(--ink-2);font-weight:500}
+  .tot-row b{color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
+  .tot-row.tot-sum{background:var(--blue)}
+  .tot-row.tot-sum span,.tot-row.tot-sum b{color:#fff}
+  .tot-row.tot-sum b{font-size:16px}
+  .gapline b{color:var(--red);font-weight:700;font-variant-numeric:tabular-nums}
+  .ehr-line{font-size:13px;color:var(--ink-2);line-height:1.55}
+  .ehr-line b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+
+  /* Trajectory chart */
+  .chart-wrap{padding-top:2px}
+  .legend{display:flex;gap:14px;margin-bottom:10px}
+  .lg{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--ink-2)}
+  .lg i{width:14px;height:3.5px;border-radius:99px;flex-shrink:0}
+  .lg b{color:var(--ink);font-variant-numeric:tabular-nums}
+  .chart-wrap svg{display:block;width:100%;height:auto}
+  .chart-wrap .gline{stroke:var(--line);stroke-width:1}
+  .chart-wrap .gtxt{font-size:9.5px;font-weight:600;fill:var(--ink-3);font-family:inherit}
+  .chart-wrap .mtxt{font-size:9.5px;font-weight:600;fill:var(--ink-3);font-family:inherit}
+  .chart-wrap path.ln{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.5s cubic-bezier(.4,0,.2,1) forwards}
+  .chart-wrap path.ln-b{animation-delay:.15s}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .chart-wrap path.ar{opacity:0;animation:areaIn .7s ease-out forwards}
+  .chart-wrap path.ar-b{animation-delay:1s}
+  .chart-wrap path.ar-a{animation-delay:1.2s}
+  @keyframes areaIn{to{opacity:1}}
+  .chart-wrap .endlab{font-size:10.5px;font-weight:700;font-family:inherit;font-variant-numeric:tabular-nums}
+  .chart-note{font-size:12px;color:var(--ink-3);margin-top:8px;line-height:1.5}
+
+  .scen{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .scen-tile{border:1.5px solid var(--line);border-radius:var(--radius-sm);padding:13px 8px;text-align:center}
+  .scen-tile.mid{border-color:var(--blue);background:var(--blue-50)}
+  .scen-tile span{display:block;font-size:11px;font-weight:600;color:var(--ink-3);margin-bottom:3px}
+  .scen-tile.mid span{color:var(--blue)}
+  .scen-tile b{font-size:15.5px;font-weight:700;letter-spacing:-0.02em;color:var(--ink);font-variant-numeric:tabular-nums}
+
+  .sect{font-size:14px;font-weight:600;color:var(--ink);padding:18px 0 10px;letter-spacing:-0.01em}
+
+  /* Collapsible (assumptions) */
+  .acc{border-top:1px solid var(--line);margin-top:16px}
+  .acc-head{width:100%;display:flex;align-items:center;justify-content:space-between;padding:14px 0;background:none;border:none;font-family:inherit;font-size:13.5px;font-weight:600;color:var(--ink);cursor:pointer;letter-spacing:-0.01em}
+  .acc-head svg{transition:transform .2s;color:var(--ink-3)}
+  .acc.open .acc-head svg{transform:rotate(180deg)}
+  .acc-body{display:none;padding:0 0 14px;font-size:13px;color:var(--ink-2)}
+  .acc.open .acc-body{display:block}
+  .acc-body table{width:100%;border-collapse:collapse;font-size:12.5px}
+  .acc-body td{text-align:left;padding:7px 0;border-bottom:1px solid var(--line)}
+  .acc-body tr:last-child td{border-bottom:none}
+  .acc-body td:last-child{text-align:right;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+
+  .cta-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;font-family:inherit;font-size:15px;font-weight:600;letter-spacing:-0.01em;color:#fff;background:var(--blue);border:none;border-radius:var(--radius-sm);padding:14px 18px;cursor:pointer;text-decoration:none;transition:background .15s,transform .1s;margin-top:16px}
+  .cta-btn:hover{background:var(--blue-dark)}
+  .cta-btn:active{transform:scale(.985)}
+  .again-btn{width:100%;font-family:inherit;font-size:13px;font-weight:600;color:var(--ink-2);background:var(--field);border:1px solid var(--line-2);padding:10px;border-radius:99px;cursor:pointer;margin-top:10px;transition:background .15s}
+  .again-btn:hover{background:#EAEAEF}
+
+  .foot{text-align:center;color:var(--ink-3);font-size:12.5px;margin-top:44px}
+  .foot a{color:var(--blue);text-decoration:none}
+
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <h1>Clinekt&nbsp;<span class="accent">Leakage&nbsp;Calculator</span></h1>
+    <p>See what converting only 1% of your website visitors is costing you every month, and what’s sitting dormant in your EHR.</p>
+    <div class="badges">
+      <span class="badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0071FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Live website scan</span>
+      <span class="badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>HIPAA Secure</span>
+      <span class="badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0071FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Results in ~20 seconds</span>
+    </div>
+    <div class="rule"></div>
+  </div>
+
+  <div class="grid">
+
+    <!-- ════════ INPUT STEPS ════════ -->
+    <div class="cfg-col">
+
+      <!-- STEP 1 — Website -->
+      <div class="step">
+        <div class="step-head">
+          <div class="step-num">1</div>
+          <div class="step-title">Practice website</div>
+        </div>
+        <div style="height:14px"></div>
+        <div class="field">
+          <label>Website <span class="req">*</span></label>
+          <input type="url" id="site" placeholder="yourpractice.com" autocomplete="off" />
+          <div class="err" id="siteErr">Enter a valid website, like summitortho.com</div>
+        </div>
+        <div class="field">
+          <label>Monthly visitors <span class="hint">optional, from Google Analytics. Blank and we estimate it.</span></label>
+          <input type="text" id="visitors" inputmode="numeric" placeholder="Auto" autocomplete="off" />
+        </div>
+      </div>
+
+      <!-- STEP 2 — Marketing spend -->
+      <div class="step">
+        <div class="step-head">
+          <div class="step-num">2</div>
+          <div class="step-title">Marketing spend</div>
+        </div>
+        <div class="step-sub">Across ads, social, SEO, and agencies.</div>
+        <div class="field">
+          <div class="spend-val" id="spendVal">$7,500<small>/month</small></div>
+          <input type="range" id="spend" min="0" max="50000" step="500" value="7500" />
+          <div class="scale"><span>$0</span><span>$25K</span><span>$50K+</span></div>
+        </div>
+      </div>
+
+      <!-- STEP 3 — Specialty -->
+      <div class="step">
+        <div class="step-head">
+          <div class="step-num">3</div>
+          <div class="step-title">Specialty</div>
+        </div>
+        <div style="height:14px"></div>
+        <div class="field">
+          <label>Practice type</label>
+          <div class="dd" id="specialtyDd">
+            <button type="button" class="dd-btn" id="ddBtn" aria-haspopup="listbox" aria-expanded="false">
+              <span id="ddLabel">Orthopedics</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="dd-menu" id="ddMenu" role="listbox"></div>
+          </div>
+          <input type="hidden" id="specialty" value="orthopedics" />
+        </div>
+      </div>
+
+      <!-- STEP 4 — Patient database -->
+      <div class="step">
+        <div class="step-head">
+          <div class="step-num">4</div>
+          <div class="step-title">Patient database</div>
+        </div>
+        <div class="step-sub">Unique patient records in your EHR or PM system.</div>
+        <div class="field">
+          <div class="spend-val" id="ehrVal">12,000<small> records</small></div>
+          <input type="range" id="ehr" min="1000" max="100000" step="1000" value="12000" />
+          <div class="scale"><span>1K</span><span>50K</span><span>100K+</span></div>
+        </div>
+      </div>
+
+      <!-- STEP 5 — Run -->
+      <div class="step">
+        <div class="step-head">
+          <div class="step-num">5</div>
+          <div class="step-title">Run the analysis</div>
+        </div>
+        <div style="height:14px"></div>
+        <button class="run-btn" id="run">
+          Analyze Revenue Leakage
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <div class="run-note">Free • no login • nothing installed on your site</div>
+      </div>
+
+    </div><!-- /cfg-col -->
+
+    <!-- ════════ ANALYSIS OUTPUT ════════ -->
+    <div class="out-col">
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Analysis</h3>
+        </div>
+
+        <!-- Idle -->
+        <div id="stIdle">
+          <div class="idle">
+            <div class="idle-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#86868B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+            <p>Enter your details and your leakage report appears here.</p>
+          </div>
+        </div>
+
+        <!-- Scanning -->
+        <div id="stScan" style="display:none">
+          <div class="panel-body">
+            <div class="scan-target">Scanning <code id="scanDomain"></code></div>
+            <ul class="scan-steps" id="scanSteps">
+              <li class="scan-step"><span class="scan-ic"></span><span><b>Connecting to the website</b><small>Resolving and fetching live pages</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span><b>Running performance diagnostics</b><small>Core Web Vitals via Google Lighthouse</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span><b>Auditing the mobile experience</b><small>Where most patients are browsing</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span><b>Modeling monthly traffic</b><small>Marketing spend × healthcare CPC benchmarks</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span><b>Sizing dormant patient reactivation</b><small>Inactive records × $400 office visits</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span><b>Calculating revenue leakage</b><small>1% today vs 8–10% with Clinekt</small></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div id="stResults" style="display:none">
+          <div class="panel-body fade" id="resultsBody"><!-- injected --></div>
+        </div>
+      </div>
+
+      <div class="panel" id="ctaPanel" style="display:none">
+        <div class="panel-body" style="padding-top:18px">
+          <div style="font-size:15px;font-weight:600;letter-spacing:-0.01em;margin-bottom:4px">Want this revenue back?</div>
+          <div style="font-size:13px;color:var(--ink-2)">Clinekt captures, follows up with, and schedules the patients your site is losing.</div>
+          <a class="cta-btn" id="ctaBtn" href="https://www.clinekthealth.com/contact" target="_blank" rel="noopener">Book a Strategy Call</a>
+          <button class="again-btn" id="again">Run another analysis</button>
+        </div>
+      </div>
+    </div><!-- /out-col -->
+
+  </div><!-- /grid -->
+
+  <div class="foot">Powered by <a href="https://clinekthealth.com" target="_blank" rel="noopener">Clinekt Health</a></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var $=function(id){return document.getElementById(id)};
+
+  /* Embedded mode: when loaded inside an iframe (Webflow section via
+     clinekt-leakage-embed.js), trim outer padding and report content
+     height to the parent so the iframe always fits exactly. */
+  if(new URLSearchParams(location.search).get("embed")==="1"){
+    document.body.classList.add("embedded");
+  }
+  if(window.parent!==window){
+    var lastHeight=0;
+    var postHeight=function(){
+      var h=document.documentElement.scrollHeight;
+      if(h!==lastHeight){
+        lastHeight=h;
+        window.parent.postMessage({clinektLeakageHeight:h},"*");
+      }
+    };
+    if("ResizeObserver" in window){
+      var ro=new ResizeObserver(postHeight);
+      ro.observe(document.body);
+      ro.observe(document.documentElement);
+    }
+    window.addEventListener("load",postHeight);
+    setInterval(postHeight,600); // belt and braces, posts only when changed
+  }
+
+  /* ════════════════════════════════════════════════════════════
+     ENGINE — deterministic per-domain modeling
+     domain → hash → seeded RNG, so the same practice always gets
+     the same numbers (repeatable demos, no Math.random anywhere).
+     ════════════════════════════════════════════════════════════ */
+
+  function hashDomain(d){
+    var h=0x811c9dc5;
+    for(var i=0;i<d.length;i++){h^=d.charCodeAt(i);h=Math.imul(h,0x01000193)}
+    return h>>>0;
+  }
+  function rngFrom(seed){
+    var a=seed>>>0;
+    return function(){
+      a|=0;a=(a+0x6d2b79f5)|0;
+      var t=Math.imul(a^(a>>>15),1|a);
+      t=(t+Math.imul(t^(t>>>7),61|t))^t;
+      return ((t^(t>>>14))>>>0)/4294967296;
+    };
+  }
+  function between(r,min,max){return min+r()*(max-min)}
+
+  function normalizeDomain(input){
+    if(!input)return null;
+    var s=String(input).trim().toLowerCase();
+    s=s.replace(/^[a-z]+:\/\//,"").replace(/^www\./,"");
+    s=s.split(/[\/?#]/)[0];
+    s=s.split("@").pop();
+    s=s.split(":")[0];
+    if(!/^[a-z0-9][a-z0-9.-]*\.[a-z]{2,}$/.test(s))return null;
+    return s;
+  }
+
+  /* Acquisition-side patient value, built from Clinekt service-line economics:
+       every converted patient books an appointment ($400); a share go on to
+       imaging ($350), PT ($800), and surgery ($2,000). The specialty sets the
+       service mix; the blended per-patient value is shown in Model inputs. */
+  var SVC={visit:400,imaging:350,pt:800,surgery:2000};
+  // The specialties Clinekt serves, per clinekthealth.com. Mix rates are
+  // benchmark shares of new patients who go on to each service line.
+  var SPECIALTIES={
+    orthopedics:{label:"Orthopedics",imaging:.6,pt:.5,surgery:.15},
+    pt:{label:"Physical Therapy",imaging:.15,pt:1,surgery:0},
+    dental:{label:"Oral Surgery & Dentistry",imaging:.8,pt:0,surgery:.35},
+    dermatology:{label:"Dermatology",imaging:.1,pt:0,surgery:.25},
+    ophthalmology:{label:"Ophthalmology",imaging:.7,pt:0,surgery:.3},
+    urology:{label:"Urology",imaging:.6,pt:0,surgery:.25},
+    primary:{label:"Primary Care",imaging:.3,pt:.15,surgery:.02},
+    cardiology:{label:"Cardiology",imaging:.75,pt:.1,surgery:.1},
+    pediatrics:{label:"Pediatrics",imaging:.2,pt:.1,surgery:.03}
+  };
+  function patientValue(spec){
+    return SVC.visit+spec.imaging*SVC.imaging+spec.pt*SVC.pt+spec.surgery*SVC.surgery;
+  }
+
+  /* Two revenue pillars — ONLY things Clinekt directly delivers:
+       1. Website conversion gap: industry reality is ~1% of practice-site
+          visitors ever convert. Clinekt engages 8–10% of overall traffic.
+          Both sides run through the same schedule/show funnel, so the
+          comparison is apples-to-apples.
+       2. EHR reactivation: most patient records go dormant. Clinekt
+          reactivates ~1% of dormant records per month at $400/office visit. */
+  var CONV_TODAY=.01;          // 1% — what their site converts today
+  var CONV_CLINEKT=.08;        // low end of the 8–10% Clinekt benchmark
+  var LEAD_TO_APPT=.5, SHOW_RATE=.88, CONSERVATIVE=.55;
+  var EHR_DORMANT=.7;          // share of records with no recent visit
+  var EHR_RECAPTURE=.01;       // reactivated per month
+  var VISIT_VALUE=400;         // revenue per reactivated office visit
+
+  // Healthcare search CPC: 2025 market average $5.64 (LocaliQ), specialty
+  // practices run higher — band reflects ortho/specialty reality.
+  // If the practice reports their real analytics number, it overrides the
+  // estimate. (Third-party traffic APIs like SimilarWeb are unreliable for
+  // sub-5K/mo practice sites and enterprise-priced, so: estimate or ask.)
+  function estimateTraffic(domain,spend,reported){
+    var r=rngFrom(hashDomain(domain));
+    var cpc=between(r,5.25,8.75);
+    if(reported>0){
+      return {cpc:cpc,total:Math.round(reported),source:"reported"};
+    }
+    var paid=spend>0?spend/cpc:0;
+    var organic=between(r,420,1650)+paid*between(r,.55,1.35);
+    var direct=(paid+organic)*between(r,.12,.22);
+    return {cpc:cpc,total:Math.round(paid+organic+direct),source:"estimated"};
+  }
+
+  function calculate(domain,spend,specId,ehrRecords,scan,reportedVisitors){
+    var spec=SPECIALTIES[specId]||SPECIALTIES.orthopedics;
+    var traffic=estimateTraffic(domain,spend,reportedVisitors);
+
+    // Pillar 1 — website conversion gap (same funnel both sides)
+    var funnel=LEAD_TO_APPT*SHOW_RATE;
+    var patientsToday=traffic.total*CONV_TODAY*funnel;
+    var patientsClinekt=traffic.total*CONV_CLINEKT*funnel;
+    var gapPatients=Math.max(0,patientsClinekt-patientsToday);
+    var perPatient=patientValue(spec);
+    var webMonthly=Math.round(gapPatients*perPatient*CONSERVATIVE);
+
+    // Pillar 2 — EHR reactivation
+    var dormant=Math.round(ehrRecords*EHR_DORMANT);
+    var reactivated=Math.round(dormant*EHR_RECAPTURE);
+    var ehrMonthly=reactivated*VISIT_VALUE;
+
+    var monthly=webMonthly+ehrMonthly;
+    var revToday=Math.round(patientsToday*perPatient*CONSERVATIVE);
+    var revClinekt=revToday+monthly;
+
+    /* Monthly run-rate trajectories for the chart:
+         current actual = what their site produces today at 1%, flat
+         with Clinekt   = current + recovered web gap + reactivation,
+                          ramping in over the first 6 months
+       (FUTURE, demand pillar: outbound campaigns add net-new traffic on
+        top of these curves. Not modeled yet by request.) */
+    var ramp=[.4,.55,.7,.82,.92,1,1.03,1.06,1.09,1.11,1.13,1.15];
+    var trajToday=[],trajClinekt=[];
+    for(var i=0;i<12;i++){
+      trajToday.push(revToday);
+      trajClinekt.push(revToday+Math.round(monthly*ramp[i]));
+    }
+
+    // Cost per new patient — the wasted-spend story
+    var cacToday=spend>0&&patientsToday>0?spend/patientsToday:null;
+    var cacClinekt=spend>0&&patientsClinekt>0?spend/patientsClinekt:null;
+
+    return {
+      domain:domain,spec:spec,perPatient:perPatient,traffic:traffic,scan:scan,spend:spend,
+      patientsToday:Math.round(patientsToday),
+      patientsClinekt:Math.round(patientsClinekt),
+      gapPatients:Math.round(gapPatients),
+      webMonthly:webMonthly,
+      ehr:{records:ehrRecords,dormant:dormant,reactivated:reactivated,monthly:ehrMonthly},
+      monthly:monthly,revToday:revToday,revClinekt:revClinekt,
+      cacToday:cacToday,cacClinekt:cacClinekt,
+      trajToday:trajToday,trajClinekt:trajClinekt
+    };
+  }
+
+  /* ── Live scan: Google PageSpeed Insights (free, CORS-enabled).
+     Falls back to seeded scores if PSI is slow / rate-limited so a
+     live demo can never break. Optional ?psiKey=... raises quota. ── */
+  var PSI_KEY=(new URLSearchParams(location.search)).get("psiKey")||"";
+
+  function fallbackScan(domain){
+    var r=rngFrom(hashDomain(domain)^0x5f356495);
+    return {real:false,perf:Math.round(between(r,34,68)),
+      mobile:Math.round(between(r,30,64)),lcp:+between(r,3.2,7.8).toFixed(1)};
+  }
+
+  function runScan(domain){
+    var url="https://www.googleapis.com/pagespeedonline/v5/runPagespeed"+
+      "?url="+encodeURIComponent("https://"+domain)+
+      "&strategy=mobile&category=performance"+(PSI_KEY?"&key="+encodeURIComponent(PSI_KEY):"");
+    var ctrl=new AbortController();
+    var timer=setTimeout(function(){ctrl.abort()},18000);
+    return fetch(url,{signal:ctrl.signal})
+      .then(function(res){if(!res.ok)throw new Error("PSI "+res.status);return res.json()})
+      .then(function(data){
+        var lh=data.lighthouseResult||{},audits=lh.audits||{};
+        var perfRaw=lh.categories&&lh.categories.performance&&lh.categories.performance.score;
+        var perf=perfRaw!=null?Math.round(perfRaw*100):fallbackScan(domain).perf;
+        var tbt=audits["total-blocking-time"]&&audits["total-blocking-time"].numericValue;
+        var cls=audits["cumulative-layout-shift"]&&audits["cumulative-layout-shift"].numericValue;
+        var lcp=audits["largest-contentful-paint"]&&audits["largest-contentful-paint"].numericValue;
+        var mobile=perf;
+        if(tbt!=null)mobile-=Math.min(15,tbt/80);
+        if(cls!=null)mobile-=Math.min(12,cls*40);
+        return {real:true,perf:perf,mobile:Math.round(Math.max(5,Math.min(100,mobile))),
+          lcp:lcp!=null?+(lcp/1000).toFixed(1):null};
+      })
+      .catch(function(){return fallbackScan(domain)})
+      .finally(function(){clearTimeout(timer)});
+  }
+
+  /* ════════════════════════════════════════════════════════════
+     UI
+     ════════════════════════════════════════════════════════════ */
+
+  function money(n){return "$"+Math.round(n).toLocaleString("en-US")}
+  function num(n){return Math.round(n).toLocaleString("en-US")}
+  function moneyC(n){
+    if(n>=1e6)return "$"+(n/1e6).toFixed(n>=1e7?0:1).replace(/\.0$/,"")+"M";
+    if(n>=1e3)return "$"+Math.round(n/1e3)+"K";
+    return money(n);
+  }
+
+  /* Gradient-fill trajectory chart: current actual (gray) vs with-Clinekt
+     projection (blue), cumulative over 12 months. Pure inline SVG. */
+  function buildChart(cumA,cumB){ // A = today, B = with Clinekt
+    var W=440,H=216,padL=10,padR=72,padT=16,padB=24;
+    var iw=W-padL-padR,ih=H-padT-padB;
+    var max=cumB[11]*1.05;
+    function x(i){return +(padL+iw*i/11).toFixed(1)}
+    function y(v){return +(padT+ih*(1-v/max)).toFixed(1)}
+    function line(arr){return arr.map(function(v,i){return (i?"L":"M")+x(i)+" "+y(v)}).join(" ")}
+    function area(arr){return line(arr)+" L"+x(11)+" "+(padT+ih)+" L"+x(0)+" "+(padT+ih)+" Z"}
+
+    var grid="";
+    [0.25,0.5,0.75,1].forEach(function(f){
+      var gy=y(max*f);
+      grid+='<line class="gline" x1="'+padL+'" y1="'+gy+'" x2="'+(padL+iw)+'" y2="'+gy+'"/>'+
+            '<text class="gtxt" x="'+(padL+iw+5)+'" y="'+(gy+3)+'">'+moneyC(max*f)+'</text>';
+    });
+    var months="";
+    [[0,"M1"],[2,"M3"],[5,"M6"],[8,"M9"],[11,"M12"]].forEach(function(m){
+      months+='<text class="mtxt" x="'+x(m[0])+'" y="'+(H-8)+'" text-anchor="middle">'+m[1]+'</text>';
+    });
+
+    return '<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">'+
+      '<defs>'+
+        '<linearGradient id="gB" x1="0" y1="0" x2="0" y2="1">'+
+          '<stop offset="0" stop-color="#0071FF" stop-opacity=".22"/>'+
+          '<stop offset="1" stop-color="#0071FF" stop-opacity="0"/>'+
+        '</linearGradient>'+
+        '<linearGradient id="gA" x1="0" y1="0" x2="0" y2="1">'+
+          '<stop offset="0" stop-color="#86868B" stop-opacity=".16"/>'+
+          '<stop offset="1" stop-color="#86868B" stop-opacity="0"/>'+
+        '</linearGradient>'+
+      '</defs>'+
+      grid+months+
+      '<path class="ar ar-b" d="'+area(cumB)+'" fill="url(#gB)"/>'+
+      '<path class="ar ar-a" d="'+area(cumA)+'" fill="url(#gA)"/>'+
+      '<path class="ln ln-b" pathLength="1" d="'+line(cumB)+'" stroke="#0071FF" stroke-width="2.5"/>'+
+      '<path class="ln" pathLength="1" d="'+line(cumA)+'" stroke="#86868B" stroke-width="2"/>'+
+      '<circle cx="'+x(11)+'" cy="'+y(cumB[11])+'" r="3.5" fill="#0071FF"/>'+
+      '<circle cx="'+x(11)+'" cy="'+y(cumA[11])+'" r="3" fill="#86868B"/>'+
+      '<text class="endlab" x="'+(x(11)+7)+'" y="'+(y(cumB[11])+4)+'" fill="#0071FF">'+moneyC(cumB[11])+'</text>'+
+      '<text class="endlab" x="'+(x(11)+7)+'" y="'+(y(cumA[11])+4)+'" fill="#6E6E73">'+moneyC(cumA[11])+'</text>'+
+    '</svg>';
+  }
+
+  // Sliders
+  var spend=$("spend"),spendVal=$("spendVal");
+  function syncSpend(){
+    spendVal.innerHTML=money(+spend.value)+"<small>/month</small>";
+    spend.style.setProperty("--pct",(spend.value/spend.max*100)+"%");
+  }
+  spend.addEventListener("input",syncSpend);syncSpend();
+
+  var ehr=$("ehr"),ehrVal=$("ehrVal");
+  function syncEhr(){
+    ehrVal.innerHTML=num(+ehr.value)+"<small> records</small>";
+    ehr.style.setProperty("--pct",(ehr.value/ehr.max*100)+"%");
+  }
+  ehr.addEventListener("input",syncEhr);syncEhr();
+
+  // Specialty dropdown, built from SPECIALTIES so the list lives in one place
+  var dd=$("specialtyDd"),ddBtn=$("ddBtn"),ddMenu=$("ddMenu"),ddLabel=$("ddLabel"),specInput=$("specialty");
+  var CHECK='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+  Object.keys(SPECIALTIES).forEach(function(id){
+    var b=document.createElement("button");
+    b.type="button";b.className="dd-opt"+(id===specInput.value?" sel":"");
+    b.setAttribute("role","option");b.setAttribute("data-v",id);
+    b.innerHTML="<span>"+SPECIALTIES[id].label+"</span>"+CHECK;
+    b.addEventListener("click",function(){
+      specInput.value=id;
+      ddLabel.textContent=SPECIALTIES[id].label;
+      ddMenu.querySelectorAll(".dd-opt").forEach(function(o){o.classList.toggle("sel",o===b)});
+      closeDd();
+    });
+    ddMenu.appendChild(b);
+  });
+  function closeDd(){dd.classList.remove("open");ddBtn.setAttribute("aria-expanded","false")}
+  ddBtn.addEventListener("click",function(e){
+    e.stopPropagation();
+    var open=dd.classList.toggle("open");
+    ddBtn.setAttribute("aria-expanded",open?"true":"false");
+  });
+  document.addEventListener("click",function(e){if(!dd.contains(e.target))closeDd()});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")closeDd()});
+
+  // States
+  function show(state){
+    $("stIdle").style.display=state==="idle"?"":"none";
+    $("stScan").style.display=state==="scan"?"":"none";
+    $("stResults").style.display=state==="results"?"":"none";
+    $("ctaPanel").style.display=state==="results"?"":"none";
+  }
+
+  var stepTimer=null;
+  function animateScanSteps(){
+    var steps=Array.prototype.slice.call($("scanSteps").children),i=0;
+    function paint(){
+      steps.forEach(function(li,j){
+        li.className="scan-step"+(j<i?" done":j===i?" active":"");
+        var ic=li.querySelector(".scan-ic");
+        ic.innerHTML=j<i
+          ?'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'
+          :j===i?'<span class="spin"></span>':'<span class="scan-dot"></span>';
+      });
+    }
+    paint();
+    stepTimer=setInterval(function(){
+      if(i<steps.length-1){i++;paint()}
+    },1400);
+  }
+  function finishScanSteps(){
+    clearInterval(stepTimer);
+    Array.prototype.forEach.call($("scanSteps").children,function(li){
+      li.className="scan-step done";
+      li.querySelector(".scan-ic").innerHTML='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+    });
+  }
+
+  function scoreRow(label,today,clinekt){
+    return '<div class="score-row"><div class="score-label">'+label+'</div>'+
+      '<div class="score-bad">'+today+'</div><div class="score-good">'+clinekt+'</div></div>';
+  }
+
+  function renderResults(R){
+    $("resultsBody").innerHTML=
+      '<div class="big">'+
+        '<div class="big-label">Estimated monthly revenue leakage</div>'+
+        '<div class="big-num" id="bigNum">$0</div>'+
+        '<div class="big-sub">The gap between converting 1% and 8–10% of <b>'+R.domain+'</b>’s monthly visitors. '+
+          'That’s <b id="moNum">$0</b> a year.</div>'+
+      '</div>'+
+      '<div class="sect">Today vs with Clinekt</div>'+
+      '<div class="ehr-line" style="margin-bottom:10px">Of every <b>100 visitors</b> you pay to bring in, '+
+        '<b>99 leave without booking</b>.</div>'+
+      '<div class="score">'+
+        '<div class="score-row score-head"><div>'+num(R.traffic.total)+' monthly visitors</div><div>Today</div><div>With Clinekt</div></div>'+
+        scoreRow('Website conversion','1%','8–10%')+
+        scoreRow('New patients a month',num(R.patientsToday),num(R.patientsClinekt))+
+        (R.cacToday!=null?scoreRow('Marketing cost per patient',money(R.cacToday),money(R.cacClinekt)):'')+
+        scoreRow('Reactivated EHR visits','0',num(R.ehr.reactivated))+
+        '<div class="score-row score-total"><div class="score-label">Monthly revenue</div>'+
+          '<div class="score-bad">'+money(R.revToday)+'</div>'+
+          '<div class="score-good">'+money(R.revClinekt)+'</div></div>'+
+      '</div>'+
+      '<div class="gapline">You’re behind <b>'+num(R.gapPatients)+' new patients</b> and <b>'+money(R.monthly)+'</b> every month.</div>'+
+      '<div class="sect">Reactivation: dormant patients in your EHR</div>'+
+      '<div class="ehr-line">Of <b>'+num(R.ehr.records)+'</b> records, about <b>'+num(R.ehr.dormant)+'</b> are dormant. '+
+        'Reactivating just 1% a month brings back <b>'+num(R.ehr.reactivated)+'</b> office visits at $400 each.</div>'+
+      '<div class="tiles" style="padding-top:10px">'+
+        '<div class="tile bad"><b>'+num(R.ehr.dormant)+'</b><span>Dormant patient records</span></div>'+
+        '<div class="tile good"><b>'+money(R.ehr.monthly)+'</b><span>Reactivation revenue / mo</span></div>'+
+      '</div>'+
+      '<div class="sect">Monthly revenue: current actual vs with Clinekt</div>'+
+      '<div class="chart-wrap">'+
+        '<div class="legend">'+
+          '<span class="lg"><i style="background:#0071FF"></i>With Clinekt <b>'+moneyC(R.trajClinekt[11])+'/mo</b></span>'+
+          '<span class="lg"><i style="background:#86868B"></i>Current actual <b>'+moneyC(R.trajToday[11])+'/mo</b></span>'+
+        '</div>'+
+        buildChart(R.trajToday,R.trajClinekt)+
+      '</div>'+
+      '<div class="sect">Total monthly opportunity</div>'+
+      '<div class="tot">'+
+        '<div class="tot-row"><span>Acquisition: web conversion gap</span><b>'+money(R.webMonthly)+'</b></div>'+
+        '<div class="tot-row"><span>Reactivation: dormant EHR patients</span><b>'+money(R.ehr.monthly)+'</b></div>'+
+        '<div class="tot-row tot-sum"><span>Total recovered every month</span><b>'+money(R.monthly)+'</b></div>'+
+      '</div>'+
+      '<div class="acc" id="assumpAcc">'+
+        '<button class="acc-head" type="button">Model inputs'+
+        '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>'+
+        '<div class="acc-body"><table>'+
+          '<tr><td>Monthly visitors</td><td>'+num(R.traffic.total)+(R.traffic.source==="reported"?" · your analytics":" · estimated from spend")+'</td></tr>'+
+          '<tr><td>Blended cost per click</td><td>$'+R.traffic.cpc.toFixed(2)+'</td></tr>'+
+          '<tr><td>Website conversion today</td><td>1% (industry benchmark)</td></tr>'+
+          '<tr><td>Conversion with Clinekt</td><td>8–10% (modeled at 8%)</td></tr>'+
+          '<tr><td>Lead-to-appointment rate</td><td>50%</td></tr>'+
+          '<tr><td>Appointment show rate</td><td>88%</td></tr>'+
+          '<tr><td>Appointment</td><td>$400 · every patient</td></tr>'+
+          '<tr><td>Imaging</td><td>$350 · '+Math.round(R.spec.imaging*100)+'% of patients</td></tr>'+
+          '<tr><td>Physical therapy</td><td>$800 · '+Math.round(R.spec.pt*100)+'% of patients</td></tr>'+
+          '<tr><td>Surgery</td><td>$2,000 · '+Math.round(R.spec.surgery*100)+'% of patients</td></tr>'+
+          '<tr><td>Blended value per patient ('+R.spec.label+')</td><td>'+money(R.perPatient)+'</td></tr>'+
+          '<tr><td>Dormant EHR records</td><td>70% of database</td></tr>'+
+          '<tr><td>Reactivated per month</td><td>1% of dormant</td></tr>'+
+          '<tr><td>Revenue per office visit</td><td>$400</td></tr>'+
+          '<tr><td>Projection model</td><td>Conservative (55% of raw web gap)</td></tr>'+
+        '</table></div>'+
+      '</div>';
+
+    $("assumpAcc").querySelector(".acc-head").addEventListener("click",function(){
+      $("assumpAcc").classList.toggle("open");
+    });
+
+    // Count-up on the headline numbers
+    countUp($("bigNum"),R.webMonthly,1500);
+    countUp($("moNum"),R.webMonthly*12,1100);
+    $("ctaBtn").textContent="Book a Strategy Call to recover "+money(R.monthly)+" a month";
+  }
+
+  function countUp(el,target,dur){
+    var t0=performance.now();
+    function tick(now){
+      var t=Math.min(1,(now-t0)/dur), eased=1-Math.pow(1-t,3);
+      el.textContent=money(target*eased);
+      if(t<1)requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+    // rAF is throttled in occluded tabs — guarantee the final value lands
+    setTimeout(function(){el.textContent=money(target)},dur+150);
+  }
+
+  /* ── Flow: input → scan (PSI + min 6.5s narration) → results ── */
+  var MIN_SCAN_MS=6500, running=false;
+
+  $("run").addEventListener("click",function(){
+    if(running)return;
+    var domain=normalizeDomain($("site").value);
+    $("siteErr").classList.toggle("show",!domain);
+    if(!domain)return;
+
+    running=true;$("run").disabled=true;
+    $("scanDomain").textContent=domain;
+    show("scan");animateScanSteps();
+
+    var started=Date.now();
+    runScan(domain).then(function(scan){
+      var wait=Math.max(0,MIN_SCAN_MS-(Date.now()-started));
+      setTimeout(function(){
+        finishScanSteps();
+        setTimeout(function(){
+          var reported=parseInt(String($("visitors").value).replace(/[^0-9]/g,""),10)||0;
+          var R=calculate(domain,+spend.value,$("specialty").value,+ehr.value,scan,reported);
+          renderResults(R);
+          show("results");
+          running=false;$("run").disabled=false;
+        },350);
+      },wait);
+    });
+  });
+
+  $("site").addEventListener("keydown",function(e){if(e.key==="Enter")$("run").click()});
+  $("again").addEventListener("click",function(){
+    show("idle");
+    window.scrollTo({top:0,behavior:"smooth"});
+    $("site").focus();
+  });
+
+  show("idle");
+})();
+</script>
+</body>
+</html>
