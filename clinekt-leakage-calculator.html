@@ -158,7 +158,7 @@
   .gapline{margin-top:12px;background:#FFF1F0;border:1px solid #FFD7D4;border-radius:var(--radius-sm);padding:12px 14px;font-size:13.5px;color:var(--ink-2);line-height:1.5}
 
   /* Combined total */
-  .tot{border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+  .tot{border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;margin-top:24px}
   .tot-row{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;font-size:13.5px}
   .tot-row+.tot-row{border-top:1px solid var(--line)}
   .tot-row span{color:var(--ink-2);font-weight:500}
@@ -167,8 +167,6 @@
   .tot-row.tot-sum span,.tot-row.tot-sum b{color:#fff}
   .tot-row.tot-sum b{font-size:16px}
   .gapline b{color:var(--red);font-weight:700;font-variant-numeric:tabular-nums}
-  .ehr-line{font-size:13px;color:var(--ink-2);line-height:1.55;margin:20px 0 12px;text-align:center}
-  .ehr-line b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
 
   /* Trajectory chart */
   .chart-wrap{margin-top:26px}
@@ -211,9 +209,17 @@
   .acc-body tr:last-child td{border-bottom:none}
   .acc-body td:last-child{text-align:right;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
 
-  .cta-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;font-family:inherit;font-size:15px;font-weight:600;letter-spacing:-0.01em;color:#fff;background:var(--blue);border:none;border-radius:var(--radius-sm);padding:14px 18px;cursor:pointer;text-decoration:none;transition:background .15s,transform .1s;margin-top:16px}
-  .cta-btn:hover{background:var(--blue-dark)}
-  .cta-btn:active{transform:scale(.985)}
+  /* Book a Demo, same treatment as the Clinekt widget's book-appointment CTA:
+     breathing shadow pulse plus a periodic shimmer sweep */
+  .cta-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:9px;min-height:58px;font-family:inherit;font-size:18px;font-weight:600;letter-spacing:-0.022em;color:#fff;background:#FF3B30;border:none;border-radius:14px;padding:18px 24px;cursor:pointer;text-decoration:none;margin-top:18px;position:relative;overflow:hidden;box-shadow:0 7px 20px rgba(255,59,48,.28);transition:transform .15s ease,background .15s ease,box-shadow .15s ease;animation:ctaBreathe 2.8s ease-in-out infinite;user-select:none;-webkit-tap-highlight-color:transparent}
+  .cta-btn::after{content:'';position:absolute;top:0;left:0;bottom:0;width:40%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.22) 50%,transparent 100%);animation:ctaShine 5s ease-in-out infinite;animation-delay:1.4s;pointer-events:none}
+  .cta-btn:hover{background:#C9241A;box-shadow:0 9px 26px rgba(255,59,48,.4);animation-play-state:paused}
+  .cta-btn:hover::after{animation-play-state:paused}
+  .cta-btn:active{transform:scale(.98);background:#C9241A;box-shadow:0 4px 12px rgba(255,59,48,.2)}
+  .cta-btn svg{transition:transform .2s ease}
+  .cta-btn:hover svg{transform:translateX(3px)}
+  @keyframes ctaBreathe{0%,100%{box-shadow:0 7px 20px rgba(255,59,48,.28)}50%{box-shadow:0 11px 30px rgba(255,59,48,.42)}}
+  @keyframes ctaShine{0%,72%{transform:translateX(-120%) skewX(-12deg)}100%{transform:translateX(260%) skewX(-12deg)}}
   .again-btn{width:100%;font-family:inherit;font-size:13px;font-weight:600;color:var(--ink-2);background:var(--field);border:1px solid var(--line-2);padding:10px;border-radius:99px;cursor:pointer;margin-top:10px;transition:background .15s}
   .again-btn:hover{background:#EAEAEF}
 
@@ -683,20 +689,18 @@
         '</div>'+
         buildChart(R.trajToday,R.trajClinekt)+
       '</div>'+
-      '<div class="ehr-line"><b>'+num(R.ehr.dormant)+'</b> of your '+num(R.ehr.records)+' patient records are dormant. '+
-        'Reactivating 1% a month is <b>'+num(R.ehr.reactivated)+'</b> visits at $400, worth <b>'+money(R.ehr.monthly)+'</b> a month.</div>'+
       '<div class="tot">'+
         '<div class="tot-row"><span>Acquisition: web conversion gap</span><b>'+money(R.webMonthly)+'</b></div>'+
         '<div class="tot-row"><span>Reactivation: dormant EHR patients</span><b>'+money(R.ehr.monthly)+'</b></div>'+
         '<div class="tot-row tot-sum"><span>Total recovered every month</span><b>'+money(R.monthly)+'</b></div>'+
       '</div>'+
-      '<a class="cta-btn" id="ctaBtn" href="https://clinekthealth.com/book-a-demo" target="_blank" rel="noopener">Book a Demo</a>'+
+      '<a class="cta-btn" id="ctaBtn" href="https://clinekthealth.com/book-a-demo" target="_blank" rel="noopener">Book a Demo'+
+        '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>'+
       '<button class="rerun" id="again">Run another analysis</button>';
 
     // Count-up on the headline numbers
     countUp($("bigNum"),R.webMonthly,1500);
     countUp($("moNum"),R.webMonthly*12,1100);
-    $("ctaBtn").textContent="Book a Demo to recover "+money(R.monthly)+" a month";
     $("again").addEventListener("click",function(){
       show("idle");
       $("site").focus();
