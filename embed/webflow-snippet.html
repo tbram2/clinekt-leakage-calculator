@@ -1,16 +1,14 @@
 <!--
-  Clinekt Leakage Calculator on Webflow, step by step
+  Clinekt Leakage Calculator on Webflow
 
-  1. Host the two files somewhere static (Cloudflare Pages, Netlify, or
-     GitHub Pages are free; Webflow itself cannot host .html/.js files):
-       clinekt-leakage-calculator.html
-       clinekt-leakage-embed.js
+  Hosted on GitHub Pages from github.com/tbram2/clinekt-leakage-calculator.
+  Pushing to main redeploys automatically in about a minute.
 
-  2. In the Webflow Designer, open the homepage, add a Section where the
+  1. In the Webflow Designer, open the homepage, add a Section where the
      calculator should live, drop an Embed element inside it, and paste the
-     snippet below. Replace YOUR-HOST with your hosting URL.
+     snippet below.
 
-  3. Publish. The calculator fills the section width (max 1180px, centered)
+  2. Publish. The calculator fills the section width (max 1180px, centered)
      and the iframe auto-sizes to the content, so it reads as a native
      section of the page. Webflow styles cannot touch it.
 
@@ -18,5 +16,5 @@
   the calculator background.
 -->
 <div id="clinekt-leakage-calculator"></div>
-<script src="https://YOUR-HOST/clinekt-leakage-embed.js"
-        data-src="https://YOUR-HOST/clinekt-leakage-calculator.html"></script>
+<script src="https://tbram2.github.io/clinekt-leakage-calculator/embed/clinekt-leakage-embed.js"
+        data-src="https://tbram2.github.io/clinekt-leakage-calculator/clinekt-leakage-calculator.html"></script>

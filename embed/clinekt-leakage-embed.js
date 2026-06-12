@@ -13,7 +13,7 @@
   "use strict";
   var script = document.currentScript;
   var src = (script && script.getAttribute("data-src")) ||
-    "https://YOUR-HOST/clinekt-leakage-calculator.html";
+    "https://tbram2.github.io/clinekt-leakage-calculator/clinekt-leakage-calculator.html";
 
   var target = document.getElementById("clinekt-leakage-calculator");
   if (!target && script) {
