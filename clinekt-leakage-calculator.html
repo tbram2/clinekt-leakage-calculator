@@ -26,20 +26,15 @@
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;letter-spacing:-0.01em}
-  .wrap{max-width:1180px;margin:0 auto;padding:48px 24px 80px}
-  .embedded .wrap{padding:8px 8px 32px}
+  .wrap{max-width:1180px;margin:0 auto;padding:32px 24px 40px}
+  .embedded .wrap{padding:48px 8px 12px}
 
-  /* Header, centered to match clinekthealth.com section titles */
-  .head{margin:0 auto 44px;max-width:780px;text-align:center}
-  .head h1{font-size:clamp(36px,5vw,48px);font-weight:400;letter-spacing:-0.02em;line-height:1.08;color:#231F23;margin-bottom:14px}
-  .head h1 .accent{color:var(--blue)}
-  .head p{font-size:20px;color:rgba(35,31,35,.64);font-weight:400;line-height:1.5;max-width:620px;margin:0 auto 20px}
-  .badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-  .badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--ink-2);background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 13px;letter-spacing:-0.005em}
-  .badge svg{flex-shrink:0}
-
-  .grid{display:grid;grid-template-columns:1fr 460px;gap:24px;align-items:start}
+  .grid{display:grid;grid-template-columns:400px 1fr;gap:24px;align-items:start}
   @media(max-width:980px){.grid{grid-template-columns:1fr}.out-col{position:static!important}}
+
+  /* Two-column layout inside the results panel */
+  .res-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;margin-top:6px}
+  @media(max-width:1140px){.res-grid{grid-template-columns:1fr}}
 
   /* Step card */
   .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 22px;margin-bottom:16px;box-shadow:var(--shadow)}
@@ -80,7 +75,7 @@
   .dd-opt.sel svg{visibility:visible}
 
   /* Spend slider */
-  .spend-val{font-size:30px;font-weight:700;letter-spacing:-0.03em;color:var(--ink);margin-bottom:12px;font-variant-numeric:tabular-nums}
+  .spend-val{font-size:22px;font-weight:700;letter-spacing:-0.02em;color:var(--ink);margin-bottom:10px;font-variant-numeric:tabular-nums}
   .spend-val small{font-size:14px;font-weight:500;color:var(--ink-3);letter-spacing:-0.01em;margin-left:2px}
   input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:5px;border-radius:99px;outline:none;cursor:pointer;
     background:linear-gradient(90deg,var(--blue) var(--pct,15%),var(--line) var(--pct,15%))}
@@ -90,18 +85,17 @@
   .scale{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-3);font-weight:500;margin-top:8px}
 
   /* Run button */
-  .run-btn{width:100%;font-family:inherit;font-size:16px;font-weight:600;letter-spacing:-0.01em;color:#fff;background:var(--blue);border:none;border-radius:var(--radius-sm);padding:15px 20px;cursor:pointer;transition:background .15s,transform .1s;display:flex;align-items:center;justify-content:center;gap:8px}
+  .run-btn{width:100%;font-family:inherit;font-size:16px;font-weight:600;letter-spacing:-0.01em;color:#fff;background:var(--blue);border:none;border-radius:var(--radius-sm);padding:15px 20px;cursor:pointer;transition:background .15s,transform .1s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:6px}
   .run-btn:hover{background:var(--blue-dark)}
   .run-btn:active{transform:scale(.985)}
   .run-btn:disabled{background:var(--line-2);cursor:default}
-  .run-note{font-size:12.5px;color:var(--ink-3);text-align:center;margin-top:12px}
+  .rerun{display:block;margin:10px auto 0;background:none;border:none;font-family:inherit;font-size:12.5px;font-weight:600;color:var(--ink-3);cursor:pointer;padding:6px 12px;border-radius:99px;transition:color .15s}
+  .rerun:hover{color:var(--blue)}
 
   /* Output column */
   .out-col{position:sticky;top:24px;display:flex;flex-direction:column;gap:16px}
   .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-  .panel-head{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px}
-  .panel-head h3{font-size:16px;font-weight:600;letter-spacing:-0.02em}
-  .panel-body{padding:0 20px 20px}
+  .panel-body{padding:22px}
 
   /* Idle state */
   .idle{text-align:center;padding:36px 24px 42px;color:var(--ink-3)}
@@ -235,64 +229,18 @@
 <body>
 <div class="wrap">
 
-  <div class="head">
-    <h1>Clinekt&nbsp;<span class="accent">Leakage&nbsp;Calculator</span></h1>
-    <p>See what converting only 1% of your website visitors is costing you every month, and what’s sitting dormant in your EHR.</p>
-    <div class="badges">
-      <span class="badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0071FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Live website scan</span>
-      <span class="badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>HIPAA Secure</span>
-      <span class="badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0071FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Results in ~20 seconds</span>
-    </div>
-  </div>
-
   <div class="grid">
 
-    <!-- ════════ INPUT STEPS ════════ -->
+    <!-- ════════ INPUTS, one compact card ════════ -->
     <div class="cfg-col">
-
-      <!-- STEP 1 — Website -->
       <div class="step">
-        <div class="step-head">
-          <div class="step-num">1</div>
-          <div class="step-title">Practice website</div>
-        </div>
-        <div style="height:14px"></div>
         <div class="field">
-          <label>Website <span class="req">*</span></label>
+          <label>Practice website <span class="req">*</span></label>
           <input type="url" id="site" placeholder="yourpractice.com" autocomplete="off" />
           <div class="err" id="siteErr">Enter a valid website, like summitortho.com</div>
         </div>
-        <div class="field" style="margin-top:20px">
-          <label>Monthly website visitors</label>
-          <div class="spend-val" id="visitorsVal">3,000<small>/month</small></div>
-          <input type="range" id="visitors" min="0" max="25000" step="250" value="3000" />
-          <div class="scale"><span>0</span><span>12,500</span><span>25,000+</span></div>
-        </div>
-      </div>
-
-      <!-- STEP 2 — Marketing spend -->
-      <div class="step">
-        <div class="step-head">
-          <div class="step-num">2</div>
-          <div class="step-title">Marketing spend</div>
-        </div>
-        <div class="step-sub">Across ads, social, SEO, and agencies.</div>
         <div class="field">
-          <div class="spend-val" id="spendVal">$7,500<small>/month</small></div>
-          <input type="range" id="spend" min="0" max="30000" step="500" value="7500" />
-          <div class="scale"><span>$0</span><span>$15,000</span><span>$30,000+</span></div>
-        </div>
-      </div>
-
-      <!-- STEP 3 — Specialty -->
-      <div class="step">
-        <div class="step-head">
-          <div class="step-num">3</div>
-          <div class="step-title">Specialty</div>
-        </div>
-        <div style="height:14px"></div>
-        <div class="field">
-          <label>Practice type</label>
+          <label>Specialty</label>
           <div class="dd" id="specialtyDd">
             <button type="button" class="dd-btn" id="ddBtn" aria-haspopup="listbox" aria-expanded="false">
               <span id="ddLabel">Orthopedics</span>
@@ -302,45 +250,34 @@
           </div>
           <input type="hidden" id="specialty" value="orthopedics" />
         </div>
-      </div>
-
-      <!-- STEP 4 — Patient database -->
-      <div class="step">
-        <div class="step-head">
-          <div class="step-num">4</div>
-          <div class="step-title">Patient database</div>
-        </div>
-        <div class="step-sub">Unique patient records in your EHR or PM system.</div>
         <div class="field">
+          <label>Monthly website visitors</label>
+          <div class="spend-val" id="visitorsVal">3,000<small>/month</small></div>
+          <input type="range" id="visitors" min="0" max="25000" step="250" value="3000" />
+          <div class="scale"><span>0</span><span>12,500</span><span>25,000+</span></div>
+        </div>
+        <div class="field">
+          <label>Monthly marketing spend</label>
+          <div class="spend-val" id="spendVal">$7,500<small>/month</small></div>
+          <input type="range" id="spend" min="0" max="30000" step="500" value="7500" />
+          <div class="scale"><span>$0</span><span>$15,000</span><span>$30,000+</span></div>
+        </div>
+        <div class="field">
+          <label>Patient records in your EHR</label>
           <div class="spend-val" id="ehrVal">12,000<small> records</small></div>
           <input type="range" id="ehr" min="1000" max="100000" step="1000" value="12000" />
           <div class="scale"><span>1K</span><span>50K</span><span>100K+</span></div>
         </div>
-      </div>
-
-      <!-- STEP 5 — Run -->
-      <div class="step">
-        <div class="step-head">
-          <div class="step-num">5</div>
-          <div class="step-title">Run the analysis</div>
-        </div>
-        <div style="height:14px"></div>
         <button class="run-btn" id="run">
           Analyze Revenue Leakage
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
-        <div class="run-note">Free • no login • nothing installed on your site</div>
       </div>
-
     </div><!-- /cfg-col -->
 
     <!-- ════════ ANALYSIS OUTPUT ════════ -->
     <div class="out-col">
       <div class="panel">
-        <div class="panel-head">
-          <h3>Analysis</h3>
-        </div>
-
         <!-- Idle -->
         <div id="stIdle">
           <div class="idle">
@@ -372,19 +309,9 @@
         </div>
       </div>
 
-      <div class="panel" id="ctaPanel" style="display:none">
-        <div class="panel-body" style="padding-top:18px">
-          <div style="font-size:15px;font-weight:600;letter-spacing:-0.01em;margin-bottom:4px">Want this revenue back?</div>
-          <div style="font-size:13px;color:var(--ink-2)">Clinekt captures, follows up with, and schedules the patients your site is losing.</div>
-          <a class="cta-btn" id="ctaBtn" href="https://www.clinekthealth.com/contact" target="_blank" rel="noopener">Book a Strategy Call</a>
-          <button class="again-btn" id="again">Run another analysis</button>
-        </div>
-      </div>
     </div><!-- /out-col -->
 
   </div><!-- /grid -->
-
-  <div class="foot">Powered by <a href="https://clinekthealth.com" target="_blank" rel="noopener">Clinekt Health</a></div>
 </div>
 
 <script>
@@ -698,7 +625,6 @@
     $("stIdle").style.display=state==="idle"?"":"none";
     $("stScan").style.display=state==="scan"?"":"none";
     $("stResults").style.display=state==="results"?"":"none";
-    $("ctaPanel").style.display=state==="results"?"":"none";
   }
 
   var stepTimer=null;
@@ -738,39 +664,39 @@
         '<div class="big-num" id="bigNum">$0</div>'+
         '<div class="big-sub">That’s <b id="moNum">$0</b> a year left on the table at <b>'+R.domain+'</b></div>'+
       '</div>'+
-      '<div class="sect">Today vs with Clinekt</div>'+
-      '<div class="score">'+
-        '<div class="score-row score-head"><div>'+num(R.traffic.total)+' monthly visitors</div><div>Today</div><div>With Clinekt</div></div>'+
-        scoreRow('Website conversion','1%','8–10%')+
-        scoreRow('New patients a month',num(R.patientsToday),num(R.patientsClinekt))+
-        (R.cacToday!=null?scoreRow('Marketing cost per patient',money(R.cacToday),money(R.cacClinekt)):'')+
-        scoreRow('Reactivated EHR visits','0',num(R.ehr.reactivated))+
-        '<div class="score-row score-total"><div class="score-label">Monthly revenue</div>'+
-          '<div class="score-bad">'+money(R.revToday)+'</div>'+
-          '<div class="score-good">'+money(R.revClinekt)+'</div></div>'+
-      '</div>'+
-      '<div class="gapline">You’re behind <b>'+num(R.gapPatients)+' new patients</b> and <b>'+money(R.monthly)+'</b> every month.</div>'+
-      '<div class="sect">Reactivation: dormant patients in your EHR</div>'+
-      '<div class="ehr-line"><b>'+num(R.ehr.dormant)+'</b> of your '+num(R.ehr.records)+' patient records are dormant. '+
-        'Reactivating 1% a month is <b>'+num(R.ehr.reactivated)+'</b> visits at $400.</div>'+
-      '<div class="tiles" style="padding-top:10px">'+
-        '<div class="tile bad"><b>'+num(R.ehr.dormant)+'</b><span>Dormant patient records</span></div>'+
-        '<div class="tile good"><b>'+money(R.ehr.monthly)+'</b><span>Reactivation revenue / mo</span></div>'+
-      '</div>'+
-      '<div class="sect">Monthly revenue: current actual vs with Clinekt</div>'+
-      '<div class="chart-wrap">'+
-        '<div class="legend">'+
-          '<span class="lg"><i style="background:#0071FF"></i>With Clinekt <b>'+moneyC(R.trajClinekt[11])+'/mo</b></span>'+
-          '<span class="lg"><i style="background:#86868B"></i>Current actual <b>'+moneyC(R.trajToday[11])+'/mo</b></span>'+
+      '<div class="res-grid">'+
+        '<div>'+
+          '<div class="score">'+
+            '<div class="score-row score-head"><div>'+num(R.traffic.total)+' monthly visitors</div><div>Today</div><div>With Clinekt</div></div>'+
+            scoreRow('Website conversion','1%','8–10%')+
+            scoreRow('New patients a month',num(R.patientsToday),num(R.patientsClinekt))+
+            (R.cacToday!=null?scoreRow('Marketing cost per patient',money(R.cacToday),money(R.cacClinekt)):'')+
+            scoreRow('Reactivated EHR visits','0',num(R.ehr.reactivated))+
+            '<div class="score-row score-total"><div class="score-label">Monthly revenue</div>'+
+              '<div class="score-bad">'+money(R.revToday)+'</div>'+
+              '<div class="score-good">'+money(R.revClinekt)+'</div></div>'+
+          '</div>'+
+          '<div class="gapline">You’re behind <b>'+num(R.gapPatients)+' new patients</b> and <b>'+money(R.monthly)+'</b> every month.</div>'+
         '</div>'+
-        buildChart(R.trajToday,R.trajClinekt)+
+        '<div>'+
+          '<div class="chart-wrap">'+
+            '<div class="legend">'+
+              '<span class="lg"><i style="background:#0071FF"></i>With Clinekt <b>'+moneyC(R.trajClinekt[11])+'/mo</b></span>'+
+              '<span class="lg"><i style="background:#86868B"></i>Current actual <b>'+moneyC(R.trajToday[11])+'/mo</b></span>'+
+            '</div>'+
+            buildChart(R.trajToday,R.trajClinekt)+
+          '</div>'+
+          '<div class="ehr-line" style="margin-top:14px"><b>'+num(R.ehr.dormant)+'</b> of your '+num(R.ehr.records)+' patient records are dormant. '+
+            'Reactivating 1% a month is <b>'+num(R.ehr.reactivated)+'</b> visits at $400, worth <b>'+money(R.ehr.monthly)+'</b> a month.</div>'+
+        '</div>'+
       '</div>'+
-      '<div class="sect">Total monthly opportunity</div>'+
-      '<div class="tot">'+
+      '<div class="tot" style="margin-top:18px">'+
         '<div class="tot-row"><span>Acquisition: web conversion gap</span><b>'+money(R.webMonthly)+'</b></div>'+
         '<div class="tot-row"><span>Reactivation: dormant EHR patients</span><b>'+money(R.ehr.monthly)+'</b></div>'+
         '<div class="tot-row tot-sum"><span>Total recovered every month</span><b>'+money(R.monthly)+'</b></div>'+
       '</div>'+
+      '<a class="cta-btn" id="ctaBtn" href="https://www.clinekthealth.com/contact" target="_blank" rel="noopener">Book a Demo</a>'+
+      '<button class="rerun" id="again">Run another analysis</button>'+
       '<div class="acc" id="assumpAcc">'+
         '<button class="acc-head" type="button">Model inputs'+
         '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>'+
@@ -800,7 +726,11 @@
     // Count-up on the headline numbers
     countUp($("bigNum"),R.webMonthly,1500);
     countUp($("moNum"),R.webMonthly*12,1100);
-    $("ctaBtn").textContent="Book a Strategy Call to recover "+money(R.monthly)+" a month";
+    $("ctaBtn").textContent="Book a Demo to recover "+money(R.monthly)+" a month";
+    $("again").addEventListener("click",function(){
+      show("idle");
+      $("site").focus();
+    });
   }
 
   function countUp(el,target,dur){
@@ -844,11 +774,6 @@
   });
 
   $("site").addEventListener("keydown",function(e){if(e.key==="Enter")$("run").click()});
-  $("again").addEventListener("click",function(){
-    show("idle");
-    window.scrollTo({top:0,behavior:"smooth"});
-    $("site").focus();
-  });
 
   show("idle");
 })();
