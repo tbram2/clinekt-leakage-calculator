@@ -705,6 +705,7 @@
       show("idle");
       $("site").focus();
     });
+    $("ctaBtn").addEventListener("click",function(){sendLead("book_demo_click",R)});
   }
 
   function countUp(el,target,dur){
@@ -717,6 +718,41 @@
     requestAnimationFrame(tick);
     // rAF is throttled in occluded tabs — guarantee the final value lands
     setTimeout(function(){el.textContent=money(target)},dur+150);
+  }
+
+  /* ── Lead capture ─────────────────────────────────────────────
+     Every analysis identifies the practice (their own website) plus
+     their economics. Fire-and-forget to Webflow Forms so each run
+     lands in the site's Form Submissions panel as a lead. A custom
+     CRM/Zapier endpoint can override via ?leadhook= (the embed
+     loader passes data-lead-webhook through). Never blocks the UI. */
+  var LEAD_HOOK=new URLSearchParams(location.search).get("leadhook")||"";
+  var WEBFLOW_FORM="https://webflow.com/api/v1/form/698f93a6f3fe10ac9229e2b4";
+  function sendLead(event,R){
+    try{
+      var data={
+        event:event,
+        website:R.domain,
+        specialty:R.spec.label,
+        monthly_visitors:R.traffic.total,
+        monthly_spend:R.spend,
+        ehr_records:R.ehr.records,
+        web_gap_monthly:R.webMonthly,
+        reactivation_monthly:R.ehr.monthly,
+        total_monthly:R.monthly,
+        page:window.parent!==window?document.referrer:location.href
+      };
+      if(LEAD_HOOK){
+        fetch(LEAD_HOOK,{method:"POST",headers:{"Content-Type":"application/json"},
+          body:JSON.stringify(data),keepalive:true}).catch(function(){});
+        return;
+      }
+      var body=new URLSearchParams();
+      body.append("name","Leakage Calculator");
+      body.append("source",data.page||"");
+      Object.keys(data).forEach(function(k){body.append("fields["+k+"]",String(data[k]))});
+      fetch(WEBFLOW_FORM,{method:"POST",body:body,keepalive:true}).catch(function(){});
+    }catch(e){}
   }
 
   /* ── Flow: input → scan (PSI + min 6.5s narration) → results ── */
@@ -740,6 +776,7 @@
         setTimeout(function(){
           var R=calculate(domain,+spend.value,$("specialty").value,+ehr.value,scan,+visitors.value);
           renderResults(R);
+          sendLead("analysis_run",R);
           show("results");
           running=false;$("run").disabled=false;
         },350);

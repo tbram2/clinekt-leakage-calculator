@@ -23,7 +23,10 @@
   if (!target || target.querySelector("iframe")) return;
 
   var frame = document.createElement("iframe");
-  frame.src = src + (src.indexOf("?") > -1 ? "&" : "?") + "embed=1";
+  var params = "embed=1";
+  var leadHook = script && script.getAttribute("data-lead-webhook");
+  if (leadHook) params += "&leadhook=" + encodeURIComponent(leadHook);
+  frame.src = src + (src.indexOf("?") > -1 ? "&" : "?") + params;
   frame.title = "Clinekt Leakage Calculator";
   frame.loading = "lazy";
   frame.setAttribute("scrolling", "no");
