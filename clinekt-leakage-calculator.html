@@ -727,7 +727,11 @@
      CRM/Zapier endpoint can override via ?leadhook= (the embed
      loader passes data-lead-webhook through). Never blocks the UI. */
   var LEAD_HOOK=new URLSearchParams(location.search).get("leadhook")||"";
-  var WEBFLOW_FORM="https://webflow.com/api/v1/form/698f93a6f3fe10ac9229e2b4";
+  // formdata endpoint with a real form's page/element ids so submissions
+  // persist and are retrievable via the Data API (legacy v1 discards them)
+  var WEBFLOW_FORM="https://formdata.webflow.com/api/v1/form/698f93a6f3fe10ac9229e2b4";
+  var WF_PAGE_ID="698f93a7f3fe10ac9229e7fc";
+  var WF_ELEMENT_ID="2537b3c8-a4ee-a1b5-f95e-dec209ce3a62";
   function sendLead(event,R){
     try{
       var data={
@@ -749,7 +753,11 @@
       }
       var body=new URLSearchParams();
       body.append("name","Leakage Calculator");
+      body.append("pageId",WF_PAGE_ID);
+      body.append("elementId",WF_ELEMENT_ID);
       body.append("source",data.page||"");
+      body.append("test","false");
+      body.append("dolphin","false");
       Object.keys(data).forEach(function(k){body.append("fields["+k+"]",String(data[k]))});
       fetch(WEBFLOW_FORM,{method:"POST",body:body,keepalive:true}).catch(function(){});
     }catch(e){}
