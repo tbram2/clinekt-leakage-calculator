@@ -26,7 +26,8 @@
   frame.src = src + (src.indexOf("?") > -1 ? "&" : "?") + "embed=1";
   frame.title = "Clinekt Leakage Calculator";
   frame.loading = "lazy";
-  frame.style.cssText = "width:100%;border:0;display:block;min-height:760px;background:transparent";
+  frame.setAttribute("scrolling", "no");
+  frame.style.cssText = "width:100%;border:0;display:block;min-height:760px;background:transparent;overflow:hidden";
   target.appendChild(frame);
 
   var frameOrigin;
@@ -36,7 +37,7 @@
     if (frameOrigin && e.origin !== frameOrigin) return;
     if (e.source !== frame.contentWindow) return;
     if (e.data && typeof e.data.clinektLeakageHeight === "number") {
-      frame.style.height = Math.ceil(e.data.clinektLeakageHeight) + "px";
+      frame.style.height = (Math.ceil(e.data.clinektLeakageHeight) + 2) + "px";
       frame.style.minHeight = "0";
     }
   });

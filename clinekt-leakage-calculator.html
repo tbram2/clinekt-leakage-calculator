@@ -321,6 +321,9 @@
      height to the parent so the iframe always fits exactly. */
   if(new URLSearchParams(location.search).get("embed")==="1"){
     document.body.classList.add("embedded");
+    // The parent iframe tracks our height, so this document never scrolls
+    document.documentElement.style.overflow="hidden";
+    document.body.style.overflow="hidden";
   }
   if(window.parent!==window){
     var lastHeight=0;
