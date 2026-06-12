@@ -45,7 +45,7 @@
   function submitLead(d) {
     try {
       var body = new URLSearchParams();
-      body.append("name", "Leakage Calculator");
+      body.append("name", "clinectleakagefill");
       body.append("pageId", WF_PAGE_ID);
       body.append("elementId", WF_ELEMENT_ID);
       body.append("source", location.href);
