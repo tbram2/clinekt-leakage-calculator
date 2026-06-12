@@ -26,15 +26,12 @@
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;letter-spacing:-0.01em}
-  .wrap{max-width:1180px;margin:0 auto;padding:32px 24px 40px}
-  .embedded .wrap{padding:48px 8px 12px}
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 24px 28px}
+  .embedded .wrap{padding:44px 8px 0}
 
   .grid{display:grid;grid-template-columns:400px 1fr;gap:24px;align-items:start}
   @media(max-width:980px){.grid{grid-template-columns:1fr}.out-col{position:static!important}}
 
-  /* Two-column layout inside the results panel */
-  .res-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;margin-top:6px}
-  @media(max-width:1140px){.res-grid{grid-template-columns:1fr}}
 
   /* Step card */
   .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 22px;margin-bottom:16px;box-shadow:var(--shadow)}
@@ -120,10 +117,10 @@
   .fade{animation:fade .45s ease-out}
   @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
-  .big{text-align:center;padding:14px 0 10px}
-  .big-label{font-size:14px;font-weight:600;color:var(--red);margin-bottom:8px;letter-spacing:-0.005em}
-  .big-num{font-size:58px;font-weight:700;letter-spacing:-0.035em;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
-  .big-sub{font-size:14px;color:var(--ink-2);margin-top:12px}
+  .big{text-align:center;padding:18px 0 26px}
+  .big-label{font-size:14px;font-weight:600;color:var(--red);margin-bottom:10px;letter-spacing:-0.005em}
+  .big-num{font-size:64px;font-weight:700;letter-spacing:-0.035em;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+  .big-sub{font-size:14px;color:var(--ink-2);margin-top:14px}
   .big-sub b{color:var(--ink);font-weight:600}
 
   .tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding-top:14px}
@@ -144,9 +141,9 @@
 
   /* Today vs with Clinekt scorecard */
   .score{border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
-  .score-row{display:grid;grid-template-columns:1.25fr 1fr 1.1fr;align-items:stretch}
+  .score-row{display:grid;grid-template-columns:2fr 1fr 1fr;align-items:stretch}
   .score-row+.score-row{border-top:1px solid var(--line)}
-  .score-row>div{padding:11px 12px;font-size:13px;display:flex;align-items:center}
+  .score-row>div{padding:13px 16px;font-size:13.5px;display:flex;align-items:center}
   .score-row>div:nth-child(2){justify-content:flex-end;text-align:right}
   .score-row>div:nth-child(3){justify-content:flex-end;text-align:right;background:var(--blue-50)}
   .score-head>div{font-size:12px;font-weight:700;color:var(--ink-3);padding:9px 12px}
@@ -170,11 +167,11 @@
   .tot-row.tot-sum span,.tot-row.tot-sum b{color:#fff}
   .tot-row.tot-sum b{font-size:16px}
   .gapline b{color:var(--red);font-weight:700;font-variant-numeric:tabular-nums}
-  .ehr-line{font-size:13px;color:var(--ink-2);line-height:1.55}
+  .ehr-line{font-size:13px;color:var(--ink-2);line-height:1.55;margin:20px 0 12px;text-align:center}
   .ehr-line b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
 
   /* Trajectory chart */
-  .chart-wrap{padding-top:2px}
+  .chart-wrap{margin-top:26px}
   .legend{display:flex;gap:14px;margin-bottom:10px}
   .lg{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--ink-2)}
   .lg i{width:14px;height:3.5px;border-radius:99px;flex-shrink:0}
@@ -531,7 +528,7 @@
   /* Gradient-fill trajectory chart: current actual (gray) vs with-Clinekt
      projection (blue), cumulative over 12 months. Pure inline SVG. */
   function buildChart(cumA,cumB){ // A = today, B = with Clinekt
-    var W=440,H=216,padL=10,padR=72,padT=16,padB=24;
+    var W=720,H=200,padL=12,padR=86,padT=16,padB=26;
     var iw=W-padL-padR,ih=H-padT-padB;
     var max=cumB[11]*1.05;
     function x(i){return +(padL+iw*i/11).toFixed(1)}
@@ -540,14 +537,15 @@
     function area(arr){return line(arr)+" L"+x(11)+" "+(padT+ih)+" L"+x(0)+" "+(padT+ih)+" Z"}
 
     var grid="";
-    [0.25,0.5,0.75,1].forEach(function(f){
+    [0.5,1].forEach(function(f){
       var gy=y(max*f);
       grid+='<line class="gline" x1="'+padL+'" y1="'+gy+'" x2="'+(padL+iw)+'" y2="'+gy+'"/>'+
-            '<text class="gtxt" x="'+(padL+iw+5)+'" y="'+(gy+3)+'">'+moneyC(max*f)+'</text>';
+            (f===1?"":'<text class="gtxt" x="'+(padL+iw+6)+'" y="'+(gy+3)+'">'+moneyC(max*f)+'</text>');
     });
     var months="";
-    [[0,"M1"],[2,"M3"],[5,"M6"],[8,"M9"],[11,"M12"]].forEach(function(m){
-      months+='<text class="mtxt" x="'+x(m[0])+'" y="'+(H-8)+'" text-anchor="middle">'+m[1]+'</text>';
+    [[0,"Month 1"],[5,"Month 6"],[11,"Month 12"]].forEach(function(m,idx){
+      var anchor=idx===0?"start":idx===2?"end":"middle";
+      months+='<text class="mtxt" x="'+x(m[0])+'" y="'+(H-8)+'" text-anchor="'+anchor+'">'+m[1]+'</text>';
     });
 
     return '<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">'+
@@ -664,64 +662,33 @@
         '<div class="big-num" id="bigNum">$0</div>'+
         '<div class="big-sub">That’s <b id="moNum">$0</b> a year left on the table at <b>'+R.domain+'</b></div>'+
       '</div>'+
-      '<div class="res-grid">'+
-        '<div>'+
-          '<div class="score">'+
-            '<div class="score-row score-head"><div>'+num(R.traffic.total)+' monthly visitors</div><div>Today</div><div>With Clinekt</div></div>'+
-            scoreRow('Website conversion','1%','8–10%')+
-            scoreRow('New patients a month',num(R.patientsToday),num(R.patientsClinekt))+
-            (R.cacToday!=null?scoreRow('Marketing cost per patient',money(R.cacToday),money(R.cacClinekt)):'')+
-            scoreRow('Reactivated EHR visits','0',num(R.ehr.reactivated))+
-            '<div class="score-row score-total"><div class="score-label">Monthly revenue</div>'+
-              '<div class="score-bad">'+money(R.revToday)+'</div>'+
-              '<div class="score-good">'+money(R.revClinekt)+'</div></div>'+
-          '</div>'+
-          '<div class="gapline">You’re behind <b>'+num(R.gapPatients)+' new patients</b> and <b>'+money(R.monthly)+'</b> every month.</div>'+
-        '</div>'+
-        '<div>'+
-          '<div class="chart-wrap">'+
-            '<div class="legend">'+
-              '<span class="lg"><i style="background:#0071FF"></i>With Clinekt <b>'+moneyC(R.trajClinekt[11])+'/mo</b></span>'+
-              '<span class="lg"><i style="background:#86868B"></i>Current actual <b>'+moneyC(R.trajToday[11])+'/mo</b></span>'+
-            '</div>'+
-            buildChart(R.trajToday,R.trajClinekt)+
-          '</div>'+
-          '<div class="ehr-line" style="margin-top:14px"><b>'+num(R.ehr.dormant)+'</b> of your '+num(R.ehr.records)+' patient records are dormant. '+
-            'Reactivating 1% a month is <b>'+num(R.ehr.reactivated)+'</b> visits at $400, worth <b>'+money(R.ehr.monthly)+'</b> a month.</div>'+
-        '</div>'+
+      '<div class="score">'+
+        '<div class="score-row score-head"><div>'+num(R.traffic.total)+' monthly visitors</div><div>Today</div><div>With Clinekt</div></div>'+
+        scoreRow('Website conversion','1%','8–10%')+
+        scoreRow('New patients a month',num(R.patientsToday),num(R.patientsClinekt))+
+        (R.cacToday!=null?scoreRow('Marketing cost per patient',money(R.cacToday),money(R.cacClinekt)):'')+
+        scoreRow('Reactivated EHR visits','0',num(R.ehr.reactivated))+
+        '<div class="score-row score-total"><div class="score-label">Monthly revenue</div>'+
+          '<div class="score-bad">'+money(R.revToday)+'</div>'+
+          '<div class="score-good">'+money(R.revClinekt)+'</div></div>'+
       '</div>'+
-      '<div class="tot" style="margin-top:18px">'+
+      '<div class="gapline">You’re behind <b>'+num(R.gapPatients)+' new patients</b> and <b>'+money(R.monthly)+'</b> every month.</div>'+
+      '<div class="chart-wrap">'+
+        '<div class="legend">'+
+          '<span class="lg"><i style="background:#0071FF"></i>With Clinekt <b>'+moneyC(R.trajClinekt[11])+'/mo</b></span>'+
+          '<span class="lg"><i style="background:#86868B"></i>Current actual <b>'+moneyC(R.trajToday[11])+'/mo</b></span>'+
+        '</div>'+
+        buildChart(R.trajToday,R.trajClinekt)+
+      '</div>'+
+      '<div class="ehr-line"><b>'+num(R.ehr.dormant)+'</b> of your '+num(R.ehr.records)+' patient records are dormant. '+
+        'Reactivating 1% a month is <b>'+num(R.ehr.reactivated)+'</b> visits at $400, worth <b>'+money(R.ehr.monthly)+'</b> a month.</div>'+
+      '<div class="tot">'+
         '<div class="tot-row"><span>Acquisition: web conversion gap</span><b>'+money(R.webMonthly)+'</b></div>'+
         '<div class="tot-row"><span>Reactivation: dormant EHR patients</span><b>'+money(R.ehr.monthly)+'</b></div>'+
         '<div class="tot-row tot-sum"><span>Total recovered every month</span><b>'+money(R.monthly)+'</b></div>'+
       '</div>'+
       '<a class="cta-btn" id="ctaBtn" href="https://www.clinekthealth.com/contact" target="_blank" rel="noopener">Book a Demo</a>'+
-      '<button class="rerun" id="again">Run another analysis</button>'+
-      '<div class="acc" id="assumpAcc">'+
-        '<button class="acc-head" type="button">Model inputs'+
-        '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>'+
-        '<div class="acc-body"><table>'+
-          '<tr><td>Monthly visitors</td><td>'+num(R.traffic.total)+'</td></tr>'+
-          '<tr><td>Blended cost per click</td><td>$'+R.traffic.cpc.toFixed(2)+'</td></tr>'+
-          '<tr><td>Website conversion today</td><td>1% (industry benchmark)</td></tr>'+
-          '<tr><td>Conversion with Clinekt</td><td>8–10% (modeled at 8%)</td></tr>'+
-          '<tr><td>Lead-to-appointment rate</td><td>50%</td></tr>'+
-          '<tr><td>Appointment show rate</td><td>88%</td></tr>'+
-          '<tr><td>Appointment</td><td>$400 · every patient</td></tr>'+
-          '<tr><td>Imaging</td><td>$350 · '+Math.round(R.spec.imaging*100)+'% of patients</td></tr>'+
-          '<tr><td>Physical therapy</td><td>$800 · '+Math.round(R.spec.pt*100)+'% of patients</td></tr>'+
-          '<tr><td>Surgery</td><td>$2,000 · '+Math.round(R.spec.surgery*100)+'% of patients</td></tr>'+
-          '<tr><td>Blended value per patient ('+R.spec.label+')</td><td>'+money(R.perPatient)+'</td></tr>'+
-          '<tr><td>Dormant EHR records</td><td>70% of database</td></tr>'+
-          '<tr><td>Reactivated per month</td><td>1% of dormant</td></tr>'+
-          '<tr><td>Revenue per office visit</td><td>$400</td></tr>'+
-          '<tr><td>Projection model</td><td>Conservative (55% of raw web gap)</td></tr>'+
-        '</table></div>'+
-      '</div>';
-
-    $("assumpAcc").querySelector(".acc-head").addEventListener("click",function(){
-      $("assumpAcc").classList.toggle("open");
-    });
+      '<button class="rerun" id="again">Run another analysis</button>';
 
     // Count-up on the headline numbers
     countUp($("bigNum"),R.webMonthly,1500);
