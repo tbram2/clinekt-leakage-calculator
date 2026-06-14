@@ -10,9 +10,9 @@
   /* ─────────────────────────────────────────────────────────────
      Clinekt Leakage Calculator
      Apple-clean, sequential numbered steps. Self-contained:
-     no build step, inline CSS/JS. Scans the prospect's site live
-     (Google Lighthouse), models traffic from marketing spend, and
-     presents the revenue leaking out of their practice each month.
+     no build step, inline CSS/JS. Runs a live audit of the prospect's
+     site, models traffic from marketing spend, and presents the
+     revenue leaking out of their practice each month.
      Same design language as the Clinekt Agent Code Generator.
      ───────────────────────────────────────────────────────────── */
   :root{
@@ -100,19 +100,32 @@
   .idle-icon{width:56px;height:56px;border-radius:16px;background:var(--field);display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
   .idle p{font-size:13.5px;max-width:260px;margin:0 auto;line-height:1.5}
 
-  /* Scanning state */
-  .scan-steps{list-style:none;display:flex;flex-direction:column;gap:2px;padding:4px 0 8px}
-  .scan-step{display:flex;align-items:flex-start;gap:12px;padding:9px 10px;border-radius:10px;transition:background .25s;opacity:.45}
+  /* ── Scanning state · refined progress bar + minimal checklist ── */
+  .scan-head{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:500;color:var(--ink-2);padding:0 1px 11px}
+  .scan-head-txt{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .scan-head code{font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;font-weight:600;color:var(--ink)}
+  .scan-pulse{width:6px;height:6px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px var(--blue-50);flex-shrink:0;animation:scanPulse 1.6s ease-in-out infinite}
+  @keyframes scanPulse{0%,100%{opacity:1}50%{opacity:.45}}
+
+  .scan-bar{position:relative;height:4px;border-radius:99px;background:var(--field);overflow:hidden;margin:0 1px 18px}
+  .scan-bar-fill{display:block;height:100%;width:0;border-radius:99px;background:var(--blue);transition:width .5s cubic-bezier(.4,0,.2,1)}
+  .scan-bar::after{content:'';position:absolute;top:0;left:0;height:100%;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);animation:scanSheen 1.5s ease-in-out infinite;pointer-events:none}
+  @keyframes scanSheen{0%{transform:translateX(-130%)}100%{transform:translateX(330%)}}
+
+  .scan-steps{list-style:none;display:flex;flex-direction:column;gap:1px;padding:0}
+  .scan-step{display:flex;align-items:flex-start;gap:11px;padding:8px 9px;border-radius:10px;transition:background .25s,opacity .25s;opacity:.42}
   .scan-step.active{background:var(--blue-50);opacity:1}
   .scan-step.done{opacity:1}
-  .scan-ic{width:18px;height:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+  .scan-tx{min-width:0}
+  .scan-ic{width:18px;height:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+  .scan-ic svg{animation:scanPop .4s cubic-bezier(.34,1.56,.64,1)}
+  @keyframes scanPop{0%{transform:scale(.4);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
   .scan-dot{width:6px;height:6px;border-radius:50%;background:var(--line-2)}
   .spin{width:13px;height:13px;border:2px solid var(--blue-50);border-top-color:var(--blue);border-radius:50%;animation:spin .8s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
   .scan-step b{display:block;font-size:13.5px;font-weight:600;color:var(--ink);letter-spacing:-0.01em}
-  .scan-step small{display:block;font-size:12px;color:var(--ink-3)}
-  .scan-target{font-size:13px;color:var(--ink-2);padding:0 10px 10px}
-  .scan-target code{font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;background:var(--field);padding:2px 8px;border-radius:6px;color:var(--blue-dark)}
+  .scan-step small{display:block;font-size:12px;color:var(--ink-3);line-height:1.4}
+  @media(max-width:640px){.panel-body .scan-step{padding:9px 8px}}
 
   /* Results */
   .fade{animation:fade .45s ease-out}
@@ -249,6 +262,44 @@
     .big-sub{font-size:12.5px}
   }
   @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+  /* ───────────────────────────────────────────────────────────────
+     OVERFLOW HARDENING (additive, visually-neutral).
+     Fixes the cause — grid/flex tracks with implicit min-width:auto
+     refusing to shrink below the min-content of unbreakable, comma-
+     formatted money tokens — instead of only hiding it with overflow-x.
+     Every rule below is inert when there is room; it engages only at
+     the exact width where overflow would otherwise occur.
+     ─────────────────────────────────────────────────────────────── */
+  .grid{min-width:0}
+  @media(min-width:981px){
+    .grid{grid-template-columns:minmax(0,400px) minmax(0,1fr)}
+  }
+  .cfg-col,.out-col{min-width:0;max-width:100%}
+  .out-col .panel,.out-col .panel-body,
+  .score-row,.score-row>div,
+  .tot,.tot-row,.tot-row>*,
+  .legend,.lg,.lg>*,
+  .tiles,.tile,.tile>*,
+  .scen,.scen-tile,.scen-tile>*,
+  .leak-row,.leak-row .lr-top,.leak-row .lr-top>*{min-width:0}
+  .big-num,
+  .tot-row b,
+  .lg b,
+  .score-bad,.score-good,
+  .tile b,.scen-tile b,
+  .gapline b,.big-sub b{
+    overflow-wrap:anywhere;
+    word-break:break-word;
+    min-width:0;
+    max-width:100%;
+  }
+  .leak-row .lr-top b{overflow-wrap:anywhere;white-space:normal}
+  .legend{flex-wrap:wrap}
+  .chart-wrap svg{max-width:100%}
+  .acc-body table{table-layout:fixed}
+  .acc-body td{overflow-wrap:anywhere;word-break:break-word}
+  .wrap *{max-width:100%}
 </style>
 </head>
 <body>
@@ -316,14 +367,17 @@
         <!-- Scanning -->
         <div id="stScan" style="display:none">
           <div class="panel-body">
-            <div class="scan-target">Scanning <code id="scanDomain"></code></div>
+            <div class="scan-head">
+              <span class="scan-pulse" aria-hidden="true"></span>
+              <span class="scan-head-txt">Analyzing <code id="scanDomain"></code></span>
+            </div>
+            <div class="scan-bar" role="progressbar" aria-label="Audit progress"><span class="scan-bar-fill" id="scanBar"></span></div>
             <ul class="scan-steps" id="scanSteps">
-              <li class="scan-step"><span class="scan-ic"></span><span><b>Connecting to the website</b><small>Resolving and fetching live pages</small></span></li>
-              <li class="scan-step"><span class="scan-ic"></span><span><b>Running performance diagnostics</b><small>Core Web Vitals via Google Lighthouse</small></span></li>
-              <li class="scan-step"><span class="scan-ic"></span><span><b>Auditing the mobile experience</b><small>Where most patients are browsing</small></span></li>
-              <li class="scan-step"><span class="scan-ic"></span><span><b>Modeling monthly traffic</b><small>Marketing spend × healthcare CPC benchmarks</small></span></li>
-              <li class="scan-step"><span class="scan-ic"></span><span><b>Sizing dormant patient reactivation</b><small>Inactive records × $400 office visits</small></span></li>
-              <li class="scan-step"><span class="scan-ic"></span><span><b>Calculating revenue leakage</b><small>1% today vs 8–10% with Clinekt</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span class="scan-tx"><b>Reviewing the website</b><small>Reading the live pages patients land on</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span class="scan-tx"><b>Measuring speed and mobile</b><small>Where most patients are browsing</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span class="scan-tx"><b>Estimating monthly visitors</b><small>Sizing demand across your local market</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span class="scan-tx"><b>Mapping dormant patients</b><small>Past patients who could return to your schedule</small></span></li>
+              <li class="scan-step"><span class="scan-ic"></span><span class="scan-tx"><b>Calculating revenue leakage</b><small>What today’s site costs you each month</small></span></li>
             </ul>
           </div>
         </div>
@@ -667,6 +721,7 @@
           ?'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'
           :j===i?'<span class="spin"></span>':'<span class="scan-dot"></span>';
       });
+      var bar=$("scanBar");if(bar)bar.style.width=(steps.length>1?(i/(steps.length-1))*100:100)+"%";
     }
     paint();
     stepTimer=setInterval(function(){
@@ -679,6 +734,7 @@
       li.className="scan-step done";
       li.querySelector(".scan-ic").innerHTML='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
     });
+    var bar=$("scanBar");if(bar)bar.style.width="100%";
   }
 
   function scoreRow(label,today,clinekt){
