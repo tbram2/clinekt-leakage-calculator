@@ -10,23 +10,21 @@
 .bd-main{position:relative;padding:148px 0 96px;min-height:100svh;display:flex;align-items:center;overflow:clip;background:linear-gradient(140deg,#0A2A52 0%,#0C3D7F 48%,#1163D6 100%)}
 .bd-main::after{content:"";position:absolute;inset:0;background:radial-gradient(80% 60% at 88% 0%,rgba(120,185,255,.22),transparent 62%);pointer-events:none}
 .bd-grid{position:relative;z-index:1}
-.bd-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(44px,5vw,76px);align-items:start;width:100%}
+.bd-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(44px,5vw,76px);align-items:center;width:100%}
 .bd-left .eyebrow{color:#9CC5FF}
-.bd-left h1{font-size:clamp(38px,4.4vw,54px);letter-spacing:var(--ls-display);line-height:1.06;color:#fff;margin-top:14px}
-.bd-sub{margin-top:18px;font-size:17.5px;color:rgba(235,243,255,.85);max-width:44ch}
+.bd-left h1{font-size:clamp(44px,5vw,64px);letter-spacing:var(--ls-display);line-height:1.05;color:#fff;margin-top:18px}
+.bd-sub{margin-top:24px;font-size:19px;line-height:1.65;color:rgba(235,243,255,.85);max-width:44ch}
 .bd-left .agent-list li{color:#fff}
 .bd-left .ck{background:rgba(255,255,255,.14)}
 .bd-left .ck svg{stroke:#BBD9FF}
 .bd-left .hero-mini span{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:#EAF2FE;box-shadow:none}
 .bd-left .hero-mini svg{stroke:#9CC5FF}
-.bd-left .agent-list{margin-top:28px}
-.bd-left .hero-mini{margin-top:28px}
-.bd-quote{margin-top:34px;padding:20px 22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:16px;max-width:520px}
-.bd-quote p{font-size:15px;color:#EAF2FE;line-height:1.55}
-.bd-quote-by{display:flex;align-items:center;gap:11px;margin-top:14px}
-.bd-quote-by img{width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:50% 8%}
-.bd-quote-by b{display:block;font-size:14px;color:#fff;font-weight:600}
-.bd-quote-by span{font-size:12.5px;color:rgba(255,255,255,.6)}
+.bd-left .agent-list{margin-top:44px;gap:18px}
+.bd-left .agent-list li{font-size:17px}
+.bd-left .agent-list .ck{width:38px;height:38px;border-radius:11px}
+.bd-left .hero-mini{margin-top:44px;gap:12px}
+.bd-left .hero-mini span{font-size:14px;padding:9px 15px}
+.bd-left .hero-mini svg{width:17px;height:17px}
 .bd-card{background:var(--paper-2);border:1px solid var(--line-2);border-radius:22px;padding:clamp(26px,3vw,38px);box-shadow:0 40px 90px -40px rgba(4,20,50,.55)}
 .bd-card h2{font-size:22px;letter-spacing:-.01em;color:var(--ink)}
 .bd-card .bd-card-sub{font-size:14.5px;color:var(--body);margin:8px 0 22px}
@@ -46,7 +44,6 @@
   .bd-main{padding:118px 0 80px;align-items:flex-start}
   .bd-grid{grid-template-columns:minmax(0,1fr);gap:40px}
   .bd-left h1{font-size:clamp(34px,7vw,44px)}
-  .bd-quote{display:none}
 }
 @media(max-width:640px){
   .bd-row2{grid-template-columns:1fr}
