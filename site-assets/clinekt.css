@@ -49,7 +49,8 @@ h2{font-size:clamp(36px,4.6vw,62px);letter-spacing:var(--ls-display);line-height
 .nav-logo img{height:34px;display:block}
 .nav-links{display:flex;gap:32px;align-items:center}
 .nav-links a{font-size:14.5px;color:var(--body);transition:color .18s}.nav-links a:hover{color:var(--ink)}
-.nav-cta{display:flex;gap:16px;align-items:center}
+.nav-cta{display:flex;gap:22px;align-items:center}
+.nav-signin{font-size:14.5px;font-weight:600;color:var(--body);transition:color .18s}.nav-signin:hover{color:var(--ink)}
 .nav-signin{font-size:14.5px;color:var(--body)}.nav-signin:hover{color:var(--ink)}
 .nav .btn{padding:9px 18px;font-size:14px;border-radius:10px}
 .nav.solid{border-color:var(--line-2)}

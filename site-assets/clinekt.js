@@ -32,11 +32,16 @@ const logos=[
   ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/69fa48dade303a37d2b419a8_Venture-Orthopedics-Logo.webp","Ventura Orthopedics",""],
   ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6990e9f98111544b1023cac8_AssortHealthLogo.svg","Assort Health",""],
   ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/69b9879ce6da3ff276592084_6696a0d9945a8ab0e779d9a9_HighFive_Horizontal_Lockup_Blue.png","HighFive Healthcare",""],
-  ["https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6992612b90cf6ffecba56289_Final%20Logo%201.925%20(1).svg","Baldwin Bone and Joint",""]
+  ["https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6992612b90cf6ffecba56289_Final%20Logo%201.925%20(1).svg","Baldwin Bone and Joint",""],
+  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6a02058db447f6c94a9b0e18_SHORT%20LOGO.png","Mobile Oral and Facial Surgery",""],
+  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6990ed8b2fd71613429f2b95_Final%20Logo%201.925%20(3000%20x%201000%20px)%20(1).svg","Athelas",""],
+  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6990ee157f07e936d4cbacf8_Final%20Logo%201.925%20(3000%20x%201000%20px)%20(2).svg","Paradigm Health System",""],
+  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/699333fae8d78ec1c0b80cb9_Final%20Logo%201.925%20(3000%20x%201000%20px)%20(4).svg","Bramlett Orthopedic Clinic",""],
+  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6a3d43f4e12ab4fe8e9af80c_Cornerstone%20Logos%2012.30.24%20(4).svg","Northeast Orthopedic Sports Clinic and Physical Therapy",""]
 ];
 const mq=document.getElementById('marquee');
-// Ten-logo loop unit: five real practice logos + five placeholders (reordered repeats) until the other five are supplied.
-const unit=[...logos,logos[2],logos[4],logos[0],logos[3],logos[1]];
+// Ten-logo loop unit: all ten real practice and partner logos.
+const unit=[...logos];
 let mhtml='';for(let r=0;r<4;r++){unit.forEach(([s,a])=>{mhtml+=`<img src="${s}" alt="${a}">`;});}
 if(mq) mq.innerHTML=mhtml;
 /* Pinned offerings stage — one card whose contents rotate as you scroll; tabs + progress give continuous feedback */
