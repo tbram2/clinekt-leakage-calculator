@@ -553,6 +553,47 @@ footer ul{list-style:none;display:grid;gap:11px}footer ul a{color:var(--body);fo
 @keyframes heroDrift{to{transform:translateY(-52px);opacity:.22}}
 @keyframes parRise{from{transform:translateY(48px)}to{transform:none}}
 @keyframes parRiseSm{from{transform:translateY(26px)}to{transform:none}}
+/* ── Laptop adaptivity: short viewports (600-860px tall) and mid widths (1000-1300px) keep proportions instead of clipping/squeezing ── */
+@media(max-width:1300px) and (min-width:1001px){
+  .offer{gap:clamp(32px,3.5vw,56px)}
+  .hero-inner{gap:clamp(28px,3vw,48px)}
+  .panel-wrap{padding:clamp(18px,2.2vw,36px)}
+  .cs-story{gap:clamp(28px,3.5vw,56px)}
+  .cs-right{padding-left:clamp(24px,3vw,44px)}
+  .secint{gap:clamp(32px,4vw,60px)}
+}
+@media(max-height:860px) and (min-width:1001px){
+  .hero{padding-top:clamp(72px,9vh,100px)}
+  .hero h1{font-size:clamp(38px,4.4vw,58px)}
+  .hero-sub{font-size:clamp(15px,1.15vw,18px);margin-top:14px;max-width:44ch}
+  .hero-chip{margin-bottom:18px;font-size:13px;padding:8px 15px}
+  .hero-actions{margin-top:20px}.hero-actions .btn{padding:12px 22px;font-size:14.5px}
+  .hero-mini{margin-top:16px}.hero-mini span{font-size:12px;padding:6px 11px}
+  .trusted{padding:8px 0 16px}.trusted .container{margin-bottom:12px}
+  .marquee img{height:30px}
+  .section{padding:clamp(48px,7vh,84px) 0}
+  .sec-head.center h2,.offerings-head h2{font-size:clamp(28px,3.2vw,42px)}
+  .sec-head .lead{font-size:clamp(15px,1.15vw,18px);margin-top:14px}
+  .stage-tabs{margin-bottom:10px}.st-tab{font-size:14px;padding:10px 22px}
+  .stage-prog{margin-bottom:16px}
+  .stage-frame{zoom:.9}
+  .ag-title{font-size:clamp(26px,2.8vw,38px)}
+  .ag-id{margin-bottom:12px}.ag-id .ai{width:32px;height:32px}.ag-id .ai svg{width:17px;height:17px}
+  .ag-sub{font-size:clamp(15px,1.2vw,18px);margin-top:10px}
+  .agent-text p{font-size:clamp(14px,1.05vw,16px);margin-top:12px}
+  .agent-list{margin-top:18px;gap:11px}.agent-list li{font-size:14px}.agent-list .ck{width:29px;height:29px}
+  .band-card{padding:clamp(32px,4.5vh,52px) clamp(24px,3.5vw,48px)}
+  .orbit{max-width:min(560px,72vh)}
+  .cs-quote{font-size:clamp(20px,2vw,28px)}
+  .cs-stat .v{font-size:clamp(32px,3.4vw,44px)}
+  .cta{padding:clamp(48px,7vh,84px) clamp(28px,5vw,80px)}
+}
+@media(max-height:740px) and (min-width:1001px){
+  .stage-frame{zoom:.78}
+  .hero h1{font-size:clamp(34px,4vw,50px)}
+  .hero-video{max-width:88%;justify-self:end}
+  .stage-sticky{justify-content:flex-start;padding-top:66px}
+}
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
   .reveal{opacity:1!important;transform:none!important}
