@@ -645,6 +645,8 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
   .section{padding:clamp(48px,7vh,84px) 0}
   .sec-head.center h2,.offerings-head h2{font-size:clamp(28px,3.2vw,42px)}
   .sec-head .lead{font-size:clamp(15px,1.15vw,18px);margin-top:14px}
+  .stage-sticky{padding-top:88px;justify-content:flex-start}
+  .stage-frame{align-content:center;flex:1}
   .stage-tabs{margin-bottom:10px}.st-tab{font-size:14px;padding:10px 22px}
   .stage-prog{margin-bottom:16px}
   .stage-frame{zoom:.9}
@@ -662,7 +664,7 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
 @media(max-height:740px) and (min-width:1001px){
   .stage-frame{zoom:.78}
   .hero h1{font-size:clamp(34px,4vw,50px)}
-  .stage-sticky{justify-content:flex-start;padding-top:66px}
+  .stage-sticky{padding-top:84px}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
