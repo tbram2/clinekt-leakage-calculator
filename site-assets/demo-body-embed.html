@@ -1,8 +1,20 @@
 <nav class="nav" id="nav">
+  <input type="checkbox" id="navTgl" class="nav-tgl">
   <div class="container nav-inner">
     <a href="/" class="nav-logo"><img src="https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/69fe48ba433201b97386cb44_Clinekt_Color.svg" alt="Clinekt Health"></a>
     <div class="nav-links"><a href="/#platform">Platform</a><a href="/#testimonials">Customers</a><a href="/#security">Security</a></div>
-    <div class="nav-cta"><a href="https://portal.clinekthealth.com/login" class="nav-signin">Sign in</a><a href="#demo-form" class="btn btn-blue">Book a Demo</a></div>
+    <div class="nav-cta"><a href="https://portal.clinekthealth.com/login" class="nav-signin">Sign in</a><a href="#demo-form" class="btn btn-blue">Book a Demo</a><label for="navTgl" class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></label></div>
+  </div>
+  <div class="nav-m">
+    <a href="/#platform">Platform</a>
+    <a href="/#testimonials">Customers</a>
+    <a href="/#security">Security</a>
+    <a href="/#specialties">Specialties</a>
+    <a href="/case-studies">Case Studies</a>
+    <a href="/integrations">Integrations</a>
+    <a href="/blog">Blog</a>
+    <a href="/faqs">FAQs</a>
+    <div class="nav-m-foot"><a href="https://portal.clinekthealth.com/login">Sign in</a><a href="#demo-form" class="btn btn-blue">Book a Demo</a></div>
   </div>
 </nav>
 
@@ -70,6 +82,7 @@
 
 <script>
 (function(){
+  var _nt=document.getElementById('navTgl');if(_nt){document.querySelectorAll('.nav-m a').forEach(function(a){a.addEventListener('click',function(){_nt.checked=false;});});}
   var form = document.getElementById('wf-form-Book-a-Demo');
   if(!form) return;
   var wrap = form.closest('.w-form');

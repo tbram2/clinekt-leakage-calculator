@@ -38,16 +38,35 @@
     '.ck-foot-bot p,.ck-foot-bot a{color:#9A9AA0;font-size:13px;text-decoration:none}',
     '.ck-foot-bot a:hover{color:#1D1D1F}',
     '.ck-legal{display:flex;gap:22px;flex-wrap:wrap}',
-    '@media(max-width:1000px){.ck-links,.ck-signin{display:none}}',
+    '.ck-tgl{display:none}',
+    '.ck-burger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:40px;height:40px;cursor:pointer;border-radius:10px;flex-shrink:0}',
+    '.ck-burger span{display:block;width:20px;height:2px;background:#1D1D1F;border-radius:2px;transition:transform .25s,opacity .2s}',
+    '.ck-m{display:none}',
+    '@media(max-width:1000px){.ck-links,.ck-signin{display:none}',
+    '.ck-burger{display:flex}',
+    '.ck-m{display:flex;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;flex-direction:column;padding:14px clamp(20px,5vw,72px) 44px;overflow:auto;z-index:99998;transform:translateX(102%);transition:transform .3s}',
+    '.ck-m a{font-size:19px;font-weight:600;color:#1D1D1F;padding:15px 0;border-bottom:1px solid rgba(60,60,67,.08);text-decoration:none}',
+    '.ck-tgl:checked ~ .ck-m{transform:none}',
+    '.ck-tgl:checked ~ .ck-nav-in .ck-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}',
+    '.ck-tgl:checked ~ .ck-nav-in .ck-burger span:nth-child(2){opacity:0}',
+    '.ck-tgl:checked ~ .ck-nav-in .ck-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}',
+    '.ck-m-foot{margin-top:22px;display:flex;flex-direction:column;gap:16px}',
+    '.ck-m-foot a{border-bottom:0;padding:0}',
+    '.ck-m-foot .ck-btn{justify-content:center;padding:15px;font-size:16px}}',
     '@media(max-width:900px) and (min-width:641px){.ck-foot-top{grid-template-columns:1fr 1fr}}',
     '@media(max-width:640px){.ck-foot-top{grid-template-columns:1fr;gap:30px}.ck-foot{padding:56px 0 32px}}'
   ].join('\n');
 
   var nav =
-    '<div class="ck-nav"><div class="ck-nav-in">' +
+    '<div class="ck-nav"><input type="checkbox" id="ckTgl" class="ck-tgl"><div class="ck-nav-in">' +
     '<a class="ck-nav-logo" href="' + HOME + '"><img src="' + LOGO + '" alt="Clinekt Health"></a>' +
     '<div class="ck-links"><a href="/#platform">Platform</a><a href="/#testimonials">Customers</a><a href="/#security">Security</a></div>' +
-    '<div class="ck-cta"><a class="ck-signin" href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a></div>' +
+    '<div class="ck-cta"><a class="ck-signin" href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a><label for="ckTgl" class="ck-burger" aria-label="Menu"><span></span><span></span><span></span></label></div>' +
+    '</div>' +
+    '<div class="ck-m">' +
+    '<a href="/#platform">Platform</a><a href="/#testimonials">Customers</a><a href="/#security">Security</a><a href="/#specialties">Specialties</a>' +
+    '<a href="/case-studies">Case Studies</a><a href="/integrations">Integrations</a><a href="/blog">Blog</a><a href="/faqs">FAQs</a>' +
+    '<div class="ck-m-foot"><a href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a></div>' +
     '</div></div>';
 
   var foot =
