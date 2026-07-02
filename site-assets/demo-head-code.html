@@ -30,15 +30,15 @@
 .bd-card{background:var(--paper-2);border:1px solid var(--line-2);border-radius:22px;padding:clamp(26px,3vw,38px);box-shadow:0 40px 90px -40px rgba(4,20,50,.55)}
 .bd-card h2{font-size:22px;letter-spacing:-.01em;color:var(--ink)}
 .bd-card .bd-card-sub{font-size:14.5px;color:var(--body);margin:8px 0 22px}
-.bd-form{display:grid;gap:16px}
+.bd-form{display:grid;gap:18px}
 .bd-row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.bd-field{display:grid;gap:7px}
-.bd-field label{font-size:13px;font-weight:600;color:var(--ink)}
-.bd-field label em{font-style:normal;color:var(--muted);font-weight:500}
-.bd-field input,.bd-field select{height:47px;width:100%;border:1px solid var(--line);border-radius:12px;padding:0 14px;font:inherit;font-size:15px;color:var(--ink);background:#fff;transition:border-color .15s,box-shadow .15s;appearance:none;-webkit-appearance:none}
-.bd-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%2356565C' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:38px;cursor:pointer}
-.bd-field input:focus,.bd-field select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3.5px var(--blue-tint)}
-.bd-submit{width:100%;justify-content:center;margin-top:4px;padding:15px 26px;font-size:15.5px;border:0;cursor:pointer}
+.bd-field{display:grid;gap:8px}
+.bd-field label{font-size:14px;font-weight:500;color:var(--ink)}
+.bd-field .req{color:#C0392B;margin-left:3px}
+.bd-field input{height:48px;width:100%;border:1px solid #DCDCD7;border-radius:8px;padding:0 14px;font:inherit;font-size:15px;color:var(--ink);background:#fff;transition:border-color .15s,box-shadow .15s;appearance:none;-webkit-appearance:none}
+.bd-field input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+.bd-field input::placeholder{color:var(--muted)}
+.bd-submit{width:100%;justify-content:center;margin-top:6px;padding:15px 26px;font-size:15.5px;border:0;border-radius:10px;cursor:pointer}
 .bd-note{font-size:13px;color:var(--muted);text-align:center;margin-top:2px}
 .w-form-done{padding:18px;border-radius:12px;background:#E9F8EF;color:#0B7A43;font-weight:600;text-align:center;font-size:15px}
 .w-form-fail{padding:14px;border-radius:12px;background:#FDEEEE;color:#B3261E;font-weight:600;text-align:center;font-size:14px;margin-top:12px}
