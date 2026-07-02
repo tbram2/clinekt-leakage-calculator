@@ -6,8 +6,8 @@
 (function () {
   if (document.querySelector('nav.nav') || document.querySelector('.ck-nav')) return;
 
-  var HOME = '/home-v2';
-  var DEMO = '/book-a-demo-v2';
+  var HOME = '/';
+  var DEMO = '/book-a-demo';
   var LOGO = 'https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/69fe48ba433201b97386cb44_Clinekt_Color.svg';
 
   var css = [
@@ -46,7 +46,7 @@
   var nav =
     '<div class="ck-nav"><div class="ck-nav-in">' +
     '<a class="ck-nav-logo" href="' + HOME + '"><img src="' + LOGO + '" alt="Clinekt Health"></a>' +
-    '<div class="ck-links"><a href="' + HOME + '#platform">Platform</a><a href="' + HOME + '#testimonials">Customers</a><a href="' + HOME + '#security">Security</a></div>' +
+    '<div class="ck-links"><a href="/#platform">Platform</a><a href="/#testimonials">Customers</a><a href="/#security">Security</a></div>' +
     '<div class="ck-cta"><a class="ck-signin" href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a></div>' +
     '</div></div>';
 
