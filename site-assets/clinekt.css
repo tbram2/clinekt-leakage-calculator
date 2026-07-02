@@ -450,8 +450,8 @@ h2{font-size:clamp(36px,4.6vw,62px);letter-spacing:var(--ls-display);line-height
 
 .o-glow{position:absolute;inset:0;margin:auto;width:72%;height:72%;border-radius:50%;background:radial-gradient(circle,rgba(0,113,227,.12),transparent 70%);pointer-events:none}
 .o-ring{position:absolute;inset:0;margin:auto;border-radius:50%;border:1.5px dashed rgba(0,113,227,.22)}
-.o-ring-out{width:88%;height:88%}
-.o-ring-in{width:44%;height:44%}
+.o-ring-out{width:88%;height:88%;animation:ringSpin 48s linear infinite}
+.o-ring-in{width:44%;height:44%;animation:ringSpin 30s linear infinite reverse}
 .o-core{position:absolute;inset:0;margin:auto;width:23%;height:23%;border-radius:26px;background:linear-gradient(155deg,#1A84FF,#0064D6);box-shadow:0 22px 48px -16px rgba(0,113,227,.6),0 0 0 10px rgba(0,113,227,.06);display:flex;align-items:center;justify-content:center;z-index:5}
 .o-core img{width:60%}
 .o-core::after{content:"";position:absolute;inset:0;border-radius:26px;border:2px solid rgba(255,255,255,.18)}
