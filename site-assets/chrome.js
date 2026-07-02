@@ -24,7 +24,7 @@
     '.ck-signin:hover{color:#1D1D1F}',
     '.ck-btn{display:inline-flex;align-items:center;background:#0071E3;color:#fff!important;font-size:14px;font-weight:600;padding:9px 18px;border-radius:10px;text-decoration:none;box-shadow:0 8px 22px -12px rgba(0,113,227,.6);transition:background .18s}',
     '.ck-btn:hover{background:#0077ED}',
-    ".ck-foot{background:#fff;border-top:1px solid rgba(60,60,67,.08);padding:80px 0 40px;font-family:'Inter',system-ui,-apple-system,sans-serif}",
+    ".ck-foot{position:relative;z-index:9998;background:#fff;border-top:1px solid rgba(60,60,67,.08);padding:80px 0 40px;font-family:'Inter',system-ui,-apple-system,sans-serif}",
     '.ck-foot-in{max-width:1280px;margin:0 auto;padding:0 32px}',
     '.ck-foot-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(60,60,67,.08)}',
     '.ck-foot h4{font-size:13px;font-weight:600;color:#1D1D1F;margin:0 0 14px;text-align:left}',
@@ -81,9 +81,18 @@
   f.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';
   document.head.appendChild(f);
 
+  function retarget() {
+    // Point legacy in-content links at the new pages so old CTAs don't lead back into the old site.
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      var h = a.getAttribute('href');
+      if (h === '/book-a-demo' || h === 'https://www.clinekthealth.com/book-a-demo' || h === 'https://clinekthealth.com/book-a-demo') a.setAttribute('href', DEMO);
+      else if (h === '/' || h === 'https://www.clinekthealth.com/' || h === 'https://clinekthealth.com/') a.setAttribute('href', HOME);
+    });
+  }
   function inject() {
     document.body.insertAdjacentHTML('afterbegin', nav);
     document.body.insertAdjacentHTML('beforeend', foot);
+    retarget();
   }
   if (document.body) { inject(); } else { document.addEventListener('DOMContentLoaded', inject); }
 })();
