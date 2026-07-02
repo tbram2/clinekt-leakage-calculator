@@ -43,21 +43,7 @@
           <div class="bd-field"><label for="Work-Email">Work email</label><input type="email" id="Work-Email" name="Work-Email" data-name="Work Email" maxlength="256" autocomplete="email" required></div>
           <div class="bd-field"><label for="Phone">Phone <em>· optional</em></label><input type="tel" id="Phone" name="Phone" data-name="Phone" maxlength="256" autocomplete="tel"></div>
           <div class="bd-field"><label for="Practice-Name">Practice name</label><input type="text" id="Practice-Name" name="Practice-Name" data-name="Practice Name" maxlength="256" autocomplete="organization" required></div>
-          <div class="bd-field"><label for="Specialty">Specialty</label>
-            <select id="Specialty" name="Specialty" data-name="Specialty" required>
-              <option value="" disabled selected>Select your specialty</option>
-              <option>Orthopedics</option>
-              <option>Sports Medicine</option>
-              <option>Spine</option>
-              <option>Pain Management</option>
-              <option>ENT</option>
-              <option>Dermatology</option>
-              <option>Ophthalmology</option>
-              <option>Urology</option>
-              <option>Other specialty</option>
-            </select>
-          </div>
-          <input type="submit" value="Book my demo" data-wait="Sending..." class="btn btn-blue bd-submit">
+                    <input type="submit" value="Book my demo" data-wait="Sending..." class="btn btn-blue bd-submit">
           <p class="bd-note">No commitment — see the agents on your own website.</p>
         </form>
         <div class="w-form-done" tabindex="-1" role="region" aria-label="Book a Demo success">
@@ -88,3 +74,34 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var form = document.getElementById('wf-form-Book-a-Demo');
+  if(!form) return;
+  var wrap = form.closest('.w-form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault(); e.stopImmediatePropagation();
+    var btn = form.querySelector('input[type=submit]');
+    var old = btn.value; btn.value = btn.getAttribute('data-wait') || 'Sending...'; btn.disabled = true;
+    var site = document.documentElement.getAttribute('data-wf-site');
+    var body = new URLSearchParams();
+    body.append('name', form.getAttribute('data-name') || 'Book a Demo');
+    body.append('source', location.href);
+    body.append('test', 'false');
+    new FormData(form).forEach(function(v, k){ body.append('fields[' + k + ']', v); });
+    fetch('https://webflow.com/api/v1/form/' + site, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: body.toString()
+    }).then(function(r){
+      if(!r.ok) throw new Error('bad status');
+      form.style.display = 'none';
+      wrap.querySelector('.w-form-done').style.display = 'block';
+    }).catch(function(){
+      wrap.querySelector('.w-form-fail').style.display = 'block';
+      btn.value = old; btn.disabled = false;
+    });
+  }, true);
+})();
+</script>
