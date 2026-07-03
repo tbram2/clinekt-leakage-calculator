@@ -529,8 +529,9 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
 .cs-stat .v.ph{color:var(--muted)}
 .cs-stat .k{font-size:14px;color:var(--body);margin-top:10px;line-height:1.45;max-width:26ch}
 .cs-wrap.in .cs-right .cs-stat{animation:cineUp .7s var(--ease-cine) both}
-.cs-wrap.in .cs-right .cs-stat:nth-child(2){animation-delay:.12s}
-.cs-wrap.in .cs-right .cs-stat:nth-child(3){animation-delay:.24s}
+.cs-wrap.in .cs-right .cs-stat:nth-child(3){animation-delay:.12s}
+.cs-wrap.in .cs-right .cs-stat:nth-child(4){animation-delay:.24s}
+.cs-period{font-size:12px;font-weight:700;letter-spacing:var(--label-ls);text-transform:uppercase;color:var(--muted);margin-bottom:-6px}
 .cs-tabs{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:clamp(40px,5vw,72px);margin-top:clamp(40px,5vw,64px);padding-top:clamp(28px,3.5vw,40px);border-top:1px solid var(--line)}
 .cs-tab{position:relative;background:none;border:none;cursor:pointer;padding:10px 2px;opacity:.75;filter:grayscale(1);transition:opacity .18s,filter .18s}
 .cs-tab:hover{opacity:1;filter:grayscale(0)}
@@ -538,7 +539,7 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
 .cs-tab img{height:38px;max-width:178px;object-fit:contain;display:block}
 .cs-tab::after{content:"";position:absolute;left:50%;right:50%;bottom:-1px;height:2px;background:var(--blue);border-radius:2px;transition:left .4s var(--ease),right .4s var(--ease)}
 .cs-tab.active::after{left:0;right:0}
-@media(max-width:860px){.cs-stage{min-height:0}.cs-story{grid-template-columns:1fr;gap:32px}.cs-right{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:30px;flex-direction:row;flex-wrap:wrap;gap:26px 40px}.cs-stat{flex:1 1 120px}}
+@media(max-width:860px){.cs-stage{min-height:0}.cs-story{grid-template-columns:1fr;gap:32px}.cs-right{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:30px;flex-direction:row;flex-wrap:wrap;gap:26px 40px}.cs-stat{flex:1 1 120px}.cs-period{flex:1 1 100%;margin-bottom:-10px}}
 
    high-impact points on the left, an animated "outcomes" product panel on the right. */
 .showcase{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,5vw,80px);align-items:center}
