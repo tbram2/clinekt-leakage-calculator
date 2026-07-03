@@ -75,8 +75,7 @@ p{color:var(--body)}
 .grid_integrations{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:24px!important}
 @media(max-width:991px){.grid_integrations{grid-template-columns:repeat(2,1fr)!important}}
 @media(max-width:640px){.grid_integrations{grid-template-columns:1fr!important}}
-.link_integration{display:flex!important;flex-direction:column!important;height:100%;background:#fff!important;border:1px solid var(--line-2)!important;border-radius:var(--r-lg)!important;overflow:hidden!important;box-shadow:var(--shadow-sm)!important;transition:transform .35s var(--ease),box-shadow .35s var(--ease)!important;text-decoration:none}
-.link_integration:hover{transform:translateY(-5px)!important;box-shadow:var(--shadow)!important}
+.link_integration{display:flex!important;flex-direction:column!important;height:100%;background:#fff!important;border:1px solid var(--line-2)!important;border-radius:var(--r-lg)!important;overflow:hidden!important;box-shadow:var(--shadow-sm)!important;text-decoration:none;pointer-events:none!important;cursor:default!important}
 .integration_top-tile{background:var(--paper)!important;display:flex;align-items:center;justify-content:center;padding:34px 24px!important;min-height:130px}
 .logo-wrap_integration{display:flex;align-items:center;justify-content:center}
 .logo_integration{max-height:52px!important;width:auto!important;object-fit:contain}

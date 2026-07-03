@@ -120,12 +120,21 @@
       else if (h === '/' || h === '/old-home' || h === 'https://www.clinekthealth.com/' || h === 'https://clinekthealth.com/') a.setAttribute('href', HOME);
     });
   }
+  function scrubBrand() {
+    // Legacy CMS copy may still reference the retired OrthoCheck name; normalize to Clinekt in rendered text.
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    var n;
+    while ((n = walker.nextNode())) {
+      if (/orthocheck/i.test(n.nodeValue)) n.nodeValue = n.nodeValue.replace(/OrthoCheck AI/gi, 'Clinekt').replace(/OrthoCheck/gi, 'Clinekt');
+    }
+  }
   function inject() {
     // Remove (not just hide) the legacy chrome so the rendered DOM is clean for crawlers.
     document.querySelectorAll('.master_navigation, section.footer').forEach(function (el) { el.remove(); });
     document.body.insertAdjacentHTML('afterbegin', nav);
     document.body.insertAdjacentHTML('beforeend', foot);
     retarget();
+    scrubBrand();
   }
   if (document.body) { inject(); } else { document.addEventListener('DOMContentLoaded', inject); }
 })();
