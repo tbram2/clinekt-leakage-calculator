@@ -24,8 +24,11 @@
   --ease:cubic-bezier(.22,.7,.25,1);
 }
 
-/* ---- 1. Kill legacy IX2 entrance animations (no fade/slide-in) ---- */
-[data-w-id]{opacity:1!important;transform:none!important;-webkit-transform:none!important}
+/* ---- 1. Kill legacy IX2 entrance animations (no fade/slide-in) ----
+   Scoped: force opacity visible everywhere, but only strip the inline translate3d
+   entrance transforms — blanket transform:none breaks legit layout transforms. */
+[data-w-id]{opacity:1!important}
+[data-w-id][style*="translate3d"]{transform:none!important;-webkit-transform:none!important}
 
 /* ---- 2. Hide legacy chrome instantly (chrome.js injects the new nav/footer) ---- */
 .master_navigation,section.footer{display:none!important}
@@ -56,9 +59,10 @@ p{color:var(--body)}
 .section_cta{padding:var(--sec-y) 0!important;background:#fff}
 
 /* ---- 5. Blog listing cards ---- */
-.grid_blog{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:26px!important}
-@media(max-width:991px){.grid_blog{grid-template-columns:repeat(2,1fr)!important}}
-@media(max-width:640px){.grid_blog{grid-template-columns:1fr!important}}
+.grid_blog{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:26px!important;width:100%!important}
+.grid_blog>*{min-width:0!important;width:auto!important;max-width:none!important}
+@media(max-width:991px){.grid_blog{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:640px){.grid_blog{grid-template-columns:minmax(0,1fr)!important}}
 .link_article{display:flex!important;flex-direction:column!important;height:100%;background:#fff!important;border:1px solid var(--line-2)!important;border-radius:var(--r-lg)!important;overflow:hidden!important;box-shadow:var(--shadow-sm)!important;transition:transform .35s var(--ease),box-shadow .35s var(--ease)!important;text-decoration:none}
 .link_article:hover{transform:translateY(-5px)!important;box-shadow:var(--shadow)!important}
 .image-wrap_blog-card{aspect-ratio:16/10;overflow:hidden;background:var(--paper)}
@@ -72,9 +76,10 @@ p{color:var(--body)}
 .cta_tertiary .icon_button-tertiary{width:15px;height:15px;color:var(--blue)}
 
 /* ---- 6. Integrations listing cards ---- */
-.grid_integrations{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:24px!important}
-@media(max-width:991px){.grid_integrations{grid-template-columns:repeat(2,1fr)!important}}
-@media(max-width:640px){.grid_integrations{grid-template-columns:1fr!important}}
+.grid_integrations{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px!important;width:100%!important}
+.grid_integrations>*{min-width:0!important}
+@media(max-width:991px){.grid_integrations{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:640px){.grid_integrations{grid-template-columns:minmax(0,1fr)!important}}
 .link_integration{display:flex!important;flex-direction:column!important;height:100%;background:#fff!important;border:1px solid var(--line-2)!important;border-radius:var(--r-lg)!important;overflow:hidden!important;box-shadow:var(--shadow-sm)!important;text-decoration:none;pointer-events:none!important;cursor:default!important}
 .integration_top-tile{background:var(--paper)!important;display:flex;align-items:center;justify-content:center;padding:34px 24px!important;min-height:130px}
 .logo-wrap_integration{display:flex;align-items:center;justify-content:center}
@@ -82,8 +87,11 @@ p{color:var(--body)}
 .integration_bottom-tile{padding:18px 22px 22px!important;display:flex;flex-direction:column;gap:6px}
 
 /* ---- 7. Case studies listing ---- */
-.grid_cases{display:grid!important;grid-template-columns:repeat(2,1fr)!important;gap:26px!important}
-@media(max-width:860px){.grid_cases{grid-template-columns:1fr!important}}
+.grid_cases{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:26px!important;width:100%!important}
+.grid_cases>*{min-width:0!important}
+@media(max-width:860px){.grid_cases{grid-template-columns:minmax(0,1fr)!important}}
+/* Logo marquee on the case-studies listing is retired — it froze once animations were disabled. */
+.cases_marquee{display:none!important}
 .grid_cases a{background:#fff!important;border:1px solid var(--line-2)!important;border-radius:var(--r-lg)!important;overflow:hidden!important;box-shadow:var(--shadow-sm)!important;transition:transform .35s var(--ease),box-shadow .35s var(--ease)!important;text-decoration:none}
 .grid_cases a:hover{transform:translateY(-5px)!important;box-shadow:var(--shadow)!important}
 
@@ -126,9 +134,16 @@ p{color:var(--body)}
 .wrap_number-list{display:none!important}
 .client_body-halves{grid-template-columns:1fr!important}
 .client_block{max-width:780px;margin-bottom:clamp(28px,4vw,44px)}
-.client_block h2{margin-bottom:14px!important}
-.body_client.w-richtext{font-size:17.5px;line-height:1.72;color:var(--body)}
+.client_block h2{margin-bottom:14px!important;color:var(--ink)!important}
+.body_client.w-richtext{font-size:17.5px;line-height:1.72;color:var(--body)!important}
 .body_client.w-richtext p{margin:0 0 1.25em!important}
+/* Legacy dark-theme selectors paint paragraphs near-white — force readable ink on white. */
+.section_body-client p,.section_body-client li{color:var(--body)!important}
+.section_body-client h1,.section_body-client h2,.section_body-client h3,.section_body-client h4{color:var(--ink)!important}
+.section_hero-client,.section_hero-client h1,.section_body-client{color:var(--ink)!important}
+.section_body-article p,.section_body-article li{color:var(--body)!important}
+.section_body-article h2,.section_body-article h3{color:var(--ink)!important}
+.section_body-integration p,.section_body-integration li{color:var(--body)!important}
 /* Results stat tiles — homepage KPI treatment (blue, not peach) */
 .client_results-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:20px!important;margin-top:10px}
 @media(max-width:760px){.client_results-grid{grid-template-columns:1fr!important}}
