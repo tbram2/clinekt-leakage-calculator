@@ -88,10 +88,10 @@
     '<li><a href="/faqs">FAQs</a></li></ul></div>' +
     '<div><h4>Get started</h4><ul>' +
     '<li><a href="' + DEMO + '">Book a demo</a></li>' +
-    '<li><a href="' + HOME + '#security">Trust Center</a></li></ul></div>' +
+    '<li><a href="https://trust.delve.co/clinekt-health" target="_blank" rel="noopener">Trust Center</a></li></ul></div>' +
     '</div>' +
     '<div class="ck-foot-bot"><p>© 2026 Clinekt Health</p>' +
-    '<div class="ck-legal"><a href="/terms-of-service">Terms of Service</a><a href="/privacy-policy">Privacy Policy</a><a href="/patient-privacy-policy">Patient Privacy Policy</a><a href="' + HOME + '#security">Trust Center</a></div>' +
+    '<div class="ck-legal"><a href="/terms-of-service">Terms of Service</a><a href="/privacy-policy">Privacy Policy</a><a href="/patient-privacy-policy">Patient Privacy Policy</a><a href="https://trust.delve.co/clinekt-health" target="_blank" rel="noopener">Trust Center</a></div>' +
     '</div></div></footer>';
 
   var st = document.createElement('style');
