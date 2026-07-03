@@ -29,15 +29,15 @@ const co=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){con
 document.querySelectorAll('[data-count]').forEach(el=>{if(!el.closest('.offer')&&!el.closest('.band-card'))co.observe(el);});
 const logos=[
   ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6990e9f97bc5c600e9de1270_orthoalabama.svg","OrthoAlabama","tall"],
-  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/69fa48dade303a37d2b419a8_Venture-Orthopedics-Logo.webp","Ventura Orthopedics",""],
+  ["https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2bf0076/site-assets/media/logos/ventura.png","Ventura Orthopedics",""],
   ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6990e9f98111544b1023cac8_AssortHealthLogo.svg","Assort Health",""],
-  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/69b9879ce6da3ff276592084_6696a0d9945a8ab0e779d9a9_HighFive_Horizontal_Lockup_Blue.png","HighFive Healthcare",""],
+  ["https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2bf0076/site-assets/media/logos/highfive.png","HighFive Healthcare",""],
   ["https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6992612b90cf6ffecba56289_Final%20Logo%201.925%20(1).svg","Baldwin Bone and Joint",""],
-  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6a02058db447f6c94a9b0e18_SHORT%20LOGO.png","Mobile Oral and Facial Surgery",""],
-  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6990ed8b2fd71613429f2b95_Final%20Logo%201.925%20(3000%20x%201000%20px)%20(1).svg","Athelas",""],
-  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6990ee157f07e936d4cbacf8_Final%20Logo%201.925%20(3000%20x%201000%20px)%20(2).svg","Paradigm Health System",""],
+  ["https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2bf0076/site-assets/media/logos/mobile.png","Mobile Oral and Facial Surgery",""],
+  ["https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2bf0076/site-assets/media/logos/athelas.png","Athelas",""],
+  ["https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2bf0076/site-assets/media/logos/paradigm.png","Paradigm Health System",""],
   ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/699333fae8d78ec1c0b80cb9_Final%20Logo%201.925%20(3000%20x%201000%20px)%20(4).svg","Bramlett Orthopedic Clinic",""],
-  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6a3d43f4e12ab4fe8e9af80c_Cornerstone%20Logos%2012.30.24%20(4).svg","Northeast Orthopedic Sports Clinic and Physical Therapy",""]
+  ["https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2bf0076/site-assets/media/logos/northeast.png","Northeast Orthopedic Sports Clinic and Physical Therapy",""]
 ];
 window.addEventListener('load',function(){setTimeout(function(){var v=document.querySelector('.hero-video video');if(v){v.play().catch(function(){});}},200);});
 const _nt=document.getElementById('navTgl');if(_nt){document.querySelectorAll('.nav-m a').forEach(a=>a.addEventListener('click',()=>{_nt.checked=false;}));}
