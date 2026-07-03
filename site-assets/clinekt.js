@@ -39,6 +39,7 @@ const logos=[
   ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/699333fae8d78ec1c0b80cb9_Final%20Logo%201.925%20(3000%20x%201000%20px)%20(4).svg","Bramlett Orthopedic Clinic",""],
   ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6a3d43f4e12ab4fe8e9af80c_Cornerstone%20Logos%2012.30.24%20(4).svg","Northeast Orthopedic Sports Clinic and Physical Therapy",""]
 ];
+window.addEventListener('load',function(){setTimeout(function(){var v=document.querySelector('.hero-video video');if(v){v.play().catch(function(){});}},200);});
 const _nt=document.getElementById('navTgl');if(_nt){document.querySelectorAll('.nav-m a').forEach(a=>a.addEventListener('click',()=>{_nt.checked=false;}));}
 const mq=document.getElementById('marquee');
 // Ten-logo loop unit: all ten real practice and partner logos.
