@@ -13,7 +13,10 @@
   var css = [
     '.master_navigation,section.footer{display:none!important}',
     'body{padding-top:64px!important}',
-    ".ck-nav{position:fixed;top:0;left:0;right:0;z-index:99999;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(60,60,67,.1);font-family:'Inter',system-ui,-apple-system,sans-serif}",
+    /* blur lives on ::before — backdrop-filter on .ck-nav itself would make it the containing
+       block for the fixed .ck-m menu and collapse it to zero height */
+    ".ck-nav{position:fixed;top:0;left:0;right:0;z-index:99999;isolation:isolate;border-bottom:1px solid rgba(60,60,67,.1);font-family:'Inter',system-ui,-apple-system,sans-serif}",
+    '.ck-nav::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);z-index:-1}',
     '.ck-nav-in{width:100%;padding:0 clamp(20px,5vw,72px);height:64px;display:flex;align-items:center;justify-content:space-between}',
     '.ck-nav-logo img{height:30px;display:block}',
     '.ck-links{display:flex;gap:32px}',
