@@ -114,16 +114,16 @@ h2{font-size:clamp(36px,4.6vw,62px);letter-spacing:var(--ls-display);line-height
 #platform .offerings-head h2{max-width:none}
 .section.light{background:var(--paper)}.section.white{background:var(--paper-2)}
 /* Trusted-by strip docked under the hero — static, no scroll */
-.trusted{margin-top:auto;padding:clamp(16px,2.4vh,30px) 0 clamp(20px,3vh,38px);background:transparent;animation:cineUp .8s var(--ease-cine) .7s both}
+.trusted{margin-top:auto;padding:clamp(16px,2.4vh,30px) 0 clamp(20px,3vh,38px);background:transparent;animation:cineUp .4s var(--ease-cine) .18s both}
 .trusted .container{display:flex;justify-content:center;margin-bottom:clamp(16px,2.2vh,26px)}
 .trusted-lab{font-size:13px;font-weight:700;letter-spacing:var(--label-ls);text-transform:uppercase;color:var(--ink)}
 /* Hero floating trust chips on the product video */
-.hero-chip{animation:cineUp .7s var(--ease-cine) both}
-.hero h1{animation:headIn 1s var(--ease-cine) .1s both}
-.hero-sub{animation:cineUp .85s var(--ease-cine) .22s both}
-.hero .hero-actions{animation:cineUp .85s var(--ease-cine) .34s both}
-.hero-mini{animation:cineUp .85s var(--ease-cine) .46s both}
-.hero-video{animation:cinePanel 1s var(--ease-cine) .35s both}
+.hero-chip{animation:cineUp .35s var(--ease-cine) both}
+.hero h1{animation:headIn .45s var(--ease-cine) both}
+.hero-sub{animation:cineUp .35s var(--ease-cine) .05s both}
+.hero .hero-actions{animation:cineUp .35s var(--ease-cine) .09s both}
+.hero-mini{animation:cineUp .35s var(--ease-cine) .13s both}
+.hero-video{animation:cinePanel .45s var(--ease-cine) .06s both}
 /* Merged Security + Integrations band */
 .offerings-head{margin-bottom:0;max-width:1060px}
 .offerings-head h2{font-size:clamp(30px,3.8vw,52px)}
@@ -403,7 +403,7 @@ h2{font-size:clamp(36px,4.6vw,62px);letter-spacing:var(--ls-display);line-height
 @media(hover:hover){.panel-wrap:hover .app{transform:scale(1.035) translateY(-5px)}}
 @media(min-width:1001px){.panel-wrap .app{transform:scale(1.02)}}
 @keyframes cineUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
-@keyframes headIn{from{opacity:0;transform:translateY(30px);filter:blur(10px)}to{opacity:1;transform:none;filter:none}}
+@keyframes headIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 .sec-head.reveal .eyebrow,.sec-head.reveal h2,.sec-head.reveal .lead{opacity:0}
 .sec-head.reveal.in .eyebrow{animation:pIn .5s var(--ease-cine) both}
 .sec-head.reveal.in h2{animation:headIn .95s var(--ease-cine) .08s both}
