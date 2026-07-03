@@ -116,11 +116,13 @@
     // Point legacy in-content links at the new pages so old CTAs don't lead back into the old site.
     document.querySelectorAll('a[href]').forEach(function (a) {
       var h = a.getAttribute('href');
-      if (h === '/book-a-demo' || h === 'https://www.clinekthealth.com/book-a-demo' || h === 'https://clinekthealth.com/book-a-demo') a.setAttribute('href', DEMO);
-      else if (h === '/' || h === 'https://www.clinekthealth.com/' || h === 'https://clinekthealth.com/') a.setAttribute('href', HOME);
+      if (h === '/book-a-demo' || h === '/book-a-demo-old' || h === 'https://www.clinekthealth.com/book-a-demo' || h === 'https://clinekthealth.com/book-a-demo') a.setAttribute('href', DEMO);
+      else if (h === '/' || h === '/old-home' || h === 'https://www.clinekthealth.com/' || h === 'https://clinekthealth.com/') a.setAttribute('href', HOME);
     });
   }
   function inject() {
+    // Remove (not just hide) the legacy chrome so the rendered DOM is clean for crawlers.
+    document.querySelectorAll('.master_navigation, section.footer').forEach(function (el) { el.remove(); });
     document.body.insertAdjacentHTML('afterbegin', nav);
     document.body.insertAdjacentHTML('beforeend', foot);
     retarget();
