@@ -22,6 +22,15 @@
     '.ck-links{display:flex;gap:32px}',
     '.ck-links a{font-size:14.5px;color:#56565C;text-decoration:none;transition:color .18s}',
     '.ck-links a:hover{color:#1D1D1F}',
+    '.ck-drop{position:relative;display:flex;align-items:center}',
+    '.ck-drop-btn{font-family:inherit;font-size:14.5px;color:#56565C;background:none;border:0;padding:0;cursor:pointer;transition:color .18s}',
+    '.ck-drop:hover .ck-drop-btn{color:#1D1D1F}',
+    '.ck-drop-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:12px;opacity:0;visibility:hidden;transition:opacity .18s;z-index:100000}',
+    '.ck-drop:hover .ck-drop-menu{opacity:1;visibility:visible}',
+    '.ck-drop-menu a{display:block;background:#fff;padding:9px 14px;font-size:14.5px;color:#56565C;text-decoration:none;white-space:nowrap;border:1px solid rgba(60,60,67,.1);border-top:0}',
+    '.ck-drop-menu a:first-child{border-top:1px solid rgba(60,60,67,.1);border-radius:10px 10px 0 0}',
+    '.ck-drop-menu a:last-child{border-radius:0 0 10px 10px}',
+    '.ck-drop-menu a:hover{color:#1D1D1F;background:#F5F5F7}',
     '.ck-cta{display:flex;gap:22px;align-items:center}',
     '.ck-signin{font-size:14.5px;font-weight:600;color:#56565C;text-decoration:none}',
     '.ck-signin:hover{color:#1D1D1F}',
@@ -63,7 +72,7 @@
   var nav =
     '<div class="ck-nav"><input type="checkbox" id="ckTgl" class="ck-tgl"><div class="ck-nav-in">' +
     '<a class="ck-nav-logo" href="' + HOME + '"><img src="' + LOGO + '" alt="Clinekt Health"></a>' +
-    '<div class="ck-links"><a href="/#platform">Platform</a><a href="/#testimonials">Customers</a><a href="/#security">Security</a></div>' +
+    '<div class="ck-links"><a href="/#platform">Platform</a><a href="/#specialties">Solutions</a><a href="/#security">Security</a><div class="ck-drop"><button type="button" class="ck-drop-btn">Company</button><div class="ck-drop-menu"><a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a></div></div></div>' +
     '<div class="ck-cta"><a class="ck-signin" href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a><label for="ckTgl" class="ck-burger" aria-label="Menu"><span></span><span></span><span></span></label></div>' +
     '</div>' +
     '<div class="ck-m">' +
