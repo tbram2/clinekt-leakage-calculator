@@ -1,12 +1,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@72f4124/site-assets/clinekt.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@24b1ded/site-assets/clinekt.css">
 <style>
 /* -- Book a Demo page ---------------------------------------------
    Shares clinekt.css with the homepage (nav, buttons, chips, footer,
    agent-list checkmarks). Everything below is page-only (.bd-*).   */
-.nav{background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom-color:var(--line-2)}
+/* blur stays on .nav::before (from clinekt.css) - backdrop-filter on .nav itself would become
+   the containing block for the fixed .nav-m menu and collapse it */
+.nav{border-bottom-color:var(--line-2)}
+.nav::before{opacity:1}
 .bd-main{position:relative;padding:148px 0 96px;min-height:100svh;display:flex;align-items:center;overflow:clip;background:linear-gradient(140deg,#0A2A52 0%,#0C3D7F 48%,#1163D6 100%)}
 .bd-main::after{content:"";position:absolute;inset:0;background:radial-gradient(80% 60% at 88% 0%,rgba(120,185,255,.22),transparent 62%);pointer-events:none}
 .bd-grid{position:relative;z-index:1}
