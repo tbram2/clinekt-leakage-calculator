@@ -6,23 +6,65 @@
 (function () {
   if (document.querySelector('.ck-nav')) return;
 
+  // The nine specialty landing pages — desktop Solutions dropdown + mobile Solutions group.
+  var SOLUTIONS = [
+    ['Orthopedics', '/orthopedics'],
+    ['Physical Therapy', '/physical-therapy'],
+    ['Oral Surgery &amp; Dentistry', '/oral-surgery'],
+    ['Dermatology', '/dermatology'],
+    ['Ophthalmology', '/ophthalmology'],
+    ['Urology', '/urology'],
+    ['Primary Care', '/primary-care'],
+    ['Cardiology', '/cardiology'],
+    ['Pediatrics', '/pediatrics']
+  ];
+  var solLinks = SOLUTIONS.map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join('');
+  var CHEV = '<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>';
+  var COMPANY_LINKS = '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>';
+
+  // /integrations is retired: drop nav/footer links to it, unwrap in-copy links to plain text.
+  function scrubIntegrations() {
+    document.querySelectorAll('a[href="/integrations"], a[href^="/integrations/"]').forEach(function (a) {
+      var li = a.closest('li');
+      if (li) { li.remove(); return; }
+      if (a.closest('nav, footer, .nav-m, .foot-top, .ck-m, .ck-foot')) { a.remove(); return; }
+      a.replaceWith(document.createTextNode(a.textContent));
+    });
+  }
+
   // On the new embed-built pages (home, FAQs, demo) the page ships its own nav.nav —
-  // don't inject chrome; just upgrade its plain Solutions link into the specialty dropdown.
+  // don't inject chrome; upgrade its plain Solutions link into the specialty dropdown and
+  // rebuild its mobile menu to mirror the desktop nav (same titles, same order).
   var embedNav = document.querySelector('nav.nav');
   if (embedNav) {
     var sol = embedNav.querySelector('.nav-links a[href="/#specialties"], .nav-links a[href="#specialties"]');
     if (sol && !embedNav.querySelector('.nav-drop-btn-solutions')) {
-      var items = [
-        ['Orthopedics', '/orthopedics'], ['Physical Therapy', '/physical-therapy'],
-        ['Oral Surgery &amp; Dentistry', '/oral-surgery'], ['Dermatology', '/dermatology'],
-        ['Ophthalmology', '/ophthalmology'], ['Urology', '/urology'],
-        ['Primary Care', '/primary-care'], ['Cardiology', '/cardiology'], ['Pediatrics', '/pediatrics']
-      ].map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join('');
       var drop = document.createElement('div');
       drop.className = 'nav-drop';
-      drop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-solutions">Solutions<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-drop-menu"><div class="nav-drop-in">' + items + '</div></div>';
+      drop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-solutions">Solutions' + CHEV + '</button><div class="nav-drop-menu"><div class="nav-drop-in">' + solLinks + '</div></div>';
       sol.replaceWith(drop);
     }
+    var navM = embedNav.querySelector('.nav-m');
+    if (navM && !navM.querySelector('details')) {
+      var mFoot = navM.querySelector('.nav-m-foot');
+      navM.innerHTML =
+        '<a href="/#platform">Platform</a>' +
+        '<details><summary>Solutions' + CHEV + '</summary><div>' + solLinks + '</div></details>' +
+        '<a href="/#security">Security</a>' +
+        '<details><summary>Company' + CHEV + '</summary><div>' + COMPANY_LINKS + '</div></details>';
+      if (mFoot) navM.appendChild(mFoot);
+      var mst = document.createElement('style');
+      mst.textContent =
+        '.nav-m details{border-bottom:1px solid rgba(60,60,67,.08)}' +
+        '.nav-m summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-size:19px;font-weight:600;color:#1D1D1F;padding:15px 0}' +
+        '.nav-m summary::-webkit-details-marker{display:none}' +
+        '.nav-m summary svg{width:18px;height:18px;stroke:#9A9AA0;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}' +
+        '.nav-m details[open] summary svg{transform:rotate(180deg)}' +
+        '.nav-m details div a{display:block;font-size:17px;font-weight:500;color:#56565C;padding:11px 0 11px 14px;border-bottom:0}' +
+        '.nav-m details div{padding-bottom:10px}';
+      document.head.appendChild(mst);
+    }
+    scrubIntegrations();
     return;
   }
 
@@ -82,27 +124,19 @@
     '.ck-tgl:checked ~ .ck-nav-in .ck-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}',
     '.ck-tgl:checked ~ .ck-nav-in .ck-burger span:nth-child(2){opacity:0}',
     '.ck-tgl:checked ~ .ck-nav-in .ck-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}',
-    '.ck-m-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#9A9AA0;margin:18px 0 2px}',
+    '.ck-m details{border-bottom:1px solid rgba(60,60,67,.08)}',
+    '.ck-m summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-size:19px;font-weight:600;color:#1D1D1F;padding:15px 0}',
+    '.ck-m summary::-webkit-details-marker{display:none}',
+    '.ck-m summary svg{width:18px;height:18px;stroke:#9A9AA0;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}',
+    '.ck-m details[open] summary svg{transform:rotate(180deg)}',
+    '.ck-m details div a{display:block;font-size:17px;font-weight:500;color:#56565C;padding:11px 0 11px 14px;border-bottom:0}',
+    '.ck-m details div{padding-bottom:10px}',
     '.ck-m-foot{margin-top:22px;display:flex;flex-direction:column;gap:16px}',
     '.ck-m-foot a{border-bottom:0;padding:0}',
     '.ck-m-foot .ck-btn{justify-content:center;padding:15px;font-size:16px}}',
     '@media(max-width:900px) and (min-width:641px){.ck-foot-top{grid-template-columns:1fr 1fr}}',
     '@media(max-width:640px){.ck-foot-top{grid-template-columns:1fr;gap:30px}.ck-foot{padding:56px 0 32px}}'
   ].join('\n');
-
-  // The nine specialty landing pages, shown under the Solutions dropdown (desktop) and listed in the mobile menu.
-  var SOLUTIONS = [
-    ['Orthopedics', '/orthopedics'],
-    ['Physical Therapy', '/physical-therapy'],
-    ['Oral Surgery &amp; Dentistry', '/oral-surgery'],
-    ['Dermatology', '/dermatology'],
-    ['Ophthalmology', '/ophthalmology'],
-    ['Urology', '/urology'],
-    ['Primary Care', '/primary-care'],
-    ['Cardiology', '/cardiology'],
-    ['Pediatrics', '/pediatrics']
-  ];
-  var solLinks = SOLUTIONS.map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join('');
 
   var nav =
     '<div class="ck-nav"><input type="checkbox" id="ckTgl" class="ck-tgl"><div class="ck-nav-in">' +
@@ -111,9 +145,10 @@
     '<div class="ck-cta"><a class="ck-signin" href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a><label for="ckTgl" class="ck-burger" aria-label="Menu"><span></span><span></span><span></span></label></div>' +
     '</div>' +
     '<div class="ck-m">' +
-    '<a href="/#platform">Platform</a><a href="/#security">Security</a>' +
-    '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>' +
-    '<div class="ck-m-label">Solutions</div>' + solLinks +
+    '<a href="/#platform">Platform</a>' +
+    '<details><summary>Solutions' + CHEV + '</summary><div>' + solLinks + '</div></details>' +
+    '<a href="/#security">Security</a>' +
+    '<details><summary>Company' + CHEV + '</summary><div>' + COMPANY_LINKS + '</div></details>' +
     '<div class="ck-m-foot"><a href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a></div>' +
     '</div></div>';
 
@@ -170,6 +205,7 @@
     document.body.insertAdjacentHTML('beforeend', foot);
     retarget();
     scrubBrand();
+    scrubIntegrations();
   }
   if (document.body) { inject(); } else { document.addEventListener('DOMContentLoaded', inject); }
 })();
