@@ -103,7 +103,7 @@ h2{font-size:clamp(36px,4.6vw,62px);letter-spacing:var(--ls-display);line-height
 .hero-video::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 2px var(--paper-2);pointer-events:none;z-index:2}
 .hero-video video{width:100%;height:100%;object-fit:cover;display:block;transform-origin:0 0;transform:scale(1.16)}
 .m-track{width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
-.marquee{display:flex;align-items:center;gap:clamp(46px,5.5vw,90px);width:max-content;animation:scroll 80s linear infinite}
+.marquee{display:flex;align-items:center;gap:clamp(46px,5.5vw,90px);width:max-content;min-height:44px;animation:scroll 80s linear infinite}
 .marquee img{height:40px;width:auto;object-fit:contain;opacity:.78;filter:grayscale(1);flex:0 0 auto;transition:opacity .3s,filter .3s}
 .marquee img:hover{opacity:1;filter:grayscale(0)}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}

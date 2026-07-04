@@ -42,10 +42,14 @@ const logos=[
 window.addEventListener('load',function(){setTimeout(function(){var v=document.querySelector('.hero-video video');if(v){v.play().catch(function(){});}},200);});
 const _nt=document.getElementById('navTgl');if(_nt){document.querySelectorAll('.nav-m a').forEach(a=>a.addEventListener('click',()=>{_nt.checked=false;}));}
 const mq=document.getElementById('marquee');
-// Ten-logo loop unit: all ten real practice and partner logos.
+// Two loop units ship inline in the embed so the logo row paints with the page (no
+// blank-then-pop layout shift on mobile). Extend to four units here so each -50%
+// animation half spans ultra-wide screens; skip entirely if already extended.
 const unit=[...logos];
-let mhtml='';for(let r=0;r<4;r++){unit.forEach(([s,a])=>{mhtml+=`<img src="${s}" alt="${a}">`;});}
-if(mq) mq.innerHTML=mhtml;
+if(mq&&mq.childElementCount<=unit.length*2){
+  let mhtml='';for(let r=0;r<2;r++){unit.forEach(([s,a])=>{mhtml+=`<img src="${s}" alt="${a}" decoding="async" loading="lazy">`;});}
+  mq.insertAdjacentHTML('beforeend',mhtml);
+}
 /* Pinned offerings stage — one card whose contents rotate as you scroll; tabs + progress give continuous feedback */
 const stageEl=document.getElementById('stageScroll');
 const offers=Array.prototype.slice.call(document.querySelectorAll('.offer'));
