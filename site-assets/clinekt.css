@@ -723,3 +723,5 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
   .qp-track i{width:72%!important}.qp-pct{opacity:1!important}.ajtracer{display:none}
   .offer.active .agent-text>*,.offer.active .panel-wrap{opacity:1!important;transform:none!important;animation:none!important}
 }
+/* Mobile first-frame paint cost: no giant blur layers, no backdrop blur, skip below-fold render */
+@media(max-width:1000px){.glow{display:none}.hero{background:radial-gradient(120% 80% at 85% -10%,#EAF2FE 0%,var(--paper-2) 55%)}.nav::before{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(255,255,255,.96)}.section,.cta-wrap,.foot{content-visibility:auto;contain-intrinsic-size:auto 900px}.band{content-visibility:auto;contain-intrinsic-size:auto 600px}}
