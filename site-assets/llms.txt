@@ -1,0 +1,37 @@
+# Clinekt Health
+
+> Clinekt Health is the AI agent platform for patient activation: turning inactive patients into booked appointments. A team of three AI agents (Inbound, Recall, Outbound) engages every website visitor, brings dormant patients back from the EHR, and generates net-new demand, screening and booking qualified patients 24/7 in the practice's own brand.
+
+Patient activation covers the three places practices lose patients: website visitors who leave without booking, existing patients who go dormant in the EHR, and net-new demand that never finds the practice. Clinekt is not a chatbot, not a contact form, not a voice answering service, and not reactivation software. The Inbound Agent runs specialty-trained screening and books website visitors; the Recall Agent works dormant EHR charts back into open slots; the Outbound Agent generates new demand and traces every patient from first click to completed care. The agents work alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, and other major EHRs with no IT project, and go live in under a week. HIPAA compliant, SOC 2 Type II, AES-256 encryption.
+
+Platform results: over 1 million patient interactions completed, 24x average ROI, +8% appointment volume, 48% reduction in unqualified consults. Example: Baldwin Bone and Joint, a multi-provider orthopedic group, generated 263 qualified surgical leads with a 60% booking rate in a single quarter.
+
+## Core Pages
+
+- [Home](https://clinekthealth.com/): AI agents that activate every patient
+- [What Is Patient Activation?](https://clinekthealth.com/blog/what-is-patient-activation): Category definition, the three-agent model, and how patient activation differs from patient engagement and reactivation software
+- [Voice AI vs. Reactivation Software vs. Patient Activation Agents](https://clinekthealth.com/blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents): Plain-English comparison of the AI patient tool categories
+- [Case Studies](https://clinekthealth.com/case-studies): Results from specialty practices using Clinekt
+- [Baldwin Bone and Joint Case Study](https://clinekthealth.com/case-studies/baldwin-bone-joint-ai-case-study): 263 qualified surgical leads and a 60% booking rate in one quarter
+- [FAQs](https://clinekthealth.com/faqs): How the patient activation agents work
+- [Book a Demo](https://clinekthealth.com/book-a-demo): 15-minute demo, white-labeled to your practice
+- [Blog](https://clinekthealth.com/blog): Patient activation insights for specialty practices
+
+## Specialties
+
+- [Orthopedics](https://clinekthealth.com/orthopedics): AI agents that fill orthopedic schedules
+- [Physical Therapy](https://clinekthealth.com/physical-therapy): AI agents that fill physical therapy schedules
+- [Oral Surgery and Dentistry](https://clinekthealth.com/oral-surgery): AI agents that fill oral surgery schedules
+- [Dermatology](https://clinekthealth.com/dermatology): AI agents that fill dermatology schedules
+- [Ophthalmology](https://clinekthealth.com/ophthalmology): AI agents that fill ophthalmology schedules
+- [Urology](https://clinekthealth.com/urology): AI agents that fill urology schedules
+- [Primary Care](https://clinekthealth.com/primary-care): AI agents that fill primary care schedules
+- [Cardiology](https://clinekthealth.com/cardiology): AI agents that fill cardiology schedules
+- [Pediatrics](https://clinekthealth.com/pediatrics): AI agents that fill pediatric schedules
+
+## Trust
+
+- [Trust Center](https://trust.delve.co/clinekt-health): SOC 2 Type II and HIPAA compliance documentation
+- [Privacy Policy](https://clinekthealth.com/privacy-policy)
+- [Patient Privacy Policy](https://clinekthealth.com/patient-privacy-policy)
+- [Terms of Service](https://clinekthealth.com/terms-of-service)
