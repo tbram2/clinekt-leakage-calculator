@@ -28,7 +28,7 @@ function animateCount(el){
 const co=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){const d=reduce?0:(parseInt(e.target.dataset.delay,10)||0);d?setTimeout(()=>animateCount(e.target),d):animateCount(e.target);co.unobserve(e.target);}});},{threshold:.6});
 document.querySelectorAll('[data-count]').forEach(el=>{if(!el.closest('.offer')&&!el.closest('.band-card'))co.observe(el);});
 const logos=[
-  ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6990e9f97bc5c600e9de1270_orthoalabama.svg","OrthoAlabama","tall"],
+  ["https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@247ca24/site-assets/media/logos/orthoalabama-mark.svg","OrthoAlabama","tall"],
   ["https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2a145b4/site-assets/media/logos/ventura.png","Ventura Orthopedics",""],
   ["https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/6990e9f98111544b1023cac8_AssortHealthLogo.svg","Assort Health",""],
   ["https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2a145b4/site-assets/media/logos/highfive.png","HighFive Healthcare",""],
