@@ -76,8 +76,8 @@
     '<div class="ck-cta"><a class="ck-signin" href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a><label for="ckTgl" class="ck-burger" aria-label="Menu"><span></span><span></span><span></span></label></div>' +
     '</div>' +
     '<div class="ck-m">' +
-    '<a href="/#platform">Platform</a><a href="/#testimonials">Customers</a><a href="/#security">Security</a><a href="/#specialties">Specialties</a>' +
-    '<a href="/case-studies">Case Studies</a><a href="/blog">Blog</a><a href="/faqs">FAQs</a>' +
+    '<a href="/#platform">Platform</a><a href="/#specialties">Solutions</a><a href="/#security">Security</a>' +
+    '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>' +
     '<div class="ck-m-foot"><a href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a></div>' +
     '</div></div>';
 

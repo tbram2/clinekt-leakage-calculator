@@ -55,6 +55,8 @@ p{color:var(--body)}
 
 /* ---- 4. Section rhythm ---- */
 [class^="section_hero-"],[class*=" section_hero-"]{padding-top:clamp(48px,6vw,84px)!important;padding-bottom:clamp(20px,3vw,40px)!important;background:#fff}
+/* legacy mobile media queries paint hero .padding-global gray/beige — keep heroes white at every width */
+[class^="section_hero-"] .padding-global,[class*=" section_hero-"] .padding-global{background:transparent!important}
 .section_body-blog,.section_body-integrations,.section_cases,.section_body-article,.section_body-integration,.section_body-client,.section_client-thumbnail,.section_more-integration{padding-top:clamp(24px,3vw,48px)!important;padding-bottom:var(--sec-y)!important;background:#fff}
 .section_cta{padding:var(--sec-y) 0!important;background:#fff}
 
