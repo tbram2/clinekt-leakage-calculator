@@ -1,0 +1,2 @@
+AI Patient Activation for Physical Therapy | Clinekt Health
+Clinekt's AI agents activate physical therapy patients, answering calls, texts and web inquiries 24/7, booking evaluations, recovering plan-of-care drop-offs, and capturing physician referrals into your EHR.

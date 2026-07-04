@@ -1,0 +1,2 @@
+AI Patient Activation for Ophthalmology | Clinekt Health
+Clinekt's AI agents activate ophthalmology patients, answering calls, texts and web inquiries 24/7, booking cataract and LASIK consults, and recalling overdue eye exams and injection series into your EHR.

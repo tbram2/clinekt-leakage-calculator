@@ -1,0 +1,2 @@
+AI Patient Activation for Cardiology | Clinekt Health
+Clinekt's AI agents activate cardiology patients, answering calls, texts &amp; web inquiries 24/7, capturing referrals, and scheduling echo, stress, and device-check visits into your EHR.

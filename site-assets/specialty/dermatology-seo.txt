@@ -1,0 +1,2 @@
+AI Patient Activation for Dermatology | Clinekt Health
+Clinekt's AI agents activate dermatology patients, answering calls, texts and web inquiries 24/7, booking skin checks and cosmetic consults, recalling overdue annual exams, and rebooking biopsy and Mohs follow-ups into your EHR.

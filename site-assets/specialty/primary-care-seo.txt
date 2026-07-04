@@ -1,0 +1,2 @@
+AI Patient Activation for Primary Care | Clinekt Health
+Clinekt's AI agents activate primary care patients, answering calls, texts and web inquiries 24/7, filling provider panels, and recalling overdue wellness and chronic-care visits into your EHR.

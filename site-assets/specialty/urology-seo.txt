@@ -1,0 +1,2 @@
+AI Patient Activation for Urology | Clinekt Health
+Clinekt's AI agents activate urology patients, answering calls, texts and web inquiries 24/7, routing by symptom, recalling overdue PSA and screening visits, and capturing referrals into your EHR.
