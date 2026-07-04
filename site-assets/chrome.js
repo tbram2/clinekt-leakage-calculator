@@ -4,7 +4,27 @@
    Loaded site-wide; the guard below makes it a no-op on the new embed-built pages.
    AT GO-LIVE: change HOME to '/' and DEMO to '/book-a-demo', bump ?v= in site custom code. */
 (function () {
-  if (document.querySelector('nav.nav') || document.querySelector('.ck-nav')) return;
+  if (document.querySelector('.ck-nav')) return;
+
+  // On the new embed-built pages (home, FAQs, demo) the page ships its own nav.nav —
+  // don't inject chrome; just upgrade its plain Solutions link into the specialty dropdown.
+  var embedNav = document.querySelector('nav.nav');
+  if (embedNav) {
+    var sol = embedNav.querySelector('.nav-links a[href="/#specialties"], .nav-links a[href="#specialties"]');
+    if (sol && !embedNav.querySelector('.nav-drop-btn-solutions')) {
+      var items = [
+        ['Orthopedics', '/orthopedics'], ['Physical Therapy', '/physical-therapy'],
+        ['Oral Surgery &amp; Dentistry', '/oral-surgery'], ['Dermatology', '/dermatology'],
+        ['Ophthalmology', '/ophthalmology'], ['Urology', '/urology'],
+        ['Primary Care', '/primary-care'], ['Cardiology', '/cardiology'], ['Pediatrics', '/pediatrics']
+      ].map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join('');
+      var drop = document.createElement('div');
+      drop.className = 'nav-drop';
+      drop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-solutions">Solutions<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-drop-menu"><div class="nav-drop-in">' + items + '</div></div>';
+      sol.replaceWith(drop);
+    }
+    return;
+  }
 
   var HOME = '/';
   var DEMO = '/book-a-demo';
@@ -62,6 +82,7 @@
     '.ck-tgl:checked ~ .ck-nav-in .ck-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}',
     '.ck-tgl:checked ~ .ck-nav-in .ck-burger span:nth-child(2){opacity:0}',
     '.ck-tgl:checked ~ .ck-nav-in .ck-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}',
+    '.ck-m-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#9A9AA0;margin:18px 0 2px}',
     '.ck-m-foot{margin-top:22px;display:flex;flex-direction:column;gap:16px}',
     '.ck-m-foot a{border-bottom:0;padding:0}',
     '.ck-m-foot .ck-btn{justify-content:center;padding:15px;font-size:16px}}',
@@ -69,15 +90,30 @@
     '@media(max-width:640px){.ck-foot-top{grid-template-columns:1fr;gap:30px}.ck-foot{padding:56px 0 32px}}'
   ].join('\n');
 
+  // The nine specialty landing pages, shown under the Solutions dropdown (desktop) and listed in the mobile menu.
+  var SOLUTIONS = [
+    ['Orthopedics', '/orthopedics'],
+    ['Physical Therapy', '/physical-therapy'],
+    ['Oral Surgery &amp; Dentistry', '/oral-surgery'],
+    ['Dermatology', '/dermatology'],
+    ['Ophthalmology', '/ophthalmology'],
+    ['Urology', '/urology'],
+    ['Primary Care', '/primary-care'],
+    ['Cardiology', '/cardiology'],
+    ['Pediatrics', '/pediatrics']
+  ];
+  var solLinks = SOLUTIONS.map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join('');
+
   var nav =
     '<div class="ck-nav"><input type="checkbox" id="ckTgl" class="ck-tgl"><div class="ck-nav-in">' +
     '<a class="ck-nav-logo" href="' + HOME + '"><img src="' + LOGO + '" alt="Clinekt Health"></a>' +
-    '<div class="ck-links"><a href="/#platform">Platform</a><a href="/#specialties">Solutions</a><a href="/#security">Security</a><div class="ck-drop"><button type="button" class="ck-drop-btn">Company</button><div class="ck-drop-menu"><a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a></div></div></div>' +
+    '<div class="ck-links"><a href="/#platform">Platform</a><div class="ck-drop"><button type="button" class="ck-drop-btn">Solutions</button><div class="ck-drop-menu">' + solLinks + '</div></div><a href="/#security">Security</a><div class="ck-drop"><button type="button" class="ck-drop-btn">Company</button><div class="ck-drop-menu"><a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a></div></div></div>' +
     '<div class="ck-cta"><a class="ck-signin" href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a><label for="ckTgl" class="ck-burger" aria-label="Menu"><span></span><span></span><span></span></label></div>' +
     '</div>' +
     '<div class="ck-m">' +
-    '<a href="/#platform">Platform</a><a href="/#specialties">Solutions</a><a href="/#security">Security</a>' +
+    '<a href="/#platform">Platform</a><a href="/#security">Security</a>' +
     '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>' +
+    '<div class="ck-m-label">Solutions</div>' + solLinks +
     '<div class="ck-m-foot"><a href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a></div>' +
     '</div></div>';
 
