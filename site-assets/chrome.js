@@ -39,8 +39,9 @@
     var p = location.pathname.replace(/\/+$/, '') || '/';
     if (paths.indexOf(p) === -1) return;
     if (document.getElementById('ck-ehr')) return;
-    var anchor = document.querySelector('.cta-wrap');
-    if (!anchor) { var c = document.querySelector('div.cta, section.cta'); if (c) anchor = c.closest('section') || c; }
+    // Home uses .cta-wrap; specialty embeds render the whole page inside ONE section, so
+    // anchor to the CTA block itself (closest('section') there would grab the entire page).
+    var anchor = document.querySelector('.cta-wrap') || document.querySelector('div.cta, section.cta');
     if (!anchor) return;
     var ehrs = ['Epic', 'Cerner', 'athenahealth', 'ModMed', 'NextGen', 'eClinicalWorks', 'AdvancedMD', 'Greenway', 'Veradigm'];
     var st = document.createElement('style');
