@@ -234,6 +234,7 @@
     retarget();
     scrubBrand();
     scrubIntegrations();
+    ehrStrip();
   }
   if (document.body) { inject(); } else { document.addEventListener('DOMContentLoaded', inject); }
 })();
