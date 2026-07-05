@@ -289,6 +289,35 @@
   </div>
 </section>
 
+<section class="section light" id="try-it">
+<div class="container">
+<div class="sec-head center reveal"><span class="eyebrow">Try it live</span><h2>Run a real screening, right now.</h2><p class="lead">This is the same Inbound Agent your patients meet: a specialty-trained clinical screening, white-labeled to your practice, that ends in a booking-ready patient.</p></div>
+<div id="ck-try" style="max-width:980px;margin:0 auto;min-height:520px"></div>
+</div>
+</section>
+<section class="section white" id="leakage">
+<div class="container">
+<div class="sec-head center reveal"><span class="eyebrow">The cost of waiting</span><h2>What is patient leakage costing your practice?</h2><p class="lead">Run your own numbers in under two minutes.</p></div>
+<div id="clinekt-leakage-calculator"></div>
+</div>
+</section>
+<script>
+(function(){
+var done={t:false,c:false};
+function loadTry(){if(done.t)return;done.t=true;
+var s=document.createElement('script');s.src='https://symptomcheck.clinekthealth.com/widget/symptomcheck-widget.js';
+s.onload=function(){try{SymptomCheck.init({apiKey:'01e403b6-87bf-464c-a769-0ef408bb15e2',client:'default',view:'full',bookingUrl:'https://clinekthealth.com/book-a-demo',teamUrl:'https://clinekthealth.com/',specialtiesUrl:'https://clinekthealth.com/',locationsUrl:'https://clinekthealth.com/'});}catch(e){}};
+document.getElementById('ck-try').appendChild(s);}
+function loadCalc(){if(done.c)return;done.c=true;
+var s=document.createElement('script');s.src='https://tbram2.github.io/clinekt-leakage-calculator/embed/clinekt-leakage-embed.js';
+s.setAttribute('data-src','https://tbram2.github.io/clinekt-leakage-calculator/clinekt-leakage-calculator.html');
+document.getElementById('leakage').appendChild(s);}
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;if(e.target.id==='try-it')loadTry();else loadCalc();io.unobserve(e.target);});},{rootMargin:'600px'});
+io.observe(document.getElementById('try-it'));io.observe(document.getElementById('leakage'));
+}else{loadTry();loadCalc();}
+})();
+</script>
 <div class="cta-wrap" id="contact">
   <div class="cta reveal">
     <h2>Every patient, activated.<br>Every outcome, proven.</h2>
