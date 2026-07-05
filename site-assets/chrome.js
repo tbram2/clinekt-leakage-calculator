@@ -39,7 +39,8 @@
     var p = location.pathname.replace(/\/+$/, '') || '/';
     if (paths.indexOf(p) === -1) return;
     if (document.getElementById('ck-ehr')) return;
-    var anchor = document.querySelector('.cta-wrap, section.cta');
+    var anchor = document.querySelector('.cta-wrap');
+    if (!anchor) { var c = document.querySelector('div.cta, section.cta'); if (c) anchor = c.closest('section') || c; }
     if (!anchor) return;
     var ehrs = ['Epic', 'Cerner', 'athenahealth', 'ModMed', 'NextGen', 'eClinicalWorks', 'AdvancedMD', 'Greenway', 'Veradigm'];
     var st = document.createElement('style');
