@@ -63,7 +63,7 @@
     if (frameOrigin && e.origin !== frameOrigin) return;
     if (e.source !== frame.contentWindow) return;
     if (e.data && typeof e.data.clinektLeakageHeight === "number") {
-      var h = Math.ceil(e.data.clinektLeakageHeight) + 2;
+      var h = Math.ceil(e.data.clinektLeakageHeight);
       // Tolerance band: the content re-measures itself after every resize we
       // apply, oscillating by a pixel or two forever. Swallow tiny deltas.
       if (Math.abs(h - appliedH) > 8) {

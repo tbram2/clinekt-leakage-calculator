@@ -410,7 +410,7 @@
   if(window.parent!==window){
     var lastHeight=0;
     var postHeight=function(){
-      var h=document.documentElement.scrollHeight;
+      var h=document.body.scrollHeight;
       if(h!==lastHeight){
         lastHeight=h;
         window.parent.postMessage({clinektLeakageHeight:h},"*");
