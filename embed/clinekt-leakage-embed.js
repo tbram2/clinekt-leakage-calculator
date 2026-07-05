@@ -35,6 +35,7 @@
   target.style.overflowX = "hidden";
   target.appendChild(frame);
 
+  var appliedH = 0;
   var frameOrigin;
   try { frameOrigin = new URL(src, location.href).origin; } catch (e) { frameOrigin = null; }
 
@@ -62,8 +63,14 @@
     if (frameOrigin && e.origin !== frameOrigin) return;
     if (e.source !== frame.contentWindow) return;
     if (e.data && typeof e.data.clinektLeakageHeight === "number") {
-      frame.style.height = (Math.ceil(e.data.clinektLeakageHeight) + 2) + "px";
-      frame.style.minHeight = "0";
+      var h = Math.ceil(e.data.clinektLeakageHeight) + 2;
+      // Tolerance band: the content re-measures itself after every resize we
+      // apply, oscillating by a pixel or two forever. Swallow tiny deltas.
+      if (Math.abs(h - appliedH) > 8) {
+        appliedH = h;
+        frame.style.height = h + "px";
+        frame.style.minHeight = "0";
+      }
     }
     if (e.data && e.data.clinektLead) submitLead(e.data.clinektLead);
   });

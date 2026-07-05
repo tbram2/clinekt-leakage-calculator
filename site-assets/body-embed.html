@@ -302,6 +302,7 @@
 <div class="ck-t-msg ck-t-p" data-step="3">That was fast. Let&rsquo;s do it.</div>
 <div class="ck-t-typing" id="ckTTyping"><span></span><span></span><span></span></div>
 </div>
+<div class="ck-t-chips" id="ckTChips"><button type="button" data-c="knee">Knee pain</button><button type="button" data-c="shoulder">Shoulder pain</button><button type="button" data-c="">Something else</button></div>
 <iframe id="ckTFrame" class="ck-t-iframe" title="Clinekt live screening" loading="lazy" allow="clipboard-write"></iframe>
 </div>
 <label class="ck-t-toggle" for="ckTSwitch"><input type="checkbox" id="ckTSwitch"><span class="ck-t-track"><span class="ck-t-thumb"></span></span><span class="ck-t-label" id="ckTLabel">Try it yourself</span></label>
@@ -309,7 +310,7 @@
 </div>
 </section>
 <style>
-.ck-t-frame{max-width:880px;margin:0 auto;background:#fff;border:1px solid #EAECF1;border-radius:24px;box-shadow:0 24px 60px -30px rgba(29,29,31,.18);overflow:hidden}
+.ck-t-frame{max-width:880px;margin:30px auto 0;background:#fff;border:1px solid #EAECF1;border-radius:24px;box-shadow:0 24px 60px -30px rgba(29,29,31,.18);overflow:hidden}
 .ck-t-bar{display:flex;align-items:center;gap:12px;padding:16px 22px;border-bottom:1px solid #EFF1F5}
 .ck-t-avatar{width:34px;height:34px;border-radius:50%;background:radial-gradient(120% 120% at 30% 25%,#3BA5F0,#0071E3)}
 .ck-t-name{font-weight:600;color:#1D1D1F;font-size:15.5px}
@@ -327,6 +328,10 @@
 .ck-t-typing span{width:7px;height:7px;border-radius:50%;background:#B8C0CC;animation:ckdot 1.2s infinite}
 .ck-t-typing span:nth-child(2){animation-delay:.18s}.ck-t-typing span:nth-child(3){animation-delay:.36s}
 @keyframes ckdot{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-5px);opacity:1}}
+.ck-t-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:0 20px 24px;background:#F7F8FA}
+.ck-t-chips button{font-family:inherit;font-size:14.5px;font-weight:600;color:#0071E3;background:#fff;border:1px solid #D7E6FB;border-radius:99px;padding:10px 20px;cursor:pointer;transition:transform .18s,box-shadow .18s;box-shadow:0 2px 8px rgba(29,29,31,.05)}
+.ck-t-chips button:hover{transform:translateY(-2px);box-shadow:0 8px 20px -8px rgba(0,113,227,.4)}
+.ck-t-frame.live .ck-t-chips{display:none}
 .ck-t-iframe{display:none;width:100%;height:640px;border:0;background:#fff}
 .ck-t-frame.live .ck-t-iframe{display:block}
 .ck-t-frame.live .ck-t-chat{display:none}
@@ -368,11 +373,21 @@ sw.addEventListener('change',function(){
  if(sw.checked){
   var fr=document.getElementById('ckTFrame');
   if(!fr.src){
-   fr.src='https://symptomcheck.clinekthealth.com/embed/?key=01e403b6-87bf-464c-a769-0ef408bb15e2&client=default&embed_origin='+encodeURIComponent(location.origin)+'&source=widget&booking_url='+encodeURIComponent('https://clinekthealth.com/book-a-demo')+'&team_url='+encodeURIComponent('https://clinekthealth.com/')+'&specialties_url='+encodeURIComponent('https://clinekthealth.com/')+'&locations_url='+encodeURIComponent('https://clinekthealth.com/');
+   fr.src='https://symptomcheck.clinekthealth.com/embed/?key=01e403b6-87bf-464c-a769-0ef408bb15e2&client=default&embed_origin='+encodeURIComponent(location.origin)+'&source=widget&booking_url='+encodeURIComponent('https://clinekthealth.com/book-a-demo')+'&team_url='+encodeURIComponent('https://clinekthealth.com/')+'&specialties_url='+encodeURIComponent('https://clinekthealth.com/')+'&locations_url='+encodeURIComponent('https://clinekthealth.com/')+'&booking_target='+encodeURIComponent('_top')+'&get_to_know_target='+encodeURIComponent('_top')+(window.__ckPart?'&bodypart='+encodeURIComponent(window.__ckPart):'');
   }
   stop();frame.classList.add('live');label.textContent='You’re talking to the live agent';
  }else{frame.classList.remove('live');label.textContent='Try it yourself';start();}
 });
+function goLive(part){
+ if(!sw.checked){
+  var fr=document.getElementById('ckTFrame');
+  if(part&&!fr.src){window.__ckPart=part;}
+  sw.checked=true;sw.dispatchEvent(new Event('change'));
+ }
+}
+document.getElementById('ckTChips').addEventListener('click',function(ev){var b=ev.target.closest('button');if(b)goLive(b.getAttribute('data-c'));});
+document.getElementById('ckTChat').addEventListener('click',function(){goLive('');});
+document.getElementById('ckTChat').style.cursor='pointer';
 })();
 </script>
 
