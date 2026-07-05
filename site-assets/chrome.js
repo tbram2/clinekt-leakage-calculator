@@ -32,6 +32,32 @@
     });
   }
 
+  // EHR compatibility strip + commercial terms, injected above the CTA on home + specialty pages.
+  // Text wordmarks only (trademark-safe compatibility list); below the fold so no CLS risk.
+  function ehrStrip() {
+    var paths = ['/', '/orthopedics', '/physical-therapy', '/oral-surgery', '/dermatology', '/ophthalmology', '/urology', '/primary-care', '/cardiology', '/pediatrics'];
+    var p = location.pathname.replace(/\/+$/, '') || '/';
+    if (paths.indexOf(p) === -1) return;
+    if (document.getElementById('ck-ehr')) return;
+    var anchor = document.querySelector('.cta-wrap, section.cta');
+    if (!anchor) return;
+    var ehrs = ['Epic', 'Cerner', 'athenahealth', 'ModMed', 'NextGen', 'eClinicalWorks', 'AdvancedMD', 'Greenway', 'Veradigm'];
+    var st = document.createElement('style');
+    st.textContent = '#ck-ehr{padding:72px 24px;text-align:center;font-family:Inter,system-ui,-apple-system,sans-serif}' +
+      '#ck-ehr .ck-ehr-label{font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#0071E3;margin-bottom:26px}' +
+      '#ck-ehr .ck-ehr-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 34px;max-width:880px;margin:0 auto 28px}' +
+      '#ck-ehr .ck-ehr-row span{font-size:17px;font-weight:600;color:#9A9AA0;letter-spacing:-.01em}' +
+      '#ck-ehr .ck-ehr-terms{font-size:15px;color:#56565C}' +
+      '#ck-ehr .ck-ehr-terms b{color:#1D1D1F;font-weight:600}';
+    document.head.appendChild(st);
+    var sec = document.createElement('section');
+    sec.id = 'ck-ehr';
+    sec.innerHTML = '<div class="ck-ehr-label">Works alongside your EHR</div>' +
+      '<div class="ck-ehr-row">' + ehrs.map(function (e) { return '<span>' + e + '</span>'; }).join('') + '</div>' +
+      '<div class="ck-ehr-terms"><b>Flat subscription</b> &middot; <b>No long-term contracts</b> &middot; <b>Live same day</b></div>';
+    anchor.parentNode.insertBefore(sec, anchor);
+  }
+
   // On the new embed-built pages (home, FAQs, demo) the page ships its own nav.nav —
   // don't inject chrome; upgrade its plain Solutions link into the specialty dropdown and
   // rebuild its mobile menu to mirror the desktop nav (same titles, same order).
@@ -65,6 +91,7 @@
       document.head.appendChild(mst);
     }
     scrubIntegrations();
+    ehrStrip();
     return;
   }
 
