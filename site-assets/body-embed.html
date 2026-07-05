@@ -291,38 +291,91 @@
 
 <section class="section light" id="try-it">
 <div class="container">
-<div class="sec-head center reveal"><span class="eyebrow">Try it live</span><h2>Run a real screening, right now.</h2><p class="lead">This is the same Inbound Agent your patients meet: a specialty-trained clinical screening, white-labeled to your practice, that ends in a booking-ready patient.</p></div>
-<div style="text-align:center;padding-top:6px">
-<a href="#" id="ck-try-launch" class="btn btn-blue" style="font-size:17px;padding:16px 34px">Launch a live screening</a>
-<p style="margin-top:18px;font-size:14.5px;color:#9A9AA0">The screening launcher also lives in the corner of this page &mdash; exactly where it would sit on yours.</p>
+<div class="sec-head center reveal"><span class="eyebrow">Try it live</span><h2>Talk to the agent. Right here.</h2><p class="lead">This is the exact experience your patients get: understood, screened, and booked in about two minutes.</p></div>
+<div class="ck-t-frame">
+<div class="ck-t-bar"><span class="ck-t-avatar"></span><span class="ck-t-name">Your practice&rsquo;s agent</span><span class="ck-t-live"><i></i>Online now</span></div>
+<div class="ck-t-stage">
+<div class="ck-t-chat" id="ckTChat">
+<div class="ck-t-msg ck-t-a" data-step="0">Hi, I&rsquo;m here to help you get seen. What&rsquo;s going on?</div>
+<div class="ck-t-msg ck-t-p" data-step="1">My knee swells up after I run. It&rsquo;s been about three weeks.</div>
+<div class="ck-t-msg ck-t-a" data-step="2">Got it. A few quick questions and I&rsquo;ll match you with the right provider.</div>
+<div class="ck-t-msg ck-t-p" data-step="3">That was fast. Let&rsquo;s do it.</div>
+<div class="ck-t-typing" id="ckTTyping"><span></span><span></span><span></span></div>
+</div>
+<iframe id="ckTFrame" class="ck-t-iframe" title="Clinekt live screening" loading="lazy" allow="clipboard-write"></iframe>
+</div>
+<label class="ck-t-toggle" for="ckTSwitch"><input type="checkbox" id="ckTSwitch"><span class="ck-t-track"><span class="ck-t-thumb"></span></span><span class="ck-t-label" id="ckTLabel">Try it yourself</span></label>
 </div>
 </div>
 </section>
-<section class="section white" id="leakage">
-<div class="container">
-<div class="sec-head center reveal"><span class="eyebrow">The cost of waiting</span><h2>What is patient leakage costing your practice?</h2><p class="lead">Run your own numbers in under two minutes.</p></div>
-<div id="clinekt-leakage-calculator"></div>
-</div>
-</section>
+<style>
+.ck-t-frame{max-width:880px;margin:0 auto;background:#fff;border:1px solid #EAECF1;border-radius:24px;box-shadow:0 24px 60px -30px rgba(29,29,31,.18);overflow:hidden}
+.ck-t-bar{display:flex;align-items:center;gap:12px;padding:16px 22px;border-bottom:1px solid #EFF1F5}
+.ck-t-avatar{width:34px;height:34px;border-radius:50%;background:radial-gradient(120% 120% at 30% 25%,#3BA5F0,#0071E3)}
+.ck-t-name{font-weight:600;color:#1D1D1F;font-size:15.5px}
+.ck-t-live{margin-left:auto;display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:#119D57}
+.ck-t-live i{width:8px;height:8px;border-radius:50%;background:#119D57;animation:ckpulse 1.8s ease-in-out infinite}
+@keyframes ckpulse{0%,100%{box-shadow:0 0 0 0 rgba(17,157,87,.45)}55%{box-shadow:0 0 0 7px rgba(17,157,87,0)}}
+.ck-t-stage{position:relative;background:#F7F8FA}
+.ck-t-chat{display:flex;flex-direction:column;gap:12px;padding:28px 26px;height:400px;overflow:hidden}
+.ck-t-msg{max-width:72%;padding:12px 16px;border-radius:18px;font-size:15.5px;line-height:1.5;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.ck-t-msg.on{opacity:1;transform:none}
+.ck-t-a{background:#fff;border:1px solid #EAECF1;color:#1D1D1F;align-self:flex-start;border-bottom-left-radius:6px}
+.ck-t-p{background:#0071E3;color:#fff;align-self:flex-end;border-bottom-right-radius:6px}
+.ck-t-typing{display:flex;gap:5px;padding:14px 18px;background:#fff;border:1px solid #EAECF1;border-radius:18px;border-bottom-left-radius:6px;align-self:flex-start;width:64px;opacity:0;transition:opacity .3s}
+.ck-t-typing.on{opacity:1}
+.ck-t-typing span{width:7px;height:7px;border-radius:50%;background:#B8C0CC;animation:ckdot 1.2s infinite}
+.ck-t-typing span:nth-child(2){animation-delay:.18s}.ck-t-typing span:nth-child(3){animation-delay:.36s}
+@keyframes ckdot{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-5px);opacity:1}}
+.ck-t-iframe{display:none;width:100%;height:640px;border:0;background:#fff}
+.ck-t-frame.live .ck-t-iframe{display:block}
+.ck-t-frame.live .ck-t-chat{display:none}
+.ck-t-toggle{display:flex;align-items:center;justify-content:center;gap:14px;padding:18px 22px;border-top:1px solid #EFF1F5;cursor:pointer;background:#fff}
+.ck-t-toggle input{display:none}
+.ck-t-track{width:56px;height:32px;border-radius:99px;background:#E3E5EA;position:relative;transition:background .25s;flex:none}
+.ck-t-thumb{position:absolute;top:3px;left:3px;width:26px;height:26px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.2);transition:transform .25s}
+.ck-t-toggle input:checked+.ck-t-track{background:#0071E3}
+.ck-t-toggle input:checked+.ck-t-track .ck-t-thumb{transform:translateX(24px)}
+.ck-t-label{font-size:16px;font-weight:600;color:#1D1D1F}
+@media(max-width:640px){.ck-t-chat{height:340px}.ck-t-msg{max-width:86%}.ck-t-iframe{height:560px}}
+</style>
 <script>
 (function(){
-var done={t:false,c:false};
-function loadTry(){if(done.t)return;done.t=true;
-var s=document.createElement('script');s.src='https://symptomcheck.clinekthealth.com/widget/symptomcheck-widget.js';
-s.onload=function(){try{SymptomCheck.init({apiKey:'01e403b6-87bf-464c-a769-0ef408bb15e2',client:'default',view:'full',bookingUrl:'https://clinekthealth.com/book-a-demo',teamUrl:'https://clinekthealth.com/',specialtiesUrl:'https://clinekthealth.com/',locationsUrl:'https://clinekthealth.com/'});}catch(e){}};
-document.body.appendChild(s);}
-function loadCalc(){if(done.c)return;done.c=true;
-var s=document.createElement('script');s.src='https://tbram2.github.io/clinekt-leakage-calculator/embed/clinekt-leakage-embed.js';
-s.setAttribute('data-src','https://tbram2.github.io/clinekt-leakage-calculator/clinekt-leakage-calculator.html');
-document.getElementById('leakage').appendChild(s);}
-function openWidget(tries){var h=document.getElementById('symptomcheck-widget-host');var b=h&&h.shadowRoot?h.shadowRoot.querySelector('button'):null;if(b){b.click();return;}if(tries>0)setTimeout(function(){openWidget(tries-1);},400);}
-document.getElementById('ck-try-launch').addEventListener('click',function(ev){ev.preventDefault();loadTry();openWidget(12);});
+var steps=[].slice.call(document.querySelectorAll('#ckTChat .ck-t-msg'));
+var typing=document.getElementById('ckTTyping');
+var frame=document.querySelector('.ck-t-frame');
+var sw=document.getElementById('ckTSwitch');
+var label=document.getElementById('ckTLabel');
+var i=0,timer=null,running=false;
+function reset(){steps.forEach(function(m){m.classList.remove('on');});typing.classList.remove('on');i=0;}
+function tick(){
+ if(!running)return;
+ if(i>=steps.length){timer=setTimeout(function(){reset();timer=setTimeout(tick,700);},3400);i++;return;}
+ typing.classList.add('on');
+ timer=setTimeout(function(){
+  typing.classList.remove('on');
+  steps[i].classList.add('on');i++;
+  timer=setTimeout(tick,1500);
+ },1100);
+}
+function start(){if(running)return;running=true;tick();}
+function stop(){running=false;clearTimeout(timer);}
 if('IntersectionObserver' in window){
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;if(e.target.id==='try-it')loadTry();else loadCalc();io.unobserve(e.target);});},{rootMargin:'600px'});
-io.observe(document.getElementById('try-it'));io.observe(document.getElementById('leakage'));
-}else{loadTry();loadCalc();}
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){start();}else{stop();}});},{threshold:.25});
+ io.observe(document.getElementById('try-it'));
+}else{start();}
+sw.addEventListener('change',function(){
+ if(sw.checked){
+  var fr=document.getElementById('ckTFrame');
+  if(!fr.src){
+   fr.src='https://symptomcheck.clinekthealth.com/embed/?key=01e403b6-87bf-464c-a769-0ef408bb15e2&client=default&embed_origin='+encodeURIComponent(location.origin)+'&source=widget&booking_url='+encodeURIComponent('https://clinekthealth.com/book-a-demo')+'&team_url='+encodeURIComponent('https://clinekthealth.com/')+'&specialties_url='+encodeURIComponent('https://clinekthealth.com/')+'&locations_url='+encodeURIComponent('https://clinekthealth.com/');
+  }
+  stop();frame.classList.add('live');label.textContent='You’re talking to the live agent';
+ }else{frame.classList.remove('live');label.textContent='Try it yourself';start();}
+});
 })();
 </script>
+
 <div class="cta-wrap" id="contact">
   <div class="cta reveal">
     <h2>Every patient, activated.<br>Every outcome, proven.</h2>
