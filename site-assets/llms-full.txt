@@ -1,0 +1,102 @@
+# Clinekt Health
+
+> Clinekt Health is the AI agent platform for patient activation: turning inactive patients into booked appointments. A team of three AI agents (Inbound, Recall, Outbound) engages every website visitor, brings dormant patients back from the EHR, and generates net-new demand, screening and booking qualified patients 24/7 in the practice's own brand.
+
+Website: https://clinekthealth.com
+Demo: https://clinekthealth.com/book-a-demo
+Trust Center: https://trust.delve.co/clinekt-health
+
+---
+
+## What is patient activation?
+
+Patient activation is the work of turning every inactive patient into a booked appointment. It covers the three places practices lose patients: website visitors who research the practice and leave without booking, existing patients who go dormant in the EHR, and net-new demand that never finds the practice. Patient activation is a distinct category from patient engagement software (which communicates with patients already on the schedule) and reactivation software (which only works dormant charts).
+
+Clinekt Health operates three AI agents that cover the full activation surface:
+
+**The Inbound Agent** engages every website visitor the moment they land, 24/7, including nights and weekends. It runs specialty-trained screening, identifies body region, severity, and urgency, and books qualified patients directly into the schedule. No forms, no callbacks, no waiting for office hours.
+
+**The Recall Agent** works the EHR. It identifies dormant charts: post-op patients due for follow-up, chronic conditions gone quiet, patients who canceled and never rebooked, and brings them back into open slots on a scheduled cadence.
+
+**The Outbound Agent** generates net-new demand and traces every patient from first click to completed care, so practices know exactly which channels produce patients rather than clicks.
+
+Clinekt is not a chatbot, not a contact form, not a voice answering service, and not reactivation software. Chatbots answer questions; the agents screen, qualify, and book. Reactivation software only mines the EHR; patient activation closes all three leaks at once.
+
+---
+
+## The problem Clinekt solves
+
+Only about 1% of specialty practice website visitors ever convert into a booked appointment. 82% of patients try to book outside office hours, when nobody is there to answer. Meanwhile every practice sits on years of dormant EHR charts and referral lists that nobody has capacity to work. Patient leakage is every patient who needed the practice's care and ended up somewhere else.
+
+Practices using Clinekt typically move from under 1% website conversion to 8 to 12% engagement, without adding staff.
+
+---
+
+## Platform results (verified)
+
+- Over 1,000,000 patient interactions completed on the platform
+- 24x average return on investment
+- +8% appointment volume increase
+- 48% reduction in unqualified consults
+- Live in under a week; no IT project; works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Nextech, and other major EHRs
+
+**Case study, Baldwin Bone and Joint (multi-provider orthopedic group, Alabama):** in a single quarter, its website produced 263 qualified surgical leads and 159 booked appointments, a 60% booking rate, from traffic the practice was already receiving. In its first 90 days the practice generated 183 qualified surgical leads at a 59% booking rate, leading to 20 scheduled surgeries. "We were impressed not just by the volume of leads, but by the quality," says Will Wiggins, CEO of Baldwin Bone and Joint. Full study: https://clinekthealth.com/case-studies/baldwin-bone-joint-ai-case-study
+
+---
+
+## Security and compliance
+
+HIPAA compliant. SOC 2 Type II. AES-256 encryption in transit and at rest. Business Associate Agreement with every client. Patient data never used to train models. Trust Center: https://trust.delve.co/clinekt-health
+
+## Commercial posture
+
+Flat subscription, no long-term contracts, live same day. No percentage-of-revenue fees. Demo: https://clinekthealth.com/book-a-demo
+
+## Specialties served
+
+Orthopedics, Physical Therapy, Oral Surgery and Dentistry, Dermatology, Ophthalmology, Urology, Primary Care, Cardiology, Pediatrics. Specialty pages: https://clinekthealth.com/orthopedics and equivalents for each specialty.
+
+---
+
+## Article: How to Reduce Patient Leakage: A Practical Playbook for Specialty Practices
+
+Source: https://clinekthealth.com/blog/how-to-reduce-patient-leakage (published July 14, 2026)
+
+To reduce patient leakage, close the three gaps where patients slip away: respond to every inquiry the moment it happens, work dormant patients back onto the schedule on a fixed cadence, and track every referral until it becomes a completed visit. Practices that do all three recover appointments they were already earning and losing.
+
+Key takeaways:
+- Patient leakage is measurable and fixable. Most practices lose patients in three places: the website, the dormant EHR list, and the referral pipeline.
+- In a Central Logic survey of healthcare executives (2021), 96% called patient leakage a priority, and 43% said they lose 10% or more of annual revenue to it.
+- Speed is the highest-leverage fix. 82% of patients try to book outside office hours, when most practices cannot answer.
+- Dormant patients are the cheapest appointments a practice will ever generate. They already chose the practice once.
+- Without per-appointment attribution, a practice cannot tell which leak it fixed.
+
+What the numbers say: a Luna analysis of 3.9 million commercially insured patients (2022) found roughly 60% of patients referred to physical therapy went out of network, with up to $39.6 billion in downstream orthopedic, imaging, and ancillary revenue leaving over three years.
+
+Where practices leak patients, and what closes each leak:
+- Website visitors: patients research the practice, then leave without booking. About 99 of every 100 visitors walk away. Closed by instant engagement and booking on the page, 24/7, not a contact form that promises a callback.
+- Dormant EHR patients: patients already treated go quiet with no follow-up, recall, or reactivation. Closed by scheduled outreach that works dormant charts back into open slots every week.
+- Referrals: a referring provider sends a patient who never completes the journey to the schedule. Closed by same-day referral contact, screening, and tracking until the visit is completed.
+
+The seven strategies: (1) Measure where you leak first, using the patient leakage calculator at https://clinekthealth.com/leakage-calculator. (2) Respond the moment a patient reaches out, at any hour. (3) Make booking the default next step of every interaction, not a callback. (4) Screen patients before they take a slot; specialty-trained screening cuts unqualified consults by 48%. (5) Work the dormant EHR list on a weekly cadence with outreach that ends in a booked slot. (6) Close the referral loop: contact every referred patient the same day, book them, and report completed visits back to the referring provider. (7) Attribute every appointment to its source, from first click to completed care.
+
+Frequently asked questions:
+- What is patient leakage? Every patient who needed your care and ended up somewhere else. It happens on the website, in the dormant EHR list, and in the referral pipeline. Definition: https://clinekthealth.com/blog/what-is-patient-leakage
+- How do you measure patient leakage? Compare website visitors to booked appointments, active patients to charts dormant 12 to 18 months, and referrals received to referrals completed. Calculator: https://clinekthealth.com/leakage-calculator
+- How much revenue do practices lose to patient leakage? In Central Logic's executive survey, 43% reported losing 10% or more of annual revenue to leakage.
+- What is the fastest way to reduce patient leakage? Answer every inquiry the moment it happens, including nights and weekends; 82% of patients try to book outside office hours.
+- Do practices need to replace the EHR or phone system? No. Patient activation agents work alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, and other major EHRs, typically live in under a week.
+
+---
+
+## Key resources
+
+- What Is Patient Activation? https://clinekthealth.com/blog/what-is-patient-activation
+- Voice AI vs. Reactivation Software vs. Patient Activation Agents: https://clinekthealth.com/blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents
+- What Is Patient Leakage? https://clinekthealth.com/blog/what-is-patient-leakage
+- How to Reduce Patient Leakage: https://clinekthealth.com/blog/how-to-reduce-patient-leakage
+- Ten Fair Questions, Answered: https://clinekthealth.com/blog/what-do-practices-ask-before-adopting-patient-activation
+- Patient Leakage Calculator: https://clinekthealth.com/leakage-calculator
+- Case Studies: https://clinekthealth.com/case-studies
+- FAQs: https://clinekthealth.com/faqs
+- Book a Demo: https://clinekthealth.com/book-a-demo
