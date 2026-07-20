@@ -248,9 +248,9 @@
   var half = kids / 2;
   mq.insertBefore(makeSet(), mq.children[half]);
   mq.appendChild(makeSet());
-  // keep scroll speed constant: duration scales with track length
+  // duration scales with track length, x0.8 so the strip runs slightly faster than the old baseline (Taylor 2026-07-20)
   var cs = window.getComputedStyle(mq).animationDuration;
   var secs = parseFloat(cs) || 80;
-  mq.style.animationDuration = Math.round(secs * (half + logos.length) / half) + 's';
+  mq.style.animationDuration = Math.round(secs * (half + logos.length) / half * 0.8) + 's';
   mq.setAttribute('data-h5', '1');
 })();
