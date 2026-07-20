@@ -75,6 +75,14 @@
 #ck-sp .ps .v{font-size:clamp(28px,3vw,42px);font-weight:700;letter-spacing:-.02em;color:var(--blue);font-variant-numeric:tabular-nums}
 #ck-sp .ps .k{font-size:13px;color:var(--body);margin-top:3px;line-height:1.4}
 
+/* logo wall */
+#ck-sp .logos{padding:clamp(34px,4.5vw,64px) 0 var(--sec-y)}
+#ck-sp .lg-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(52px,6vw,84px) clamp(34px,4.2vw,58px)}
+#ck-sp .lg-grid .lg{flex:0 0 clamp(118px,12vw,158px);display:flex;align-items:center;justify-content:center}
+#ck-sp .lg-grid img{max-height:48px;max-width:100%;width:auto;height:auto;object-fit:contain;opacity:.78;filter:grayscale(1);transition:opacity .3s,filter .3s}
+#ck-sp .lg-grid img:hover{opacity:1;filter:grayscale(0)}
+@media(max-width:520px){#ck-sp .lg-grid{gap:42px 24px}#ck-sp .lg-grid .lg{flex-basis:calc(50% - 14px)}#ck-sp .lg-grid img{max-height:44px}}
+
 /* faq */
 #ck-sp .faq{padding:0 0 var(--sec-y)}
 #ck-sp .faq .inner{max-width:760px;margin:0 auto}
@@ -115,6 +123,22 @@
         <b>of patients try to book outside office hours.</b>
         <span>Knee pain doesn't wait for Monday at 9am. When your front desk is closed, those surgical candidates book with whoever answers. Clinekt answers.</span>
       </div>
+    </div>
+  </div></div>
+
+  <!-- LOGO WALL -->
+  <div class="logos"><div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Trusted Nationwide</span>
+      <h2>The orthopedic practices we work with.</h2>
+    </div>
+    <div class="lg-grid">
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@247ca24/site-assets/media/logos/orthoalabama-mark.svg" alt="OrthoAlabama Spine &amp; Sports" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2a145b4/site-assets/media/logos/ventura.png" alt="Ventura Orthopedics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6992612b90cf6ffecba56289_Final%20Logo%201.925%20(1).svg" alt="Baldwin Bone and Joint" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2a145b4/site-assets/media/logos/northeast.png" alt="Northeast Orthopedic Sports Clinic and Physical Therapy" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/699333fae8d78ec1c0b80cb9_Final%20Logo%201.925%20(3000%20x%201000%20px)%20(4).svg" alt="Bramlett Orthopedic Clinic" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@2a145b4/site-assets/media/logos/paradigm.png" alt="Paradigm Health System" loading="lazy" decoding="async"></span>
     </div>
   </div></div>
 
