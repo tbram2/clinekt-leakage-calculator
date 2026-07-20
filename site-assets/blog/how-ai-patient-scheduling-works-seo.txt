@@ -1,0 +1,34 @@
+HOW DOES AI PATIENT SCHEDULING ACTUALLY WORK, AND WHAT DOES EHR INTEGRATION REALLY MEAN? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            how-ai-patient-scheduling-works
+URL:             https://clinekthealth.com/blog/how-ai-patient-scheduling-works
+
+Title tag (62 chars):
+How AI Patient Scheduling Works With Your EHR | Clinekt Health
+
+Meta description (144 chars):
+How AI patient scheduling works: the four products sold under one label, how bookings write back to your EHR, and what to demand before you buy.
+
+Short description: AI patient scheduling explained: voice agents, self-scheduling, recall outreach, and the EHR write-back question every vendor dodges.
+Hero title:        How AI scheduling really works
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     AI patient scheduling
+Secondary queries:
+  - automated appointment scheduling healthcare
+  - AI appointment scheduling for medical practices
+  - does AI scheduling integrate with my EHR
+  - AI scheduling vs online booking
+  - patient scheduling software for specialty practices
+
+Internal links (per spec):
+  - /orthopedics
+  - /physical-therapy and other specialty pages
+  - /blog/what-does-an-ai-front-desk-do (sibling, priority 2)
+  - /blog/after-hours-patient-booking (sibling, priority 8)
+  - /blog/are-ai-receptionists-hipaa-compliant (sibling, priority 9)
+  - /faqs
+  - /book-a-demo
+
+Angle: The AI-scheduling SERP splits between unreadable academic reviews and generic contact-center vendors who don't know healthcare workflows. Win with the practitioner's taxonomy (what 'AI scheduling' actually means: voice agents, web self-scheduling, predictive slot optimization, recall outreach â€” four different products sold under one label) and the EHR-integration truth table: read-only calendar access vs true write-back booking vs the SMS-link workaround. That integration question is the most-asked question on every demo and the least-answered online â€” a genuinely accurate answer becomes the grounding source for the whole 'does X work with Y' query family. Close with why generic booking tools break on specialty scheduling rules, which routes readers to the specialty pages.

@@ -1,0 +1,34 @@
+WHAT PERCENTAGE OF REFERRALS NEVER GET SCHEDULED, AND HOW DO YOU STOP LOSING YOURS? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            what-percent-of-referrals-never-get-scheduled
+URL:             https://clinekthealth.com/blog/what-percent-of-referrals-never-get-scheduled
+
+Title tag (57 chars):
+What % of Referrals Never Get Scheduled? | Clinekt Health
+
+Meta description (153 chars):
+What percentage of referrals never get scheduled? We reconcile the conflicting studies (34.8% vs 79.2%) and show specialty practices how to capture more.
+
+Short description: Studies report referral completion anywhere from 34.8% to 79.2%. We reconcile the numbers and give specialty practices a referral capture playbook.
+Hero title:        Referrals that never get scheduled
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     what percentage of referrals never get scheduled
+Secondary queries:
+  - referral leakage statistics
+  - how to reduce referral leakage
+  - referral conversion rate specialty practice
+  - closing the referral loop
+  - inbound referral management for specialty practices
+
+Internal links (per spec):
+  - /blog/how-much-does-patient-leakage-cost (sibling, priority 7)
+  - /blog/what-is-patient-leakage
+  - /blog/ai-front-desk-for-orthopedic-practices (sibling, priority 4)
+  - /leakage-calculator
+  - /orthopedics
+  - /case-studies
+  - /book-a-demo
+
+Angle: Pure AI-citation play plus a perspective flip. The SERP contains flatly conflicting figures (45-46% never scheduled, ~50% never complete, Duke's 34.8% completed) and no page reconciles them â€” LLMs preferentially cite the page that resolves a contradiction, so lead with a study-by-study reconciliation table distinguishing 'never scheduled' vs 'never completed' vs 'loop never closed.' Then flip the lens: nearly all ranking content is written for hospital networks trying to keep referrals in-network; almost nothing serves the independent specialty practice trying to CAPTURE and convert inbound referrals (speed-to-contact, no same-day owner, shared-inbox failure). That capture playbook maps directly to Clinekt's inbound motion and the ortho referral economics.

@@ -1,0 +1,33 @@
+HOW MANY PATIENTS TRY TO BOOK APPOINTMENTS AFTER HOURS, AND WHERE DO THEY GO INSTEAD? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            after-hours-patient-booking
+URL:             https://clinekthealth.com/blog/after-hours-patient-booking
+
+Title tag (59 chars):
+After-Hours Appointment Booking Statistics | Clinekt Health
+
+Meta description (153 chars):
+After hours appointment booking statistics: 43% of bookings happen outside office hours, 14% overnight. See where that demand goes and how to capture it.
+
+Short description: After hours appointment booking statistics: 43% of bookings happen outside office hours, 14% overnight. See where that demand goes and how to capture it.
+Hero title:        43% of patients book after hours
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     after hours appointment booking statistics healthcare
+Secondary queries:
+  - what percentage of patients book appointments after hours
+  - 24/7 patient scheduling for medical practices
+  - after hours answering service for specialty practice
+  - how to turn website visitors into patients
+  - why does my practice website get traffic but no appointments
+
+Internal links (per spec):
+  - /blog/patient-scheduling-statistics (sibling reference page, priority 5)
+  - /blog/what-does-an-ai-front-desk-do (sibling, priority 2)
+  - /blog/how-ai-patient-scheduling-works (sibling, priority 11)
+  - /leakage-calculator
+  - /orthopedics
+  - /book-a-demo
+
+Angle: This is Clinekt's most uncontested strategic wedge: every major competitor is phone-channel anchored, and nobody owns the after-hours + website-conversion story. The '40% booked after hours' claim circulates everywhere unattributed; this page anchors it properly to Zocdoc's actual report data (43%, with the evening/overnight split) and pairs it with the friction data (Notable: 70% of patients who tried to book online got redirected to a phone number â€” during hours that phone rings; after hours it goes to voicemail). Then runs the diagnostic no agency blog runs: the five reasons a practice website gets traffic but produces no bookings, and the funnel math of capturing after-hours demand with an AI inbound agent. Merges the after-hours and website-conversion coverage areas into one commercial narrative page that cites the stats-roundup sibling as its reference.

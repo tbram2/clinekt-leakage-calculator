@@ -1,0 +1,75 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://clinekthealth.com/blog/are-ai-receptionists-hipaa-compliant#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://clinekthealth.com/blog/are-ai-receptionists-hipaa-compliant"
+      },
+      "url": "https://clinekthealth.com/blog/are-ai-receptionists-hipaa-compliant",
+      "headline": "Are AI Receptionists and Patient Outreach Agents HIPAA Compliant?",
+      "description": "Are AI receptionists HIPAA compliant? Yes, if the vendor signs a BAA, encrypts PHI, and keeps patient data out of model training. Here is the checklist.",
+      "author": {
+        "@type": "Person",
+        "name": "Taylor Bramlett",
+        "jobTitle": "Founder & CEO",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Clinekt Health"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://clinekthealth.com#organization",
+        "name": "Clinekt Health",
+        "url": "https://clinekthealth.com"
+      },
+      "datePublished": "2026-07-16T00:00:00.000Z",
+      "dateModified": "2026-07-16T00:00:00.000Z",
+      "articleSection": "Blog",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://clinekthealth.com/blog/are-ai-receptionists-hipaa-compliant#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do AI receptionists violate HIPAA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, not inherently. HIPAA regulates how protected health information is handled, not whether a human or an AI handles it. An AI receptionist is compliant when the vendor signs a business associate agreement, encrypts PHI at rest and in transit, restricts data use to your practice's operations, and can produce audit logs. It becomes a violation when a practice routes patient calls through a tool whose vendor will not take on those obligations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does every AI vendor need to sign a BAA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every vendor that creates, receives, maintains, or transmits PHI on your behalf does. That covers voice agents that record calls, chat agents that collect symptoms or insurance details, and scheduling tools that write to your EHR. If a vendor claims a BAA is unnecessary because the data is anonymized, treat that as a red flag: recordings and transcripts containing names, callback numbers, and health details are PHI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an AI company use my patients' data to train its models?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if your agreement permits it, and it should not. Ask the vendor to state in writing that your patients' data is excluded from model training by the vendor and by its subprocessors, including LLM providers, and that those providers operate under zero-retention terms. A vendor that cannot produce that statement has answered the question."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it legal for an AI agent to record patient phone calls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with proper consent. Call recording is governed by state wiretap laws in addition to HIPAA, and several states, including California, Florida, Illinois, Maryland, Massachusetts, Pennsylvania, and Washington, require consent from every party on the call. A clear recording disclosure at the start of each call satisfies the strictest states, which is why compliant vendors disclose on every call regardless of where the caller lives."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>

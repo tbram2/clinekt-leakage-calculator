@@ -1,0 +1,33 @@
+WHICH PATIENT ENGAGEMENT SOFTWARE DOES A SPECIALTY PRACTICE ACTUALLY NEED? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            patient-engagement-software-for-specialty-practices
+URL:             https://clinekthealth.com/blog/patient-engagement-software-for-specialty-practices
+
+Title tag (56 chars):
+Best Patient Engagement Software for Specialty Practices
+
+Meta description (157 chars):
+The best patient engagement software for specialty practices depends on which leak you need closed. Six categories, specialty fit, and the fees vendors hide.
+
+Short description: A specialty-segmented buyer's guide to patient engagement software: six tool categories, per-specialty fit, hidden fees, and what to measure in a pilot.
+Hero title:        Engagement software buyer's guide
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     best patient engagement software for specialty practices
+Secondary queries:
+  - patient engagement software
+  - patient engagement tools for specialty practices
+  - patient engagement platform comparison
+  - how much does patient engagement software cost
+  - AI patient engagement software
+
+Internal links (per spec):
+  - /blog/patient-engagement-vs-patient-activation (sibling, priority 1)
+  - /blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents
+  - /blog/what-do-practices-ask-before-adopting-patient-activation
+  - /blog/are-ai-receptionists-hipaa-compliant (sibling, priority 9)
+  - /orthopedics, /physical-therapy, and the other specialty pages
+  - /book-a-demo
+
+Angle: The buyer-guide post. Every listicle ranking for 'best patient engagement software for specialty practices' fails the query's core promise â€” none actually segments by specialty. Win by being the only genuinely specialty-segmented guide, and follow house style: compare CATEGORIES honestly (patient portals, digital intake, reminder blasts, two-way texting, recall/reactivation automation, AI activation agents) rather than naming competitors negatively. Map each specialty's real workflow needs (ortho referral capture and surgical episodes, PT adherence and drop-off recall, OMFS referral intake, derm annual recalls) to the tool categories that matter, add the pricing-model reality section the SERP lacks (per-provider vs per-location tiers, hidden EHR-integration fees), and run the engagement-vs-activation reframe as the selection lens. Comparison tables in this shape are exactly what AI assistants extract for 'best X for Y' answers.

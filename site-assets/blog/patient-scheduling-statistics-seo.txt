@@ -1,0 +1,32 @@
+HOW DO PATIENTS WANT TO BOOK MEDICAL APPOINTMENTS? THE STATISTICS PRACTICES SHOULD KNOW - SEO/AEO FIELDS
+======================================================================
+
+Slug:            patient-scheduling-statistics
+URL:             https://clinekthealth.com/blog/patient-scheduling-statistics
+
+Title tag (57 chars):
+Patient Self-Scheduling Statistics: 2026 Data and Sources
+
+Meta description (158 chars):
+Patient self-scheduling statistics for 2026: what patients say, how they actually book, and the provider adoption gap. Every stat sourced, dated, and citable.
+
+Short description: Patient self-scheduling statistics for 2026: what patients say, how they actually book, and the provider adoption gap. Every stat sourced, dated, and citable.
+Hero title:        Patient scheduling statistics
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     patient self-scheduling statistics
+Secondary queries:
+  - online medical appointment booking statistics
+  - what percentage of patients prefer to book online
+  - patient scheduling statistics healthcare
+  - digital front door statistics
+  - patient portal adoption statistics
+
+Internal links (per spec):
+  - /blog/after-hours-patient-booking (sibling, priority 8)
+  - /blog/how-ai-patient-scheduling-works (sibling, priority 11)
+  - /blog/average-no-show-rate-and-cost (sibling, priority 3)
+  - /leakage-calculator
+  - /book-a-demo
+
+Angle: The mandatory pooled statistics roundup ('patient access statistics' style, evergreen slug, year kept in the H1 refresh not the URL). The current SERP is non-healthcare stat aggregators (Zippia, schedulingkit, webinarcare) recycling unsourced numbers â€” highly winnable. Win by being the only page where every stat carries source, year, sample size, and a one-line method note, organized by theme with anchor links, plus the section nobody has: reconciling the contradictory preference data (60-67% 'prefer online' consumer surveys vs healthcare-specific surveys favoring phone) via stated-vs-revealed preference and age cohorts. Stat reference pages are disproportionate LLM-citation and backlink magnets; refresh annually with a visible last-updated date. This page is the source-of-record that every other post in the cluster cites internally.

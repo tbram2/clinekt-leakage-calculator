@@ -1,0 +1,45 @@
+HOW TO REDUCE PATIENT LEAKAGE — SEO/AEO FIELDS (Webflow CMS + page settings)
+=============================================================================
+
+Slug:            how-to-reduce-patient-leakage
+URL:             https://clinekthealth.com/blog/how-to-reduce-patient-leakage
+
+Title tag (58 chars):
+How to Reduce Patient Leakage: 7 Strategies | Clinekt Health
+
+Meta description (154 chars):
+How to reduce patient leakage in three places practices lose patients: the website, dormant EHR charts, and referrals. Seven strategies, with the numbers.
+
+OG title:        How to Reduce Patient Leakage: A Practical Playbook for Specialty Practices
+OG description: 96% of healthcare executives call patient leakage a priority. Seven strategies that close the website, EHR, and referral leaks, with real practice results.
+OG image:        how-to-reduce-patient-leakage.png (1600x900, upload to Webflow assets)
+
+Primary queries targeted (from GSC, 3-mo window, position at time of writing):
+- patient leakage                          35 imp, pos 19.1  <- head term, page 2
+- patient volume leakage                   14 imp, pos 8.5
+- what is patient leakage                   6 imp, pos 4.8   (cluster support)
+- patient leakage statistics                3 imp, pos 13
+- patient leakage prevention strategies     2 imp, pos 18
+- patient referral leakage                  3 imp, pos 35.7
+- medical referral leakage                  2 imp, pos 42
+- physician leakage                         3 imp, pos 25.3
+
+Cluster / internal links used in article:
+- /blog/what-is-patient-leakage (definition post, both directions: add a link FROM that post to this one: anchor "how to reduce patient leakage")
+- /leakage-calculator (x3)
+- /blog/what-is-patient-activation
+- /blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents
+- /case-studies/baldwin-bone-joint-ai-case-study
+- /book-a-demo
+
+External citations (E-E-A-T, keep hyperlinked):
+- Central Logic executive survey via americantelemed.org (96% priority / 43% lose >=10% revenue)
+- Luna 2022 analysis via getluna.com (60% PT referrals out-of-network, $39.6B downstream ortho)
+
+Post-publish checklist:
+[ ] Add hero image to CMS item + alt text: "Sealed leak: patient retained and appointment booked, Clinekt Health"
+[ ] Paste JSON-LD from how-to-reduce-patient-leakage-schema.html into the CMS item's custom head code (or page-level head)
+[ ] Add link from what-is-patient-leakage post body ("how to measure" section) to this post
+[ ] Add this post to llms.txt under Core Pages
+[ ] Request indexing in GSC (URL inspection -> Request indexing)
+[ ] Add to blog index / featured if applicable

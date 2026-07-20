@@ -1,0 +1,32 @@
+ARE AI RECEPTIONISTS AND PATIENT OUTREACH AGENTS HIPAA COMPLIANT? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            are-ai-receptionists-hipaa-compliant
+URL:             https://clinekthealth.com/blog/are-ai-receptionists-hipaa-compliant
+
+Title tag (54 chars):
+Are AI Receptionists HIPAA Compliant? | Clinekt Health
+
+Meta description (152 chars):
+Are AI receptionists HIPAA compliant? Yes, if the vendor signs a BAA, encrypts PHI, and keeps patient data out of model training. Here is the checklist.
+
+Short description: A plain-English HIPAA guide for vetting AI receptionists: where PHI actually lives, the BAA clauses that matter, and a 12-question vendor checklist.
+Hero title:        AI receptionists and HIPAA
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     are AI receptionists HIPAA compliant
+Secondary queries:
+  - HIPAA compliant AI voice agent healthcare
+  - is AI appointment scheduling HIPAA compliant
+  - HIPAA compliant answering service for medical offices
+  - BAA requirements for AI vendors
+  - is patient data safe with AI agents
+
+Internal links (per spec):
+  - /blog/what-do-practices-ask-before-adopting-patient-activation
+  - /blog/what-does-an-ai-front-desk-do (sibling, priority 2)
+  - /blog/how-ai-patient-scheduling-works (sibling, priority 11)
+  - /faqs
+  - /book-a-demo
+
+Angle: The most winnable AEO target in the front-desk cluster: every ranking page recycles the same BAA/encryption checklist boilerplate, and none covers what a compliance officer actually needs â€” where PHI physically lives in a voice/text agent (call recordings, transcripts, vector stores), whether patient data trains the vendor's models, state two-party call-recording consent, and breach-notification SLAs. Write the definitive 'yes, if...' explainer citing HHS guidance directly, capped with a printable 12-question vendor audit checklist (lead magnet). This is late-funnel objection content that converts specialty decision-makers and is exactly the question AI assistants field verbatim from practice administrators.

@@ -1,0 +1,33 @@
+APPOINTMENT REMINDERS VS PATIENT RECALL VS PATIENT REACTIVATION: WHAT'S THE DIFFERENCE? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            reminders-vs-recall-vs-reactivation
+URL:             https://clinekthealth.com/blog/reminders-vs-recall-vs-reactivation
+
+Title tag (60 chars):
+Patient Recall vs Reactivation vs Reminders: Key Differences
+
+Meta description (148 chars):
+Patient recall vs patient reactivation vs appointment reminders: three patient states, three plays. Get the comparison, decision tree, and evidence.
+
+Short description: Reminders confirm booked visits, recall books patients due for care, reactivation wins back dormant ones. The full taxonomy with a decision tree.
+Hero title:        Reminders, recall, reactivation
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     patient recall vs patient reactivation
+Secondary queries:
+  - appointment reminder vs patient recall difference
+  - what is a patient recall system
+  - patient retention vs reactivation
+  - which patients need recall vs reactivation
+  - patient recall system for medical practices
+
+Internal links (per spec):
+  - /blog/what-is-patient-activation
+  - /blog/how-to-reactivate-dormant-patients (sibling, priority 6)
+  - /blog/do-appointment-reminders-reduce-no-shows (sibling, priority 14)
+  - /blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents
+  - /case-studies
+  - /book-a-demo
+
+Angle: Brevium owns the two-way recall-vs-reactivation comparison; nobody owns the full three-way taxonomy, and the reminder-vs-recall SERP has no definitive US winner. Publish the canonical taxonomy: reminders (patients with a booked appointment), recall (active patients due for routine care with no appointment), reactivation (patients lost to follow-up) â€” as a comparison table plus a decision tree by patient state, each motion mapped to the evidence it works and to the agent that runs it. Question-formatted title + table + decision matrix is exactly the shape answer engines extract, and it's the definitional hub that both the reactivation playbook and the reminder-evidence post hang off.

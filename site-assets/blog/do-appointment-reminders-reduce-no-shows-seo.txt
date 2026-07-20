@@ -1,0 +1,32 @@
+DO APPOINTMENT REMINDER TEXTS ACTUALLY REDUCE NO-SHOWS? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            do-appointment-reminders-reduce-no-shows
+URL:             https://clinekthealth.com/blog/do-appointment-reminders-reduce-no-shows
+
+Title tag (58 chars):
+Do Appointment Reminders Reduce No-Shows? | Clinekt Health
+
+Meta description (157 chars):
+Do appointment reminder texts reduce no-shows? Yes: controlled studies show 28.9-39.1% fewer missed visits. See the evidence and why reminders alone plateau.
+
+Short description: Do appointment reminder texts reduce no-shows? Yes: controlled studies show 28.9-39.1% fewer missed visits. See the evidence and why reminders alone plateau.
+Hero title:        Do reminder texts cut no-shows?
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     do appointment reminder texts reduce no-shows
+Secondary queries:
+  - how effective are appointment reminders
+  - SMS appointment reminders no-show reduction
+  - automated vs manual appointment reminders
+  - how to reduce patient no-shows medical practice
+  - why do patients still no-show with reminders
+
+Internal links (per spec):
+  - /blog/average-no-show-rate-and-cost (sibling, priority 3)
+  - /blog/reminders-vs-recall-vs-reactivation (sibling, priority 10)
+  - /blog/what-does-an-ai-front-desk-do (sibling, priority 2)
+  - /leakage-calculator
+  - /book-a-demo
+
+Angle: Evidence-review format on a SERP split between thin vendor content and inaccessible meta-analyses. Give the direct answer in paragraph one (yes â€” with real effect sizes and a study table), then make the two arguments nobody ranking makes: (1) manual/conversational reminders outperform one-way automated blasts in the literature (39.1% vs 28.9% reduction) â€” which is precisely the case for conversational AI over SMS blasts; (2) the honest plateau â€” even with reminders, meaningful no-show rates persist, because reminders only address forgetting, not friction, so the residual gap is closed by two-way rescheduling, waitlist backfill, and recall. The plateau argument IS Clinekt's agents-over-reminders category narrative, delivered as an honest evidence review that earns trust and citations.

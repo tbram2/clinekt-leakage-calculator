@@ -1,0 +1,61 @@
+<p><strong>Yes. Appointment reminder texts reduce no-shows substantially: across 29 studies, automated reminders cut non-attendance by a weighted mean of 28.9%, and live phone reminders by 39.1%. But reminders only fix one cause of missed appointments, forgetting, which is why every study still shows a meaningful residual no-show rate after reminders are in place. Closing that gap takes two-way rescheduling, waitlist backfill, and recall, not more texts.</strong></p>
+
+<h2>The short answer</h2>
+<p>Reminder texts are one of the few practice-operations tools with a genuinely deep evidence base behind them. Systematic reviews, randomized trials, and large observational studies all point the same direction: reminders reduce non-attendance, and the effect is large enough to matter on any specialty schedule.</p>
+<p>Two findings in that literature get almost no attention, and they should change what you build. First, manual reminders (a human conversation) consistently outperform one-way automated blasts. Second, no study arm gets no-shows anywhere near zero, because reminders address forgetting and nothing else.</p>
+
+<h2>What the studies show</h2>
+<p>These are the four studies worth knowing, with effect sizes quoted directly from the source:</p>
+<ul>
+<li><strong>SMS versus no reminder:</strong> patients who received a text reminder were 38% less likely to miss their appointment. Non-attendance was 11.2% with an SMS reminder versus 18.1% without, in a hospital ophthalmology department (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2438329/">Koshy, Car &amp; Majeed, BMC Ophthalmology, 2008</a>). This is the origin of the widely quoted claim that texts cut no-shows by 38%.</li>
+<li><strong>Manual versus automated, across 29 studies:</strong> a systematic review found manual reminders (a staff phone call) cut non-attendance by a weighted mean of 39.1%, while automated reminders cut it by 28.9% (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3188816/">Hasvold &amp; Wootton, Journal of Telemedicine and Telecare, 2011</a>).</li>
+<li><strong>Three-arm comparison:</strong> across 9,835 patients, those who received no reminder no-showed 23.1% of the time, versus 17.3% with an automated reminder and 13.6% with a live staff call (<a href="https://amjmed.org/the-effectiveness-of-outpatient-appointment-reminder-systems-in-reducing-no-show-rates/">Parikh et al., American Journal of Medicine, 2010</a>).</li>
+<li><strong>Randomized controlled trial:</strong> in a pediatric clinic, adding text message reminders cut the no-show rate to 23.5%, versus 38.1% in the control group (p = 0.04). It is a small trial, but the direction matches the larger reviews (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5227159/">International Journal of Pediatrics, 2016</a>).</li>
+</ul>
+<p>Now read those numbers again and look at the residuals. The best-performing arm in the three-arm study still missed 13.6% of appointments. The SMS group in the ophthalmology study still missed 11.2%. Reminders work, and then they plateau.</p>
+
+<h2>Why a live conversation beats a text blast</h2>
+<p>The most useful number in the whole literature is the gap between manual and automated reminders: 39.1% versus 28.9% in the Hasvold review, 13.6% versus 17.3% in the three-arm study. Same message, same timing, roughly ten points of performance apart.</p>
+<p>That gap is not a channel effect. A phone call outperforms a text because it is a conversation: the caller can answer a question about insurance, move the appointment to Thursday on the spot, or capture the cancellation so the slot can be refilled. A one-way blast can do none of that, so the patient who was already wavering just ignores it.</p>
+<p>This finding matters more now than it did in 2011. Paying a human to call every patient never scaled, which is why most practices settled for blasts. Conversational AI removes that constraint: an <a href="/blog/what-does-an-ai-front-desk-do">AI agent answering the practice's calls and texts</a> can hold the same two-way conversation a staff caller would, for every appointment on the schedule, at any hour.</p>
+
+<h2>The plateau: what reminders can't fix</h2>
+<p>The largest systematic review of no-show research, covering 105 studies, found that the strongest predictors of a missed appointment are a long lead time between booking and visit and a prior history of no-showing (<a href="https://pubmed.ncbi.nlm.nih.gov/29482948/">Dantas et al., Health Policy, 2018</a>). Notice that neither of those is forgetting.</p>
+<p>A reminder cannot shorten a six-week wait for a consult, and it cannot make rescheduling easy for a patient whose plans changed. If the only action your reminder offers is "reply C to confirm", the patient who can no longer make it has nowhere to go. Many go silent, and the slot dies with them.</p>
+<p>That is the honest reading of the evidence: reminders solve forgetting nearly completely and leave everything else untouched. For where your baseline should sit before and after reminders, see our roundup of <a href="/blog/average-no-show-rate-and-cost">average no-show rates and what they cost</a>.</p>
+
+<h2>What closes the residual gap</h2>
+<p>Three mechanisms address the causes reminders can't touch:</p>
+<ul>
+<li><strong>Two-way rescheduling in the reminder thread:</strong> when the reminder itself can move the appointment, every "I can't make it" reply becomes a rebooked visit instead of a dead slot. Across Clinekt deployments, 82% of patients try to book outside office hours, so that rescheduling conversation has to work at 9pm on a Tuesday, not just when the desk is staffed.</li>
+<li><strong>Waitlist backfill:</strong> a cancellation captured 48 hours out is usable inventory. A short-notice waitlist, worked automatically, turns the cancellations your reminders surface into filled slots instead of idle chair time.</li>
+<li><strong>Recall for the patients who cancel and vanish:</strong> a Cochrane review of 55 studies covering 138,625 participants found patient reminder and recall systems raised receipt of preventive care by 8 percentage points on average, and telephone outreach was the most effective channel (<a href="https://pubmed.ncbi.nlm.nih.gov/29342498/">Cochrane Database of Systematic Reviews, 2018</a>). Without recall, the patient who cancels and never rebooks quietly becomes <a href="/blog/what-is-patient-leakage">patient leakage</a>.</li>
+</ul>
+<p>These three jobs are related but distinct, and practices conflate them constantly. We wrote a plain-English breakdown of <a href="/blog/reminders-vs-recall-vs-reactivation">reminders versus recall versus reactivation</a> if you want the full taxonomy.</p>
+
+<h2>Does self-scheduling help too?</h2>
+<p>Yes, with a caveat worth respecting. In a 2025 study, appointments booked online at a private medical practice had a 1.8% no-show rate versus 5.9% for offline bookings. In the university hospital studied in the same paper, the pattern reversed: 14.3% for online bookings versus 11.2% offline (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12081397/">Frontiers in Digital Health, 2025</a>).</p>
+<p>The difference was the booking model. The practice let patients pick a real slot directly, while the hospital routed online requests through a triage queue, so patients were assigned times they never truly chose. Patients keep appointments they own. Self-scheduling reduces no-shows when it is actual scheduling, not a request form.</p>
+
+<h2>A reminder setup that actually works</h2>
+<p>The studies above, plus the predictor research, translate into a fairly specific configuration:</p>
+<ul>
+<li><strong>Confirm at booking:</strong> send an immediate confirmation with the date, provider, location, and prep instructions. It sets the expectation that messages from your practice are worth reading.</li>
+<li><strong>Remind twice:</strong> once about a week out and once 24 to 48 hours before the visit. The first catches schedule conflicts while there is still time to rebook the slot; the second catches forgetting.</li>
+<li><strong>Mix channels:</strong> text first, then a call for patients who never respond. The evidence consistently favors adding a voice conversation over sending a third text.</li>
+<li><strong>Make every message two-way:</strong> confirm, cancel, and rebook should all be possible inside the same thread. A reminder without a reschedule path converts uncertainty into silence.</li>
+<li><strong>Escalate the high-risk appointments:</strong> long lead times and prior no-show history are the strongest predictors of a miss, so give those patients a live or AI-led conversation instead of a blast. A surgical consult booked six weeks out is exactly the appointment that deserves it; we see this pattern most often in <a href="/orthopedics">orthopedics</a>.</li>
+<li><strong>Measure the residual, not just the reduction:</strong> track where your no-show rate plateaus after reminders, then point backfill and recall at the remainder.</li>
+</ul>
+
+<h2>Common questions</h2>
+<h3>How much do appointment reminder texts reduce no-shows?</h3>
+<p>Controlled studies show automated reminders cut no-shows by a weighted mean of 28.9%, and staff phone calls by 39.1%, relative to no reminder (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3188816/">Hasvold &amp; Wootton, 2011</a>). In the most cited single study, non-attendance fell from 18.1% to 11.2% with SMS reminders, a 38% relative reduction (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2438329/">Koshy, Car &amp; Majeed, 2008</a>).</p>
+<h3>Are automated reminders as effective as a call from staff?</h3>
+<p>No. Across 29 studies, manual reminders outperformed automated ones, cutting non-attendance 39.1% versus 28.9% (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3188816/">Hasvold &amp; Wootton, 2011</a>), and a three-arm study found live staff calls produced a 13.6% no-show rate versus 17.3% for automated reminders (<a href="https://amjmed.org/the-effectiveness-of-outpatient-appointment-reminder-systems-in-reducing-no-show-rates/">Parikh et al., 2010</a>). The difference is the two-way conversation, which is exactly what conversational AI makes affordable at scale.</p>
+<h3>Why do patients still no-show after receiving reminders?</h3>
+<p>Because reminders only fix forgetting. The strongest predictors of no-shows are a long lead time between booking and appointment and a prior history of missed visits (<a href="https://pubmed.ncbi.nlm.nih.gov/29482948/">Dantas et al., 2018</a>), and a message alone changes neither. Patients who can no longer attend need an easy way to reschedule, or they go silent and the slot dies.</p>
+<h3>How many reminders should a practice send, and when?</h3>
+<p>A confirmation at booking, a reminder about a week out, and a final reminder 24 to 48 hours before the visit is a sensible default for specialty appointments. The cadence matters less than the capability: every message should let the patient confirm, cancel, or rebook inside the same thread.</p>
+
+<p>If you want to know what your current no-show and cancellation pattern costs in real revenue, run your numbers through our <a href="/leakage-calculator">leakage calculator</a>. And if you want reminders that hold a real conversation, reschedule patients on the spot, and recall the ones who vanish, <a href="/book-a-demo">book a demo</a>: across Clinekt deployments, practices see 8% more appointment volume from the same schedule.</p>

@@ -1,0 +1,93 @@
+<p><strong>To reactivate dormant patients, pull lapsed-patient lists from your EHR by recall type and time since last visit, segment them into warm, cool, and cold tiers, and run a multi-touch sequence across text, email, and phone until each patient books, opts out, or completes the sequence. Automate the list work and reserve staff for the exceptions that genuinely need a human. Done systematically, this rebooks patients most practices had written off, without adding a single hire.</strong></p>
+
+<p>Patient reactivation is the industry term for bringing patients who quietly stopped returning back onto the schedule. For the definitions, including how reactivation differs from reminders and recall, see <a href="/blog/reminders-vs-recall-vs-reactivation">reminders vs recall vs reactivation</a>. This post is the operational playbook: what to pull, how to segment, what to send, and what the work costs.</p>
+
+<h2>How big is your dormant list, really?</h2>
+
+<p>Bigger than you think, and the best evidence comes from specialties where lapsing is dangerous. In an analysis of the American Academy of Ophthalmology's IRIS Registry, 50% of 553,663 glaucoma patients became lost to follow-up, defined as going more than a year without a clinical encounter, and 67% of those who lapsed never returned to care (<a href="https://www.tandfonline.com/doi/full/10.1080/08820538.2024.2391826">Williams et al., Seminars in Ophthalmology, 2025</a>).</p>
+
+<p>Retina tells the same story. At a large US retina practice, 22.2% of patients receiving sight-preserving anti-VEGF injections went more than 12 months without returning (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6583857/">Obeid et al., JAMA Ophthalmology, 2018</a>). These are patients with chronic, vision-threatening disease and a standing clinical reason to come back. If half of glaucoma patients lapse, assume your elective and episodic caseload lapses at least as fast.</p>
+
+<p>Dormant charts are one of the three sources of <a href="/blog/what-is-patient-leakage">patient leakage</a>, and usually the largest one nobody has quantified. Run your own numbers through our <a href="/leakage-calculator">leakage calculator</a> before you decide this is a small problem.</p>
+
+<h2>Why patients actually go dormant</h2>
+
+<p>The counterintuitive part: most dormant patients were never unhappy. Accenture's benchmark surveys of 21,000 US consumers found that 25% of patients switched providers in 2021 because they were unhappy, up from 18% in 2017, and nearly 80% of those who left cited ease-of-navigation factors (administrative hassle, poor staff interactions, weak digital tools) rather than clinical quality (<a href="https://www.accenture.com/us-en/insightsnew/health/difference-between-loyalty-leaving">Accenture, 2022</a>).</p>
+
+<p>A separate Accenture survey found 34% of US patients switched providers or treatments after a negative healthcare experience (<a href="https://newsroom.accenture.com/news/2021/two-thirds-of-americans-have-had-a-negative-health-care-experience-according-to-accenture-research">Accenture, 2021</a>). Read those together: some attrition is a reaction to friction, and very little of it is a verdict on your medicine.</p>
+
+<p>Most dormancy is not even switching. The patient meant to rebook, the follow-up card got buried, nobody called, and eighteen months evaporated. That is exactly why systematic outreach works: you are not winning back an angry customer, you are removing friction for a willing one.</p>
+
+<h2>Segment before you send: warm, cool, cold</h2>
+
+<p>A single blast to the whole list wastes your best prospects and floods your phones with the wrong callbacks. Pull three lists from the EHR instead, each with its own message and cadence.</p>
+
+<ul>
+<li><strong>Warm (highest intent):</strong> 6 to 18 months since last visit, plus a concrete clinical hook: an open treatment plan, an ordered-but-unscheduled follow-up, or a missed recall for an active condition. Pull by recall type and provider so every message can name the reason to return.</li>
+<li><strong>Cool:</strong> 18 to 36 months out, prior episode of care completed, condition with a natural recurrence or maintenance interval (arthritis, skin checks, chronic tendinopathy). These patients need a reason, not just a reminder.</li>
+<li><strong>Cold:</strong> three or more years out, no future appointment, contact information still valid. Treat this tier like reacquisition: reintroduce the practice and make booking one click.</li>
+</ul>
+
+<p>Scrub before you send anything. Remove deceased, transferred, and dismissed patients, flag bad numbers and dead emails, and exclude anyone already booked. List hygiene is what separates a recall program from spam.</p>
+
+<h2>The outreach sequence that converts</h2>
+
+<p>A Cochrane review of 55 studies covering 138,625 participants found that patient reminder and recall systems raise preventive-care completion by 8 percentage points on average, and that telephone outreach was the most effective single channel (<a href="https://pubmed.ncbi.nlm.nih.gov/29342498/">Jacobson Vann et al., Cochrane, 2018</a>). Text is the cheapest touch. The phone is still the strongest one. Build the sequence to use both.</p>
+
+<p>A cadence that holds up across specialties:</p>
+
+<ul>
+<li><strong>Touch 1, day 1, text:</strong> short, named, specific, with a direct booking link. "Hi Maria, it's [practice]. Dr. Chen has you due for your one-year follow-up. Tap here to pick a time."</li>
+<li><strong>Touch 2, day 4, email:</strong> same clinical reason, slightly longer, booking link above the fold.</li>
+<li><strong>Touch 3, day 10, phone call:</strong> a live or agent-led conversation that can answer questions, handle objections, and book on the spot.</li>
+<li><strong>Touch 4, day 18, text:</strong> final nudge at a different time of day. Offer to update records or close the loop if they have moved on.</li>
+</ul>
+
+<p>Scripts change by tier. Warm messages name the clinical reason and the provider. Cool messages name the condition and the interval: "it has been two years since your last skin exam." Cold messages reintroduce the practice and strip every step between reading and booking.</p>
+
+
+
+<p>One rule spans every tier: each touch must end in a booking path that works at 9pm. Across Clinekt deployments, 82% of patients try to book outside office hours. A message that ends in "call our office" converts only the patients willing to call, hold, and retry during your busiest window.</p>
+
+<h2>Reactivation cadences by specialty</h2>
+
+<p>The lists worth pulling first differ by specialty, because the clinical hooks differ.</p>
+
+<ul>
+<li><strong>Orthopedics:</strong> hardware checks at 12 months, post-op patients who missed a final follow-up, injection patients who stopped mid-cycle, and imaging follow-ups that never got scheduled. See how activation works for <a href="/orthopedics">orthopedic practices</a>.</li>
+<li><strong>Physical therapy:</strong> plan-of-care drop-offs mid-episode are your warmest tier, followed by patients who completed an eval but never started care, and discharged patients with recurrence-prone conditions. More for <a href="/physical-therapy">physical therapy practices</a>.</li>
+<li><strong>Dermatology:</strong> annual skin checks that lapsed past 18 months, biopsy follow-ups, and patients on monitored therapies who stopped showing up for labs.</li>
+<li><strong>Ophthalmology:</strong> glaucoma pressure checks, diabetic eye exams, and injection intervals. The IRIS Registry data above makes this a patient-safety program, not just a revenue one.</li>
+</ul>
+
+<h2>The honest math: staff hours vs AI agents</h2>
+
+<p>Run the arithmetic before assigning this to the front desk. Assume a 3,000-patient dormant list, three attempts per patient, and five minutes per attempt including documentation: that is 9,000 attempts and 750 staff hours, roughly 19 weeks of full-time calling before anyone handles a callback. And the list refills every month as new patients lapse.</p>
+
+<p>Staffing it is also fragile. Front-office turnover hit 40% across medical practices in 2022, the highest of any staff category (<a href="https://www.prnewswire.com/news-releases/mgma-data-reveals-medical-practices-innovation-to-overcome-staffing-challenges-301913066.html">MGMA, 2023</a>). Building your retention engine on the least stable role in the practice means rebuilding it every year.</p>
+
+<p>The economics justify solving it anyway. Acquiring a new customer costs 5 to 25 times more than retaining an existing one, and increasing retention by 5% lifts profits 25% to 95% (<a href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers">HBR/Bain, 2014</a>). In healthcare the stakes compound over decades: NRC Health puts the average remaining lifetime healthcare spend of a 26-year-old consumer at $1.2 million (<a href="https://nrchealth.com/4ty1dsx-2/">NRC Health, 2023</a>).</p>
+
+<p>This is where the tooling generation matters. Legacy patient reactivation software generates call lists, and staff still make the calls. Modern AI agents work the entire list themselves across voice, text, and email, write outcomes back to the EHR, and hand staff only the exceptions. We compare the categories in <a href="/blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents">voice AI vs reactivation software vs patient activation agents</a>. Our Recall Agent runs the agent model: flat subscription, no long-term contracts, live in under a week, and across Clinekt deployments practices average 24x ROI and +8% appointment volume.</p>
+
+<h2>How to measure reactivation success</h2>
+
+<p>Track five numbers by tier and channel: contact rate (did the message reach a live number), response rate, booking rate, show rate, and completed-visit rate. Add time-to-rebook, the days from first touch to booked appointment; it shows which touches do the work and where the sequence stalls.</p>
+
+<p>Expect a gradient: warm should convert at multiples of cold. If warm underperforms cool, the message is wrong, usually too generic or missing the clinical reason. If cold bounces heavily, the problem is data hygiene, not demand. Review monthly, retire patients who booked or opted out, refresh the lists, and weigh booked revenue against program cost. For what activated volume looks like in real practices, browse our <a href="/case-studies">case studies</a>.</p>
+
+<h2>Common questions</h2>
+
+<h3>What counts as a dormant patient?</h3>
+<p>A dormant patient has gone past their expected return interval with no future appointment on the books. For most specialty practices that means 12 to 18 months since the last visit, but the right threshold depends on the recall interval for the condition: a glaucoma patient is dormant at 13 months, while a skin-check patient may not be dormant until month 18. Define it per recall type in your EHR rather than with one blanket rule.</p>
+
+<h3>How many outreach touches does it take to reactivate a dormant patient?</h3>
+<p>Plan on three to five touches across at least two channels over two to three weeks. A single text recovers the easiest patients, but phone outreach remains the most effective single channel in the published evidence, so sequences that include a call outperform text-only campaigns. Stop when the patient books, opts out, or finishes the sequence.</p>
+
+<h3>Can you text dormant patients without getting new consent?</h3>
+<p>In most cases yes, when the message concerns the patient's own care: recall and follow-up outreach is treatment communication under HIPAA, and most intake forms already capture phone and text consent. You still need to honor opt-outs immediately, keep clinical details out of message bodies, and confirm your consent language covers automated calls and texts under the TCPA. Have counsel review the templates once before the first campaign, then reuse them.</p>
+
+<h3>Do you need patient reactivation software to do this?</h3>
+<p>No, a small list can be worked from an EHR report and a spreadsheet. The manual approach breaks down at scale, because a few thousand dormant charts means hundreds of staff hours per cycle, which is why practices either cap the program at the warm tier or automate it. AI agents now run the full sequence across voice, text, and email and write outcomes back to the EHR, leaving staff only the exceptions.</p>
+
+<p>Want to know what your dormant list is worth before you build any of this? Size it in dollars with the <a href="/leakage-calculator">leakage calculator</a>, then <a href="/book-a-demo">book a demo</a> to watch the Recall Agent work a list like yours end to end.</p>

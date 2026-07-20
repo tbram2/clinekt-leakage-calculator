@@ -1,0 +1,60 @@
+<p><strong>There is no rigorously measured universal number for what patient leakage costs, and most of the figures that circulate online are unattributed. The best verified data: health system executives estimate they could increase revenue by 17% by reducing leakage (<a href="https://abouthealthcare.com/wp-content/uploads/2025/03/Patient-Leakage-and-Keepage_State-of-the-Industry.pdf">ABOUT Healthcare, 2021</a>), and at one large academic health system only 34.8% of referral scheduling attempts became completed appointments (<a href="https://pubmed.ncbi.nlm.nih.gov/29532299/">Patel et al., 2018</a>). The honest answer is a formula built from your dormant patient count, your referral volume, and your visit values. This post separates the verified statistics from the folklore, then walks through that math.</strong></p>
+
+<h2>How much revenue do practices lose to leakage? The honest answer</h2>
+<p>Patient leakage is the revenue lost when patients who should be getting care at your practice get it somewhere else, or nowhere at all. We cover the definition and the mechanics in our guide to <a href="/blog/what-is-patient-leakage">what patient leakage is</a>. This post is about the money.</p>
+<p>The cost question is genuinely hard, and the industry admits it: 91% of health system executives are not sure they can calculate what leakage costs them (<a href="https://abouthealthcare.com/wp-content/uploads/2025/03/Patient-Leakage-and-Keepage_State-of-the-Industry.pdf">ABOUT Healthcare, 2021</a>). The same market that cannot measure leakage quotes leakage numbers constantly, which is exactly why the figures below are sorted into two piles: verified and folklore.</p>
+
+<h2>Leakage statistics that are actually verified</h2>
+<p>One data set survives scrutiny. It is an executive survey, so it measures informed perception rather than audited financials, but it was actually conducted, published, and remains traceable to its source.</p>
+<ul>
+<li><strong>ABOUT Healthcare, 2021 (138 health system executives):</strong> 94% say reducing patient leakage is a priority, 90% are not highly confident in their visibility into leakage, 91% are not sure they can calculate its costs, and 65% say leakage blocks them from reaching financial goals. The same executives estimate they could increase revenue by 17% by reducing it (<a href="https://abouthealthcare.com/wp-content/uploads/2025/03/Patient-Leakage-and-Keepage_State-of-the-Industry.pdf">ABOUT Healthcare, 2021</a>).</li>
+</ul>
+<p>Notice what even the good numbers are: executives estimating their own losses. Nobody has published an audited measurement of leakage costs across US practices. Anyone claiming otherwise is usually about to cite something from the next section.</p>
+
+<h2>The zombie stats to stop citing</h2>
+<p>The most repeated leakage claim on the internet says hospitals lose 10 to 30 percent of revenue to leakage, or $200 to $500 million per health system per year. It appears on the <a href="https://webmdignite.com/faq/patient-referral-leakage">WebMD Ignite</a> referral leakage FAQ and on dozens of vendor blogs, always without attribution. We traced the lineage and found no study, no named survey, and no methodology behind it. Vendors cite other vendors, who cite nobody.</p>
+<p>The same unattributed page carries the claims that physicians leak $821,000 to $971,000 each per year and that 55 to 65% of referrals leave the network. None of these numbers is necessarily false. They are unverifiable, and for a figure you might spend money on, that should mean the same thing.</p>
+
+<h2>What a leaked patient or referral is worth</h2>
+<p>What you can verify is the value of what leaks. Two well-sourced benchmarks:</p>
+<ul>
+<li><strong>Net revenue per physician:</strong> physicians generate an average of $2,378,727 per year in net revenue for their affiliated hospitals, and orthopedic surgeons average $3.3 million (<a href="https://www.prnewswire.com/news-releases/survey-physicians-generate-an-average-2-4-million-a-year-per-hospital-300799621.html">Merritt Hawkins/AMN Healthcare, 2019</a>).</li>
+<li><strong>Patient lifetime value:</strong> the average remaining lifetime healthcare spend for a 26-year-old healthcare consumer is $1.2 million (<a href="https://nrchealth.com/4ty1dsx-2/">NRC Health, 2023</a>). That is the long-run revenue in play, across all providers, when a patient quietly defects.</li>
+</ul>
+<p>Keep the definitions straight. The Merritt Hawkins figures are hospital-side net revenue from a survey of CFOs, and the NRC figure spans every provider a patient will ever see. Use them to size the stakes, not as your own numbers. Your numbers come from the formula.</p>
+
+<h2>The leakage formula</h2>
+<p>Leakage cost has two components you can estimate from data you already have:</p>
+<ul>
+<li><strong>Dormant patient leakage:</strong> inactive patients x realistic return rate x average visit value.</li>
+<li><strong>Referral leakage:</strong> incomplete referrals x achievable completion improvement x average episode value.</li>
+</ul>
+<p>Here is a deliberately conservative worked example for a 10-provider <a href="/orthopedics">orthopedic group</a>. Every input is an illustrative assumption, not a statistic. Swap in your own.</p>
+<p>Start with dormant charts. Assume the EHR holds 6,000 patients with no visit in the past 18 months, a 5% return rate from consistent recall outreach, and $250 in average first-visit revenue. That is 6,000 x 5% x $250, or $75,000 a year in recovered first visits, before counting any imaging, injections, therapy, or surgery those visits lead to.</p>
+<p>Now referrals. Assume the group receives 300 referrals a month and completes 60% of them. Lifting completion by 10 percentage points adds 30 completed new patients a month, 360 a year. At $400 in average initial episode revenue, that is another $144,000 a year, and in orthopedics some fraction of those patients become surgical candidates worth many multiples of the first visit.</p>
+<p>Even with cautious inputs, this hypothetical group is leaking roughly $219,000 a year in directly attributable visit revenue, with the surgical downstream uncounted. That understatement is the pattern: specialty revenue concentrates in what happens after the first visit, so first-visit math is the floor, not the estimate.</p>
+
+<h2>Where leakage hides in a specialty practice</h2>
+<p><strong>Unworked referrals.</strong> The referral pipeline is the largest leak in most specialty groups: roughly two out of three referral scheduling attempts never become completed appointments, per the Duke health system study (<a href="https://pubmed.ncbi.nlm.nih.gov/29532299/">Patel et al., 2018</a>). We reconcile the completion research and lay out the capture playbook in <a href="/blog/what-percent-of-referrals-never-get-scheduled">what percent of referrals never get scheduled</a>.</p>
+<p><strong>Dormant charts and overdue recalls.</strong> Every specialty practice accumulates patients who finished one episode of care and never came back for the follow-up they need. Those charts sit in the EHR generating nothing until someone works them. Our guide on <a href="/blog/how-to-reactivate-dormant-patients">how to reactivate dormant patients</a> covers the outreach that actually gets responses.</p>
+<p><strong>After-hours demand.</strong> Across Clinekt deployments, 82% of patients try to book care outside office hours. A practice that only takes bookings by phone during business hours leaks that demand to whoever answers next. We cover the fix in <a href="/blog/after-hours-patient-booking">after-hours patient booking</a>.</p>
+<p><strong>Website visitors who never make contact.</strong> Clinekt platform data shows 98% of website visitors leave without making contact, and typical website forms convert under 1% of traffic, versus 8-12% engagement when visitors are screened conversationally. The demand is already on your site; the leak is between the visit and the booking.</p>
+
+<h2>Calculate your number</h2>
+<p>We built a free <a href="/leakage-calculator">patient leakage calculator</a> that runs the formula above with your inputs: provider count, dormant chart estimate, referral volume, and visit values. It takes about two minutes and produces an annual dollar estimate you can put in front of your physicians or your board. No industry benchmark will ever be as persuasive as your own number.</p>
+
+<h2>What reducing leakage is actually worth</h2>
+<p>The one verified upside estimate says health system executives believe reducing leakage could increase revenue by 17% (<a href="https://abouthealthcare.com/wp-content/uploads/2025/03/Patient-Leakage-and-Keepage_State-of-the-Industry.pdf">ABOUT Healthcare, 2021</a>). Read it honestly: it is a belief measure from the people closest to the problem, not a measured outcome. The corroboration is that 65% of the same leaders say leakage blocks their financial goals, so the people running these organizations consider the money material.</p>
+<p>What we can measure is what happens when the leaks get worked. Baldwin Bone &amp; Joint, an orthopedic group in Daphne, AL, generated 263 qualified surgical leads and booked 159 appointments in a single quarter, a 60% lead-to-appointment booking rate (<a href="/case-studies/baldwin-bone-joint-ai-case-study">read the case study</a>). Across Clinekt deployments, practices average 8% more appointment volume and a 24x average ROI. Those are our numbers to defend, which is the standard this post argues every leakage number should meet.</p>
+
+<h2>Common questions</h2>
+<h3>How much revenue does the average practice lose to patient leakage?</h3>
+<p>No verified universal figure exists. The best available data point is that health system executives estimate a 17% revenue increase from reducing leakage (<a href="https://abouthealthcare.com/wp-content/uploads/2025/03/Patient-Leakage-and-Keepage_State-of-the-Industry.pdf">ABOUT Healthcare, 2021</a>), and 65% of the same executives say leakage blocks their financial goals. Your actual number depends on your dormant patient count, referral volume, and visit values.</p>
+<h3>How do I calculate patient leakage for my practice?</h3>
+<p>Estimate two components and add them: inactive patients multiplied by a realistic return rate and average visit value, plus incomplete referrals multiplied by an achievable completion improvement and average episode value. Our free <a href="/leakage-calculator">leakage calculator</a> runs the math with your inputs in about two minutes.</p>
+<h3>Is the claim that hospitals lose 10 to 30 percent of revenue to leakage true?</h3>
+<p>It is unverifiable. The figure circulates on vendor sites such as <a href="https://webmdignite.com/faq/patient-referral-leakage">WebMD Ignite</a> without a named study or methodology, and we could not trace it to any primary source. Treat it as folklore and rely on verified executive surveys, or better, your own calculation.</p>
+<h3>What is one leaked patient worth?</h3>
+<p>The average remaining lifetime healthcare spend for a 26-year-old healthcare consumer is $1.2 million across all providers (<a href="https://nrchealth.com/4ty1dsx-2/">NRC Health, 2023</a>). The near-term value inside a single specialty practice is smaller, but in surgical specialties a single recovered candidate can outweigh months of outreach cost.</p>
+
+<p>Leakage stops being abstract the moment it has a dollar figure on it. Run your numbers in the <a href="/leakage-calculator">leakage calculator</a>, and if the total bothers you, <a href="/book-a-demo">book a demo</a>: our AI agents work every leak this post describes, on a flat subscription with no long-term contracts, live in under a week.</p>

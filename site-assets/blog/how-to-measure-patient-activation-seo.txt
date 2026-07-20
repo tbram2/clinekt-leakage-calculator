@@ -1,0 +1,33 @@
+HOW DO YOU MEASURE PATIENT ACTIVATION, AND WHAT IF YOU CAN'T LICENSE THE PAM? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            how-to-measure-patient-activation
+URL:             https://clinekthealth.com/blog/how-to-measure-patient-activation
+
+Title tag (61 chars):
+How Is Patient Activation Measured? PAM and Practical Proxies
+
+Meta description (153 chars):
+How is patient activation measured? Inside the PAM survey, its four levels and licensing costs, plus the behavioral metrics practices can track for free.
+
+Short description: The PAM explained in plain English: 13 items, four levels, licensing reality, and the behavioral proxy metrics practices can track instead.
+Hero title:        Measuring patient activation
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     how is patient activation measured
+Secondary queries:
+  - patient activation measure PAM
+  - PAM levels 1 2 3 4 meaning
+  - PAM-13 questionnaire
+  - patient engagement metrics benchmarks
+  - how to track patient reactivation success
+
+Internal links (per spec):
+  - /blog/what-is-patient-activation
+  - /blog/patient-engagement-vs-patient-activation (sibling, priority 1)
+  - /blog/average-no-show-rate-and-cost (sibling, priority 3)
+  - /blog/how-to-reactivate-dormant-patients (sibling, priority 6)
+  - /faqs
+  - /book-a-demo
+
+Angle: The PAM SERP is the trademark owner plus academic PDFs â€” no independent, practice-readable explainer exists. Don't fight the trademark head term; own the independent-explainer position: what the PAM is (13 statements, 0-100 Rasch score, four levels with names), what each level should change about your outreach cadence, the licensing/cost reality â€” and then the completely unowned angle: behavioral proxy metrics for the vast majority of specialty practices that will never license a survey instrument (booking rate, recall return rate, referral completion rate, time-to-rebook), with formulas. Positions Clinekt as the action layer downstream of measurement, catches the whole PAM long-tail (levels, scoring, questionnaire, license) on one page with jump anchors, and completes the activation cluster alongside the definition cornerstone and the vs-engagement post.

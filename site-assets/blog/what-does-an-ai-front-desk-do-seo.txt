@@ -1,0 +1,35 @@
+WHAT DOES AN AI FRONT DESK ACTUALLY DO IN A SPECIALTY PRACTICE? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            what-does-an-ai-front-desk-do
+URL:             https://clinekthealth.com/blog/what-does-an-ai-front-desk-do
+
+Title tag (58 chars):
+AI Front Desk for Medical Practices: What It Actually Does
+
+Meta description (154 chars):
+What an AI front desk for medical practices actually does: the calls it resolves, the tasks it should never touch, and how it changes front desk staffing.
+
+Short description: What an AI front desk for medical practices actually does: the calls it resolves, the tasks it should never touch, and how it changes staffing.
+Hero title:        What an AI front desk does
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     AI front desk for medical practices
+Secondary queries:
+  - AI receptionist for medical office
+  - AI answering service for doctors
+  - front desk automation for medical practices
+  - can AI replace medical front desk staff
+  - AI receptionist vs answering service
+
+Internal links (per spec):
+  - /blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents
+  - /blog/what-do-practices-ask-before-adopting-patient-activation
+  - /blog/ai-front-desk-for-orthopedic-practices (sibling, priority 4)
+  - /blog/are-ai-receptionists-hipaa-compliant (sibling, priority 9)
+  - /blog/how-much-does-an-ai-receptionist-cost (sibling, priority 13)
+  - /orthopedics and other specialty pages
+  - /book-a-demo
+  - /faqs
+
+Angle: The AI-front-desk SERP is 100% thin vendor landing pages with zero independent editorial â€” beatable with any genuine depth. Win with three moves nobody on the SERP makes: (1) the answer-vs-resolve distinction (an answering service takes messages; an AI front desk completes the task on the call) presented as a capability matrix; (2) honest treatment of the staffing question â€” which tasks to automate first, what the hybrid model looks like, and redeploying front-desk hours to revenue-generating recall work instead of 'cut headcount' framing; (3) the category reframe only Clinekt can make: the front desk is just the inbound third of patient activation â€” recall and outbound are where the same agents create appointments rather than only answering for them. MGMA's own polling data gives this page E-E-A-T no competitor listicle has.

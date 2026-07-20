@@ -1,0 +1,80 @@
+<p><strong>Yes, an AI receptionist can be fully HIPAA compliant, but only if the vendor behaves like the business associate it legally is: it signs a business associate agreement (BAA), encrypts protected health information (PHI) at rest and in transit, keeps your patients' data out of model training, and produces audit logs on request. HIPAA does not ban AI from answering patient calls or sending outreach; it regulates how the company behind the AI handles PHI. Many general-purpose AI tools meet none of these requirements, so the real question is not "is AI compliant" but "is this vendor compliant."</strong></p>
+
+<h2>What HIPAA actually requires of an AI vendor</h2>
+<p>Under HIPAA, any company that creates, receives, maintains, or transmits PHI on behalf of your practice is a <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html">business associate</a>, and the rules apply to it directly. An AI agent that answers calls, screens patients, collects insurance details, or books appointments touches PHI in nearly every interaction (here is <a href="/blog/what-does-an-ai-front-desk-do">what an AI front desk actually does</a>). There is no sidestepping that status.</p>
+<p>Business associate status carries two practical obligations. The vendor must sign a BAA before any patient data flows, and it must meet the <a href="https://www.hhs.gov/hipaa/for-professionals/security/index.html">HIPAA Security Rule</a>: administrative safeguards like access controls and risk analysis, physical safeguards like secured data centers, and technical safeguards like encryption, authentication, and audit controls. None of this is exotic; a vendor that hesitates on any of it is telling you something.</p>
+
+<h2>Where PHI lives inside a voice or text agent</h2>
+<p>Most compliance content stops at "get a BAA and encrypt the data." A compliance officer needs one level deeper: where does PHI physically sit inside an AI agent?</p>
+<ul>
+<li><strong>Call recordings:</strong> raw audio of a patient stating their name, date of birth, symptoms, and insurance details. Recordings are PHI in their entirety and often retained the longest.</li>
+<li><strong>Transcripts:</strong> the text output of speech-to-text processing, often stored in a different system than the audio.</li>
+<li><strong>Embeddings and vector stores:</strong> fragments of patient conversations encoded for retrieval are still PHI, and they are the storage location vendors most often forget to mention.</li>
+<li><strong>EHR write-back payloads:</strong> the structured data the agent pushes into your schedule or chart (see <a href="/blog/how-ai-patient-scheduling-works">how AI patient scheduling works</a>), plus any copies held in integration middleware.</li>
+<li><strong>Logs and analytics:</strong> dashboards, error logs, and quality-review tools frequently contain conversation snippets.</li>
+<li><strong>Subprocessor copies:</strong> the telephony carrier, the speech-to-text engine, and the LLM provider may each process or briefly hold PHI on the vendor's behalf.</li>
+</ul>
+<p>Ask a vendor to map PHI across all six locations, with a retention period for each. The quality of that answer is the fastest read on their compliance maturity.</p>
+
+<h2>The BAA clauses that matter</h2>
+<p>A signed BAA is the floor, not the finish line. Four clauses separate a protective agreement from boilerplate.</p>
+<ul>
+<li><strong>Data use limits:</strong> the vendor may use PHI only to provide the contracted service. Language permitting use for "product improvement" or "research" deserves scrutiny, because that is where model training hides.</li>
+<li><strong>Subcontractor flow-down:</strong> every subprocessor that touches PHI must be bound by equivalent terms. Ask for the current subprocessor list by name.</li>
+<li><strong>Breach notification SLA:</strong> HIPAA's <a href="https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html">Breach Notification Rule</a> gives business associates up to 60 days to report a breach, but 60 days is an outer legal limit, not a standard of care. Negotiate a specific window measured in days, not "as required by law."</li>
+<li><strong>Termination and data return:</strong> when the contract ends, PHI should be returned or destroyed on a defined timeline, including the copies sitting in backups, transcripts, and vector stores.</li>
+</ul>
+
+<h2>Is my patients' data training the model?</h2>
+<p>This is the question practice administrators ask most, and the one vendors answer most vaguely. There is a difference between a vendor training its own models on your data, fine-tuning a model on your conversations, and passing conversation text to an LLM provider at inference time.</p>
+<p>Get three commitments in writing: your patients' data is excluded from model training by the vendor itself; it is excluded from training by every subprocessor, including LLM providers; and those LLM providers operate under enterprise or zero-retention terms, not consumer accounts. A vendor with real answers will put all three in the BAA or a security exhibit; one that responds with "our provider anonymizes the data" has not answered the question.</p>
+
+<h2>Call recording and state consent laws</h2>
+<p>HIPAA compliance does not end the legal analysis, because call recording is also governed by state wiretap law. Several states, including California, Florida, Illinois, Maryland, Massachusetts, Pennsylvania, and Washington, require consent from every party on a call (often called two-party consent). A practice in a one-party state can still be exposed when a patient calls from a stricter state.</p>
+<p>The fix is simple: disclose recording at the start of every call, in every state. A compliant voice agent opens with something like:</p>
+<blockquote><p>"Hi, you've reached [Practice Name]. This call may be recorded to help our team coordinate your care. How can I help you today?"</p></blockquote>
+<p>Continuing the call after a clear disclosure satisfies the strictest states. Ask the vendor whether the disclosure runs on every call without exception, and how the agent handles a caller who declines recording.</p>
+
+<h2>The 12-question HIPAA vendor audit checklist</h2>
+<p>Bring these twelve questions to any AI receptionist or outreach vendor demo; they cover the same ground a security officer would in a procurement review. (For the broader diligence conversation beyond compliance, see <a href="/blog/what-do-practices-ask-before-adopting-patient-activation">what practices ask before adopting patient activation</a>.)</p>
+<ul>
+<li><strong>1.</strong> Will you sign a BAA before any patient data flows, and can we see your standard terms now?</li>
+<li><strong>2.</strong> Where is PHI stored across recordings, transcripts, vector stores, and logs, and in which regions?</li>
+<li><strong>3.</strong> Is PHI encrypted in transit and at rest, and to what standard?</li>
+<li><strong>4.</strong> Which subprocessors touch PHI (telephony, speech-to-text, LLM providers), and is each bound by a BAA or equivalent terms?</li>
+<li><strong>5.</strong> Is our data excluded from model training, by you and by your subprocessors, in writing?</li>
+<li><strong>6.</strong> What are your retention periods for each data type, and can we shorten them?</li>
+<li><strong>7.</strong> What is your breach notification SLA to us, stated in days?</li>
+<li><strong>8.</strong> Can you produce audit logs showing every access to our patients' data?</li>
+<li><strong>9.</strong> How does the agent handle recording disclosure and all-party consent states?</li>
+<li><strong>10.</strong> What happens to our data at termination, and on what timeline is it returned or destroyed?</li>
+<li><strong>11.</strong> Do you carry cyber liability insurance, and at what coverage level?</li>
+<li><strong>12.</strong> Have you completed an independent security assessment such as SOC 2 Type II, and will you share the report under NDA?</li>
+</ul>
+<p>Print it and log the answers. Vendors who handle PHI well answer quickly, because they have answered before.</p>
+
+<h2>Red flags that end the conversation</h2>
+<ul>
+<li><strong>No BAA:</strong> a vendor that will not sign one cannot legally handle your patients' data. "We don't need a BAA because the data is anonymized" is the most common version of this red flag, and recordings that include names and health details are not anonymous.</li>
+<li><strong>Consumer LLM wrappers:</strong> tools built on consumer AI accounts rather than enterprise APIs with zero-retention terms. If the vendor cannot describe its LLM arrangement, assume the worst.</li>
+<li><strong>Offshore transcription without safeguards:</strong> human review or transcription performed overseas is not automatically prohibited, but it must sit under the same safeguards. "We use a transcription partner" with no BAA behind it is a breach waiting for a date.</li>
+<li><strong>Vague training answers:</strong> any variation of "your data helps improve our service" without a written exclusion.</li>
+<li><strong>No audit logs:</strong> if the vendor cannot show who accessed what and when, you cannot meet your own obligations after an incident.</li>
+</ul>
+<p>These failure modes are unevenly distributed across the market. It helps to understand <a href="/blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents">how voice AI, patient reactivation software, and patient activation agents compare</a> before you shortlist vendors.</p>
+
+<h2>Why this matters now</h2>
+<p>AI adoption in medical groups is moving faster than diligence standards. 68% of medical groups added or expanded AI tools in 2025 (<a href="https://www.mgma.com/mgma-stat/document-schedule-communicate-ai-tools">MGMA Stat, 2025</a>), and 81% of physicians now use AI in their practice, more than double the rate when the AMA first polled doctors in 2023 (<a href="https://www.ama-assn.org/practice-management/digital-health/more-80-physicians-use-ai-professionally-ama-survey">AMA, 2026</a>). Yet only 19% of medical group practices use a chatbot or virtual assistant for patient communication (<a href="https://www.mgma.com/mgma-stat/sizing-up-the-market-for-ai-chatbots-virtual-assistants-in-medical-practices-in-2025">MGMA Stat, April 2025</a>), so most practices evaluating <a href="/blog/what-is-patient-activation">patient activation</a> tools are doing it for the first time, without an internal playbook.</p>
+<p>That gap is an advantage: practices vetting vendors now can set compliance terms while the market is still competing for early adopters. Across Clinekt deployments, our agents have handled more than 1 million patient interactions under exactly the framework described here: BAA first, PHI encrypted in transit and at rest, no model training on patient data, and audit logs available to every practice we serve.</p>
+
+<h2>Common questions</h2>
+<h3>Do AI receptionists violate HIPAA?</h3>
+<p>No, not inherently. HIPAA regulates how protected health information is handled, not whether a human or an AI handles it. An AI receptionist is compliant when the vendor signs a business associate agreement, encrypts PHI at rest and in transit, restricts data use to your practice's operations, and can produce audit logs. It becomes a violation when a practice routes patient calls through a tool whose vendor will not take on those obligations.</p>
+<h3>Does every AI vendor need to sign a BAA?</h3>
+<p>Every vendor that creates, receives, maintains, or transmits PHI on your behalf does. That covers voice agents that record calls, chat agents that collect symptoms or insurance details, and scheduling tools that write to your EHR. If a vendor claims a BAA is unnecessary because the data is anonymized, treat that as a red flag: recordings and transcripts containing names, callback numbers, and health details are PHI.</p>
+<h3>Can an AI company use my patients' data to train its models?</h3>
+<p>Only if your agreement permits it, and it should not. Ask the vendor to state in writing that your patients' data is excluded from model training by the vendor and by its subprocessors, including LLM providers, and that those providers operate under zero-retention terms. A vendor that cannot produce that statement has answered the question.</p>
+<h3>Is it legal for an AI agent to record patient phone calls?</h3>
+<p>Yes, with proper consent. Call recording is governed by state wiretap laws in addition to HIPAA, and several states, including California, Florida, Illinois, Maryland, Massachusetts, Pennsylvania, and Washington, require consent from every party on the call. A clear recording disclosure at the start of each call satisfies the strictest states, which is why compliant vendors disclose on every call regardless of where the caller lives.</p>
+
+<p>If you are evaluating an AI receptionist or outreach agent and want the compliance answers up front, our <a href="/faqs">FAQ page</a> covers how Clinekt handles BAAs, data storage, and model training, or <a href="/book-a-demo">book a demo</a> and bring the twelve questions with you. We like being audited; it is how this market should work.</p>

@@ -1,0 +1,72 @@
+<p><strong>Appointment reminders confirm appointments that already exist. Patient recall books active patients who are due for routine care but have nothing on the schedule. Patient reactivation wins back patients who have gone dormant, typically after 12 or more months without a visit. Three different patient states, three different plays, and most practices run only the first one well.</strong></p>
+
+<h2>Three motions, one variable: the patient's state</h2>
+<p>Practices and vendors use these terms interchangeably, which is how a clinic ends up buying "patient engagement" software that turns out to be reminder texts. The distinction becomes obvious once you anchor it to the patient's state instead of the technology. Every patient in your EHR sits in one of three buckets: booked, due but unbooked, or dormant.</p>
+<p>Each bucket calls for a different motion, backed by different evidence and measured by a different number. All three belong to the broader discipline of <a href="/blog/what-is-patient-activation">patient activation</a>, the work of turning inactive patients into booked appointments.</p>
+
+<h2>The three-way comparison</h2>
+<h3>Appointment reminders</h3>
+<ul>
+<li><strong>Patient state:</strong> has an appointment on the schedule.</li>
+<li><strong>Trigger:</strong> the appointment date approaching.</li>
+<li><strong>Channel mix:</strong> automated text, email, and voice messages, usually built into the EHR or practice management system.</li>
+<li><strong>Goal metric:</strong> no-show rate.</li>
+<li><strong>Representative evidence:</strong> patients who received an SMS reminder were 38% less likely to miss their appointment, with non-attendance of 11.2% versus 18.1% without one (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2438329/">Koshy et al., BMC Ophthalmology, 2008</a>).</li>
+</ul>
+<h3>Patient recall</h3>
+<ul>
+<li><strong>Patient state:</strong> active, due or overdue for routine or follow-up care, no appointment booked.</li>
+<li><strong>Trigger:</strong> a care interval elapsing: an annual exam, a post-op check, surveillance imaging, an injection cycle.</li>
+<li><strong>Channel mix:</strong> outbound text, phone, mail, and portal messages working from the practice's own due list.</li>
+<li><strong>Goal metric:</strong> share of due patients who complete care.</li>
+<li><strong>Representative evidence:</strong> reminder and recall systems raise preventive care completion by 8 percentage points on average (risk ratio 1.28) across 55 studies and 138,625 participants, with telephone outreach the most effective channel (RR 1.75) (<a href="https://pubmed.ncbi.nlm.nih.gov/29342498/">Jacobson Vann et al., Cochrane, 2018</a>).</li>
+</ul>
+<h3>Patient reactivation</h3>
+<ul>
+<li><strong>Patient state:</strong> lost to follow-up, generally defined as more than 12 months without a clinical encounter.</li>
+<li><strong>Trigger:</strong> a chart audit or an automated scan of the EHR for dormant records.</li>
+<li><strong>Channel mix:</strong> persistent outreach across text, phone, and email, because the relationship has gone cold.</li>
+<li><strong>Goal metric:</strong> dormant patients returned to completed care.</li>
+<li><strong>Representative evidence:</strong> the research here quantifies the stakes: 50% of 553,663 glaucoma patients became lost to follow-up over 2014-2019, and 67% of those patients never returned to care (<a href="https://www.tandfonline.com/doi/full/10.1080/08820538.2024.2391826">Williams et al., Seminars in Ophthalmology, 2025</a>).</li>
+</ul>
+
+<h2>A decision tree: which motion does each patient need?</h2>
+<p>Sort every patient with two questions: is there an appointment on the books, and when was the last visit?</p>
+<ul>
+<li><strong>Appointment booked:</strong> reminders. Nothing else applies until the patient shows up or no-shows.</li>
+<li><strong>Seen within the last 12 months, due for care, no appointment:</strong> recall. This patient still considers you their provider, so the outreach lands as a service, not a pitch.</li>
+<li><strong>No clinical encounter in more than 12 months:</strong> reactivation. The 12-month line is a common lost-to-follow-up threshold in the specialty literature, and it marks the point where patients stop responding like active patients.</li>
+<li><strong>Never seen at all:</strong> none of the three. That person needs acquisition, a separate motion with separate economics.</li>
+</ul>
+<p>Note the loop between buckets: a patient who no-shows and never rebooks drops into the recall bucket that day and into the dormant bucket a year later. Many dormant charts likely began as one missed handoff.</p>
+
+<h2>The evidence each motion works</h2>
+<p>Reminders carry the deepest evidence base of the three. Beyond the 38% reduction above, a study of 9,835 patients found the no-show rate was 23.1% with no reminder, 17.3% with an automated reminder, and 13.6% with a live staff call (<a href="https://amjmed.org/the-effectiveness-of-outpatient-appointment-reminder-systems-in-reducing-no-show-rates/">Parikh et al., The American Journal of Medicine, 2010</a>). We walk through the full literature, including where reminders underperform, in <a href="/blog/do-appointment-reminders-reduce-no-shows">do appointment reminders actually reduce no-shows</a>.</p>
+<p>Recall has gold-standard backing. The Cochrane review cited above spans 55 studies and 138,625 participants, and its finding holds across delivery methods: recall outreach reliably moves due patients to completed care, and a live phone call outperforms every other channel.</p>
+<p>Reactivation is the least-studied motion, so the strongest numbers describe what happens without it. In the glaucoma cohort above, half of all patients went dormant across the 2014-2019 study window, and two thirds of those never came back. A large US retina practice found that 22.2% of patients on a recurring injection schedule became lost to follow-up (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6583857/">Obeid et al., JAMA Ophthalmology, 2018</a>).</p>
+<p>Dormancy is not an edge case. It is the default trajectory for a large share of specialty panels like these.</p>
+
+<h2>Where reminders stop working and recall begins</h2>
+<p>A reminder system can only touch patients who already have an appointment. It has no opinion about the patient who left the office without booking a follow-up, because to the reminder engine that patient does not exist.</p>
+<p>That checkout moment is the handoff most practices miss. The patient intends to call back later, the desk is busy, and nobody owns the gap. Reminders confirm demand that is already on the schedule; recall generates it from the due list. A practice with flawless reminders and no recall loop is confirming the appointments it already has while the due list quietly grows.</p>
+
+<h2>Where patient recall stops and patient reactivation begins</h2>
+<p>Recall assumes a warm relationship: the patient was in recently, considers you their provider, and mostly needs a nudge and an easy way to book. Somewhere past the 12-month mark that assumption breaks. The patient may have moved, switched providers, or simply drifted, and outreach that reads as routine to an active patient reads as unexpected to a dormant one.</p>
+<p>Operationally, reactivation starts with an EHR list pull: last encounter more than 12 months ago, no future appointment on the books, not formally discharged from the practice, and a documented reason to return. That list is almost always larger than anyone expects, and working it is a different discipline from recall. We cover the step-by-step in <a href="/blog/how-to-reactivate-dormant-patients">how to reactivate dormant patients</a>.</p>
+
+<h2>Why you need all three loops, and why staffing usually allows one</h2>
+<p>Reminders run themselves; the EHR fires them automatically. Recall and reactivation are list work. Someone has to pull the due list, work the phones, log the outcomes, and repeat it every week.</p>
+<p>In most practices that someone sits at the front desk, and front-office turnover hit 40% in 2022, the highest of any staff category (<a href="https://www.prnewswire.com/news-releases/mgma-data-reveals-medical-practices-innovation-to-overcome-staffing-challenges-301913066.html">MGMA, 2023</a>). When the person who owned the recall list leaves, the loop stops, and it rarely restarts.</p>
+<p>That staffing math is why these motions increasingly run on software instead of headcount. Across Clinekt deployments, 82% of patients try to book outside office hours, which no staffing plan covers. Our Recall Agent works both the due list and the dormant list continuously: it texts and calls patients, answers their questions, and books them directly onto the schedule. For a breakdown of the software categories that run these loops, see <a href="/blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents">voice AI vs reactivation software vs patient activation agents</a>.</p>
+
+<h2>Common questions</h2>
+<h3>What is a patient recall system for medical practices?</h3>
+<p>A patient recall system identifies active patients who are due or overdue for routine care and contacts them to book an appointment. It works from the practice's own records: last visit date, recommended follow-up interval, and whether a future appointment exists. That makes it different from a reminder system, which only messages patients who already have an appointment on the schedule.</p>
+<h3>Is patient reactivation the same as patient retention?</h3>
+<p>No. Retention is the ongoing work of keeping active patients engaged so they never lapse, and recall is its main tool. Reactivation starts after retention has already failed: it targets patients who have gone dormant, usually 12 or more months without a visit, and works to bring them back into care.</p>
+<h3>Which patients need recall and which need reactivation?</h3>
+<p>Sort by time since last visit and appointment status. A patient seen within the last year who is due for care and has no appointment booked needs recall. A patient with no clinical encounter in more than 12 months is lost to follow-up and needs reactivation, a harder motion because the relationship has gone cold.</p>
+<h3>Can one system run reminders, recall, and reactivation?</h3>
+<p>Reminders are usually built into the EHR or practice management system. Recall and reactivation are not, because they require generating appointments rather than confirming them. That is the gap patient activation agents fill: they work the due list and the dormant list continuously without adding front-office headcount.</p>
+
+<p>If your reminder numbers look great but the schedule still has holes, the leak is in the other two loops. See what running all three looks like in real specialty practices in our <a href="/case-studies">case studies</a>, or <a href="/book-a-demo">book a demo</a> to see how the Recall Agent would work your own due and dormant lists. Flat subscription, no long-term contracts, live in under a week.</p>

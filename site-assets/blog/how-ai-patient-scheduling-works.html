@@ -1,0 +1,65 @@
+<p><strong>AI patient scheduling is software that holds a real conversation with patients (by phone, text, or web chat), checks live appointment availability in your EHR or practice management system, and books, reschedules, or cancels visits with write-back to your calendar. That write-back is the dividing line: a true scheduling agent completes the booking, while a basic chatbot or request form just collects a message your staff still has to work. "EHR integration" can mean anything from read-only calendar viewing to a text-a-link workaround to full write-back, and which one you get determines whether the tool removes work from your desk or quietly adds to it.</strong></p>
+
+<h2>The four things vendors mean by "AI patient scheduling"</h2>
+<p>"AI patient scheduling" is not one product. Four different tools are sold under the same label, they solve different problems, and most vendors are strong in exactly one of them.</p>
+<ul>
+<li><strong>Voice scheduling agents:</strong> answer inbound calls, understand why the patient is calling, and book directly into the schedule. The strong ones handle reschedules and cancellations end to end; the weak ones are AI answering services that finish by taking a callback message, which is not scheduling.</li>
+<li><strong>Conversational web and text booking:</strong> an agent on your website or over SMS that engages the visitor, screens for fit, and books the right visit type. This is what our Inbound Agent does, and it exists because static forms see under 1% typical website form conversion, versus 8-12% engagement with conversational screening across Clinekt deployments.</li>
+<li><strong>Predictive slot optimization:</strong> algorithms that fill cancellations from waitlists, sequence slots to reduce schedule gaps, and flag likely no-shows. Patients never talk to this layer; it runs behind the scenes inside or alongside your practice management system.</li>
+<li><strong>Recall outreach scheduling:</strong> software that finds patients overdue for care in the EHR and reaches out with a direct path back to the schedule; the industry often labels this category patient reactivation software. Our Recall Agent lives here, working your dormant charts rather than your inbound calls.</li>
+</ul>
+<p>A vendor demoing one of these will rarely correct you if you assume the label covers all four. Ask which one you are actually buying. For how these pieces fit together at the practice level, see our breakdown of <a href="/blog/what-does-an-ai-front-desk-do">what an AI front desk actually does</a>.</p>
+
+<h2>How a booking actually flows into the EHR</h2>
+<p>Strip away the vendor language and a real AI booking follows five steps. If a vendor cannot walk you through all five against your specific system, you are looking at request capture dressed up as scheduling.</p>
+<ul>
+<li><strong>Step 1, the conversation:</strong> the agent identifies the patient or registers a new one, captures the reason for the visit, and asks the screening questions your best scheduler would ask.</li>
+<li><strong>Step 2, the availability check:</strong> the agent queries your practice management or EHR schedule through an integration (increasingly FHIR-based APIs, sometimes vendor-specific ones) for open slots that match the visit type, provider, and location rules.</li>
+<li><strong>Step 3, the hold:</strong> the patient picks a slot and the agent reserves it during the conversation, so it cannot be taken by another booking mid-sentence.</li>
+<li><strong>Step 4, the write-back:</strong> the appointment is created as a native appointment in your system, with the correct visit type and the conversation notes attached, exactly as if staff had entered it.</li>
+<li><strong>Step 5, the follow-through:</strong> confirmation and reminders go out automatically, and any reschedule or cancellation updates the same record instead of spawning duplicates.</li>
+</ul>
+
+<h2>The EHR integration truth table</h2>
+<p>"We integrate with your EHR" is the most stretched sentence in this market. In practice it means one of three things, and the difference is the whole purchase decision.</p>
+<ul>
+<li><strong>Read-only access:</strong> the tool can see availability but cannot book. Every "booking" lands in a work queue your staff re-enter by hand, and the patient often believes they have an appointment before anyone has confirmed it. This is where orphaned requests come from.</li>
+<li><strong>The SMS-link workaround:</strong> the agent cannot book either, so it texts the patient a link to your existing online booking page. It works only for the simple visit types that page already supports, and it quietly drops every patient whose visit needs a referral, an order, or human judgment.</li>
+<li><strong>True write-back:</strong> the agent creates, moves, and cancels appointments directly in the EHR or practice management system in real time, with visit types mapped to your actual scheduling rules. This is the only version that removes work from the desk instead of relocating it.</li>
+</ul>
+<p>In a demo, make the vendor prove the third one. Ask them to book an appointment into a sandbox of your actual system, then reschedule it, then cancel it, and watch each change appear. Then ask what happens when the integration goes down mid-conversation. Vague answers are answers.</p>
+
+<h2>Why generic scheduling tools break in specialty care</h2>
+<p>Most scheduling automation was built for primary care, dental, or single-visit-type businesses, where every appointment is roughly interchangeable. Specialty care is not like that, and generic tools break in predictable places.</p>
+<ul>
+<li><strong>Referral-required visit types:</strong> many payers require a referral on file before certain visits can be booked. A generic tool books it anyway, and the visit dies at check-in or in a denial.</li>
+<li><strong>Subspecialty matching:</strong> a shoulder complaint should not land on the spine surgeon's schedule. Matching complaint to provider takes screening questions, not a dropdown of names.</li>
+<li><strong>Procedure versus consult slot logic:</strong> a new surgical consult, an injection, and a post-op check need different slot lengths, rooms, and sometimes equipment. Booking the wrong type creates the double-bookings your staff then untangle.</li>
+<li><strong>Prerequisites:</strong> imaging before the consult, films from the referring office, insurance verification. An agent that ignores prerequisites books visits that cannot proceed.</li>
+</ul>
+<p>This is why we build specialty screening into the booking conversation itself. Asking the questions an experienced scheduler would ask, before the slot is offered, is how we get to 48% fewer wasted consults across Clinekt deployments. You can see how the rules differ for <a href="/orthopedics">orthopedics</a> and <a href="/physical-therapy">physical therapy</a>, and how it plays out in the <a href="/case-studies/baldwin-bone-joint-ai-case-study">Baldwin Bone &amp; Joint case study</a>, where 263 qualified surgical leads became 159 booked appointments (a 60% booking rate) in a single quarter.</p>
+
+<h2>What the adoption data says</h2>
+<p>Patient demand here is not speculative. 89% of patients say the ability to schedule appointments anytime via online or mobile tools is important (<a href="https://www.experian.com/blogs/healthcare/the-state-of-patient-access-2024/">Experian Health, 2024</a>), and a year later 80% said they want to schedule from home or a mobile device while only 54% of providers offer self-scheduling (<a href="https://www.experianplc.com/newsroom/press-releases/2025/-improving-patient-access--experian-health-survey-highlights-pro">Experian Health, 2025</a>).</p>
+<p>Practices see the same gap from the inside. When medical practices prioritize AI and automation for the front office, scheduling leads at 31%, ahead of phone calls at 27% (<a href="https://www.mgma.com/mgma-stat/automatic-for-the-people-ai-for-front-office-access">MGMA, 2026</a>). Yet 71% of practices report that fewer than 25% of their patients use digital tools to self-schedule, and only 8% see a majority doing so (<a href="https://www.mgma.com/mgma-stat/meeting-pressure-on-patient-digital-self-scheduling">MGMA, 2025</a>). Only 19% of medical group practices use any chatbot or virtual assistant for patient communication at all (<a href="https://www.mgma.com/mgma-stat/sizing-up-the-market-for-ai-chatbots-virtual-assistants-in-medical-practices-in-2025">MGMA, 2025</a>).</p>
+<p>Part of the gap is timing. Across Clinekt deployments, 82% of patients try to book outside office hours, exactly when the desk is dark and a request form is the only thing answering. We break down those numbers in <a href="/blog/after-hours-patient-booking">after-hours patient booking</a>.</p>
+
+<h2>Does self-scheduling reduce no-shows?</h2>
+<p>Yes, when patients book directly against real availability, and the evidence deserves its nuance. A 2025 study in Frontiers in Digital Health found appointments booked online at a private practice no-showed 1.8% of the time versus 5.9% for offline bookings, but the pattern reversed at the university hospital in the same study (14.3% online versus 11.2% offline), where online requests were triaged rather than booked directly (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12081397/">Frontiers in Digital Health, 2025</a>).</p>
+<p>Read both halves together and the lesson is about mechanism, not channel. A patient who picks their own slot in one sitting has committed; a patient who submits a request and waits has not. Friction points the same direction: industry estimates suggest booking by phone takes about 8 minutes versus roughly a minute online (Accenture analysis, 2014, via <a href="https://medcitynews.com/2014/12/letting-patients-schedule-appointments-online/">MedCity News</a>).</p>
+
+<h2>Common failure modes, and the checklist that catches them</h2>
+<p>When AI scheduling deployments go wrong, they go wrong in the same few ways: double-bookings from stale availability data, wrong visit types in the right slots, orphaned requests no human ever picks up, and after-hours conversations that end with "someone will call you back." Every one of these traces back to the integration question above.</p>
+<p>So evaluate against a short checklist. Watch a live booking, reschedule, and cancellation write back to a sandbox of your system. Review the visit-type mapping for your specialty line by line. Ask what the agent does when the EHR connection drops. Confirm the vendor signs a business associate agreement and can explain where patient data lives (we cover this in <a href="/blog/are-ai-receptionists-hipaa-compliant">are AI receptionists HIPAA compliant</a>). And require reporting that traces bookings through to completed appointments, because booked is not the same as seen.</p>
+
+<h2>Common questions</h2>
+<h3>Does AI patient scheduling work with any EHR?</h3>
+<p>Most vendors support the major EHR and practice management systems, but support ranges from read-only calendar access to true write-back. Ask specifically whether the tool creates, moves, and cancels appointments natively in your system, and ask to see it happen in a sandbox before you sign anything.</p>
+<h3>What is the difference between AI scheduling and online booking?</h3>
+<p>Online booking shows patients a static list of open slots. AI scheduling holds a conversation: it screens the patient, matches them to the correct visit type and provider, and completes the booking by phone, text, or web. The difference matters most in specialty care, where the right slot depends on answers a booking page never collects.</p>
+<h3>Does AI scheduling reduce no-shows?</h3>
+<p>Evidence supports it when patients book directly against real availability. A 2025 Frontiers in Digital Health study found online-booked appointments no-showed 1.8% of the time versus 5.9% for offline bookings in a private practice, though the pattern reversed in a hospital system where online requests were triaged instead of booked directly.</p>
+<h3>How long does implementation take?</h3>
+<p>For conversational scheduling that sits on top of your existing systems, it should be measured in days, not quarters. Clinekt deployments go live in under a week on a flat subscription with no long-term contracts, including visit-type mapping and screening flows tuned to your specialty.</p>
+
+<p>If you would rather watch write-back scheduling happen on a real system than read about it, <a href="/book-a-demo">book a demo</a> and we will run a live booking end to end, including a reschedule and a cancellation. For the specialty scheduling questions we hear most often, our <a href="/faqs">FAQs</a> cover them.</p>

@@ -1,0 +1,33 @@
+HOW MUCH DOES AN AI RECEPTIONIST COST FOR A MEDICAL PRACTICE? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            how-much-does-an-ai-receptionist-cost
+URL:             https://clinekthealth.com/blog/how-much-does-an-ai-receptionist-cost
+
+Title tag (55 chars):
+How Much Does an AI Receptionist Cost? | Clinekt Health
+
+Meta description (158 chars):
+How much does an AI receptionist cost for a medical practice? The three pricing models, the hidden fees, and a specialty ROI worksheet to compute your number.
+
+Short description: The three AI receptionist pricing models, the hidden fees vendors leave off the page, and a per-specialty ROI worksheet for your practice.
+Hero title:        What an AI receptionist costs
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     how much does an AI receptionist cost for a medical practice
+Secondary queries:
+  - AI front desk pricing
+  - AI scheduling agent cost medical practice
+  - AI receptionist vs human receptionist cost
+  - AI answering service pricing for doctors
+  - ROI of AI front desk medical practice
+
+Internal links (per spec):
+  - /blog/what-does-an-ai-front-desk-do (sibling, priority 2)
+  - /blog/ai-front-desk-for-orthopedic-practices (sibling, priority 4)
+  - /blog/what-do-practices-ask-before-adopting-patient-activation
+  - /leakage-calculator
+  - /faqs
+  - /book-a-demo
+
+Angle: Bottom-funnel pricing query where the SERP is pure fog â€” self-reported numbers ranging $25/mo to $3,000/mo with no neutral benchmark, because vendors obscure their own pricing. Transparency is the whole play: decode the three pricing models (per-minute, per-provider/seat, flat subscription) with dated ranges, expose the total-cost traps (setup fees, EHR integration fees, overage minutes), and publish the honest three-scenario model (all-human, all-AI, hybrid) using fully-loaded receptionist cost â€” including the turnover cost the one-sided vendor math ignores. Close with a specialty-aware ROI worksheet: an ortho new patient is worth vastly more than the generic $196 figure, so the payback math must be per-specialty. Transparent numbers on a foggy SERP win both buyer trust and LLM citations for cost questions.

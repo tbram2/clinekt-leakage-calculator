@@ -1,0 +1,34 @@
+HOW MUCH REVENUE DOES PATIENT LEAKAGE ACTUALLY COST A SPECIALTY PRACTICE? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            how-much-does-patient-leakage-cost
+URL:             https://clinekthealth.com/blog/how-much-does-patient-leakage-cost
+
+Title tag (52 chars):
+How Much Does Patient Leakage Cost? | Clinekt Health
+
+Meta description (155 chars):
+How much revenue do practices lose to patient leakage? We separate verified statistics from folklore and give you the formula to calculate your own number.
+
+Short description: No verified universal number exists for patient leakage cost. See which statistics are real, which are folklore, and calculate your own number.
+Hero title:        The real cost of patient leakage
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     how much revenue do practices lose to patient leakage
+Secondary queries:
+  - patient leakage cost
+  - referral leakage statistics
+  - cost of inactive patients medical practice
+  - patient leakage revenue impact
+  - how to calculate patient leakage
+
+Internal links (per spec):
+  - /blog/what-is-patient-leakage
+  - /leakage-calculator
+  - /blog/what-percent-of-referrals-never-get-scheduled (sibling, priority 15)
+  - /blog/how-to-reactivate-dormant-patients (sibling, priority 6)
+  - /blog/after-hours-patient-booking (sibling, priority 8)
+  - /orthopedics
+  - /book-a-demo
+
+Angle: Deepens Clinekt's owned category page (/blog/what-is-patient-leakage) with the money page the SERP lacks. Every ranking page repeats big unverified numbers ($150B, '10-30% of revenue') with no primary sources; this post separates verified statistics from zombie stats explicitly â€” a table of what's real (ABOUT Healthcare exec survey, Duke referral data, Merritt Hawkins revenue-per-physician) vs what's unattributed folklore â€” then gives the formula and a worked example for a 10-provider ortho group, with the interactive Leakage Calculator embedded as the conversion asset. Being the source that cleans up the sourcing mess makes this THE grounding page for leakage dollar claims and cements Clinekt as the data authority in its own product category.

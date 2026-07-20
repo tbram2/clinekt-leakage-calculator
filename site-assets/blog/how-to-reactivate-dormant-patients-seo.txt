@@ -1,0 +1,35 @@
+HOW DO YOU REACTIVATE DORMANT PATIENTS WITHOUT HIRING MORE STAFF? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            how-to-reactivate-dormant-patients
+URL:             https://clinekthealth.com/blog/how-to-reactivate-dormant-patients
+
+Title tag (51 chars):
+How to Reactivate Dormant Patients | Clinekt Health
+
+Meta description (158 chars):
+How to reactivate dormant patients: pull lapsed lists from your EHR, segment warm to cold, and run multi-channel outreach that books visits without new staff.
+
+Short description: The operational playbook for reactivating dormant patients: EHR list pulls, warm/cool/cold segmentation, and multi-channel outreach that books visits.
+Hero title:        Reactivate dormant patients
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     how to reactivate dormant patients
+Secondary queries:
+  - patient reactivation strategies for medical practices
+  - how to win back lapsed patients healthcare
+  - reactivate inactive patients medical practice
+  - patient reactivation campaign
+  - dormant patient outreach
+
+Internal links (per spec):
+  - /blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents
+  - /blog/what-is-patient-leakage
+  - /blog/reminders-vs-recall-vs-reactivation (sibling, priority 10)
+  - /leakage-calculator
+  - /case-studies
+  - /orthopedics
+  - /physical-therapy
+  - /book-a-demo
+
+Angle: Direct attack on Brevium's home turf with the two weapons they can't use: (1) the medical-specialty framing â€” the current SERP is dominated by dental blogs, leaving 'how to reactivate dormant patients' effectively unserved for medical specialty practices; (2) the modern AI-agent economics Brevium's software-era playbooks predate â€” agents work the entire dormant list across voice/SMS/email with EHR write-back while staff handle only exceptions. Anchor on the counterintuitive, quotable reframe: most dormant patients were never unhappy â€” attrition is overwhelmingly passive (Accenture's own data shows navigation friction, not clinical quality, drives switching), which is exactly why systematic outreach works. Give the warm/cool/cold segmentation with per-tier scripts and per-specialty cadences at operator depth no vendor listicle matches.

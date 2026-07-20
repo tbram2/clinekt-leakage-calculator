@@ -1,0 +1,33 @@
+WHAT SHOULD AN AI FRONT DESK HANDLE IN AN ORTHOPEDIC PRACTICE? - SEO/AEO FIELDS
+======================================================================
+
+Slug:            ai-front-desk-for-orthopedic-practices
+URL:             https://clinekthealth.com/blog/ai-front-desk-for-orthopedic-practices
+
+Title tag (57 chars):
+AI Receptionist for Orthopedic Practices | Clinekt Health
+
+Meta description (155 chars):
+What should an AI receptionist for an orthopedic practice handle? The real call taxonomy, subspecialty routing, referral capture, and what must stay human.
+
+Short description: The orthopedic call taxonomy, subspecialty routing rules, and referral math behind an AI front desk that works, drawn from live ortho deployments.
+Hero title:        AI front desk for orthopedics
+Published:         2026-07-16 (cluster batch, item-level publish)
+
+Primary query:     AI receptionist for orthopedic practice
+Secondary queries:
+  - AI appointment scheduling orthopedic practice
+  - orthopedic practice answering service
+  - voice AI for orthopedic practices
+  - orthopedic patient scheduling automation
+  - orthopedic practice no-show rate
+
+Internal links (per spec):
+  - /orthopedics
+  - /case-studies
+  - /leakage-calculator
+  - /blog/what-does-an-ai-front-desk-do (sibling, priority 2)
+  - /blog/what-percent-of-referrals-never-get-scheduled (sibling, priority 15)
+  - /book-a-demo
+
+Angle: Dead-center ICP match with the weakest competition found in the audit â€” every ranking page is a template swap with 'knee/hip/spine' sprinkled into generic receptionist copy. Win by writing from real orthopedic operations, which Clinekt uniquely can (live ortho customers): the actual inbound call taxonomy (new injury, post-op questions, imaging results, workers' comp intake, attorney/records requests, referral intake), subspecialty and body-part routing rules, and the referral-capture math (two-thirds of referrals never become completed visits, and each captured ortho patient can lead to a surgical episode). One verified customer outcome and one real workflow beats every templated page on this SERP. This is also the template to replicate across the other eight specialty pages in later quarters.
