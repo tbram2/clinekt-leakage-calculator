@@ -210,3 +210,75 @@
   }
   if (document.body) { inject(); } else { document.addEventListener('DOMContentLoaded', inject); }
 })();
+
+/* H5 (HighFive) dental practice logos → home-page marquee.
+   The home embed sits at ~47K of Webflow's 50K embed limit, so the marquee
+   additions live here instead. The marquee track is two identical halves
+   (loop animates translateX(-50%)); we append the H5 set to each half and
+   scale the animation duration so scroll speed stays constant. */
+(function () {
+  var mq = document.getElementById('marquee');
+  if (!mq || mq.getAttribute('data-h5')) return;
+  var base = 'https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/';
+  var logos = [
+    ['memphis-endodontics', 'Memphis Endodontics'],
+    ['sexton-oms', 'Sexton Oral & Maxillofacial Surgery'],
+    ['north-mississippi-omfs', 'North Mississippi OMFS'],
+    ['eastern-shore-endodontics', 'Eastern Shore Endodontics'],
+    ['baldwin-county-endodontics', 'Baldwin County Endodontics'],
+    ['huntsville-oral-surgery', 'Huntsville Oral Surgery & Dental Implants'],
+    ['oms-of-the-shoals', 'OMS of the Shoals'],
+    ['price-denton-endodontics', 'Price Denton Endodontics'],
+    ['smith-smith-endodontics', 'Smith and Smith Endodontics'],
+    ['alabama-oral-facial-surgery', 'Alabama Oral & Facial Surgery'],
+    ['koslin-kahn', 'Koslin & Kahn Oral and Facial Surgery'],
+    ['brookwood-endodontics', 'Brookwood Endodontics'],
+    ['endodontic-associates', 'Endodontic Associates'],
+    ['roden-oral-facial-surgery', 'Roden Oral & Facial Surgery'],
+    ['oral-surgery-associates', 'Oral Surgery Associates'],
+    ['middle-tennessee-oms', 'Middle Tennessee Oral & Implant Surgery'],
+    ['pausa-omfs', 'Pausa Oral & Maxillofacial Surgery'],
+    ['ofs-east-alabama', 'Oral & Facial Surgery of East Alabama'],
+    ['dothan-endodontics', 'Dothan Endodontics'],
+    ['southeastern-oms', 'Southeastern Oral & Facial Surgery'],
+    ['lafayette-oms', 'Lafayette Oral & Maxillofacial Surgery'],
+    ['georgetown-ofs', 'Georgetown Oral and Facial Surgery'],
+    ['tri-state-ofs', 'Tri-State Oral & Facial Surgery'],
+    ['louisville-endodontics', 'Louisville Endodontics'],
+    ['purchase-endodontics', 'Purchase Endodontics'],
+    ['ford-endodontics', 'Ford Endodontics'],
+    ['southwest-facial-oral-surgery', 'Southwest Center for Facial and Oral Surgery'],
+    ['endodontic-associates-ms', 'Endodontic Associates of Mississippi'],
+    ['cape-fear-endodontics', 'Cape Fear Endodontics'],
+    ['oral-surgery-center-greensboro', 'The Oral Surgery Center'],
+    ['nimmich-endodontics', 'Nimmich Endodontics'],
+    ['bloom-endodontics', 'Bloom Endodontics'],
+    ['austin-center-endodontics', 'Austin Center for Endodontics'],
+    ['corpus-christi-oms', 'Corpus Christi Oral & Maxillofacial Surgeons'],
+    ['silberman-endodontics', 'Silberman Endodontics'],
+    ['bay-oral-facial-surgery', 'Bay Oral & Facial Surgery'],
+    ['wayne-oral-surgery', 'Wayne Oral Surgery'],
+    ['space-coast-oms', 'Space Coast Oral & Maxillofacial Surgery']
+  ];
+  function makeSet() {
+    var f = document.createDocumentFragment();
+    logos.forEach(function (l) {
+      var img = new Image();
+      img.src = base + l[0] + '.png';
+      img.alt = l[1];
+      img.decoding = 'async';
+      f.appendChild(img);
+    });
+    return f;
+  }
+  var kids = mq.children.length;
+  if (kids < 2 || kids % 2 !== 0) return;
+  var half = kids / 2;
+  mq.insertBefore(makeSet(), mq.children[half]);
+  mq.appendChild(makeSet());
+  // keep scroll speed constant: duration scales with track length
+  var cs = window.getComputedStyle(mq).animationDuration;
+  var secs = parseFloat(cs) || 80;
+  mq.style.animationDuration = Math.round(secs * (half + logos.length) / half) + 's';
+  mq.setAttribute('data-h5', '1');
+})();
