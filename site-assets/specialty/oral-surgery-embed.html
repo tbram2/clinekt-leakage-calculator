@@ -66,13 +66,12 @@
 #ck-sp .bs .k{font-size:13.5px;color:rgba(255,255,255,.78);margin-top:6px;line-height:1.45}
 
 /* logo wall */
-#ck-sp .logos{padding:0 0 var(--sec-y)}
-#ck-sp .lg-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(28px,3.2vw,46px) clamp(24px,2.8vw,44px);align-items:center;justify-items:center}
-@media(max-width:1024px){#ck-sp .lg-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media(max-width:760px){#ck-sp .lg-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:480px){#ck-sp .lg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-#ck-sp .lg-grid img{max-height:44px;max-width:100%;width:auto;height:auto;object-fit:contain;opacity:.78;filter:grayscale(1);transition:opacity .3s,filter .3s}
+#ck-sp .logos{padding:clamp(26px,3.5vw,48px) 0 var(--sec-y)}
+#ck-sp .lg-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(34px,4vw,54px) clamp(26px,3vw,48px)}
+#ck-sp .lg-grid .lg{flex:0 0 clamp(132px,14.5vw,176px);display:flex;align-items:center;justify-content:center}
+#ck-sp .lg-grid img{max-height:56px;max-width:100%;width:auto;height:auto;object-fit:contain;opacity:.78;filter:grayscale(1);transition:opacity .3s,filter .3s}
 #ck-sp .lg-grid img:hover{opacity:1;filter:grayscale(0)}
+@media(max-width:520px){#ck-sp .lg-grid .lg{flex-basis:38vw}#ck-sp .lg-grid img{max-height:46px}}
 
 /* faq */
 #ck-sp .faq{padding:0 0 var(--sec-y)}
@@ -117,6 +116,55 @@
     </div>
   </div></div>
 
+  <!-- LOGO WALL -->
+  <div class="logos"><div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Trusted Nationwide</span>
+      <h2>The oral surgery and endodontic practices we work with.</h2>
+    </div>
+    <div class="lg-grid">
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/alabama-oral-facial-surgery.png" alt="Alabama Oral &amp; Facial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/austin-center-endodontics.png" alt="Austin Center for Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/baldwin-county-endodontics.png" alt="Baldwin County Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/bay-oral-facial-surgery.png" alt="Bay Oral &amp; Facial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/bloom-endodontics.png" alt="Bloom Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/brookwood-endodontics.png" alt="Brookwood Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/cape-fear-endodontics.png" alt="Cape Fear Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/corpus-christi-oms.png" alt="Corpus Christi Oral &amp; Maxillofacial Surgeons" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/dothan-endodontics.png" alt="Dothan Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/eastern-shore-endodontics.png" alt="Eastern Shore Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/endodontic-associates.png" alt="Endodontic Associates" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/endodontic-associates-ms.png" alt="Endodontic Associates of Mississippi" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/ford-endodontics.png" alt="Ford Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/georgetown-ofs.png" alt="Georgetown Oral and Facial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/huntsville-oral-surgery.png" alt="Huntsville Oral Surgery &amp; Dental Implants" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/koslin-kahn.png" alt="Koslin &amp; Kahn Oral and Facial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/lafayette-oms.png" alt="Lafayette Oral &amp; Maxillofacial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/louisville-endodontics.png" alt="Louisville Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/memphis-endodontics.png" alt="Memphis Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/middle-tennessee-oms.png" alt="Middle Tennessee Oral &amp; Implant Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/mobile-oms.png" alt="Mobile Oral &amp; Facial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/nimmich-endodontics.png" alt="Nimmich Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/north-mississippi-omfs.png" alt="North Mississippi OMFS" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/ofs-east-alabama.png" alt="Oral &amp; Facial Surgery of East Alabama" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/oms-of-the-shoals.png" alt="OMS of the Shoals" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/oral-surgery-associates.png" alt="Oral Surgery Associates" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/oral-surgery-center-greensboro.png" alt="The Oral Surgery Center" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/pausa-omfs.png" alt="Pausa Oral &amp; Maxillofacial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/price-denton-endodontics.png" alt="Price Denton Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/purchase-endodontics.png" alt="Purchase Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/roden-oral-facial-surgery.png" alt="Roden Oral &amp; Facial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/sexton-oms.png" alt="Sexton Oral &amp; Maxillofacial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/silberman-endodontics.png" alt="Silberman Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/smith-smith-endodontics.png" alt="Smith and Smith Endodontics" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/southeastern-oms.png" alt="Southeastern Oral &amp; Facial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/southwest-facial-oral-surgery.png" alt="Southwest Center for Facial and Oral Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/space-coast-oms.png" alt="Space Coast Oral &amp; Maxillofacial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/tri-state-ofs.png" alt="Tri-State Oral &amp; Facial Surgery" loading="lazy" decoding="async"></span>
+      <span class="lg"><img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/wayne-oral-surgery.png" alt="Wayne Oral Surgery" loading="lazy" decoding="async"></span>
+    </div>
+  </div></div>
+
   <!-- AGENTS -->
   <div class="agents"><div class="wrap">
     <div class="sec-head">
@@ -153,55 +201,6 @@
       <div class="bs"><div class="v">+8%</div><div class="k">Appointment volume increase</div></div>
       <div class="bs"><div class="v">−48%</div><div class="k">Unqualified consult reduction</div></div>
     </div></div>
-  </div></div>
-
-  <!-- LOGO WALL -->
-  <div class="logos"><div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Trusted Nationwide</span>
-      <h2>The oral surgery and endodontic practices we work with.</h2>
-    </div>
-    <div class="lg-grid">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/alabama-oral-facial-surgery.png" alt="Alabama Oral &amp; Facial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/austin-center-endodontics.png" alt="Austin Center for Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/baldwin-county-endodontics.png" alt="Baldwin County Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/bay-oral-facial-surgery.png" alt="Bay Oral &amp; Facial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/bloom-endodontics.png" alt="Bloom Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/brookwood-endodontics.png" alt="Brookwood Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/cape-fear-endodontics.png" alt="Cape Fear Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/corpus-christi-oms.png" alt="Corpus Christi Oral &amp; Maxillofacial Surgeons" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/dothan-endodontics.png" alt="Dothan Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/eastern-shore-endodontics.png" alt="Eastern Shore Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/endodontic-associates.png" alt="Endodontic Associates" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/endodontic-associates-ms.png" alt="Endodontic Associates of Mississippi" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/ford-endodontics.png" alt="Ford Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/georgetown-ofs.png" alt="Georgetown Oral and Facial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/huntsville-oral-surgery.png" alt="Huntsville Oral Surgery &amp; Dental Implants" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/koslin-kahn.png" alt="Koslin &amp; Kahn Oral and Facial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/lafayette-oms.png" alt="Lafayette Oral &amp; Maxillofacial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/louisville-endodontics.png" alt="Louisville Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/memphis-endodontics.png" alt="Memphis Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/middle-tennessee-oms.png" alt="Middle Tennessee Oral &amp; Implant Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/mobile-oms.png" alt="Mobile Oral &amp; Facial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/nimmich-endodontics.png" alt="Nimmich Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/north-mississippi-omfs.png" alt="North Mississippi OMFS" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/ofs-east-alabama.png" alt="Oral &amp; Facial Surgery of East Alabama" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/oms-of-the-shoals.png" alt="OMS of the Shoals" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/oral-surgery-associates.png" alt="Oral Surgery Associates" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/oral-surgery-center-greensboro.png" alt="The Oral Surgery Center" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/pausa-omfs.png" alt="Pausa Oral &amp; Maxillofacial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/price-denton-endodontics.png" alt="Price Denton Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/purchase-endodontics.png" alt="Purchase Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/roden-oral-facial-surgery.png" alt="Roden Oral &amp; Facial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/sexton-oms.png" alt="Sexton Oral &amp; Maxillofacial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/silberman-endodontics.png" alt="Silberman Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/smith-smith-endodontics.png" alt="Smith and Smith Endodontics" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/southeastern-oms.png" alt="Southeastern Oral &amp; Facial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/southwest-facial-oral-surgery.png" alt="Southwest Center for Facial and Oral Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/space-coast-oms.png" alt="Space Coast Oral &amp; Maxillofacial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/tri-state-ofs.png" alt="Tri-State Oral &amp; Facial Surgery" loading="lazy" decoding="async">
-      <img src="https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@875120c/site-assets/media/logos/h5/wayne-oral-surgery.png" alt="Wayne Oral Surgery" loading="lazy" decoding="async">
-    </div>
   </div></div>
 
   <!-- FAQ -->
