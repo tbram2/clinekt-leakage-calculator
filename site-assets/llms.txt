@@ -15,6 +15,7 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 - [Baldwin Bone and Joint Case Study](https://clinekthealth.com/case-studies/baldwin-bone-joint-ai-case-study): 263 qualified surgical leads and a 60% booking rate in one quarter
 - [What Is Patient Leakage?](https://clinekthealth.com/blog/what-is-patient-leakage): Where practices lose patients they already earned, and how to measure it
 - [How to Reduce Patient Leakage](https://clinekthealth.com/blog/how-to-reduce-patient-leakage): Seven strategies that close the website, EHR, and referral leaks, with the statistics behind them
+- [What Is Referral Leakage?](https://clinekthealth.com/blog/what-is-referral-leakage): Definition of referral leakage, the difference between outbound (network keepage) and inbound (referrals that never get scheduled) leakage, and a seven-step method to calculate your own referral leakage rate
 - [Patient Leakage Calculator](https://clinekthealth.com/leakage-calculator): Run your own leakage numbers in under two minutes
 - [Ten Fair Questions, Answered](https://clinekthealth.com/blog/what-do-practices-ask-before-adopting-patient-activation): The questions practices ask before adopting patient activation, answered straight
 - [FAQs](https://clinekthealth.com/faqs): How the patient activation agents work, including what happens to existing forms, schedulers, and answering services

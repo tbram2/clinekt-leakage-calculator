@@ -1,0 +1,97 @@
+WHAT IS REFERRAL LEAKAGE? A DEFINITION FOR SPECIALTY PRACTICES - SEO/AEO FIELDS
+======================================================================
+
+Slug:            what-is-referral-leakage
+URL:             https://clinekthealth.com/blog/what-is-referral-leakage
+
+CMS Name (37 chars, keeps <title> at 54 with " | Clinekt Health"):
+What Is Referral Leakage? A Definition
+
+Title tag (54 chars):
+What Is Referral Leakage? Definition and How to Fix It
+
+Meta description (152 chars):
+Referral leakage is any referral that never becomes a completed visit. See the definition, the verified data, and how to calculate your own leakage rate.
+
+Short description:
+Referral leakage is any referral that never ends in a completed appointment. The definition, the two directions it runs, and how to measure yours.
+
+Published:       2026-07-21 (engine run; item-level publish)
+Category:        Blog
+Thumbnail:       Taylor's canonical white card (Webflow asset, shared by all regular posts)
+
+Primary query:     what is referral leakage
+Secondary queries:
+  - referral leakage
+  - referral leakage in healthcare
+  - medical referral leakage
+  - patient referral leakage
+  - referral leakage analytics
+  - how to reduce referral leakage at a specialty practice
+  - physician leakage
+
+GSC justification (3-month window ending 2026-07-21, sc-domain:clinekthealth.com):
+  referral leakage                                     13 imp | 0 clicks | pos 46.4
+  what is referral leakage                              8 imp | 0 clicks | pos 34.8
+  referral leakage in healthcare                        7 imp | 0 clicks | pos 54.4
+  referral leakage analytics                            7 imp | 0 clicks | pos 68.3
+  patient referral leakage                              5 imp | 0 clicks | pos ~45
+  medical referral leakage                              4 imp | 0 clicks | pos 45.0
+  reduce wound care referral leakage                    4 imp | 0 clicks | pos 20.0
+  how to reduce referral leakage at a specialty prac.   3 imp | 0 clicks | pos  4.3
+  physician leakage                                     3 imp | 0 clicks | pos 25.3
+  what is referral leakage (cluster total)             ~54 impressions, ZERO clicks
+
+Angle: The definitional head term has no page. This mirrors the proven pattern in the
+patient-leakage cluster, where /blog/what-is-patient-leakage ranks 4.8 for its definition
+query while "what is referral leakage" sits at 34.8 with nothing targeting it. The July 16
+post (what-percent-of-referrals-never-get-scheduled) owns the STATISTICS intent; this post
+owns the DEFINITION and MEASUREMENT intent, so the two complement rather than cannibalize.
+
+Perspective flip (the differentiator): every page ranking for "referral leakage" is written
+for health system executives trying to keep patients in-network (SocialRoots, Definitive
+Healthcare, PerfectServe, TeleVox, Personify, Ensemble). Nobody writes it for the RECEIVING
+specialty practice that loses inbound referrals before scheduling. This post names that
+distinction explicitly (outbound vs inbound leakage), which is both the ICP fit and the
+citation hook for LLMs.
+
+Verified external sources (all named, dated, hyperlinked):
+  - Closing the Referral Loop, Journal of General Internal Medicine, 2018 (Duke).
+    103,737 referral scheduling attempts. 34.8% completed. 38.9% never got an appointment date.
+    https://pubmed.ncbi.nlm.nih.gov/29532299/  [verified 2026-07-21]
+  - ABOUT Healthcare, Patient Leakage & Keepage Report 2021-22. 138 health system executives.
+    91% not sure they can calculate leakage cost. 17% estimated revenue upside.
+    https://abouthealthcare.com/reports/patient-leakage-keepage-report-2021-22/  [verified 2026-07-21]
+  - Luna 2022 national analysis, 3.9M commercially insured patients. ~60% of PT referrals
+    out-of-network, ~$3.1B lost health system revenue.
+    https://www.getluna.com/blog/health-systems-lose-31-billion-in-physical-therapy-revenue-in-2022-national-study  [verified 2026-07-21]
+
+Clinekt proof used (canon, verified against gbrain results/_overview + results/baldwin-bone-and-joint):
+  - Baldwin Bone & Joint: 263 qualified surgical leads, 159 appointments, 60% booking rate,
+    in a single quarter. Will Wiggins CEO quote. No dollar figures used.
+
+Editorial compliance:
+  - No em dashes, no HTML tables, no Clinekt pricing/dollar figures, no "chatbot",
+    no "front door" phrasing, no PHI.
+  - The FORBIDDEN 43% Central Logic exec-survey stat is NOT used.
+  - Positioning: patient activation, three agents (Inbound / Recall / Outbound).
+
+Internal links (8):
+  /blog/what-is-patient-leakage
+  /blog/what-percent-of-referrals-never-get-scheduled
+  /blog/how-to-reduce-patient-leakage
+  /blog/how-much-does-patient-leakage-cost
+  /blog/ai-front-desk-for-orthopedic-practices
+  /leakage-calculator
+  /case-studies
+  /book-a-demo
+
+Cluster cross-link (inbound, added this run):
+  /blog/what-percent-of-referrals-never-get-scheduled -> links to this post.
+
+Post-publish checklist:
+  [ ] Verify live 200 + title + H2s
+  [ ] llms.txt Core Pages entry + llms-full.txt condensed section, commit + push
+  [ ] GSC Request Indexing
+  [ ] Brain page website/blog-what-is-referral-leakage.md + engine list append + gbrain import
+  [ ] LinkedIn company post + link in first comment
