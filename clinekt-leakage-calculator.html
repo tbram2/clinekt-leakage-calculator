@@ -774,6 +774,14 @@
       '</div>'+
       '<a class="cta-btn" id="ctaBtn" href="https://clinekthealth.com/book-a-demo" target="_blank" rel="noopener">Book a Demo'+
         '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>'+
+      '<div id="demoGate" style="display:none;margin-top:12px;text-align:left">'+
+        '<div style="font-size:14px;font-weight:600;margin-bottom:6px">Where should we send your full breakdown?</div>'+
+        '<input type="email" id="demoGateEmail" placeholder="Work email" autocomplete="email" '+
+          'style="width:100%;box-sizing:border-box;padding:12px 14px;font:inherit;font-size:15px;border:1px solid #d5dbe5;border-radius:10px;outline:none"/>'+
+        '<div id="demoGateErr" style="display:none;color:#c0392b;font-size:13px;margin-top:5px">Please enter a valid work email</div>'+
+        '<button class="cta-btn" id="demoGateGo" style="margin-top:10px">Continue to booking</button>'+
+        '<button class="rerun" id="demoGateSkip" style="margin-top:6px">Skip and book a demo</button>'+
+      '</div>'+
       '<button class="rerun" id="again">Run another analysis</button>';
 
     // Count-up on the headline numbers
@@ -783,7 +791,32 @@
       show("idle");
       $("site").focus();
     });
-    $("ctaBtn").addEventListener("click",function(){sendLead("book_demo_click",R)});
+    /* Book-a-demo email gate (approved 2026-07-21): first click logs the
+       same book_demo_click event as before, then asks for a work email so
+       the lead has an identity. Continue sends book_demo_email with the
+       address; Skip still books — never lose a booking to friction. */
+    var DEMO_URL="https://clinekthealth.com/book-a-demo";
+    function openDemo(){window.open(DEMO_URL,"_blank","noopener")}
+    $("ctaBtn").addEventListener("click",function(e){
+      var gate=$("demoGate");
+      if(gate&&gate.style.display==="none"){
+        e.preventDefault();
+        sendLead("book_demo_click",R);
+        gate.style.display="block";
+        e.currentTarget.style.display="none";
+        $("demoGateEmail").focus();
+      }
+    });
+    $("demoGateGo").addEventListener("click",function(){
+      var em=($("demoGateEmail").value||"").trim();
+      var ok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em);
+      $("demoGateErr").style.display=ok?"none":"block";
+      if(!ok)return;
+      sendLead("book_demo_email",R,{email:em});
+      openDemo();
+    });
+    $("demoGateSkip").addEventListener("click",openDemo);
+    $("demoGateEmail").addEventListener("keydown",function(e){if(e.key==="Enter")$("demoGateGo").click()});
   }
 
   function countUp(el,target,dur){
@@ -810,7 +843,7 @@
   var WEBFLOW_FORM="https://formdata.webflow.com/api/v1/form/698f93a6f3fe10ac9229e2b4";
   var WF_PAGE_ID="698f93a7f3fe10ac9229e7fc";
   var WF_ELEMENT_ID="2537b3c8-a4ee-a1b5-f95e-dec209ce3a62";
-  function sendLead(event,R){
+  function sendLead(event,R,extra){
     try{
       var data={
         event:event,
@@ -824,6 +857,7 @@
         total_monthly:R.monthly,
         page:window.parent!==window?document.referrer:location.href
       };
+      if(extra)Object.keys(extra).forEach(function(k){data[k]=extra[k]});
       if(LEAD_HOOK){
         fetch(LEAD_HOOK,{method:"POST",headers:{"Content-Type":"application/json"},
           body:JSON.stringify(data),keepalive:true}).catch(function(){});
