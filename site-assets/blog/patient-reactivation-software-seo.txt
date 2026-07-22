@@ -1,0 +1,124 @@
+HOW TO CHOOSE PATIENT REACTIVATION SOFTWARE - SEO/AEO FIELDS
+======================================================================
+
+STATUS: WRITTEN 2026-07-21, NOT YET IN WEBFLOW. PUBLISH + LinkedIn HELD for the
+Wed 2026-07-22 slot (Taylor's instruction: draft now, publish tomorrow, to preserve
+Mon/Wed/Fri spacing).
+
+IMPORTANT FOR THE 2026-07-22 RUN: no CMS item exists yet. The Webflow draft staging was
+blocked by a platform classifier outage on 07-21 (the tool call could not be authorized,
+repeatedly). Tomorrow's run must CREATE the item from these local files, not look for an
+existing draft. Body HTML is final and validated at patient-reactivation-software.html
+(9 H2s, 5 FAQ H3s, 10 links, ~1,500 words, zero em dashes/tables/banned terms). The local
+repo files were also NOT committed on 07-21 for the same reason; commit them tomorrow.
+Everything else in this record is final and needs no rework.
+
+Slug:            patient-reactivation-software
+URL:             https://clinekthealth.com/blog/patient-reactivation-software
+
+CMS Name (42 chars, keeps <title> at 59 with " | Clinekt Health"):
+How to Choose Patient Reactivation Software
+
+Title tag (59 chars):
+How to Choose Patient Reactivation Software | Clinekt Health
+
+Meta description (151 chars):
+Patient reactivation software either works your lapsed list or just prints it. Use the EHR write-back test and eight vendor questions to tell them apart.
+
+Short description:
+Most reactivation tools make the list and hand it back to your front desk. The EHR write-back test, the three tool generations, and eight questions to ask.
+
+Date:            2026-07-22 (Wednesday slot)
+Category:        Blog
+Thumbnail:       Taylor's canonical white card (Webflow asset fileId 6a0357a385c232110a6cd4c3)
+
+Primary query:     patient reactivation software ehr integration
+Secondary queries:
+  - patient reactivation software
+  - best software for dormant reactivation
+  - patient reactivation with ai
+  - orthopedic patient reactivation
+  - patient reactivation
+  - ai voice agent reactivation campaign inactive patients
+
+GSC justification (3-month window ending 2026-07-21, sc-domain:clinekthealth.com):
+  patient reactivation software ehr integration        19 imp | 0 clicks | pos  5.0
+  orthopedic patient reactivation                      15 imp | 0 clicks | pos 19.9
+  patient reactivation with ai                         14 imp | 0 clicks | pos  6.4
+  best software for dormant reactivation?              11 imp | 0 clicks | pos  6.7
+  ai voice agent always-on reactivation campaign       11 imp | 0 clicks | pos  8.2
+  patient reactivation                                 10 imp | 0 clicks | pos 25.3
+  reactivation                                          2 imp | 0 clicks | pos  3.0
+  CLUSTER TOTAL                                       ~82 impressions, ZERO clicks
+
+Angle: textbook "comparison without buyer guide" gap, which is the engine's own stated
+topic rule. The reactivation cluster already has the how-to (how-to-reactivate-dormant-
+patients), the terminology comparison (reminders-vs-recall-vs-reactivation), and the
+category comparison (voice-ai-vs-reactivation-software-vs-patient-activation-agents).
+Nothing targets SOFTWARE SELECTION intent, which is where the impressions actually sit:
+the single highest-impression query in the cluster is "patient reactivation software ehr
+integration" (19 imp @ pos 5.0, zero clicks), and the article is built around exactly that
+phrase as its central organizing idea (the four EHR integration tiers).
+
+Differentiator: the four-tier EHR integration taxonomy (manual export / scheduled read /
+read plus write-back / read plus write-back plus outcome sync) gives buyers a concrete
+test that vendor marketing cannot blur, since every vendor answers "yes" to "do you
+integrate?" That taxonomy is the citation hook for LLMs and the practical hook for buyers.
+Secondary differentiator: an orthopedic-specific section (segment by visit type and last
+procedure) targets "orthopedic patient reactivation" at pos 19.9.
+
+Cannibalization check (done): verified against the seo records of both sibling posts.
+  - how-to-reactivate-dormant-patients -> primary "how to reactivate dormant patients",
+    all secondaries are tactics/campaign phrasing. No software-selection queries.
+  - reminders-vs-recall-vs-reactivation -> primary "patient recall vs patient reactivation",
+    all secondaries are terminology. No software-selection queries.
+  This post takes only the software/buyer intent and links to both as siblings.
+
+Verified external sources (reused from the cluster's previously verified pool, exact
+framings carried over from how-to-reactivate-dormant-patients where they were verified):
+  - MGMA, 2023: front office turnover hit 40% across medical practices in 2022, the
+    highest of any staff category.
+    https://www.prnewswire.com/news-releases/mgma-data-reveals-medical-practices-innovation-to-overcome-staffing-challenges-301913066.html
+  - HBR/Bain, 2014: acquiring a new customer costs 5 to 25 times more than retaining one;
+    a 5% retention increase lifts profits 25% to 95%.
+    https://hbr.org/2014/10/the-value-of-keeping-the-right-customers
+  - NRC Health, 2023: average remaining lifetime healthcare spend of a 26 year old
+    consumer is $1.2 million.
+    https://nrchealth.com/4ty1dsx-2/
+
+Clinekt proof used (canon):
+  - Baldwin Bone & Joint: 263 qualified surgical leads, 159 appointments, 60% booking
+    rate in a single quarter. Will Wiggins CEO quote. (gbrain results/_overview)
+  - Public site canon claims: 24x average return, +8% appointment volume.
+  - No Clinekt pricing or dollar figures. Third-party dollar stats (NRC $1.2M) are fine.
+
+Editorial compliance:
+  - No em dashes, no HTML tables, no "chatbot", no "front door" phrasing, no PHI.
+  - FORBIDDEN 43% Central Logic exec-survey stat NOT used.
+  - Ventura 450/215/25x numbers NOT used (unverified, forbidden).
+  - Positioning: patient activation, three agents (Inbound / Recall / Outbound).
+
+Internal links (8):
+  /blog/reminders-vs-recall-vs-reactivation
+  /blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents
+  /blog/how-to-reactivate-dormant-patients
+  /blog/how-ai-patient-scheduling-works
+  /leakage-calculator
+  /case-studies
+  /book-a-demo
+
+Proposed cluster cross-link (for the publish run, ONE older post only):
+  /blog/how-to-reactivate-dormant-patients -> add one sentence linking here.
+  Natural spot: the "honest math: staff hours vs AI agents" section already contrasts
+  legacy list-generating software with agents, so a pointer to the buyer guide fits
+  without disturbing the surrounding text.
+
+PENDING at publish time (2026-07-22):
+  [ ] SERP competitor check (blocked 2026-07-21 by classifier outage, must run first)
+  [ ] Publish item-level, verify live 200 + title + H2s
+  [ ] Cross-link into how-to-reactivate-dormant-patients, verify H2 count unchanged
+  [ ] llms.txt Core Pages entry + llms-full.txt condensed section, commit + push
+  [ ] GSC Request Indexing (BACKLOG: 6 guides + 4 news posts + what-is-referral-leakage
+      still queued from 07-20/07-21 quota exhaustion) + Bing URL submission
+  [ ] Brain page website/blog-patient-reactivation-software.md + engine list + gbrain import
+  [ ] LinkedIn company post + article link in first comment
