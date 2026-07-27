@@ -1,0 +1,30 @@
+META TITLE (55 chars):
+Referral Leakage Statistics: What the Numbers Show
+
+META DESCRIPTION (147 chars):
+The referral leakage statistics that matter, with sources, plus a five step method to compute your own practice's referral leakage rate in minutes.
+
+TARGET QUERIES (from demand-intel work order 2026-07-27, pain-signal lexicon subtype 751):
+- referral leakage statistics (primary; live autocomplete suggestion of parent stem "referral leakage")
+- referral leakage meaning
+- what is referral leakage in healthcare
+- referral leakage definition
+- patient referral leakage
+- referrals that never book (buyer phrasing)
+
+PERSONA: referral coordinator (per work order; Emitrr courts this role by name)
+REGISTER: per-practice arithmetic first, industry aggregates second (deliberate inversion of the incumbent SERP corpus, which is health-system framed)
+
+INTERLINKS (mandatory per work order):
+- /blog/how-to-reduce-patient-leakage (beachhead; linked both ways, cross-link added same run)
+- /blog/what-is-referral-leakage (definitional sibling)
+- /blog/best-patient-reactivation-software (recall-side reader)
+- /orthopedics (specialty page)
+- /leakage-calculator + /book-a-demo (CTAs)
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures; third-party dollar stats attributed with year + link ($150B ReferralMD 2016 verified live 200, $39.6B Luna 2022, Central Logic 2021 both already cited on site)
+- Baldwin canon verified against gbrain results/_overview (VERIFIED-CANON): 263 / 159 / 60% quarterly
+- No Assort Health, no athenahealth named
+- No em dashes, no tables in body, no PHI
+- Positioning: patient activation, three agents (Inbound, Recall, Outbound), never chatbot
