@@ -108,6 +108,10 @@
     '.ck-foot ul a:hover{color:#1D1D1F}',
     '.ck-brand img{height:30px;margin-bottom:16px}',
     '.ck-brand p{color:#56565C;font-size:15px;line-height:1.6;max-width:32ch;margin:0}',
+    '.ck-social{display:flex;gap:14px;margin-top:18px}',
+    '.ck-social a{display:inline-flex;color:#9A9AA0;transition:color .18s}',
+    '.ck-social a:hover{color:#1D1D1F}',
+    '.ck-social svg{width:18px;height:18px}',
     '.ck-foot-bot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:28px}',
     '.ck-foot-bot p{margin:0}',
     '.ck-foot-bot p,.ck-foot-bot a{color:#9A9AA0;font-size:13px;text-decoration:none}',
@@ -156,7 +160,13 @@
   var foot =
     '<footer class="ck-foot"><div class="ck-foot-in">' +
     '<div class="ck-foot-top">' +
-    '<div class="ck-brand"><img src="' + LOGO + '" alt="Clinekt Health"><p>HIPAA-compliant AI agents that activate patients — new, dormant, and net-new — around the clock.</p></div>' +
+    '<div class="ck-brand"><img src="' + LOGO + '" alt="Clinekt Health"><p>HIPAA-compliant AI agents that activate patients — new, dormant, and net-new — around the clock.</p>' +
+    '<div class="ck-social">' +
+    '<a href="https://www.linkedin.com/company/clinekt-health-1/" target="_blank" rel="noopener" aria-label="Clinekt Health on LinkedIn">' +
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"><path d="M13.2807 13.281H11.0582V9.80031C11.0582 8.97029 11.0434 7.90183 9.90225 7.90183C8.74467 7.90183 8.56758 8.80616 8.56758 9.73988V13.2808H6.34507V6.12306H8.47871V7.10123H8.50858C8.94365 6.35735 9.75257 5.91305 10.6137 5.945C12.8664 5.945 13.2817 7.42672 13.2817 9.35438L13.2807 13.281ZM3.83727 5.14464C3.12495 5.14478 2.5474 4.56739 2.54726 3.85508C2.54713 3.14273 3.1245 2.56517 3.83678 2.56503C4.54911 2.56489 5.12665 3.14228 5.12679 3.85459C5.12692 4.56694 4.54959 5.14454 3.83727 5.14464ZM4.94852 13.281H2.72369V6.12306H4.94852V13.281ZM14.3887 0.501033H1.60686C1.00277 0.494207 0.50738 0.978113 0.5 1.58222V14.4176C0.507137 15.022 1.00246 15.5064 1.60686 15.4999H14.3887C14.9944 15.5075 15.4916 15.0231 15.5 14.4176V1.58132C15.4914 0.976 14.994 0.492128 14.3887 0.500097V0.501033Z" fill="currentColor"/></svg></a>' +
+    '<a href="https://x.com/clinekthealth" target="_blank" rel="noopener" aria-label="Clinekt Health on X">' +
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"><path d="M12.6009 0.75H15.0544L9.69434 6.89151L16 15.25H11.0627L7.19566 10.1795L2.77087 15.25H0.31595L6.04904 8.68086L0 0.75H5.06262L8.55811 5.38377L12.6009 0.75ZM11.7399 13.7775H13.0993L4.32392 2.14493H2.86506L11.7399 13.7775Z" fill="currentColor"/></svg></a>' +
+    '</div></div>' +
     '<div><h4>Platform</h4><ul>' +
     '<li><a href="' + HOME + '#platform">Inbound Agent</a></li>' +
     '<li><a href="' + HOME + '#platform">Recall Agent</a></li>' +
