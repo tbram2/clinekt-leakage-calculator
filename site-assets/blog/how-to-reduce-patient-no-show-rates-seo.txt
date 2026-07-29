@@ -1,0 +1,35 @@
+META TITLE (52 chars):
+How to Reduce Patient No-Show Rates: Seven Steps
+
+META DESCRIPTION (152 chars):
+How to reduce patient no-show rates: seven steps with the arithmetic on what each fix is worth, from lead time and two-way reminders to same-day backfill.
+
+TARGET QUERIES (from demand-intel work order 2026-07-28, lexicon theme 4, autocomplete-confirmed 7/26):
+- how to reduce patient no show rates (primary; question-shaped, PAA/AEO harvest target)
+- how to improve patient no show rate
+- how to reduce patient cancellations
+- reduce patient no-shows
+- no-shows and cancellations / missed appointments / holes in the schedule (buyer phrasing)
+
+PERSONA: practice manager / administrator at an independent specialty practice
+REGISTER: answer the question, then quantify it; per-practice arithmetic (1,400 appts/mo example), never
+health-system aggregates. Deliberate contrast with the seven interchangeable vendor listicles holding page one
+(Artera, Kyruus, AuditData, TeleVox, Keona, Dialog Health, CertifyHealth).
+
+INTERLINKS (mandatory per work order):
+- /blog/average-no-show-rate-and-cost (stats sibling already earning impressions on "no show rate"; back-link added same run)
+- /blog/patient-scheduling-statistics
+- /blog/referral-leakage-statistics (7/27 piece)
+- /orthopedics (specialty page, Recall-relevant)
+- /blog/do-appointment-reminders-reduce-no-shows (reminders evidence)
+- /leakage-calculator + /book-a-demo (CTAs)
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures; third-party dollar stats attributed with source + year ($196 Kheirkhah 2016,
+  arithmetic examples derived from it and labeled as such)
+- Baldwin canon verified against gbrain results/_overview (VERIFIED-CANON): 263 / 159 / 60% quarterly
+- 82% after-hours stat is site canon (results/_overview)
+- No Assort Health (their $346 ortho no-show stat deliberately NOT used; partner rule), no athenahealth
+- No dashes anywhere, no tables in body, no PHI, never "schedule dis-adherence"
+- Positioning: patient activation, three agents (Inbound, Recall, Outbound), never chatbot
+- Anti-slop pass run (two binary-contrast patterns fixed)

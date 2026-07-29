@@ -56,6 +56,8 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 - [What percentage of referrals never get scheduled, and how do you stop losing yours?](https://clinekthealth.com/blog/what-percent-of-referrals-never-get-scheduled): Studies report referral completion anywhere from 34.8% to 79.2%. We reconcile the numbers and give specialty practices a referral capture playbook.
 - [How Do You Measure Patient Activation, and What If You Can't License the PAM?](https://clinekthealth.com/blog/how-to-measure-patient-activation): The PAM explained in plain English: 13 items, four levels, licensing reality, and the behavioral proxy metrics practices can track instead.
 
+- [How to Reduce Patient No-Show Rates: Seven Steps](https://clinekthealth.com/blog/how-to-reduce-patient-no-show-rates): Seven steps to reduce no-shows with the arithmetic on what each fix is worth, from lead time and two-way reminders to same-day backfill.
+
 ## Trust
 
 - [Trust Center](https://trust.delve.co/clinekt-health): SOC 2 Type II and HIPAA compliance documentation

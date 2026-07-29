@@ -239,3 +239,18 @@ How to calculate your own referral leakage rate (five steps): 1) Count referrals
 Proof and adjacency: about 99 of every 100 specialty practice website visitors leave without booking and 82% of patients try to book outside office hours, so the same arithmetic usually runs worse at the front door. Baldwin Bone and Joint, a multi provider orthopedic group, produced 263 qualified surgical leads and 159 booked appointments in a single quarter, a 60% booking rate, from traffic it was already receiving.
 
 FAQ digest: Referral leakage is any referral that never ends in a completed appointment with the intended provider, in either direction. Published referral completion rates range from 34.8% to 79.2% depending on what the study measured, so no single figure should be trusted as yours. Cost for a specific practice is leaked referrals times average case value. Referred patients fail to book for mundane reasons: slow first contact, unanswered calls never retried, limited same-day availability, insurance and prior authorization friction. Reduction comes from same-day contact, screening, booking into a real slot, and tracking every referral until the visit completes; patient activation agents (Inbound, Recall, Outbound) do that engagement work around the clock.
+
+
+---
+
+# How to Reduce Patient No-Show Rates: Seven Steps
+Source: https://clinekthealth.com/blog/how-to-reduce-patient-no-show-rates
+Published: 2026-07-29
+
+Direct answer: You reduce patient no-show rates by cutting the wait between booking and visit, sending reminders a patient can answer with one tap, letting patients cancel and rebook themselves at any hour, and refilling every opened slot the same day. Reminders alone plateau; practices that stay under the MGMA median of 5% to 7% design the schedule so missing an appointment is hard and moving one is easy.
+
+Key takeaways: The two strongest predictors of a miss are long booking-to-visit lead time and prior no-show history (Dantas et al., Health Policy, 2018). Automated reminders cut missed appointments from 23.1% to 17.3%, live staff calls to 13.6% (Parikh et al., The American Journal of Medicine, 2010), and then the effect plateaus. The most cited peer-reviewed cost of a no-show is $196 per missed appointment (Kheirkhah et al., BMC Health Services Research, 2016); 100 no-shows a month is roughly $19,600 of booked work. Across Clinekt deployments, 82% of patients try to book outside office hours. 42% of medical groups now charge a no-show fee (MGMA, 2025), which recovers only a fraction of the loss.
+
+Section summaries: Seven steps, each closed with per-practice arithmetic: shorten new-patient lead time; move to two-way reminders patients can act on; open self-service cancel and rebook at any hour; run a standing same-day backfill list; target patients with prior no-show history; make confirmation the default rather than the exception; measure the rate weekly against your own baseline, not global academic averages. Proof: Baldwin Bone and Joint, a multi provider orthopedic group, generated 263 qualified surgical leads and 159 booked appointments in a single quarter, a 60% booking rate, largely from demand it was already receiving.
+
+FAQ digest: Fastest fix is shortening new-patient wait and switching to two-way reminders. Reminder texts work (23.1% to 17.3%; text reminders reduce missed visits 28.9% to 39.1% vs none) but plateau without easy cancel and rebook. Charge a no-show fee only after cancelling and rebooking are genuinely easy. A good no-show rate is under the MGMA 5% to 7% median; single-specialty groups averaged 6.81% in 2023. Fill last-minute openings from a standing backfill list contacted the moment a slot opens.
