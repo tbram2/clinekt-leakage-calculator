@@ -1,0 +1,40 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Why Your Appointment Reminders Aren't Reaching Patients",
+      "description": "Your software says the reminder was sent. Here's why carrier filtering can block it anyway, and how to tell before no-shows keep creeping up.",
+      "url": "https://clinekthealth.com/blog/why-appointment-reminders-arent-reaching-patients",
+      "datePublished": "2026-07-31",
+      "dateModified": "2026-07-31",
+      "author": {"@type": "Organization", "name": "Clinekt Health", "url": "https://clinekthealth.com"},
+      "publisher": {"@type": "Organization", "name": "Clinekt Health", "url": "https://clinekthealth.com"},
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://clinekthealth.com/blog/why-appointment-reminders-arent-reaching-patients"}
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to tell if silent SMS filtering, not forgetting, is behind your no-shows",
+      "step": [
+        {"@type": "HowToStep", "name": "Ask your vendor for your actual 10DLC registration status", "text": "Get the campaign type and use case in writing. Generic Mixed campaigns draw the heaviest carrier scrutiny."},
+        {"@type": "HowToStep", "name": "Ask whether your dashboard distinguishes sent, delivered, and filtered", "text": "If it only ever shows sent, you are flying blind by design, not by accident."},
+        {"@type": "HowToStep", "name": "Watch for carrier clustering in your no-show pattern", "text": "Filtering happens at the network layer, so it tends to hit patients on one carrier harder than another."},
+        {"@type": "HowToStep", "name": "Call the patient back after a no-show before assuming they forgot", "text": "One direct question, did you get a text from us, tells you immediately whether the message reached them."},
+        {"@type": "HowToStep", "name": "Review your own reminder copy for spam-like patterns", "text": "Public shortened links, all-caps prompts, and identical mass wording raise filtering risk even on a registered campaign."},
+        {"@type": "HowToStep", "name": "Add a channel that does not depend on SMS for high-risk appointments", "text": "A phone call is not subject to carrier text filtering, so it catches what a filtered text misses."}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Why does my reminder system say a text was sent when the patient never received it?", "acceptedAnswer": {"@type": "Answer", "text": "Sent usually means the message left your software and was handed to a carrier, not that the carrier delivered it to the patient's phone. Most reminder tools do not display the difference, so a message can be silently filtered by the carrier network and still show as sent in your dashboard."}},
+        {"@type": "Question", "name": "What is A2P 10DLC and how does it affect appointment reminders?", "acceptedAnswer": {"@type": "Answer", "text": "A2P 10DLC is the registration system US carriers use to vet businesses texting from regular 10-digit phone numbers. An unregistered number gets its texts blocked outright, and even a registered number can have individual messages filtered if the content or sending pattern looks spam-like."}},
+        {"@type": "Question", "name": "Does registering my practice's number with 10DLC guarantee delivery?", "acceptedAnswer": {"@type": "Answer", "text": "No. Registration confirms who is texting. Carriers still score ongoing traffic for spam-like patterns, including short links, urgent language, and identical mass sends, and can filter individual messages after registration."}},
+        {"@type": "Question", "name": "How do I know if no-shows keep creeping up because of filtering instead of forgetting?", "acceptedAnswer": {"@type": "Answer", "text": "Look for a no-show pattern that clusters oddly by carrier rather than spreading evenly across your patient list, and call a handful of no-show patients directly to ask whether they received the text. Filtering leaves a network-level pattern; forgetting does not."}},
+        {"@type": "Question", "name": "What should a practice do if it suspects its reminders are being filtered?", "acceptedAnswer": {"@type": "Answer", "text": "Ask the vendor for the exact 10DLC campaign registration, request delivery status detail beyond sent, and add a voice channel for high-risk appointments so a filtered text is not the only attempt a patient gets."}}
+      ]
+    }
+  ]
+}
+</script>

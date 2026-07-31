@@ -1,0 +1,60 @@
+META TITLE (55 chars):
+Why Your Appointment Reminders Aren't Reaching Patients
+
+META DESCRIPTION (141 chars):
+Your software says the reminder was sent. Here's why carrier filtering can block it anyway, and how to tell before no-shows keep creeping up.
+
+TARGET QUERIES (from demand-intel WORK ORDER 2026-07-31, flags/2026-07-31.md, priority over self-chosen topic):
+- why aren't my appointment reminders reaching patients (primary, buyer's own framing)
+- appointment reminder says sent but not received
+- text reminder not delivered patient
+- 10DLC appointment reminders healthcare
+- reduce patient no-shows with reminders (GSC human query, 0 -> 6 impressions 7/29 pull, lands on this cluster)
+
+SOURCE OF THE ANGLE: X post by Ethereal Minds (healthcare-marketing account), 2026-07-31, quoted verbatim in
+the work order: "Your software says the reminder was sent. The patient swears they never got it." Mechanism
+fact-checked via WebSearch + WebFetch before writing (see below); NOT taken on faith from the source post.
+
+PERSONA: independent-practice owner/manager, operational and mechanics-focused, not enterprise RCM.
+REGISTER: per the 2026-07-27 standing register rule, kept practical/operational (mechanics piece, lower
+register risk than a leakage-statistics asset per the work order's own guidance).
+
+BUYER PHRASING USED VERBATIM (per work order): "the reminder was sent," "the patient swears they never got
+it," "no-shows keep creeping up."
+
+INTERLINKS (mandatory per work order, must link both ways -- new post links out to all three; ONE reciprocal
+edit made per playbook safety rail cap, to reminders-vs-recall-vs-reactivation, the post the work order names
+as "the natural companion... the fourth leg of the no-show/reminders cluster"):
+- /blog/average-no-show-rate-and-cost (existing stats asset)
+- /blog/how-to-reduce-patient-no-show-rates (7/29 how-to post)
+- /blog/reminders-vs-recall-vs-reactivation (taxonomy post, 2026-07-20) -- RECIPROCAL EDIT MADE
+- /blog/do-appointment-reminders-reduce-no-shows (reminder efficacy evidence, referenced not directly linked in-body beyond the taxonomy post's own links)
+- /orthopedics (specialty page)
+- /leakage-calculator + /book-a-demo (CTAs)
+
+DO NOT NAME (standing 2026-07-22 partner-exclusion rule): Assort Health, athenahealth.
+
+EXTERNAL SOURCES VERIFIED BY WEBFETCH BEFORE PUBLISHING (not taken from vendor summaries):
+- Twilio changelog, 2023: unregistered A2P 10DLC messages return error 30034, sender still billed.
+  https://www.twilio.com/en-us/changelog/-u-s--a2p-10dlc--full-blocking-of-traffic-sent-from-unregistered
+- Telnyx, 2026: "Your sends may appear successful in your platform, but recipients never see them."
+  https://telnyx.com/resources/unregistered-10dlc-is-ending
+- MessageFlow, June 17 2026 (Szymon Borsa): "Delivery confirmation and inbox visibility are two different
+  things"; four-layer filtering model; six spam-pattern risk factors used for the diagnostic how-to list.
+  https://messageflow.com/blog/sms-filtering/
+- T-Mobile 10DLC evasion penalty (up to $10,000 per content violation) used as attributed third-party dollar
+  stat (allowed; not a Clinekt figure).
+Neither Twilio, Telnyx, nor MessageFlow competes in patient-engagement software; deliberately avoided citing
+TextBolt, Curogram, TextRequest, Demandforce, Quo/OpenPhone, or mybcat as sources even though they already
+publish adjacent content, per the work order's own competitive-landscape note.
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures; only the T-Mobile fine is a dollar figure, third-party and attributed.
+- Baldwin canon verified against gbrain results/_overview (VERIFIED-CANON): 263 / 159 / 60% quarterly.
+- No Assort Health, no athenahealth.
+- No dashes anywhere (checked programmatically), no tables in body, no PHI.
+- Positioning: patient activation, Inbound + Recall agents named, never "chatbot"; no unverifiable claim made
+  about Clinekt's own 10DLC registration status -- the product mention stays to the true, verifiable point
+  that voice is not subject to SMS carrier filtering.
+- ~1,501 words. Card thumbnail (2026-07-27 imagery rule, no generated hero).
+- Anti-slop editorial pass run against policies/no-ai-slop/SKILL.md before publish.

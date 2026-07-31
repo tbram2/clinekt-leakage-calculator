@@ -1,0 +1,53 @@
+<p><strong>Your reminder software can show "sent" while the patient never gets a thing. The most common cause is carrier-level SMS filtering, most often tied to A2P 10DLC registration and message-content scoring, and it fails silently: no bounce in your dashboard, no error on the screen, just a patient who swears they never got it. Fixing this starts with knowing the difference between sent, delivered, and filtered, not with sending more texts.</strong></p>
+
+<h3>Key takeaways</h3>
+<ul>
+<li>"Sent" in most reminder software means the message left the platform. It does not mean a carrier delivered it to the patient's phone, and most practice texting tools never show the difference on screen.</li>
+<li>Carriers block business texting on 10-digit numbers that are not registered through A2P 10DLC, the industry vetting system for business senders. Unregistered sends return an error code to the sending platform, but many practices never see that error because their vendor's dashboard does not surface it (Twilio, 2023).</li>
+<li>Registering does not end the risk. Carriers keep scoring registered traffic for spam-like patterns, including short links, urgent language, and identical mass sends, and a message can still be silently dropped after the carrier accepts it (MessageFlow, 2026).</li>
+<li>A no-show pattern that clusters oddly, for example one carrier's patients missing appointments more than another carrier's, is the tell filtering leaves behind, because it happens at the network layer, not randomly.</li>
+<li>A phone call is not filtered the way a text is. A practice running every reminder through one text channel has no fallback the moment that channel silently fails.</li>
+</ul>
+
+<h2>Why does your reminder software say "sent" when the patient never got it?</h2>
+<p>Because "sent" and "delivered" describe two different moments, and most patient-reminder tools only show you the first one. Sent means your software handed the message to a carrier network. Delivered means a carrier's network confirmed the message reached the recipient's device. A message can leave your platform successfully and still never complete that second step, and the practice staff watching the dashboard has no way to tell.</p>
+<p>Telnyx, a messaging infrastructure provider, describes the exact failure mode: unregistered or filtered messages "may appear successful in your platform, but recipients never see them" (<a href="https://telnyx.com/resources/unregistered-10dlc-is-ending">Telnyx, 2026</a>). A messaging-deliverability vendor puts it more bluntly: "delivery confirmation and inbox visibility are two different things" (<a href="https://messageflow.com/blog/sms-filtering/">MessageFlow, June 2026</a>). Neither company sells reminder software to medical practices. Both point to the same gap: your reminder software has a status field that was never designed to confirm a human actually saw the message.</p>
+
+<h2>What is A2P 10DLC, and why can it block a legitimate reminder?</h2>
+<p>A2P 10DLC (application-to-person messaging on 10-digit long codes) is the system US carriers use to vet businesses that text patients, customers, or clients from a regular-looking phone number. Every business number sending automated texts is supposed to be registered under a campaign that identifies who is texting and why. Carriers use that registration to decide whether to deliver, throttle, or block the traffic.</p>
+<p>Twilio's own changelog states that messages sent from an unregistered 10DLC number return error code 30034, "Message from an Unregistered Number," and that the sender is billed for the attempt even though the message is blocked (<a href="https://www.twilio.com/en-us/changelog/-u-s--a2p-10dlc--full-blocking-of-traffic-sent-from-unregistered">Twilio, 2023</a>). That error goes to whatever software sits between your practice and the carrier. If your reminder vendor's interface does not pass that code through to your front desk, your team never learns the message failed. Carriers also enforce this with real financial teeth: T-Mobile can charge up to $10,000 per content violation for 10DLC evasion, which is the kind of penalty that makes carriers filter aggressively rather than give a sender the benefit of the doubt.</p>
+
+<h2>Does registering your number fix the problem for good?</h2>
+<p>No. Registration is a one-time step, but filtering is ongoing, and most vendors never explain that difference to the practices they sell to. Carriers continuously score already-registered traffic on content and sending behavior, and a properly registered campaign can still get individual messages filtered if it looks spam-like: public short links, all-capital urgency language, identical templates blasted to hundreds of numbers at once, or a high rate of patients replying STOP (<a href="https://messageflow.com/blog/sms-filtering/">MessageFlow, 2026</a>). None of that requires the practice to have done anything wrong. It only requires the reminder copy or sending pattern to resemble the traffic carriers are trained to catch.</p>
+<p>This is why "we registered last year" is not a reason to stop asking questions. The registration confirms who you are. It does not guarantee every message that follows gets through.</p>
+
+<h2>How do you tell if silent filtering, not forgetfulness, is behind your no-shows?</h2>
+<p>Six checks that separate a filtering problem from a patient who genuinely forgot:</p>
+<ol>
+<li><strong>Ask your vendor for your actual 10DLC registration status, not a general assurance.</strong> Get the campaign type and use case in writing. Generic "Mixed" campaigns draw the heaviest carrier scrutiny.</li>
+<li><strong>Ask whether your dashboard distinguishes sent, delivered, and filtered or failed.</strong> If it only ever shows "sent," you are flying blind by design, not by accident.</li>
+<li><strong>Watch for carrier clustering in your no-show pattern.</strong> Filtering happens at the network layer, so it tends to hit patients on one carrier harder than another. A random-looking no-show list is more likely forgetting; a lopsided one is more likely filtering.</li>
+<li><strong>Call the patient back after a no-show before assuming they forgot.</strong> One direct question, did you get a text from us, is faster than any dashboard audit and tells you immediately whether the message reached them.</li>
+<li><strong>Review your own reminder copy for the patterns carriers score as spam-like.</strong> Public shortened links, all-caps confirmation prompts, and identical wording sent to hundreds of numbers in the same minute all raise filtering risk, even on a registered campaign.</li>
+<li><strong>Add a channel that does not depend on SMS for your highest-risk appointments.</strong> A surgical consult booked weeks out is exactly the visit worth confirming by voice, because a phone call is not subject to carrier text filtering.</li>
+</ol>
+
+<h2>What actually closes the gap without adding headcount?</h2>
+<p>The honest fix is not a better text, it is not depending on one channel to carry every reminder. Someone still has to notice the filtering pattern, follow up by phone, and confirm the appointment stuck, every day, for every at-risk visit.</p>
+<p>That continuous, multi-channel follow-through is what Clinekt's patient activation agents do. The Inbound Agent and Recall Agent work by voice and by text, so a filtered text is not the only attempt a patient gets before a visit is quietly lost. Baldwin Bone and Joint, a multi-provider orthopedic group, generated 263 qualified surgical leads and 159 booked appointments in a single quarter, a 60% booking rate, without adding front-office staff to chase every reminder by hand. See how this works for a surgical specialty on the <a href="/orthopedics">orthopedics page</a>.</p>
+
+<h2>Common questions</h2>
+<h3>Why does my reminder system say a text was sent when the patient never received it?</h3>
+<p>"Sent" usually means the message left your software and was handed to a carrier, not that the carrier delivered it to the patient's phone. Most reminder tools do not display the difference, so a message can be silently filtered by the carrier network and still show as sent in your dashboard.</p>
+<h3>What is A2P 10DLC and how does it affect appointment reminders?</h3>
+<p>A2P 10DLC is the registration system US carriers use to vet businesses texting from regular 10-digit phone numbers. An unregistered number gets its texts blocked outright, and even a registered number can have individual messages filtered if the content or sending pattern looks spam-like.</p>
+<h3>Does registering my practice's number with 10DLC guarantee delivery?</h3>
+<p>No. Registration confirms who is texting. Carriers still score ongoing traffic for spam-like patterns, including short links, urgent language, and identical mass sends, and can filter individual messages after registration.</p>
+<h3>How do I know if no-shows keep creeping up because of filtering instead of forgetting?</h3>
+<p>Look for a no-show pattern that clusters oddly by carrier rather than spreading evenly across your patient list, and call a handful of no-show patients directly to ask whether they received the text. Filtering leaves a network-level pattern; forgetting does not.</p>
+<h3>What should a practice do if it suspects its reminders are being filtered?</h3>
+<p>Ask the vendor for the exact 10DLC campaign registration, request delivery status detail beyond "sent," and add a voice channel for high-risk appointments so a filtered text is not the only attempt a patient gets.</p>
+
+<p><strong>Last updated July 31, 2026. To cite this page:</strong> Clinekt Health, "Why Your Appointment Reminders Aren't Reaching Patients", clinekthealth.com, July 2026.</p>
+
+<p>If your reminder numbers look fine but no-shows keep creeping up anyway, the leak might be one you can't see from a dashboard. Our <a href="/leakage-calculator">leakage calculator</a> estimates what missed and never-booked appointments cost your practice in about two minutes, and our <a href="/blog/how-to-reduce-patient-no-show-rates">seven-step guide to reducing no-shows</a> covers the rest of the fix. For the full taxonomy of reminders versus recall versus reactivation, see <a href="/blog/reminders-vs-recall-vs-reactivation">reminders vs recall vs reactivation</a>, and for every sourced no-show benchmark, see <a href="/blog/average-no-show-rate-and-cost">the average no-show rate and what it costs</a>. If you would rather see the fix than the math, <a href="/book-a-demo">book a 15-minute demo</a>.</p>
