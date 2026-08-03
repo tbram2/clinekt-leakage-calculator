@@ -58,6 +58,7 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 
 - [How to Reduce Patient No-Show Rates: Seven Steps](https://clinekthealth.com/blog/how-to-reduce-patient-no-show-rates): Seven steps to reduce no-shows with the arithmetic on what each fix is worth, from lead time and two-way reminders to same-day backfill.
 - [Why Your Appointment Reminders Aren't Reaching Patients](https://clinekthealth.com/blog/why-appointment-reminders-arent-reaching-patients): Your software says the reminder was sent. Here's why carrier-level SMS filtering and A2P 10DLC rules can block it silently, and how to tell before no-shows keep creeping up.
+- [Referral Management Software for Independent Specialty Practices: What It Actually Does](https://clinekthealth.com/blog/referral-management-software): What referral management software actually does, the three categories it splits into, and what independent ortho, OMFS, and endo practices should look for.
 
 ## Trust
 

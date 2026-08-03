@@ -1,0 +1,30 @@
+META TITLE (51 chars):
+Referral Management Software: What It Actually Does
+
+META DESCRIPTION (140 chars):
+What referral management software actually does, the three categories, and what independent ortho, OMFS, and endo practices should look for.
+
+TARGET QUERIES (from demand-intel work order 2026-07-30 / flags/2026-07-30.md, pain-signal lexicon theme 17):
+- referral management software (primary; second clean uncontaminated commercial autocomplete stem in the lexicon after "ai for medical office")
+- referral management system healthcare
+- referral tracking specialty care
+- inbound referral workflow
+- referral management system dental (dental sub-vein, live autocomplete suggestion, no incumbent targets it from the dental side)
+
+PERSONA: practice manager / referral coordinator evaluating software for an independent specialty practice (not a health-system buyer)
+REGISTER: independent-practice register throughout (standing 2026-07-27 rule). Incumbent SERP corpus (Netsmart, Luma Health, Phreesia, Aidin, Promptly, a "6 Best" listicle, linear.health) is enterprise/MSO-flavored and quotes $820K-970K per-physician annual leakage; this piece deliberately answers "what actually closes the loop" for a 2-12 provider group instead of competing as another enterprise listicle.
+
+INTERLINKS (mandatory per work order):
+- /blog/how-to-reduce-patient-leakage (beachhead definitional post; this piece is its down-funnel sibling; MUST link back FROM that post, done this run via the single permitted cross-link edit)
+- /blog/referral-leakage-statistics (the 7/27 stats piece)
+- /blog/how-to-reduce-patient-no-show-rates (published 7/29)
+- /leakage-calculator + /book-a-demo (CTAs)
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures; one third-party stat attributed with named source + year + link (Regenstrief Institute / Indiana University School of Medicine, Journal of Evaluation in Clinical Practice, February 2010, 6,785-patient study - fetched and verified live at medicine.iu.edu, not taken on a secondary source's word)
+- Baldwin canon verified against gbrain results/_overview (VERIFIED-CANON): 263 qualified surgical leads / 159 appointments / 60% booking rate, last quarter
+- No Assort Health, no athenahealth named anywhere; EHR-native category described generically ("Epic, Cerner, and other EHR-native modules"); no other vendor products named in body copy (avoids unverified competitor claims)
+- No em dashes, no tables in body, no PHI
+- Anti-slop editorial pass run against policies/no-ai-slop/SKILL.md before publish: found and fixed two binary-contrast constructions ("The right question is not whether... It is whether...", "None of those are strategy problems. They are workflow problems...") and one colon-reveal opening sentence; checked against eval.md after fixes
+- Positioning: patient activation, three agents (Inbound, Recall, Outbound), never chatbot; single contextual Inbound product mention, no dollar amounts
+- Standard card thumbnail only (clinekt-blog-thumb.svg, fileId 6a5fcb9af9a5cd0bb02b1e2b) per the 2026-07-27 imagery override; no hero generated
