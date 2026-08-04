@@ -18,7 +18,8 @@
     ['Cardiology', '/cardiology'],
     ['Pediatrics', '/pediatrics']
   ];
-  var solLinks = '<a href="/leakage-calculator" style="display:block;margin:8px 8px 4px;padding:9px 14px;background:#EAF2FE;color:#0A58C4;font-weight:600;border-radius:10px;text-align:center;border:1px solid #D7E6FB">Leakage Calculator</a>' +
+  var solLinks = '<a href="/demo-agent" style="display:block;margin:8px 8px 4px;padding:9px 14px;background:linear-gradient(145deg,#0A6FE6,#063FB0);color:#fff;font-weight:600;border-radius:10px;text-align:center">Try the AI Agent</a>' +
+    '<a href="/leakage-calculator" style="display:block;margin:4px 8px;padding:9px 14px;background:#EAF2FE;color:#0A58C4;font-weight:600;border-radius:10px;text-align:center;border:1px solid #D7E6FB">Leakage Calculator</a>' +
     SOLUTIONS.map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join('');
   var CHEV = '<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>';
   var COMPANY_LINKS = '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>';
