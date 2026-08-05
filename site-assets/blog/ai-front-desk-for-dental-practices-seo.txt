@@ -1,0 +1,36 @@
+META TITLE:
+AI Front Desk for Dental and Oral Surgery Practices
+
+META DESCRIPTION:
+What an AI front desk should handle for a dental or oral surgery practice, from GP referral intake to post-op logistics, and what stays with staff.
+
+TARGET QUERIES (from gbrain marketing/pain-signal-lexicon theme 1, updated 2026-08-05, and the 2026-08-05 4:15 AM CT visibility-watch content-gap work order in flags/2026-08-05.md):
+- ai front desk for dental office (lexicon-confirmed "genuine category demand" qualifier, survives the My AI Front Desk brand-contamination check)
+- ai front desk dental
+- ai front desk for medical office (secondary; the two live pages what-does-an-ai-front-desk-do and ai-front-desk-for-orthopedic-practices do not target either qualified form)
+- ai front desk receptionist
+- ai front desk agent
+- ai receptionist for dental office / dental clinics / dentist (autocomplete-confirmed 2026-07-25, same theme)
+
+WORK ORDER FULFILLED: visibility-watch (2026-08-05 4:15 AM CT catch-up fire) routed a content-gap work order to blog-engine: no clinekthealth.com page targets "AI front desk" in its qualified dental/medical-office forms, despite the lexicon recommending them as winnable since disambiguated from the MyAIFrontDesk brand stem. The work order's suggested cheapest fix was folding the phrase into an existing post's on-page copy; blog-engine's own safety rail restricts edits to existing CMS items to the single cluster cross-link per run, so the gap is filled with a new specialty-vertical article instead (matching the existing pattern of ai-front-desk-for-orthopedic-practices), plus the mandatory cross-link edit into what-does-an-ai-front-desk-do.
+
+PERSONA: dental, oral surgery (OMFS), and endodontic practice managers/owners, mirrors HighFive Dental's ICP (Clinekt's only live dental/OMFS/Endo customer), not a hospital-system buyer.
+
+REGISTER: independent dental/OMFS-practice register; procedure-based call taxonomy (extractions, implants, ortho consults, hygiene recall) instead of generic medical framing; GP-referral relationship framing parallels the OMFS section already published in referral-management-software.
+
+INTERLINKS:
+- /blog/what-does-an-ai-front-desk-do (generic definitional parent; MUST link back FROM that post, done via the single permitted cross-link edit this run)
+- /blog/ai-front-desk-for-orthopedic-practices (specialty sibling, same cluster pattern)
+- /blog/are-ai-receptionists-hipaa-compliant (PHI/compliance angle, referenced twice)
+- /blog/referral-management-software (GP referral mechanics, published 2026-08-03)
+- /leakage-calculator + /book-a-demo (CTAs, no UTM per RULES — internal clinekthealth.com links never carry UTM)
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures. One independently fact-checked named external stat: Peerlogic (dental call-tracking platform), March 19 2025 post, fetched live at peerlogic.com/post/turning-missed-dental-phone-calls-into-profit — verified 68% of new-patient dental calls are answered (32% unanswered) and 42% of answered calls convert to a booked appointment. NOTE: a secondary source (dentina.ai) attributed a different, more precise-sounding "2026 case study, 4,280 calls, 26 practices, 38% unanswered" claim to Peerlogic; the primary Peerlogic page itself does not contain that claim or those figures, so it was treated as an unverifiable secondary embellishment and NOT used, per the pain-signal-lexicon's own "a fetch that cannot be reproduced is a candidate hallucination, not data" standing instruction. Second named stat: MGMA, 2023 (40% front-office turnover, already used on two other live posts, reused for consistency).
+- Baldwin canon verified against gbrain results/_overview (VERIFIED-CANON): 263 qualified surgical leads / 159 appointments / 60% booking rate, last quarter. Framed explicitly as a cross-specialty proof point (Baldwin is orthopedic; the article states plainly that the same three agents run for dental/OMFS, pointed at a different procedure list) since no dental/OMFS quantitative result exists in canon to cite directly.
+- No Assort Health, no athenahealth, no other vendor products named in body copy.
+- No em dashes, no tables, no PHI, never "chatbot".
+- Positioning: patient activation, three agents (Inbound, Recall, Outbound) named once in the proof section.
+- Anti-slop editorial pass run against policies/no-ai-slop/SKILL.md before publish: found and fixed two binary-contrast constructions ("it replaces X, not Y" / "is the goal, not Z"); no em dashes, no banned words, no colon-reveal drama, no weasel attribution (all stats named), checked against eval.md principles after fixes.
+- Word count: ~1,700 words (in line with the two most recent comparable published posts, referral-management-software at 1,637 and ai-front-desk-for-orthopedic-practices at 1,653, both modestly over the 1,200-1,600 target as established practice).
+- Standard card thumbnail only, fileId 6a5fcb9af9a5cd0bb02b1e2b (verified live on the three most recently published items 2026-08-03; this is the fileId actually in current production use, superseding the older fileId reference in the recipe memory) — no image generated.
