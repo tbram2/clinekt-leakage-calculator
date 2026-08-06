@@ -60,6 +60,7 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 - [Why Your Appointment Reminders Aren't Reaching Patients](https://clinekthealth.com/blog/why-appointment-reminders-arent-reaching-patients): Your software says the reminder was sent. Here's why carrier-level SMS filtering and A2P 10DLC rules can block it silently, and how to tell before no-shows keep creeping up.
 - [Referral Management Software for Independent Specialty Practices: What It Actually Does](https://clinekthealth.com/blog/referral-management-software): What referral management software actually does, the three categories it splits into, and what independent ortho, OMFS, and endo practices should look for.
 - [What Should an AI Front Desk Handle for a Dental or Oral Surgery Practice?](https://clinekthealth.com/blog/ai-front-desk-for-dental-practices): The dental and OMFS call taxonomy, GP referral intake, and why generic scheduling AI breaks for procedure-based practices, with the real dental call-answer-rate data.
+- [Dental AI Answering Service: What It Should Actually Do](https://clinekthealth.com/blog/dental-ai-answering-service): What a dental AI answering service should actually do, what it costs, and why oral surgery and endodontic practices still keep a human backup for on-call emergencies.
 
 ## Trust
 

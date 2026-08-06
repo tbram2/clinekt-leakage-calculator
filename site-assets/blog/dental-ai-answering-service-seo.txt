@@ -1,0 +1,33 @@
+META TITLE (55 chars):
+Dental AI Answering Service: What It Should Actually Do
+
+META DESCRIPTION (142 chars):
+What a dental AI answering service should actually do, what it costs, and why oral surgery and endodontic practices still keep a human backup.
+
+TARGET QUERIES (OPEN WORK ORDER, flags/2026-08-04.md FLAG 104, demand-intel 3:15 AM CT 2026-08-04, pain-signal lexicon theme 3; still unexecuted as of 2026-08-06, took priority over self-chosen topic per playbook step 2):
+- dental AI answering service (primary; live emergent autocomplete suggestion first confirmed 2026-07-29)
+- dental answering service
+- dental office answering service
+- after hours answering service cost (theme 16, the confirmed switching-query variant, folded in via the pricing section)
+
+PERSONA: dental / OMFS / endodontic practice owner or office manager evaluating after-hours phone coverage, register independent-practice / dental-operator language (front desk, phones, after-hours, on-call), not enterprise. Per the work order's own framing.
+
+WHY THIS TOPIC: flags/2026-08-04.md FLAG 104 issued this exact work order to blog-engine the same morning it was found (theme 3's holder check: five distinct small-to-mid vendors, ElevenLabs, Whippy, Dialzara, GetHelpdesk.AI, Viva AI, none dominant, no listicle/roundup format yet). It was never executed (checked flags/2026-08-05.md and the gbrain "Published by the engine" log in full; 8/5's post covered the separate, though adjacent, "AI front desk for dental practices" content-gap work order instead). Confirmed via SEO recovery blitz (queue/2026-08-06/seo-recovery-blitz.md task 4) this run, which also independently pointed at pain-signal-lexicon striking-distance themes. Checked the full site-assets/blog folder for any existing "answering service" content before drafting (grep -il "answering service" *.html): only passing mentions inside what-does-an-ai-front-desk-do and after-hours-patient-booking, no dedicated page. NOTE: an earlier draft this run targeted a different, "AI front desk vs AI answering service for a medical office" framing, but a pre-publish check of the live what-does-an-ai-front-desk-do CMS item found it already carries an FAQ answering the same "front desk vs answering service" question and the same MGMA 19%/68%/43% stats; that draft was discarded before writing to Webflow to avoid self-cannibalization, and this dental-specific, after-hours-coverage angle (a genuinely different job: after-hours triage/emergency routing vs daytime resolution) was written instead.
+
+INTERLINKS (per work order's interlink requirement, connect into the existing Inbound/missed-calls cluster):
+- /blog/after-hours-patient-booking (missed-calls/after-hours cluster; cross-link edit added FROM this post per playbook step 7, since it is the closest topical match and had no existing dental-specific link)
+- /blog/ai-front-desk-for-dental-practices (daytime dental/OMFS call taxonomy sibling, published 2026-08-05)
+- /blog/what-does-an-ai-front-desk-do (resolved-vs-logged definitional piece)
+- /leakage-calculator + /book-a-demo (CTAs)
+
+NAMING CAUTION (per the work order): none of the five vendors named in the work order's "current landscape" section (ElevenLabs, Whippy, Dialzara, GetHelpdesk.AI, Viva AI) are named in body copy, consistent with the site's standing no-vendor-products-named convention; the work order's own note that "Viva AI" (getviva.ai) may be a different company from the "Viva" tracked elsewhere under dental-DSO recall was an additional reason to avoid naming either.
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures; one named third-party dollar stat, attributed and dated (Answering365, 2026 dental answering service pricing guide, fetched live at answering365.com/blog/dental-answering-service-guide, exact figures quoted: $100-250 basic, $200-500 standard, $400-800 full 24/7, most practices in the $200-500 range) — this is a third-party industry dollar stat, permitted per the standing rule (no dollar figures for CLINEKT results/pricing only).
+- Reused Clinekt's own VERIFIED-CANON after-hours stat (82% of patients try to book outside office hours, gbrain results/_overview) and Baldwin canon (263 qualified surgical leads / 159 appointments / 60% booking rate, last quarter), explicitly framed as cross-specialty proof (orthopedic result, not a dental/OMFS quantitative result, matching the 2026-08-05 post's precedent since no dental/OMFS quantitative result exists in canon).
+- No Assort Health, no athenahealth, no other vendor product named in body copy.
+- No em dashes (verified programmatically, zero present). No tables. No PHI.
+- Anti-slop pass run against policies/no-ai-slop/SKILL.md before publish: checked for binary-contrast, colon-reveal, weasel attribution, and importance-puffery patterns; none found requiring a fix beyond normal editing.
+- Positioning: patient activation framing via "Inbound agent," never "chatbot," no Clinekt dollar amounts.
+- Standard card thumbnail only (clinekt-blog-thumb.svg, fileId 6a5fcb9af9a5cd0bb02b1e2b, confirmed in current production use via a fresh CMS read 2026-08-06) per the 2026-07-27 imagery override; no hero generated.
+- Word count 1,530 (target 1,200-1,600).
