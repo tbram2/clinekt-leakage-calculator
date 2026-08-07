@@ -233,3 +233,7 @@
 #ck-sp .proof .card{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
 #ck-sp .brain{background:linear-gradient(160deg,#0B1B33,#12315D 70%,#0A5BC4);padding:clamp(56px,7vw,96px) 0;margin-bottom:var(--sec-y,clamp(56px,7vw,104px))}
 #ck-sp .brain .card{background:none;border-radius:0;box-shadow:none;padding:0}
+
+/* Round 6: KPI band goes full-bleed too; the CTA card is the lone remaining tile */
+#ck-sp .band{background:linear-gradient(135deg,#0A5BC4,#0071E3 55%,#2E9BEF);padding:clamp(48px,6vw,84px) 0;margin-bottom:var(--sec-y,clamp(56px,7vw,104px))}
+#ck-sp .band .card{background:none;border-radius:0;box-shadow:none;padding:0}
