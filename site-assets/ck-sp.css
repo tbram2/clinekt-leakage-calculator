@@ -396,3 +396,119 @@
 #ck-sp .faq .inner{display:block}
 #ck-sp .faq .sec-head{position:static;margin:0 0 28px}
 }
+
+/* ============================================================================
+   PV3 — Platform page template (2026-08-07). Homepage-congruent redesign:
+   white/paper alternation, left sec-heads, .app-style console mockup, ONE navy
+   chapter, homepage-style rounded gradient CTA card. Namespaced #ck-sp.pv3 with
+   fresh section class names so legacy rules and chrome.js !important never touch it.
+   ============================================================================ */
+#ck-sp.pv3{--paper:#F3F4F7;--navy:#0C1D38;--lead:clamp(17px,1.45vw,20px)}
+#ck-sp.pv3 .wrap{max-width:none;padding:0 var(--pad)}
+#ck-sp.pv3 .pv-in{max-width:1240px;margin:0 auto}
+
+/* Section head — homepage convention: left-aligned, eyebrow block, big h2, lead */
+#ck-sp.pv3 .pv-head{max-width:60ch;margin-bottom:clamp(40px,5vw,64px)}
+#ck-sp.pv3 .pv-head .eyebrow{display:block;margin-bottom:14px}
+#ck-sp.pv3 .pv-head h2{font-size:clamp(30px,3.8vw,52px);font-weight:700;letter-spacing:-.03em;line-height:1.06}
+#ck-sp.pv3 .pv-head .lead{font-size:var(--lead);color:var(--body);margin-top:18px;max-width:46ch;line-height:1.5}
+
+/* 1 · Hero: centered headline, console mockup below (Apple product-page shape) */
+#ck-sp.pv3 .pv-hero{position:relative;overflow:hidden;padding:clamp(96px,12vh,160px) 0 clamp(72px,9vw,130px);background:radial-gradient(120% 95% at 86% -10%,#EAF2FE 0%,#fff 52%)}
+#ck-sp.pv3 .pv-hero .pv-in{text-align:center}
+#ck-sp.pv3 .pv-hero h1{font-size:clamp(42px,5.4vw,78px);font-weight:700;letter-spacing:-.034em;line-height:1.03;max-width:16ch;margin:16px auto 0;text-wrap:balance}
+#ck-sp.pv3 .pv-hero .lead{font-size:var(--lead);color:var(--body);max-width:44ch;margin:20px auto 0;line-height:1.5;text-wrap:balance}
+#ck-sp.pv3 .pv-hero .hero-cta{justify-content:center;margin-top:32px}
+#ck-sp.pv3 .pv-hero .eyebrow{justify-content:center}
+
+/* The console — homepage .app language: browser bar, dots, Live pill */
+#ck-sp.pv3 .pv-app{max-width:1080px;margin:clamp(52px,6vw,84px) auto 0;background:#fff;border:1px solid var(--line-2);border-radius:var(--r-lg);box-shadow:0 34px 90px -38px rgba(20,30,60,.28);overflow:hidden;text-align:left}
+#ck-sp.pv3 .pv-bar{display:flex;align-items:center;gap:7px;padding:13px 18px;border-bottom:1px solid var(--line-2);background:#FBFCFE}
+#ck-sp.pv3 .pv-bar .d{width:10px;height:10px;border-radius:50%;background:#E2E2E8}
+#ck-sp.pv3 .pv-bar .ttl{margin-left:9px;font-size:12.5px;font-weight:600;color:var(--muted)}
+#ck-sp.pv3 .pv-bar .live{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--blue);background:var(--blue-tint);padding:4px 11px;border-radius:980px}
+#ck-sp.pv3 .pv-bar .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);animation:ckLive 2.8s infinite}
+#ck-sp.pv3 .pv-main{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,.45fr);gap:0}
+#ck-sp.pv3 .pv-feed{padding:20px 24px 10px;border-right:1px solid var(--line-2)}
+#ck-sp.pv3 .pv-fh,#ck-sp.pv3 .pv-sh{font-size:11.5px;font-weight:650;color:var(--muted);letter-spacing:.01em;padding-bottom:10px;border-bottom:1px solid var(--line-2)}
+#ck-sp.pv3 .pv-row{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line-2)}
+#ck-sp.pv3 .pv-row:last-child{border-bottom:none}
+#ck-sp.pv3 .pv-row .tag{flex:0 0 auto;font-size:10.5px;font-weight:700;letter-spacing:.01em;color:var(--pac,#0071E3);background:var(--pac-bg,#E9F2FE);padding:5px 10px;border-radius:7px;min-width:74px;text-align:center}
+#ck-sp.pv3 .pv-row .tx{min-width:0;flex:1}
+#ck-sp.pv3 .pv-row .tx b{display:block;font-size:13.5px;font-weight:650;letter-spacing:-.005em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ck-sp.pv3 .pv-row .tx span{display:block;font-size:12px;color:var(--body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ck-sp.pv3 .pv-row .tm{flex:0 0 auto;font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+#ck-sp.pv3 .pv-side{padding:20px 22px;background:#FBFCFE}
+#ck-sp.pv3 .pv-stat{padding:13px 0;border-bottom:1px solid var(--line-2)}
+#ck-sp.pv3 .pv-stat:last-child{border-bottom:none}
+#ck-sp.pv3 .pv-stat b{display:block;font-size:22px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+#ck-sp.pv3 .pv-stat span{display:block;font-size:12px;color:var(--body);margin-top:1px}
+
+/* 2 · Journey: paper band, one rail, five stops */
+#ck-sp.pv3 .pv-journey{background:var(--paper);padding:clamp(88px,11vh,150px) 0}
+#ck-sp.pv3 .pv-rail{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(18px,2vw,32px)}
+#ck-sp.pv3 .pv-rail::before{content:"";position:absolute;top:7px;left:8px;right:18%;height:2px;background:linear-gradient(90deg,#119D57,#0071E3 30%,#0E8FA8 50%,#C26A12 72%,#6F2DAA)}
+#ck-sp.pv3 .pv-stop{position:relative}
+#ck-sp.pv3 .pv-stop .dot{position:relative;display:block;width:16px;height:16px;border-radius:50%;background:var(--pac,#0071E3);border:3px solid var(--paper);box-shadow:0 0 0 2px var(--pac,#0071E3);margin-bottom:18px}
+#ck-sp.pv3 .pv-stop b{display:block;font-size:clamp(16px,1.3vw,19px);font-weight:700;letter-spacing:-.012em;margin-bottom:6px}
+#ck-sp.pv3 .pv-stop .d1{display:block;font-size:clamp(13px,1.05vw,14.5px);color:var(--body);line-height:1.5;max-width:24ch}
+#ck-sp.pv3 .pv-stop .who{display:block;margin-top:12px;font-size:12px;font-weight:650;color:var(--pac,#0071E3)}
+
+/* 3 · Agents: white, 2x2 quiet cards */
+#ck-sp.pv3 .pv-agents{background:#fff;padding:clamp(88px,11vh,150px) 0}
+#ck-sp.pv3 .pv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+#ck-sp.pv3 .pv-card{background:#fff;border:1px solid var(--line-2);border-radius:var(--r-lg);padding:clamp(26px,2.4vw,36px);box-shadow:0 1px 2px rgba(20,25,40,.04),0 14px 34px -20px rgba(20,25,40,.1);transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease)}
+#ck-sp.pv3 .pv-card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--pac,#0071E3) 28%,#fff);box-shadow:0 2px 6px rgba(20,25,40,.05),0 26px 52px -26px rgba(20,25,40,.16)}
+#ck-sp.pv3 .pv-card .ic{width:44px;height:44px;border-radius:12px;background:var(--pac-bg,#E9F2FE);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+#ck-sp.pv3 .pv-card .ic svg{width:22px;height:22px;stroke:var(--pac,#0071E3);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+#ck-sp.pv3 .pv-card .tag{font-size:13px;font-weight:650;color:var(--pac,#0071E3);margin-bottom:4px}
+#ck-sp.pv3 .pv-card h3{font-size:clamp(19px,1.6vw,23px);font-weight:700;letter-spacing:-.015em;margin-bottom:12px}
+#ck-sp.pv3 .pv-card .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+#ck-sp.pv3 .pv-card .chips span{font-size:11.5px;font-weight:550;line-height:1;color:var(--body);background:var(--paper);padding:6px 10px;border-radius:980px;white-space:nowrap}
+#ck-sp.pv3 .pv-card p{font-size:15px;color:var(--body);line-height:1.6}
+#ck-sp.pv3 .pv-card .go{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:14.5px;font-weight:600;color:var(--pac,#0071E3);text-decoration:none}
+#ck-sp.pv3 .pv-card .go svg{width:14px;height:14px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+#ck-sp.pv3 .pv-card .go:hover svg{transform:translateX(3px)}
+
+/* 4 · Clinekt OS: the one dark chapter */
+#ck-sp.pv3 .pv-os{background:var(--navy);padding:clamp(96px,12vh,160px) 0}
+#ck-sp.pv3 .pv-os .pv-os-head{max-width:640px;margin:0 auto clamp(20px,2.5vw,36px);text-align:center}
+#ck-sp.pv3 .pv-os .eyebrow{color:#7FB6F5;justify-content:center}
+#ck-sp.pv3 .pv-os h2{color:#fff;font-size:clamp(30px,3.8vw,52px);font-weight:700;letter-spacing:-.03em;line-height:1.06;margin-top:14px}
+#ck-sp.pv3 .pv-os .pv-os-head p{color:rgba(255,255,255,.78);font-size:var(--lead);margin-top:14px}
+#ck-sp.pv3 .pv-os .brain-stage{max-width:1000px}
+#ck-sp.pv3 .pv-mem{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,88px);align-items:center;max-width:1240px;margin:clamp(72px,9vw,120px) auto 0}
+#ck-sp.pv3 .pv-mem .lbl{font-size:13.5px;font-weight:650;color:rgba(255,255,255,.55);margin-bottom:12px}
+#ck-sp.pv3 .pv-mem .st{color:#fff;font-size:clamp(21px,2.3vw,30px);font-weight:700;letter-spacing:-.02em;line-height:1.28;display:block}
+#ck-sp.pv3 .pv-mem .st i{font-style:normal;color:#7FB6F5}
+#ck-sp.pv3 .pv-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;max-width:1240px;margin:clamp(72px,9vw,120px) auto 0}
+#ck-sp.pv3 .pv-stats .s{border-left:1px solid rgba(255,255,255,.22);padding-left:22px}
+#ck-sp.pv3 .pv-stats .v{font-size:clamp(26px,2.6vw,38px);font-weight:700;letter-spacing:-.02em;color:#fff;font-variant-numeric:tabular-nums}
+#ck-sp.pv3 .pv-stats .k{font-size:13.5px;color:rgba(255,255,255,.72);margin-top:6px;line-height:1.45}
+
+/* 5 · CTA: exactly the homepage's rounded gradient card */
+#ck-sp.pv3 .pv-cta-wrap{background:#fff;padding:clamp(48px,6vw,88px) var(--pad)}
+#ck-sp.pv3 .pv-cta{position:relative;overflow:hidden;border-radius:var(--r-xl);padding:clamp(72px,9vw,128px) clamp(28px,5vw,80px);background:linear-gradient(145deg,#0A6FE6,#063FB0);color:#fff;text-align:center;max-width:1400px;margin:0 auto}
+#ck-sp.pv3 .pv-cta::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 90% at 82% 6%,rgba(255,255,255,.2),transparent 56%);pointer-events:none}
+#ck-sp.pv3 .pv-cta h2{position:relative;color:#fff;font-size:clamp(34px,4.6vw,64px);font-weight:700;letter-spacing:-.03em;max-width:22ch;margin:0 auto;text-wrap:balance}
+#ck-sp.pv3 .pv-cta p{position:relative;color:rgba(255,255,255,.9);font-size:var(--lead);max-width:46ch;margin:16px auto 0}
+#ck-sp.pv3 .pv-cta .hero-cta{position:relative;justify-content:center;margin-top:34px}
+#ck-sp.pv3 .pv-cta .btn-w{background:#fff;color:var(--blue)}
+#ck-sp.pv3 .pv-cta .btn-w:hover{transform:translateY(-2px);box-shadow:0 16px 40px -14px rgba(0,0,0,.32)}
+
+/* PV3 mobile — declared last, always */
+@media(max-width:940px){
+#ck-sp.pv3 .pv-hero{padding:clamp(72px,10vh,100px) 0 56px}
+#ck-sp.pv3 .pv-hero h1{font-size:clamp(34px,9vw,44px)}
+#ck-sp.pv3 .pv-main{grid-template-columns:minmax(0,1fr)}
+#ck-sp.pv3 .pv-feed{border-right:none;border-bottom:1px solid var(--line-2)}
+#ck-sp.pv3 .pv-side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px}
+#ck-sp.pv3 .pv-row .tx b,#ck-sp.pv3 .pv-row .tx span{white-space:normal}
+#ck-sp.pv3 .pv-rail{grid-template-columns:minmax(0,1fr);gap:26px;padding-left:30px}
+#ck-sp.pv3 .pv-rail::before{top:8px;bottom:8px;left:7px;right:auto;width:2px;height:auto;background:linear-gradient(180deg,#119D57,#0071E3 30%,#0E8FA8 50%,#C26A12 72%,#6F2DAA)}
+#ck-sp.pv3 .pv-stop .dot{position:absolute;left:-30px;top:2px;margin:0}
+#ck-sp.pv3 .pv-grid{grid-template-columns:minmax(0,1fr)}
+#ck-sp.pv3 .pv-mem{grid-template-columns:minmax(0,1fr);gap:32px}
+#ck-sp.pv3 .pv-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+}
+@media(max-width:560px){#ck-sp.pv3 .pv-stats{grid-template-columns:minmax(0,1fr)}#ck-sp.pv3 .pv-side{grid-template-columns:minmax(0,1fr)}}
