@@ -726,3 +726,13 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
 }
 /* Mobile first-frame paint cost: no giant blur layers, no backdrop blur, skip below-fold render */
 @media(max-width:1000px){.glow{display:none}.hero{background:radial-gradient(120% 80% at 85% -10%,#EAF2FE 0%,var(--paper-2) 55%)}.nav::before{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(255,255,255,.96)}.section,.cta-wrap,.foot{content-visibility:auto;contain-intrinsic-size:auto 900px}.band{content-visibility:auto;contain-intrinsic-size:auto 600px}}
+/* Agent panel cross-links + One Brain band (2026-08-07 platform rework) */
+.ag-more{display:inline-block;margin-top:18px;font-size:14.5px;font-weight:600;color:var(--blue)}
+.ag-more:hover{text-decoration:underline}
+.brainband{background:linear-gradient(160deg,#0B1B33,#12315D 70%,#0A5BC4)}
+.brainband .bb-in{max-width:780px;margin:0 auto;text-align:center;padding:clamp(56px,7vw,96px) var(--pad)}
+.brainband .eyebrow{color:#7FB6F5}
+.brainband h2{color:#fff;font-size:clamp(26px,3.2vw,40px);letter-spacing:-.025em;margin:14px 0}
+.brainband p{color:rgba(255,255,255,.82);font-size:clamp(15px,1.3vw,17.5px);line-height:1.65;max-width:60ch;margin:0 auto}
+.brainband .bb-link{display:inline-block;margin-top:24px;color:#fff;font-weight:600;font-size:15px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);padding:12px 24px;border-radius:980px;transition:background .2s}
+.brainband .bb-link:hover{background:rgba(255,255,255,.22)}

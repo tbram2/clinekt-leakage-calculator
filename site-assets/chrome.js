@@ -25,19 +25,33 @@
     ['Cardiology', '/cardiology'],
     ['Pediatrics', '/pediatrics']
   ];
+  // The platform pages — Platform dropdown: overview page + the four agent pages.
+  // The Care Management Agent keeps its original /care-agent slug (published slugs never change).
+  var PLATFORM = [
+    ['Platform overview', '/platform'],
+    ['Inbound Agent', '/inbound-agent'],
+    ['Recall Agent', '/recall-agent'],
+    ['Outbound Agent', '/outbound-agent'],
+    ['Care Management Agent', '/care-agent']
+  ];
   function links(list) { return list.map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join(''); }
+  var platLinks = links(PLATFORM);
+  // Solutions mega-menu: featured pills across the top, then the two groups SIDE BY SIDE.
   var solLinks = '<a href="/demo-agent" style="display:block;margin:8px 8px 4px;padding:9px 14px;background:linear-gradient(145deg,#0A6FE6,#063FB0);color:#fff;font-weight:600;border-radius:10px;text-align:center">Try Our AI Agent</a>' +
     '<a href="/leakage-calculator" style="display:block;margin:4px 8px;padding:9px 14px;background:#EAF2FE;color:#0A58C4;font-weight:600;border-radius:10px;text-align:center;border:1px solid #D7E6FB">Leakage Calculator</a>' +
-    '<div class="ck-grp">By use case</div>' + links(USECASES) +
-    '<div class="ck-grp">By specialty</div><div class="ck-cols">' + links(SOLUTIONS) + '</div>';
-  // Group-label + two-column styles for every nav variant that renders solLinks.
+    '<div class="ck-sol"><div class="ck-sol-col"><div class="ck-grp">By use case</div>' + links(USECASES) + '</div>' +
+    '<div class="ck-sol-col"><div class="ck-grp">By specialty</div>' + links(SOLUTIONS) + '</div></div>';
+  // Group-label + side-by-side column styles for every nav variant that renders solLinks.
   (function () {
     var gs = document.createElement('style');
     gs.textContent =
       '.ck-grp{font-size:12px;font-weight:600;color:#9A9AA0;letter-spacing:.04em;padding:12px 14px 3px;white-space:nowrap}' +
-      '.ck-cols{display:grid;grid-template-columns:1fr 1fr}' +
-      '.ck-drop-menu .ck-grp,.ck-drop-menu .ck-cols{background:#fff;border-left:1px solid rgba(60,60,67,.1);border-right:1px solid rgba(60,60,67,.1)}' +
-      '.nav-m .ck-grp,.ck-m .ck-grp{padding:12px 0 2px}';
+      '.ck-sol{display:flex;align-items:flex-start;gap:6px}' +
+      '.ck-sol-col{min-width:186px}' +
+      '.ck-drop-menu .ck-sol{background:#fff;border:1px solid rgba(60,60,67,.1);border-top:0;padding:0 4px 6px}' +
+      '.nav-m .ck-grp,.ck-m .ck-grp{padding:12px 0 2px}' +
+      '.nav-m .ck-sol,.ck-m .ck-sol{gap:18px}' +
+      '.nav-m .ck-sol-col,.ck-m .ck-sol-col{min-width:0;flex:1}';
     document.head.appendChild(gs);
   })();
   var CHEV = '<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>';
@@ -65,11 +79,18 @@
       drop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-solutions">Solutions' + CHEV + '</button><div class="nav-drop-menu"><div class="nav-drop-in">' + solLinks + '</div></div>';
       sol.replaceWith(drop);
     }
+    var plat = embedNav.querySelector('.nav-links a[href="/#platform"], .nav-links a[href="#platform"]');
+    if (plat && !embedNav.querySelector('.nav-drop-btn-platform')) {
+      var pdrop = document.createElement('div');
+      pdrop.className = 'nav-drop';
+      pdrop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-platform">Platform' + CHEV + '</button><div class="nav-drop-menu"><div class="nav-drop-in">' + platLinks + '</div></div>';
+      plat.replaceWith(pdrop);
+    }
     var navM = embedNav.querySelector('.nav-m');
     if (navM && !navM.querySelector('details')) {
       var mFoot = navM.querySelector('.nav-m-foot');
       navM.innerHTML =
-        '<a href="/#platform">Platform</a>' +
+        '<details><summary>Platform' + CHEV + '</summary><div>' + platLinks + '</div></details>' +
         '<details><summary>Solutions' + CHEV + '</summary><div>' + solLinks + '</div></details>' +
         '<a href="/#security">Security</a>' +
         '<details><summary>Company' + CHEV + '</summary><div>' + COMPANY_LINKS + '</div></details>';
@@ -162,11 +183,11 @@
   var nav =
     '<div class="ck-nav"><input type="checkbox" id="ckTgl" class="ck-tgl"><div class="ck-nav-in">' +
     '<a class="ck-nav-logo" href="' + HOME + '"><img src="' + LOGO + '" alt="Clinekt Health"></a>' +
-    '<div class="ck-links"><a href="/#platform">Platform</a><div class="ck-drop"><button type="button" class="ck-drop-btn">Solutions</button><div class="ck-drop-menu">' + solLinks + '</div></div><a href="/#security">Security</a><div class="ck-drop"><button type="button" class="ck-drop-btn">Company</button><div class="ck-drop-menu"><a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a></div></div></div>' +
+    '<div class="ck-links"><div class="ck-drop"><button type="button" class="ck-drop-btn">Platform</button><div class="ck-drop-menu">' + platLinks + '</div></div><div class="ck-drop"><button type="button" class="ck-drop-btn">Solutions</button><div class="ck-drop-menu">' + solLinks + '</div></div><a href="/#security">Security</a><div class="ck-drop"><button type="button" class="ck-drop-btn">Company</button><div class="ck-drop-menu"><a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a></div></div></div>' +
     '<div class="ck-cta"><a class="ck-signin" href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a><label for="ckTgl" class="ck-burger" aria-label="Menu"><span></span><span></span><span></span></label></div>' +
     '</div>' +
     '<div class="ck-m">' +
-    '<a href="/#platform">Platform</a>' +
+    '<details><summary>Platform' + CHEV + '</summary><div>' + platLinks + '</div></details>' +
     '<details><summary>Solutions' + CHEV + '</summary><div>' + solLinks + '</div></details>' +
     '<a href="/#security">Security</a>' +
     '<details><summary>Company' + CHEV + '</summary><div>' + COMPANY_LINKS + '</div></details>' +
@@ -178,10 +199,11 @@
     '<div class="ck-foot-top">' +
     '<div class="ck-brand"><img src="' + LOGO + '" alt="Clinekt Health"><p>HIPAA-compliant AI agents that activate patients — new, dormant, and net-new — around the clock.</p></div>' +
     '<div><h4>Platform</h4><ul>' +
-    '<li><a href="' + HOME + '#platform">Inbound Agent</a></li>' +
-    '<li><a href="' + HOME + '#platform">Recall Agent</a></li>' +
-    '<li><a href="' + HOME + '#platform">Outbound Agent</a></li>' +
-    '<li><a href="/care-agent">Care Agent</a></li>' +
+    '<li><a href="/platform">Platform overview</a></li>' +
+    '<li><a href="/inbound-agent">Inbound Agent</a></li>' +
+    '<li><a href="/recall-agent">Recall Agent</a></li>' +
+    '<li><a href="/outbound-agent">Outbound Agent</a></li>' +
+    '<li><a href="/care-agent">Care Management Agent</a></li>' +
     '<li><a href="' + HOME + '#security">Security &amp; integrations</a></li></ul></div>' +
     '<div><h4>Resources</h4><ul>' +
     '<li><a href="/case-studies">Case Studies</a></li>' +
@@ -299,21 +321,35 @@
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', addSocials); } else { addSocials(); }
 })();
 
-/* Care Agent link in the embed footer "Platform" column, site-wide. The page embeds
-   ship three agent links; the Care Agent (added 2026-08-07) is appended after them.
-   Pages whose embed already includes the link (home) are skipped by the dedupe guard. */
+/* Embed footer "Platform" column, site-wide: point the agent links at their agent
+   pages (the embeds ship #platform anchors), rename Care Agent -> Care Management
+   Agent, and append Platform overview + Care Management Agent links when missing. */
 (function () {
-  function addCareLink() {
+  var AGENT_PAGES = { 'Inbound Agent': '/inbound-agent', 'Recall Agent': '/recall-agent', 'Outbound Agent': '/outbound-agent' };
+  function fixFooter() {
     document.querySelectorAll('.foot-top h4').forEach(function (h) {
       if (h.textContent.trim() !== 'Platform') return;
       var ul = h.parentElement.querySelector('ul');
-      if (!ul || ul.querySelector('a[href="/care-agent"]')) return;
-      var agents = ul.querySelectorAll('a[href$="#platform"]');
-      var last = agents.length ? agents[agents.length - 1].closest('li') : null;
-      var li = document.createElement('li');
-      li.innerHTML = '<a href="/care-agent">Care Agent</a>';
-      if (last && last.nextSibling) { ul.insertBefore(li, last.nextSibling); } else { ul.appendChild(li); }
+      if (!ul) return;
+      ul.querySelectorAll('a').forEach(function (a) {
+        var t = a.textContent.trim();
+        if (AGENT_PAGES[t]) a.setAttribute('href', AGENT_PAGES[t]);
+        if (t === 'Care Agent') a.textContent = 'Care Management Agent';
+      });
+      var care = ul.querySelector('a[href="/care-agent"]');
+      if (!care) {
+        var li = document.createElement('li');
+        li.innerHTML = '<a href="/care-agent">Care Management Agent</a>';
+        var ob = ul.querySelector('a[href="/outbound-agent"]');
+        var anchor = ob ? ob.closest('li') : null;
+        if (anchor && anchor.nextSibling) { ul.insertBefore(li, anchor.nextSibling); } else { ul.appendChild(li); }
+      }
+      if (!ul.querySelector('a[href="/platform"]')) {
+        var li2 = document.createElement('li');
+        li2.innerHTML = '<a href="/platform">Platform overview</a>';
+        ul.insertBefore(li2, ul.firstChild);
+      }
     });
   }
-  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', addCareLink); } else { addCareLink(); }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', fixFooter); } else { fixFooter(); }
 })();
