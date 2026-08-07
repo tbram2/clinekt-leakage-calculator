@@ -51,7 +51,9 @@
       '.ck-drop-menu .ck-sol{background:#fff;border:1px solid rgba(60,60,67,.1);border-top:0;padding:0 4px 6px}' +
       '.nav-m .ck-grp,.ck-m .ck-grp{padding:12px 0 2px}' +
       '.nav-m .ck-sol,.ck-m .ck-sol{gap:18px}' +
-      '.nav-m .ck-sol-col,.ck-m .ck-sol-col{min-width:0;flex:1}';
+      '.nav-m .ck-sol-col,.ck-m .ck-sol-col{min-width:0;flex:1}' +
+      'h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}' +
+      "/* Full-bleed section rhythm (match homepage): problem/proof/brain become edge-to-edge bands;   only the KPI band and CTA stay as intentional cards (2026-08-07 round 5) */#ck-sp .problem{background:var(--paper,#F3F4F7);padding:clamp(48px,6vw,84px) 0;margin:clamp(20px,3vw,40px) 0 0}#ck-sp .problem .card{background:transparent;border-radius:0;padding:0}#ck-sp .proof{background:var(--pac-bg,#F3F8FE);padding:clamp(56px,7vw,96px) 0;margin-bottom:var(--sec-y,clamp(56px,7vw,104px))}#ck-sp .proof .card{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}#ck-sp .brain{background:linear-gradient(160deg,#0B1B33,#12315D 70%,#0A5BC4);padding:clamp(56px,7vw,96px) 0;margin-bottom:var(--sec-y,clamp(56px,7vw,104px))}#ck-sp .brain .card{background:none;border-radius:0;box-shadow:none;padding:0}";
     document.head.appendChild(gs);
   })();
   var CHEV = '<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>';

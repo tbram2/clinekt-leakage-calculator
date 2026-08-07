@@ -224,3 +224,12 @@
 
 /* Even line breaks on centered subtitles (2026-08-07 round 4) */
 #ck-sp .hero p,#ck-sp .bh p{text-wrap:balance}
+
+/* Full-bleed section rhythm (match homepage): problem/proof/brain become edge-to-edge bands;
+   only the KPI band and CTA stay as intentional cards (2026-08-07 round 5) */
+#ck-sp .problem{background:var(--paper,#F3F4F7);padding:clamp(48px,6vw,84px) 0;margin:clamp(20px,3vw,40px) 0 0}
+#ck-sp .problem .card{background:transparent;border-radius:0;padding:0}
+#ck-sp .proof{background:var(--pac-bg,#F3F8FE);padding:clamp(56px,7vw,96px) 0;margin-bottom:var(--sec-y,clamp(56px,7vw,104px))}
+#ck-sp .proof .card{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
+#ck-sp .brain{background:linear-gradient(160deg,#0B1B33,#12315D 70%,#0A5BC4);padding:clamp(56px,7vw,96px) 0;margin-bottom:var(--sec-y,clamp(56px,7vw,104px))}
+#ck-sp .brain .card{background:none;border-radius:0;box-shadow:none;padding:0}
