@@ -379,3 +379,20 @@
 #ck-sp .faq .sec-head{grid-column:1;grid-row:1/span 7;position:sticky;top:96px;align-self:start;margin:0}
 #ck-sp .faq details{grid-column:2}
 @media(max-width:900px){#ck-sp .faq .inner{display:block}#ck-sp .faq .sec-head{position:static;margin:0 0 28px}}
+
+/* ---- Round 8a (2026-08-07): mobile hero fix — these MUST live after the round-8 desktop rules,
+   which had overridden the earlier max-940 media block (same specificity, later order). ---- */
+@media(max-width:940px){
+#ck-sp .hero{min-height:auto;padding:clamp(64px,9vh,96px) 0 clamp(44px,7vw,64px)}
+#ck-sp .hero .wrap{grid-template-columns:minmax(0,1fr);gap:34px}
+#ck-sp .hero .wrap>*{min-width:0}
+#ck-sp .hero h1{font-size:clamp(33px,9vw,44px)}
+#ck-sp .hero p{font-size:16.5px}
+#ck-sp .hero-viz .mem{margin:0;max-width:100%}
+#ck-sp .hv-live{font-size:12px}
+#ck-sp .proof .card{grid-template-columns:minmax(0,1fr);gap:30px}
+#ck-sp .scn .inner{display:block}
+#ck-sp .scn .sec-head{position:static;margin:0 0 28px}
+#ck-sp .faq .inner{display:block}
+#ck-sp .faq .sec-head{position:static;margin:0 0 28px}
+}
