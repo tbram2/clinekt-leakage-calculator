@@ -6,7 +6,14 @@
 (function () {
   if (document.querySelector('.ck-nav')) return;
 
-  // The nine specialty landing pages — desktop Solutions dropdown + mobile Solutions group.
+  // Solutions menu, grouped Assort-style: use-case pages ("By use case") + the nine
+  // specialty landing pages ("By specialty"). Group labels are sentence case (no all caps).
+  var USECASES = [
+    ['Stop patient leakage', '/patient-leakage'],
+    ['Recall &amp; reactivation', '/patient-recall-reactivation'],
+    ['Marketing ROI', '/marketing-roi'],
+    ['Care between visits', '/care-agent']
+  ];
   var SOLUTIONS = [
     ['Orthopedics', '/orthopedics'],
     ['Physical Therapy', '/physical-therapy'],
@@ -18,9 +25,21 @@
     ['Cardiology', '/cardiology'],
     ['Pediatrics', '/pediatrics']
   ];
+  function links(list) { return list.map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join(''); }
   var solLinks = '<a href="/demo-agent" style="display:block;margin:8px 8px 4px;padding:9px 14px;background:linear-gradient(145deg,#0A6FE6,#063FB0);color:#fff;font-weight:600;border-radius:10px;text-align:center">Try Our AI Agent</a>' +
     '<a href="/leakage-calculator" style="display:block;margin:4px 8px;padding:9px 14px;background:#EAF2FE;color:#0A58C4;font-weight:600;border-radius:10px;text-align:center;border:1px solid #D7E6FB">Leakage Calculator</a>' +
-    SOLUTIONS.map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join('');
+    '<div class="ck-grp">By use case</div>' + links(USECASES) +
+    '<div class="ck-grp">By specialty</div><div class="ck-cols">' + links(SOLUTIONS) + '</div>';
+  // Group-label + two-column styles for every nav variant that renders solLinks.
+  (function () {
+    var gs = document.createElement('style');
+    gs.textContent =
+      '.ck-grp{font-size:12px;font-weight:600;color:#9A9AA0;letter-spacing:.04em;padding:12px 14px 3px;white-space:nowrap}' +
+      '.ck-cols{display:grid;grid-template-columns:1fr 1fr}' +
+      '.ck-drop-menu .ck-grp,.ck-drop-menu .ck-cols{background:#fff;border-left:1px solid rgba(60,60,67,.1);border-right:1px solid rgba(60,60,67,.1)}' +
+      '.nav-m .ck-grp,.ck-m .ck-grp{padding:12px 0 2px}';
+    document.head.appendChild(gs);
+  })();
   var CHEV = '<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>';
   var COMPANY_LINKS = '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>';
 
@@ -162,6 +181,7 @@
     '<li><a href="' + HOME + '#platform">Inbound Agent</a></li>' +
     '<li><a href="' + HOME + '#platform">Recall Agent</a></li>' +
     '<li><a href="' + HOME + '#platform">Outbound Agent</a></li>' +
+    '<li><a href="/care-agent">Care Agent</a></li>' +
     '<li><a href="' + HOME + '#security">Security &amp; integrations</a></li></ul></div>' +
     '<div><h4>Resources</h4><ul>' +
     '<li><a href="/case-studies">Case Studies</a></li>' +
@@ -277,4 +297,23 @@
     brand.appendChild(d);
   }
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', addSocials); } else { addSocials(); }
+})();
+
+/* Care Agent link in the embed footer "Platform" column, site-wide. The page embeds
+   ship three agent links; the Care Agent (added 2026-08-07) is appended after them.
+   Pages whose embed already includes the link (home) are skipped by the dedupe guard. */
+(function () {
+  function addCareLink() {
+    document.querySelectorAll('.foot-top h4').forEach(function (h) {
+      if (h.textContent.trim() !== 'Platform') return;
+      var ul = h.parentElement.querySelector('ul');
+      if (!ul || ul.querySelector('a[href="/care-agent"]')) return;
+      var agents = ul.querySelectorAll('a[href$="#platform"]');
+      var last = agents.length ? agents[agents.length - 1].closest('li') : null;
+      var li = document.createElement('li');
+      li.innerHTML = '<a href="/care-agent">Care Agent</a>';
+      if (last && last.nextSibling) { ul.insertBefore(li, last.nextSibling); } else { ul.appendChild(li); }
+    });
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', addCareLink); } else { addCareLink(); }
 })();

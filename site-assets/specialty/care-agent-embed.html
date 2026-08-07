@@ -1,0 +1,212 @@
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- ▼▼▼ BEGIN CLINEKT EMBED (v2 — new site design language, scoped to #ck-sp) — CARE AGENT ▼▼▼ -->
+<style>
+#ck-sp{
+  --ink:#1D1D1F;--body:#56565C;--muted:#9A9AA0;
+  --paper:#F3F4F7;--line:rgba(60,60,67,.13);--line-2:rgba(60,60,67,.08);
+  --blue:#0071E3;--blue-press:#0077ED;--blue-tint:#EAF2FE;--blue-tint-2:#F3F8FE;
+  --shadow-sm:0 4px 16px -8px rgba(20,25,40,.14);
+  --shadow:0 24px 56px -34px rgba(20,25,40,.24);
+  --shadow-lg:0 50px 104px -50px rgba(8,30,80,.28);
+  --r:16px;--r-lg:22px;--r-xl:28px;
+  --pad:clamp(20px,5vw,72px);--sec-y:clamp(56px,7vw,104px);
+  --ease:cubic-bezier(.22,.7,.25,1);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;
+  color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  line-height:1.5;
+}
+#ck-sp *{margin:0;padding:0;box-sizing:border-box}
+#ck-sp .wrap{max-width:1180px;margin:0 auto;padding:0 var(--pad)}
+#ck-sp .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+#ck-sp .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.14)}
+#ck-sp .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 30px;border-radius:980px;font-size:16px;font-weight:600;text-decoration:none;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .2s}
+#ck-sp .btn-blue{background:var(--blue);color:#fff;box-shadow:0 12px 30px -12px rgba(0,113,227,.55)}
+#ck-sp .btn-blue:hover{background:var(--blue-press);transform:translateY(-2px)}
+#ck-sp .btn-ghost{color:var(--ink);font-weight:600}
+#ck-sp .btn-ghost svg{width:15px;height:15px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+#ck-sp .btn-ghost:hover svg{transform:translateX(3px)}
+#ck-sp .hero{padding:clamp(56px,8vw,110px) 0 clamp(40px,5vw,64px);text-align:center}
+#ck-sp .hero h1{font-size:clamp(34px,5.2vw,60px);font-weight:700;letter-spacing:-.032em;line-height:1.05;margin:18px auto 18px;max-width:820px;text-wrap:balance}
+#ck-sp .hero p{font-size:clamp(17px,1.5vw,20px);color:var(--body);max-width:640px;margin:0 auto 30px;text-wrap:balance}
+#ck-sp .hero-cta{display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap}
+#ck-sp .problem{padding:clamp(30px,4vw,48px) 0}
+#ck-sp .problem .card{background:var(--paper);border-radius:var(--r-xl);padding:clamp(30px,4.5vw,52px) clamp(22px,4vw,56px);display:flex;align-items:center;gap:clamp(22px,4vw,56px);flex-wrap:wrap}
+#ck-sp .problem .tx{flex:1;min-width:260px}
+#ck-sp .problem .tx b{display:block;font-size:clamp(19px,2vw,24px);font-weight:700;letter-spacing:-.015em;margin-bottom:6px}
+#ck-sp .problem .tx span{color:var(--body);font-size:clamp(15px,1.3vw,17px)}
+#ck-sp .agents{padding:var(--sec-y) 0}
+#ck-sp .sec-head{text-align:center;max-width:680px;margin:0 auto clamp(34px,4.5vw,54px)}
+#ck-sp .sec-head h2{font-size:clamp(27px,3.6vw,42px);font-weight:700;letter-spacing:-.028em;line-height:1.1;margin-top:14px;text-wrap:balance}
+#ck-sp .ag-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:920px;margin:0 auto}
+@media(max-width:900px){#ck-sp .ag-grid{grid-template-columns:1fr}}
+#ck-sp .ag{background:#fff;border:1px solid var(--line-2);border-radius:var(--r-lg);padding:28px 26px;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+#ck-sp .ag:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+#ck-sp .ag .ic{width:42px;height:42px;border-radius:12px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+#ck-sp .ag .ic svg{width:21px;height:21px;stroke:var(--blue);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+#ck-sp .ag h3{font-size:18.5px;font-weight:700;letter-spacing:-.012em;margin-bottom:4px}
+#ck-sp .ag .tag{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+#ck-sp .ag p{font-size:15px;color:var(--body);line-height:1.6}
+#ck-sp .band{padding:clamp(20px,3vw,36px) 0 var(--sec-y)}
+#ck-sp .band .card{background:linear-gradient(135deg,#0A5BC4,#0071E3 55%,#2E9BEF);border-radius:var(--r-xl);padding:clamp(36px,5vw,60px) clamp(24px,4vw,56px);box-shadow:var(--shadow-lg)}
+#ck-sp .band-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+@media(max-width:900px){#ck-sp .band-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){#ck-sp .band-grid{grid-template-columns:1fr}}
+#ck-sp .bs{border-left:1px solid rgba(255,255,255,.28);padding-left:22px}
+#ck-sp .bs .v{font-size:clamp(21px,2.4vw,30px);font-weight:700;letter-spacing:-.02em;color:#fff}
+#ck-sp .bs .k{font-size:13.5px;color:rgba(255,255,255,.78);margin-top:6px;line-height:1.45}
+#ck-sp .proof{padding:0 0 var(--sec-y)}
+#ck-sp .proof .card{border:1px solid rgba(0,113,227,.16);background:var(--blue-tint-2);border-radius:var(--r-xl);padding:clamp(30px,4.5vw,52px) clamp(22px,4vw,56px)}
+#ck-sp .proof .q .lbl{font-size:12px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+#ck-sp .proof .q b{font-size:clamp(19px,2.2vw,27px);font-weight:700;letter-spacing:-.018em;line-height:1.3;display:block;max-width:900px}
+#ck-sp .proof .q b i{font-style:normal;color:var(--blue)}
+#ck-sp .proof-stats{display:flex;gap:clamp(32px,6vw,84px);flex-wrap:wrap;margin-top:clamp(22px,3vw,34px);padding-top:clamp(20px,2.5vw,28px);border-top:1px solid rgba(0,113,227,.14)}
+#ck-sp .ps .v{font-size:clamp(19px,2vw,26px);font-weight:700;letter-spacing:-.015em;color:var(--blue)}
+#ck-sp .ps .k{font-size:13px;color:var(--body);margin-top:3px;line-height:1.4}
+#ck-sp .cms{padding:0 0 var(--sec-y)}
+#ck-sp .cms .inner{max-width:760px;margin:0 auto;text-align:center}
+#ck-sp .cms p{color:var(--body);font-size:clamp(15.5px,1.4vw,17.5px);line-height:1.65;margin-top:16px}
+#ck-sp .faq{padding:0 0 var(--sec-y)}
+#ck-sp .faq .inner{max-width:760px;margin:0 auto}
+#ck-sp details{border:1px solid var(--line-2);border-radius:var(--r);background:#fff;padding:0 22px;margin-bottom:12px;box-shadow:var(--shadow-sm)}
+#ck-sp summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 0;font-size:16px;font-weight:650;letter-spacing:-.008em}
+#ck-sp summary::-webkit-details-marker{display:none}
+#ck-sp summary svg{width:16px;height:16px;stroke:var(--muted);stroke-width:2.2;fill:none;stroke-linecap:round;flex-shrink:0;transition:transform .25s var(--ease)}
+#ck-sp details[open] summary svg{transform:rotate(45deg)}
+#ck-sp details p{padding:0 0 18px;color:var(--body);font-size:15px;line-height:1.65;max-width:64ch}
+#ck-sp .cta{padding:0 0 var(--sec-y)}
+#ck-sp .cta .card{background:linear-gradient(135deg,#0A5BC4,#0071E3 55%,#2E9BEF);border-radius:var(--r-xl);padding:clamp(44px,6vw,76px) clamp(24px,5vw,64px);text-align:center;box-shadow:var(--shadow-lg)}
+#ck-sp .cta h2{color:#fff;font-size:clamp(26px,3.4vw,40px);font-weight:700;letter-spacing:-.025em;max-width:620px;margin:0 auto 12px;text-wrap:balance}
+#ck-sp .cta p{color:rgba(255,255,255,.82);font-size:16.5px;max-width:520px;margin:0 auto 28px}
+#ck-sp .cta .btn-w{background:#fff;color:var(--ink);box-shadow:0 10px 30px -12px rgba(0,20,60,.45)}
+#ck-sp .cta .btn-w:hover{transform:translateY(-2px)}
+</style>
+
+<section id="ck-sp">
+
+  <div class="hero"><div class="wrap">
+    <span class="eyebrow">The Fourth Agent</span>
+    <h1>Care that continues between visits.</h1>
+    <p>Clinekt's agents already capture your new patients, revive dormant ones, and reach your market. The Care Agent completes the picture: it stays with every patient between visits, so nobody drifts away and the care your practice already gives finally counts as the billable work it is.</p>
+    <div class="hero-cta">
+      <a class="btn btn-blue" href="/book-a-demo">Book a Demo</a>
+      <a class="btn btn-ghost" href="/demo-agent">Try the AI agent live <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div></div>
+
+  <div class="problem"><div class="wrap">
+    <div class="card">
+      <div class="tx">
+        <b>Most of a patient's relationship with your practice happens outside the exam room.</b>
+        <span>The months on conservative care. The recovery after surgery. The follow up that comes due next year. Nobody has the staff to check in monthly and write it all down, so that time stays silent. Medicare pays practices for exactly that work, and almost none of them bill it, because the documentation costs more than it returns.</span>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="agents"><div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What it does</span>
+      <h2>Monthly care, run by the agent, supervised by your team.</h2>
+    </div>
+    <div class="ag-grid">
+      <div class="ag">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="tag">Voice and text</div>
+        <h3>Monthly check-ins</h3>
+        <p>Checks in with your chronic and surgical patients every month by call or text, in your practice's name. Patients answer in about ninety seconds, and nobody has to download anything.</p>
+      </div>
+      <div class="ag">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></div>
+        <div class="tag">Validated outcomes</div>
+        <h3>Real outcome measures</h3>
+        <p>Collects validated surveys, including HOOS Jr and KOOS Jr for joint patients, matched before and after surgery. The same measures quality programs score.</p>
+      </div>
+      <div class="ag">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div class="tag">Escalation</div>
+        <h3>Flags who needs attention</h3>
+        <p>Routes concerning answers to your staff, who review and act. Patients who go quiet get noticed and reached, instead of drifting away unseen.</p>
+      </div>
+      <div class="ag">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 17h4"/></svg></div>
+        <div class="tag">Audit ready</div>
+        <h3>Documentation, done</h3>
+        <p>Logs every staff minute, holds the consent and the care plan, and hands your biller an audit ready monthly report. The work is provable the day it happens.</p>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="band"><div class="wrap">
+    <div class="card"><div class="band-grid">
+      <div class="bs"><div class="v">The agent</div><div class="k">Does the outreach, the surveys, and the paperwork</div></div>
+      <div class="bs"><div class="v">Your team</div><div class="k">Supervises the care and handles whoever needs attention</div></div>
+      <div class="bs"><div class="v">Your biller</div><div class="k">Bills from the audit trail of both, through your normal process</div></div>
+      <div class="bs"><div class="v">The patient</div><div class="k">Feels looked after, and never explains themselves twice</div></div>
+    </div></div>
+  </div></div>
+
+  <div class="proof"><div class="wrap">
+    <div class="card">
+      <div class="q">
+        <div class="lbl">One platform, one memory</div>
+        <b>The Care Agent shares a single memory with Inbound, Recall, and Outbound. The patient who arrived through your website in the spring, had surgery in the summer, and answers a check-in this winter is <i>one person to the platform, never a stranger</i>.</b>
+      </div>
+      <div class="proof-stats">
+        <div class="ps"><div class="v">Inbound</div><div class="k">Captures and books new patients</div></div>
+        <div class="ps"><div class="v">Recall</div><div class="k">Brings dormant patients back</div></div>
+        <div class="ps"><div class="v">Outbound</div><div class="k">Reaches your market</div></div>
+        <div class="ps"><div class="v">Care</div><div class="k">Stays with every patient between visits</div></div>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="cms"><div class="wrap"><div class="inner">
+    <span class="eyebrow">Where CMS is going</span>
+    <h2 style="font-size:clamp(27px,3.6vw,42px);font-weight:700;letter-spacing:-.028em;line-height:1.1;margin-top:14px">Ready for the bundle era.</h2>
+    <p>Medicare's mandatory joint replacement bundles score practices on patient engagement and patient reported outcomes across the full episode of care, and the proposed nationwide model extends that in 2027. The same monthly engagement and matched outcome surveys the Care Agent runs are the data those scores are built on. Practices that connect this now will already have the machinery, and the numbers, when the bundles arrive.</p>
+  </div></div></div>
+
+  <div class="faq"><div class="wrap"><div class="inner">
+    <div class="sec-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about the Care Agent.</h2>
+    </div>
+    <details>
+      <summary>What does the Care Agent actually do?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+      <p>Every month it checks in with your enrolled patients by call or text, collects how they are doing, gathers validated outcome surveys, and routes anything concerning to your staff. It logs all of it as it happens, so the care your practice delivers between visits is documented without anyone chasing paperwork.</p>
+    </details>
+    <details>
+      <summary>Who does the clinical work?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+      <p>Your team. The agent does the outreach and the paperwork. Your medical assistant or nurse reviews what it collects and cares for the patients who need attention, under your physicians' supervision. The agent makes those minutes efficient. It never replaces them.</p>
+    </details>
+    <details>
+      <summary>Is the work really billable?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+      <p>Yes. Medicare has paid practices for monthly care management for years. Most practices never bill it because the outreach and documentation take staff time nobody has. The Care Agent produces the consent records, care plans, time logs, and monthly reports your biller needs, and your biller submits through your normal billing process.</p>
+    </details>
+    <details>
+      <summary>What about surgical patients in the global period?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+      <p>The platform automatically excludes a surgeon's own post operative patients from billing during the global period. Their check-ins and outcome surveys still run, and the billing rules respect the bundle.</p>
+    </details>
+    <details>
+      <summary>Does it work with our EHR?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+      <p>Yes. The Care Agent starts from a simple patient list and works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, and the other major systems. No IT project required to begin.</p>
+    </details>
+    <details>
+      <summary>How is this different from survey tools?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+      <p>Survey tools send forms. The Care Agent holds a conversation, remembers the patient's history across every call, text, and email, and connects to the same platform that books new patients and recalls dormant ones. Nothing starts from zero, for the patient or for your staff.</p>
+    </details>
+  </div></div></div>
+
+  <div class="cta"><div class="wrap">
+    <div class="card">
+      <h2>See the Care Agent run a real check-in.</h2>
+      <p>A 15 minute walkthrough, end to end: the monthly check-in, the outcome survey, the staff review, and the report your biller receives.</p>
+      <a class="btn btn-w" href="/book-a-demo">Book a Demo</a>
+    </div>
+  </div></div>
+
+</section>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"The Care Agent: Between-Visit Patient Care and Outcomes","description":"Clinekt's Care Agent runs monthly check-ins and validated outcome surveys on chronic and surgical patients, routes concerns to practice staff, and documents the work so practices can bill Medicare care management through their normal billing process.","provider":{"@type":"Organization","name":"Clinekt Health","url":"https://clinekthealth.com/","sameAs":["https://www.linkedin.com/company/clinekt-health-1/","https://trust.delve.co/clinekt-health"]},"serviceType":"AI care management and patient outcomes agent","areaServed":"United States","audience":{"@type":"Audience","audienceType":"Specialty medical practices"},"url":"https://clinekthealth.com/care-agent"}
+</script>
