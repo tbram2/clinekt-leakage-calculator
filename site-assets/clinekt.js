@@ -82,11 +82,16 @@ stabs.forEach((t,k)=>t.addEventListener('click',()=>{
    from the home page footer custom code). Decorative, so JS injection keeps the
    embed under Webflow's 50K cap. */
 (function(){
-  var bb=document.querySelector('.brainband .bb-in');
-  if(!bb||bb.querySelector('.ckbrain'))return;
-  var c=document.createElement('canvas');
-  c.className='ckbrain';
-  bb.insertBefore(c,bb.querySelector('.bb-link'));
+  var band=document.querySelector('.brainband');
+  if(!band||band.querySelector('.ckbrain'))return;
+  var st=document.createElement('div');
+  st.className='bb-stage';
+  st.innerHTML='<canvas class="ckbrain" data-labels="off"></canvas>'+
+    '<div class="bnode bn1"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M16.5 6L9.5 13"/><path d="M9.5 8.5V13h4.5"/></svg><b>Inbound Agent</b><span>Captures and books new patients the moment they arrive.</span></div>'+
+    '<div class="bnode bn2"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><circle cx="12" cy="12" r="1"/></svg><b>Recall Agent</b><span>Knows who is overdue and how they like to be reached.</span></div>'+
+    '<div class="bnode bn3"><svg viewBox="0 0 24 24"><path d="M3 17L9.5 10.5l4 4L21 7"/><path d="M14.5 7H21v6.5"/></svg><b>Outbound Agent</b><span>Ties every campaign to the patients it produced.</span></div>'+
+    '<div class="bnode bn4"><svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg><b>Care Management Agent</b><span>Continues every patient&apos;s story between visits.</span></div>';
+  band.appendChild(st);
   if(window.ckBrainScan)window.ckBrainScan();
 })();
 /* Impact band — numbers count up when the blue card scrolls into view */

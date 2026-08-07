@@ -762,3 +762,19 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
 .brainband canvas.ckbrain{width:min(600px,94%);height:300px;display:block;margin:28px auto 0}/* Typography: balanced headings, no orphan words (2026-08-07) */
 .sec-head h2,.brainband h2,.cta h2{text-wrap:balance}
 .sec-head .lead,.brainband p,.cta p,.hero-sub{text-wrap:pretty}
+
+/* Round 4: balanced subtitles + brainband full sphere stage (matches /platform) */
+.sec-head .lead,.brainband p,.cta p{text-wrap:balance}
+.brainband{padding-bottom:clamp(48px,6vw,88px)}
+.brainband .bb-in{padding-bottom:clamp(16px,2vw,28px)}
+.brainband .bb-stage{position:relative;max-width:1000px;margin:10px auto 0;padding:0 16px}
+.brainband .bb-stage canvas.ckbrain{width:100%;height:clamp(400px,46vw,540px);display:block;margin:0}
+.brainband .bnode{position:absolute;width:min(232px,42%);text-align:left;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:12px 15px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.brainband .bnode svg{width:18px;height:18px;stroke:var(--bnac,#4D9FEE);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:block;margin-bottom:7px}
+.brainband .bnode b{display:block;color:#fff;font-size:14px;font-weight:700;margin-bottom:3px}
+.brainband .bnode span{display:block;color:rgba(255,255,255,.68);font-size:12px;line-height:1.45;text-wrap:pretty}
+.brainband .bn1{top:3%;left:2%;--bnac:#4D9FEE}
+.brainband .bn2{top:3%;right:2%;--bnac:#B07FE0}
+.brainband .bn3{bottom:3%;left:2%;--bnac:#3FC684}
+.brainband .bn4{bottom:3%;right:2%;--bnac:#EFA04C}
+@media(max-width:760px){.brainband .bb-stage canvas.ckbrain{height:300px}.brainband .bnode{position:static;width:100%;margin-top:10px}.brainband .bb-stage{display:flex;flex-direction:column}}

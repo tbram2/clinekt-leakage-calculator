@@ -221,3 +221,6 @@
 #ck-sp .bn3{bottom:3%;left:1%;--pac:#3FC684}
 #ck-sp .bn4{bottom:3%;right:1%;--pac:#EFA04C}
 @media(max-width:760px){#ck-sp .brain-stage canvas.ckbrain{height:300px}#ck-sp .bnode{position:static;width:100%;margin-top:10px}#ck-sp .brain-stage{display:flex;flex-direction:column}}
+
+/* Even line breaks on centered subtitles (2026-08-07 round 4) */
+#ck-sp .hero p,#ck-sp .bh p{text-wrap:balance}
