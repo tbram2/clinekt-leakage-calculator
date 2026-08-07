@@ -759,4 +759,6 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
 .stage-tabs .st-tab:not(.active):hover::after{opacity:1}
 
 /* Brain band canvas sizing */
-.brainband canvas.ckbrain{width:min(600px,94%);height:300px;display:block;margin:28px auto 0}
+.brainband canvas.ckbrain{width:min(600px,94%);height:300px;display:block;margin:28px auto 0}/* Typography: balanced headings, no orphan words (2026-08-07) */
+.sec-head h2,.brainband h2,.cta h2{text-wrap:balance}
+.sec-head .lead,.brainband p,.cta p,.hero-sub{text-wrap:pretty}
