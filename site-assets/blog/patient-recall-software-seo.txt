@@ -1,0 +1,37 @@
+META TITLE (51 chars):
+Patient Recall Software: What It Should Actually Do
+
+META DESCRIPTION (143 chars):
+Patient recall software should find overdue patients, contact them automatically, and book the visit. What to require, plus a message template.
+
+TARGET QUERIES (pain-signal lexicon theme 6 "patient recall system", self-selected this run; no open work order addressed to blog-engine specifically as of 2026-08-07 5:15 AM CT, confirmed FLAG 104 already executed 8/6 and the referral-management-software cluster growth is on-page-copy work for overnight-ops, not a new post per the lexicon's own 8/7 note):
+- patient recall software (primary; confirmed live in today's GSC pull, 26 impressions, position 14.4, 0 clicks, striking-distance per playbook criterion (a); lexicon theme 6 confirmed real via 2026-07-26 autocomplete, top suggestion)
+- patient recall system (companion commercial term, same autocomplete set)
+- patient recall message template / patient recall letter template (lexicon's "template/asset vein", a repeating high-volume low-competition pattern across themes 6, 10, 19; addressed inline rather than as a separate lead magnet)
+- dental recall system
+
+PERSONA: practice manager / office manager evaluating recall automation, secondary persona the OMFS/endo administrator whose patient base does not run a hygiene schedule
+REGISTER: practical, operational, "what should the software do" framing (mirrors the 2026-08-03 referral-management-software independent-practice register decision). US-qualified throughout; the lexicon flags NHS/UK contamination on this stem's broader family, none of which appears in this piece.
+
+DIFFERENTIATION FROM EXISTING POSTS (checked before writing, no duplicate):
+- /blog/reminders-vs-recall-vs-reactivation defines the three terms and a decision tree; this piece assumes that definition and links to it rather than re-deriving it, then goes one level deeper into software evaluation specifically for recall.
+- /blog/how-to-reactivate-dormant-patients and /blog/patient-reactivation-software cover reactivation (dormant patients, further back than recall); this piece is upstream of both, covering patients who are due but not yet dormant, and cross-links to both as the natural next step.
+- No existing post targets "patient recall software" as a head term or covers the OMFS/ortho non-hygiene recall angle.
+
+INTERLINKS:
+- /blog/reminders-vs-recall-vs-reactivation (terminology anchor; ALSO the target of this run's one permitted cross-link edit)
+- /blog/how-to-reactivate-dormant-patients
+- /blog/patient-reactivation-software
+- /blog/referral-management-software (OMFS referring-GP relationship tie-in)
+- /leakage-calculator + /book-a-demo (CTAs)
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures. Three third-party stats, each independently fetched and verified live (not taken on a secondary aggregator's word):
+  1. Cochrane Library systematic review (Jacobson Vann JC, et al., "Patient reminder and recall interventions to improve immunization rates," Cochrane Database of Systematic Reviews, 2018) - 55 studies, 138,625 participants, 8-percentage-point improvement. Verified via cochranelibrary.com.
+  2. Journal of Indian Society of Periodontology (2010, 216 patients) - 48.1% recall compliance rate. Verified via pmc.ncbi.nlm.nih.gov (PMC3110463), fetched directly.
+  3. A search-engine-summarized claim attributing a "15-20% overdue" and an "85-95% well-managed recall rate" stat to "ADA Health Policy Institute's 2025 practice analysis" was independently checked directly against ada.org/adaHPI sources and found UNSUPPORTED (no such published figure located) - REJECTED per the candidate-hallucination standard the lexicon and prior posts (8/5 Peerlogic check) already apply. Not used anywhere in the article.
+- Baldwin canon verified against gbrain results/_overview (VERIFIED-CANON) same-session: 263 qualified surgical leads / 159 appointments / 60% booking rate, last quarter. Framed as the whole patient-activation system's result, not recall-specific, mirroring the same honest framing the 8/3 referral-management-software post used for the identical reason (the stat is not module-specific).
+- No Assort Health, no athenahealth, no other vendor products named in body copy (Brevium, DoctorConnect, Pabau, Adit, Dental Intelligence, PracticeMojo, iDentalSoft, PatientXpress all appear in the lexicon's dominates-list for this theme; none named here).
+- No em dashes, no tables in body (message template rendered as a bullet block, not a table), no PHI, no dollar figures for Clinekt.
+- Positioning: patient activation, three agents (Inbound, Recall, Outbound), never "chatbot". Single contextual Recall-agent mention, no dollar amounts.
+- Standard card thumbnail only (clinekt-blog-thumb.svg, fileId 6a5fcb9af9a5cd0bb02b1e2b) per the 2026-07-27 imagery override; no hero generated.
