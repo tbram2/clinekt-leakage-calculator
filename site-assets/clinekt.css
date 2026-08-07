@@ -789,7 +789,7 @@ body .tbl .hd,body .cflow,body .qprog{text-transform:none;letter-spacing:.01em}
 
 /* Full-bleed KPI band on home (2026-08-07, Taylor): the gradient tile becomes an edge-to-edge band.
    body-scoped to beat the inline #ck-crit copy in the home embed. */
-body .band{position:relative;overflow:hidden;background:linear-gradient(145deg,#0A6FE6,#063FB0);padding:clamp(48px,6vw,84px) 0}
-body .band::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 90% at 82% 6%,rgba(255,255,255,.16),transparent 56%);pointer-events:none}
+body .brainband{background:#0C1D38}
+body .band{background:#0C1D38;padding:clamp(56px,6.5vw,96px) 0;margin:0}
 body .band-card{background:none;border-radius:0;box-shadow:none;padding:0;overflow:visible}
 body .band-card::before{display:none}

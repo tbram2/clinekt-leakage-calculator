@@ -322,3 +322,60 @@
 /* ---- Round 7d (2026-08-07): closing CTA joins the full-bleed rhythm (band, not tile) ---- */
 #ck-sp .cta{background:linear-gradient(135deg,#0A5BC4,#0071E3 55%,#2E9BEF);padding:clamp(64px,8vw,104px) 0;margin:0}
 #ck-sp .cta .card{background:none;border-radius:0;box-shadow:none;padding:0}
+
+/* ---- Round 8 (2026-08-07): one coherent canvas. Full-width wrap like the homepage container,
+   viewport-scale hero, white body + ONE dark chapter + blue close, zero gutters between bands. ---- */
+
+/* Match the homepage container: no max-width, just padding */
+#ck-sp .wrap{max-width:none}
+
+/* Hero: fills the viewport like the homepage */
+#ck-sp .hero{min-height:min(88svh,900px);display:flex;align-items:center;padding:clamp(96px,11vh,150px) 0 clamp(64px,8vw,120px)}
+#ck-sp .hero .wrap{width:100%;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(40px,6vw,110px)}
+#ck-sp .hero h1{font-size:clamp(38px,4.5vw,66px)}
+#ck-sp .hero p{font-size:clamp(17px,1.45vw,21px);max-width:48ch}
+#ck-sp .hero-viz .mem{max-width:500px}
+
+/* Quieter, more expensive shadows (kill the colored glow) */
+#ck-sp .jstep,#ck-sp .ag,#ck-sp .sib{box-shadow:0 1px 2px rgba(20,25,40,.04),0 14px 34px -20px rgba(20,25,40,.12)}
+#ck-sp .jstep:hover,#ck-sp .ag:hover,#ck-sp .sib:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--pac,#0071E3) 28%,#fff);box-shadow:0 2px 6px rgba(20,25,40,.05),0 26px 52px -26px rgba(20,25,40,.18)}
+#ck-sp .hero-viz .mc{box-shadow:0 1px 2px rgba(20,25,40,.05),0 18px 40px -22px rgba(20,25,40,.16)}
+#ck-sp .hero-viz .ai-bub{box-shadow:0 14px 32px -18px rgba(0,40,110,.35)}
+
+/* White body: problem + scenario lose their band backgrounds */
+#ck-sp .problem{background:#fff;padding:clamp(24px,3.5vw,56px) 0 0;margin:0}
+#ck-sp .problem .tx b{font-size:clamp(21px,2.3vw,30px);max-width:26ch}
+#ck-sp .problem .tx span{max-width:72ch;display:block;margin-top:10px}
+#ck-sp .scn{background:transparent;padding:clamp(24px,3vw,48px) 0 var(--sec-y);margin:0}
+
+/* THE dark chapter: proof, band, and brain share one deep navy; adjacent dark sections merge flush */
+#ck-sp .proof{background:#0C1D38;padding:clamp(72px,8.5vw,130px) 0;margin:0}
+#ck-sp .proof .q .lbl{color:rgba(255,255,255,.55)}
+#ck-sp .proof .q b{color:#fff}
+#ck-sp .proof .q b i{color:color-mix(in srgb,var(--pac,#0071E3) 42%,#fff)}
+#ck-sp .os-ic{background:rgba(255,255,255,.08);box-shadow:none}
+#ck-sp .os-ic svg{stroke:color-mix(in srgb,var(--pac,#0071E3) 42%,#fff)}
+#ck-sp .ps{border-left-color:color-mix(in srgb,var(--pac,#0071E3) 60%,transparent)}
+#ck-sp .ps .v{color:color-mix(in srgb,var(--pac,#0071E3) 38%,#fff)}
+#ck-sp .ps .k{color:rgba(255,255,255,.72)}
+#ck-sp .proof-stats{border-top-color:rgba(255,255,255,.14)}
+#ck-sp .brain{background:#0C1D38;padding:clamp(72px,8.5vw,130px) 0;margin:0}
+#ck-sp .band{background:#0C1D38;padding:clamp(64px,7.5vw,110px) 0;margin:0}
+#ck-sp .bs{border-left-color:rgba(255,255,255,.2)}
+#ck-sp .band+.proof,#ck-sp .brain+.proof,#ck-sp .proof+.band{padding-top:0}
+
+/* White sections after the dark chapter breathe via padding, never margins */
+#ck-sp .cms{padding:var(--sec-y) 0 clamp(32px,4vw,56px)}
+#ck-sp .sibs{padding:0 0 var(--sec-y)}
+#ck-sp .faq{padding:0 0 var(--sec-y)}
+#ck-sp .cta{margin:0}
+
+/* Round 8 polish: no centered columns left — sibs full width, FAQ two-column, roomier hero viz + scenario */
+#ck-sp .sib-grid{max-width:none}
+#ck-sp .hero-viz .mem{max-width:540px}
+#ck-sp .scn .inner{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+#ck-sp .sstep p{max-width:64ch}
+#ck-sp .faq .inner{max-width:none;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,80px);align-items:start}
+#ck-sp .faq .sec-head{grid-column:1;grid-row:1/span 7;position:sticky;top:96px;align-self:start;margin:0}
+#ck-sp .faq details{grid-column:2}
+@media(max-width:900px){#ck-sp .faq .inner{display:block}#ck-sp .faq .sec-head{position:static;margin:0 0 28px}}

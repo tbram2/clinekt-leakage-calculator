@@ -37,7 +37,10 @@
       cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       CX = W / 2; CY = H / 2; R = 0.34 * Math.min(W, H);
-      var wide = W >= H, xs = wide ? [0.14, 0.86] : [0.28, 0.72], ys = wide ? [0.22, 0.78] : [0.10, 0.90];
+      /* Wide stages: anchor each agent node just BESIDE its corner callout tile (tile = 1% inset,
+         min(232px,42%) wide, ~96px tall) so the pinging dots are never hidden behind the tiles. */
+      var tx = (Math.min(232, W * 0.42) + W * 0.01 + 36) / W, ty = (H * 0.03 + 48) / H;
+      var wide = W >= H, xs = wide ? [tx, 1 - tx] : [0.28, 0.72], ys = wide ? [ty, 1 - ty] : [0.10, 0.90];
       for (var i = 0; i < 4; i++) nodes[i] = { x: W * xs[i % 2], y: H * ys[i < 2 ? 0 : 1], c: AG[i][0], l: AG[i][1] };
       return true;
     }
