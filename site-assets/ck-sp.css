@@ -308,3 +308,17 @@
 #ck-sp .jnum{width:32px;height:32px;font-size:14px}
 #ck-sp .jarr{padding:0 clamp(4px,.7vw,12px)}
 @media(max-width:1000px){#ck-sp .jny{width:auto;margin-left:0;padding:0}}
+
+/* ---- Round 7c (2026-08-07): no all-caps anywhere, eyebrow pulse dot removed (Taylor) ---- */
+#ck-sp .eyebrow{text-transform:none;letter-spacing:0;font-size:14.5px;font-weight:650}
+#ck-sp .eyebrow::before{display:none}
+#ck-sp .ag .tag{text-transform:none;letter-spacing:.01em;font-size:13px}
+#ck-sp .jstep .jag{text-transform:none;letter-spacing:.01em;font-size:12.5px}
+#ck-sp .proof .q .lbl{text-transform:none;letter-spacing:.01em;font-size:13.5px;font-weight:650}
+#ck-sp .mem .mc .ml{text-transform:none;letter-spacing:.01em;font-size:11.5px}
+#ck-sp .hv-tag{text-transform:none;letter-spacing:.01em;font-size:11.5px}
+#ck-sp .bnode svg+b{margin-top:0}
+
+/* ---- Round 7d (2026-08-07): closing CTA joins the full-bleed rhythm (band, not tile) ---- */
+#ck-sp .cta{background:linear-gradient(135deg,#0A5BC4,#0071E3 55%,#2E9BEF);padding:clamp(64px,8vw,104px) 0;margin:0}
+#ck-sp .cta .card{background:none;border-radius:0;box-shadow:none;padding:0}

@@ -778,3 +778,11 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
 .brainband .bn3{bottom:3%;left:2%;--bnac:#3FC684}
 .brainband .bn4{bottom:3%;right:2%;--bnac:#EFA04C}
 @media(max-width:760px){.brainband .bb-stage canvas.ckbrain{height:300px}.brainband .bnode{position:static;width:100%;margin-top:10px}.brainband .bb-stage{display:flex;flex-direction:column}}
+
+/* No all-caps rule (2026-08-07, Taylor): sentence-case labels site-wide.
+   body-scoped so these beat the stale inline #ck-crit copy in the home embed. */
+body .eyebrow{text-transform:none;letter-spacing:0;font-size:14px;font-weight:650}
+body .trusted-lab{text-transform:none;letter-spacing:.01em}
+body .ag-id{text-transform:none;letter-spacing:.02em;font-weight:700}
+body .cs-period{text-transform:none;letter-spacing:.01em}
+body .tbl .hd,body .cflow,body .qprog{text-transform:none;letter-spacing:.01em}
