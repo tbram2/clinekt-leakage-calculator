@@ -736,3 +736,27 @@ footer ul{list-style:none;display:grid;gap:11px;margin:0;padding:0}footer ul a{c
 .brainband p{color:rgba(255,255,255,.82);font-size:clamp(15px,1.3vw,17.5px);line-height:1.65;max-width:60ch;margin:0 auto}
 .brainband .bb-link{display:inline-block;margin-top:24px;color:#fff;font-weight:600;font-size:15px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);padding:12px 24px;border-radius:980px;transition:background .2s}
 .brainband .bb-link:hover{background:rgba(255,255,255,.22)}
+
+/* Agent accents for platform panels + tabs, brainband canvas (2026-08-07) */
+/* ===== Homepage: per-agent stage accents (inline --ac needs !important) ===== */
+.stage-frame .offer:nth-of-type(1){--ac:#0071E3!important;--ac-bg:#E9F2FE!important}
+.stage-frame .offer:nth-of-type(2){--ac:#6F2DAA!important;--ac-bg:#F0EDF7!important}
+.stage-frame .offer:nth-of-type(3){--ac:#119D57!important;--ac-bg:#E6F6EE!important}
+.stage-frame .offer:nth-of-type(4){--ac:#C26A12!important;--ac-bg:#FDF1E5!important}
+
+/* Active tab wears its agent color; text stays white from base rule */
+.stage-tabs .st-tab:nth-of-type(1).active{background:#0071E3;border-color:#0071E3;box-shadow:0 12px 28px -12px rgba(0,113,227,.55)}
+.stage-tabs .st-tab:nth-of-type(2).active{background:#6F2DAA;border-color:#6F2DAA;box-shadow:0 12px 28px -12px rgba(111,45,170,.55)}
+.stage-tabs .st-tab:nth-of-type(3).active{background:#119D57;border-color:#119D57;box-shadow:0 12px 28px -12px rgba(17,157,87,.55)}
+.stage-tabs .st-tab:nth-of-type(4).active{background:#C26A12;border-color:#C26A12;box-shadow:0 12px 28px -12px rgba(194,106,18,.55)}
+
+/* Inactive tabs: 3px agent hairline fades in on hover */
+.stage-tabs .st-tab{position:relative}
+.stage-tabs .st-tab::after{content:"";position:absolute;left:26px;right:26px;bottom:7px;height:3px;border-radius:3px;background:#0071E3;opacity:0;transition:opacity .25s}
+.stage-tabs .st-tab:nth-of-type(2)::after{background:#6F2DAA}
+.stage-tabs .st-tab:nth-of-type(3)::after{background:#119D57}
+.stage-tabs .st-tab:nth-of-type(4)::after{background:#C26A12}
+.stage-tabs .st-tab:not(.active):hover::after{opacity:1}
+
+/* Brain band canvas sizing */
+.brainband canvas.ckbrain{width:min(600px,94%);height:300px;display:block;margin:28px auto 0}

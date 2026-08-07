@@ -13,7 +13,7 @@
   <div class="agents" style="padding-top:clamp(20px,3vw,40px)"><div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">The patient journey</span>
-      <h2>Every step covered. No handoffs dropped.</h2>
+      <h2>Every step covered without a dropped handoff.</h2>
     </div>
     <div class="jny">
       <div class="jstep"><span class="jnum">1</span><b>Discovered</b><span class="jd">A patient finds you: an ad, a search, a referral, your website.</span><span class="jag">Outbound Agent</span></div>
@@ -31,32 +31,32 @@
   <div class="agents" style="padding-top:0"><div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Four agents, one team</span>
-      <h2>Each agent owns a job. Together they own the journey.</h2>
+      <h2>Four agents that own the whole patient journey.</h2>
     </div>
-    <div class="ag-grid">
+    <div class="ag-grid ag-agents">
       <div class="ag">
-        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M16.5 6L9.5 13"/><path d="M9.5 8.5V13h4.5"/></svg></div>
         <div class="tag">Always-on inbound</div>
         <h3>Inbound Agent</h3>
         <p>Lives on your website. Engages every visitor instantly, screens them with specialty-trained questions, and books qualified patients straight into your schedule.</p>
         <a class="go" href="/inbound-agent">Meet the Inbound Agent <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <div class="ag">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg></div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><circle cx="12" cy="12" r="1"/></svg></div>
         <div class="tag">Proactive outreach</div>
         <h3>Recall Agent</h3>
         <p>Works your records. Finds overdue and dormant patients and holds real conversations by phone, text, and email until they are back on the schedule.</p>
         <a class="go" href="/recall-agent">Meet the Recall Agent <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <div class="ag">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 16.5l6-6 4 4 7.5-7.5"/><path d="M16 7h4.5v4.5"/></svg></div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 17L9.5 10.5l4 4L21 7"/><path d="M14.5 7H21v6.5"/></svg></div>
         <div class="tag">Provable growth</div>
         <h3>Outbound Agent</h3>
         <p>Brings in net-new demand and follows every patient from first click to completed procedure, so you see the true return of every channel.</p>
         <a class="go" href="/outbound-agent">Meet the Outbound Agent <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <div class="ag">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg></div>
         <div class="tag">Between visits</div>
         <h3>Care Management Agent</h3>
         <p>Runs your care management program: monthly check-ins, validated outcome surveys, escalation to your staff, and documentation your biller can bill from.</p>
@@ -73,6 +73,16 @@
         <p>Every agent shares one brain: a single memory of every patient across every call, text, email, and visit. Condition history, screening answers, communication preferences, and open follow-ups carry through automatically, so every conversation picks up exactly where the last one ended.</p>
         <p>The patient your ads bring in this spring is recognized by the check-in call this winter and by the recall text next year. That is continuity of care, and it is why the platform gets better for your practice with every interaction instead of starting from zero each time.</p>
       </div>
+      <div class="brain-viz"><canvas class="ckbrain"></canvas></div>
+    </div>
+  </div></div>
+
+  <div class="proof"><div class="wrap">
+    <div class="card mem-row">
+      <div class="q">
+        <div class="lbl">What remembering looks like</div>
+        <b>Maria texted the practice eight months after her surgery. The brain recognized her before the agent said a word, <i>and the conversation picked up where it left off</i>.</b>
+      </div>
       <div class="mem">
         <div class="mc"><div class="ml">Incoming text &middot; (205) 555-0114</div><b>"Hi, it's Maria. My knee is acting up again, can I get in this week?"</b></div>
         <div class="mc"><div class="ml">Recognized &middot; Clinekt Brain</div><div class="mrow"><span>Returning patient:</span><span><b>Maria G.</b></span></div><div class="mrow"><span>History:</span><span>Knee evaluation, Dr. Smith, booked via website chat</span></div><div class="mrow"><span>Last touch:</span><span>Monthly check-in, pain stable</span></div><div class="mrow"><span>Prefers:</span><span>Text &middot; mornings</span></div></div>
@@ -84,7 +94,7 @@
 
   <div class="cms"><div class="wrap"><div class="inner">
     <span class="eyebrow">One platform, not point solutions</span>
-    <h2 style="font-size:clamp(27px,3.6vw,42px);font-weight:700;letter-spacing:-.028em;line-height:1.1;margin-top:14px">One integration. One contract. Four agents that hand off to each other.</h2>
+    <h2 style="font-size:clamp(27px,3.6vw,42px);font-weight:700;letter-spacing:-.028em;line-height:1.1;margin-top:14px">Four coordinated agents behind one integration and one contract.</h2>
     <p>Point solutions each solve one problem and none of them talk to each other. Clinekt's agents work as one team: the Inbound Agent's screening feeds the Care Management Agent's check-ins, the Recall Agent knows what the Outbound Agent's campaign promised, and your practice gets one place to see it all. White-labeled to your brand, live alongside Epic, athenahealth, ModMed, NextGen, and the other major EHRs, with no rip-and-replace.</p>
   </div></div></div>
 

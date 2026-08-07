@@ -129,3 +129,73 @@
 #ck-sp .sstep b{display:block;font-size:16.5px;font-weight:700;letter-spacing:-.01em;margin:6px 0 3px}
 #ck-sp .sstep p{font-size:14.5px;color:var(--body);line-height:1.6;max-width:56ch}
 #ck-sp .sdone{margin-top:6px;display:inline-flex;align-items:center;gap:8px;background:#E6F6EE;color:#119D57;font-size:14px;font-weight:700;padding:10px 18px;border-radius:980px}
+
+
+/* ---- Agent color + motion system (2026-08-07, workflow round 2) ---- */
+/* ===== Agent color + motion system (append 2026-08-07) =====
+   Theme a page with one line: #ck-sp{--pac:<agent>;--pac-bg:<tint>}. Fallback = Inbound blue. */
+
+/* Accent consumers: hardcoded --blue accents now read --pac/--pac-bg */
+#ck-sp .eyebrow{color:var(--pac,#0071E3)}
+#ck-sp .eyebrow::before{background:var(--pac,#0071E3);box-shadow:0 0 0 3px var(--pac-bg,#E9F2FE)}
+#ck-sp .ag .ic{background:var(--pac-bg,#E9F2FE)}
+#ck-sp .ag .ic svg{stroke:var(--pac,#0071E3)}
+#ck-sp .ag .tag{color:var(--pac,#0071E3)}
+#ck-sp .jstep .jag{color:var(--pac,#0071E3)}
+#ck-sp .ag .go,#ck-sp .sib .sgo,#ck-sp .ps .v,#ck-sp .proof .q b i{color:var(--pac,#0071E3)}
+#ck-sp .proof .card{border-color:color-mix(in srgb,var(--pac,#0071E3) 16%,#fff);background:color-mix(in srgb,var(--pac-bg,#E9F2FE) 42%,#fff)}
+#ck-sp .proof-stats{border-top-color:color-mix(in srgb,var(--pac,#0071E3) 14%,#fff)}
+
+/* Per-agent 2x2 grid: opt-in via .ag-agents (plain .ag-grid keeps page accent) */
+#ck-sp .ag-agents .ag:nth-child(1){--pac:#0071E3;--pac-bg:#E9F2FE}
+#ck-sp .ag-agents .ag:nth-child(2){--pac:#6F2DAA;--pac-bg:#F0EDF7}
+#ck-sp .ag-agents .ag:nth-child(3){--pac:#119D57;--pac-bg:#E6F6EE}
+#ck-sp .ag-agents .ag:nth-child(4){--pac:#C26A12;--pac-bg:#FDF1E5}
+
+/* Journey steps 1/3/5/7/9 = Outbound/Inbound/Inbound/CareMgmt/Recall; connectors take the color of the step they lead into */
+#ck-sp .jny>:nth-child(1){--pac:#119D57;--pac-bg:#E6F6EE}
+#ck-sp .jny>:nth-child(2),#ck-sp .jny>:nth-child(3),#ck-sp .jny>:nth-child(4),#ck-sp .jny>:nth-child(5){--pac:#0071E3;--pac-bg:#E9F2FE}
+#ck-sp .jny>:nth-child(6),#ck-sp .jny>:nth-child(7){--pac:#C26A12;--pac-bg:#FDF1E5}
+#ck-sp .jny>:nth-child(8),#ck-sp .jny>:nth-child(9){--pac:#6F2DAA;--pac-bg:#F0EDF7}
+
+/* Layered depth: inset top highlight + ambient + accent underglow (color-mix line upgrades where supported) */
+#ck-sp .jstep,#ck-sp .ag,#ck-sp .sib{transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease);box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 2px 5px rgba(20,25,40,.05),0 18px 36px -20px rgba(20,25,40,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 2px 5px rgba(20,25,40,.05),0 18px 36px -20px rgba(20,25,40,.16),0 14px 30px -18px color-mix(in srgb,var(--pac,#0071E3) 22%,transparent)}
+#ck-sp .jstep:hover,#ck-sp .ag:hover,#ck-sp .sib:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--pac,#0071E3) 40%,#fff);box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 0 0 1px color-mix(in srgb,var(--pac,#0071E3) 25%,transparent),0 3px 8px rgba(20,25,40,.06),0 26px 52px -24px rgba(20,25,40,.2),0 20px 44px -20px color-mix(in srgb,var(--pac,#0071E3) 32%,transparent)}
+
+/* Number chips: gradient wash, accent to 20% lighter (solid fallback first) */
+#ck-sp .jnum,#ck-sp .snum{background:var(--pac,#0071E3);background:linear-gradient(135deg,var(--pac,#0071E3),color-mix(in srgb,var(--pac,#0071E3) 80%,#fff));box-shadow:0 8px 18px -8px color-mix(in srgb,var(--pac,#0071E3) 55%,transparent)}
+#ck-sp .jnum{color:#fff}
+
+/* Scenario: accent-tinted timeline + grounded success pill */
+#ck-sp .sstep::before{background:linear-gradient(180deg,var(--pac-bg,#E9F2FE),var(--line-2))}
+#ck-sp .sdone{box-shadow:0 10px 24px -12px rgba(17,157,87,.5)}
+
+/* Pulse dot traveling across each connector, staggered */
+#ck-sp .jarr{position:relative}
+#ck-sp .jarr::after{content:"";position:absolute;top:50%;left:50%;width:5px;height:5px;margin:-2.5px 0 0 -14px;border-radius:50%;background:var(--pac,#3BA5F0);opacity:0;animation:ckPulse 2.4s ease-in-out infinite}
+#ck-sp .jny>:nth-child(4)::after{animation-delay:.6s}
+#ck-sp .jny>:nth-child(6)::after{animation-delay:1.2s}
+#ck-sp .jny>:nth-child(8)::after{animation-delay:1.8s}
+@keyframes ckPulse{0%{opacity:0;transform:translateX(0)}30%,70%{opacity:1}100%{opacity:0;transform:translateX(24px)}}
+
+/* Brain canvas sizing + breathing radial glow behind it */
+#ck-sp .brain-viz{position:relative;width:100%}
+#ck-sp .brain-viz::before{content:"";position:absolute;inset:-8%;border-radius:50%;background:radial-gradient(closest-side,rgba(59,165,240,.32),rgba(59,165,240,0) 72%);animation:ckGlow 5.5s ease-in-out infinite alternate;pointer-events:none}
+#ck-sp canvas.ckbrain{position:relative;display:block;width:100%;height:clamp(260px,32vw,320px)}
+@keyframes ckGlow{from{opacity:.45;transform:scale(.92)}to{opacity:1;transform:scale(1.05)}}
+
+/* Memory proof card: copy | stacked cards, 1 column under 900px */
+#ck-sp .mem-row{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center}
+@media(max-width:900px){#ck-sp .mem-row{grid-template-columns:1fr}}
+
+/* Scroll-driven entrance; no JS, static + fully visible where unsupported */
+@supports (animation-timeline: view()){
+#ck-sp .jstep,#ck-sp .ag,#ck-sp .sstep,#ck-sp .sib{animation:ckRise linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+}
+@keyframes ckRise{from{opacity:0;translate:0 26px}to{opacity:1;translate:0 0}}
+
+/* Mobile: no hover lift; pulses ride the rotated connectors */
+@media(max-width:1000px){#ck-sp .jstep:hover,#ck-sp .ag:hover,#ck-sp .sib:hover{transform:none}}
+
+/* Reduced motion: silence everything in scope */
+@media (prefers-reduced-motion:reduce){#ck-sp *,#ck-sp *::before,#ck-sp *::after{animation:none!important;transition:none!important}}

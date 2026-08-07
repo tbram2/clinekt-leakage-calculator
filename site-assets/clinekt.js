@@ -78,6 +78,17 @@ stabs.forEach((t,k)=>t.addEventListener('click',()=>{
   const total=r.height-window.innerHeight;
   window.scrollTo({top:r.top+window.scrollY+(k*total/offers.length)+2,behavior:reduce?'auto':'smooth'});
 }));
+/* One Brain band — inject the neural-sphere canvas (rendered by ck-brain.js, loaded
+   from the home page footer custom code). Decorative, so JS injection keeps the
+   embed under Webflow's 50K cap. */
+(function(){
+  var bb=document.querySelector('.brainband .bb-in');
+  if(!bb||bb.querySelector('.ckbrain'))return;
+  var c=document.createElement('canvas');
+  c.className='ckbrain';
+  bb.insertBefore(c,bb.querySelector('.bb-link'));
+  if(window.ckBrainScan)window.ckBrainScan();
+})();
 /* Impact band — numbers count up when the blue card scrolls into view */
 const bandCard=document.querySelector('.band-card');
 if(bandCard){const bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){bandCard.querySelectorAll('[data-count]').forEach((el,k)=>setTimeout(()=>animateCount(el),reduce?0:180+k*130));bo.unobserve(bandCard);}});},{threshold:.45});bo.observe(bandCard);}
