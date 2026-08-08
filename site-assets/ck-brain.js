@@ -41,6 +41,9 @@
          min(232px,42%) wide, ~96px tall) so the pinging dots are never hidden behind the tiles. */
       var tx = (Math.min(232, W * 0.42) + W * 0.01 + 36) / W, ty = (H * 0.03 + 48) / H;
       var wide = W >= H, xs = wide ? [tx, 1 - tx] : [0.28, 0.72], ys = wide ? [ty, 1 - ty] : [0.10, 0.90];
+      /* Small stages stack the callout tiles BELOW the canvas, so tile-anchored
+         coords would land inside the globe — pin nodes to the outer corners instead. */
+      if (W < 700) { xs = [0.08, 0.92]; ys = [0.10, 0.90]; }
       for (var i = 0; i < 4; i++) nodes[i] = { x: W * xs[i % 2], y: H * ys[i < 2 ? 0 : 1], c: AG[i][0], l: AG[i][1] };
       return true;
     }

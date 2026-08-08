@@ -1,135 +1,165 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-<!-- CLINEKT EMBED (shared css via ck-sp.css page-head link) — USE CASE: PATIENT-RECALL-REACTIVATION -->
-<section id="ck-sp">
+<!-- CLINEKT EMBED (shared css via ck-sp.css page-head link) — USE CASE: PATIENT-RECALL-REACTIVATION (PV3 template) -->
+<section id="ck-sp" class="pv3">
 
-  <div class="hero"><div class="wrap">
-    <div class="hero-tx">
+  <div class="pv-hero"><div class="wrap"><div class="pv-in">
     <span class="eyebrow">The Recall Agent</span>
     <h1>Bring every overdue patient back.</h1>
-    <p>Your records are full of patients who meant to come back. The Recall Agent finds them and books them into open slots.</p>
+    <p class="lead">Your records are full of patients who meant to come back. The Recall Agent finds them and books them into open slots.</p>
     <div class="hero-cta">
       <a class="btn btn-blue" href="/book-a-demo">Book a Demo</a>
       <a class="btn btn-ghost" href="/demo-agent">Try the AI agent live <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-    </div>
-    <div class="hero-viz">
-      <div class="hv-live">Working your records &middot; recall due</div>
-      <div class="mem">
-        <div class="mc"><div class="ml">Sitting in your EHR</div><b>1,400 patients overdue for care</b></div>
-        <div class="ai-bub">Hi James, you're due for your annual visit. Dr. Ellis has Thursday at 10:15 open, want me to book it?</div>
-        <div class="pt-bub">Perfect, book it.</div>
+    <div class="pv-app">
+      <div class="pv-bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="ttl">Northside Orthopedics &middot; Recall Agent</span><span class="live">Live</span></div>
+      <div class="pv-main">
+        <div class="pv-feed">
+          <div class="pv-fh">Sitting in your records</div>
+          <div class="pv-row"><span class="tag">Found</span><div class="tx"><b>1,400 patients overdue for care</b><span>Follow-ups, annual exams, lapsed plans</span></div><span class="tm">7:30 AM</span></div>
+          <div class="pv-row"><span class="tag">Prioritized</span><div class="tx"><b>Most likely to need care now</b><span>Sorted by history and time since last visit</span></div><span class="tm">7:31 AM</span></div>
+          <div class="pv-row"><span class="tag">Reached</span><div class="tx"><b>James D. &middot; annual visit due</b><span>Friendly text in your practice's name</span></div><span class="tm">8:15 AM</span></div>
+          <div class="pv-row"><span class="tag">Replied</span><div class="tx"><b>&ldquo;Perfect, book it.&rdquo;</b><span>Thursday 10:15 AM &middot; Dr. Ellis</span></div><span class="tm">8:22 AM</span></div>
+          <div class="pv-row"><span class="tag">Reported</span><div class="tx"><b>Reactivation results updated</b><span>Found &rarr; reached &rarr; booked, in one view</span></div><span class="tm">8:23 AM</span></div>
+        </div>
+        <div class="pv-side">
+          <div class="pv-sh">This week</div>
+          <div class="pv-stat"><b>1,400</b><span>Overdue patients found</span></div>
+          <div class="pv-stat"><b>96</b><span>Conversations held</span></div>
+          <div class="pv-stat"><b>27</b><span>Booked back</span></div>
+          <div class="pv-stat"><b>0</b><span>Batch blasts sent</span></div>
+        </div>
       </div>
     </div>
-  </div></div>
+  </div></div></div>
 
-  <div class="problem"><div class="wrap">
-    <div class="card">
-      <div class="tx">
-        <b>The most valuable patients you can add this quarter are already in your records.</b>
-        <span>The follow-up that never got scheduled. The annual exam that lapsed. The conservative-care patient who went quiet. They already know your practice and already trust your physicians, but nobody has time to work thousands of charts by hand, so they drift until they need care and book with whoever answers first.</span>
-      </div>
-    </div>
-  </div></div>
-
-  <div class="agents"><div class="wrap">
-    <div class="sec-head">
+  <div class="pv-journey"><div class="wrap"><div class="pv-in">
+    <div class="pv-head">
       <span class="eyebrow">How it works</span>
-      <h2>Found, reached, and rebooked, automatically.</h2>
+      <h2>Reminders confirm. Recall chases. Reactivation wins back.</h2>
+      <p class="lead">The Recall Agent does all three from one place, with one memory of every patient.</p>
     </div>
-    <div class="ag-grid">
-      <div class="ag">
+    <div class="pv-rail mono">
+      <div class="pv-stop"><span class="dot"></span><b>Reminders</b><span class="d1">Confirm the appointments that already exist.</span><span class="who">Table stakes</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Recall</b><span class="d1">Chase the care that is due: follow-ups, annual exams, lapsed plans.</span><span class="who">Proactive</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Reactivation</b><span class="d1">Win back the patients who drifted away entirely.</span><span class="who">The fastest growth</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Conversations</b><span class="d1">Two-way, in your voice, adapting to every reply.</span><span class="who">Not a blast</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Booked</b><span class="d1">Open slots filled, synced, and reported.</span><span class="who">Your schedule</span></div>
+    </div>
+  </div></div></div>
+
+  <div class="pv-agents"><div class="wrap"><div class="pv-in">
+    <div class="pv-head">
+      <span class="eyebrow">What it does</span>
+      <h2>Found, reached, and rebooked, automatically.</h2>
+      <p class="lead">They already know your practice and trust your physicians. Nobody has time to work thousands of charts by hand.</p>
+    </div>
+    <div class="pv-grid">
+      <div class="pv-card tint">
         <div class="ic"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></div>
         <div class="tag">Finds them</div>
         <h3>Works your records for you</h3>
-        <p>The agent identifies overdue, lapsed, and at-risk patients hiding in your EHR, and prioritizes the ones most likely to need care now.</p>
+        <p>Overdue, lapsed, and at-risk patients identified in your EHR and prioritized by who needs care now.</p>
       </div>
-      <div class="ag">
+      <div class="pv-card tint">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div>
         <div class="tag">Real conversations</div>
         <h3>Reaches them like a person would</h3>
-        <p>Phone, text, and email, in your practice's name and voice. Not a batch reminder blast: a conversation that answers questions and adapts to every reply.</p>
+        <p>Phone, text, and email in your practice's name and voice. Not a batch reminder blast.</p>
       </div>
-      <div class="ag">
+      <div class="pv-card tint">
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="15" rx="2.5"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/><path d="M12 12.5v5M9.5 15h5"/></svg></div>
         <div class="tag">Books them</div>
         <h3>Fills your open slots</h3>
-        <p>Patients who are ready book straight into open appointment times, synced with your schedule, with the context your front desk needs.</p>
+        <p>Ready patients book straight into open appointment times, with front-desk context attached.</p>
       </div>
-      <div class="ag">
+      <div class="pv-card tint">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></div>
         <div class="tag">Proves it</div>
         <h3>Shows you what came back</h3>
-        <p>Every reactivated patient is tracked from first outreach to completed visit, so you see exactly what the campaign produced.</p>
+        <p>Every reactivated patient tracked from first outreach to completed visit.</p>
       </div>
     </div>
-  </div></div>
-
-  <div class="band"><div class="wrap">
-    <div class="card"><div class="band-grid">
-      <div class="bs"><div class="v">1M+</div><div class="k">Patient interactions completed across the platform</div></div>
-      <div class="bs"><div class="v">24&times;</div><div class="k">Average return on investment</div></div>
-      <div class="bs"><div class="v">+8%</div><div class="k">Appointment volume increase</div></div>
-      <div class="bs"><div class="v">Live same day</div><div class="k">No IT project, no new staff workflow</div></div>
-    </div></div>
-  </div></div>
-
-  <div class="proof"><div class="wrap">
-    <div class="card">
-      <div class="q">
-        <div class="os-ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8.5 10.5l2.5 2.5 4.5-4.5"/></svg></div>
-        <div class="lbl">Why conversations beat reminders</div>
-        <b>Reminder software sends the same message to everyone and hopes. The Recall Agent holds a conversation, remembers every patient's history, and <i>keeps working each one until they book or opt out</i>.</b>
-      </div>
-      <div class="proof-stats">
-        <div class="ps"><div class="v">Multi-channel</div><div class="k">Phone, text, and email in one thread</div></div>
-        <div class="ps"><div class="v">One memory</div><div class="k">Every touchpoint remembered across agents</div></div>
-        <div class="ps"><div class="v">White-labeled</div><div class="k">Always your practice's name and voice</div></div>
-      </div>
-    </div>
-  </div></div>
-
-  <div class="cms"><div class="wrap"><div class="inner">
-    <span class="eyebrow">Learn more</span>
-    <h2 style="font-size:clamp(27px,3.6vw,42px);font-weight:700;letter-spacing:-.028em;line-height:1.1;margin-top:14px">Reminders, recall, and reactivation are not the same thing.</h2>
-    <p>Reminders confirm existing appointments. Recall chases care that is due. Reactivation wins back patients who drifted away. The Recall Agent does all three from one place.</p>
-    <div class="cms-links"><a href="/blog/what-is-patient-activation">Our guide to patient activation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </div></div></div>
 
-  <div class="faq"><div class="wrap"><div class="inner">
-    <div class="sec-head">
-      <span class="eyebrow">FAQ</span>
-      <h2>Common questions about recall and reactivation.</h2>
+  <div class="pv-os"><div class="wrap">
+    <div class="pv-os-head">
+      <span class="eyebrow">Clinekt OS</span>
+      <h2>Conversations beat reminders.</h2>
+      <p>Reminder software sends the same message to everyone and hopes.</p>
     </div>
-    <details>
-      <summary>What is patient reactivation?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>Patient reactivation is finding the patients in your records who are overdue for care or have stopped coming, reaching them, and getting them back on the schedule. It is different from appointment reminders, which only confirm visits that already exist, and it is usually the fastest growth a practice can add because the patients already know you.</p>
-    </details>
-    <details>
-      <summary>How is this different from reminder or recall software?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>Traditional recall tools send scheduled batch messages and stop there. The Recall Agent holds two-way conversations across phone, text, and email, answers patient questions, adapts to every reply, and books the appointment itself. Patients respond to a conversation far more than to a broadcast.</p>
-    </details>
-    <details>
-      <summary>Do patients actually respond to AI outreach?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>Yes, because it never feels like AI outreach. Every message comes from your practice's name, in your voice, about their own care. Across the platform, practices see meaningful appointment volume added from patients their staff would never have had time to call.</p>
-    </details>
-    <details>
-      <summary>Does it work with our EHR?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>Yes. The Recall Agent works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, and the other major systems, and can start from a simple patient list. There is no rip-and-replace and no new workflow for your team.</p>
-    </details>
-    <details>
-      <summary>What does our staff have to do?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>Almost nothing. The agent finds the patients, does the outreach, and books the visits. Your front desk sees new appointments appear with full context, and your team keeps its time for the patients in front of it.</p>
-    </details>
+    <div class="pv-mem">
+      <div>
+        <div class="lbl">Why it matters</div>
+        <b class="st">The Recall Agent remembers every patient’s history and <i>keeps working each one until they book or opt out</i>.</b>
+      </div>
+      <div class="mem">
+        <div class="mc"><div class="ml">Sitting in your EHR</div><b>1,400 patients overdue for care</b></div>
+        <div class="ai-bub">Hi James, you’re due for your annual visit. Dr. Ellis has Thursday at 10:15 open, want me to book it?</div>
+        <div class="pt-bub">Perfect, book it.</div>
+      </div>
+    </div>
+    <div class="pv-stats">
+      <div class="s"><div class="v">+8%</div><div class="k">Appointment volume increase</div></div>
+      <div class="s"><div class="v">3 channels</div><div class="k">Phone, text, and email in one thread</div></div>
+      <div class="s"><div class="v">One memory</div><div class="k">Every touchpoint remembered across agents</div></div>
+      <div class="s"><div class="v">White-labeled</div><div class="k">Always your practice's name and voice</div></div>
+    </div>
+  </div></div>
+
+  <div class="pv-faq"><div class="wrap"><div class="pv-in"><div class="fgrid">
+    <div class="pv-head">
+      <span class="eyebrow">Common questions</span>
+      <h2>What practices ask about recall and reactivation.</h2>
+      <p class="lead">Read more in <a href="/blog/what-is-patient-activation" style="color:var(--blue);font-weight:600;text-decoration:none">our guide to patient activation</a>.</p>
+    </div>
+    <div class="fcol">
+        <details>
+          <summary>What is patient reactivation?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Patient reactivation is finding the patients in your records who are overdue for care or have stopped coming, reaching them, and getting them back on the schedule. It is different from appointment reminders, which only confirm visits that already exist, and it is usually the fastest growth a practice can add because the patients already know you.</p>
+        </details>
+        <details>
+          <summary>How is this different from reminder or recall software?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Traditional recall tools send scheduled batch messages and stop there. The Recall Agent holds two-way conversations across phone, text, and email, answers patient questions, adapts to every reply, and books the appointment itself. Patients respond to a conversation far more than to a broadcast.</p>
+        </details>
+        <details>
+          <summary>Do patients actually respond to AI outreach?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Yes, because it never feels like AI outreach. Every message comes from your practice's name, in your voice, about their own care. Across the platform, practices see meaningful appointment volume added from patients their staff would never have had time to call.</p>
+        </details>
+        <details>
+          <summary>Does it work with our EHR?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Yes. The Recall Agent works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, and the other major systems, and can start from a simple patient list. There is no rip-and-replace and no new workflow for your team.</p>
+        </details>
+        <details>
+          <summary>What does our staff have to do?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Almost nothing. The agent finds the patients, does the outreach, and books the visits. Your front desk sees new appointments appear with full context, and your team keeps its time for the patients in front of it.</p>
+        </details>
+    </div>
+  </div></div></div></div>
+
+  <div class="pv-sibs-sec"><div class="wrap"><div class="pv-in">
+    <div class="pv-head">
+      <span class="eyebrow">One platform</span>
+      <h2>Meet the rest of the team.</h2>
+      <p class="lead">Recall is one of four jobs the platform covers. Meet the agents that handle the rest.</p>
+    </div>
+    <div class="pv-sibs">
+      <a class="pv-sib" href="/platform" style="--pac:#0071E3;--pac-bg:#E9F2FE"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="6" r="1.7"/><circle cx="19" cy="6" r="1.7"/><circle cx="5" cy="18" r="1.7"/><circle cx="19" cy="18" r="1.7"/><path d="M10.3 10.7 6.4 7.3M13.7 10.7l3.9-3.4M10.3 13.3l-3.9 3.4M13.7 13.3l3.9 3.4"/></svg></span><b>Platform overview</b><span>How four agents and one memory cover the whole patient journey.</span><span class="sgo">See the platform &rarr;</span></a>
+      <a class="pv-sib" href="/inbound-agent" style="--pac:#0071E3;--pac-bg:#E9F2FE"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M16.5 6L9.5 13"/><path d="M9.5 8.5V13h4.5"/></svg></span><b>Inbound Agent</b><span>Answers every website visitor and books them, around the clock.</span><span class="sgo">Learn more &rarr;</span></a>
+      <a class="pv-sib" href="/outbound-agent" style="--pac:#119D57;--pac-bg:#E6F6EE"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 17L9.5 10.5l4 4L21 7"/><path d="M14.5 7H21v6.5"/></svg></span><b>Outbound Agent</b><span>Drives net-new demand and proves your marketing end to end.</span><span class="sgo">Learn more &rarr;</span></a>
+      <a class="pv-sib" href="/care-agent" style="--pac:#C26A12;--pac-bg:#FDF1E5"><span class="ic"><svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg></span><b>Care Management Agent</b><span>Runs billable care between visits: check-ins, surveys, documentation.</span><span class="sgo">Learn more &rarr;</span></a>
+    </div>
   </div></div></div>
 
-  <div class="cta"><div class="wrap">
-    <div class="card">
+  <div class="pv-cta-wrap">
+    <div class="pv-cta">
       <h2>See how many patients are waiting in your records.</h2>
       <p>Book a 15 minute demo and watch the Recall Agent work a real recall queue, from first text to booked slot.</p>
-      <a class="btn btn-w" href="/book-a-demo">Book a Demo</a>
+      <div class="hero-cta">
+        <a class="btn btn-w" href="/book-a-demo">Book a Demo</a>
+      </div>
     </div>
-  </div></div>
+  </div>
 
 </section>
 

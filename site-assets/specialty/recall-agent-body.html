@@ -1,117 +1,135 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-<!-- CLINEKT EMBED (shared css via ck-sp.css page-head link) — RECALL AGENT -->
-<section id="ck-sp">
+<!-- CLINEKT EMBED (shared css via ck-sp.css page-head link) — RECALL AGENT (PV3 template) -->
+<section id="ck-sp" class="pv3">
 
-  <div class="hero"><div class="wrap">
-    <div class="hero-tx">
+  <div class="pv-hero"><div class="wrap"><div class="pv-in">
     <span class="eyebrow">The Recall Agent</span>
     <h1>Dormant charts, back on the schedule.</h1>
-    <p>It finds overdue patients in your records, reaches them with real conversations, and books them into open slots.</p>
+    <p class="lead">It finds overdue patients in your records, reaches them with real conversations, and books them into open slots.</p>
     <div class="hero-cta">
       <a class="btn btn-blue" href="/book-a-demo">Book a Demo</a>
       <a class="btn btn-ghost" href="/demo-agent">Try the AI agent live <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-    </div>
-    <div class="hero-viz">
-      <div class="hv-live">Working your records &middot; 214 patients overdue</div>
-      <div class="mem">
-        <div class="mc"><div class="ml">Found in your EHR</div><b>Maria G. &middot; last seen 14 months ago</b><div class="mrow"><span>Due:</span><span>Annual follow-up, Dr. Chen</span></div></div>
-        <div class="ai-bub">Hi Maria, it's been about a year since your last visit with Dr. Chen. She has Tuesday at 9:40 open, want me to book it?</div>
-        <div class="pt-bub">Yes, Tuesday works. Thank you!</div>
+    <div class="pv-app">
+      <div class="pv-bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="ttl">Northside Orthopedics &middot; Recall Agent</span><span class="live">Live</span></div>
+      <div class="pv-main">
+        <div class="pv-feed">
+          <div class="pv-fh">Working your records</div>
+          <div class="pv-row"><span class="tag">Found</span><div class="tx"><b>Maria G. flagged overdue</b><span>Annual follow-up &middot; 14 months since last visit</span></div><span class="tm">8:02 AM</span></div>
+          <div class="pv-row"><span class="tag">Reached</span><div class="tx"><b>Friendly text sent</b><span>In your practice's name, about her own care</span></div><span class="tm">8:05 AM</span></div>
+          <div class="pv-row"><span class="tag">Replied</span><div class="tx"><b>Insurance question answered</b><span>Same thread, no staff involved</span></div><span class="tm">10:31 AM</span></div>
+          <div class="pv-row"><span class="tag">Booked</span><div class="tx"><b>Back on the schedule</b><span>Tuesday 9:40 AM &middot; Dr. Chen &middot; synced</span></div><span class="tm">10:34 AM</span></div>
+          <div class="pv-row"><span class="tag">Reported</span><div class="tx"><b>Campaign results updated</b><span>Found &rarr; reached &rarr; booked, in one view</span></div><span class="tm">10:35 AM</span></div>
+        </div>
+        <div class="pv-side">
+          <div class="pv-sh">This week</div>
+          <div class="pv-stat"><b>214</b><span>Overdue patients found</span></div>
+          <div class="pv-stat"><b>68</b><span>Conversations held</span></div>
+          <div class="pv-stat"><b>19</b><span>Booked back</span></div>
+          <div class="pv-stat"><b>0</b><span>Cold blasts sent</span></div>
+        </div>
       </div>
     </div>
-  </div></div>
+  </div></div></div>
 
-  <div class="agents" style="padding-top:clamp(20px,3vw,40px)"><div class="wrap">
-    <div class="sec-head">
+  <div class="pv-journey"><div class="wrap"><div class="pv-in">
+    <div class="pv-head">
+      <span class="eyebrow">See it run</span>
+      <h2>What happens when a chart goes 14 months quiet.</h2>
+      <p class="lead">Not a reminder blast. A conversation that ends back on your schedule.</p>
+    </div>
+    <div class="pv-rail mono">
+      <div class="pv-stop"><span class="dot"></span><b>Found</b><span class="d1">An overdue follow-up flagged among thousands of charts.</span><span class="who">Your EHR</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Reached, in your voice</b><span class="d1">A friendly text first, then a call, then an email.</span><span class="who">Your practice's name</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Questions answered</b><span class="d1">Insurance, timing, whatever they ask, in the same thread.</span><span class="who">Two-way conversation</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Booked into an open slot</b><span class="d1">Synced to your schedule with the full thread attached.</span><span class="who">Your EHR</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Reported</b><span class="d1">Found, reached, booked, and seen, in one view.</span><span class="who">Campaign results</span></div>
+    </div>
+  </div></div></div>
+
+  <div class="pv-agents"><div class="wrap"><div class="pv-in">
+    <div class="pv-head">
       <span class="eyebrow">What it does</span>
       <h2>Outreach your staff never has time for.</h2>
+      <p class="lead">The most valuable patients you can add this quarter are already in your records.</p>
     </div>
-    <div class="ag-grid">
-      <div class="ag">
+    <div class="pv-grid">
+      <div class="pv-card tint">
         <div class="ic"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></div>
         <div class="tag">Finds them</div>
         <h3>Scans your records continuously</h3>
-        <p>Overdue follow-ups, lapsed care plans, annual exams that never got booked. The agent finds them and prioritizes who is most likely to need care now.</p>
+        <p>Overdue follow-ups, lapsed care plans, annual exams that never got booked, prioritized by who needs care now.</p>
       </div>
-      <div class="ag">
+      <div class="pv-card tint">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div>
         <div class="tag">Real conversations</div>
         <h3>Reaches patients like a person</h3>
-        <p>Phone, text, and email in one thread, in your voice. Not a reminder blast: a two-way conversation that answers questions and adapts to every reply.</p>
+        <p>Phone, text, and email in one thread, in your voice. A two-way conversation that adapts to every reply.</p>
       </div>
-      <div class="ag">
+      <div class="pv-card tint">
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="15" rx="2.5"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/><path d="M12 12.5v5M9.5 15h5"/></svg></div>
         <div class="tag">Books them</div>
         <h3>Fills your open slots</h3>
-        <p>Ready patients book straight into open times, synced to your schedule, with the context your front desk needs already attached.</p>
+        <p>Ready patients book straight into open times, with the context your front desk needs already attached.</p>
       </div>
-      <div class="ag">
+      <div class="pv-card tint">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></div>
         <div class="tag">Proves it</div>
         <h3>Reports what came back</h3>
-        <p>Every reactivated patient is tracked from first outreach to completed visit, so you always know exactly what the campaign produced.</p>
+        <p>Every reactivated patient is tracked from first outreach to completed visit.</p>
       </div>
-    </div>
-  </div></div>
-
-  <div class="scn"><div class="wrap"><div class="inner">
-    <div class="sec-head">
-      <span class="eyebrow">See it run</span>
-      <h2>What happens when a chart goes 14 months quiet.</h2>
-    </div>
-    <div class="sflow">
-    <div class="sstep"><span class="snum">1</span><div><b>Found</b><p>The agent flags an overdue follow-up hiding among thousands of charts and checks the history in Clinekt OS: last visit, physician, how they like to be reached.</p></div></div>
-    <div class="sstep"><span class="snum">2</span><div><b>Reached, in your voice</b><p>A friendly text from your practice, about their own care. No answer in a few days, and the agent tries a call, then an email. Never pushy, never off-script.</p></div></div>
-    <div class="sstep"><span class="snum">3</span><div><b>Questions answered</b><p>The patient replies with a question about insurance or timing. The agent answers it in the same thread and keeps the conversation moving.</p></div></div>
-    <div class="sstep"><span class="snum">4</span><div><b>Booked into an open slot</b><p>The patient picks a time and lands on your schedule, synced to your EHR, with the full thread attached for your front desk.</p></div></div>
-    <div class="sstep"><span class="snum">5</span><div><b>Reported</b><p>The completed visit rolls up into campaign results, so you see found, reached, booked, and seen in one view.</p><span class="sdone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Loop closed. Zero staff involvement.</span></div></div>
     </div>
   </div></div></div>
 
-  <div class="proof"><div class="wrap">
-    <div class="card">
-      <div class="q">
-        <div class="os-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="6" r="1.7"/><circle cx="19" cy="6" r="1.7"/><circle cx="5" cy="18" r="1.7"/><circle cx="19" cy="18" r="1.7"/><path d="M10.3 10.7 6.4 7.3M13.7 10.7l3.9-3.4M10.3 13.3l-3.9 3.4M13.7 13.3l3.9 3.4"/></svg></div>
-        <div class="lbl">Clinekt OS</div>
-        <b>The Recall Agent never reaches out cold. It knows every patient's history from the whole platform, so outreach feels like <i>your practice remembering, not software blasting</i>.</b>
+  <div class="pv-os"><div class="wrap">
+    <div class="pv-os-head">
+      <span class="eyebrow">Clinekt OS</span>
+      <h2>Outreach that never starts cold.</h2>
+      <p>The Recall Agent knows every patient's history from the whole platform.</p>
+    </div>
+    <div class="pv-mem">
+      <div>
+        <div class="lbl">Why it matters</div>
+        <b class="st">Every message is about the patient’s own care, so outreach feels like <i>your practice remembering, not software blasting</i>.</b>
       </div>
-      <div class="proof-stats">
-        <div class="ps"><div class="v">+8%</div><div class="k">Appointment volume increase</div></div>
-        <div class="ps"><div class="v">24&times;</div><div class="k">Average return on investment</div></div>
-        <div class="ps"><div class="v">3 channels</div><div class="k">Phone, text, and email in one thread</div></div>
+      <div class="mem">
+        <div class="mc"><div class="ml">Found in your EHR</div><b>Maria G. &middot; last seen 14 months ago</b><div class="mrow"><span>Due:</span><span>Annual follow-up, Dr. Chen</span></div></div>
+        <div class="ai-bub">Hi Maria, it’s been about a year since your last visit with Dr. Chen. She has Tuesday at 9:40 open, want me to book it?</div>
+        <div class="pt-bub">Yes, Tuesday works. Thank you!</div>
       </div>
+    </div>
+    <div class="pv-stats">
+      <div class="s"><div class="v">+8%</div><div class="k">Appointment volume increase</div></div>
+      <div class="s"><div class="v">24&times;</div><div class="k">Average return on investment</div></div>
+      <div class="s"><div class="v">3 channels</div><div class="k">Phone, text, and email in one thread</div></div>
+      <div class="s"><div class="v">1M+</div><div class="k">Patient interactions completed</div></div>
     </div>
   </div></div>
 
-  <div class="cms"><div class="wrap"><div class="inner">
-    <span class="eyebrow">What it solves</span>
-    <h2 style="font-size:clamp(27px,3.6vw,42px);font-weight:700;letter-spacing:-.028em;line-height:1.1;margin-top:14px">Recall and reactivation, handled.</h2>
-    <p>The most valuable patients you can add this quarter are already in your records.</p>
-    <div class="cms-links"><a href="/patient-recall-reactivation">How recall and reactivation works <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-  </div></div></div>
-
-  <div class="sibs"><div class="wrap">
-    <div class="sec-head">
+  <div class="pv-sibs-sec"><div class="wrap"><div class="pv-in">
+    <div class="pv-head">
       <span class="eyebrow">One platform</span>
       <h2>Meet the rest of the team.</h2>
+      <p class="lead">The Recall Agent handles recall and reactivation in one place. See <a href="/patient-recall-reactivation">how recall and reactivation works</a>.</p>
     </div>
-    <div class="sib-grid">
-      <a class="sib" href="/platform" style="--pac:#0071E3;--pac-bg:#E9F2FE"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="6" r="1.7"/><circle cx="19" cy="6" r="1.7"/><circle cx="5" cy="18" r="1.7"/><circle cx="19" cy="18" r="1.7"/><path d="M10.3 10.7 6.4 7.3M13.7 10.7l3.9-3.4M10.3 13.3l-3.9 3.4M13.7 13.3l3.9 3.4"/></svg></span><b>Platform overview</b><span>How four agents and one brain cover the whole patient journey.</span><span class="sgo">See the platform &rarr;</span></a>
-      <a class="sib" href="/inbound-agent" style="--pac:#0071E3;--pac-bg:#E9F2FE"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M16.5 6L9.5 13"/><path d="M9.5 8.5V13h4.5"/></svg></span><b>Inbound Agent</b><span>Answers every website visitor and books them, around the clock.</span><span class="sgo">Learn more &rarr;</span></a>
-      <a class="sib" href="/outbound-agent" style="--pac:#119D57;--pac-bg:#E6F6EE"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 17L9.5 10.5l4 4L21 7"/><path d="M14.5 7H21v6.5"/></svg></span><b>Outbound Agent</b><span>Drives net-new demand and proves your marketing end to end.</span><span class="sgo">Learn more &rarr;</span></a>
-      <a class="sib" href="/care-agent" style="--pac:#C26A12;--pac-bg:#FDF1E5"><span class="ic"><svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg></span><b>Care Management Agent</b><span>Runs billable care between visits: check-ins, surveys, documentation.</span><span class="sgo">Learn more &rarr;</span></a>
+    <div class="pv-sibs">
+      <a class="pv-sib" href="/platform" style="--pac:#0071E3;--pac-bg:#E9F2FE"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="6" r="1.7"/><circle cx="19" cy="6" r="1.7"/><circle cx="5" cy="18" r="1.7"/><circle cx="19" cy="18" r="1.7"/><path d="M10.3 10.7 6.4 7.3M13.7 10.7l3.9-3.4M10.3 13.3l-3.9 3.4M13.7 13.3l3.9 3.4"/></svg></span><b>Platform overview</b><span>How four agents and one memory cover the whole patient journey.</span><span class="sgo">See the platform &rarr;</span></a>
+      <a class="pv-sib" href="/inbound-agent" style="--pac:#0071E3;--pac-bg:#E9F2FE"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M16.5 6L9.5 13"/><path d="M9.5 8.5V13h4.5"/></svg></span><b>Inbound Agent</b><span>Answers every website visitor and books them, around the clock.</span><span class="sgo">Learn more &rarr;</span></a>
+      <a class="pv-sib" href="/outbound-agent" style="--pac:#119D57;--pac-bg:#E6F6EE"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 17L9.5 10.5l4 4L21 7"/><path d="M14.5 7H21v6.5"/></svg></span><b>Outbound Agent</b><span>Drives net-new demand and proves your marketing end to end.</span><span class="sgo">Learn more &rarr;</span></a>
+      <a class="pv-sib" href="/care-agent" style="--pac:#C26A12;--pac-bg:#FDF1E5"><span class="ic"><svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg></span><b>Care Management Agent</b><span>Runs billable care between visits: check-ins, surveys, documentation.</span><span class="sgo">Learn more &rarr;</span></a>
     </div>
-  </div></div>
+  </div></div></div>
 
-  <div class="cta"><div class="wrap">
-    <div class="card">
+  <div class="pv-cta-wrap">
+    <div class="pv-cta">
       <h2>See how many patients are waiting in your records.</h2>
       <p>Book a 15 minute demo and watch the Recall Agent work a real recall queue, from first text to booked slot.</p>
-      <a class="btn btn-w" href="/book-a-demo">Book a Demo</a>
+      <div class="hero-cta">
+        <a class="btn btn-w" href="/book-a-demo">Book a Demo</a>
+      </div>
     </div>
-  </div></div>
+  </div>
 
 </section>
 

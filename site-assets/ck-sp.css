@@ -530,3 +530,15 @@
 #ck-sp.pv3 .pv-sibs-sec{background:#fff;padding:clamp(88px,11vh,150px) 0}
 @media(max-width:1000px){#ck-sp.pv3 .pv-sibs{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){#ck-sp.pv3 .pv-sibs{grid-template-columns:minmax(0,1fr)}}
+
+/* ---- PV3c (2026-08-07): FAQ chapter (paper band, sticky head + accordion column) ---- */
+#ck-sp.pv3 .pv-faq{background:var(--paper);padding:clamp(88px,11vh,150px) 0}
+#ck-sp.pv3 .pv-faq .fgrid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,80px);align-items:start}
+#ck-sp.pv3 .pv-faq .pv-head{margin:0;position:sticky;top:96px}
+#ck-sp.pv3 .pv-faq details{background:#fff;border:1px solid var(--line-2);border-radius:var(--r);padding:0 22px;margin-bottom:12px;box-shadow:0 1px 2px rgba(20,25,40,.04)}
+#ck-sp.pv3 .pv-faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 0;font-size:16px;font-weight:650;letter-spacing:-.008em}
+#ck-sp.pv3 .pv-faq summary::-webkit-details-marker{display:none}
+#ck-sp.pv3 .pv-faq summary svg{width:16px;height:16px;stroke:var(--muted);stroke-width:2.2;fill:none;stroke-linecap:round;flex-shrink:0;transition:transform .25s var(--ease)}
+#ck-sp.pv3 .pv-faq details[open] summary svg{transform:rotate(45deg)}
+#ck-sp.pv3 .pv-faq details p{padding:0 0 18px;color:var(--body);font-size:15px;line-height:1.65}
+@media(max-width:940px){#ck-sp.pv3 .pv-faq .fgrid{display:block}#ck-sp.pv3 .pv-faq .pv-head{position:static;margin-bottom:28px}}
