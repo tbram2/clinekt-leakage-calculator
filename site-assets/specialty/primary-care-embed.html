@@ -1,200 +1,168 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-<!-- ▼▼▼ BEGIN CLINEKT EMBED (v2 — new site design language, scoped to #ck-sp) ▼▼▼ -->
-<style>
-#ck-sp{
-  --ink:#1D1D1F;--body:#56565C;--muted:#9A9AA0;
-  --paper:#F3F4F7;--line:rgba(60,60,67,.13);--line-2:rgba(60,60,67,.08);
-  --blue:#0071E3;--blue-press:#0077ED;--blue-tint:#EAF2FE;--blue-tint-2:#F3F8FE;
-  --shadow-sm:0 4px 16px -8px rgba(20,25,40,.14);
-  --shadow:0 24px 56px -34px rgba(20,25,40,.24);
-  --shadow-lg:0 50px 104px -50px rgba(8,30,80,.28);
-  --r:16px;--r-lg:22px;--r-xl:28px;
-  --pad:clamp(20px,5vw,72px);--sec-y:clamp(56px,7vw,104px);
-  --ease:cubic-bezier(.22,.7,.25,1);
-  font-family:'Inter',-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;
-  color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
-  line-height:1.5;
-}
-#ck-sp *{margin:0;padding:0;box-sizing:border-box}
-#ck-sp .wrap{max-width:1180px;margin:0 auto;padding:0 var(--pad)}
-#ck-sp .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
-#ck-sp .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.14)}
-#ck-sp .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 30px;border-radius:980px;font-size:16px;font-weight:600;text-decoration:none;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .2s}
-#ck-sp .btn-blue{background:var(--blue);color:#fff;box-shadow:0 12px 30px -12px rgba(0,113,227,.55)}
-#ck-sp .btn-blue:hover{background:var(--blue-press);transform:translateY(-2px)}
-#ck-sp .btn-ghost{color:var(--ink);font-weight:600}
-#ck-sp .btn-ghost svg{width:15px;height:15px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
-#ck-sp .btn-ghost:hover svg{transform:translateX(3px)}
+<!-- CLINEKT EMBED (shared css via ck-sp.css page-head link) — SPECIALTY: PRIMARY-CARE (PV3 template) -->
+<section id="ck-sp" class="pv3">
 
-/* hero */
-#ck-sp .hero{padding:clamp(56px,8vw,110px) 0 clamp(40px,5vw,64px);text-align:center}
-#ck-sp .hero h1{font-size:clamp(34px,5.2vw,60px);font-weight:700;letter-spacing:-.032em;line-height:1.05;margin:18px auto 18px;max-width:820px;text-wrap:balance}
-#ck-sp .hero p{font-size:clamp(17px,1.5vw,20px);color:var(--body);max-width:640px;margin:0 auto 30px;text-wrap:balance}
-#ck-sp .hero-cta{display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap}
-
-/* problem line */
-#ck-sp .problem{padding:clamp(30px,4vw,48px) 0}
-#ck-sp .problem .card{background:var(--paper);border-radius:var(--r-xl);padding:clamp(30px,4.5vw,52px) clamp(22px,4vw,56px);display:flex;align-items:center;gap:clamp(22px,4vw,56px);flex-wrap:wrap}
-#ck-sp .problem .big{font-size:clamp(52px,7vw,92px);font-weight:700;letter-spacing:-.035em;color:var(--blue);line-height:1;flex-shrink:0}
-#ck-sp .problem .tx{flex:1;min-width:260px}
-#ck-sp .problem .tx b{display:block;font-size:clamp(19px,2vw,24px);font-weight:700;letter-spacing:-.015em;margin-bottom:6px}
-#ck-sp .problem .tx span{color:var(--body);font-size:clamp(15px,1.3vw,17px)}
-
-/* agents */
-#ck-sp .agents{padding:var(--sec-y) 0}
-#ck-sp .sec-head{text-align:center;max-width:680px;margin:0 auto clamp(34px,4.5vw,54px)}
-#ck-sp .sec-head h2{font-size:clamp(27px,3.6vw,42px);font-weight:700;letter-spacing:-.028em;line-height:1.1;margin-top:14px;text-wrap:balance}
-#ck-sp .ag-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-@media(max-width:900px){#ck-sp .ag-grid{grid-template-columns:1fr}}
-#ck-sp .ag{background:#fff;border:1px solid var(--line-2);border-radius:var(--r-lg);padding:28px 26px;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
-#ck-sp .ag:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-#ck-sp .ag .ic{width:42px;height:42px;border-radius:12px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-#ck-sp .ag .ic svg{width:21px;height:21px;stroke:var(--blue);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-#ck-sp .ag h3{font-size:18.5px;font-weight:700;letter-spacing:-.012em;margin-bottom:4px}
-#ck-sp .ag .tag{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
-#ck-sp .ag p{font-size:15px;color:var(--body);line-height:1.6}
-
-/* stat band */
-#ck-sp .band{padding:clamp(20px,3vw,36px) 0 var(--sec-y)}
-#ck-sp .band .card{background:linear-gradient(135deg,#0A5BC4,#0071E3 55%,#2E9BEF);border-radius:var(--r-xl);padding:clamp(36px,5vw,60px) clamp(24px,4vw,56px);box-shadow:var(--shadow-lg)}
-#ck-sp .band-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
-@media(max-width:900px){#ck-sp .band-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:520px){#ck-sp .band-grid{grid-template-columns:1fr}}
-#ck-sp .bs{border-left:1px solid rgba(255,255,255,.28);padding-left:22px}
-#ck-sp .bs .v{font-size:clamp(30px,3.4vw,44px);font-weight:700;letter-spacing:-.025em;color:#fff;font-variant-numeric:tabular-nums}
-#ck-sp .bs .k{font-size:13.5px;color:rgba(255,255,255,.78);margin-top:6px;line-height:1.45}
-
-/* faq */
-#ck-sp .faq{padding:0 0 var(--sec-y)}
-#ck-sp .faq .inner{max-width:760px;margin:0 auto}
-#ck-sp details{border:1px solid var(--line-2);border-radius:var(--r);background:#fff;padding:0 22px;margin-bottom:12px;box-shadow:var(--shadow-sm)}
-#ck-sp summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 0;font-size:16px;font-weight:650;letter-spacing:-.008em}
-#ck-sp summary::-webkit-details-marker{display:none}
-#ck-sp summary svg{width:16px;height:16px;stroke:var(--muted);stroke-width:2.2;fill:none;stroke-linecap:round;flex-shrink:0;transition:transform .25s var(--ease)}
-#ck-sp details[open] summary svg{transform:rotate(45deg)}
-#ck-sp details p{padding:0 0 18px;color:var(--body);font-size:15px;line-height:1.65;max-width:64ch}
-
-/* cta */
-#ck-sp .cta{padding:0 0 var(--sec-y)}
-#ck-sp .cta .card{background:linear-gradient(135deg,#0A5BC4,#0071E3 55%,#2E9BEF);border-radius:var(--r-xl);padding:clamp(44px,6vw,76px) clamp(24px,5vw,64px);text-align:center;box-shadow:var(--shadow-lg)}
-#ck-sp .cta h2{color:#fff;font-size:clamp(26px,3.4vw,40px);font-weight:700;letter-spacing:-.025em;max-width:620px;margin:0 auto 12px;text-wrap:balance}
-#ck-sp .cta p{color:rgba(255,255,255,.82);font-size:16.5px;max-width:520px;margin:0 auto 28px}
-#ck-sp .cta .btn-w{background:#fff;color:var(--ink);box-shadow:0 10px 30px -12px rgba(0,20,60,.45)}
-#ck-sp .cta .btn-w:hover{transform:translateY(-2px)}
-</style>
-
-<section id="ck-sp">
-
-  <!-- HERO -->
-  <div class="hero"><div class="wrap">
+  <div class="pv-hero"><div class="wrap"><div class="pv-in">
     <span class="eyebrow">For Primary Care Practices</span>
     <h1>AI agents that fill primary care schedules.</h1>
-    <p>Clinekt engages every visitor, revives dormant charts, and books qualified primary care patients around the clock. Your staff changes nothing.</p>
+    <p class="lead">Clinekt engages every visitor, revives dormant charts, and books qualified primary care patients around the clock. Your staff changes nothing.</p>
     <div class="hero-cta">
       <a class="btn btn-blue" href="/book-a-demo">Book a Demo</a>
-      <a class="btn btn-ghost" href="/case-studies">See real results <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="/demo-agent">Try the AI agent live <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-  </div></div>
-
-  <!-- PROBLEM -->
-  <div class="problem"><div class="wrap">
-    <div class="card">
-      <div class="big">82%</div>
-      <div class="tx">
-        <b>of patients try to book outside office hours.</b>
-        <span>New patients look for a doctor at night and on weekends. When your front desk is closed, they join whichever practice answers first. Clinekt answers.</span>
+    <div class="pv-app">
+      <div class="pv-bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="ttl">Your practice &middot; Clinekt</span><span class="live">Live</span></div>
+      <div class="pv-main">
+        <div class="pv-feed">
+          <div class="pv-fh">Tonight's activity</div>
+          <div class="pv-row"><span class="tag">Engaged</span><div class="tx"><b>Visitor started a conversation</b><span>New family looking for a doctor</span></div><span class="tm">9:12 PM</span></div>
+          <div class="pv-row"><span class="tag">Screened</span><div class="tx"><b>Qualified patient identified</b><span>Specialty questions &middot; about two minutes</span></div><span class="tm">9:14 PM</span></div>
+          <div class="pv-row"><span class="tag">Booked</span><div class="tx"><b>New patient on the schedule</b><span>Thursday 2:40 PM &middot; synced to your EHR</span></div><span class="tm">9:15 PM</span></div>
+          <div class="pv-row" style="--pac:#6F2DAA;--pac-bg:#F0EDF7"><span class="tag">Recall</span><div class="tx"><b>Overdue annual wellness visit rebooked</b><span>Found in your records, reached in your name</span></div><span class="tm">8:52 PM</span></div>
+          <div class="pv-row"><span class="tag">Answered</span><div class="tx"><b>Insurance question resolved</b><span>After hours &middot; no staff involved</span></div><span class="tm">8:16 PM</span></div>
+        </div>
+        <div class="pv-side">
+          <div class="pv-sh">Tonight</div>
+          <div class="pv-stat"><b>12</b><span>Conversations held</span></div>
+          <div class="pv-stat"><b>5</b><span>Patients screened</span></div>
+          <div class="pv-stat"><b>3</b><span>Appointments booked</span></div>
+          <div class="pv-stat"><b>0</b><span>Visitors missed</span></div>
+        </div>
       </div>
     </div>
-  </div></div>
-
-  <!-- AGENTS -->
-  <div class="agents"><div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">The Platform</span>
-      <h2>One platform, every primary care patient covered.</h2>
-    </div>
-    <div class="ag-grid">
-      <div class="ag">
-        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg></div>
-        <div class="tag">Inbound Agent</div>
-        <h3>Books your website visitors</h3>
-        <p>Engages every visitor 24/7, screens by visit reason, new-patient status, and insurance basics, and books the appointment before they keep searching.</p>
-      </div>
-      <div class="ag">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/><path d="M12 7v5l3.5 2"/></svg></div>
-        <div class="tag">Recall Agent</div>
-        <h3>Brings dormant patients back</h3>
-        <p>Finds overdue annual wellness visits, lapsed chronic-care follow-ups, and patients who quietly drifted from the panel, then books them back into your open slots.</p>
-      </div>
-      <div class="ag">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 16.5l6-6 4 4 7.5-7.5"/><path d="M16 7h4.5v4.5"/></svg></div>
-        <div class="tag">Outbound Agent</div>
-        <h3>Proves what growth is worth</h3>
-        <p>Brings in net-new patients and traces every one from first click to completed visit, so you see exactly what your marketing produced.</p>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- STAT BAND -->
-  <div class="band"><div class="wrap">
-    <div class="card"><div class="band-grid">
-      <div class="bs"><div class="v">1M+</div><div class="k">Patient interactions completed</div></div>
-      <div class="bs"><div class="v">24×</div><div class="k">Average ROI</div></div>
-      <div class="bs"><div class="v">+8%</div><div class="k">Appointment volume increase</div></div>
-      <div class="bs"><div class="v">−48%</div><div class="k">Unqualified consult reduction</div></div>
-    </div></div>
-  </div></div>
-
-  <!-- FAQ -->
-  <div class="faq"><div class="wrap"><div class="inner">
-    <div class="sec-head">
-      <span class="eyebrow">FAQ</span>
-      <h2>Common questions from primary care practices.</h2>
-    </div>
-    <details>
-      <summary>How does Clinekt screen primary care patients?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>The Inbound Agent runs a screening covering visit reason, new-patient status, insurance basics, and provider or location preference. Your scheduling team receives a complete patient profile, not a contact form.</p>
-    </details>
-    <details>
-      <summary>Does it work with our EHR?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>Yes. Clinekt works alongside Epic, athenahealth, eClinicalWorks, NextGen, Elation, and the other major systems. Your team books appointments exactly the way they do today, with no IT project and no workflow changes.</p>
-    </details>
-    <details>
-      <summary>How fast can we go live?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>Most practices go live in under a week. Setup is a single embed on your website, followed by a short review of your providers, services, and scheduling rules.</p>
-    </details>
-    <details>
-      <summary>What does the front desk have to change?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>Nothing. Clinekt hands your team pre-screened, booking-ready patients. The workflow stays the same; the inputs get dramatically better.</p>
-    </details>
-    <details>
-      <summary>How do we know it's working?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
-      <p>Every patient is traced from first touch to completed visit. You see leads, bookings, show rates, and completed care in one report, with each one attributed to its source.</p>
-    </details>
   </div></div></div>
 
-  <!-- CTA -->
-  <div class="cta"><div class="wrap">
-    <div class="card">
-      <h2>See Clinekt on your practice's website.</h2>
-      <p>A 15-minute demo, white-labeled to your practice. See exactly what your patients would see.</p>
-      <a class="btn btn-w" href="/book-a-demo">Book a Demo</a>
+  <div class="pv-journey"><div class="wrap"><div class="pv-in">
+    <div class="pv-head">
+      <span class="eyebrow">The problem</span>
+      <h2>82% of patients try to book outside office hours.</h2>
+      <p class="lead">New patients look for a doctor at night and on weekends. When your front desk is closed, they join whichever practice answers first. Clinekt answers.</p>
+    </div>
+    <div class="pv-rail mono">
+      <div class="pv-stop"><span class="dot"></span><b>They land</b><span class="d1">A patient in pain finds your website, tonight or at lunch.</span><span class="who">Your existing traffic</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Engaged, instantly</b><span class="d1">Greeted in your practice's name. No form, no callback.</span><span class="who">24/7</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Screened</b><span class="d1">Specialty-trained questions qualify them in about two minutes.</span><span class="who">Specialty trained</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Booked &amp; synced</b><span class="d1">A real appointment on your schedule, full context attached.</span><span class="who">Your EHR</span></div>
+      <div class="pv-stop"><span class="dot"></span><b>Remembered</b><span class="d1">Saved to Clinekt OS, so every future conversation starts warm.</span><span class="who">Clinekt OS</span></div>
+    </div>
+  </div></div></div>
+
+  <div class="pv-agents"><div class="wrap"><div class="pv-in">
+    <div class="pv-head">
+      <span class="eyebrow">The platform</span>
+      <h2>One platform, every primary care patient covered.</h2>
+      <p class="lead">Your agents on the case from day one, sharing one memory of every patient.</p>
+    </div>
+    <div class="pv-grid three">
+      <div class="pv-card tint" style="--pac:#0071E3;--pac-bg:#E9F2FE">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M16.5 6L9.5 13"/><path d="M9.5 8.5V13h4.5"/></svg></div>
+        <div class="tag">Always-on inbound</div>
+        <h3>Inbound Agent</h3>
+        <p>Engages every visitor 24/7, screens by visit reason, new-patient status, and insurance basics, and books the appointment before they keep searching.</p>
+        <a class="go" href="/inbound-agent">Meet the Inbound Agent <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="pv-card tint" style="--pac:#6F2DAA;--pac-bg:#F0EDF7">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><circle cx="12" cy="12" r="1"/></svg></div>
+        <div class="tag">Proactive outreach</div>
+        <h3>Recall Agent</h3>
+        <p>Finds overdue annual wellness visits, lapsed chronic-care follow-ups, and patients who quietly drifted from the panel, then books them back into your open slots.</p>
+        <a class="go" href="/recall-agent">Meet the Recall Agent <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="pv-card tint" style="--pac:#119D57;--pac-bg:#E6F6EE">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 17L9.5 10.5l4 4L21 7"/><path d="M14.5 7H21v6.5"/></svg></div>
+        <div class="tag">Provable growth</div>
+        <h3>Outbound Agent</h3>
+        <p>Brings in net-new patients and traces every one from first click to completed visit, so you see exactly what your marketing produced.</p>
+        <a class="go" href="/outbound-agent">Meet the Outbound Agent <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div></div></div>
+
+  <div class="pv-os"><div class="wrap">
+    <div class="pv-os-head">
+      <span class="eyebrow">Clinekt OS</span>
+      <h2>Every conversation, remembered.</h2>
+      <p>Every agent writes to Clinekt OS, one memory of every patient.</p>
+    </div>
+    <div class="pv-mem">
+      <div>
+        <div class="lbl">Why it matters</div>
+        <b class="st">The patient booked tonight is <i>never a stranger to your practice again</i>: recognized on every call, text, and visit from here on.</b>
+      </div>
+      <div class="mem">
+        <div class="pt-bub">We just moved here and need a doctor for the whole family. Are you taking new patients?</div>
+        <div class="ai-bub">We can help with that. A few quick questions and I'll find you a time that works.</div>
+        <div class="mc"><div class="ml">Booked &middot; New patient</div><b>Thursday 2:40 PM &middot; synced to your EHR</b><div class="mrow"><span>Saved to:</span><span>Clinekt OS &middot; full conversation attached</span></div></div>
+      </div>
+    </div>
+    <div class="pv-stats">
+      <div class="s"><div class="v">1M+</div><div class="k">Patient interactions completed</div></div>
+      <div class="s"><div class="v">24&times;</div><div class="k">Average return on investment</div></div>
+      <div class="s"><div class="v">+8%</div><div class="k">Appointment volume increase</div></div>
+      <div class="s"><div class="v">8-12%</div><div class="k">Visitor engagement, vs under 1% for forms</div></div>
     </div>
   </div></div>
+
+  <div class="pv-faq"><div class="wrap"><div class="pv-in"><div class="fgrid">
+    <div class="pv-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions from primary care practices.</h2>
+      <p class="lead">See what leakage costs your practice with <a href="/leakage-calculator" style="color:var(--blue);font-weight:600;text-decoration:none">our free leakage calculator</a>.</p>
+    </div>
+    <div class="fcol">
+        <details>
+          <summary>How does Clinekt screen primary care patients?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>The Inbound Agent runs a screening covering visit reason, new-patient status, insurance basics, and provider or location preference. Your scheduling team receives a complete patient profile, not a contact form.</p>
+        </details>
+        <details>
+          <summary>Does Clinekt work with our EHR?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Yes. Clinekt works alongside Epic, athenahealth, eClinicalWorks, NextGen, Elation, and the other major systems. Your team books appointments exactly the way they do today, with no IT project and no workflow changes.</p>
+        </details>
+        <details>
+          <summary>How fast can a primary care practice go live with Clinekt?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Most practices go live in under a week. Setup is a single embed on your website, followed by a short review of your providers, services, and scheduling rules.</p>
+        </details>
+        <details>
+          <summary>What does the front desk have to change?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Nothing. Clinekt hands your team pre-screened, booking-ready patients. The workflow stays the same; the inputs get dramatically better.</p>
+        </details>
+        <details>
+          <summary>How do we know Clinekt is working?<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Every patient is traced from first touch to completed visit. You see leads, bookings, show rates, and completed care in one report, with each one attributed to its source.</p>
+        </details>
+    </div>
+  </div></div></div></div>
+
+  <div class="pv-sibs-sec"><div class="wrap"><div class="pv-in">
+    <div class="pv-head">
+      <span class="eyebrow">One platform</span>
+      <h2>Meet the agents behind it.</h2>
+      <p class="lead">Clinekt is one platform: four agents and one memory of every patient.</p>
+    </div>
+    <div class="pv-sibs">
+      <a class="pv-sib" href="/platform" style="--pac:#0071E3;--pac-bg:#E9F2FE"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="6" r="1.7"/><circle cx="19" cy="6" r="1.7"/><circle cx="5" cy="18" r="1.7"/><circle cx="19" cy="18" r="1.7"/><path d="M10.3 10.7 6.4 7.3M13.7 10.7l3.9-3.4M10.3 13.3l-3.9 3.4M13.7 13.3l3.9 3.4"/></svg></span><b>Platform overview</b><span>How four agents and one memory cover the whole patient journey.</span><span class="sgo">See the platform &rarr;</span></a>
+      <a class="pv-sib" href="/inbound-agent" style="--pac:#0071E3;--pac-bg:#E9F2FE"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M16.5 6L9.5 13"/><path d="M9.5 8.5V13h4.5"/></svg></span><b>Inbound Agent</b><span>Answers every website visitor and books them, around the clock.</span><span class="sgo">Learn more &rarr;</span></a>
+      <a class="pv-sib" href="/recall-agent" style="--pac:#6F2DAA;--pac-bg:#F0EDF7"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><circle cx="12" cy="12" r="1"/></svg></span><b>Recall Agent</b><span>Finds overdue patients in your records and brings them back.</span><span class="sgo">Learn more &rarr;</span></a>
+      <a class="pv-sib" href="/care-agent" style="--pac:#C26A12;--pac-bg:#FDF1E5"><span class="ic"><svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg></span><b>Care Management Agent</b><span>Runs billable care between visits: check-ins, surveys, documentation.</span><span class="sgo">Learn more &rarr;</span></a>
+    </div>
+  </div></div></div>
+
+  <div class="pv-cta-wrap">
+    <div class="pv-cta">
+      <h2>Watch Clinekt book a primary care patient live.</h2>
+      <p>A 15 minute demo on a website like yours: engaged, screened, and booked while you watch.</p>
+      <div class="hero-cta">
+        <a class="btn btn-w" href="/book-a-demo">Book a Demo</a>
+      </div>
+    </div>
+  </div>
 
 </section>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"AI Patient Activation for Primary Care Practices","description":"AI agents for primary care practices that engage every website visitor 24/7, screen and schedule qualified patients, and bring dormant patients back from the EHR.","provider":{"@type":"Organization","name":"Clinekt Health","url":"https://clinekthealth.com/","sameAs":["https://www.linkedin.com/company/clinekt-health-1/","https://trust.delve.co/clinekt-health"]},"serviceType":"AI patient activation agents","areaServed":"United States","audience":{"@type":"Audience","audienceType":"Primary care practices"},"url":"https://clinekthealth.com/primary-care"}
+{"@context":"https://schema.org","@type":"Service","name":"AI Patient Activation for Primary Care Practices","description":"AI agents for primary care practices that engage every website visitor 24/7, screen and schedule qualified patients, and bring dormant patients back from the EHR.","provider":{"@type":"Organization","name":"Clinekt Health","url":"https://clinekthealth.com/","sameAs":["https://www.linkedin.com/company/clinekt-health-1/","https://trust.delve.co/clinekt-health"]},"serviceType":"AI patient activation platform","areaServed":"United States","audience":{"@type":"Audience","audienceType":"Primary care practices"},"url":"https://clinekthealth.com/primary-care"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"How does Clinekt screen primary care patients?","acceptedAnswer":{"@type":"Answer","text":"The Inbound Agent runs a screening covering visit reason, new-patient status, insurance basics, and provider or location preference. Your scheduling team receives a complete patient profile, not a contact form."}},
-{"@type":"Question","name":"Does Clinekt work with our EHR?","acceptedAnswer":{"@type":"Answer","text":"Yes. Clinekt works alongside Epic, athenahealth, eClinicalWorks, NextGen, Elation, and the other major systems. Your team books appointments exactly the way they do today, with no IT project and no workflow changes."}},
-{"@type":"Question","name":"How fast can a primary care practice go live with Clinekt?","acceptedAnswer":{"@type":"Answer","text":"Most practices go live in under a week. Setup is a single embed on your website, followed by a short review of your providers, services, and scheduling rules."}},
-{"@type":"Question","name":"What does the front desk have to change?","acceptedAnswer":{"@type":"Answer","text":"Nothing. Clinekt hands your team pre-screened, booking-ready patients. The workflow stays the same; the inputs get dramatically better."}},
-{"@type":"Question","name":"How do we know Clinekt is working?","acceptedAnswer":{"@type":"Answer","text":"Every patient is traced from first touch to completed visit. You see leads, bookings, show rates, and completed care in one report, with each one attributed to its source."}}
-]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Clinekt screen primary care patients?","acceptedAnswer":{"@type":"Answer","text":"The Inbound Agent runs a screening covering visit reason, new-patient status, insurance basics, and provider or location preference. Your scheduling team receives a complete patient profile, not a contact form."}},{"@type":"Question","name":"Does Clinekt work with our EHR?","acceptedAnswer":{"@type":"Answer","text":"Yes. Clinekt works alongside Epic, athenahealth, eClinicalWorks, NextGen, Elation, and the other major systems. Your team books appointments exactly the way they do today, with no IT project and no workflow changes."}},{"@type":"Question","name":"How fast can a primary care practice go live with Clinekt?","acceptedAnswer":{"@type":"Answer","text":"Most practices go live in under a week. Setup is a single embed on your website, followed by a short review of your providers, services, and scheduling rules."}},{"@type":"Question","name":"What does the front desk have to change?","acceptedAnswer":{"@type":"Answer","text":"Nothing. Clinekt hands your team pre-screened, booking-ready patients. The workflow stays the same; the inputs get dramatically better."}},{"@type":"Question","name":"How do we know Clinekt is working?","acceptedAnswer":{"@type":"Answer","text":"Every patient is traced from first touch to completed visit. You see leads, bookings, show rates, and completed care in one report, with each one attributed to its source."}}]}
 </script>
-<!-- ▲▲▲ END CLINEKT EMBED ▲▲▲ -->
