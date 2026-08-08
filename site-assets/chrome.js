@@ -57,10 +57,25 @@
     '</div>';
   var solMenu = '<div class="ckdd ckdd-sol">' +
     '<div class="ckdd-pills"><a class="ckdd-pill p1" href="/demo-agent">Try Our AI Agent</a><a class="ckdd-pill p2" href="/leakage-calculator">Leakage Calculator</a></div>' +
-    '<div class="ck-sol"><div class="ck-sol-col"><div class="ck-grp">By use case</div>' + links(USECASES) + '</div>' +
-    '<div class="ck-sol-col"><div class="ck-grp">By specialty</div>' + links(SOLUTIONS) + '</div></div></div>';
-  var compMenu = '<div class="ckdd ckdd-plain">' +
-    '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a></div>';
+    '<div class="ckdd-cols">' +
+    '<div class="ckdd-uc"><div class="ck-grp">By use case</div>' +
+    ddRow('/patient-leakage', DDIC.inbound, '#0071E3', '#E9F2FE', 'Stop patient leakage', 'Convert every website visitor') +
+    ddRow('/patient-recall-reactivation', DDIC.recall, '#6F2DAA', '#F0EDF7', 'Recall &amp; reactivation', 'Bring dormant charts back') +
+    ddRow('/marketing-roi', DDIC.outbound, '#119D57', '#E6F6EE', 'Marketing ROI', 'Prove spend, click to procedure') +
+    ddRow('/care-agent', DDIC.care, '#C26A12', '#FDF1E5', 'Care between visits', 'Documented, billable care') +
+    '</div>' +
+    '<div class="ckdd-sp"><div class="ck-grp">By specialty</div><div class="ckdd-spec">' + links(SOLUTIONS) + '</div></div>' +
+    '</div></div>';
+  var DDIC2 = {
+    cases: '<svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16v-4M12 16V8M16 16v-6"/></svg>',
+    faq: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.6a2.4 2.4 0 1 1 3.4 2.2c-.8.35-1 .9-1 1.7"/><path d="M12 16.4v.2"/></svg>',
+    blog: '<svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 17h4"/></svg>'
+  };
+  var compMenu = '<div class="ckdd">' +
+    ddRow('/case-studies', DDIC2.cases, '#0071E3', '#E9F2FE', 'Case Studies', 'Real results from real practices') +
+    ddRow('/faqs', DDIC2.faq, '#6F2DAA', '#F0EDF7', 'FAQs', 'How patient activation works') +
+    ddRow('/blog', DDIC2.blog, '#119D57', '#E6F6EE', 'Blog &amp; News', 'Insights and announcements') +
+    '</div>';
   var solLinks = solMenu;
   // Group-label + side-by-side column styles for every nav variant that renders solLinks.
   (function () {
@@ -74,7 +89,14 @@
       '.nav-m .ck-sol,.ck-m .ck-sol{gap:18px}' +
       '.nav-m .ck-sol-col,.ck-m .ck-sol-col{min-width:0;flex:1}' +
       '.ckdd{background:#fff;border:1px solid rgba(60,60,67,.1);border-radius:16px;box-shadow:0 24px 64px -28px rgba(16,24,40,.3);padding:8px;min-width:296px}' +
-      '.ckdd-sol{min-width:432px}' +
+      '.ckdd-sol{min-width:660px}' +
+      '.ckdd-cols{display:flex;align-items:flex-start;gap:10px;padding:0 2px 2px}' +
+      '.ckdd-uc{min-width:280px;border-right:1px solid rgba(60,60,67,.08);padding-right:10px}' +
+      '.ckdd-sp{flex:1;min-width:330px}' +
+      '.ckdd-spec{display:grid;grid-template-columns:1fr 1fr;gap:0 6px}' +
+      '.ckdd-spec a{display:block;padding:8px 12px!important;border-radius:8px!important;font-size:13.5px;color:#56565C;text-decoration:none;white-space:nowrap;border:0!important;background:none!important;transition:background .15s,color .15s}' +
+      '.ckdd-spec a:hover{background:#F5F5F7!important;color:#1D1D1F!important}' +
+      '.ckdd-uc .ck-grp,.ckdd-sp .ck-grp{padding:8px 12px 6px}' +
       '.ckdd-row{display:flex!important;align-items:center;gap:12px;padding:9px 12px!important;border-radius:10px!important;text-decoration:none;background:none!important;border:0!important;transition:background .15s}' +
       '.ckdd-row:hover{background:#F5F5F7!important}' +
       '.ckdd-ic{width:30px;height:30px;border-radius:8px;background:var(--ddbg,#E9F2FE);display:flex;align-items:center;justify-content:center;flex-shrink:0}' +
@@ -105,6 +127,11 @@
       '.nav-m .ckdd-tx small,.ck-m .ckdd-tx small{white-space:normal}' +
       '.nav-m .ckdd-pills,.ck-m .ckdd-pills{flex-direction:column;padding:6px 0 10px}' +
       '.nav-m .ckdd .ck-sol a,.ck-m .ckdd .ck-sol a{padding:9px 0!important;font-size:16px}' +
+      '.nav-m .ckdd-cols,.ck-m .ckdd-cols{flex-direction:column;gap:0;padding:0}' +
+      '.nav-m .ckdd-uc,.ck-m .ckdd-uc{border-right:0;padding-right:0;min-width:0}' +
+      '.nav-m .ckdd-sp,.ck-m .ckdd-sp{min-width:0}' +
+      '.nav-m .ckdd-spec,.ck-m .ckdd-spec{grid-template-columns:1fr}' +
+      '.nav-m .ckdd-spec a,.ck-m .ckdd-spec a{padding:9px 0!important;font-size:16px}' +
       '.nav-m .ckdd-plain a,.ck-m .ckdd-plain a{padding:11px 0 11px 14px!important;font-size:17px}' +
       'h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}' +
       "/* Section rhythm v2 (2026-08-07 round 8): white body, ONE deep-navy chapter (proof/band/brain), zero band margins */#ck-sp .problem{background:#fff!important;padding:clamp(24px,3.5vw,56px) 0 0!important;margin:0!important}#ck-sp .problem .card{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;box-shadow:none!important}#ck-sp .proof{background:#0C1D38!important;padding:clamp(72px,8.5vw,130px) 0!important;margin:0!important}#ck-sp .proof .card{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;box-shadow:none!important}#ck-sp .proof .q .lbl{color:rgba(255,255,255,.55)!important}#ck-sp .proof .q b{color:#fff!important}#ck-sp .proof .q b i{color:color-mix(in srgb,var(--pac,#0071E3) 42%,#fff)!important}#ck-sp .ps .v{color:color-mix(in srgb,var(--pac,#0071E3) 38%,#fff)!important}#ck-sp .ps .k{color:rgba(255,255,255,.72)!important}#ck-sp .proof-stats{border-top-color:rgba(255,255,255,.14)!important}#ck-sp .brain{background:#0C1D38!important;padding:clamp(72px,8.5vw,130px) 0!important;margin:0!important}#ck-sp .brain .card{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important}#ck-sp .band{background:#0C1D38!important;padding:clamp(64px,7.5vw,110px) 0!important;margin:0!important}#ck-sp .band .card{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important}#ck-sp .bs{border-left-color:rgba(255,255,255,.2)!important}#ck-sp .band+.proof,#ck-sp .brain+.proof,#ck-sp .proof+.band{padding-top:0!important}";
