@@ -542,3 +542,13 @@
 #ck-sp.pv3 .pv-faq details[open] summary svg{transform:rotate(45deg)}
 #ck-sp.pv3 .pv-faq details p{padding:0 0 18px;color:var(--body);font-size:15px;line-height:1.65}
 @media(max-width:940px){#ck-sp.pv3 .pv-faq .fgrid{display:block}#ck-sp.pv3 .pv-faq .pv-head{position:static;margin-bottom:28px}}
+
+/* ---- PV3d (2026-08-07): specialty-page components — 3-up agent grid + partner logo wall ---- */
+#ck-sp.pv3 .pv-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:940px){#ck-sp.pv3 .pv-grid.three{grid-template-columns:minmax(0,1fr)}}
+#ck-sp.pv3 .pv-logos{background:#fff;padding:clamp(88px,11vh,150px) 0}
+#ck-sp.pv3 .pv-logos .lg-grid{display:flex;flex-wrap:wrap;justify-content:center;column-gap:clamp(34px,4.2vw,58px);row-gap:clamp(52px,6vw,84px)}
+#ck-sp.pv3 .pv-logos .lg{flex:0 0 clamp(128px,13vw,168px);display:flex;align-items:center;justify-content:center}
+#ck-sp.pv3 .pv-logos .lg img{max-width:100%;max-height:48px;width:auto;height:auto;filter:grayscale(1);opacity:.72;transition:filter .25s,opacity .25s}
+#ck-sp.pv3 .pv-logos .lg:hover img{filter:none;opacity:1}
+@media(max-width:520px){#ck-sp.pv3 .pv-logos .lg{flex:0 0 calc(50% - 12px)}}
