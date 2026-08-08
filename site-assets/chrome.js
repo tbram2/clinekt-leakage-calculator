@@ -28,7 +28,7 @@
   // The platform pages — Platform dropdown: overview page + the four agent pages.
   // The Care Management Agent keeps its original /care-agent slug (published slugs never change).
   var PLATFORM = [
-    ['Platform overview', '/platform'],
+    ['Platform Overview', '/platform'],
     ['Inbound Agent', '/inbound-agent'],
     ['Recall Agent', '/recall-agent'],
     ['Outbound Agent', '/outbound-agent'],
@@ -36,11 +36,32 @@
   ];
   function links(list) { return list.map(function (s) { return '<a href="' + s[1] + '">' + s[0] + '</a>'; }).join(''); }
   var platLinks = links(PLATFORM);
-  // Solutions mega-menu: featured pills across the top, then the two groups SIDE BY SIDE.
-  var solLinks = '<a href="/demo-agent" style="display:block;margin:8px 8px 4px;padding:9px 14px;background:linear-gradient(145deg,#0A6FE6,#063FB0);color:#fff;font-weight:600;border-radius:10px;text-align:center">Try Our AI Agent</a>' +
-    '<a href="/leakage-calculator" style="display:block;margin:4px 8px;padding:9px 14px;background:#EAF2FE;color:#0A58C4;font-weight:600;border-radius:10px;text-align:center;border:1px solid #D7E6FB">Leakage Calculator</a>' +
+  // Rich dropdown panels (2026-08-08): one white rounded panel component (.ckdd) shared by
+  // every nav variant, agent-colored icon rows for Platform, pills + two columns for Solutions.
+  var DDIC = {
+    platform: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="6" r="1.7"/><circle cx="19" cy="6" r="1.7"/><circle cx="5" cy="18" r="1.7"/><circle cx="19" cy="18" r="1.7"/><path d="M10.3 10.7 6.4 7.3M13.7 10.7l3.9-3.4M10.3 13.3l-3.9 3.4M13.7 13.3l3.9 3.4"/></svg>',
+    inbound: '<svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M16.5 6L9.5 13"/><path d="M9.5 8.5V13h4.5"/></svg>',
+    recall: '<svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><circle cx="12" cy="12" r="1"/></svg>',
+    outbound: '<svg viewBox="0 0 24 24"><path d="M3 17L9.5 10.5l4 4L21 7"/><path d="M14.5 7H21v6.5"/></svg>',
+    care: '<svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg>'
+  };
+  function ddRow(href, ic, pac, bg, label, desc) {
+    return '<a class="ckdd-row" href="' + href + '" style="--ddpac:' + pac + ';--ddbg:' + bg + '"><span class="ckdd-ic">' + ic + '</span><span class="ckdd-tx"><b>' + label + '</b><small>' + desc + '</small></span></a>';
+  }
+  var platMenu = '<div class="ckdd">' +
+    ddRow('/platform', DDIC.platform, '#0071E3', '#E9F2FE', 'Platform Overview', 'Four agents, one memory of every patient') +
+    ddRow('/inbound-agent', DDIC.inbound, '#0071E3', '#E9F2FE', 'Inbound Agent', 'Answers and books every website visitor') +
+    ddRow('/recall-agent', DDIC.recall, '#6F2DAA', '#F0EDF7', 'Recall Agent', 'Brings overdue patients back') +
+    ddRow('/outbound-agent', DDIC.outbound, '#119D57', '#E6F6EE', 'Outbound Agent', 'Net-new demand, proven end to end') +
+    ddRow('/care-agent', DDIC.care, '#C26A12', '#FDF1E5', 'Care Management Agent', 'Billable care between visits') +
+    '</div>';
+  var solMenu = '<div class="ckdd ckdd-sol">' +
+    '<div class="ckdd-pills"><a class="ckdd-pill p1" href="/demo-agent">Try Our AI Agent</a><a class="ckdd-pill p2" href="/leakage-calculator">Leakage Calculator</a></div>' +
     '<div class="ck-sol"><div class="ck-sol-col"><div class="ck-grp">By use case</div>' + links(USECASES) + '</div>' +
-    '<div class="ck-sol-col"><div class="ck-grp">By specialty</div>' + links(SOLUTIONS) + '</div></div>';
+    '<div class="ck-sol-col"><div class="ck-grp">By specialty</div>' + links(SOLUTIONS) + '</div></div></div>';
+  var compMenu = '<div class="ckdd ckdd-plain">' +
+    '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a></div>';
+  var solLinks = solMenu;
   // Group-label + side-by-side column styles for every nav variant that renders solLinks.
   (function () {
     var gs = document.createElement('style');
@@ -52,6 +73,39 @@
       '.nav-m .ck-grp,.ck-m .ck-grp{padding:12px 0 2px}' +
       '.nav-m .ck-sol,.ck-m .ck-sol{gap:18px}' +
       '.nav-m .ck-sol-col,.ck-m .ck-sol-col{min-width:0;flex:1}' +
+      '.ckdd{background:#fff;border:1px solid rgba(60,60,67,.1);border-radius:16px;box-shadow:0 24px 64px -28px rgba(16,24,40,.3);padding:8px;min-width:296px}' +
+      '.ckdd-sol{min-width:432px}' +
+      '.ckdd-row{display:flex!important;align-items:center;gap:12px;padding:9px 12px!important;border-radius:10px!important;text-decoration:none;background:none!important;border:0!important;transition:background .15s}' +
+      '.ckdd-row:hover{background:#F5F5F7!important}' +
+      '.ckdd-ic{width:30px;height:30px;border-radius:8px;background:var(--ddbg,#E9F2FE);display:flex;align-items:center;justify-content:center;flex-shrink:0}' +
+      '.ckdd-ic svg{width:16px;height:16px;stroke:var(--ddpac,#0071E3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}' +
+      '.ckdd-tx{display:flex;flex-direction:column;gap:1px;text-align:left}' +
+      '.ckdd-tx b{font-size:14px;font-weight:600;color:#1D1D1F;white-space:nowrap;line-height:1.3}' +
+      '.ckdd-tx small{font-size:12px;color:#9A9AA0;white-space:nowrap;line-height:1.35}' +
+      '.ckdd-pills{display:flex;gap:8px;padding:4px 4px 10px}' +
+      '.ckdd-pill{flex:1;display:block;padding:10px 14px!important;border-radius:10px!important;font-size:13.5px;font-weight:600;text-align:center;text-decoration:none;white-space:nowrap;transition:filter .15s}' +
+      '.ckdd-pill:hover{filter:brightness(1.06)}' +
+      '.ckdd-pill.p1{background:linear-gradient(145deg,#0A6FE6,#063FB0)!important;color:#fff!important;border:0!important}' +
+      '.ckdd-pill.p2{background:#EAF2FE!important;color:#0A58C4!important;border:1px solid #D7E6FB!important}' +
+      '.ckdd .ck-sol{background:none!important;border:0!important;padding:0 2px 2px!important}' +
+      '.ckdd .ck-sol a{display:block;padding:7px 12px!important;border-radius:8px!important;font-size:13.5px;color:#56565C;text-decoration:none;white-space:nowrap;border:0!important;background:none!important;transition:background .15s,color .15s}' +
+      '.ckdd .ck-sol a:hover{background:#F5F5F7!important;color:#1D1D1F!important}' +
+      '.ckdd .ck-grp{padding:10px 12px 4px}' +
+      '.ckdd-plain a{display:block;padding:9px 12px!important;border-radius:8px!important;font-size:14px;color:#56565C;text-decoration:none;white-space:nowrap;border:0!important;background:none!important;transition:background .15s,color .15s}' +
+      '.ckdd-plain a:hover{background:#F5F5F7!important;color:#1D1D1F!important}' +
+      '.nav-drop-in,.ck-drop-menu{background:none!important;border:0!important;box-shadow:none!important;padding-left:0!important;padding-right:0!important;padding-bottom:0!important}' +
+      '.ck-drop-btn,.nav-drop-btn{display:inline-flex!important;align-items:center;gap:5px}' +
+      '.ck-drop-btn svg,.nav-drop-btn svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s;display:inline-block}' +
+      '.ck-drop:hover .ck-drop-btn svg,.nav-drop:hover .nav-drop-btn svg{transform:rotate(180deg)}' +
+      '.ck-drop-menu{transform:translateX(-50%) translateY(6px);transition:opacity .18s,transform .18s,visibility .18s}' +
+      '.ck-drop:hover .ck-drop-menu{transform:translateX(-50%) translateY(0)}' +
+      '.nav-m .ckdd,.ck-m .ckdd{box-shadow:none;border:0;border-radius:0;padding:0;min-width:0;background:none}' +
+      '.nav-m .ckdd-row,.ck-m .ckdd-row{padding:10px 0!important}' +
+      '.nav-m .ckdd-tx b,.ck-m .ckdd-tx b{font-size:16px}' +
+      '.nav-m .ckdd-tx small,.ck-m .ckdd-tx small{white-space:normal}' +
+      '.nav-m .ckdd-pills,.ck-m .ckdd-pills{flex-direction:column;padding:6px 0 10px}' +
+      '.nav-m .ckdd .ck-sol a,.ck-m .ckdd .ck-sol a{padding:9px 0!important;font-size:16px}' +
+      '.nav-m .ckdd-plain a,.ck-m .ckdd-plain a{padding:11px 0 11px 14px!important;font-size:17px}' +
       'h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}' +
       "/* Section rhythm v2 (2026-08-07 round 8): white body, ONE deep-navy chapter (proof/band/brain), zero band margins */#ck-sp .problem{background:#fff!important;padding:clamp(24px,3.5vw,56px) 0 0!important;margin:0!important}#ck-sp .problem .card{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;box-shadow:none!important}#ck-sp .proof{background:#0C1D38!important;padding:clamp(72px,8.5vw,130px) 0!important;margin:0!important}#ck-sp .proof .card{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;box-shadow:none!important}#ck-sp .proof .q .lbl{color:rgba(255,255,255,.55)!important}#ck-sp .proof .q b{color:#fff!important}#ck-sp .proof .q b i{color:color-mix(in srgb,var(--pac,#0071E3) 42%,#fff)!important}#ck-sp .ps .v{color:color-mix(in srgb,var(--pac,#0071E3) 38%,#fff)!important}#ck-sp .ps .k{color:rgba(255,255,255,.72)!important}#ck-sp .proof-stats{border-top-color:rgba(255,255,255,.14)!important}#ck-sp .brain{background:#0C1D38!important;padding:clamp(72px,8.5vw,130px) 0!important;margin:0!important}#ck-sp .brain .card{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important}#ck-sp .band{background:#0C1D38!important;padding:clamp(64px,7.5vw,110px) 0!important;margin:0!important}#ck-sp .band .card{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important}#ck-sp .bs{border-left-color:rgba(255,255,255,.2)!important}#ck-sp .band+.proof,#ck-sp .brain+.proof,#ck-sp .proof+.band{padding-top:0!important}";
     document.head.appendChild(gs);
@@ -78,21 +132,21 @@
     if (sol && !embedNav.querySelector('.nav-drop-btn-solutions')) {
       var drop = document.createElement('div');
       drop.className = 'nav-drop';
-      drop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-solutions">Solutions' + CHEV + '</button><div class="nav-drop-menu"><div class="nav-drop-in">' + solLinks + '</div></div>';
+      drop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-solutions">Solutions' + CHEV + '</button><div class="nav-drop-menu"><div class="nav-drop-in">' + solMenu + '</div></div>';
       sol.replaceWith(drop);
     }
     var plat = embedNav.querySelector('.nav-links a[href="/#platform"], .nav-links a[href="#platform"]');
     if (plat && !embedNav.querySelector('.nav-drop-btn-platform')) {
       var pdrop = document.createElement('div');
       pdrop.className = 'nav-drop';
-      pdrop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-platform">Platform' + CHEV + '</button><div class="nav-drop-menu"><div class="nav-drop-in">' + platLinks + '</div></div>';
+      pdrop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-platform">Platform' + CHEV + '</button><div class="nav-drop-menu"><div class="nav-drop-in">' + platMenu + '</div></div>';
       plat.replaceWith(pdrop);
     }
     var navM = embedNav.querySelector('.nav-m');
     if (navM && !navM.querySelector('details')) {
       var mFoot = navM.querySelector('.nav-m-foot');
       navM.innerHTML =
-        '<details><summary>Platform' + CHEV + '</summary><div>' + platLinks + '</div></details>' +
+        '<details><summary>Platform' + CHEV + '</summary><div>' + platMenu + '</div></details>' +
         '<details><summary>Solutions' + CHEV + '</summary><div>' + solLinks + '</div></details>' +
         '<a href="/#security">Security</a>' +
         '<details><summary>Company' + CHEV + '</summary><div>' + COMPANY_LINKS + '</div></details>';
@@ -185,11 +239,11 @@
   var nav =
     '<div class="ck-nav"><input type="checkbox" id="ckTgl" class="ck-tgl"><div class="ck-nav-in">' +
     '<a class="ck-nav-logo" href="' + HOME + '"><img src="' + LOGO + '" alt="Clinekt Health"></a>' +
-    '<div class="ck-links"><div class="ck-drop"><button type="button" class="ck-drop-btn">Platform</button><div class="ck-drop-menu">' + platLinks + '</div></div><div class="ck-drop"><button type="button" class="ck-drop-btn">Solutions</button><div class="ck-drop-menu">' + solLinks + '</div></div><a href="/#security">Security</a><div class="ck-drop"><button type="button" class="ck-drop-btn">Company</button><div class="ck-drop-menu"><a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a></div></div></div>' +
+    '<div class="ck-links"><div class="ck-drop"><button type="button" class="ck-drop-btn">Platform' + CHEV + '</button><div class="ck-drop-menu">' + platMenu + '</div></div><div class="ck-drop"><button type="button" class="ck-drop-btn">Solutions' + CHEV + '</button><div class="ck-drop-menu">' + solMenu + '</div></div><a href="/#security">Security</a><div class="ck-drop"><button type="button" class="ck-drop-btn">Company' + CHEV + '</button><div class="ck-drop-menu">' + compMenu + '</div></div></div>' +
     '<div class="ck-cta"><a class="ck-signin" href="https://portal.clinekthealth.com/login">Sign in</a><a class="ck-btn" href="' + DEMO + '">Book a Demo</a><label for="ckTgl" class="ck-burger" aria-label="Menu"><span></span><span></span><span></span></label></div>' +
     '</div>' +
     '<div class="ck-m">' +
-    '<details><summary>Platform' + CHEV + '</summary><div>' + platLinks + '</div></details>' +
+    '<details><summary>Platform' + CHEV + '</summary><div>' + platMenu + '</div></details>' +
     '<details><summary>Solutions' + CHEV + '</summary><div>' + solLinks + '</div></details>' +
     '<a href="/#security">Security</a>' +
     '<details><summary>Company' + CHEV + '</summary><div>' + COMPANY_LINKS + '</div></details>' +
@@ -201,7 +255,7 @@
     '<div class="ck-foot-top">' +
     '<div class="ck-brand"><img src="' + LOGO + '" alt="Clinekt Health"><p>HIPAA-compliant AI agents that activate patients — new, dormant, and net-new — around the clock.</p></div>' +
     '<div><h4>Platform</h4><ul>' +
-    '<li><a href="/platform">Platform overview</a></li>' +
+    '<li><a href="/platform">Platform Overview</a></li>' +
     '<li><a href="/inbound-agent">Inbound Agent</a></li>' +
     '<li><a href="/recall-agent">Recall Agent</a></li>' +
     '<li><a href="/outbound-agent">Outbound Agent</a></li>' +
@@ -348,7 +402,7 @@
       }
       if (!ul.querySelector('a[href="/platform"]')) {
         var li2 = document.createElement('li');
-        li2.innerHTML = '<a href="/platform">Platform overview</a>';
+        li2.innerHTML = '<a href="/platform">Platform Overview</a>';
         ul.insertBefore(li2, ul.firstChild);
       }
     });
