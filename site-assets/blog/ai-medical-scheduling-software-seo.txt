@@ -1,0 +1,55 @@
+AI MEDICAL SCHEDULING SOFTWARE: WHAT TO LOOK FOR BEFORE YOU BUY - SEO/AEO FIELDS
+======================================================================
+
+Slug:            ai-medical-scheduling-software
+URL:             https://clinekthealth.com/blog/ai-medical-scheduling-software
+
+Title tag (49 chars):
+AI Medical Scheduling Software: Buyer's Checklist
+
+Meta description (127 chars):
+What AI medical scheduling software must do before you buy it: EHR write-back, compliance, specialty logic, and proof it works.
+
+Short description: AI medical scheduling software, evaluated: the six things it must do, the compliance non-negotiables, and the proof to demand before you sign.
+Published:         2026-08-10 (item-level publish)
+
+Primary query:     ai medical scheduling software
+Secondary queries:
+  - ai medical scheduling
+  - ai medical scheduling assistant
+  - ai scheduling healthcare
+  - ai in medical scheduling software market
+
+Internal links (per spec):
+  - /blog/how-ai-patient-scheduling-works (sibling explainer, priority 1)
+  - /blog/what-does-an-ai-front-desk-do (sibling, priority 2)
+  - /blog/ai-front-desk-for-orthopedic-practices (sibling, priority 3)
+  - /case-studies/baldwin-bone-joint-ai-case-study
+  - /book-a-demo
+  - /leakage-calculator
+
+Angle: demand-intel work order (flags/2026-08-10.md, "demand-intel work order to blog-engine"),
+target query "ai medical scheduling software" (cluster: ai medical scheduling / ai medical
+scheduling assistant / ai scheduling healthcare). SERP for this commercial query is a fragmented
+buyer's-guide/listicle field (Veradigm Predictive Scheduler, OmniMD, Bland AI, a PMC academic
+piece, Cleveland Clinic, DoctorConnect); Clinekt is absent from both organic and paid. The
+existing sibling post /blog/how-ai-patient-scheduling-works (published 2026-07-16) covers the
+topic in explainer/how-it-works form and was NOT ranking on this commercial query per the
+demand-intel SERP check. Rather than force the explainer post to double as a buyer's guide, this
+is a distinct comparison/evaluation-criteria asset (same pattern as the referral-management-
+software post running alongside the leakage/referral explainer cluster) targeting the buying-
+decision intent the SERP winners already serve. Strategic-partner naming rule (RULES 2026-07-22)
+observed: no competitor vendor is named in this piece, including Assort Health, which surfaced in
+research as a paid-ad competitor on adjacent buyer's-guide queries.
+
+Stats used (verified):
+  - Mordor Intelligence, 2026: AI-in-patient-scheduling market $79.8M (2025) -> $99.02M (2026) ->
+    $311.22M (2031), 25.74% CAGR. https://www.mordorintelligence.com/industry-reports/ai-in-patient-scheduling-software-market
+  - University of Minnesota School of Public Health / Health Affairs, Jan 2025: 65% of 2,425 US
+    hospitals surveyed report using AI-assisted predictive tools, most often for high-risk
+    outpatient ID and scheduling support. https://www.sph.umn.edu/news/new-study-analyzes-hospitals-use-of-ai-assisted-predictive-tools-for-accuracy-and-biases/
+  - MGMA, 2025: 71% of practices report fewer than 25% of patients self-schedule digitally; 8% see
+    a majority. https://www.mgma.com/mgma-stat/meeting-pressure-on-patient-digital-self-scheduling
+  - Baldwin Bone & Joint (gbrain results/baldwin-bone-and-joint, founder-verified 2026-07-04
+    canon): 263 qualified surgical leads / 159 appointments booked / 60% booking rate, single
+    quarter. No dollar figures used per voice rule.
