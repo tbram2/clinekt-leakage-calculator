@@ -165,6 +165,13 @@ h2{font-size:clamp(36px,4.6vw,62px);letter-spacing:var(--ls-display);line-height
 .stage-frame{display:grid;perspective:1200px}
 .offer{grid-area:1/1;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,0.98fr);gap:clamp(40px,5vw,84px);align-items:center;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s var(--ease),visibility 0s .35s}
 .offer.active{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .3s var(--ease),visibility 0s}
+/* Stage docks under the section head instead of centering in 100vh, so head + tabs + panel share one fold.
+   Also shipped inline in the homepage ck-crit embed (2026-08-10) — keep the two in sync. */
+@media(min-width:1001px){
+.stage-sticky{justify-content:flex-start;padding-top:clamp(88px,10vh,132px)}
+.stage-prog{margin-bottom:clamp(18px,2.2vh,30px)}
+}
+#ckvh{scroll-margin-top:74px}
 
 
 /* Inbound/Existing/Outbound as the headline, with the offering as a sub-line */
