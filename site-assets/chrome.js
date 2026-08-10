@@ -167,6 +167,14 @@
       pdrop.innerHTML = '<button type="button" class="nav-drop-btn nav-drop-btn-platform">Platform' + CHEV + '</button><div class="nav-drop-menu"><div class="nav-drop-in">' + platMenu + '</div></div>';
       plat.replaceWith(pdrop);
     }
+    // The embed's static Company drop still carries the old bare-link panel, which the
+    // .nav-drop-in reset above renders as unstyled floating text. Swap in the same
+    // icon-row .ckdd menu the injected ck-nav uses so Company matches everywhere.
+    Array.prototype.forEach.call(embedNav.querySelectorAll('.nav-links .nav-drop-btn'), function (b) {
+      if (!/^\s*Company/.test(b.textContent)) return;
+      var cin = b.parentElement.querySelector('.nav-drop-in');
+      if (cin && !cin.querySelector('.ckdd')) cin.innerHTML = compMenu;
+    });
     var navM = embedNav.querySelector('.nav-m');
     if (navM && !navM.querySelector('details')) {
       var mFoot = navM.querySelector('.nav-m-foot');
