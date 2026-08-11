@@ -1,0 +1,34 @@
+META TITLE (58 chars):
+After-Hours Answering Service Cost: What to Expect
+
+META DESCRIPTION (152 chars):
+What a traditional after-hours answering service costs vs AI coverage, and how to calculate the real cost of switching for your practice.
+
+TARGET QUERIES (pain-signal-lexicon.md theme 16, "after hours / 24-7 coverage"; self-selected topic this run, no open work order addressed to blog-engine found for a new article):
+- after hours answering service cost (primary; the confirmed real switching-moment query per the lexicon's 2026-07-26 and 2026-07-31 autocomplete measurements, both controlled same-session against a healthy stem)
+- 24 hour answering service cost
+- how much does an answering service cost
+- after hours answering services for medical offices
+- ai after hours coverage cost
+
+PERSONA: ortho / OMFS / oral-surgery practice administrator deciding whether to keep a legacy human after-hours answering service or switch to AI coverage for a rotating surgeon on-call schedule (skew per lexicon theme 16: "OMFS (surgeon on-call culture) + general")
+
+WHY THIS TOPIC, NOT WO-1: flags/2026-08-09.md WO-1 addressed to blog-engine asks for a title/meta rewrite on the EXISTING /blog/referral-management-software post (impression spike, 0% CTR), not a new article; the 2026-08-11 pain-signal-lexicon Section 2 entries are both confirmatory synonym data on the already-executing referral-management-software cluster, explicitly "not a new gap" per the 2026-08-07 precedent. No open work order requests a NEW article this run. Per the playbook's own fallback criteria, chose the lexicon's own explicit standing recommendation ("treat 'after hours answering service cost' as the real switching query going forward," theme 16, first made 2026-07-26 and reconfirmed 2026-07-31) as the highest-confidence unclaimed topic. WO-1's title/meta ask on referral-management-software is executed this run via the single permitted cross-link edit (see below), since referral-management-software is not topically close enough to this new article to serve as its natural interlink target, but the run still owes the WO-1 fix; see run notes for the alternate close-out path.
+
+INTERLINKS:
+- /blog/after-hours-patient-booking (43%/14% overnight stat source; natural sibling on after-hours demand)
+- /blog/dental-ai-answering-service (dental/OMFS what-it-should-do companion; this piece is the cost/switching-decision companion)
+- /blog/what-does-an-ai-front-desk-do (Inbound agent product mention)
+- /blog/are-ai-receptionists-hipaa-compliant (FAQ HIPAA answer)
+- /leakage-calculator + /book-a-demo (CTAs)
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures anywhere; two third-party dollar-figure sources used with named source + month/year: Anytime Telecare (2026 pricing guide, legacy answering service costs) and Gabbyville (June 2026 cost comparison, AI vs human pricing), both fetched live via WebFetch this run, not taken on a secondary source's word
+- Zocdoc 2025 Annual Report stat (43% after-hours, 14% overnight) reused from the already-published /blog/after-hours-patient-booking post, same attribution carried forward
+- Clinekt's own 82% after-hours-attempt figure is aggregate deployment data (gbrain results/_overview canon: "82% of patients try to book outside office hours"), not a single-customer number
+- Baldwin canon verified against gbrain results/_overview (VERIFIED-CANON) same session: 263 qualified surgical leads / 159 appointments / 60% booking rate, last quarter, framed as the whole system's result (not after-hours-specific)
+- No other customer named or quantified; no competitor vendor named in body copy
+- No em dashes (checked, zero); no tables in body; no PHI
+- Positioning: patient activation, Inbound agent named for after-hours call handling, Recall and Outbound referenced once each near the close; never "chatbot"
+- Anti-slop pass run against policies/no-ai-slop/SKILL.md before publish: found and fixed one binary-contrast construction in the Key Takeaways list ("The choice is not answering service versus AI. It is..."); no colon-reveal, no weasel attribution, no summary-recap ending found; checked against eval.md after the fix
+- Standard card thumbnail only (clinekt-blog-thumb.svg, fileId 6a5fcb9af9a5cd0bb02b1e2b) per the 2026-07-27 imagery override; no hero generated
