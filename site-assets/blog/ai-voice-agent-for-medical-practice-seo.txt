@@ -1,0 +1,71 @@
+AI VOICE AGENT FOR A MEDICAL PRACTICE: WHAT TO LOOK FOR BEFORE YOU BUY - SEO/AEO FIELDS
+======================================================================
+
+Slug:            ai-voice-agent-for-medical-practice
+URL:             https://clinekthealth.com/blog/ai-voice-agent-for-medical-practice
+
+Title tag (57 chars):
+AI Voice Agent for a Medical Practice: Buyer's Checklist
+
+Meta description (149 chars):
+What an AI voice agent for a medical practice must do before you buy it: call resolution, after-hours coverage, specialty routing, and proof it works.
+
+Short description: An AI voice agent buying checklist: what to test on a hard call, the after-hours math, and the specialty routing logic generic vendors miss.
+Published:         2026-08-12 (item-level publish)
+
+Primary query:     ai voice agent healthcare
+Secondary queries:
+  - ai voice agent for healthcare
+  - ai voice agent for dental clinics
+  - ai phone agent medical
+  - voice ai for healthcare
+
+Internal links (per spec):
+  - /blog/how-ai-patient-scheduling-works (sibling explainer/taxonomy)
+  - /blog/ai-medical-scheduling-software (sibling buying-checklist, broader category)
+  - /blog/ai-front-desk-for-orthopedic-practices (specialty call-taxonomy deep dive; cross-link target this run)
+  - /case-studies/baldwin-bone-joint-ai-case-study
+  - /book-a-demo
+  - /leakage-calculator
+
+Angle: self-selected from pain-signal-lexicon theme 8 ("AI voice agent / voice AI for healthcare").
+Theme 8's 2026-07-30 autocomplete measurement found exactly two clean rungs of real search demand,
+"ai voice agent for healthcare" and "ai voice agent for dental clinics" (one rung shallower than
+the receptionist ladder; the bare "orthopedic"-qualified form returns zero demand per the 2026-07-26
+finding that ortho front-office search does not exist in Google's suggestion index). This piece
+targets the winnable unqualified rung while loading the body with ortho-specific operational
+vocabulary (subspecialty routing, post-op triage, same-day surgical windows) captured in the
+lexicon's 2026-07-24 ortho-vocabulary note, so it answers the buying-decision intent for both the
+dental/general-medical searcher (demand-capture) and an ortho buyer arriving via referral or the
+sales conversation (demand-creation), without targeting a zero-demand SEO head term.
+
+Also responds to the WORK ORDER — to marketing-retro (issued by competitor-watch, flags/2026-08-07.md):
+Assort Health shipped a dedicated orthopedics acquisition motion (landing page, "7 Best AI Voice
+Agents for Orthopedic Clinics" listicle, four named ortho customers with dollar-figure ROI claims)
+onto Clinekt's own vertical; the ask was to weight blog-engine's next targets toward ortho-ROI/
+evaluation-criteria content before Assort's page ranks further. This piece is an evaluation-criteria
+buyer's guide covering the exact ortho operational ground (subspecialty routing, post-op triage,
+same-day windows) Assort's page sells against, without naming any competitor vendor (Assort Health
+included, strategic-partner rule) and without using dollar figures or customer names for Clinekt's
+own results (customer-identity and no-dollar-figures rules) — Baldwin proof stays in the approved
+qualified/booking-rate form only.
+
+No competitor vendor named anywhere in the piece, including Assort Health (strategic-partner rule,
+RULES 2026-07-22) and Transform9/IntelePeer/other named battlecard entrants that surfaced in
+research on this exact query cluster.
+
+Stats used (verified):
+  - Patient Prism, 2026 (published 2026-07-13): 31% of patient inquiries never reach a live agent
+    (analysis of 8,280 dental and DSO locations); 60%+ of queued callers abandon after one minute,
+    90%+ by five minutes. Fetched live: https://www.patientprism.com/blog/healthcare-call-abandonment-rate/
+  - NextPhone, 2026 (published 2026-05-28): 28.5% of calls arrive outside standard business hours
+    (analysis of 1,446,980 business calls across 2,074 businesses). Fetched live:
+    https://www.getnextphone.com/blog/ai-receptionist-statistics
+  - MGMA Stat, 2025 (May 6, 2025 poll, 420 applicable responses): 47% of practice leaders name
+    medical assistants their hardest staff role to recruit, ahead of nurses (15%), billers (10%),
+    coders (9%). Fetched live: https://www.mgma.com/mgma-stat/why-medical-assistants-are-still-tougher-to-hire-today-than-nurses-coders-and-other-medical-practice-staff
+  - Clinekt after-hours canon (gbrain results/_overview, VERIFIED-CANON): 82% of patients try to
+    book care outside office hours (website figure; reused, already-verified canon, not a new claim).
+  - Baldwin Bone & Joint (gbrain results/_overview, founder-verified canon): 263 qualified surgical
+    leads / 159 appointments booked / 60% booking rate, single quarter. No dollar figures used per
+    the no-Clinekt-dollar-figures voice rule; no other customer named or numbered.
