@@ -1,0 +1,33 @@
+META TITLE (52 chars):
+AI Receptionist for a Medical Practice: Buying Guide
+
+META DESCRIPTION (120 chars):
+What an AI receptionist should handle at a medical or dental office, and seven questions to ask a vendor before you buy.
+
+SLUG:
+ai-receptionist-for-medical-practice
+
+TARGET QUERIES:
+- ai receptionist for medical office (primary, autocomplete-confirmed, pain-signal-lexicon theme 1, deepest vertical rung)
+- ai receptionist for medical practice
+- ai receptionist for dental office (secondary, dental section)
+- ai for medical office
+
+RATIONALE:
+Pain-signal-lexicon theme 1 identifies "ai receptionist for medical office" and "ai receptionist for
+dental office" as the deepest confirmed vertical rungs on the AI-receptionist autocomplete ladder,
+clean commercial intent, uncontaminated. No existing Clinekt post targets "AI receptionist" as its
+own evaluation/buying-guide category: what-does-an-ai-front-desk-do covers the broader "front desk"
+noun and capability matrix, how-much-does-an-ai-receptionist-cost covers pricing only, and
+are-ai-receptionists-hipaa-compliant covers compliance only. This post fills the missing
+evaluation-criteria angle for the receptionist noun specifically, following the same
+differentiate-by-category-noun pattern as ai-medical-scheduling-software (8/10) and
+ai-voice-agent-for-medical-practice (8/12).
+
+INTERNAL LINKS USED:
+- /blog/what-does-an-ai-front-desk-do
+- /blog/ai-voice-agent-for-medical-practice
+- /blog/are-ai-receptionists-hipaa-compliant
+- /blog/ai-front-desk-for-dental-practices
+- /leakage-calculator
+- /book-a-demo

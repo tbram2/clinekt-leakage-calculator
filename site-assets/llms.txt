@@ -35,6 +35,7 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 
 ## Learn
 
+- [AI Receptionist for a Medical Practice: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-receptionist-for-medical-practice): What an AI receptionist should handle at a medical or dental office, seven questions to ask a vendor before you buy, and why partial coverage rarely reduces front-desk workload.
 - [AI Voice Agent for a Medical Practice: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-voice-agent-for-medical-practice): A buyer's checklist for the voice-agent category: what to test on a hard call, the after-hours math, and the specialty routing logic generic vendors miss.
 - [After-Hours Answering Service Cost: What to Expect Before You Switch to AI Coverage](https://clinekthealth.com/blog/after-hours-answering-service-cost): What a traditional after-hours answering service costs vs AI coverage, and how to calculate the real cost of switching for your practice.
 - [AI Medical Scheduling Software: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-medical-scheduling-software): A buyer's checklist for AI medical scheduling software: the EHR write-back test, the compliance non-negotiables, specialty scheduling logic, and the proof to demand before you sign.
