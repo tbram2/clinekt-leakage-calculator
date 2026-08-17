@@ -1,0 +1,80 @@
+AI VOICE AGENT FOR A DENTAL PRACTICE: WHAT TO LOOK FOR BEFORE YOU BUY - SEO/AEO FIELDS
+======================================================================
+
+Slug:            ai-voice-agent-for-dental-practice
+URL:             https://clinekthealth.com/blog/ai-voice-agent-for-dental-practice
+
+Title tag (58 chars):
+AI Voice Agent for a Dental Practice: Buyer's Checklist
+
+Meta description (154 chars):
+What an AI voice agent for a dental practice must do before you buy it: pain-call triage, recall handling, PMS write-back, and DSO consistency.
+
+Short description: A dental-specific voice-agent buying checklist: what to test on a pain call, a recall callback, and across DSO locations.
+Published:         2026-08-17 (item-level publish)
+
+Primary query:     ai voice agent for dental clinics
+Secondary queries:
+  - ai voice agent healthcare (dental-qualified)
+  - voice ai for dental clinics
+  - voice ai for dentists
+  - ai receptionist for dentists
+
+Internal links (per spec):
+  - /blog/ai-receptionist-for-dental-practice (sibling, channel-agnostic dental receptionist guide)
+  - /blog/ai-front-desk-for-dental-practices (call-taxonomy deep dive)
+  - /blog/dental-ai-answering-service (after-hours/emergency-triage angle)
+  - /blog/ai-voice-agent-for-medical-practice (sibling pair, medical version, cross-link target this run)
+  - /blog/how-much-does-an-ai-receptionist-cost
+  - /book-a-demo
+  - /leakage-calculator
+
+Angle: self-selected from pain-signal-lexicon theme 8 ("AI voice agent / voice AI for healthcare").
+Theme 8's 2026-07-30 autocomplete measurement found exactly two clean rungs of real search demand:
+"ai voice agent for healthcare" (targeted by the 2026-08-12 medical sibling post) and "ai voice agent
+for dental clinics" / "voice ai for dental clinics" (confirmed same sweep, never built). This piece
+fills the second, previously-unbuilt rung, completing the medical/dental sibling pair the same way
+the 8/13 -> 8/14 AI-receptionist posts did. Differentiated from three existing dental posts already
+in the corpus: ai-receptionist-for-dental-practice (8/14, channel-agnostic overview, PMS/DSO focus),
+dental-ai-answering-service (8/6, after-hours/emergency-triage focus), and
+ai-front-desk-for-dental-practices (8/5, seven-item call taxonomy) - this post is narrower, scoped
+specifically to the voice/phone channel and structured as a buying checklist mirroring the medical
+sibling's format, with dental-specific tests (hygiene recall callback recognition, PMS write-back on
+the call, DSO multi-location consistency) that none of the three existing dental posts frame as their
+central evaluation criteria.
+
+No work order addressed to blog-engine was open in flags/2026-08-16.md or flags/2026-08-17.md at
+topic-selection time; today's demand-intel flag (flags/2026-08-17.md Flag 1) concerns a ranking/
+indexing regression on the referral-management-software cluster, routed to overnight-ops/
+visibility-watch, not a new-article work order.
+
+No competitor vendor named anywhere in the piece, including Assort Health and athenahealth
+(strategic-partner rule).
+
+Stats used (verified, reused from already-independently-fetched canon in sibling posts):
+  - Peerlogic, 2026: 68% of new-patient dental calls answered, 42% of those convert to a booking.
+    Verified against primary page 2026-08-05 and reused 2026-08-14; not re-fetched this run, reused
+    as established canon per the corpus's own reuse pattern for verified stats.
+    https://www.peerlogic.com/post/turning-missed-dental-phone-calls-into-profit
+  - NextPhone, 2026 (published 2026-05-28): 28.5% of calls arrive outside standard business hours
+    (1,446,980 business calls, 2,074 businesses). Verified live 2026-08-12, reused.
+    https://www.getnextphone.com/blog/ai-receptionist-statistics
+  - MGMA Stat, 2025 (May 6, 2025 poll, 420 responses): 47% of practice leaders name medical
+    assistants their hardest staff role to recruit. Verified live 2026-08-12, reused.
+    https://www.mgma.com/mgma-stat/why-medical-assistants-are-still-tougher-to-hire-today-than-nurses-coders-and-other-medical-practice-staff
+  - L.E.K. Consulting: DSO-affiliated practices projected to grow from 23% (2022) to ~39% (2026) of
+    the U.S. dental market. Verified live 2026-08-14, reused. https://www.lek.com/insights/hea/us/ar/outlook-us-dental-industry-drilling-root-market
+  - Clinekt after-hours canon (gbrain results/_overview, VERIFIED-CANON): 82% of patients try to
+    book care outside office hours.
+  - Baldwin Bone & Joint (gbrain results/_overview, founder-verified canon, re-verified this run
+    2026-08-17): 263 qualified surgical leads / 159 appointments booked / 60% booking rate, single
+    quarter. Framed cross-specialty (no dental-specific Clinekt quantitative result exists in canon).
+    No dollar figures used per the no-Clinekt-dollar-figures rule; no other customer named or numbered.
+
+New WebSearch results this run (dental voice AI stats from ainora.lt, patientdesk.ai, tensorlinks.com,
+dsonews.ai, lumay.ai, cloudtalk.io, medixdental.com) were reviewed and REJECTED as sources: all are
+vendor-content-farm listicle/aggregator sites publishing unattributed round numbers ("25% of dental
+practices have deployed AI," "$2.1B revolution," "8-12% revenue uplift per location") with no primary
+study or named methodology behind them, the same pattern the corpus has repeatedly flagged and
+rejected (Peerlogic "4,280 calls, 38%" fabrication precedent, 2026-08-05 and 2026-08-14; ADA-HPI
+misattribution precedent, 2026-08-07). None used in the article.
