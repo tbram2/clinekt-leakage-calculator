@@ -1,0 +1,46 @@
+META TITLE (50 chars):
+AI Software for Orthopedic Practices: Buying Guide
+
+META DESCRIPTION (152 chars):
+What counts as AI software for an orthopedic practice, and six checks to run on any vendor covering front desk, scheduling, referrals, and reactivation.
+
+SLUG:
+ai-software-for-orthopedic-practices
+
+TARGET QUERIES:
+- ai software for orthopedic practices (primary, WO-A7 cluster term 1 of 5, Taylor 2026-08-17 standing work order, queue/2026-08-17/seo-audit-work-order.md)
+- orthopedic ai software
+- orthopedic patient engagement software (secondary, the one cluster phrase with real measured autocomplete signal per pain-signal-lexicon theme 0)
+- ai front desk for orthopedic practice (secondary synonym target per theme 0)
+
+RATIONALE:
+WO-A7 (queue/2026-08-17/seo-audit-work-order.md) assigns blog-engine's next 5 daily articles to
+the orthopedic-AI-software cluster, one term per day. Checked Clinekt Brain\marketing\blog-content-engine.md
+"Published by the engine" list: none of the 5 suggested angles had run yet, except "AI front desk for
+orthopedic practices" which already exists live (ai-front-desk-for-orthopedic-practices, published pre-log).
+This is the first genuinely unpublished term in the work order's ordered list: "AI software for orthopedic
+practices: what to look for." Per pain-signal-lexicon theme 0 (added by demand-intel 2026-08-18), this
+cluster currently has ZERO measured autocomplete/GSC demand (9 of 11 cluster phrases return empty
+autocomplete; the two that survive are "orthopedic patient engagement software" and "ai front desk for
+orthopedic practice," used here as on-page synonym targets). This is demand-creation/AEO content per
+Taylor's explicit standing directive to build the category ahead of measured demand, not a head-term SEO
+capture play. Scoped as the category-umbrella buying guide (four functions: front desk, scheduling,
+referral management, reactivation) that interlinks the four existing niche pieces per demand-intel's
+specified set, differentiating it from ai-front-desk-for-orthopedic-practices (which covers the call
+taxonomy in depth for one function only).
+
+INTERNAL LINKS USED:
+- /blog/ai-front-desk-for-orthopedic-practices
+- /blog/referral-management-software
+- /blog/best-patient-reactivation-software
+- /blog/what-is-patient-leakage
+- /blog/patient-engagement-software-for-specialty-practices
+- /orthopedics
+- /case-studies/baldwin-bone-joint-ai-case-study
+- /leakage-calculator
+- /book-a-demo
+
+NO DOLLAR FIGURES: per pain-signal-lexicon theme 0's explicit "no dollar figures on the site (immutable
+rule 3)" note attached to this specific work order, this article uses zero dollar figures anywhere,
+including third-party attributed ones (stricter than the playbook's general allowance for attributed
+third-party dollar stats).
