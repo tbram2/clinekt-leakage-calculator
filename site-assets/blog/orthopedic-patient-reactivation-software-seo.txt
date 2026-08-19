@@ -1,0 +1,61 @@
+META TITLE (54 chars):
+Orthopedic Patient Reactivation Software: Buying Guide
+
+META DESCRIPTION (138 chars):
+What orthopedic patient reactivation software needs to do beyond sending reminders, and the checks to run before you sign with any vendor.
+
+SLUG:
+orthopedic-patient-reactivation-software
+
+TARGET QUERIES:
+- orthopedic patient reactivation software (primary, WO-A7 cluster term 2 of 5, Taylor 2026-08-17 standing work order, queue/2026-08-17/seo-audit-work-order.md)
+- orthopedic patient reactivation
+- orthopedic AI software (secondary, standing primary cluster)
+- patient reactivation software orthopedic practice
+
+RATIONALE:
+WO-A7 assigns blog-engine's next 5 daily articles to the orthopedic-AI-software cluster, one term
+per day; article 1 of 5 ("AI software for orthopedic practices") published 2026-08-18. This is
+article 2 of 5, the next unpublished term in the work order's ordered list, "orthopedic patient
+reactivation software." Per pain-signal-lexicon theme 0 (demand-intel, verified 2026-08-18), this
+exact phrase currently returns EMPTY on Google autocomplete and has zero measured GSC demand (one
+adjacent GSC query, "orthopedic patient reactivation," logged 8.2-10.8 impressions / 0 clicks,
+unranked) -- this is demand-creation/AEO content per Taylor's standing directive to build the
+category ahead of measured demand, not head-term SEO capture. Live SERP check (2 WebSearches,
+2026-08-19) confirms Recall Health holds the closest name-collision on this exact phrase
+(recallhealth.com/service/orthopedics/, branded "Orthopedic Patient Reactivation Software"); Clinekt's
+existing generic best-patient-reactivation-software post and /orthopedics page also surface, but
+no piece targets this exact ortho+reactivation phrase as its primary keyword. Differentiates from
+the existing best-patient-reactivation-software.md (a generic, specialty-agnostic vendor comparison)
+by scoping specifically to orthopedic clinical use cases: post-op follow-up risk, TJR recall,
+imaging holds, and surgical-consult conversion, per the interlink set pain-signal-lexicon theme 0
+specifies for this cluster.
+
+INTERNAL LINKS USED:
+- /blog/ai-software-for-orthopedic-practices
+- /blog/best-patient-reactivation-software
+- /blog/what-is-patient-leakage
+- /blog/referral-management-software
+- /blog/patient-engagement-software-for-specialty-practices
+- /orthopedics
+- /case-studies/baldwin-bone-joint-ai-case-study
+- /leakage-calculator
+- /book-a-demo
+
+NO DOLLAR FIGURES: per pain-signal-lexicon theme 0's explicit "no dollar figures on the site
+(immutable rule 3)" note attached to this cluster, this article uses zero dollar figures anywhere,
+including third-party attributed ones.
+
+STATS USED (verified, named + hyperlinked):
+- Journal of Arthroplasty, June 2023: retrospective cohort of 6,776 primary TKA patients, >=3
+  no-shows associated with 1.5x odds of surgical site infection (OR 1.54, P=.002) vs always-attended
+  patients. Verified via WebSearch against arthroplastyjournal.org and sciencedirect.com listings
+  (title, patient count, OR, and June 2023 publication date cross-confirmed across both).
+- MGMA, May 2025 Stat poll of 357 practice leaders: 29% reported turnover increased YoY, reception/
+  medical-assistant roles named first among those seeing higher turnover. Reused from the already-
+  verified 2026-08-18 sibling post (ai-software-for-orthopedic-practices), same primary source URL.
+- 82% after-hours booking: gbrain results/_overview CANON ("website figure"), re-verified this
+  session.
+- Baldwin Bone & Joint 263 qualified surgical leads / 159 appointments / 60% booking rate, last
+  quarter: gbrain results/_overview CANON, re-verified this session, framed cross-specialty per
+  standing rule (pre-approved site canon).
