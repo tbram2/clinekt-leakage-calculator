@@ -35,6 +35,7 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 
 ## Learn
 
+- [Orthopedic Patient Engagement Software: What to Look for Before You Buy](https://clinekthealth.com/blog/orthopedic-patient-engagement-software): What orthopedic patient engagement software needs to cover beyond messaging and reminders (perioperative check-ins, referral intake, reactivation), peer-reviewed research on outcomes tied to structured engagement, and six checks to run before you buy.
 - [AI Software for Orthopedic Practices: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-software-for-orthopedic-practices): A category buying guide covering the four functions sold as orthopedic AI software (front desk, scheduling, referral management, reactivation), why practices are evaluating them as one system now, and six checks to run before you buy.
 - [Orthopedic Patient Reactivation Software: What to Look for Before You Buy](https://clinekthealth.com/blog/orthopedic-patient-reactivation-software): Why missed pre-op and post-op appointments carry clinical risk in orthopedics, what separates purpose-built orthopedic reactivation software from a generic recall tool, and six checks to run before you buy.
 - [AI Receptionist for a Dental Practice: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-receptionist-for-dental-practice): A dental-specific buying guide for AI receptionists: PMS integration checks, hygiene recall handling, the DSO multi-location angle, and where a human still belongs.
