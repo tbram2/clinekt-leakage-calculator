@@ -1,0 +1,68 @@
+SEO TITLE FIELD / <title> (53 chars):
+Orthopedic Referral Management Software: Buying Guide
+
+NAME / H1 (75 chars):
+Orthopedic Referral Management Software: What to Look for Before You Buy
+
+META / SHORT DESCRIPTION (135 chars):
+What orthopedic referral management software needs to do beyond faxing records, and the checks to run before you sign with any vendor.
+
+SLUG:
+orthopedic-referral-management-software
+
+TARGET QUERIES:
+- orthopedic referral management software (primary, WO-A7 cluster term 4 of 5, Taylor 2026-08-17 standing work order, queue/2026-08-17/seo-audit-work-order.md)
+- orthopedic AI software (secondary, standing primary cluster)
+- referral management software (secondary, existing generic sibling post)
+- orthopedic referral leakage
+
+RATIONALE:
+WO-A7 assigns blog-engine's next 5 daily articles to the orthopedic-AI-software cluster, one term
+per day. Three of five published as of this run: "AI software for orthopedic practices" (8/18),
+"orthopedic patient reactivation software" (8/19), "orthopedic patient engagement software" (8/20).
+Demand-intel's 8/20 and 8/21 daily pulses rechecked the two remaining queued terms, "orthopedic
+referral management software" and "orthopedic scheduling software with ai" -- both still confirmed
+EMPTY on Google autocomplete this run (8/21 recheck against a healthy "referral management software"
+control), i.e. demand-creation/AEO content per Taylor's standing directive, not head-term SEO
+capture. This is article 4 of 5, chosen as the natural companion to the existing generic
+/blog/referral-management-software post (published 2026-08-03), mirroring the pattern already used
+for reactivation and engagement: take an existing generic post and add the orthopedic-specific
+companion the cluster work order calls for. Live GSC pull this run (90-day query table) confirms
+zero orthopedic-modified referral query in the site's top rows; "healthcare referral management
+software" (41 impressions, pos 13.9) and "referral management system" (31 impressions, pos 9.7) are
+the closest adjacent signals, neither orthopedic-specific.
+
+INTERNAL LINKS USED:
+- /blog/referral-management-software (generic sibling, required back-link target for today's cross-link edit)
+- /blog/ai-software-for-orthopedic-practices
+- /blog/what-is-patient-leakage
+- /blog/orthopedic-patient-engagement-software
+- /blog/orthopedic-patient-reactivation-software
+- /orthopedics
+- /case-studies/baldwin-bone-joint-ai-case-study
+- /leakage-calculator
+- /book-a-demo
+
+NO DOLLAR FIGURES: per pain-signal-lexicon theme 0's explicit "no dollar figures on the site
+(immutable rule 3)" note attached to this cluster, this article uses zero dollar figures anywhere,
+including third-party attributed ones.
+
+STATS USED (verified via direct WebFetch of the primary source, not taken on a secondary source's word):
+- Health Services Insights, 2024: "The Referrer Matters. Musculoskeletal Surgical Conversion Rates:
+  A Systematic Review With Meta-Analysis," 28 studies, 5,358 patients. Pooled surgical conversion
+  rate: 23% all doctor referrals, 28% GP referrals, 61% physiotherapy-led screening, 70% sports
+  physician referrals. Verified live at https://pmc.ncbi.nlm.nih.gov/articles/PMC11613247/.
+- Western Journal of Emergency Medicine, 2025: "Implementation of a 3-Tier Priority System for
+  Emergency Department Patients' Follow-up in Orthopaedic Surgery." 856 total ED-to-orthopedics
+  referrals; scheduling completion 41.5% (163/393) pre-implementation vs 45.1% (209/463)
+  post-implementation. Verified live at https://pmc.ncbi.nlm.nih.gov/articles/PMC12342605/.
+- 82% after-hours booking: gbrain results/_overview CANON ("website figure") -- NOT used in this
+  article's final draft (cut during the write to keep the referral-specific stats section tight
+  and avoid repeating the same canon stat a third consecutive cluster article in a row); noted here
+  for the record only.
+- Baldwin Bone & Joint 263 qualified surgical leads / 159 appointments / 60% booking rate, last
+  quarter: gbrain results/_overview CANON, re-verified this session.
+
+ANTI-SLOP PASS: checked against policies/no-ai-slop/SKILL.md banned-word and pattern list before
+publish. Zero em dashes. No banned words. Two paragraphs end on "which is the point," matching the
+established house closing device already live on the 8/20 sibling post (orthopedic-patient-engagement-software) -- a deliberate site-voice consistency choice, not an unnoticed repetition.
