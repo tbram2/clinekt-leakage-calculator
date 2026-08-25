@@ -1,0 +1,6 @@
+meta title: Orthopedic Patient Leakage: Where It Happens and Fixes
+meta description: Where orthopedic patient leakage actually happens (no-shows, misrouted referrals, dormant patients) and how a surgical practice closes each gap.
+target queries: orthopedic patient leakage; patient leakage orthopedic practice; orthopedic referral leakage; orthopedic no-show rate; misdirected orthopedic referrals
+slug: orthopedic-patient-leakage
+cluster: orthopedic AI software (RULES 2026-08-17 primary target cluster, theme 0 term "orthopedic patient leakage")
+sibling pairing: how-to-reduce-patient-leakage (generic parent, cross-link target)
