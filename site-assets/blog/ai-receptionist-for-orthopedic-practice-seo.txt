@@ -1,0 +1,5 @@
+seo-title: AI Receptionist for an Orthopedic Practice: Buyer's Guide
+short-description: What an AI receptionist must handle in an orthopedic practice: subspecialty routing, post-op triage, referral calls, and what to test before buying.
+target queries: ai receptionist for orthopedic practice, orthopedic ai software, ai front desk for orthopedic practice, orthopedic patient engagement software, ai receptionist for medical office (sibling), orthopedic clinic ai front desk
+slug: ai-receptionist-for-orthopedic-practice
+date: 2026-08-26

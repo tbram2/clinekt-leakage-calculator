@@ -35,6 +35,7 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 
 ## Learn
 
+- [AI Receptionist for an Orthopedic Practice: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-receptionist-for-orthopedic-practice): What an AI receptionist must handle in an orthopedic practice (subspecialty routing, post-op triage, referral-call separation, workers' comp intake), peer-reviewed research on direct-to-surgeon call volume and post-op callback reduction, and six checks to run before you buy.
 - [Orthopedic Patient Leakage: Where It Happens and How to Stop It](https://clinekthealth.com/blog/orthopedic-patient-leakage): Where orthopedic patient leakage concentrates (missed calls, misrouted referrals, dormant post-op patients), peer-reviewed research on orthopedic no-show rates and referral misdirection, and how to stop each leak.
 - [Orthopedic AI Scheduling Software: What to Look for Before You Buy](https://clinekthealth.com/blog/orthopedic-ai-scheduling-software): Why orthopedic scheduling needs subspecialty routing and surgical block logic, peer-reviewed research on predicting surgical cancellations and case duration, and six checks to run before you buy.
 - [Orthopedic Referral Management Software: What to Look for Before You Buy](https://clinekthealth.com/blog/orthopedic-referral-management-software): Why orthopedic referrals need subspecialty-aware routing and imaging/prior-authorization tracking, peer-reviewed research on how referral source predicts surgical conversion rate, and six checks to run before you buy.
