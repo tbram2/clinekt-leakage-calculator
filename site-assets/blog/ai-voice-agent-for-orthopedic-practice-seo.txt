@@ -1,0 +1,98 @@
+AI VOICE AGENT FOR AN ORTHOPEDIC PRACTICE: WHAT TO LOOK FOR BEFORE YOU BUY - SEO/AEO FIELDS
+======================================================================
+
+Slug:            ai-voice-agent-for-orthopedic-practice
+URL:             https://clinekthealth.com/blog/ai-voice-agent-for-orthopedic-practice
+
+Title tag / seo-title (60 chars):
+AI Voice Agent for an Orthopedic Practice: Buyer's Checklist
+
+Meta description (151 chars):
+What an AI voice agent for an orthopedic practice must do before you buy it: call escalation, post-op triage, surgical scheduling, and proof it works.
+
+Short description (148 chars): A voice-agent buying checklist for orthopedic practices: what to test on a post-op call, an ambiguous injury call, and same-day surgical scheduling.
+Published:         2026-08-27 (item-level publish)
+
+Primary query:     ai voice agent for orthopedic practice
+Secondary queries (pain-signal-lexicon theme 0 cluster, on-page synonym targets):
+  - ai voice agent healthcare (orthopedic-qualified)
+  - ai voice agent for orthopedic clinics
+  - orthopedic ai software
+  - orthopedic patient engagement software
+
+Internal links (per spec):
+  - /blog/ai-receptionist-for-orthopedic-practice (sibling, channel-agnostic orthopedic receptionist guide, cross-link target this run)
+  - /blog/ai-front-desk-for-orthopedic-practices (call-taxonomy deep dive)
+  - /blog/ai-voice-agent-for-medical-practice (sibling pair, medical version)
+  - /blog/ai-voice-agent-for-dental-practice (sibling pair, dental version)
+  - /blog/orthopedic-ai-scheduling-software
+  - /blog/orthopedic-patient-leakage
+  - /case-studies/baldwin-bone-joint-ai-case-study
+  - /book-a-demo
+  - /leakage-calculator
+
+Angle: self-selected (no work order addressed to blog-engine open in flags/2026-08-26.md or
+flags/2026-08-27.md at topic-selection time; today's demand-intel daily pulse, run earlier the same
+5:15 AM batch, logged "no new work order issued to blog-engine" for a sixth straight day). WO-A7 (the
+standing 5-article orthopedic-AI-software cluster work order) closed 2026-08-24; the lexicon's theme 0
+names eleven cluster phrases, of which "AI voice agent for orthopedic practice" is not itself one of
+the eleven, but it completes an already-established sibling-completion pattern this engine has run
+repeatedly on the primary orthopedic-AI-software cluster (override 7): the AI-receptionist trio
+(medical 8/13, dental 8/14, orthopedic 8/26) and the AI-scheduling trio (medical 8/10, orthopedic 8/24)
+are both already complete, but the AI-voice-agent trio had only medical (8/12) and dental (8/17) built,
+leaving orthopedic as the one open slot in that specific pattern. Confirmed via a local file-scan of
+site-assets/blog/ that no ai-voice-agent-for-orthopedic-practice file or slug existed. Two WebSearches
+this run confirmed the competitive landscape already logged in pain-signal-lexicon theme 8: Assort
+Health dominates with a dedicated /orthopedic-voice-ai landing page, a self-authored "7 Best AI Voice
+Agents for Orthopedic Clinics" listicle, and named-customer dollar-figure ROI claims (Michigan
+Orthopedic Surgeons, "$2.3 million in additional revenue") that Clinekt cannot and does not match per
+the no-dollar-figures and customer-identity rules; this piece is an evaluation-criteria buyer's guide
+covering the same ortho operational ground (subspecialty routing, post-op triage, same-day surgical
+windows, workers' comp intake) without naming any competitor vendor.
+
+Differentiated from four existing orthopedic posts already in the corpus: ai-receptionist-for-
+orthopedic-practice (8/26, channel-agnostic receptionist buying guide), ai-front-desk-for-orthopedic-
+practices (call-taxonomy deep dive), orthopedic-ai-scheduling-software (8/24, scheduling logic), and
+ai-software-for-orthopedic-practices (8/18, umbrella four-function buying guide) - none of the four
+frames the voice/phone channel specifically as its own central buying criterion, mirroring exactly how
+the 8/17 dental voice-agent post differentiated from three existing dental posts.
+
+No competitor vendor named anywhere in the piece, including Assort Health and athenahealth
+(strategic-partner rule). Zero dollar figures anywhere, per lexicon theme 0's explicit no-dollar-
+figures note attached to the orthopedic-AI-software cluster.
+
+Stats used (verified):
+  - Ozdag, Makar, Kolessar, "Postoperative Communication Volume Following Total Joint Arthroplasty Can
+    Be a Precursor for Emergency Department Visits," Arthroplasty Today, 2024 (10,908 patients /
+    12,300 robotic + manual procedures, 2017-2022): each additional postoperative phone call
+    associated with ~19% increased odds of an ED visit (OR 1.144, manual, 95% CI 1.097-1.193, P<.001;
+    OR 1.185, robotic, 95% CI 1.087-1.291, P<.001); electronic text messages showed no such
+    association. Overall ED visit rate 7.4% (912/12,300). Fetched live this run, NEW to the corpus.
+    https://pmc.ncbi.nlm.nih.gov/articles/PMC11058096/
+  - Tideman, Hadley, Campbell, Templeton (University of Kansas Medical Center), "Afterhours patient
+    phone calls: a quality improvement study," Annals of Medicine and Surgery, 2023 (510 patient
+    phone calls, 553 topics, 82 on-call shifts, academic orthopedic surgery program, May 2020-January
+    2021): average 8.6 patient calls per shift; pain (40.3%), prescription/pharmacy (15.6%), and
+    wound/incision concerns (10.1%) together over half of calls; only 4.1% of calls resulted in an ED
+    visit. Fetched live this run, NEW to the corpus.
+    https://pmc.ncbi.nlm.nih.gov/articles/PMC10129183/
+  - NextPhone, 2026 (published 2026-05-28): 28.5% of calls arrive outside standard business hours
+    (analysis of 1,446,980 business calls across 2,074 businesses). Reused from already-verified
+    sibling-post canon (8/12, 8/17), not re-fetched this run.
+    https://www.getnextphone.com/blog/ai-receptionist-statistics
+  - MGMA Stat, 2025 (May 6, 2025 poll, 420 applicable responses): 47% of practice leaders name
+    medical assistants their hardest staff role to recruit. Reused from already-verified sibling-post
+    canon, not re-fetched this run.
+    https://www.mgma.com/mgma-stat/why-medical-assistants-are-still-tougher-to-hire-today-than-nurses-coders-and-other-medical-practice-staff
+  - Clinekt after-hours canon (gbrain results/_overview, VERIFIED-CANON): 82% of patients try to
+    book care outside office hours (website figure; reused, already-verified canon, not a new claim).
+  - Baldwin Bone & Joint (gbrain results/_overview, founder-verified canon, re-verified this run
+    2026-08-27): 263 qualified surgical leads / 159 appointments booked / 60% booking rate, single
+    quarter. No dollar figures used per the no-Clinekt-dollar-figures rule; no other customer named
+    or numbered.
+
+Deliberately not reused this run: the Rogero et al. (Cureus, 2020, 45.2% non-urgent surgeon-cell
+calls) and Jensen et al. (Acta Orthopaedica, 2024, 2.3->0.5 post-op calls) stats used in yesterday's
+(8/26) ai-receptionist-for-orthopedic-practice sibling post, to avoid two consecutive orthopedic
+articles citing identical research; two fresh, independently WebFetch-verified orthopedic-specific
+stats (Ozdag et al. and Tideman et al. above) used instead.
