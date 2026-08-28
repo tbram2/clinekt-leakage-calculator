@@ -1,0 +1,89 @@
+AI ANSWERING SERVICE FOR AN ORTHOPEDIC PRACTICE: WHAT IT SHOULD ACTUALLY DO - SEO/AEO FIELDS
+======================================================================
+
+Slug:            ai-answering-service-for-orthopedic-practice
+URL:             https://clinekthealth.com/blog/ai-answering-service-for-orthopedic-practice
+
+Title tag / seo-title (46 chars):
+Orthopedic AI Answering Service: Buyer's Guide
+
+Meta description / short-description (150 chars):
+What an AI answering service should handle for an orthopedic practice: post-op triage, true emergencies, workers comp calls, and after-hours coverage.
+
+Published:        2026-08-28 (item-level publish)
+
+Primary query:     ai answering service for orthopedic practice
+Secondary queries (pain-signal-lexicon theme 0 cluster, on-page synonym targets):
+  - orthopedic practice answering service (already tracked as a secondary query on the ai-front-desk-for-orthopedic-practices sibling; this is the first dedicated page for it)
+  - orthopedic after hours answering service
+  - orthopedic AI software
+  - AI front desk for orthopedic practice
+
+Internal links (per spec):
+  - /blog/ai-front-desk-for-orthopedic-practices (daytime call-taxonomy sibling; cross-link edit added TO this new post this run)
+  - /blog/ai-receptionist-for-orthopedic-practice (channel-agnostic receptionist buyer's guide)
+  - /blog/ai-voice-agent-for-orthopedic-practice (voice-channel buyer's checklist)
+  - /blog/dental-ai-answering-service (format sibling, different specialty)
+  - /leakage-calculator, /book-a-demo (CTAs)
+
+Angle: self-selected (no work order addressed to blog-engine open in flags/2026-08-27.md or
+flags/2026-08-28.md at topic-selection time; today's demand-intel daily pulse, 3:15 AM CT batch,
+logged "No new work order issued to blog-engine" — "orthopedic patient intake software" flagged as
+close to a content-gap bar but explicitly not yet actionable, "next week's reading decides"). WO-A7
+(the standing 5-article orthopedic-AI-software cluster work order) closed 2026-08-24; all eleven named
+cluster phrases now have a dedicated orthopedic post. Topic falls to the established sibling-completion
+pattern this engine has run repeatedly since 8/25: dental-ai-answering-service (published 8/6) has no
+orthopedic counterpart, despite the AI-receptionist, AI-voice-agent, and AI-scheduling trios all having
+been completed for orthopedic already (8/24, 8/26, 8/27). ai-front-desk-for-orthopedic-practices
+already lists "orthopedic practice answering service" as a tracked secondary query with no dedicated
+page serving it, confirming this is a real, previously-identified gap, not a manufactured one.
+
+Differentiated from four existing orthopedic posts already in the corpus: ai-front-desk-for-orthopedic-
+practices (daytime call taxonomy), ai-receptionist-for-orthopedic-practice (channel-agnostic evaluation),
+ai-voice-agent-for-orthopedic-practice (voice-channel evaluation), and orthopedic-ai-scheduling-software
+(scheduling logic) - none of the four frames after-hours/overflow coverage as its own central buying
+criterion, mirroring exactly how the 8/6 dental-ai-answering-service post differentiated from the
+existing dental posts.
+
+No competitor vendor named anywhere in the piece. Zero dollar figures for Clinekt; no Clinekt customer
+dollar amounts anywhere, per lexicon theme 0's explicit no-dollar-figures note attached to the
+orthopedic-AI-software cluster.
+
+Stats used (verified):
+  - Lam AD et al., "Surgeons May Be 'Touched Out': The Ever-Increasing Workload of Telephone Calls and
+    Electronic Messages in Total Joint Arthroplasty," Journal of Bone and Joint Surgery, published
+    2026-05-21 (DOI 10.2106/JBJS.25.01191; Rothman Orthopaedic Institute / Thomas Jefferson University):
+    277,729 telephone calls + 16,966 electronic messages reviewed across 45,216 primary THA/TKA patients,
+    2016-2022; each patient averaged 2.2 preop calls / 2.3 preop messages and 4.4 postop calls / 2.8
+    postop messages; total perioperative touchpoints rose 105% for TKA (8.7 to 17.8) and 121% for THA
+    (7.3 to 16.1) over the study period. NEW to the corpus, not used in any sibling post.
+    https://pubmed.ncbi.nlm.nih.gov/42166561/ (WebSearch cross-verified against two independent result
+    snippets carrying identical figures; PubMed/Ovid full text blocked by a cookie/paywall wall for
+    direct WebFetch verification, consistent with the PubMed-access limitation already logged on prior
+    runs).
+  - Hadeed MG et al. (University of Virginia Health System), "Factors Associated With Patient-Initiated
+    Telephone Calls After Orthopaedic Trauma Surgery," Journal of Orthopaedic Trauma, March 2017 (Vol.
+    31, Issue 3): retrospective review of 684 patients treated surgically at an academic Level-1 Trauma
+    Center in 2014; 29% (n=199) initiated a call within 14 days of discharge; top reasons pain control
+    (22%), bathing/dressing/wound questions (16%), discharge medication questions (8%); highest call
+    rates by procedure: tibial shaft IM nailing (36.0%), calcaneus ORIF (31.3%), cephalomedullary nailing
+    for proximal femur fractures (29.3%). NEW to the corpus, not used in any sibling post.
+    https://pubmed.ncbi.nlm.nih.gov/28009614/ (WebSearch cross-verified against two independent result
+    snippets carrying identical figures; LWW full text returned HTTP 402 paywall, OTA abstract page
+    returned HTTP 403, both blocking direct WebFetch verification).
+  - Clinekt after-hours canon (gbrain results/_overview, VERIFIED-CANON, re-verified this run): 82% of
+    patients try to book care outside office hours.
+  - Baldwin Bone & Joint (gbrain results/_overview, founder-verified canon, re-verified this run
+    2026-08-28): 263 qualified surgical leads / 159 appointments booked / 60% booking rate, single
+    quarter. No dollar figures used; no other customer named or numbered.
+
+Deliberately not reused this run: the Ozdag et al. (Arthroplasty Today, 2024, ~19% higher ED-visit odds
+per additional postop call) and Tideman et al. (Annals of Medicine and Surgery, 2023, 8.6 calls/shift)
+stats used in the 8/27 ai-voice-agent-for-orthopedic-practice sibling post, and the Rogero et al. (Cureus,
+2020) and Jensen et al. (Acta Orthopaedica, 2024) stats used in the 8/26 ai-receptionist-for-orthopedic-
+practice sibling post, to avoid three consecutive orthopedic articles citing overlapping research; two
+fresh stats (Lam et al. and Hadeed et al. above) used instead.
+
+Word count: ~1,670 (target 1,200-1,600; slightly over on the high side after two trim passes, judged
+acceptable given the six required content elements: triage-lane taxonomy, evaluation checklist, and
+differentiation section against four sibling posts all needed room).
