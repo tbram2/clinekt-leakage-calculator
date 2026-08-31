@@ -1,0 +1,90 @@
+ORTHOPEDIC PATIENT INTAKE SOFTWARE: WHAT TO LOOK FOR BEFORE YOU BUY - SEO/AEO FIELDS
+======================================================================
+
+Slug:            orthopedic-patient-intake-software
+URL:             https://clinekthealth.com/blog/orthopedic-patient-intake-software
+
+Title tag / seo-title (49 chars):
+Orthopedic Patient Intake Software: Buyer's Guide
+
+Meta description / short-description (146 chars):
+What orthopedic patient intake software should capture before the visit: injury details, subspecialty routing, insurance, and workers comp claims.
+
+Published:        2026-08-31 (item-level publish)
+
+Primary query:     orthopedic patient intake software
+Secondary queries (demand-intel work order, flags/2026-08-31.md, on-page synonym targets):
+  - orthopedic patient intake automation
+  - AI patient intake for orthopedic practices
+  - orthopedic referral and intake software
+
+Angle: WORK ORDER (demand-intel -> blog-engine, flags/2026-08-31.md, work order 1). GSC query-level
+pull (7-day) showed "orthopedic patient intake software" tripling for a third consecutive week: 7
+impressions (8/24 window) -> 22 (8/26) -> 30 (8/27) -> 52 (8/31), still 0 clicks, largest non-brand
+mover in the whole table. Autocomplete on the exact stem returns empty (control "referral management
+software" healthy same session) - demand-CREATION target per the standing primary-cluster pattern
+(pain-signal-lexicon theme 0), not head-term SEO capture. The only existing content reaching this
+query does so adjacently (Clinekt's own orthopedic-patient-engagement-software post ranked 4th of 6
+on a WebSearch-proxy check, sharing the page with athenahealth's dedicated intake post, Unlimited
+Systems' orthopedic front-desk/intake page, and two listicle sites). Nobody, including Clinekt, owns
+this query as its own head term. Titan Intake (an ICP-precise ortho/ENT/surgical-specialty referral
+and intake competitor) has not surfaced on this query in 7 consecutive clean baselines through 8/31.
+
+Live SERP re-check this run (WebSearch, 2026-08-31) confirmed the same fragmented landscape: athenahealth
+(partner, dedicated "Smart Orthopedic Patient Intake Software" blog post - referenced only as
+competitive-landscape color, never named or compared in the article body per the strategic-partner
+rule), Clearwave (check-in software), Unlimited Systems (orthopedic front-desk/intake page), Promptly
+(patient engagement platform), plus Clinekt's own two existing adjacent posts. Titan Intake not named
+in the article per the work order's framing (factual landscape reference only, not a comparison page);
+in fact Titan Intake was not mentioned in the article body at all, judged unnecessary for this angle.
+
+Differentiated from orthopedic-patient-engagement-software.md (full perioperative-timeline engagement
+system) and orthopedic-referral-management-software.md (what happens to a referral once it arrives) by
+scoping specifically to the INTAKE step itself: what a pre-visit form needs to capture (mechanism of
+injury, referring physician/imaging status, workers' comp claim fields, insurance/prior-auth pre-check,
+subspecialty-specific consent) that a generic new-patient packet does not ask for, and how that feeds
+both the referral and engagement systems downstream.
+
+No competitor vendor named or compared in the body (athenahealth and Titan Intake both excluded from
+body copy per the strategic-partner and comparison-scope rules). Zero dollar figures anywhere (immutable
+rule 3). No customer names/numbers beyond pre-approved Baldwin canon.
+
+Stats used (verified):
+  - Yedulla NR, Hester JD, Patel MM, Cross AG, Peterson EL, Makhni EC, "Pre-Visit Digital Messaging
+    Improves Patient-Reported Outcome Measure Participation Prior to the Orthopaedic Ambulatory Visit:
+    Results from a Double-Blinded, Prospective, Randomized Controlled Trial," Journal of Bone and Joint
+    Surgery, 2023;105(1):20-26, DOI 10.2106/JBJS.21.00506 (Henry Ford Health System, Detroit). Three
+    arms (control/no message, MyChart patient portal message, email message); portal-or-email pre-visit
+    reminder produced 49% pre-visit PROM/form completion vs 30% in the no-reminder control group.
+    Directly quoted from a secondary summary citing the primary JBJS abstract; primary PubMed/Ovid full
+    text blocked by paywall for direct WebFetch verification, cross-confirmed via two independent
+    search results (PubMed ID 36598473, journaloei.scholasticahq.com summary) carrying identical
+    figures and author list. NEW to the corpus, not used in any sibling post.
+  - Abe EA, Lizcano JD, Tarabichi S, Parikh N, Krueger CA, Courtney PM, "Prior Authorization Leads to
+    Administrative Burden and Delays in Treatment in Primary Total Joint Arthroplasty Patients," Journal
+    of Arthroplasty, 2024, PubMed ID 38493967 (data collected 2020-2023): 7,528 THA patients (56.4%) and
+    8,283 TKA patients (54%) required prior authorization; mean time to approval 26.3 +/- 34.6 days (THA)
+    and 33.7 +/- 41.5 days (TKA); most common denial reasons poor clinical documentation (25.9%) and lack
+    of coverage (25.9%) for THA, payer did not specify reason (46.1%) for TKA. Cross-confirmed via two
+    independent search results (PubMed abstract, ScienceDirect listing) carrying identical figures;
+    primary arthroplastyjournal.org / ScienceDirect full text blocked by 403 for direct WebFetch
+    verification. NEW to the corpus (a passing, non-statistical "prior authorization" mention exists in
+    orthopedic-referral-management-software.body.html; this is the first use of the actual Abe et al.
+    figures anywhere in the corpus, checked via grep before use).
+  - Clinekt after-hours canon (gbrain results/_overview, VERIFIED-CANON, re-verified this run): 82% of
+    patients try to book/complete intake outside office hours.
+  - Baldwin Bone & Joint (gbrain results/baldwin-bone-and-joint + results/_overview, founder-verified
+    canon, re-verified this run 2026-08-31): 263 qualified surgical leads / 159 appointments booked /
+    60% booking rate, single quarter. No dollar figures used; no other customer named or numbered.
+
+Internal links (5 pre-verified interlink targets from the work order, all confirmed live 200 OK this
+run via curl, plus CTAs):
+  - /blog/orthopedic-patient-engagement-software (buyer's guide currently reaching this query
+    adjacently per the work order; cross-link edit added back into it this run)
+  - /blog/orthopedic-referral-management-software (adjacent buyer motion)
+  - /blog/ai-software-for-orthopedic-practices (category parent hub)
+  - /blog/patient-engagement-software-for-specialty-practices (specialty-agnostic broader hub)
+  - /orthopedics (site page, primary cluster landing target)
+  - /leakage-calculator, /book-a-demo (CTAs)
+
+Word count: ~1,580 (target 1,200-1,600).
