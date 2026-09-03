@@ -1,0 +1,41 @@
+SLUG: crm-software-for-orthopedic-clinics
+URL: https://clinekthealth.com/blog/crm-software-for-orthopedic-clinics
+
+META TITLE (seo-title field, <=60 chars):
+CRM Software for Orthopedic Clinics: Buyer's Guide
+(50 chars)
+
+META DESCRIPTION (short-description field, <=155 chars):
+What good orthopedic CRM software tracks, why it alone won't stop patient leakage, and the checks to run before you buy or integrate one.
+(140 chars)
+
+NAME / H1:
+CRM Software for Orthopedic Clinics: What to Look for Before You Buy
+
+TARGET QUERIES (per demand-intel work order, flags/2026-09-02.md, 2026-09-03 5:15 AM run):
+- crm software for orthopedic clinics (primary; GSC 0 -> 24 impressions, 7-day pull 8/26-9/1 vs 8/19-8/25, second-largest new-query mover)
+- orthopedic crm software
+- patient management crm for orthopedic practices
+
+INTERNAL LINKS (7, within 3-6 target + CTAs):
+- /blog/ai-software-for-orthopedic-practices
+- /blog/orthopedic-patient-engagement-software
+- /blog/orthopedic-referral-management-software
+- /blog/orthopedic-patient-intake-software
+- /orthopedics
+- /leakage-calculator
+- /book-a-demo
+- /case-studies/baldwin-bone-joint-ai-case-study
+- /blog/what-is-patient-leakage
+
+EXTERNAL SOURCES (named, hyperlinked, verified live via WebFetch/WebSearch this run):
+- Definitive Healthcare, HospitalView data, accessed May 2026 - most common healthcare CRM systems by installations (Epic Cheers 428/23.6%, Salesforce Essentials 364/20.1%, Microsoft Dynamics 365 276/15.2%). https://www.definitivehc.com/resources/healthcare-insights/most-common-crms-by-total-installations
+- MGMA Stat, May 6 2025 poll, 420 respondents - 47% name medical assistants hardest role to recruit. https://www.mgma.com/mgma-stat/why-medical-assistants-are-still-tougher-to-hire-today-than-nurses-coders-and-other-medical-practice-staff
+
+CANON CLINEKT STATS USED (verified against gbrain results/_overview same session, 2026-09-03):
+- Baldwin Bone & Joint: 263 qualified surgical leads / 159 appointments / 60% booking rate, last quarter.
+
+POSITIONING NOTES:
+- Framed per demand-intel WO: CRM = record-keeping/patient-relationship layer; Clinekt's Inbound/Recall/Outbound agents act ON TOP of it, integration framing not head-term replacement (matches pain-signal-lexicon theme 18 precedent: "adjacent category we integrate with, not compete in").
+- No dollar figures for Clinekt. No competitor CRM vendor named as a comparison target (Epic/Salesforce/Microsoft named only as factual installation-share landscape color, not compared against Clinekt).
+- "Chatbot" never used for Clinekt's own product. No em dashes. No PHI.
