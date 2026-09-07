@@ -1,0 +1,17 @@
+META TITLE (<=60 chars):
+Orthopedic Patient No-Show Rates: Causes and Fixes
+
+META DESCRIPTION (<=155 chars):
+Orthopedic no-show rates run 7% to 25% depending on setting. See what two 2025-2026 studies found predicts a miss, and how to cut it without more staff.
+
+TARGET QUERIES:
+- orthopedic patient no-show rate
+- orthopedic no-show rate
+- orthopedic no-show statistics
+- orthopedic patient no-show prevention
+- ai patient activation no-shows
+- what is a normal no-show rate for orthopedic practice
+
+SLUG: orthopedic-patient-no-show-rates
+CATEGORY: Blog
+THUMBNAIL: standard card (clinekt-blog-thumb.svg), no custom hero per RULES 2026-07-27 / 2026-08-21 (D)
