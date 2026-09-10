@@ -1,0 +1,5 @@
+Meta title (seo-title, <=60 chars): Patient Reactivation Software for Dental Practices (50 chars)
+Meta description (short-description, <=155 chars): What dental patient reactivation software should do beyond reminders, and the checks to run before you sign with any vendor. (126 chars)
+Target queries: patient reactivation software for dental practices; dental patient reactivation software; best patient reactivation software for dental practices; win back inactive dental patients; dental patient reactivation
+Cluster: pain-signal-lexicon theme 10 (Reactivate lapsed/inactive patients) - dental skew explicitly named, endo/OMFS variants flagged as a thin gap. Sibling-completion pattern: parallel to orthopedic-patient-reactivation-software (2026-08-19); dental already has ai-front-desk, ai-receptionist, ai-voice-agent, dental-ai-answering-service, ai-software-for-dental-practices siblings but no dedicated reactivation buying guide.
+Date: 2026-09-10
