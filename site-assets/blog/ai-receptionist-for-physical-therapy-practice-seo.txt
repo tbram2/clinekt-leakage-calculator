@@ -1,0 +1,10 @@
+Meta title (55 chars): AI Receptionist for Physical Therapy Practices (2026)
+Meta description (152 chars): A buying guide for physical therapy practices evaluating an AI receptionist: EMR booking, authorized-visit questions, and where a human still belongs.
+Slug: ai-receptionist-for-physical-therapy-practice
+Target queries:
+- ai receptionist for physical therapy practice (primary, cluster d per RULES 2026-09-11 seo deep-dive work order)
+- ai front desk for physical therapy
+- physical therapy answering service
+- pt practice phone answering software
+Category: Blog (regular post, standard card thumbnail per RULES 2026-07-27)
+Fills: marketing/specialty-job-matrix.md — Physical Therapy x AI receptionist / after-hours cell (was blank)
