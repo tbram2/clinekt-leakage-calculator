@@ -44,7 +44,8 @@
     inbound: '<svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M16.5 6L9.5 13"/><path d="M9.5 8.5V13h4.5"/></svg>',
     recall: '<svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><circle cx="12" cy="12" r="1"/></svg>',
     outbound: '<svg viewBox="0 0 24 24"><path d="M3 17L9.5 10.5l4 4L21 7"/><path d="M14.5 7H21v6.5"/></svg>',
-    care: '<svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg>'
+    care: '<svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg>',
+    integrations: '<svg viewBox="0 0 24 24"><path d="M9 3v4M15 3v4M9 17v4M15 17v4"/><rect x="5" y="7" width="14" height="10" rx="2"/><path d="M3 10h2M3 14h2M19 10h2M19 14h2"/></svg>'
   };
   function ddRow(href, ic, pac, bg, label, desc) {
     return '<a class="ckdd-row" href="' + href + '" style="--ddpac:' + pac + ';--ddbg:' + bg + '"><span class="ckdd-ic">' + ic + '</span><span class="ckdd-tx"><b>' + label + '</b><small>' + desc + '</small></span></a>';
@@ -65,20 +66,17 @@
     ddRow('/patient-recall-reactivation', DDIC.recall, '#6F2DAA', '#F0EDF7', 'Recall &amp; reactivation', 'Bring dormant charts back') +
     ddRow('/marketing-roi', DDIC.outbound, '#119D57', '#E6F6EE', 'Marketing ROI', 'Prove spend, click to procedure') +
     ddRow('/care-agent', DDIC.care, '#C26A12', '#FDF1E5', 'Care between visits', 'Documented, billable care') +
+    ddRow('/integrations', DDIC.integrations, '#0071E3', '#E9F2FE', 'EHR Integrations', 'Works with the EHR you already run') +
     '</div>' +
     '<div class="ckdd-sp"><div class="ck-grp">By specialty</div><div class="ckdd-spec">' + links(SOLUTIONS) + '</div></div>' +
     '</div></div>';
   var DDIC2 = {
     cases: '<svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16v-4M12 16V8M16 16v-6"/></svg>',
     faq: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.6a2.4 2.4 0 1 1 3.4 2.2c-.8.35-1 .9-1 1.7"/><path d="M12 16.4v.2"/></svg>',
-    blog: '<svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 17h4"/></svg>',
-    about: '<svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5M9.5 10h1M13.5 10h1"/></svg>',
-    integrations: '<svg viewBox="0 0 24 24"><path d="M9 3v4M15 3v4M9 17v4M15 17v4"/><rect x="5" y="7" width="14" height="10" rx="2"/><path d="M3 10h2M3 14h2M19 10h2M19 14h2"/></svg>'
+    blog: '<svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 17h4"/></svg>'
   };
   var compMenu = '<div class="ckdd">' +
-    ddRow('/about', DDIC2.about, '#0071E3', '#E9F2FE', 'About Clinekt', 'Who we are and why we built this') +
     ddRow('/case-studies', DDIC2.cases, '#0071E3', '#E9F2FE', 'Case Studies', 'Real results from real practices') +
-    ddRow('/integrations', DDIC2.integrations, '#6F2DAA', '#F0EDF7', 'EHR Integrations', 'Works with the EHR you already run') +
     ddRow('/faqs', DDIC2.faq, '#6F2DAA', '#F0EDF7', 'FAQs', 'How patient activation works') +
     ddRow('/blog', DDIC2.blog, '#119D57', '#E6F6EE', 'Blog &amp; News', 'Insights and announcements') +
     '</div>';
@@ -142,7 +140,7 @@
     document.head.appendChild(gs);
   })();
   var CHEV = '<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>';
-  var COMPANY_LINKS = '<a href="/about">About Clinekt</a><a href="/case-studies">Case Studies</a><a href="/integrations">EHR Integrations</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>';
+  var COMPANY_LINKS = '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>';
 
   // /integrations was retired 2026-07 and REINSTATED 2026-09-14 as a real EHR page, so the
   // old scrub (which deleted every /integrations link from nav, footer and copy) is gone.
@@ -304,8 +302,7 @@
     '<li><a href="/ai-patient-activation">What is AI patient activation?</a></li>' +
     '<li><a href="/case-studies">Case Studies</a></li>' +
     '<li><a href="/blog">Blog</a></li>' +
-    '<li><a href="/faqs">FAQs</a></li>' +
-    '<li><a href="/about">About Clinekt</a></li></ul></div>' +
+    '<li><a href="/faqs">FAQs</a></li></ul></div>' +
     '<div><h4>Get started</h4><ul>' +
     '<li><a href="' + DEMO + '">Book a demo</a></li>' +
     '<li><a href="https://trust.delve.co/clinekt-health" target="_blank" rel="noopener">Trust Center</a></li></ul></div>' +
