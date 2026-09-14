@@ -9,6 +9,7 @@
   // Solutions menu, grouped Assort-style: use-case pages ("By use case") + the nine
   // specialty landing pages ("By specialty"). Group labels are sentence case (no all caps).
   var USECASES = [
+    ['What is patient activation?', '/ai-patient-activation'],
     ['Stop patient leakage', '/patient-leakage'],
     ['Recall &amp; reactivation', '/patient-recall-reactivation'],
     ['Marketing ROI', '/marketing-roi'],
@@ -69,10 +70,14 @@
   var DDIC2 = {
     cases: '<svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16v-4M12 16V8M16 16v-6"/></svg>',
     faq: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.6a2.4 2.4 0 1 1 3.4 2.2c-.8.35-1 .9-1 1.7"/><path d="M12 16.4v.2"/></svg>',
-    blog: '<svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 17h4"/></svg>'
+    blog: '<svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 17h4"/></svg>',
+    about: '<svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5M9.5 10h1M13.5 10h1"/></svg>',
+    integrations: '<svg viewBox="0 0 24 24"><path d="M9 3v4M15 3v4M9 17v4M15 17v4"/><rect x="5" y="7" width="14" height="10" rx="2"/><path d="M3 10h2M3 14h2M19 10h2M19 14h2"/></svg>'
   };
   var compMenu = '<div class="ckdd">' +
+    ddRow('/about', DDIC2.about, '#0071E3', '#E9F2FE', 'About Clinekt', 'Who we are and why we built this') +
     ddRow('/case-studies', DDIC2.cases, '#0071E3', '#E9F2FE', 'Case Studies', 'Real results from real practices') +
+    ddRow('/integrations', DDIC2.integrations, '#6F2DAA', '#F0EDF7', 'EHR Integrations', 'Works with the EHR you already run') +
     ddRow('/faqs', DDIC2.faq, '#6F2DAA', '#F0EDF7', 'FAQs', 'How patient activation works') +
     ddRow('/blog', DDIC2.blog, '#119D57', '#E6F6EE', 'Blog &amp; News', 'Insights and announcements') +
     '</div>';
@@ -136,15 +141,14 @@
     document.head.appendChild(gs);
   })();
   var CHEV = '<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>';
-  var COMPANY_LINKS = '<a href="/case-studies">Case Studies</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>';
+  var COMPANY_LINKS = '<a href="/about">About Clinekt</a><a href="/case-studies">Case Studies</a><a href="/integrations">EHR Integrations</a><a href="/faqs">FAQs</a><a href="/blog">Blog &amp; News</a>';
 
-  // /integrations is retired: drop nav/footer links to it, unwrap in-copy links to plain text.
+  // /integrations was retired 2026-07 and REINSTATED 2026-09-14 as a real EHR page, so the
+  // old scrub (which deleted every /integrations link from nav, footer and copy) is gone.
+  // Only the legacy CMS child URLs /integrations/<vendor> stay retired: point them at the hub.
   function scrubIntegrations() {
-    document.querySelectorAll('a[href="/integrations"], a[href^="/integrations/"]').forEach(function (a) {
-      var li = a.closest('li');
-      if (li) { li.remove(); return; }
-      if (a.closest('nav, footer, .nav-m, .foot-top, .ck-m, .ck-foot')) { a.remove(); return; }
-      a.replaceWith(document.createTextNode(a.textContent));
+    document.querySelectorAll('a[href^="/integrations/"]').forEach(function (a) {
+      a.setAttribute('href', '/integrations');
     });
   }
 
@@ -293,11 +297,14 @@
     '<li><a href="/recall-agent">Recall Agent</a></li>' +
     '<li><a href="/outbound-agent">Outbound Agent</a></li>' +
     '<li><a href="/care-agent">Care Management Agent</a></li>' +
-    '<li><a href="' + HOME + '#security">Security &amp; integrations</a></li></ul></div>' +
+    '<li><a href="/integrations">EHR Integrations</a></li>' +
+    '<li><a href="' + HOME + '#security">Security</a></li></ul></div>' +
     '<div><h4>Resources</h4><ul>' +
+    '<li><a href="/ai-patient-activation">What is AI patient activation?</a></li>' +
     '<li><a href="/case-studies">Case Studies</a></li>' +
     '<li><a href="/blog">Blog</a></li>' +
-    '<li><a href="/faqs">FAQs</a></li></ul></div>' +
+    '<li><a href="/faqs">FAQs</a></li>' +
+    '<li><a href="/about">About Clinekt</a></li></ul></div>' +
     '<div><h4>Get started</h4><ul>' +
     '<li><a href="' + DEMO + '">Book a demo</a></li>' +
     '<li><a href="https://trust.delve.co/clinekt-health" target="_blank" rel="noopener">Trust Center</a></li></ul></div>' +
