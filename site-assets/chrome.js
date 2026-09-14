@@ -60,6 +60,7 @@
     '<div class="ckdd-pills"><a class="ckdd-pill p1" href="/demo-agent">Try Our AI Agent</a><a class="ckdd-pill p2" href="/leakage-calculator">Leakage Calculator</a></div>' +
     '<div class="ckdd-cols">' +
     '<div class="ckdd-uc"><div class="ck-grp">By use case</div>' +
+    ddRow('/ai-patient-activation', DDIC.platform, '#0071E3', '#E9F2FE', 'What is patient activation?', 'The category, and how it works') +
     ddRow('/patient-leakage', DDIC.inbound, '#0071E3', '#E9F2FE', 'Stop patient leakage', 'Convert every website visitor') +
     ddRow('/patient-recall-reactivation', DDIC.recall, '#6F2DAA', '#F0EDF7', 'Recall &amp; reactivation', 'Bring dormant charts back') +
     ddRow('/marketing-roi', DDIC.outbound, '#119D57', '#E6F6EE', 'Marketing ROI', 'Prove spend, click to procedure') +
