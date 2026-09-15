@@ -206,6 +206,15 @@ Dedicated buying guides for dentistry, physical therapy, primary care, oral surg
 - [Urology Referral Management Software: Closing the PCP Referral Loop (2026)](https://clinekthealth.com/blog/urology-referral-management-software): How urology groups turn PCP referrals into seen patients, cut elevated PSA referral lag, and stop leakage to hospital-employed groups.
 - [What Is Care Leakage? Definition, Causes, and How to Stop It (2026)](https://clinekthealth.com/blog/what-is-care-leakage): Care leakage is the patients and ordered care that fall out of the loop between specialty visits. Here is how to define it, measure it, and stop it.
 
+## Referral operations (added 2026-09-15)
+
+- [Neurology Referral Management Software for New Consults](https://clinekthealth.com/blog/neurology-referral-management-software): Neurology referrals wait weeks before anyone calls. See the wait time data, how to triage urgent presentations, and a seven step intake setup.
+- [How to Reduce Referral No-Shows at a Specialty Practice](https://clinekthealth.com/blog/reduce-referral-no-shows): A referred patient who books and misses fails for different reasons than your own patients. Lead time, expectations and logistics are the levers.
+- [Referral Automation: What Can You Actually Automate?](https://clinekthealth.com/blog/referral-automation-for-specialty-practices): Document handling and prior authorization belong to your EHR or clearinghouse. The patient side is where referral automation wins appointments.
+- [Referral Backlog Management: How to Clear Unworked Referrals](https://clinekthealth.com/blog/referral-backlog-management): Triage a referral backlog by age and acuity, recover what is still bookable, and stop the pile rebuilding without adding front desk staff.
+- [Referral Management ROI: What Leaked Referrals Cost You](https://clinekthealth.com/blog/referral-management-roi): Referral leakage cost is referrals times your completion gap times episode value. Run the arithmetic on your own numbers and apply an honest recoverable share.
+- [How Referral Management Software Pricing Actually Works](https://clinekthealth.com/blog/referral-management-software-pricing): Referral management software is usually priced per provider per month. See the five pricing models, the cost drivers buyers miss, and what to ask for in a demo.
+
 ## News
 
 - [Baldwin Bone & Joint Announces Clinekt Partnership](https://clinekthealth.com/blog/baldwin-bone-joint-announces-clinekt-partnership): Baldwin Bone & Joint announced its partnership with Clinekt Health to enhance orthopedic patient care across Baldwin County, Alabama.
