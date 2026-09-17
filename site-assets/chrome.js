@@ -220,9 +220,9 @@
     '.ck-nav::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);z-index:-1}',
     '.ck-nav-in{width:100%;padding:0 clamp(20px,5vw,72px);height:64px;display:flex;align-items:center;justify-content:space-between}',
     '.ck-nav-logo img{height:30px;display:block}',
-    '.ck-links{display:flex;gap:32px}',
-    '.ck-links a{font-size:14.5px;color:#56565C;text-decoration:none;transition:color .18s}',
-    '.ck-links a:hover{color:#1D1D1F}',
+    '.ck-nav .ck-links{display:flex;gap:32px}',
+    '.ck-nav .ck-links a{font-size:14.5px;color:#56565C;text-decoration:none;transition:color .18s}',
+    '.ck-nav .ck-links a:hover{color:#1D1D1F}',
     '.ck-drop{position:relative;display:flex;align-items:center}',
     '.ck-drop-btn{font-family:inherit;font-size:14.5px;color:#56565C;background:none;border:0;padding:0;cursor:pointer;transition:color .18s}',
     '.ck-drop:hover .ck-drop-btn{color:#1D1D1F}',
@@ -255,7 +255,7 @@
     '.ck-burger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:40px;height:40px;cursor:pointer;border-radius:10px;flex-shrink:0}',
     '.ck-burger span{display:block;width:20px;height:2px;background:#1D1D1F;border-radius:2px;transition:transform .25s,opacity .2s}',
     '.ck-m{display:none}',
-    '@media(max-width:1000px){.ck-links,.ck-signin,.ck-cta > .ck-btn{display:none}',
+    '@media(max-width:1000px){.ck-nav .ck-links,.ck-signin,.ck-cta > .ck-btn{display:none}',
     '.ck-burger{display:flex}',
     '.ck-m{display:flex;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;flex-direction:column;padding:14px clamp(20px,5vw,72px) 44px;overflow:auto;z-index:99998;transform:translateX(102%);transition:transform .3s}',
     '.ck-m a{font-size:19px;font-weight:600;color:#1D1D1F;padding:15px 0;border-bottom:1px solid rgba(60,60,67,.08);text-decoration:none}',
@@ -451,4 +451,45 @@
     });
   }
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', fixFooter); } else { fixFooter(); }
+})();
+
+/* Footer link rows ("Clinekt by specialty" / "By use case"). The rows are a native
+   Webflow section appended at body level (Home #ck-links-home, Blogs Template #ck-links)
+   because the embed-built pages have no API write path into their embed code; they exist
+   so crawlers get server-rendered links to the hub pages (the nav dropdowns above are
+   built client-side). Webflow ships the section unstyled, after the page footer. This
+   moves it into whichever footer variant the page has, between the link columns and the
+   copyright row, and styles it to match. Its container class `ck-links` is also the nav
+   link-row class (scoped to .ck-nav above for that reason), so it is swapped for
+   `ck-foot-links` before styling.
+
+     body                                   footer > .container | .ck-foot-in
+       footer ........................        .foot-top | .ck-foot-top   (link columns)
+       section.ck-links  (unstyled)  --->     section.ck-foot-links      (these rows)
+                                              .foot-bottom | .ck-foot-bot (copyright) */
+(function () {
+  function placeLinks() {
+    var sec = document.querySelector('section.ck-links');
+    if (!sec) return;
+    var bottom = document.querySelector('footer .foot-bottom') || document.querySelector('.ck-foot-bot');
+    if (!bottom) return;
+    sec.classList.remove('ck-links');
+    sec.classList.add('ck-foot-links');
+    if (!document.getElementById('ck-foot-links-css')) {
+      var st = document.createElement('style');
+      st.id = 'ck-foot-links-css';
+      st.textContent = [
+        ".ck-foot-links{padding:28px 0;border-bottom:1px solid rgba(60,60,67,.08);text-align:left;font-family:'Inter',system-ui,-apple-system,sans-serif}",
+        '.ck-foot-links .ck-links-in{max-width:none;margin:0;padding:0}',
+        '.ck-foot-links .ck-links-h{font-size:13px;font-weight:600;color:#1D1D1F;margin:0 0 10px;line-height:1.4}',
+        '.ck-foot-links .ck-links-p{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 22px;line-height:1.5}',
+        '.ck-foot-links .ck-links-p:last-child{margin-bottom:0}',
+        '.ck-foot-links .ck-link{font-size:14.5px;font-weight:400;color:#56565C;text-decoration:none;transition:color .18s}',
+        '.ck-foot-links .ck-link:hover{color:#1D1D1F}'
+      ].join('');
+      document.head.appendChild(st);
+    }
+    bottom.parentNode.insertBefore(sec, bottom);
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', placeLinks); } else { placeLinks(); }
 })();
