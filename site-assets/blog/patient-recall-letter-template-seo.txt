@@ -1,0 +1,38 @@
+META TITLE (51 chars):
+Patient Recall Letter Template: 5 Examples for 2026
+
+META DESCRIPTION (138 chars):
+Five patient recall letter and text templates you can use today. Clinekt's Recall agent booked 159 orthopedic appointments in one quarter.
+
+TARGET QUERIES (pain-signal lexicon themes 6, 10, and 19, the recurring "template/asset vein" flagged independently three times as a high-volume, low-competition lead-magnet pattern; no open blog-engine work order in flags/2026-09-17.md as of this run; WO-B4's remaining slot, patient-recall-software, is BLOCKED today by state/title-meta-freeze.json (frozen until 2026-09-29), so this is a genuinely new, self-selected topic, not a WO-B4 rewrite):
+- patient recall letter template (primary; lexicon theme 6, autocomplete-confirmed 2026-07-26 as part of the "patient recall message sample / patient recall letter template / patient recall template" vein)
+- patient recall message sample (theme 6 companion term)
+- patient recall script (theme 6 companion term / theme 10 overlap with the reactivation-letter vein)
+- no show fee policy template (theme 19, adjacent template-vein term, not directly targeted but the "templates convert" framing generalizes)
+
+PERSONA: front-desk lead or practice manager who needs a recall letter today, not a software evaluation; secondary persona the same office manager one click later, evaluating whether to automate what they just copy-pasted
+REGISTER: practical, copy-and-use, "here are the words" framing, distinct from /blog/patient-recall-software's software-evaluation register. Templates use bracketed placeholders only, no patient names, no PHI.
+
+DIFFERENTIATION FROM EXISTING POSTS (checked before writing, no duplicate):
+- /blog/patient-recall-software (frozen until 2026-09-29, WO-B2 CTR rewrite) covers software evaluation and vendor comparison; this piece is upstream of it, covering the letter wording itself, and links to it for the software-buying decision.
+- /blog/reminders-vs-recall-vs-reactivation defines the three terms; this piece assumes that definition and links to it rather than re-deriving it.
+- Checked live: /blog/patient-recall-letter-template, /blog/patient-recall-message-sample, /blog/no-show-fee-policy-template, /blog/patient-reactivation-letter-template all 404 before writing. No brain page (Clinekt Brain/website/) or gbrain record for this topic existed. Not a specialty x job matrix cell (marketing/specialty-job-matrix is a specialty-by-job grid; a letter-template format piece is a content-type variant, not a specialty pairing) and not a WO-B4 rewrite slot.
+
+INTERLINKS:
+- /blog/patient-recall-software (software evaluation, the natural next click)
+- /blog/reminders-vs-recall-vs-reactivation (terminology anchor; ALSO the target of this run's one permitted cross-link edit, since it is the oldest/most topically adjacent post that isn't frozen or retired)
+- /blog/best-patient-reactivation-software (for patients who are dormant rather than just due)
+- /blog/referral-management-software (OMFS referring-GP tie-in in the specialty section)
+- /leakage-calculator + /book-a-demo (CTAs)
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures anywhere; no dollar figures at all, including third-party, per this run's stricter instruction.
+- Two third-party stats, both independently fetched and verified live this session (not taken on a secondary aggregator's word):
+  1. Cochrane Library systematic review (Jacobson Vann JC, et al., "Patient reminder and recall interventions to improve immunization rates," Cochrane Database of Systematic Reviews, 2018) - 55 studies, 138,625 participants, 8-percentage-point improvement. Verified via cochranelibrary.com (reused from the existing patient-recall-software post's own verified citation; same source, same numbers, no drift).
+  2. BMC Ophthalmology observational study (Koshy E, Car J, Majeed A, "Effectiveness of mobile-phone short message service (SMS) reminders for ophthalmology outpatient appointments," 2008) - non-attendance 18.1% (no reminder) vs 11.2% (SMS reminder), 38% relative reduction (RR 0.62, 95% CI 0.48-0.80). Verified via WebFetch of pmc.ncbi.nlm.nih.gov/articles/PMC2438329/ directly, first use on the site.
+  3. Journal of Indian Society of Periodontology (2010, 216 patients) - 48.1% recall compliance rate, reused from patient-recall-software's own verified citation (PMC3110463) for the specialty-gap point.
+- Baldwin canon verified against gbrain results/_overview (VERIFIED-CANON) same session: 263 qualified surgical leads / 159 appointments / 60% booking rate, last quarter. Framed as the whole patient-activation system's result, matching the existing patient-recall-software post's own framing.
+- No vendor names, no comparison table (this is not a comparison/"best X" post, so the 2026-09-15 comparison-table-first standing pattern does not apply; templates rendered as blockquotes, not a table, per this run's convert-tables-to-bullets instruction).
+- No em dashes, no PHI (all template placeholders are bracketed fields, no real or example patient names), no banned no-ai-slop words (checked against policies/no-ai-slop/SKILL.md word list, zero hits).
+- Positioning: patient activation, three agents (Inbound, Recall, Outbound), never "chatbot". Single contextual Recall-agent mention.
+- Standard card thumbnail only, fileId 6aa858e11c2c7a09e199d116, per the 2026-09-14 evening correction (not the older 6aa831d929a2124c067446aa asset).
