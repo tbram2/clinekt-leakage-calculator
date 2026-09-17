@@ -13,7 +13,8 @@
     ['Stop patient leakage', '/patient-leakage'],
     ['Recall &amp; reactivation', '/blog/patient-recall-software'],
     ['Marketing ROI', '/marketing-roi'],
-    ['Care between visits', '/care-agent']
+    ['Care between visits', '/care-agent'],
+    ['Health systems', '/health-systems']
   ];
   var SOLUTIONS = [
     ['Orthopedics', '/orthopedics'],
@@ -24,7 +25,9 @@
     ['Urology', '/urology'],
     ['Primary Care', '/primary-care'],
     ['Cardiology', '/cardiology'],
-    ['Pediatrics', '/pediatrics']
+    ['Pediatrics', '/pediatrics'],
+    ['Rheumatology', '/rheumatology'],
+    ['Behavioral Health', '/behavioral-health']
   ];
   // The platform pages — Platform dropdown: overview page + the four agent pages.
   // The Care Management Agent keeps its original /care-agent slug (published slugs never change).
@@ -45,7 +48,8 @@
     recall: '<svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><circle cx="12" cy="12" r="1"/></svg>',
     outbound: '<svg viewBox="0 0 24 24"><path d="M3 17L9.5 10.5l4 4L21 7"/><path d="M14.5 7H21v6.5"/></svg>',
     care: '<svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="3.5" rx="1"/><path d="M15 4.5h2.5a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2H9"/><path d="M7 13.5h2l1.5-3 2.5 6 1.5-3h2.5"/></svg>',
-    integrations: '<svg viewBox="0 0 24 24"><path d="M9 3v4M15 3v4M9 17v4M15 17v4"/><rect x="5" y="7" width="14" height="10" rx="2"/><path d="M3 10h2M3 14h2M19 10h2M19 14h2"/></svg>'
+    integrations: '<svg viewBox="0 0 24 24"><path d="M9 3v4M15 3v4M9 17v4M15 17v4"/><rect x="5" y="7" width="14" height="10" rx="2"/><path d="M3 10h2M3 14h2M19 10h2M19 14h2"/></svg>',
+    sites: '<svg viewBox="0 0 24 24"><rect x="3" y="9" width="7" height="12" rx="1"/><rect x="14" y="4" width="7" height="17" rx="1"/><path d="M10 21h4M6.5 13h.01M6.5 16.5h.01M17.5 8h.01M17.5 11.5h.01M17.5 15h.01"/></svg>'
   };
   function ddRow(href, ic, pac, bg, label, desc) {
     return '<a class="ckdd-row" href="' + href + '" style="--ddpac:' + pac + ';--ddbg:' + bg + '"><span class="ckdd-ic">' + ic + '</span><span class="ckdd-tx"><b>' + label + '</b><small>' + desc + '</small></span></a>';
@@ -66,6 +70,7 @@
     ddRow('/blog/patient-recall-software', DDIC.recall, '#6F2DAA', '#F0EDF7', 'Recall &amp; reactivation', 'Bring dormant charts back') +
     ddRow('/marketing-roi', DDIC.outbound, '#119D57', '#E6F6EE', 'Marketing ROI', 'Prove spend, click to procedure') +
     ddRow('/care-agent', DDIC.care, '#C26A12', '#FDF1E5', 'Care between visits', 'Documented, billable care') +
+    ddRow('/health-systems', DDIC.sites, '#0071E3', '#E9F2FE', 'Health systems', 'Every location and service line, one rollup') +
     ddRow('/integrations', DDIC.integrations, '#0071E3', '#E9F2FE', 'EHR Integrations', 'Works with the EHR you already run') +
     '</div>' +
     '<div class="ckdd-sp"><div class="ck-grp">By specialty</div><div class="ckdd-spec">' + links(SOLUTIONS) + '</div></div>' +
