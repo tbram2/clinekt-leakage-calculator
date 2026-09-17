@@ -453,43 +453,72 @@
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', fixFooter); } else { fixFooter(); }
 })();
 
-/* Footer link rows ("Clinekt by specialty" / "By use case"). The rows are a native
-   Webflow section appended at body level (Home #ck-links-home, Blogs Template #ck-links)
-   because the embed-built pages have no API write path into their embed code; they exist
-   so crawlers get server-rendered links to the hub pages (the nav dropdowns above are
-   built client-side). Webflow ships the section unstyled, after the page footer. This
-   moves it into whichever footer variant the page has, between the link columns and the
-   copyright row, and styles it to match. Its container class `ck-links` is also the nav
-   link-row class (scoped to .ck-nav above for that reason), so it is swapped for
-   `ck-foot-links` before styling.
+/* Footer "Specialties" / "Use cases" columns. The links ship as a native Webflow section
+   appended at body level (Home #ck-links-home, Blogs Template #ck-links; markup
+   section.ck-links > .ck-links-in > p.ck-links-h + p.ck-links-p > a.ck-link) because the
+   embed-built pages have no API write path into their embed code; the section exists so
+   crawlers get server-rendered links to the hub pages (the nav dropdowns are built
+   client-side). Webflow renders it unstyled after </footer>. This lifts the anchors into two
+   footer columns built with the footer's own h4 + ul markup (so the existing footer CSS
+   styles them like Platform / Resources), slots them after the Platform column, widens the
+   grid to six columns on desktop, and removes the emptied section.
 
-     body                                   footer > .container | .ck-foot-in
-       footer ........................        .foot-top | .ck-foot-top   (link columns)
-       section.ck-links  (unstyled)  --->     section.ck-foot-links      (these rows)
-                                              .foot-bottom | .ck-foot-bot (copyright) */
+     body                         footer .foot-top | .ck-foot-top (grid)
+       footer ..............        brand | Platform | Specialties | Use cases | Resources | Get started
+       section.ck-links ---->                          ^ new          ^ new
+         (anchors moved, section removed)
+
+   Its container class `ck-links` is also the nav link-row class (scoped to .ck-nav above
+   for that reason). */
 (function () {
-  function placeLinks() {
+  var HEAD = { 'Clinekt by specialty': 'Specialties', 'By use case': 'Use cases' };
+  // Footer-length labels; the static anchor text stays the longer descriptive form.
+  var SHORT = {
+    'What is AI patient activation': 'AI patient activation',
+    'Stop patient leakage': 'Patient leakage',
+    'Patient recall and reactivation': 'Recall and reactivation',
+    'Healthcare marketing ROI': 'Marketing ROI'
+  };
+  function buildCols() {
     var sec = document.querySelector('section.ck-links');
     if (!sec) return;
-    var bottom = document.querySelector('footer .foot-bottom') || document.querySelector('.ck-foot-bot');
-    if (!bottom) return;
-    sec.classList.remove('ck-links');
-    sec.classList.add('ck-foot-links');
-    if (!document.getElementById('ck-foot-links-css')) {
+    var grid = document.querySelector('footer .foot-top') || document.querySelector('.ck-foot-top');
+    if (!grid) return;
+    var anchor = null;
+    grid.querySelectorAll('h4').forEach(function (h) { if (h.textContent.trim() === 'Platform') anchor = h.parentElement; });
+    if (!anchor) anchor = grid.lastElementChild;
+    var cols = [];
+    sec.querySelectorAll('.ck-links-h').forEach(function (h) {
+      var list = h.nextElementSibling;
+      if (!list) return;
+      var col = document.createElement('div');
+      col.className = 'ck-foot-col';
+      var h4 = document.createElement('h4');
+      h4.textContent = HEAD[h.textContent.trim()] || h.textContent.trim();
+      var ul = document.createElement('ul');
+      list.querySelectorAll('a').forEach(function (a) {
+        var t = a.textContent.trim();
+        if (SHORT[t]) a.textContent = SHORT[t];
+        var li = document.createElement('li');
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+      col.appendChild(h4);
+      col.appendChild(ul);
+      cols.push(col);
+    });
+    if (!cols.length) return;
+    cols.forEach(function (c) { anchor.parentNode.insertBefore(c, anchor.nextSibling); anchor = c; });
+    grid.classList.add('ck-has-cols');
+    if (!document.getElementById('ck-foot-cols-css')) {
       var st = document.createElement('style');
-      st.id = 'ck-foot-links-css';
-      st.textContent = [
-        ".ck-foot-links{padding:28px 0;border-bottom:1px solid rgba(60,60,67,.08);text-align:left;font-family:'Inter',system-ui,-apple-system,sans-serif}",
-        '.ck-foot-links .ck-links-in{max-width:none;margin:0;padding:0}',
-        '.ck-foot-links .ck-links-h{font-size:13px;font-weight:600;color:#1D1D1F;margin:0 0 10px;line-height:1.4}',
-        '.ck-foot-links .ck-links-p{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 22px;line-height:1.5}',
-        '.ck-foot-links .ck-links-p:last-child{margin-bottom:0}',
-        '.ck-foot-links .ck-link{font-size:14.5px;font-weight:400;color:#56565C;text-decoration:none;transition:color .18s}',
-        '.ck-foot-links .ck-link:hover{color:#1D1D1F}'
-      ].join('');
+      st.id = 'ck-foot-cols-css';
+      st.textContent = '@media(min-width:901px){.foot-top.ck-has-cols,.ck-foot-top.ck-has-cols{grid-template-columns:1.6fr 1fr 1fr 1fr 1fr 1fr}}' +
+        '.foot-top .ck-foot-col ul a,.ck-foot-top .ck-foot-col ul a{color:#56565C;text-decoration:none}' +
+        '.foot-top .ck-foot-col ul a:hover,.ck-foot-top .ck-foot-col ul a:hover{color:#1D1D1F}';
       document.head.appendChild(st);
     }
-    bottom.parentNode.insertBefore(sec, bottom);
+    sec.parentNode.removeChild(sec);
   }
-  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', placeLinks); } else { placeLinks(); }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', buildCols); } else { buildCols(); }
 })();
