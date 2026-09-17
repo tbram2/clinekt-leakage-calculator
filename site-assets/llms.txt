@@ -34,6 +34,9 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 - [Primary Care](https://clinekthealth.com/primary-care)
 - [Cardiology](https://clinekthealth.com/cardiology)
 - [Pediatrics](https://clinekthealth.com/pediatrics)
+- [Rheumatology](https://clinekthealth.com/rheumatology)
+- [Behavioral Health](https://clinekthealth.com/behavioral-health)
+- [Health systems and multi-site groups](https://clinekthealth.com/health-systems)
 
 ## Learn
 
