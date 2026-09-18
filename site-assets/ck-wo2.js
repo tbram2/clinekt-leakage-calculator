@@ -1,24 +1,34 @@
-/* WO-A2 internal-link strips (home #ck-wo2h, /orthopedics #ck-wo2).
-   The strips are native Webflow elements appended at body level because the pages
-   themselves are single HtmlEmbeds with no API write path into the embed code.
-   This script (loaded deferred, after chrome.js and the #ckvh voice module in
-   document order) does two things:
-   1. Home: moves #ck-wo2h from body-end to directly above the static <footer>
-      inside the page embed — same self-relocation pattern #ckvh already uses.
-      On /orthopedics no move is needed: chrome.js runs earlier and appends its
-      footer after the strip, so the strip is already above the footer.
-   2. Both pages: sets the Inter font stack on the strip copy — Webflow's style
-      engine dropped the font-family when the strip styles were created because
-      Inter is loaded per-page via Google Fonts, not installed as a site font. */
+/* Related-resources sections (home #ck-wo2h, /orthopedics #ck-wo2).
+   History: these began 2026-08-27 as the WO-A2 internal-link strips; on 2026-09-18
+   each page's strips were consolidated into ONE designed "Resources" section
+   (classes ck-rr*). The ids are unchanged so existing checks keep working.
+   The sections are native Webflow elements appended at body level, outside the
+   page embeds (they survive a page-embed rewrite). This script, loaded deferred
+   after chrome.js in document order, does two things:
+
+     body                                  after this script
+     +-- page embed                        +-- page embed
+     |     ... sections                    |     ... sections
+     |     closing CTA                     |     #ck-wo2h / #ck-wo2   <-- moved here
+     |     (home: static footer)           |     closing CTA
+     +-- #ck-wo2h / #ck-wo2                |     (home: static footer)
+     +-- this script                       +-- this script
+
+   1. Moves the section to directly above the page's closing CTA (home .cta-wrap,
+      /orthopedics .pv-cta-wrap) so the page still ends on the CTA. If the CTA is
+      not found, home falls back to the old spot above the static <footer>; on
+      /orthopedics the section then simply stays above the chrome.js footer.
+   2. Sets the Inter font stack on the section. Webflow's style engine can drop
+      the font-family because Inter is loaded per page, not installed site-wide. */
 (function () {
   var FONT = "'Inter',-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',sans-serif";
-  ['ck-wo2h', 'ck-wo2'].forEach(function (id) {
+  function place(id, ctaSel, fallbackSel) {
     var sec = document.getElementById(id);
     if (!sec) return;
-    var ps = sec.querySelectorAll('.ck-wo2-p');
-    for (var i = 0; i < ps.length; i++) ps[i].style.fontFamily = FONT;
-  });
-  var h = document.getElementById('ck-wo2h');
-  var f = document.querySelector('footer');
-  if (h && f && f.parentNode && h.nextElementSibling !== f) f.parentNode.insertBefore(h, f);
+    sec.style.fontFamily = FONT;
+    var anchor = document.querySelector(ctaSel) || (fallbackSel && document.querySelector(fallbackSel));
+    if (anchor && anchor.parentNode && sec.nextElementSibling !== anchor) anchor.parentNode.insertBefore(sec, anchor);
+  }
+  place('ck-wo2h', '.cta-wrap', 'footer');
+  place('ck-wo2', '.pv-cta-wrap', null);
 })();
