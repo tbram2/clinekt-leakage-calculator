@@ -27,7 +27,8 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 
 - [Orthopedics](https://clinekthealth.com/orthopedics)
 - [Physical Therapy](https://clinekthealth.com/physical-therapy)
-- [Oral Surgery & Dentistry](https://clinekthealth.com/oral-surgery)
+- [Oral Surgery](https://clinekthealth.com/oral-surgery)
+- [Dentistry](https://clinekthealth.com/dentistry)
 - [Dermatology](https://clinekthealth.com/dermatology)
 - [Ophthalmology](https://clinekthealth.com/ophthalmology)
 - [Urology](https://clinekthealth.com/urology)

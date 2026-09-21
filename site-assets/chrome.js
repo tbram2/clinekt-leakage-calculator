@@ -19,7 +19,8 @@
   var SOLUTIONS = [
     ['Orthopedics', '/orthopedics'],
     ['Physical Therapy', '/physical-therapy'],
-    ['Oral Surgery &amp; Dentistry', '/oral-surgery'],
+    ['Oral Surgery', '/oral-surgery'],
+    ['Dentistry', '/dentistry'],
     ['Dermatology', '/dermatology'],
     ['Ophthalmology', '/ophthalmology'],
     ['Urology', '/urology'],

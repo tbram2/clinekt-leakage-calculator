@@ -1,0 +1,6 @@
+slug: dentistry
+page id: 6ab1937a4c68444d7d4e8169 (duplicateOf cardiology 6a45d325fc28b2840ee09361, 2026-09-21)
+seo title: Dental Patient Recall & AI Front Desk Software | Clinekt
+seo description: Clinekt's AI agents answer every dental website visitor, bring overdue hygiene patients back, and book new patients around the clock. Live in under a week.
+og title: AI Patient Activation for Dental Practices
+head: same as cardiology head with og:url /dentistry and ck-sp.css@1d8f685
