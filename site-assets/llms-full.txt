@@ -378,10 +378,10 @@ FAQ digest: An AI voice agent for a medical practice answers the phone line, hol
 
 ---
 
-# Best AI Receptionist Software 2026: 7 Tools Compared
+# Best AI Receptionist Software 2026: 9 Tools Compared
 Source: https://clinekthealth.com/blog/ai-receptionist-for-medical-practice
 Published: 2026-08-13
-Updated: 2026-09-16 (rewritten in place to a seven-tool comparison format per WO-B4; slug unchanged)
+Updated: 2026-09-21 (EliseAI and DearDoc added, now a nine-tool comparison: MedReception AI, Freed, DeepCura, CureMD, Zocdoc, Weave, EliseAI, DearDoc, Clinekt; rewritten to comparison format 2026-09-16 per WO-B4; slug unchanged)
 
 Direct answer: A good AI receptionist for a medical practice answers nearly every inbound call, verifies the patient and the reason for the call, and either books the appointment directly or routes it to staff, and it needs to do this across most of a practice's call volume, since partial deployments rarely reduce front-desk workload.
 
