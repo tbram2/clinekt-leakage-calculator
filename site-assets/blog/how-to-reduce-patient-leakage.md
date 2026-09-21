@@ -44,7 +44,7 @@ Each row of that table is a different workflow failure with a different fix. The
 
 2. **Respond the moment a patient reaches out.** 82% of patients try to book outside office hours. If the first available response is "we will call you back tomorrow," a meaningful share book with whoever answers first, and that is often a competitor with online scheduling. Whether you use staff coverage, an answering partner, or [AI agents](https://clinekthealth.com/blog/what-is-patient-activation), the standard is the same: every inquiry gets engaged within minutes, at any hour.
 
-3. **Make booking the default next step.** Contact forms, voicemails, and "request an appointment" buttons create waiting rooms before the waiting room. Every patient interaction should end in a scheduled slot, not a promise of a future phone call. Practices that move from callback workflows to direct booking see appointment volume rise roughly 8% without adding a single provider hour.
+3. **Make booking the default next step.** Contact forms, voicemails, and "request an appointment" buttons create waiting rooms before the waiting room. Every patient interaction should end in a scheduled slot, not a promise of a future phone call. Practices that move from callback workflows to direct booking see appointment volume rise roughly 12% without adding a single provider hour.
 
 4. **Screen patients before they take a slot.** Leakage is not only losing the right patients. It is also filling your schedule with the wrong ones, which pushes qualified patients out weeks and sends them shopping. Specialty-trained screening before scheduling cuts unqualified consults by 48%, which opens capacity for the patients your providers actually need to see.
 

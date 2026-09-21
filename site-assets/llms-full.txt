@@ -36,7 +36,7 @@ Practices using Clinekt typically move from under 1% website conversion to 8 to 
 
 - Over 1,000,000 patient interactions completed on the platform
 - 24x average return on investment
-- +8% appointment volume increase
+- +12% appointment volume increase
 - 48% reduction in unqualified consults
 - Live in under a week; no IT project; works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Nextech, and other major EHRs
 
@@ -206,7 +206,7 @@ Eight questions to ask every vendor: 1) Which EHR integration tier do you suppor
 
 The economics: A 3,000 patient dormant list at three attempts and five minutes per attempt is 9,000 attempts and about 750 staff hours. Front office turnover hit 40% across medical practices in 2022, the highest of any staff category (MGMA, 2023). Acquiring a new customer costs 5 to 25 times more than retaining an existing one, and a 5% retention increase lifts profits 25% to 95% (HBR/Bain, 2014). NRC Health puts the average remaining lifetime healthcare spend of a 26 year old consumer at $1.2 million (NRC Health, 2023).
 
-Orthopedic specifics: orthopedic reactivation has a longer clinical tail than most specialties. Post operative patients, conservative care patients who never returned after imaging, and injection patients due for a repeat all lapse for different reasons and need different messages, so sequences must segment by visit type and last procedure. Clinekt runs this as the Recall agent alongside an Inbound agent for new patients and an Outbound agent for net new demand. Across Clinekt deployments practices average a 24x return and an 8% increase in appointment volume. Baldwin Bone and Joint generated 263 qualified surgical leads and 159 booked appointments in a single quarter, a 60% booking rate.
+Orthopedic specifics: orthopedic reactivation has a longer clinical tail than most specialties. Post operative patients, conservative care patients who never returned after imaging, and injection patients due for a repeat all lapse for different reasons and need different messages, so sequences must segment by visit type and last procedure. Clinekt runs this as the Recall agent alongside an Inbound agent for new patients and an Outbound agent for net new demand. Across Clinekt deployments practices average a 24x return and a 12% increase in appointment volume. Baldwin Bone and Joint generated 263 qualified surgical leads and 159 booked appointments in a single quarter, a 60% booking rate.
 
 FAQ digest: There is no single best tool; the right answer depends on your EHR and list size, and the most useful filter is which generation the tool belongs to. Reactivation software usually integrates with EHRs in some form, but the word spans manual CSV export to full read and write-back with outcome sync. Recall targets patients due on a clinical schedule who still consider themselves your patients, while reactivation targets patients who have already drifted away with no future appointment. AI agents can run reactivation campaigns end to end, which is the main practical difference from earlier tooling. Ask each vendor for time to go live and time to first booking as separate numbers.
 
