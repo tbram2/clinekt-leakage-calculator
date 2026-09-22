@@ -1,0 +1,127 @@
+<section class="ckvh-wrap" id="ckvh">
+<style>
+  .ckvh-wrap, .ckvh-wrap * { margin:0; padding:0; box-sizing:border-box; -webkit-font-smoothing:antialiased; }
+  .ckvh-wrap {
+    --ckvh-deep:#063FB0; --ckvh-bad:#FFB4B4; --ckvh-on:#9EC7FF;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Inter,Roboto,sans-serif;
+    position:relative; width:100%; overflow:hidden;
+    background:linear-gradient(145deg,#0A6FE6 0%,#063FB0 100%);
+    padding:96px 24px 104px; display:flex; justify-content:center; text-align:center;
+  }
+  .ckvh-wrap::before { content:""; position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(80% 60% at 88% 0%, rgba(120,185,255,.22), transparent 70%); }
+  .ckvh-card { position:relative; width:100%; max-width:820px; display:flex; flex-direction:column; align-items:center; }
+  .ckvh-card > * { max-width:100%; min-width:0; }
+  .ckvh-wave { display:flex; align-items:center; gap:3px; height:34px; margin-bottom:26px; opacity:.55; }
+  .ckvh-wave span { width:3px; border-radius:2px; background:var(--ckvh-on); }
+  .ckvh-live .ckvh-wave { opacity:1; }
+  .ckvh-live .ckvh-wave span { background:#fff; animation:ckvhBar .8s ease-in-out infinite; }
+  .ckvh-wave span:nth-child(3n){animation-delay:.15s} .ckvh-wave span:nth-child(3n+1){animation-delay:.3s}
+  @keyframes ckvhBar { 0%,100%{transform:scaleY(.5)} 50%{transform:scaleY(1.25)} }
+  .ckvh-h2 { font-size:clamp(27px,3.8vw,40px); font-weight:700; letter-spacing:-.025em; line-height:1.12; color:#fff; }
+  .ckvh-cta {
+    display:inline-flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:10px; border:1.5px solid transparent; cursor:pointer; font-family:inherit;
+    background:#fff; color:var(--ckvh-deep); font-size:16.5px; font-weight:600; max-width:100%;
+    border-radius:12px; padding:16px 30px; margin-top:30px; transition:transform .15s, opacity .15s;
+  }
+  .ckvh-cta:hover { transform:translateY(-1px); opacity:.93; }
+  .ckvh-cta:disabled { opacity:.7; cursor:default; transform:none; }
+  .ckvh-cta svg { width:19px; height:19px; }
+  .ckvh-live .ckvh-cta { background:rgba(255,255,255,.12); color:#fff; border-color:rgba(255,255,255,.45); }
+  .ckvh-state { font-size:14px; font-weight:600; color:rgba(255,255,255,.6); margin-top:18px; min-height:20px; }
+  .ckvh-state.ckvh-on { color:var(--ckvh-on); }
+  .ckvh-state.ckvh-err { color:var(--ckvh-bad); }
+  .ckvh-alt { font-size:15px; font-weight:600; color:#fff; margin-top:12px; }
+  .ckvh-alt a { color:inherit; text-decoration:none; border-bottom:1.5px solid rgba(255,255,255,.4); padding-bottom:1px; }
+  .ckvh-alt a:hover { border-color:#fff; }
+  @media (max-width:600px){
+    .ckvh-wrap { padding:68px 18px 76px; }
+    .ckvh-cta { font-size:15.5px; padding:14px 22px; width:100%; }
+  }
+</style>
+  <div class="ckvh-card" id="ckvhCard">
+    <div class="ckvh-wave" aria-hidden="true">
+      <span style="height:8px"></span><span style="height:14px"></span><span style="height:10px"></span><span style="height:22px"></span><span style="height:16px"></span><span style="height:30px"></span><span style="height:12px"></span><span style="height:26px"></span><span style="height:34px"></span><span style="height:20px"></span><span style="height:28px"></span><span style="height:12px"></span><span style="height:24px"></span><span style="height:16px"></span><span style="height:9px"></span><span style="height:18px"></span><span style="height:11px"></span><span style="height:7px"></span>
+    </div>
+    <h2 class="ckvh-h2">Try the AI agent your patients will talk to</h2>
+    <button class="ckvh-cta" id="ckvhStart">
+      <span id="ckvhCtaTxt">Try it live</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </button>
+    <div class="ckvh-state" id="ckvhState"></div>
+    <p class="ckvh-alt">Or, <a href="/demo-agent">open the full demo experience &rarr;</a></p>
+  </div>
+<script type="module">
+(function(){
+  "use strict";
+  var AGENT_ID = "agent_6401kz4n64k7esd9x4ssbh6srrf6";
+
+  function relocate(){
+    var sec = document.getElementById("ckvh");
+    if(!sec) return;
+    var target = document.getElementById("platform");
+    if(target && target.parentNode && sec.nextElementSibling !== target){ target.parentNode.insertBefore(sec, target); return; }
+    var ftr = document.querySelector("footer");
+    if(!target && ftr && ftr.parentNode && sec.nextElementSibling !== ftr){ ftr.parentNode.insertBefore(sec, ftr); }
+  }
+  if(document.readyState === "loading"){ document.addEventListener("DOMContentLoaded", relocate); } else { relocate(); }
+  setTimeout(relocate, 600);
+
+  var card = document.getElementById("ckvhCard"),
+      btn = document.getElementById("ckvhStart"),
+      txt = document.getElementById("ckvhCtaTxt"),
+      state = document.getElementById("ckvhState");
+  var conv = null, connecting = false, sdkPromise = null;
+
+  function setState(t, cls){ state.textContent = t; state.className = "ckvh-state" + (cls ? " " + cls : ""); }
+  function friendly(err){
+    var m = String(err && (err.message || err) || "");
+    if(/NotAllowedError|Permission|denied/i.test(m)) return "Microphone access is blocked. Allow it in your browser and try again.";
+    return "Couldn't connect right now. Please try again in a moment.";
+  }
+  function idleUI(){
+    card.classList.remove("ckvh-live");
+    txt.textContent = "Try it live"; btn.disabled = false;
+  }
+  async function start(){
+    connecting = true; btn.disabled = true;
+    txt.textContent = "Connecting…"; setState("");
+    var watchdog = setTimeout(function(){
+      if(!connecting) return;
+      connecting = false;
+      var c = conv; conv = null;
+      try{ if(c) c.endSession(); }catch(e){}
+      idleUI(); setState("Couldn't connect right now. Please try again in a moment.", "ckvh-err");
+    }, 15000);
+    try{
+      if(!sdkPromise) sdkPromise = import("https://cdn.jsdelivr.net/npm/@elevenlabs/client@1.16.0/+esm");
+      var sdk = await sdkPromise;
+      var opts = {
+        agentId: AGENT_ID,
+        onConnect: function(){ clearTimeout(watchdog); connecting = false; btn.disabled = false; card.classList.add("ckvh-live"); txt.textContent = "End conversation"; setState("Connected. Say hello", "ckvh-on"); },
+        onDisconnect: function(){ if(!conv && !connecting) return; conv = null; connecting = false; clearTimeout(watchdog); idleUI(); setState("That was the real agent, live. Imagine it answering for your practice.", ""); },
+        onModeChange: function(m){ if(conv || connecting) setState(m.mode === "speaking" ? "Agent speaking…" : "Listening. Go ahead", "ckvh-on"); },
+        onError: function(e){ console.error("[ckvh] agent error", e); }
+      };
+      try{ conv = await sdk.Conversation.startSession(Object.assign({ connectionType: "websocket" }, opts)); }
+      catch(first){ conv = await sdk.Conversation.startSession(Object.assign({ connectionType: "webrtc" }, opts)); }
+    }catch(err){
+      console.error("[ckvh] connect failed", err);
+      clearTimeout(watchdog);
+      conv = null; connecting = false; idleUI();
+      setState(friendly(err), "ckvh-err");
+    }
+  }
+  async function stop(){
+    var c = conv; conv = null;
+    txt.textContent = "Ending…"; btn.disabled = true;
+    try{ if(c) await c.endSession(); }catch(e){}
+    idleUI(); setState("That was the real agent, live. Imagine it answering for your practice.", "");
+  }
+  btn.addEventListener("click", function(){
+    if(connecting) return;
+    if(conv) stop(); else start();
+  });
+})();
+</script>
+</section>
