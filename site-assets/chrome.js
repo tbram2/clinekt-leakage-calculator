@@ -210,7 +210,8 @@
 
   var HOME = '/';
   var DEMO = '/book-a-demo';
-  var LOGO = 'https://cdn.prod.website-files.com/698f93a6f3fe10ac9229e2b4/69fe48ba433201b97386cb44_Clinekt_Color.svg';
+  // Round 7 identity (2026-09-22): the all-blue Clinekt wordmark alone. The gradient C icon is never placed next to it.
+  var LOGO = 'https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@c5c6b80/site-assets/media/brand/clinekt-wordmark-blue.svg';
 
   var css = [
     '.master_navigation,section.footer{display:none!important}',
@@ -220,7 +221,7 @@
     ".ck-nav{position:fixed;top:0;left:0;right:0;z-index:99999;isolation:isolate;border-bottom:1px solid rgba(60,60,67,.1);font-family:'Inter',system-ui,-apple-system,sans-serif}",
     '.ck-nav::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);z-index:-1}',
     '.ck-nav-in{width:100%;padding:0 clamp(20px,5vw,72px);height:64px;display:flex;align-items:center;justify-content:space-between}',
-    '.ck-nav-logo img{height:30px;display:block}',
+    '.ck-nav-logo img{height:26px;display:block}',   /* wordmark cap height ~24px in the 64px bar */
     '.ck-nav .ck-links{display:flex;gap:32px}',
     '.ck-nav .ck-links a{font-size:14.5px;color:#56565C;text-decoration:none;transition:color .18s}',
     '.ck-nav .ck-links a:hover{color:#1D1D1F}',
@@ -245,7 +246,7 @@
     '.ck-foot ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;text-align:left}',
     '.ck-foot ul a{font-size:14.5px;color:#56565C;text-decoration:none}',
     '.ck-foot ul a:hover{color:#1D1D1F}',
-    '.ck-brand img{height:30px;margin-bottom:16px}',
+    '.ck-brand img{height:28px;margin-bottom:18px}',
     '.ck-brand p{color:#56565C;font-size:15px;line-height:1.6;max-width:32ch;margin:0}',
     '.ck-foot-bot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:28px}',
     '.ck-foot-bot p{margin:0}',
