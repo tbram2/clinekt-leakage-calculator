@@ -211,7 +211,7 @@
   var HOME = '/';
   var DEMO = '/book-a-demo';
   // Round 7 identity (2026-09-22): the all-blue Clinekt wordmark alone. The gradient C icon is never placed next to it.
-  var LOGO = 'https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@c5c6b80/site-assets/media/brand/clinekt-wordmark-blue.svg';
+  var LOGO = BRAND_WM;
 
   var css = [
     '.master_navigation,section.footer{display:none!important}',
