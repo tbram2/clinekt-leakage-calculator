@@ -1,3 +1,6 @@
+// Round 7 identity (2026-09-22): the all-blue Clinekt wordmark, used by the injected nav/footer and swapped into the
+// embed-built pages (home, FAQs) that ship the old lockup. File-level so every scope below can see it.
+var BRAND_WM = 'https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@c5c6b80/site-assets/media/brand/clinekt-wordmark-blue.svg';
 /* Clinekt interim chrome swap: replaces the OLD site's nav + footer with the new-design
    header/footer on legacy pages (FAQs, Blog, Case Studies, Integrations, legal), so
    visitors coming from home-v2 / book-a-demo-v2 never fall back into the old site.
