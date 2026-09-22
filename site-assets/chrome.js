@@ -165,6 +165,8 @@ var BRAND_WM = 'https://cdn.jsdelivr.net/gh/tbram2/clinekt-leakage-calculator@c5
   // rebuild its mobile menu to mirror the desktop nav (same titles, same order).
   var embedNav = document.querySelector('nav.nav');
   if (embedNav) {
+    // Round 7 identity: the embed ships the old lockup; swap in the wordmark and size it (inline, to beat the embed's own CSS)
+    document.querySelectorAll('.nav-logo img, .foot-brand img, .app-side .lg img').forEach(function (im) { im.src = BRAND_WM; im.removeAttribute('srcset'); im.style.height = im.closest('.app-side') ? '18px' : '28px'; });
     var sol = embedNav.querySelector('.nav-links a[href="/#specialties"], .nav-links a[href="#specialties"]');
     if (sol && !embedNav.querySelector('.nav-drop-btn-solutions')) {
       var drop = document.createElement('div');
