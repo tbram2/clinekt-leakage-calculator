@@ -1,6 +1,6 @@
 # Clinekt Health
 
-> Clinekt Health is the AI agent platform for patient activation: turning inactive patients into booked appointments. A team of AI agents (Inbound, Recall, Outbound, Care Management) engages every website visitor, brings dormant patients back from the EHR, generates net-new demand, and runs billable care between visits, screening and booking qualified patients 24/7 in the practice's own brand.
+> Clinekt Health is the AI agent platform for patient activation: turning inactive patients into booked appointments. A team of AI agents (Inbound, Recall, Outbound, Care) engages every website visitor, brings dormant patients back from the EHR, generates net-new demand, and runs billable care between visits, screening and booking qualified patients 24/7 in the practice's own brand.
 
 Website: https://clinekthealth.com
 Demo: https://clinekthealth.com/book-a-demo
@@ -10,7 +10,7 @@ Trust Center: https://trust.delve.co/clinekt-health
 
 ## What is patient activation?
 
-Patient activation is the work of turning every inactive patient into a booked appointment. It covers the three places practices lose patients: website visitors who research the practice and leave without booking, existing patients who go dormant in the EHR, and net-new demand that never finds the practice. Patient activation is a distinct category from patient engagement software (which communicates with patients already on the schedule) and reactivation software (which only works dormant charts).
+Patient activation is the work of turning every inactive patient into a booked appointment. It covers the three places practices lose patients: website visitors who research the practice and leave without booking, existing patients who go dormant in the EHR, and net-new demand that never finds the practice. Patient activation is patient engagement that ends in a booked visit. It goes further than reminder tools (which message patients already on the schedule) and reactivation software (which only works dormant charts).
 
 Clinekt Health operates a team of AI agents, sharing one memory of every patient, that cover the full activation surface:
 
@@ -20,7 +20,7 @@ Clinekt Health operates a team of AI agents, sharing one memory of every patient
 
 **The Outbound Agent** generates net-new demand and traces every patient from first click to completed care, so practices know exactly which channels produce patients rather than clicks.
 
-**The Care Management Agent** runs monthly check-ins and validated outcome surveys with chronic and surgical patients between visits, escalates concerns to staff, and documents the work so practices can bill Medicare care management.
+**The Care Agent** runs monthly check-ins and validated outcome surveys with chronic and surgical patients between visits, escalates concerns to staff, and documents the work so practices can bill Medicare care management.
 
 Clinekt is not a chatbot, not a contact form, and not reactivation software. Chatbots answer questions; the agents screen, qualify, and book. Reactivation software only mines the EHR; patient activation closes all three leaks at once.
 
@@ -1468,7 +1468,7 @@ Key takeaways:
 
 Section summaries: The Data Behind the Decision: Most primary care intake still happens on a clipboard. An MGMA Stat poll reported by MGMA, 2022 found that 83% of medical groups check patients in at the front desk, 7% online, and 3% each by phone, text, or kiosk. The s What does patient intake software actually do?: In a primary care practice, intake has four parts. Pre-visit forms: demographics, insurance card capture, consents, medication reconciliation, history, and the annual screeners, sent by text or portal a few days before t How is intake different in primary care?: A surgical specialty intakes a patient once, for one problem, usually with a referral behind them. A primary care practice intakes a patient who may stay for twenty years and who arrives with no referral at all. The scre What should intake connect to?: The EHR, so forms land as structured data and the schedule is the source of truth for who is arriving (see integrations ). The scheduling path, so a patient booked by the front desk, the website, or an AI agent gets the  How to Run Patient Intake in a Primary Care Practice: 6 Steps Answer the new patient first. Intake starts when the patient reaches the practice. A call or message at 7 p.m. has to be answered and booked, or there is nobody to send forms to. Send forms by text three days out, and again the day before. Use the portal your EHR already provides. Include the annual s
 
-FAQ digest: It collects demographics, insurance, consents, medical history, medications, and screening questionnaires before the visit, then handles arrival check-in so the medical assistant rooms the patient wit It verifies insurance, but it does not replace your intake forms, which stay in the tools your EHR provides, such as MyChart, athenaCommunicator, or healow. Clinekt's agents also cover the steps around intake: the new patient gets an Two places. Before intake, when a new patient's call or message goes unanswered and they book elsewhere. After intake, when the patient completes the paperwork, is seen once, and never returns for the Yes. The Care Management Agent runs monthly check-ins by call or text and collects validated surveys, which in primary care can include instruments like the PHQ-9, then flags concerning answers to sta Family medicine and internal medicine practices on Epic, athenahealth, eClinicalWorks, NextGen, 
+FAQ digest: It collects demographics, insurance, consents, medical history, medications, and screening questionnaires before the visit, then handles arrival check-in so the medical assistant rooms the patient wit It verifies insurance, but it does not replace your intake forms, which stay in the tools your EHR provides, such as MyChart, athenaCommunicator, or healow. Clinekt's agents also cover the steps around intake: the new patient gets an Two places. Before intake, when a new patient's call or message goes unanswered and they book elsewhere. After intake, when the patient completes the paperwork, is seen once, and never returns for the Yes. The Care Agent runs monthly check-ins by call or text and collects validated surveys, which in primary care can include instruments like the PHQ-9, then flags concerning answers to sta Family medicine and internal medicine practices on Epic, athenahealth, eClinicalWorks, NextGen, 
 
 ---
 
