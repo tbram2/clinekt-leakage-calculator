@@ -2,9 +2,11 @@
 
 > Clinekt Health (clinekthealth.com) is the AI patient activation platform for specialty medical practices. Four AI agents, sharing one memory of every patient (Clinekt OS), cover the whole patient journey: the Inbound Agent converts website visitors into booked patients 24/7, the Recall Agent brings overdue and dormant patients back, the Outbound Agent drives net-new demand and proves marketing ROI from first click to completed procedure, and the Care Management Agent runs billable care between visits with monthly check-ins and validated outcome surveys. White-labeled to each practice, HIPAA compliant, SOC 2 Type II, AES-256.
 
-Patient activation covers the places practices lose patients: website visitors who leave without booking, existing patients who go dormant in the EHR, net-new demand that never finds the practice, and care between visits that goes undelivered and unbilled. Clinekt is not a chatbot, not a contact form, not a voice answering service, and not reactivation software. Clinekt OS is the shared memory behind all four agents: every call, text, email, and visit lives in one memory, so patients never repeat their story and care stays continuous. The agents work alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, and other major EHRs with no IT project. The Care Management Agent runs monthly check-ins and validated outcome surveys (HOOS Jr, KOOS Jr) on chronic and surgical patients, escalates concerns to practice staff, and documents the work so practices can bill Medicare care management through their normal billing process; the same engagement and matched outcome surveys prepare practices for CMS mandatory joint replacement bundle models.
+Patient activation covers the places practices lose patients: website visitors who leave without booking, existing patients who go dormant in the EHR, net-new demand that never finds the practice, and care between visits that goes undelivered and unbilled. Clinekt is not a chatbot, not a contact form, and not reactivation software. Clinekt OS is the shared memory behind all four agents: every call, text, email, and visit lives in one memory, so patients never repeat their story and care stays continuous. The agents work alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, and other major EHRs with no IT project. The Care Management Agent runs monthly check-ins and validated outcome surveys (HOOS Jr, KOOS Jr) on chronic and surgical patients, escalates concerns to practice staff, and documents the work so practices can bill Medicare care management through their normal billing process; the same engagement and matched outcome surveys prepare practices for CMS mandatory joint replacement bundle models.
 
 Platform results: over 1 million patient interactions completed, 24x average ROI, +12% appointment volume, 48% reduction in unqualified consults. Website engagement runs 8-12% with the agent versus under 1% for static contact forms; 98% of website visitors normally leave without making contact. Example: Baldwin Bone and Joint, a multi-provider orthopedic group, generated 263 qualified surgical leads and 159 booked appointments with a 60% lead-to-appointment rate in a single quarter.
+
+What the agents handle: scheduling and booking, appointment reminders, inbound call management (answering phones and website inquiries), enrollment and intake, insurance verification, billing questions and balances, referrals, recall and reactivation, patient retention, medication adherence reminders, and marketing attribution. Built into every agent: HIPAA compliant and SOC 2 Type II, read-only EHR access, phone, text, and email in one thread, customizable voices, multiple languages, a real-time dashboard, and one memory of every patient. Practices go live the same day with no IT project.
 
 ## Platform
 
@@ -19,7 +21,7 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 
 - [EHR integrations](https://clinekthealth.com/integrations): works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner, AdvancedMD, Greenway, Veradigm and Nextech with no IT project
 - [Stop patient leakage](https://clinekthealth.com/patient-leakage): what patient leakage is and how the Inbound Agent stops it
-- [Patient recall and reactivation](https://clinekthealth.com/patient-recall-reactivation): reminders vs recall vs reactivation, and how conversational outreach beats batch reminders
+- [Patient recall and reactivation](https://clinekthealth.com/blog/patient-recall-software): what recall software must do beyond the reminder, and how conversational outreach books the visit
 - [Healthcare marketing ROI](https://clinekthealth.com/marketing-roi): proving marketing spend in completed procedures by channel
 - [Leakage calculator](https://clinekthealth.com/leakage-calculator): free tool estimating what patient leakage costs a practice each month
 
@@ -54,9 +56,9 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 - [Best AI Voice Agent for Orthopedic Practices 2026: 6 Compared](https://clinekthealth.com/blog/best-ai-voice-agent-for-orthopedic-practice): Six AI voice agents for orthopedic practices compared (ClinicFlow, Hello Patient, Flexbone AI, Clarion, Prosper AI, and Clinekt), with what each does, where it stops, and what to ask before you buy.
 - [AI Front Desk for Medical Practice: What It Covers and Top Tools](https://clinekthealth.com/blog/ai-front-desk-for-medical-practice): An AI front desk handles calls, web inquiries, intake, insurance, scheduling, reminders and after-hours coverage. Compare the leading 2026 tools.
 - [AI Voice Agent for a Medical Practice: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-voice-agent-for-medical-practice): A buyer's checklist for the voice-agent category: what to test on a hard call, the after-hours math, and the specialty routing logic generic vendors miss.
-- [AI Voice Agent for a Dental Practice: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-voice-agent-for-dental-practice): A dental-specific voice-agent buying checklist: what to test on a pain call, a recall callback, PMS write-back, and DSO multi-location consistency.
+- [AI Voice Agent for a Dental Practice: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-voice-agent-for-dental-practice): A dental-specific voice-agent buying checklist: what to test on a pain call, a recall callback, a live booking against your PMS, and DSO multi-location consistency.
 - [After-Hours Answering Service Cost: What to Expect Before You Switch to AI Coverage](https://clinekthealth.com/blog/after-hours-answering-service-cost): What a traditional after-hours answering service costs vs AI coverage, and how to calculate the real cost of switching for your practice.
-- [AI Medical Scheduling Software: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-medical-scheduling-software): A buyer's checklist for AI medical scheduling software: the EHR write-back test, the compliance non-negotiables, specialty scheduling logic, and the proof to demand before you sign.
+- [AI Medical Scheduling Software: What to Look for Before You Buy](https://clinekthealth.com/blog/ai-medical-scheduling-software): A buyer's checklist for AI medical scheduling software: the live booking test, the compliance non-negotiables, specialty scheduling logic, and the proof to demand before you sign.
 - [What is patient activation?](https://clinekthealth.com/blog/what-is-patient-activation)
 - [What is patient leakage?](https://clinekthealth.com/blog/what-is-patient-leakage)
 - [Voice AI vs reactivation software vs patient activation agents](https://clinekthealth.com/blog/voice-ai-vs-reactivation-software-vs-patient-activation-agents)
@@ -65,7 +67,7 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 
 ## Try it
 
-- [Try the AI agent live](https://clinekthealth.com/demo-agent)
+- [Tap to talk to the AI agent](https://clinekthealth.com/#talk)
 - [Book a demo](https://clinekthealth.com/book-a-demo)
 
 ## Customer results
@@ -106,7 +108,7 @@ Platform results: over 1 million patient interactions completed, 24x average ROI
 - [Best Patient Reactivation Software: 6 Tools Compared](https://clinekthealth.com/blog/best-patient-reactivation-software): Brevium, NexHealth, OhMD, and more compared for specialty practices. See which reactivation tools just message overdue patients and which book them.
 - [Dental AI Answering Service: What It Should Do](https://clinekthealth.com/blog/dental-ai-answering-service): What a dental AI answering service should actually do, what it costs, and why oral surgery and endodontic practices still keep a human backup.
 - [Do Appointment Reminders Reduce No-Shows? Yes, 29 to 39%](https://clinekthealth.com/blog/do-appointment-reminders-reduce-no-shows): Yes, reminders cut no-shows 28.9 to 39.1%. See the evidence, what still drives no-shows after reminders, and what specialty practices do next.
-- [How Does AI Patient Scheduling Actually Work?](https://clinekthealth.com/blog/how-ai-patient-scheduling-works): AI patient scheduling explained: voice agents, self-scheduling, recall outreach, and the EHR write-back question every vendor dodges.
+- [How Does AI Patient Scheduling Actually Work?](https://clinekthealth.com/blog/how-ai-patient-scheduling-works): AI patient scheduling explained: voice agents, self-scheduling, recall outreach, and the EHR integration question every vendor dodges.
 - [How Much Does an AI Receptionist Cost?](https://clinekthealth.com/blog/how-much-does-an-ai-receptionist-cost): The three AI receptionist pricing models, the hidden fees vendors leave off the page, and a per-specialty ROI worksheet for your practice.
 - [How Much Does Patient Leakage Cost a Practice?](https://clinekthealth.com/blog/how-much-does-patient-leakage-cost): No verified universal number exists for patient leakage cost. See which statistics are real, which are folklore, and calculate your own number.
 - [How Do You Measure Patient Activation?](https://clinekthealth.com/blog/how-to-measure-patient-activation): The PAM explained in plain English: 13 items, four levels, licensing reality, and the behavioral proxy metrics practices can track instead.
@@ -233,5 +235,5 @@ Dedicated buying guides for dentistry, physical therapy, primary care, oral surg
 
 ## Try it
 
-- [Try the AI agent live](https://clinekthealth.com/demo-agent)
+- [Tap to talk to the AI agent](https://clinekthealth.com/#talk)
 - [Book a demo](https://clinekthealth.com/book-a-demo)
