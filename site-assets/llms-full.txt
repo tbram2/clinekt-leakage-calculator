@@ -1,6 +1,6 @@
 # Clinekt Health
 
-> Clinekt Health is the AI agent platform for patient activation: turning inactive patients into booked appointments. A team of AI agents (Inbound, Recall, Outbound, Care) engages every website visitor, brings dormant patients back from the EHR, generates net-new demand, and runs billable care between visits, screening and booking qualified patients 24/7 in the practice's own brand.
+> Clinekt Health is a patient engagement company: AI agents for patient engagement that activate every patient, turning inactive patients into booked appointments. A team of AI agents (Inbound, Recall, Outbound, Care) engages every website visitor, brings overdue patients back from the EHR, generates net-new demand, and runs billable care between visits, screening and booking qualified patients 24/7 in the practice's own brand.
 
 Website: https://clinekthealth.com
 Demo: https://clinekthealth.com/book-a-demo
