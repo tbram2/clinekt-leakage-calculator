@@ -1003,6 +1003,25 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .hand .hsub{margin:clamp(56px,7vh,88px) 0 clamp(18px,2.4vh,26px)}
 @media(max-width:1024px){.hand .ttx{position:static}}
 
+/* ============ what we handle, on /platform (Taylor 2026-09-30: "we still need to list that somewhere"; approved "publish all of this").
+   A plain checklist, deliberately unlike the pulled homepage version: no cards, no arrows, no icons in tiles.
+        desktop   3 columns   [check] Name / one line
+        tablet    2 columns
+        phone     2 columns   [check] Name only (the one-liners hide so the list stays short)
+   then one quiet line of what is built into every agent. ============ */
+.cap .caps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);column-gap:clamp(24px,3vw,48px);border-top:1px solid var(--line)}
+.cap .caps li{display:grid;grid-template-columns:22px 1fr;column-gap:12px;align-content:start;padding:18px 0 20px;border-bottom:1px solid var(--line)}
+.cap .caps .ck{grid-row:span 2;width:22px;height:22px;color:var(--blue);margin-top:1px}
+.cap .caps .ck svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cap .caps b{font-weight:500;font-size:17px;letter-spacing:-.01em;line-height:1.3;color:var(--wink)}
+.cap .caps span{font-size:14.5px;line-height:1.45;color:var(--wbody);margin-top:4px}
+.cap .with{margin-top:clamp(32px,4.5vh,52px);display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;font-size:14.5px;color:var(--wbody)}
+.cap .with .lab{margin:0 6px 0 0}
+.cap .with em{font-style:normal;display:inline-flex;align-items:center;gap:8px}
+.cap .with em:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue)}
+@media(max-width:1024px){.cap .caps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.cap .caps{column-gap:16px}.cap .caps li{grid-template-columns:18px 1fr;column-gap:9px;padding:13px 0}.cap .caps .ck,.cap .caps .ck svg{width:18px;height:18px}.cap .caps b{font-size:14.5px}.cap .caps span{display:none}.cap .with{font-size:13.5px;gap:8px 16px}.cap .with .lab{width:100%;margin:0 0 4px}}
+
 /* ============ the platform on phones and tablets (Taylor 2026-09-30): the four agents are cards that stack as you scroll.
    Each card sticks one header lower than the card before it, so the agents already seen stay on screen as tabs and the new
    card slides up over them. Desktop keeps the pinned showcase with its numbered tabs.
