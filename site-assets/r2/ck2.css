@@ -336,6 +336,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 @media(max-width:1024px){
   .mega{display:none}
   .nav .navbtn{display:none}                                          /* phones and tablets: Book a Demo lives in the menu sheet, not the bar (Taylor 2026-09-30) */
+  .marquee img{height:30px}.marquee img.tall{height:44px}.marquee .track{gap:40px}   /* the logo ribbon reads larger on small screens (Taylor 2026-09-30); was 20/30px */
   .nav .burger{display:block}
   .nav.sheet .msheet{display:block;position:absolute;left:0;right:0;top:100%;height:calc(100vh - 64px);height:calc(100dvh - 64px);overflow:auto;background:var(--cream);border-top:1px solid var(--line);padding:6px 16px 40px}
   .msheet details{border-bottom:1px solid var(--line)}
