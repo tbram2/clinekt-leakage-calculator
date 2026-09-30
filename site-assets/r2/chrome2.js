@@ -77,10 +77,15 @@
   function inject() {
     document.documentElement.classList.add('ck-skin');
     var head = document.head;
-    head.appendChild(sheet(FONT)); head.appendChild(sheet(SKIN));
-    // take the old header and footer out of the page, not just out of sight
+    head.appendChild(sheet(FONT));
+    // skin.css is linked from the site head (2026-09-30) so it applies from first paint; load it here only as a fallback
+    if (!document.querySelector('link[href*="/r2/skin.css"]')) head.appendChild(sheet(SKIN));
+    // take the old header and footer out of the page, not just out of sight (the site head already hides them, so nothing moves)
     [].slice.call(document.querySelectorAll('.master_navigation, section.footer')).forEach(function (el) { el.parentNode.removeChild(el); });
     var top = mount('ck-top', NAV, 60), bottom = mount('ck-bottom', FOOT, 1);
+    // the site head reserves the header's height as body padding; hand that space to the header so the page does not shift
+    var pt = parseFloat(getComputedStyle(document.body).paddingTop) || 0;
+    if (pt) { top.style.height = pt + 'px'; document.body.style.paddingTop = '0'; }
     document.body.insertBefore(top, document.body.firstChild);
     document.body.appendChild(bottom);
     menus(top.shadowRoot);
