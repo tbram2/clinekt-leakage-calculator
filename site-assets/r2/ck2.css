@@ -1000,6 +1000,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .hand .ttx{position:sticky;top:32px}                                  /* the headline stays beside the list while it scrolls past */
 .hand .hsub{margin:clamp(56px,7vh,88px) 0 clamp(18px,2.4vh,26px)}
 @media(max-width:1024px){.hand .ttx{position:static}}
+/* the menu button: three plain lines, no pill (Taylor 2026-09-30). The markup has two <i> lines; the middle one is :after,
+   so no embed has to change. Open: the outer lines cross at the middle, the middle line fades. */
+.nav .burger{width:44px;height:44px;border:0;border-radius:0;background:transparent;margin-left:6px}
+.nav .burger i{left:11px;right:11px;height:2px}
+.nav .burger:after{content:"";position:absolute;left:11px;right:11px;top:21px;height:2px;border-radius:2px;background:var(--wink);transition:opacity .2s}
+.nav .burger i:nth-child(1){top:14px}
+.nav .burger i:nth-child(2){top:28px}
+.nav.sheet .burger i:nth-child(1),.nav.sheet .burger i:nth-child(2){top:21px}
+.nav.sheet .burger:after{opacity:0}
 
 /* ============ the rest of the site (2026-09-29): specialty pages, use-case pages, FAQs, the leakage calculator ============
    These pages are built by make_rest.py from the same parts as the platform and agent pages. Only what those parts
