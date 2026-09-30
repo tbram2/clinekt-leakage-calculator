@@ -995,6 +995,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 @media(min-width:641px) and (max-width:1024px){.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px}.stats .period{grid-column:1 / -1}.stats .stat,.stats .stat:last-child{border-bottom:0}.dpts{max-width:none}}
 @media(max-width:640px){.spgrid{grid-template-columns:1fr}.wall .grid{grid-template-columns:repeat(2,1fr)}.wall .grid a{height:88px;padding:0 12px}.wall .grid img{max-height:40px}.wall .grid img.tall{max-height:54px}.lclose{font-size:24px}.pgrid{grid-template-columns:1fr}.pc,.pc:nth-child(even){padding:28px 0;border-left:0;border-top:1px solid var(--line)}.pc:first-child{border-top:0}.pt{font-size:30px;min-height:0}.pd{max-width:none}}
 
+.hand .ttx{position:sticky;top:32px}                                  /* the headline stays beside the list while it scrolls past */
+.hand .hsub{margin:clamp(56px,7vh,88px) 0 clamp(18px,2.4vh,26px)}
+@media(max-width:1024px){.hand .ttx{position:static}}
+
 /* ============ the rest of the site (2026-09-29): specialty pages, use-case pages, FAQs, the leakage calculator ============
    These pages are built by make_rest.py from the same parts as the platform and agent pages. Only what those parts
    did not already cover is styled here. Every rule is new: nothing above this line is changed. */
