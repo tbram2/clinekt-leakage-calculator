@@ -1015,16 +1015,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 */
 @media(max-width:1024px){
   .panels{counter-reset:ag;padding-bottom:8px}
-  .panel,.panel+.panel{counter-increment:ag;position:sticky;inset:auto;display:block;margin:0 0 16px;padding:0;min-height:var(--ch,0);background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 1px 2px rgba(26,25,21,.05),0 -12px 30px -20px rgba(26,25,21,.35)}
+  .panel,.panel+.panel{counter-increment:ag;position:sticky;inset:auto;display:block;margin:0 0 16px;padding:0;min-height:var(--ch,0);background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 -10px 24px -18px rgba(26,25,21,.22)}
   .panel:last-child{margin-bottom:0}
-  .panel:nth-child(1){top:12px;--hb:#dcebff;--hc:var(--wink);--bb:var(--blue);--bc:#fff}
-  .panel:nth-child(2){top:56px;--hb:#2f8ff0;--hc:#fff;--bb:#fff;--bc:#2f8ff0}
-  .panel:nth-child(3){top:100px;--hb:#0a4fc4;--hc:#fff;--bb:#fff;--bc:#0a4fc4}
-  .panel:nth-child(4){top:144px;--hb:var(--wink);--hc:#fff;--bb:#fff;--bc:var(--wink)}
+  .panel:nth-child(1){top:12px}.panel:nth-child(2){top:56px}.panel:nth-child(3){top:100px}.panel:nth-child(4){top:144px}
   .panel .txt{padding:0 0 22px}
   .panel .txt>*:not(.k){margin-left:20px;margin-right:20px}
-  .panel .k{display:flex;align-items:center;gap:10px;height:44px;margin:0;padding:0 16px;background:var(--hb);color:var(--hc);font-size:15px;font-weight:600;letter-spacing:-.01em}
-  .panel .k:before{content:counter(ag);flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--bb);color:var(--bc);font-size:12.5px;font-weight:600;letter-spacing:0}
+  /* quiet tabs (Taylor 9/30: the coloured bars were not our styling): white, a hairline, a muted 01-04 and the name in ink */
+  .panel .k{display:flex;align-items:center;gap:12px;height:44px;margin:0;padding:0 20px;background:#fff;border-bottom:1px solid var(--line);color:var(--wink);font-size:15px;font-weight:600;letter-spacing:-.01em}
+  .panel .k:before{content:counter(ag,decimal-leading-zero);flex:none;color:var(--wmute);font-size:13px;font-weight:500;font-variant-numeric:tabular-nums;letter-spacing:.02em}
   .panel h3{font-size:26px;line-height:1.1;margin-top:20px;margin-bottom:10px;padding-right:84px;min-height:58px}
   .panel p{font-size:15.5px;line-height:1.5}
   .panel .steps{margin-top:16px;gap:10px}
@@ -1041,7 +1039,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 /* short screens (an iPhone SE with its toolbars): a pinned card must end above the fold, so the tabs are slimmer and the
    three steps give way to the paragraph above them */
 @media(max-width:1024px) and (max-height:650px){
-  .panel .k{height:36px;font-size:14px}.panel .k:before{width:22px;height:22px;font-size:12px}
+  .panel .k{height:36px;font-size:14px}.panel .k:before{font-size:12px}
   .panel:nth-child(1){top:8px}.panel:nth-child(2){top:44px}.panel:nth-child(3){top:80px}.panel:nth-child(4){top:116px}
   .panel .orbit{top:52px;width:58px;height:58px}
   .panel h3{font-size:24px;margin-top:16px;padding-right:74px;min-height:52px}
