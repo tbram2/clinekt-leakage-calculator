@@ -391,9 +391,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .fhead .live:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.16);animation:blink 1.6s ease-in-out infinite}
 .fav{position:absolute;right:0;top:-84px;width:clamp(108px,10vw,136px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;z-index:3;box-shadow:0 0 0 7px var(--cream),0 0 0 8px var(--line),0 2px 4px rgba(26,25,21,.08),0 30px 50px -24px rgba(26,25,21,.55)}
 .fav img{width:100%;height:100%;object-fit:cover;display:block}
-.favs{position:absolute;right:0;top:-10px;display:flex;z-index:3}
-.favs span{width:58px;height:58px;border-radius:50%;overflow:hidden;margin-left:-14px;box-shadow:0 0 0 4px var(--cream),0 10px 20px -10px rgba(26,25,21,.5)}
-.favs img{width:100%;height:100%;object-fit:cover;display:block}
 .fcards{position:relative;display:grid;gap:10px;z-index:2}
 .fn{display:grid;grid-template-columns:40px minmax(0,1fr) auto;column-gap:13px;align-items:center;padding:13px 16px 13px 13px;border-radius:18px;background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(16px) saturate(1.8);backdrop-filter:blur(16px) saturate(1.8);border:1px solid rgba(255,255,255,.85);box-shadow:0 0 0 .5px rgba(26,25,21,.1),inset 0 1px 0 rgba(255,255,255,.9),0 1px 2px rgba(26,25,21,.05),0 18px 34px -20px rgba(26,25,21,.34);opacity:0;transform:translateY(14px) scale(.98);transition:opacity .5s var(--ease),transform .6s cubic-bezier(.3,1.3,.5,1);transition-delay:calc(var(--i) * .16s + .25s)}
 .ph.in .fn{opacity:1;transform:none}
@@ -500,6 +497,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
   .hero h1{font-size:clamp(40px,11.8vw,52px)}   /* homepage title on phones: 46px at 390 wide (was 41px); 40px floor and 52px tablet size unchanged */
   .phg{grid-template-columns:1fr;gap:56px}
   .feed{justify-self:start;width:100%;max-width:560px;margin-top:20px}
+  /* phones and tablets: the portrait sits in the header row as a small avatar instead of hanging over it (Taylor 9/30: "looks a little cluttered")
+        [photo]  Northside Orthopedics - Tonight's activity
+                 . Live                                                                     */
+  .fav{top:0;right:auto;left:0;width:48px;box-shadow:0 0 0 3px var(--cream),0 0 0 4px var(--line),0 10px 20px -12px rgba(26,25,21,.45)}
+  .fhead{flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;min-height:48px;padding:0 0 0 62px;margin-bottom:16px}
+  .fhead b{line-height:1.35}
   .rail{grid-template-columns:1fr;gap:0}
   /* the line is placed on the rows of the list (first row to the start of the last one), then pushed down 20px at both
      ends, so it starts at the middle of the first circle and stops at the middle of the last, whatever the text heights */
@@ -519,7 +522,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
   .wgrid{grid-template-columns:1fr}.wc,.wc:nth-child(even){padding:28px 0;border-left:0;border-top:1px solid var(--line)}.wc:first-child{border-top:0}
   .wc h3{min-height:0}   /* the two-line reserve lines up titles across columns; in one column it only leaves a gap */
   .fcount{grid-template-columns:1fr 1fr}.fcount div:nth-of-type(3){padding-left:0;border-left:0}.fcount div:nth-of-type(n+3){margin-top:16px;border-top:1px solid var(--line)}
-  .fhead{padding-right:112px}.fav{width:96px;top:-62px}
   .fn{padding:12px 13px 12px 12px;grid-template-columns:38px minmax(0,1fr) auto;column-gap:11px}.fn .mi{width:38px;height:38px}
   .pcta a{flex:1 1 100%;justify-content:center}
   .roles{grid-template-columns:1fr}.roles div,.roles div+div{padding-left:0;border-left:0}.roles div+div{margin-top:16px;border-top:1px solid rgba(255,255,255,.28)}
