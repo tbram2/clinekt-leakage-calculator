@@ -1000,6 +1000,53 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .hand .ttx{position:sticky;top:32px}                                  /* the headline stays beside the list while it scrolls past */
 .hand .hsub{margin:clamp(56px,7vh,88px) 0 clamp(18px,2.4vh,26px)}
 @media(max-width:1024px){.hand .ttx{position:static}}
+
+/* ============ the platform on phones and tablets (Taylor 2026-09-30): the four agents are cards that stack as you scroll.
+   Each card sticks one header lower than the card before it, so the agents already seen stay on screen as tabs and the new
+   card slides up over them. Desktop keeps the pinned showcase with its numbered tabs.
+
+        12px  [ 1  Inbound Agent          ]  pale blue
+        56px  [ 2  Outbound Agent         ]  mid blue
+       100px  [ 3  Recall Agent           ]  deep blue
+       144px  [ 4  Care Management Agent  ]  ink
+              |  headline        (face)   |
+              |  one paragraph            |  <- the card you are on
+              |  three steps, link        |
+*/
+@media(max-width:1024px){
+  .panels{counter-reset:ag;padding-bottom:8px}
+  .panel,.panel+.panel{counter-increment:ag;position:sticky;inset:auto;display:block;margin:0 0 16px;padding:0;min-height:var(--ch,0);background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 1px 2px rgba(26,25,21,.05),0 -12px 30px -20px rgba(26,25,21,.35)}
+  .panel:last-child{margin-bottom:0}
+  .panel:nth-child(1){top:12px;--hb:#dcebff;--hc:var(--wink);--bb:var(--blue);--bc:#fff}
+  .panel:nth-child(2){top:56px;--hb:#2f8ff0;--hc:#fff;--bb:#fff;--bc:#2f8ff0}
+  .panel:nth-child(3){top:100px;--hb:#0a4fc4;--hc:#fff;--bb:#fff;--bc:#0a4fc4}
+  .panel:nth-child(4){top:144px;--hb:var(--wink);--hc:#fff;--bb:#fff;--bc:var(--wink)}
+  .panel .txt{padding:0 0 22px}
+  .panel .txt>*:not(.k){margin-left:20px;margin-right:20px}
+  .panel .k{display:flex;align-items:center;gap:10px;height:44px;margin:0;padding:0 16px;background:var(--hb);color:var(--hc);font-size:15px;font-weight:600;letter-spacing:-.01em}
+  .panel .k:before{content:counter(ag);flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--bb);color:var(--bc);font-size:12.5px;font-weight:600;letter-spacing:0}
+  .panel h3{font-size:26px;line-height:1.1;margin-top:20px;margin-bottom:10px;padding-right:84px;min-height:58px}
+  .panel p{font-size:15.5px;line-height:1.5}
+  .panel .steps{margin-top:16px;gap:10px}
+  .panel .steps li b{color:var(--wink)}
+  .panel .steps li:nth-child(1) i{border-color:var(--b1);background:var(--b1)}
+  .panel .steps li:nth-child(2) i{border-color:var(--b2);background:var(--b2)}
+  .panel .steps li:nth-child(3) i{border-color:var(--b3);background:var(--b3)}
+  .panel .more{margin-top:14px}
+  /* the ring collapses to the agent's portrait, in the card's top corner */
+  .panel .orbit{position:absolute;top:62px;right:18px;width:66px;height:66px;margin:0;aspect-ratio:auto}
+  .panel .orbit .track,.panel .orbit .node,.panel .orbit .tag,.panel .orbit .who,.panel .orbit .lbl{display:none}
+  .panel .orbit .ap{width:100%;height:100%;opacity:1;transform:translate(-50%,-50%);box-shadow:0 0 0 3px #fff,0 0 0 4px var(--line),0 10px 20px -12px rgba(26,25,21,.45)}
+}
+/* short screens (an iPhone SE with its toolbars): a pinned card must end above the fold, so the tabs are slimmer and the
+   three steps give way to the paragraph above them */
+@media(max-width:1024px) and (max-height:650px){
+  .panel .k{height:36px;font-size:14px}.panel .k:before{width:22px;height:22px;font-size:12px}
+  .panel:nth-child(1){top:8px}.panel:nth-child(2){top:44px}.panel:nth-child(3){top:80px}.panel:nth-child(4){top:116px}
+  .panel .orbit{top:52px;width:58px;height:58px}
+  .panel h3{font-size:24px;margin-top:16px;padding-right:74px;min-height:52px}
+  .panel .steps{display:none}
+}
 /* the menu button: three plain lines, no pill (Taylor 2026-09-30). The markup has two <i> lines; the middle one is :after,
    so no embed has to change. Open: the outer lines cross at the middle, the middle line fades. */
 .nav .burger{width:44px;height:44px;border:0;border-radius:0;background:transparent;margin-left:6px}
