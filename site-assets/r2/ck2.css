@@ -1118,6 +1118,53 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .nav.sheet .burger i:nth-child(1),.nav.sheet .burger i:nth-child(2){top:21px}
 .nav.sheet .burger:after{opacity:0}
 
+.hero .hcta{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:clamp(18px,2.8vh,28px)}
+.hero .hcta .hb1{display:inline-flex;align-items:center;height:44px;padding:0 22px;border-radius:999px;background:var(--blue);color:#fff;font-size:15px;font-weight:600;white-space:nowrap;box-shadow:0 14px 30px -14px rgba(0,113,227,.85);transition:transform .18s}
+.hero .hcta .hb1:hover{transform:translateY(-1px)}
+.hero .hcta .tap{margin-top:0;height:44px;padding:0 20px 0 16px;gap:9px;font-size:15px;font-weight:600;color:var(--wink);white-space:nowrap}
+.hero .hcta .tap .wf{gap:3px;height:18px}
+.hero .hcta .tap .wf i{width:3px}
+.hero .hcta .tap .wf i:nth-child(1){height:8px}.hero .hcta .tap .wf i:nth-child(2){height:13px}.hero .hcta .tap .wf i:nth-child(3){height:18px}.hero .hcta .tap .wf i:nth-child(4){height:11px}.hero .hcta .tap .wf i:nth-child(5){height:7px}
+.hero .ckv-live-session .hb1,.hero .ckv-connecting .hb1{display:none}
+.hero .vin:has(.ckv-after[style*="block"]) .hb1{display:none}
+.dline{margin-top:clamp(28px,4vh,44px);text-align:center;font-size:clamp(16px,1.15vw,18px);line-height:1.5;color:var(--wbody);text-wrap:balance}
+.dline a{font-weight:600;color:var(--blue);white-space:nowrap}
+.dline a:after{content:" ›"}
+.dline a:hover{text-decoration:underline;text-underline-offset:4px}
+.dpick{display:none}
+.dform h2:focus{outline:none}
+.dform.pick form,.dform.pick>.fh{display:none}
+.dform.pick .dpick{display:block}
+.dform.sent .dpick{display:none}
+.dwk,.ddays{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.dwk{margin-top:clamp(20px,2.6vh,28px);font-size:12.5px;font-weight:600;color:rgba(255,255,255,.72);text-align:center}
+.ddays{margin-top:8px}
+.ddays button{height:56px;border-radius:14px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;line-height:1.1;padding:0;transition:background .15s,border-color .15s}
+.ddays button b{font-size:18px;font-weight:600;letter-spacing:-.01em}
+.ddays button span{font-size:11.5px;font-weight:500;color:rgba(255,255,255,.76)}
+.ddays button:hover{background:rgba(255,255,255,.2)}
+.ddays button.on,.dslots button.on{background:#fff;color:#0a3fa8;border-color:#fff}
+.ddays button.on span{color:#0a3fa8}
+.ddays button[disabled]{opacity:.3;cursor:default;background:transparent}
+.dtz{margin-top:20px;font-size:13.5px;color:rgba(255,255,255,.8)}
+.dslots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px}
+.dslots button{height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff;font:inherit;font-size:14.5px;font-weight:600;cursor:pointer;padding:0;white-space:nowrap;transition:background .15s,border-color .15s}
+.dslots button:hover{background:rgba(255,255,255,.2)}
+.ddays button.on:hover,.dslots button.on:hover{background:#fff}
+.ddays button:focus-visible,.dslots button:focus-visible,.dskip:focus-visible{outline:3px solid rgba(255,255,255,.7);outline-offset:2px}
+.dpick .go{display:block;width:100%;margin-top:20px}
+.dskip{display:block;margin:10px auto 0;min-height:44px;padding:0 10px;border:0;background:none;color:#fff;font:inherit;font-size:14.5px;font-weight:500;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+@media(max-width:1024px){
+  .dline a{display:inline-flex;align-items:center;min-height:44px}
+  .dgrid{gap:0}
+  .dtx{display:contents}
+  .dtx .lab{order:1}.dtx h1{order:2}.dtx .lead{order:3}
+  .demo .dgrid .dform{order:4;margin-top:30px}   /* three classes: .dform.w-form{margin:0} comes later in the live stylesheet */
+  .dpts{order:5;margin-top:36px}
+  .dtx .seals{order:6}
+}
+@media(max-width:640px){.dslots{gap:6px}.dslots button{font-size:13px}.hero .hcta .hb1{padding:0 20px}.hero .hcta .tap{padding:0 18px 0 14px}}
+
 /* ============ the rest of the site (2026-09-29): specialty pages, use-case pages, FAQs, the leakage calculator ============
    These pages are built by make_rest.py from the same parts as the platform and agent pages. Only what those parts
    did not already cover is styled here. Every rule is new: nothing above this line is changed. */
