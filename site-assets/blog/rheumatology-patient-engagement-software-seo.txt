@@ -1,0 +1,104 @@
+RHEUMATOLOGY PATIENT ENGAGEMENT SOFTWARE: WHAT TO LOOK FOR BEFORE YOU BUY - SEO/AEO FIELDS
+======================================================================
+
+Slug:            rheumatology-patient-engagement-software
+URL:             https://clinekthealth.com/blog/rheumatology-patient-engagement-software
+
+Title tag / seo-title (55 chars):
+Rheumatology Patient Engagement Software: Buyer's Guide
+
+Meta description / short-description (153 chars):
+What rheumatology patient engagement software should track across referrals, infusions, DMARD monitoring, and disease-activity recall, plus 6 buying questions.
+
+Published:        2026-10-07 (item-level publish)
+
+Angle: WORK ORDER (queue/2026-10-01/wo-g-patient-engagement.md, WO-G1, day 4 of 11, fixed order).
+Topic pre-assigned, not self-selected: oral surgery (10/2), physical therapy (10/5), and urology
+(10/6) done; rheumatology is next in the fixed order (oral surgery, physical therapy, urology,
+rheumatology, behavioral health, cardiology, ophthalmology, dermatology, primary care, pediatrics,
+then health systems). Confirmed via live site check that rheumatology-patient-engagement-software
+did not already exist (404) before creating it; the specialty-job-matrix page's six job cells were
+confirmed live for rheumatology (recall, referral-management, AI receptionist, intake, no-show-rates)
+but none framed "engagement" as its own buyer's-guide category - this fills that gap, matching the
+dental/oral-surgery/PT/urology siblings' pattern exactly.
+
+GSC supporting signal (3-month pull, sc-domain:clinekthealth.com, 7/7-10/5): "crm for rheumatology"
+24 impr/pos 17.0; "patient intake software for rheumatologists" 19 impr/pos 10.4; "crm software for
+rheumatologists" 12 impr/pos 43.0 - rheumatology buyer-register queries exist and are currently
+unowned by a dedicated engagement page, consistent with the WO-G1 premise (132 "engagement" queries,
+3 months, 1,108 impressions on the top 10, 0 clicks) that patient engagement is the top company
+priority (Taylor 10/1: "We need to be at the top of the list for all queries related to patient
+engagement across all specialties... This is the top priority.").
+
+Format: same buyer's-guide template as the dental/oral-surgery/PT/urology siblings - 9 H2s (Key
+takeaways; What does X actually do; Why does X need more than appointment reminders; What should X
+cover across the care journey; How to evaluate X - 6 questions; Why do X patients go quiet
+mid-protocol; Where does Clinekt fit; Frequently asked questions; Where to start), 5 FAQ H3s.
+Internal links: first ~140 words link /rheumatology (anchor "rheumatology patient engagement
+software") and /patient-engagement-software (anchor "patient engagement software"), both curled 200
+before publish. Cross-link target: /blog/rheumatology-patient-recall-software (closest existing
+rheumatology concept to "engagement" among the 5 siblings - ongoing, between-visit outreach -
+mirroring the PT-recall and urology-recall precedent from 10/5 and 10/6). Not on the title-meta-freeze
+list, checked first regardless.
+
+Positioning rules (RULES 2026-10-01) followed throughout: agents named Inbound, Recall, Outbound,
+Care individually in that order, never counted or numbered; "screens"/"screening" used, never
+"diagnosis"; EHR connection read-only; go-live same day; pricing stated only as "one simple rate per
+provider per month... no multi-year contract," no dollar figure for Clinekt anywhere; no em dashes;
+no PHI; "chatbot" never used. Verified via grep: 0 em dashes, 0 dollar signs/spelled-out currency, 0
+"chatbot", 0 "diagnos*", 0 "four agents"/"4 agents" phrasing.
+
+Stats used (both independently verified this session, confirmed absent from every citation already
+used by the 5 existing rheumatology siblings - recall, referral-management, AI receptionist, intake,
+no-show-rates - which cite: academic.oup.com/rheumap/article/9/2/rkaf044; two acrabstracts.org
+abstracts (no-show rates across a regional system; oral methotrexate adherence); PMC11334757;
+PMC12524471; PMC7316226; PMC4714455; the AMA prior-authorization survey; and two MGMA no-show Stat
+releases):
+  - Biliavska et al., "How and Who? Examining Real-World Evidence of Engagement and Use of an
+    Electronic Patient-Reported Outcome Smartphone Application in Routine Clinical Care for Patients
+    With Inflammatory Arthritides," ACR Open Rheumatology, 2025 (DOI 10.1002/acr2.70049, PMC12053926):
+    four-year real-world study (patients seen 2018-2022), 673 inflammatory arthritis patients provided
+    at least one ePRO report; 91% completed a RAPID3 disease-activity questionnaire at baseline,
+    falling to 38% at six months and 24% at twelve months; median engagement duration 14.8 months;
+    patients aged 60-69 more likely to be long-term users than those under 50; gender, baseline
+    disease activity and disability were not associated with engagement length. Direct WebFetch of the
+    primary PMC article returned a reCAPTCHA interstitial; verified instead via two independent
+    WebSearch queries converging on identical specific figures (91%/38%/24%, 673 patients, 14.8
+    months) and citation metadata (journal, year, DOI), per the established two-independent-search
+    standard used on prior sibling posts when a primary host blocks direct fetch. NEW to the
+    rheumatology corpus. Link-sweep note: the Wiley publisher URL (acrjournals.onlinelibrary.wiley.com)
+    returns HTTP 403 under curl with both a default and a full browser user-agent string (bot-blocking,
+    same pattern as the 9/15 globenewswire note - not a dead link, just unreachable to a non-browser
+    client); the article's own PMC mirror (pmc.ncbi.nlm.nih.gov/articles/PMC12053926/) returns 200 and
+    is what the published article links to instead, consistent with how the other rheumatology
+    siblings already cite PMC hosts rather than publisher sites.
+  - Chan A et al., "[electronic PROM completion in inflammatory arthritis]," Rheumatology Advances in
+    Practice, published 2026-08-29 (PMC12536897): five-year rollout (Jan 2019-Dec 2024) at Royal
+    Berkshire NHS Foundation Trust, 4,082 inflammatory arthritis patients (RA 2,353, axSpA 769, PsA
+    960), 40,503 forms sent; paper-based PROM completion was 25% (25 of 100 audited records); by 2024
+    electronic PROM (ePROM) completion reached 66% overall (RA 65%, axSpA 70%, PsA 67%). Verified via
+    direct WebFetch of the primary PMC article (full text loaded, exact figures extracted, not a
+    search-result paraphrase). NEW to the rheumatology corpus.
+  - Clinekt after-hours canon (gbrain results/_overview, VERIFIED-CANON, re-verified this run,
+    hosted MCP connector still returning HTTP 502 so read directly from the local corpus file): 82%
+    of patients try to book care outside regular office hours. Kept per Taylor's standing 2026-09-15
+    decision (the measured 52.9%/49.0% intake-timing benchmark coexists with 82% as public canon; no
+    agent may correct, flag, or soften 82% anywhere).
+  - Baldwin Bone & Joint (gbrain results/_overview, founder-verified canon, re-verified this run
+    directly against the local corpus file, same 502 workaround): 263 qualified surgical leads / 159
+    appointments booked / 60% booking rate, single quarter. No dollar figures used; no other customer
+    named or numbered.
+
+Internal links (all confirmed live 200 OK via curl before publish):
+  - /rheumatology (specialty hub page, anchor "rheumatology patient engagement software" in the
+    opening ~140 words)
+  - /patient-engagement-software (category hub page, anchor "patient engagement software" in the
+    opening ~140 words)
+  - /case-studies/baldwin-bone-joint-ai-case-study (Baldwin proof point)
+  - /blog/rheumatology-patient-recall-software (cross-link target, closest sibling concept)
+  - /leakage-calculator, /book-a-demo (CTAs)
+
+Word count: ~1,860 (sibling range ~1,700-1,800; this WO-G1 buyer's-guide format runs above the
+playbook's generic 1,200-1,600 target, matching the dental/oral-surgery/PT/urology precedent).
+
+Next in WO-G1 fixed order: 2026-10-08 (if a weekday), behavioral health, day 5 of 11.
