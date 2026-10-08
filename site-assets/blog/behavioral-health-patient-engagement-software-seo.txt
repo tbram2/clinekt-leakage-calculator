@@ -1,0 +1,5 @@
+seo-title (52 chars): Behavioral Health Patient Engagement Software (2026)
+short-description (130 chars): What separates patient engagement software from recall and reactivation in behavioral health, what it does, and how to measure it.
+target queries: behavioral health patient engagement software, behavioral health patient engagement platform, patient engagement software for behavioral health practices
+slug: behavioral-health-patient-engagement-software
+category: WO-G1 (patient engagement by specialty), day 5 of 11
