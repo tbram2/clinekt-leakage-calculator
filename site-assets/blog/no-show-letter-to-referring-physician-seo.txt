@@ -1,0 +1,49 @@
+META TITLE (49 chars):
+No-Show Letter to a Referring Physician: Template
+
+META DESCRIPTION (117 chars):
+A free template for telling a referring physician their patient no-showed, including what to say and when to send it.
+
+TARGET QUERIES (sourced from Clinekt Brain marketing/pain-signal-lexicon theme 4, 2026-08-10 dated entry: "a direct lexical bridge between the no-show cluster and the referral cluster, naming the exact document a practice sends back to a referring doctor when the patient never showed." gbrain MCP connector returned 502 this run (Cloudflare bad gateway); read directly from the local corpus file at Clinekt Brain\marketing\pain-signal-lexicon.md instead of via the down MCP tool, so this still counts as the lexicon-sourced topic per the playbook's step-2 priority order, not the (a)/(b)/(c) fallback. Re-verified live and current this run, not just historical:
+- patient no show letter to referring physician (primary; live Google autocomplete-confirmed this run via scripts/browser/autocomplete.js, control "referral management software" healthy same session, clean non-job-seeker suggestion set: "no show letter to referring physician", "no show letter to referring physician template", "what is a referral letter from a doctor", "patient no show letter example", "patient no show letter template")
+- no show letter to referring physician (autocomplete top suggestion, relevance 601)
+- patient no show letter template (companion term, also live-confirmed)
+- referral loop closure / closing the referral loop (research register, used in the statistics section, not a target phrase itself)
+
+No open work order addressed to blog-engine in flags/2026-10-0*.md this run (orchestrator pre-check). demand-intel's 2026-10-09 3:15 AM pulse found every current GSC riser already owned by an existing page, so this topic was self-selected from the lexicon's own documented, never-executed 2026-08-10 finding rather than from tonight's fresh risers.
+
+PERSONA: practice manager or referral coordinator who needs to notify a referring physician about a no-show today, not evaluate software; secondary persona the same person one click later, realizing the pattern repeats weekly and looking at the recall/referral-management posts this links to.
+REGISTER: practical, copy-and-use, independent-practice register throughout (no health-system/enterprise framing, consistent with the lexicon's own register caution on this theme).
+
+DIFFERENTIATION FROM EXISTING POSTS (checked live before writing, no duplicate):
+- Checked live: /blog/no-show-letter-to-referring-physician, /blog/patient-no-show-letter-to-referring-physician, /blog/referral-no-show-letter, /blog/no-show-letter-template all 404 before writing. No existing Clinekt page owns this specific document/moment.
+- /blog/patient-recall-letter-template covers the patient-facing recall letter; this piece is addressed to the referring physician instead, a different audience and purpose, and links to it rather than duplicating its content.
+- /blog/reminders-vs-recall-vs-reactivation defines recall/reactivation terminology; this piece assumes that definition and links to it.
+- /blog/referral-management-software and /blog/orthopedic-referral-management-software cover the broader referral-volume software story; this piece is the specific document a practice sends the day a referred patient no-shows, upstream of the software-evaluation decision, and links to both.
+- Not a specialty x job matrix cell (marketing/specialty-job-matrix tracks specialty x job pairs; this is a content-type/document variant that applies across specialties, same category as patient-recall-letter-template).
+
+INTERLINKS:
+- /blog/patient-recall-letter-template (sibling template asset, patient-facing counterpart)
+- /blog/reminders-vs-recall-vs-reactivation (terminology anchor)
+- /blog/referral-management-software (software evaluation, the natural next click)
+- /blog/orthopedic-referral-management-software (specialty tie-in)
+- /leakage-calculator + /book-a-demo (CTAs)
+
+RULES CHECKS DONE:
+- No Clinekt dollar figures anywhere. Two third-party stats, both verified against primary sources this session (not taken from a secondary aggregator):
+  1. Patel MP, Schettini P, O'Leary CP, Bosworth HB, Anderson JB, Shah KP. "Closing the Referral Loop: An Analysis of Primary Care Referrals to Specialists in a Large Health System." Journal of General Internal Medicine, 2018;33(5):715-721. 103,737 referral scheduling attempts analyzed, 34.8% (36,072) resulted in a documented completed appointment. Verified via WebSearch + the Springer DOI page (10.1007/s11606-018-4392-z). This is the same 34.8% figure the pain-signal-lexicon's theme 7 attributes to a secondary source (ReferralMD/Assort Health listicles); cited here directly from the primary peer-reviewed study instead.
+  2. Cochrane Library systematic review (Jacobson Vann JC, et al., "Patient reminder and recall interventions to improve immunization rates," Cochrane Database of Systematic Reviews, 2018) - 55 studies, 138,625 participants, 8-percentage-point improvement from reminder/recall interventions. Reused from the existing patient-recall-letter-template post's own verified citation, same source, same numbers, no drift.
+  3. A third candidate stat (Weiner, Perkins, Callahan, "Errors in Completion of Referrals among Urban Older Adults in Ambulatory Care," Journal of Evaluation in Clinical Practice, 2010, PMC4469338) was researched but NOT used: the WebFetch extraction of the specific percentages was internally inconsistent (one pass read "29% of referrals led to appointments," a second read implied 71% scheduled x 70% attended for ~50% overall) and could not be reconciled with confidence in the time available. Per the safety rail against uncertain stats, this was dropped rather than risk a wrong number; only the two cleanly double-verified stats above are used in the article.
+- Baldwin canon verified against the local Clinekt Brain\results\_overview.md corpus file (gbrain MCP down, read the file directly): "263 qualified surgical leads · 159 appointments · 60% booking rate — last quarter" (line 16, CURRENT figure). Matches exactly, same framing as the existing patient-recall-letter-template post.
+- No vendor names, no comparison table. Letters rendered as blockquotes, not a table, per the convert-tables-to-bullets instruction.
+- No em dashes (grep-verified zero em/en dashes in the final draft). No PHI (all template placeholders are bracketed fields, no real or example patient names). No banned no-ai-slop words or patterns (grep-checked against policies/no-ai-slop/SKILL.md's banned-word list, zero hits).
+- Positioning: patient activation, three agents (Inbound/Recall/Outbound), never "chatbot." Single contextual mention of Clinekt's agents in the closing section, same register as the sibling recall-letter-template post.
+- Standard card thumbnail only (hero/thumbnail image step is retired 2026-07-27); this run did not touch any image/thumbnail field.
+- Word count: ~1,450 words of prose plus three letter templates (2,054 words including headers/templates/metadata lines), within the 1,200-1,600 target.
+
+CROSS-LINK EDIT (step 7, the one permitted edit to an existing item this run):
+- Target: /blog/patient-recall-letter-template (published 2026-09-17, not in state/title-meta-freeze.json, the oldest/most topically adjacent post in the same template-asset content family). Added one contextual sentence in its "What's different about recall letters for orthopedic, oral surgery, and endodontic practices?" section, pointing to this new post for the referring-physician side of a no-show, since that section already raises the referring-dentist relationship. No title/meta/H1/slug touched; body length grew by one sentence only.
+
+INDEXING:
+- IndexNow (scripts/indexnow.ps1) submitted for both this new URL and the cross-linked /blog/patient-recall-letter-template URL (its body changed).
+- Google indexing stays manual; both URLs noted for the brief's INDEXING (manual - Taylor) row.
