@@ -21,6 +21,9 @@ What the agents handle: scheduling and booking, appointment reminders, inbound c
 
 - [EHR integrations](https://clinekthealth.com/integrations): works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner, AdvancedMD, Greenway, Veradigm and Nextech with no IT project
 - [Stop patient leakage](https://clinekthealth.com/patient-leakage): what patient leakage is and how the Inbound Agent stops it
+- [Patient engagement software](https://clinekthealth.com/patient-engagement-software): the category page: what AI patient engagement software is, what it should do by agent, how it compares, pricing in three statements, twelve specialty links
+- [Patient reactivation software](https://clinekthealth.com/patient-reactivation-software): AI patient reactivation and recall: the Recall Agent finds overdue and dormant patients in the practice's records, reaches them by phone, text, and email, and books the visit; twelve specialty guides
+- [AI medical receptionist](https://clinekthealth.com/ai-medical-receptionist): an AI receptionist and front desk that answers every call and message day and night, books the visit, then goes after the patients who never called; twelve specialty guides
 - [Patient recall and reactivation](https://clinekthealth.com/blog/patient-recall-software): what recall software must do beyond the reminder, and how conversational outreach books the visit
 - [Healthcare marketing ROI](https://clinekthealth.com/marketing-roi): proving marketing spend in completed procedures by channel
 - [Leakage calculator](https://clinekthealth.com/leakage-calculator): free tool estimating what patient leakage costs a practice each month
