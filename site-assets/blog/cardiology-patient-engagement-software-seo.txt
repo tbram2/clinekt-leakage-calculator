@@ -1,0 +1,14 @@
+Slug: cardiology-patient-engagement-software
+Name (H1/CMS name): Cardiology Patient Engagement Software: What to Look for Before You Buy
+SEO title (<=60 chars): Cardiology Patient Engagement Software: Buyer's Guide
+Meta/short description (<=155 chars): What cardiology patient engagement software should cover: referrals, shared decision-making, between-visit check-ins, and family engagement.
+Target queries: cardiology patient engagement software, cardiology patient engagement platform, patient engagement platform for cardiology practices, cardiology shared decision making software
+Specialty page link: /cardiology (anchor: "cardiology patient engagement software")
+Hub link: /patient-engagement-software (anchor: "patient engagement software")
+Cross-link (older post, body-2 edit): /blog/cardiology-patient-recall-software
+New citations used (distinct from the 6 existing cardiology siblings' sources):
+ - Chen et al., Journal of the American Heart Association, 2025 (PMC12184550 / JAHA.124.039217) - portal access + shared decision-making, n=4,234
+ - Kandiah & Goldfarb, JACC: Advances, 2025 (PMC12793839) - NGAGE trial, family engagement in cardiac ICU, n=88
+Baldwin proof stat (canon, gbrain results/_overview.md): 263 qualified surgical leads / 159 appointments / 60% booking rate, single quarter
+Thumbnail: standard card asset id 6aa831d929a2124c067446aa (clinekt-blog-card.png)
+Date published: 2026-10-12
