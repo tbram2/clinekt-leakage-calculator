@@ -1,0 +1,13 @@
+name: Ophthalmology Patient Engagement Software: What to Look for Before You Buy
+slug: ophthalmology-patient-engagement-software
+seo-title: Ophthalmology Patient Engagement Software: Buyer's Guide
+short-description: What ophthalmology patient engagement software should cover: referrals, surgical decisions, between-visit adherence, and post-op monitoring.
+date: 2026-10-13
+target queries: ophthalmology patient engagement software, ophthalmology patient engagement platform, patient engagement software for ophthalmology practices
+category: Patient Engagement (option id f023816e8312a3bfef94b0b90988a422, matches sibling WO-G1 specialty-engagement posts)
+thumbnail: fileId 6ab2e9883f43dcf6eefd56e1 / https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6ab2e9883f43dcf6eefd56e1_blog-card-clinekt-wordmark.png / alt "Clinekt"
+internal links used: /ophthalmology, /patient-engagement-software, /blog/ophthalmology-patient-recall-software, /book-a-demo, /leakage-calculator, /case-studies/baldwin-bone-joint-ai-case-study
+cross-link edit target (older post): /blog/ophthalmology-patient-recall-software (body-2, one new sentence)
+new stats this run: Shah et al., Journal of Current Glaucoma Practice, 2025 Oct 4;19(3):107-111 (glaucoma drop adherence, N=100, 82% poor adherence, 43.03% correct instillation technique); Wanten et al., Journal of Cataract and Refractive Surgery, 2025 Aug (postop remote-care systematic review, 14 studies/2,681 patients)
+reused canon: Baldwin Bone and Joint 263/159/60% (verified against gbrain results/_overview.md); 82% after-hours booking stat
+WO-G1 day 7 of 11 (first of two CTA-experiment posts per marketing-retro W41 instruction, logs/marketing-scorecard-2026-W41.md section 4)
