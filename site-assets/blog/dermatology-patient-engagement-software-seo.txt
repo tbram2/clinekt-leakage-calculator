@@ -1,0 +1,41 @@
+Name (H1 / CMS Name field): Dermatology Patient Engagement Software: What to Look for Before You Buy
+Slug: dermatology-patient-engagement-software
+Date: 2026-10-14
+Category: Blog
+
+seo-title (<=60 chars, drives <title> tag, no fallback to Name per playbook hard requirement):
+Dermatology Patient Engagement Software: Buyer's Guide
+(54 chars)
+
+short-description (<=155 chars):
+What dermatology patient engagement software should cover across referrals, screening recall, and between-visit follow-up, and how to evaluate it.
+(146 chars)
+
+Target queries:
+- dermatology patient engagement software
+- dermatology patient engagement software buyer's guide
+- skin cancer screening recall software
+- dermatology recall software
+- dermatology referral intake software
+
+Thumbnail (fixed asset per playbook step 4, never image-generated):
+- fileId: 6ab2e9883f43dcf6eefd56e1
+- url: https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6ab2e9883f43dcf6eefd56e1_blog-card-clinekt-wordmark.png
+- alt: Clinekt
+
+Internal links used (6): /dermatology, /patient-engagement-software, /leakage-calculator, /book-a-demo, /blog/patient-reactivation-software-for-dermatology-practices, /case-studies/baldwin-bone-joint-ai-case-study
+
+External named sources (3, dermatology-specific, hyperlinked in body):
+1. Hakim C, Gitin A, Helfrich YR. "Assessing wait times for new dermatology patients: A secret shopper study across United States academic centers." 2026. https://pubmed.ncbi.nlm.nih.gov/42532290/
+2. Duffy TL, English JC. "Asynchronous Teledermatology Reduces Wait Times and Maintains High Adherence to Standard Care for Lichen Planus: A Retrospective Study." Telemedicine Reports. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12411894/
+3. "Determinants of adherence to melanoma surveillance: a retrospective cohort study." Archives of Dermatological Research. 2026. https://link.springer.com/article/10.1007/s00403-026-04635-2
+
+Compliance notes:
+- No "visitor", "read-only", "open slots", "symptom checker", "patient activation" (category word) anywhere (verified via grep, clean).
+- No em/en dashes anywhere (verified via grep, clean).
+- No dollar figures for Clinekt pricing/results (verified, clean); third-party stats have no dollar figures either.
+- No "free pilot"/"free trial"/"first month free" wording (verified via grep, clean).
+- Agents referenced as "the agents", never "four agents", always in order Inbound/Recall/Outbound/Care.
+- Baldwin Bone & Joint proof point used with explicit cross-specialty caveat ("an orthopedic group rather than a dermatology practice"), canon numbers verified against gbrain results/baldwin-bone-and-joint (263 qualified surgical leads / 159 appointments / 60% booking rate, single quarter, founder-verified 2026-07-04).
+- /dermatology page itself NOT edited (frozen until 2026-10-15); only linked to.
+- Body uses h2/h3/p/strong/em/a/ul/ol only, no tables.
