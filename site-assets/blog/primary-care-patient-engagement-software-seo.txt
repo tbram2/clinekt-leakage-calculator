@@ -1,0 +1,45 @@
+Name (H1 / CMS Name field): Primary Care Patient Engagement Software: What to Look for Before You Buy
+Slug: primary-care-patient-engagement-software
+Date: 2026-10-15
+Category: Blog
+
+seo-title (<=60 chars, drives <title> tag, no fallback to Name per playbook hard requirement):
+Primary Care Patient Engagement Software: Buyer's Guide
+(55 chars)
+
+short-description (<=155 chars):
+What primary care patient engagement software should cover across intake, chronic care recall, and between-visit follow-up, and how to evaluate it.
+(147 chars)
+
+Target queries:
+- primary care patient engagement software
+- primary care patient engagement software buyer's guide
+- primary care recall software
+- primary care wellness visit recall
+- primary care referral intake software
+
+Thumbnail (fixed asset per playbook step 4, never image-generated):
+- fileId: 6ab2e9883f43dcf6eefd56e1
+- url: https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6ab2e9883f43dcf6eefd56e1_blog-card-clinekt-wordmark.png
+- alt: Clinekt
+
+Internal links used (6): /primary-care, /patient-engagement-software, /leakage-calculator, /book-a-demo, /blog/primary-care-patient-recall-software, /case-studies/baldwin-bone-joint-ai-case-study
+
+External named sources (2, primary-care-specific, hyperlinked in body, both independently verified this session, confirmed distinct from the citations already used by the 6 existing primary-care posts: ai-receptionist-for-primary-care-practice, patient-reactivation-software-for-primary-care-practices, primary-care-patient-intake-software, primary-care-patient-no-show-rates, primary-care-patient-recall-software, primary-care-referral-management-software):
+1. AMN Healthcare. "2025 Survey of Physician Appointment Wait Times." 2025. 23.5 days average wait for a new family physician appointment across 15 major US metro areas (1,391 physician offices surveyed), up from 20.6 days in 2022. https://www.amnhealthcare.com/amn-insights/physician/whitepapers/2025-survey-of-physician-appointment-wait-times/ (verified via direct WebFetch of the AMN landing page plus a secondary fetch of medicaleconomics.com's reporting, which quotes the exact figure directly from the report; the source PDF itself is not text-extractable in this environment, so the number was corroborated through an independent secondary source that cites it verbatim before use)
+2. Sakhnini N, Chattopadhyay D. "More Older Adults Try Patient Portals in Recent Years, but Many Don't Continue: A Meta-Analysis." Extended Abstracts of the ACM CHI Conference on Human Factors in Computing Systems. 2026. DOI 10.1145/3772363.3798366. 55% ever-use (trial) vs 49% continued use among older adults, meta-analysis of 18 studies / 1,487 unique records screened. https://pmc.ncbi.nlm.nih.gov/articles/PMC13308762/ (verified via direct WebFetch of the primary PMC article, confirmed twice)
+
+Existing primary-care-post citations checked for overlap (none shared): PMC10739191, PMC12335306, PMC13083681, link.springer 10.1007/s11606-018-4392-z, odphp.health.gov colorectal screening objective, PMC4714455, PMC9389351, PMC9411305, ncbi.nlm.nih.gov/books/NBK43671, kffhealthnews.org chronic-care-management-monitoring-business, aafp.org/fpm/blogs/quick-tips/wait-times, aafp.org/pubs/fpm/issues/2005/0200/p65.html, ama-assn.org phone-calls-stable-patient-portal-messages, mgma.com (5 stat pages), milbank.org dropping-the-baton.
+
+Compliance notes:
+- No "visitor", "read-only", "open slots", "symptom checker", "chatbot", "patient activation" (category word), "four agents"/"4 agents" anywhere (verified via grep, clean).
+- No em/en dashes anywhere (verified via grep, clean).
+- No dollar figures for Clinekt pricing/results (verified via grep, clean); third-party stats have no dollar figures either.
+- No "free pilot"/"free trial"/"first month free" wording (verified via grep, clean).
+- Agents referenced individually, in order, one word each: Inbound, Recall, Outbound, Care, never counted.
+- "Screens"/"screening" used, never "diagnosis"/"symptom checker".
+- Baldwin Bone & Joint proof point used with explicit cross-specialty caveat ("an orthopedic group rather than a primary care practice"), canon numbers verified directly against Clinekt Brain/results/_overview.md (263 qualified surgical leads / 159 appointments / 60% booking rate, single quarter, founder-verified 2026-07-01; hosted gbrain MCP connector returned 502 this session, same fallback used by every prior WO-G1 sibling).
+- /primary-care page itself NOT edited (frozen until 2026-10-15 per state/title-meta-freeze.json; today is the last frozen day); only linked to.
+- Body uses h2/h3/p/strong/em/a/ul/ol only, no tables.
+- 1,851 words, 9 H2s, 5 FAQ H3s, 1 ordered list (6-question evaluation checklist), 2 unordered lists.
+- No CTA-experiment line added (the W41 marketing-retro test applied only to ophthalmology and dermatology, days 7-8; primary care, day 9, publishes under the normal unmodified template).
