@@ -237,6 +237,7 @@ Dedicated buying guides for dentistry, physical therapy, primary care, oral surg
 - [Urology Patient Recall Software for PSA and Stone Follow-Up (2026)](https://clinekthealth.com/blog/urology-patient-recall-software): What urology patient recall software does for PSA intervals, active surveillance, stone imaging, and post-procedure visits, with verified data.
 - [Urology Referral Management Software: Closing the PCP Referral Loop (2026)](https://clinekthealth.com/blog/urology-referral-management-software): How urology groups turn PCP referrals into seen patients, cut elevated PSA referral lag, and stop leakage to hospital-employed groups.
 - [What Is Care Leakage? Definition, Causes, and How to Stop It (2026)](https://clinekthealth.com/blog/what-is-care-leakage): Care leakage is the patients and ordered care that fall out of the loop between specialty visits. Here is how to define it, measure it, and stop it.
+- [Patient Engagement Platform for Health Systems: What to Look for Before You Buy](https://clinekthealth.com/blog/patient-engagement-platform-for-health-systems): What a patient engagement platform should cover for a health system across every service line, from intake and referral completion to recall and between-visit follow-up, and six questions to ask before you buy.
 
 ## Referral operations (added 2026-09-15)
 
