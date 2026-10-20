@@ -1,0 +1,48 @@
+Name (H1 / CMS Name field): Dermatology Patient Recall Software for Skin Checks and Biopsy Follow-Up (2026)
+Slug: dermatology-patient-recall-software
+Date: 2026-10-20
+Category: Blog
+
+seo-title (<=60 chars, drives <title> tag, no fallback to Name per playbook hard requirement):
+Dermatology Patient Recall Software Explained (2026)
+(52 chars)
+
+short-description (<=155 chars):
+What dermatology patient recall software does for skin cancer surveillance, biopsy follow-up, isotretinoin and biologic monitoring, with verified data.
+(151 chars)
+
+Target queries:
+- dermatology patient recall software
+- skin cancer surveillance recall
+- isotretinoin follow-up monitoring software
+- biologic monitoring recall dermatology
+- patient recall software for dermatology
+
+Thumbnail (fixed asset per playbook step 4, never image-generated):
+- fileId: 6ab2e9883f43dcf6eefd56e1
+- url: https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6ab2e9883f43dcf6eefd56e1_blog-card-clinekt-wordmark.png
+- alt: Clinekt
+
+Internal links used: /patient-reactivation-software, /blog/reminders-vs-recall-vs-reactivation, /integrations, /blog/patient-recall-software, /dermatology, /recall-agent, /case-studies/baldwin-bone-joint-ai-case-study, /leakage-calculator (x2), /book-a-demo (x2)
+
+External named sources (4, dermatology-specific, hyperlinked in body):
+1. AAD Guidelines of Care for the Management of Primary Cutaneous Melanoma, JAAD. https://www.jaad.org/article/S0190-9622%252818%252932588-X/fulltext
+2. "Clinical and Imaging Follow-Up for High-Risk Cutaneous Melanoma: Current Evidence and Guidelines." Cancers, 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11274402/
+3. "Determinants of adherence to melanoma surveillance: a retrospective cohort study." Archives of Dermatological Research, 2026. https://link.springer.com/article/10.1007/s00403-026-04635-2 (same source already cited in dermatology-patient-engagement-software per its seo.txt; reused for a different stat in this article)
+4. Flohil SC, et al. British Journal of Dermatology, 2011 (29.2% second BCC within five years in a 2,483-patient Dutch cohort). https://repub.eur.nl/pub/30738/ (same source already cited in patient-reactivation-software-for-dermatology-practices; reused here, consistent canon)
+5. Doshi JA, et al. "Biologic therapy adherence, discontinuation, switching, and restarting among patients with psoriasis in the US Medicare population." JAAD, 2016. https://pubmed.ncbi.nlm.nih.gov/26946986/
+
+Reason for topic (priority order per playbook, 2026-10-20 run):
+- WO-G1 (13/13 specialty patient-engagement guides) and WO-H1 (7/7 reactivation/receptionist gap posts) are both CLOSED as of 2026-10-19/10-12; no open work order in flags/ applies to blog-engine today.
+- Live CMS audit (Webflow data_cms_tool, 169 Blogs items) shows dermatology is the only one of 12 specialty verticals missing patient-recall-software, referral-management-software, patient-intake-software, and patient-no-show-rates articles, while every other specialty (orthopedic, dental, physical therapy, primary care, oral surgery, ophthalmology, cardiology, rheumatology, urology, pediatrics, behavioral health) already has all of them. Recall was picked as the single highest-value gap: it sits inside gbrain marketing/pain-signal-lexicon's #2 ranked pain theme ("patient reactivation software" + "patient recall software," 136 GSC impressions, pos 15.2 for the bare term) and ties honestly to the /patient-reactivation-software hub via the existing recall-vs-reactivation distinction (body-1, and the cross-link added to patient-reactivation-software-for-dermatology-practices's body-2).
+- marketing/specialty-job-matrix (brain) is stale (2026-09-14 baseline, predates WO-G1/H1 and explicitly scopes dermatology out of its original 11-specialty grid), so it was not used as the source of truth; the live Webflow CMS slug list was used instead.
+
+Compliance notes:
+- No "visitor(s)", "read-only", "open slot(s)", "symptom checker", "patient activation" (as a category word) anywhere (verified via grep, clean).
+- No em dashes or en dashes anywhere (verified via grep, clean).
+- No dollar figures anywhere, Clinekt or third-party (verified via grep, clean).
+- Agents referenced as "the agents" / by name only, never counted; order Inbound, Recall, Outbound, Care.
+- Baldwin Bone & Joint proof point used with explicit cross-specialty caveat ("an orthopedic group...That is an orthopedic result, not a dermatology one, and we say so plainly"); canon numbers verified against gbrain results/_overview (263 qualified surgical leads / 159 appointments / 60% booking rate, last quarter) before writing.
+- Positioning: "Clinekt is patient engagement software: patient engagement that ends in a booked visit" (2026-10-01 canon), never "patient activation platform."
+- Body uses h2/h3/p/strong/a/ul/ol only, no tables, one FAQPage JSON-LD script block.
+- Thumbnail is the standing wordmark card only (no generated hero), per RULES 2026-10-12.
