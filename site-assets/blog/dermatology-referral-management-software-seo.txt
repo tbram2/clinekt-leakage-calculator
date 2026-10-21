@@ -1,0 +1,46 @@
+Name (H1 / CMS Name field): Dermatology Referral Management Software: What to Look for Before You Buy
+Slug: dermatology-referral-management-software
+Date: 2026-10-21
+Category: Blog
+
+seo-title (<=60 chars, drives <title> tag, no fallback to Name per playbook hard requirement):
+Referral Management Software for Dermatology (2026)
+(51 chars)
+
+short-description (<=155 chars):
+Dermatology referral management software triages urgent cases, tracks Mohs referrals, and reports back to referring doctors automatically.
+(138 chars)
+
+Target queries:
+- dermatology referral management software
+- dermatology referral loop closure
+- Mohs surgery referral tracking
+- referral management software for specialty practices (hub)
+- dermatology patient leakage referrals
+
+Thumbnail (fixed asset per RULES 2026-10-12, never image-generated):
+- fileId: 6ab2e9883f43dcf6eefd56e1
+- url: https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6ab2e9883f43dcf6eefd56e1_blog-card-clinekt-wordmark.png
+- alt: Clinekt
+
+Internal links used: /blog/referral-management-software (hub), /dermatology, /blog/dermatology-patient-engagement-software, /case-studies/baldwin-bone-joint-ai-case-study, /leakage-calculator, /book-a-demo (6 distinct, all curled 200 before publish).
+
+External named sources (2, dermatology-specific, hyperlinked in body, confirmed distinct from every citation already used by the 4 existing dermatology siblings: recall, engagement, reactivation, AI receptionist):
+1. Hamid I, Vandormael I, Atwan A, Mills C. "Primary Care Skin Lesion Referrals Assessed via Teledermatology: A Retrospective Analysis." Cureus, August 2025. 383 referrals (194 urgent/189 routine); 83.7% managed without a face-to-face visit; 44.6% discharged with reassurance; 20.9% booked for minor surgery; 1.3% referred to another surgical specialty; 15.6% seen face-to-face. Verified via direct WebFetch.
+2. "Impact of a new referral workflow on timely completion of urgent dermatology referrals." Archives of Dermatological Research, 2026 (DOI 10.1007/s00403-026-04664-x). Retrospective cohort, 798 urgent skin-cancer referrals across 4 periods; timely (30-day) loop closure rose from 50.3% pre-pandemic to 63.7% at full implementation; mean time to closure fell from 75.2 to 40.5 days; OR 0.63 (95% CI 0.40-0.99, p=0.046). Verified via WebSearch abstract cross-reference (direct fetch blocked by a Springer login redirect). Distinct article/DOI from the "Determinants of adherence to melanoma surveillance" Archives of Dermatological Research 2026 paper already cited in dermatology-patient-engagement-software and dermatology-patient-recall-software; same journal, different study.
+
+Reason for topic (priority order per playbook, 2026-10-21 run):
+- WO-G1 (13/13 specialty patient-engagement guides, closed 2026-10-19) and WO-H1/H2 are closed. No work order addressed to blog-engine in flags/2026-10-21.md, flags/2026-10-20.md, or queue/2026-10-19/ or queue/2026-10-20/.
+- gbrain MCP connector returned 502 (known recurring outage); marketing/pain-signal-lexicon and results/_overview read directly from the on-disk corpus (Clinekt Brain/marketing/pain-signal-lexicon.md, Clinekt Brain/results/_overview.md) instead.
+- The lexicon (dated 2026-10-09, 12 days old, under the 14-day staleness bar) names "referral management software" as one of four current PRIMARY TARGET CLUSTERS (rewritten 2026-09-14, RULES 2026-09-11/09-14).
+- The prior run's entry (blog-content-engine.md 2026-10-20, dermatology-patient-recall-software) explicitly flagged dermatology's three remaining gaps: referral-management-software, patient-intake-software, patient-no-show-rates, "reasonable next candidates for a future run's step 2(b)/2(c) fallback." Live CMS filter (slug contains "dermatology", 4 items: recall, engagement, reactivation, AI receptionist) confirmed referral-management-software is still missing. Chosen as the one that is also a named primary target cluster, over patient-intake-software or patient-no-show-rates.
+
+Compliance notes:
+- No "visitor(s)", "read-only", "open slot(s)", "symptom checker", "patient activation" (as a category word), em/en dashes, dollar signs, or "free pilot"/"free trial"/"first month free" anywhere (verified via grep, clean).
+- "diagnosis" appears only as a factual reference to a patient's existing clinical diagnosis or an ICD diagnosis code driving referral urgency, never as something Clinekt itself performs; Clinekt's own actions are described with "screens".
+- Agents referenced by name only, never counted; order Inbound, Recall, Outbound, Care, one word each.
+- Baldwin Bone & Joint proof point used with explicit cross-specialty caveat ("Clinekt doesn't yet have a published dermatology-specific result..."); canon numbers (263 qualified surgical leads / 159 appointments / 60% booking rate, last quarter) verified against Clinekt Brain/results/_overview.md directly (gbrain MCP 502).
+- Positioning: "Clinekt is patient engagement software," never "patient activation platform." EHR/PMS connection described functionally ("doesn't change how your front desk already works"), never as "read-only." Go-live phrased as "the same day." Pricing phrased as "one simple rate per provider per month, with support and tuning included and no multi-year contract," no dollar figure.
+- Body uses h2/h3/p/strong/a/ul/ol/em only, no tables, one FAQPage JSON-LD script block embedded directly in body-1 (this collection has no per-item schema route, per the 2026-08-18 finding).
+- Thumbnail is the standing wordmark card only (fileId 6ab2e9883f43dcf6eefd56e1), no generated hero; visually confirmed live via Playwright screenshot of the /blog listing (new card is first/newest, renders the same wordmark as sibling cards).
+- Word count ~1,680 after two trimming passes; slightly over the 1,200-1,600 target range, accepted per the same "~" tolerance precedent as the 2026-10-19 health-systems post (~1,611, accepted rather than cutting further content).
