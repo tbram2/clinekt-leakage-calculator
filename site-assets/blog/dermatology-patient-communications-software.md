@@ -1,0 +1,66 @@
+# Dermatology Patient Communications Software: What to Look for Before You Buy
+
+Slug: dermatology-patient-communications-software
+Date: 2026-10-23
+Category: Blog
+
+## Body (rich text, mirrors body-1 field pushed to Webflow)
+
+<p><strong>Dermatology patient communications software is the messaging layer that sends appointment reminders, delivers biopsy and pathology result notifications, tracks biologic and prior authorization updates, and runs post-procedure check-ins, on the channel each patient actually answers instead of the one that was easiest to build.</strong> That distinction matters more in dermatology than in most specialties, because one message type a dermatology practice sends is a biopsy result, and patients do not treat that the same as a reminder about next Tuesday. A platform that defaults every message to a portal notification is optimizing for the channel patients trust least when the news might be serious. This guide covers what communications software needs to handle, what patients say they prefer, and how to evaluate a vendor before you buy. It sits next to the broader <a href="https://clinekthealth.com/dermatology">dermatology patient engagement software</a> picture, scoped to the message layer specifically.</p>
+
+<h2>Key takeaways</h2>
+<ul>
+<li>In a survey of 301 melanoma clinic patients across three academic centers, 67.1% preferred a phone call from their physician to receive skin biopsy results, compared with 19.5% who preferred an in-person visit and about 5% who preferred a portal message or voicemail (Choudhry et al., JAMA Dermatology, 2015).</li>
+<li>40.5% of patients said they would want a different notification method if their result came back malignant than the method they chose for a routine result, yet most practices use one default channel for every result (Choudhry et al., JAMA Dermatology, 2015).</li>
+<li>Physicians and patients mostly agree that phone fits serious results, but they diverge on routine ones: only 31.2% of physicians preferred calling with benign news, while patients more often wanted a voicemail (32.1%) (Choudhry et al., JAMA Dermatology, 2015).</li>
+<li>Patients with psoriasis generally still prefer standard in-person care over teledermatology, but seeing a known physician and getting a fast response during a flare were the two factors that most increased their willingness to use a remote channel (Reinders et al., Journal of the European Academy of Dermatology and Venereology, 2025).</li>
+<li>Medical groups are investing nearly six times more in AI for documentation than for patient communication: 59% versus 10% of 302 groups polled (MGMA Stat, October 2024).</li>
+<li>Across Clinekt deployments, 82% of patients try to book or respond outside normal office hours, when an unread portal message is the only channel open.</li>
+</ul>
+<p>Evaluating dermatology patient communications software? <a href="https://clinekthealth.com/book-a-demo">Book a demo</a> to see how Clinekt's agents cover a dermatology patient list across every message type, or size the gap first with the <a href="https://clinekthealth.com/leakage-calculator">patient leakage calculator</a>.</p>
+
+<h2>The Data Behind the Decision</h2>
+<p>The clearest evidence on dermatology communication preference comes from a survey of 301 melanoma clinic patients across three academic referral centers in California, Pennsylvania, and North Carolina. Two out of three patients, 67.1%, preferred to hear their skin biopsy result directly from their physician by phone, more than three times the 19.5% who preferred an in-person visit, with a portal message or voicemail chosen by only about 5% combined, mostly because phone was faster (<a href="https://www.healio.com/news/dermatology/20150505/patients-prefer-notification-by-phone-to-achieve-fast-response-for-biopsy-results">Choudhry et al., JAMA Dermatology, 2015</a>). Preference is not fixed, either: 40.5% of patients wanted a different notification method if their result turned out to be malignant than the one they had chosen for a routine result. Physicians tracked patients fairly well on serious news (56.5% agreed phone was right) but diverged on benign results, where only 31.2% of physicians chose to call versus patients more often wanting a voicemail (32.1%). A platform built around one default channel for every result cannot reflect either split.</p>
+<p>A 2025 discrete choice experiment surveyed 221 patients with psoriasis and found a general preference for standard in-person care over teledermatology, but two factors reliably increased willingness to use a remote channel: seeing a physician the patient already knew, and getting a response within 24 hours during a flare-up (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12466089/">Reinders et al., Journal of the European Academy of Dermatology and Venereology, 2025</a>). Continuity and speed moved patients toward a channel they otherwise avoided, the same lesson the biopsy data gives from a different angle: the channel matters less than whether it is fast, familiar, and able to answer back.</p>
+<p>Investment has not caught up. An October 2024 poll of 302 medical groups found 59% were prioritizing AI investment in clinical documentation and scribing, versus 10% in patient communication (<a href="https://www.mgma.com/mgma-stat/-ai-that-directly-aids-patient-visits-is-top-priority-for-medical-practice-leaders">MGMA Stat, 2024</a>). Dermatology sends a message type almost no other specialty sends at the same volume, a result that might be cancer, and still runs it through whatever tool shipped with the EHR.</p>
+
+<h2>What does patient communications software actually need to cover in a dermatology practice?</h2>
+<p>At minimum, six message types: appointment reminders and confirmations, biopsy and pathology result notifications, biologic and prior authorization status updates, pre- and post-procedure instructions for biopsies, Mohs surgery, and cosmetic treatments, recall outreach when a screening interval opens, and billing notices. Most practices run each through a different tool, a scheduling system for reminders, a phone tree for results, a printed sheet for post-procedure instructions, so no one tool knows a patient is waiting on a pathology call and also past due for an annual skin check.</p>
+<p>Communications software is supposed to put every message type into one record per patient, reachable on whatever channel that patient answers. It only earns the name if it treats a biopsy result differently from a reminder, because the research above says patients do too.</p>
+
+<h2>Why does a portal-first tool fail the moment patients care most about?</h2>
+<p>Most communications platforms default to a portal message because it is the cheapest channel to ship and the easiest to document. That default works fine for a routine reminder. It fails on the message type where failing costs the most: a biopsy or pathology result, especially a malignant one, where 40.5% of patients wanted a different, faster channel than the one they had already picked for ordinary news.</p>
+<p>A portal message also assumes the patient logs in. A patient who does not check it for two days is not ignoring a result; they do not know one is waiting. Phone and text do not have that failure mode, likely why 67.1% of patients picked phone for speed. A platform that cannot escalate a result to a phone call, automatically or with one staff click, is optimized for the channel that fits the news least.</p>
+
+<h2>How to evaluate dermatology patient communications software before you buy: 5 steps</h2>
+<ol>
+<li>Confirm result notification can escalate to a phone call, not just the default channel. Ask the vendor to show the path from a pathology result arriving to a patient on the phone, not just a message sent.</li>
+<li>Check that all six message types live in one patient record: reminders, result notifications, biologic and prior authorization updates, procedure instructions, recall, and billing. A tool that only does reminders is a reminder tool, not communications software.</li>
+<li>Verify every channel is two-way. A reminder or result notification that cannot take a reply pushes the question back to a phone call anyway, just later and angrier.</li>
+<li>Ask how it reaches a patient who has not opened a message in 48 hours. A single send with no follow-up gets treated the same as silence.</li>
+<li>Confirm consent, opt-in, and HIPAA handling across phone, text, and portal, especially for anything that references a pathology result in a text message.</li>
+</ol>
+
+<h2>What Should Still Go to a Human?</h2>
+<p>Interpreting a result. Software can notify a patient a result is ready and get them on the phone fast; a clinician still delivers and explains what it means. Any message describing a changing or new lesion, a possible reaction to a biologic, or anything that reads urgent should route to clinical staff immediately, not sit in a queue waiting for a scheduled check. Insurance appeals and financial hardship questions go to your billing team.</p>
+
+<h2>Where Clinekt Fits</h2>
+<p>Clinekt is patient engagement software: engagement that ends in a booked visit or a closed loop, not just a sent message. Around dermatology communications, the Inbound agent answers a patient calling or texting about a result, a biologic question, or a reminder, in the practice's own voice, day or night, which matters given that 82% of patients try to reach a practice outside office hours. The Recall agent works the standing list of patients due for a next step, a biopsy recheck, a biologic refill, a screening interval, and keeps the conversation open until it resolves. The Outbound agent reaches new demand searching for a dermatologist right now, and the Care agent runs check-ins between visits, flagging a reported symptom or reaction to staff instead of leaving it in an inbox.</p>
+<p>The connection to your practice management system or EHR, including ModMed, Nextech, athenahealth, and Epic, does not change how your front desk already works, and go-live is the same day. Pricing is one simple rate per provider per month, with support and tuning included and no multi-year contract.</p>
+<p>Our published result is orthopedic: <a href="https://clinekthealth.com/case-studies/baldwin-bone-joint-ai-case-study">Baldwin Bone and Joint</a> generated 263 qualified surgical leads and booked 159 appointments, a 60% booking rate, in a single quarter. The mechanism transfers to dermatology because a patient who has not heard back about a result or a refill is the same problem as a lead who has not booked: reach them on the channel that works and keep the conversation open until it resolves. See our guide to <a href="https://clinekthealth.com/blog/dermatology-patient-recall-software">dermatology patient recall software</a> for how the Recall agent's interval logic works, or the full specialty view at <a href="https://clinekthealth.com/dermatology">Clinekt for dermatology practices</a>.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What's the best channel for sharing a biopsy or pathology result?</h3>
+<p>Phone, by a wide margin: 67.1% of patients in one study preferred a phone call from their physician for speed. A portal message or voicemail was preferred by roughly 5% combined.</p>
+<h3>Should every result go out the same way?</h3>
+<p>No. 40.5% of patients wanted a different, usually faster, channel for a malignant result than the one they picked for a routine result. Communications software should support that escalation, not force one default channel on every message.</p>
+<h3>Do dermatology patients actually want text and phone, or just a portal message?</h3>
+<p>Both, depending on the message. Phone wins for anything serious or time sensitive. Text and portal work for routine reminders and documentation, as long as the channel can take a reply.</p>
+<h3>Does Clinekt interpret or deliver clinical results?</h3>
+<p>No. Clinekt notifies and reaches the patient and gets them connected quickly. A clinician still delivers and explains any result. Anything a patient reports that sounds urgent routes to your staff immediately.</p>
+<h3>Does it connect to my EHR, and what does it cost?</h3>
+<p>Yes, to systems like ModMed, Nextech, athenahealth, and Epic, without changing how your front desk already works. Go-live is the same day, and pricing is one simple rate per provider per month.</p>
+
+<h2>Where to start</h2>
+<p>Run your call, result, and recall volume through the <a href="https://clinekthealth.com/leakage-calculator">patient leakage calculator</a> to see what a slow or wrong-channel message costs at your volume. If it justifies a conversation, <a href="https://clinekthealth.com/book-a-demo">book a 15-minute demo</a> and see how the agents work a dermatology patient list across every message type.</p>
+<p>Keep reading: <a href="https://clinekthealth.com/dermatology">Clinekt for dermatology practices</a>, our guide to <a href="https://clinekthealth.com/blog/dermatology-patient-recall-software">dermatology patient recall software</a>, and <a href="https://clinekthealth.com/blog/why-appointment-reminders-arent-reaching-patients">why appointment reminders aren't reaching patients</a>.</p>

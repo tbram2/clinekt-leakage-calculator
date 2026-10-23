@@ -1,0 +1,11 @@
+Meta title (seo-title field, <=60 chars): Dermatology Patient Communications Software (2026)
+Meta description (short-description field, <=155 chars): Dermatology patients pick a phone call over a portal message for biopsy results. What a communications platform must get right, and why it matters.
+
+Target queries (live GSC pull 2026-10-23, 9/24-10/21 vs 8/27-9/23 window):
+- dermatologist patient communications software (34 impressions, 0 clicks, position 15.1)
+- ophthalmology patient communications software (45 impressions, 0 clicks, position 9.8) -- adjacent non-matrix signal, not this page's target
+- cardiology patient communications software (25 impressions, 0 clicks, position 10.5) -- adjacent non-matrix signal, not this page's target
+- orthopedic patient communications software (167 impressions, 0 clicks, position 11.1) -- already covered by /blog/orthopedic-patient-communications-software, confirms real demand for this job-layer topic across specialties
+
+Slug: dermatology-patient-communications-software
+URL: https://clinekthealth.com/blog/dermatology-patient-communications-software
