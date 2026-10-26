@@ -766,6 +766,20 @@ FAQ digest: Only if it is configured with the practice's post-op instructions an
 
 ---
 
+# AI Receptionist for a Neurology Practice (2026)
+Source: https://clinekthealth.com/blog/ai-receptionist-for-neurology-practice
+Published: 2026-10-26
+
+Direct answer: An AI receptionist for a neurology practice answers every call and message instantly, day or night, asks the questions that sort a routine headache follow-up from a possible stroke or new seizure, and books the routine visit itself while surfacing anything urgent to a clinician within minutes rather than at the next callback. It does not diagnose and it does not decide what counts as an emergency; it applies the rule your neurologists wrote, every time, without a queue.
+
+Key takeaways: The average wait for a first neurology visit among commercially insured patients was about 50 days, and primary-care referrals waited longer than ones sent from the emergency department. Among Medicare patients referred to a neurologist, the average wait was 34 days, and 18 percent waited longer than 90 days. Only about a third of referral scheduling attempts across high-volume specialties ended in a documented completed appointment. 82% of patients try to book or reach a practice outside normal office hours, which is exactly when a neurology front desk is unstaffed. A neurology receptionist's hardest job is sorting urgency correctly, every time, on the first call.
+
+Section summaries: The data behind the decision: AAN 2026 (~50-day average first visit wait, 114,034 commercially-insured visits), AAN 2025 (34-day Medicare average, 18% over 90 days), and JGIM 2018 (34.8% documented-completion rate across 103,737 scheduling attempts, 20 specialties) set the stakes for every missed call. What does an AI receptionist actually do in a neurology practice?: answers instantly, asks what the symptom is and when it started, surfaces red-flag patterns (stroke, new seizure, rapidly progressive weakness) to a clinician within minutes, and books routine calls on the spot. Why does this need a different setup than a generic medical answering service?: it has to separate an urgent neurological presentation from a routine follow-up on the first exchange, using the specialty's own vocabulary, and never decide urgency itself. What should it connect to?: Epic, athenahealth, eClinicalWorks, NextGen, or Modernizing Medicine, booking into the real schedule and writing the call back to the chart. How to set up an AI receptionist for a neurology practice: 5 steps: write the triage rule with your neurologists, turn on every channel at all hours, book the routine call on first contact, route the urgent call to a clinician within minutes, and review missed triage calls monthly.
+
+FAQ digest: No, it applies the triage rule your neurologists write in advance; anything matching an emergency pattern is routed to emergency services or a clinician, never diagnosed by the software. It does not replace front-desk staff; it removes repetitive first-contact work so staff handle judgment calls, billing, and prior authorization. It works with Epic, athenahealth, eClinicalWorks, NextGen, and Modernizing Medicine. An urgent call should reach a clinician within minutes, not at the next break in clinic. The first step is writing the triage rule with your neurologists before anything else.
+
+---
+
 # AI Receptionist for a Pediatric Practice: Sick Calls to After Hours (2026)
 Source: https://clinekthealth.com/blog/ai-receptionist-for-pediatric-practice
 Published: 2026-09-14
