@@ -1,0 +1,17 @@
+Meta title (seo-title field, <=60 chars): Dermatology patient no-show rates: benchmarks & fixes (2026)
+Meta description (short-description field, <=155 chars): Dermatology patient no-show benchmarks, why cosmetic and medical visits differ, and how to fill the slot the same day.
+
+Target queries / gap identified 2026-10-27 (live Webflow CMS slug audit, not GSC-query-driven):
+- The no-show-rates content family already covers 11 specialties (behavioral health, cardiology, dental, ophthalmology, oral surgery, orthopedic, pediatric, physical therapy, primary care, rheumatology, urology) plus a cross-specialty hub (average-no-show-rate-and-cost). Dermatology was the one specialty with no entry, despite already having 6 other dermatology content-family posts live (engagement, communications, intake, recall, referral-management, reactivation).
+- Supporting GSC signal (live pull 2026-10-27, 9/24-10/21 window): dermatology-adjacent "no show" / "patient engagement" AI-probe queries present (e.g. "dermatology patient engagement software" 30 impressions pos 4.8, "dermatologist patient communications software" 40 impressions pos 15.0), confirming active demand-signal traffic on dermatology-prefixed queries generally; no isolated "dermatology no-show rate" query surfaced yet in GSC (new-topic, pre-ranking), consistent with a genuine matrix-completion gap rather than a GSC-proven head term.
+- WebSearch SERP ownership check (3 queries run): no single competitor dominates "dermatology patient no-show rate statistics" or "dermatology no-show rate software" -- results are mostly practice-management columns (MDedge/Dermatology News) and vendor blogs, not a defended SERP; open opportunity.
+
+Slug: dermatology-patient-no-show-rates
+URL: https://clinekthealth.com/blog/dermatology-patient-no-show-rates
+
+Named sources used (all independently verified via WebFetch/WebSearch before writing):
+- Eastern, Dermatology News/MDedge, 2019 ("Managing Your Practice" column) -- dermatology no-show rate averages ~10%, roughly double general medical offices.
+- Yadav, Goldberg, Barense, Bell, "A Cross-Sectional Survey of Population-Wide Wait Times for Patients Seeking Medical vs. Cosmetic Dermatologic Care," PLoS One, 2016 (11(9):e0162767) -- cosmetic (botulinum toxin) median wait 3.0 weeks vs. urgent medical (suspicious mole) 9.0 weeks vs. non-urgent medical (routine skin exam) 12.7 weeks, all statistically significant.
+- Choudhry et al., JAMA Dermatology, 2015 -- 67.1% of 301 melanoma-clinic patients preferred phone for biopsy results vs. 19.5% in-person, ~5% portal/voicemail; 40.5% wanted a different channel if the result was malignant. (Reused from the already-verified dermatology-patient-communications-software sibling post, 2026-10-23.)
+- MGMA Stat aggregate no-show benchmark, 6.81% in 2023 across specialties (reused, already verified on the primary-care-patient-no-show-rates sibling post, 2026-05-26).
+- Clinekt canon: 82% after-hours booking stat; Baldwin Bone & Joint 263 qualified surgical leads / 159 appointments / 60% booking rate, single quarter (both verified directly against Clinekt Brain\results\_overview.md).
