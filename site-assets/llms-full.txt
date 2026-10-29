@@ -1818,6 +1818,20 @@ FAQ digest: Dental patient engagement software is not the same as a PMS; the PMS
 
 ---
 
+# Neurology Patient Engagement Software: What It Should Cover Between Visits
+Source: https://clinekthealth.com/blog/neurology-patient-engagement-software
+Published: 2026-10-29
+
+Direct answer: Neurology patient engagement software keeps a patient on their medication, their infusion schedule, and their follow-up plan in the months between visits, and brings a clinician in within hours when something changes instead of waiting for whatever appointment comes next.
+
+Key takeaways: Antiepileptic drug nonadherence was associated with 50% more emergency department visits and 86% more hospital visits in a nearly 34,000-patient Medicaid cohort, and nonadherent patients were three times more likely to die. In a 2022 multiple sclerosis cohort, highly adherent patients had fewer relapses (28.5% vs. 42.6%) and fewer ED visits (17.2% vs. 31.3%) than poorly adherent patients. 82% of patients try to book or reach a practice outside normal office hours, exactly when a neurology front desk is unstaffed. Only about a third of referral scheduling attempts across high-volume specialties end in a documented completed appointment. Patient engagement software runs the recurring follow-up on autopilot; it never replaces the clinical judgment that decides what counts as urgent.
+
+Section summaries: The data behind the decision: a Medicaid claims study of 33,658 epilepsy patients found nonadherent periods carried 50% more ED visits, 86% more hospital visits, and three times the mortality risk (AAN, on Faught et al., Neurology, 2008); a 2022 claims analysis of 922 multiple sclerosis patients on teriflunomide found highly adherent patients relapsed less (28.5% vs. 42.6%) and had fewer ED visits (17.2% vs. 31.3%) than poorly adherent patients (Greene et al., ClinicoEconomics and Outcomes Research, 2022). What does neurology patient engagement software actually do between visits?: scans continuously for overdue follow-ups, due labs, due infusions, and unanswered portal messages, reaches each patient by phone/text/email in one thread, and surfaces red-flag descriptions to a clinician within hours without ever deciding urgency itself. How is this different from an AI receptionist or referral management software?: an AI receptionist is the front door for new inbound contact, referral management is the one-time job of booking a newly referred patient, and engagement is the ongoing relationship with existing patients between visits (recall, reactivation, and between-visit check-ins). How to run this in six steps: segment by condition and cadence, reach every overdue patient across channels in one thread, route red-flag matches to a clinician within hours, confirm visits the way the patient was reached, report outcomes back monthly, and keep every message in one shared record.
+
+FAQ digest: It does not replace a care coordinator; it removes the repetitive reach-out and reminder work so the coordinator handles clinical questions, prior authorization, and infusion logistics. Recall and reactivation are jobs inside the broader engagement relationship; engagement is the umbrella that also covers between-visit check-ins unrelated to a missed appointment. The EHR connection is read-only and works alongside Epic, athenahealth, eClinicalWorks, NextGen, and Modernizing Medicine. It cannot tell whether a symptom is an emergency; it screens against the clinician-written rule and routes matches within hours, with acute events going straight to emergency services. An overdue neurology patient should be reached the same business day.
+
+---
+
 # Oral Surgery Patient Engagement Software: What to Look for Before You Buy
 Source: https://clinekthealth.com/blog/oral-surgery-patient-engagement-software
 Published: 2026-10-02
