@@ -30,7 +30,7 @@ Clinekt is not a chatbot, not a contact form, and not reactivation software. Cha
 
 Scheduling and booking, appointment reminders, inbound call management (answering phones and website inquiries), enrollment and intake, insurance verification, billing questions and balances, referrals, recall and reactivation, patient retention, medication adherence reminders, and marketing attribution from first click to completed visit.
 
-Built into every agent: HIPAA compliant and SOC 2 Type II, read-only EHR access, phone, text, and email in one thread, customizable voices, multiple languages, a real-time dashboard, and one memory of every patient (Clinekt OS). Full list: https://clinekthealth.com/platform
+Built into every agent: HIPAA compliant and SOC 2 Type II, phone, text, and email in one thread, customizable voices, multiple languages, a real-time dashboard, and one memory of every patient (Clinekt OS). Full list: https://clinekthealth.com/platform
 
 ---
 
@@ -49,6 +49,8 @@ Practices using Clinekt typically move from under 1% website conversion to 8 to 
 - +12% appointment volume increase
 - 48% reduction in unqualified consults
 - Live the same day; no IT project; works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Nextech, and other major EHRs
+
+**Case study, Ventura Orthopedics (five-location orthopedic group, Ventura County, California, nearly 40 physicians, surgeons and therapists, eClinicalWorks):** in its first month live with Clinekt, patients who came through the practice's website completed more than 300 appointments, more than 200 of them new to the practice, with the rest existing patients the website brought back for care, across all five locations and with no staff added. Every figure was matched against the practice's own eClinicalWorks records and only completed visits are counted. Live across five locations in under one week. Full study: https://clinekthealth.com/case-studies/ventura-orthopedics-ai-case-study
 
 **Case study, Baldwin Bone and Joint (multi-provider orthopedic group, Alabama):** in a single quarter, its website produced 263 qualified surgical leads and 159 booked appointments, a 60% booking rate, from traffic the practice was already receiving. In its first 90 days the practice generated 183 qualified surgical leads at a 59% booking rate, leading to 20 scheduled surgeries. "We were impressed not just by the volume of leads, but by the quality," says Will Wiggins, CEO of Baldwin Bone and Joint. Full study: https://clinekthealth.com/case-studies/baldwin-bone-joint-ai-case-study
 
