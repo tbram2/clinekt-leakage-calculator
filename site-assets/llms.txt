@@ -248,6 +248,7 @@ Dedicated buying guides for dentistry, physical therapy, primary care, oral surg
 - [Patient Engagement Platform for Health Systems: What to Look for Before You Buy](https://clinekthealth.com/blog/patient-engagement-platform-for-health-systems): What a patient engagement platform should cover for a health system across every service line, from intake and referral completion to recall and between-visit follow-up, and six questions to ask before you buy.
 - [Dermatology Patient Recall Software for Skin Checks and Biopsy Follow-Up (2026)](https://clinekthealth.com/blog/dermatology-patient-recall-software): What dermatology patient recall software does for skin cancer surveillance, biopsy follow-up, isotretinoin and biologic monitoring, with verified data.
 - [Dermatology Referral Management Software: What to Look for Before You Buy](https://clinekthealth.com/blog/dermatology-referral-management-software): Dermatology referral management software triages urgent cases, tracks Mohs referrals, and reports back to referring doctors automatically.
+- [Cardiology Patient Communications Software (2026)](https://clinekthealth.com/blog/cardiology-patient-communications-software): What cardiology patient communications software must cover across device and remote-monitoring alert follow-up, medication and anticoagulation dose-change confirmations, and cardiac rehab adherence, and why portal-only messaging fails the highest-stakes messages.
 
 ## Referral operations (added 2026-09-15)
 

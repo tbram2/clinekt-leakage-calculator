@@ -1,0 +1,16 @@
+Meta title (seo-title field, <=60 chars): Cardiology Patient Communications Software (2026)
+Meta description (short-description field, <=155 chars): Cardiology patients wait on medication changes, device alerts, and rehab follow-up calls. What a communications platform must get right, and why.
+
+Target queries:
+- cardiology patient communications software (25 impressions, 0 clicks, position 10.5 -- live GSC pull 2026-10-23, 9/24-10/21 vs 8/27-9/23 window, captured as an adjacent non-matrix signal on the dermatology-patient-communications-software seo.txt; this run's own GSC session was unavailable, see run notes -- no fresh pull performed, no numbers fabricated)
+- dermatologist patient communications software (34 impressions, 0 clicks, position 15.1 -- same 2026-10-23 pull, sibling page's actual target)
+- orthopedic patient communications software (167 impressions, 0 clicks, position 11.1 -- already covered by /blog/orthopedic-patient-communications-software, confirms real cross-specialty demand for this job-layer topic)
+
+GSC session this run: not available (Playwright browser not signed into a Google account with GSC access this fire; demand-intel's same-fire pulse log for 2026-11-02 independently confirms "no logged-in Chrome session this fire" for its own autocomplete/social checks). Topic selection fell back to the playbook's step 1 contingency: the live CMS slug-family audit below plus 3 WebSearch calls to triangulate SERP ownership, per blog-content-engine.md's own precedent (10/26 through 10/30 runs).
+
+Content-family gap found via live CMS/corpus audit (2026-11-02): the patient-communications-software family covers only 3 of 14 specialties (behavioral-health, dermatology, orthopedic); cardiology is the next alphabetical open slot, matching the explicit "Next" note left in the 2026-10-28 blog-content-engine.md log entry for the behavioral-health post.
+
+SERP check (WebSearch, 2026-11-02): "cardiology patient communications software" returns a fragmented, vendor-marketing-page SERP (LeadSquared, Weave, Mobile Heartbeat via CB Insights, DoctorsApp.in listicles, AdvancedMD) with no dominant content authority and no buyer's-guide format -- an open content gap, not a cannibalization risk against cardiology-patient-engagement-software (different job: engagement vs. the message/communications layer specifically).
+
+Slug: cardiology-patient-communications-software
+URL: https://clinekthealth.com/blog/cardiology-patient-communications-software

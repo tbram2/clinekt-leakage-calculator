@@ -1,0 +1,61 @@
+# Cardiology Patient Communications Software: What to Look for Before You Buy
+
+Slug: cardiology-patient-communications-software
+Date: 2026-11-02
+Category: Blog
+
+## Body (rich text, mirrors body-1 field pushed to Webflow)
+
+<p><strong>Cardiology patient communications software is the messaging layer that follows up on device and remote-monitoring alerts, confirms medication and anticoagulation changes, reminds patients about cardiac rehab sessions, and runs post-discharge check-ins, on the channel a patient actually answers instead of whichever channel was cheapest to build.</strong> That distinction carries more weight in cardiology than in most specialties, because missing one of these messages does not just cost a visit. A missed rehab reminder costs months of recovery. A missed device alert follow-up or an unconfirmed anticoagulation dose change can be a safety event. A platform that treats every message like a routine reminder is optimizing for the easiest case, not the one that matters most. This guide covers what communications software needs to handle in a cardiology practice, what the evidence says about where follow-up actually breaks down, and how to evaluate a vendor before you buy. It sits next to the broader <a href="https://clinekthealth.com/cardiology">cardiology patient engagement software</a> picture, scoped to the message layer specifically.</p>
+
+<h2>Key takeaways</h2>
+<ul>
+<li>Only 29.1% of Medicare patients referred to cardiac rehab complete all 36 prescribed sessions, and facility-level completion ranges from 0% to 92.1% with a median of 33.1%, a gap that tracks closely with how well a program follows up between visits (Journal of Cardiopulmonary Rehabilitation and Prevention, 2025).</li>
+<li>Notifying a referring practice when a patient missed a pediatric cardiology visit did not raise the share who eventually came back, but it did cut the average time to the next successful visit from 2.9 months to 1.65 months (Kansas Journal of Medicine, 2013).</li>
+<li>Medical groups are investing nearly six times more in AI for clinical documentation than for patient communication: 59% versus 10% of 302 groups polled (MGMA Stat, 2024).</li>
+<li>Across Clinekt deployments, 82% of patients try to book or respond outside normal office hours, the hours when an unread portal message about a device alert or a medication change sits untouched.</li>
+<li>Our published result is orthopedic, not cardiology specific: Baldwin Bone and Joint generated 263 qualified surgical leads and booked 159 appointments, a 60% booking rate, in a single quarter.</li>
+</ul>
+<p>Evaluating cardiology patient communications software? <a href="https://clinekthealth.com/book-a-demo">Book a demo</a> to see how Clinekt's agents cover a cardiology patient list across every message type, or size the gap first with the <a href="https://clinekthealth.com/leakage-calculator">patient leakage calculator</a>.</p>
+
+<h2>The Data Behind the Decision</h2>
+<p>The clearest evidence of where cardiology follow-up breaks down is cardiac rehabilitation. A 2025 analysis of Medicare fee-for-service claims covering 183,888 beneficiaries across 2,242 facilities found that only 53,558 patients, 29.1%, completed all 36 sessions of their prescribed program, with facility-level completion rates ranging from a low of 0% to a high of 92.1% and a median of 33.1% (<a href="https://scholarlycommons.henryford.com/cardiology_mtgabstracts/716">Journal of Cardiopulmonary Rehabilitation and Prevention, 2025</a>). A program that varies that widely between facilities is not mainly a patient-motivation problem; it is a follow-up problem, and the facilities at 92.1% are doing something the ones at single digits are not.</p>
+<p>Referral loop closure tells a similar story from a different angle. A 2013 study at a pediatric cardiology practice tested whether notifying the referring practice after a missed visit changed what happened next (<a href="https://journals.ku.edu/kjm/article/view/11438">Kansas Journal of Medicine, 2013</a>). It did not meaningfully change the share of patients who eventually returned, 28% in the notified group versus 11% in the control group, not a statistically significant gap. What it did change was speed: the average time to the next successful visit dropped from 2.9 months to 1.65 months when the referring practice knew sooner. Closing the loop faster did not create new demand, it compressed the delay.</p>
+<p>Investment has not caught up to either problem. An October 2024 poll of 302 medical groups found 59% were prioritizing AI investment in clinical documentation and scribing, versus only 10% in patient communication (<a href="https://www.mgma.com/mgma-stat/-ai-that-directly-aids-patient-visits-is-top-priority-for-medical-practice-leaders">MGMA Stat, 2024</a>). Cardiology generates more follow-up touchpoints per patient than most specialties: device checks, lab draws for anticoagulation, rehab sessions, and medication titrations, and most of that volume still runs through whatever scheduling tool shipped with the EHR.</p>
+
+<h2>What does patient communications software actually need to cover in a cardiology practice?</h2>
+<p>At minimum, six message types: appointment reminders and confirmations, device and remote-monitoring alert follow-up, medication and anticoagulation dose-change confirmations, cardiac rehab session reminders and adherence check-ins, post-procedure and post-discharge instructions, and referral loop closure back to the referring physician. Most practices run each through a different tool: a scheduling system for reminders, a device-monitoring portal for alerts, a phone tree for dose changes, a printed packet for discharge instructions. No single tool knows a patient is overdue for a rehab session and also has an unconfirmed anticoagulation dose change open at the same time.</p>
+<p>Communications software is supposed to put every message type into one record per patient, reachable on whatever channel that patient answers. It only earns the name if it treats a device alert differently from a routine reminder, because the rehab-adherence spread above says the gap between a well-run program and a struggling one is follow-up, not patient willingness.</p>
+
+<h2>Why does a portal-first tool fail cardiology patients the most?</h2>
+<p>Most communications platforms default to a portal message because it is the cheapest channel to ship and the easiest to document. That default is tolerable for a routine appointment reminder. It is not tolerable for a device alert or an anticoagulation dose change, the message types where a delay carries clinical weight, not just a missed visit.</p>
+<p>A portal message also assumes the patient logs in. A cardiac rehab patient who stops opening the portal after week two is not refusing care; the program has lost its only channel to that patient, which is consistent with completion rates that fall as low as 0% at some facilities while others reach above 90%. A platform that cannot escalate a flagged message to a phone call, automatically or with one staff click, is optimized for the channel that fits cardiology's highest-stakes messages the least.</p>
+
+<h2>How to evaluate cardiology patient communications software before you buy: 5 steps</h2>
+<ol>
+<li>Confirm a device or remote-monitoring alert can escalate to a phone call, not just the default channel. Ask the vendor to show the path from an alert arriving to a patient on the phone, not just a notification sent.</li>
+<li>Check that all six message types live in one patient record: reminders, alert follow-up, medication and anticoagulation updates, rehab reminders, discharge instructions, and referral loop closure. A tool that only does reminders is a reminder tool, not communications software.</li>
+<li>Verify every channel is two-way. A medication or dose-change notice that cannot take a reply pushes the confirmation back to a phone call anyway, just later.</li>
+<li>Ask how the platform reaches a rehab patient who has stopped responding, and whether that follow-up happens automatically or depends on staff remembering to check.</li>
+<li>Confirm consent, opt-in, and HIPAA handling across phone, text, and portal, especially for anything that references a device reading or a medication change in a text message.</li>
+</ol>
+
+<h2>What Should Still Go to a Human?</h2>
+<p>Interpreting a device alert or deciding on a medication or anticoagulation dose change. Software can notify a patient that a reading needs attention and get them connected fast; a clinician still reads the data and makes the call. Anything describing new or worsening symptoms, chest pain, or a possible device malfunction should route to clinical staff immediately, not sit in a queue waiting for a scheduled check. Insurance questions and financial hardship requests go to your billing team.</p>
+
+<h2>Where Clinekt Fits</h2>
+<p>Clinekt is patient engagement software: engagement that ends in a booked visit or a closed loop, not just a sent message. Around cardiology communications, the Inbound agent answers a patient calling or texting about a device alert, a medication question, or a reminder, in the practice's own voice, day or night, which matters given that 82% of patients try to reach a practice outside office hours. The Recall agent works the standing list of patients due for a next step, a rehab session, a lab draw, a device check, and keeps the conversation open until it resolves. The Outbound agent reaches new demand searching for a cardiologist right now, and the Care agent runs check-ins between visits, flagging a reported symptom or missed rehab session to staff instead of leaving it in an inbox.</p>
+<p>The connection to your practice management system or EHR, including Epic, Cerner, athenahealth, and NextGen, does not change how your front desk already works, and go-live is the same day. Pricing is one simple rate per provider per month, with support and tuning included and no multi-year contract.</p>
+<p>Our published result is orthopedic: <a href="https://clinekthealth.com/case-studies/baldwin-bone-joint-ai-case-study">Baldwin Bone and Joint</a> generated 263 qualified surgical leads and booked 159 appointments, a 60% booking rate, in a single quarter. The mechanism transfers to cardiology because a patient who has not confirmed a dose change or scheduled a rehab session is the same problem as a lead who has not booked: reach them on the channel that works and keep the conversation open until it resolves. See the family of specialty communications guides starting with <a href="https://clinekthealth.com/blog/orthopedic-patient-communications-software">orthopedic patient communications software</a>, or the full specialty view at <a href="https://clinekthealth.com/cardiology">Clinekt for cardiology practices</a>.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What message types does cardiology patient communications software need to handle?</h3>
+<p>At minimum six: appointment reminders, device and remote-monitoring alert follow-up, medication and anticoagulation dose-change confirmations, cardiac rehab reminders, discharge instructions, and referral loop closure with the referring physician.</p>
+<h3>Why do so few patients finish cardiac rehab?</h3>
+<p>Completion varies enormously by facility, from 0% to above 90% in one national analysis, which points to follow-up quality rather than patient motivation as the main driver. See the 2025 Medicare claims analysis above.</p>
+<h3>Does notifying a referring physician about a missed visit actually help?</h3>
+<p>It does not clearly raise the share of patients who eventually return, but it does get the ones who do return back in sooner, roughly a month sooner in one study.</p>
+<h3>Should a device alert ever sit in a portal message?</h3>
+<p>No. A device or remote-monitoring alert should be able to escalate to a phone call automatically or with one staff click, not wait for a patient to log in.</p>
+<h3>Does Clinekt interpret device readings or make dosing decisions?</h3>
+<p>No. Clinekt notifies and reaches the patient and gets them connected quickly. A clinician still reads the data and makes any clinical decision. Anything a patient reports that sounds urgent routes to your staff immediately.</p>
