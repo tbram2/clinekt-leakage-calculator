@@ -193,6 +193,340 @@ A: One simple rate per provider per month, with support and tuning included and 
 
 ---
 
+## Epic Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/epic-integration
+
+Clinekt is AI patient engagement software for practices on Epic. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. Epic runs the largest health systems and many of the biggest specialty groups in the country, with MyChart as the patient portal and Cadence as the scheduling module. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- Cadence stays your scheduling system: Your schedulers book the visit in Epic the way they do today. The agent hands them a patient who is ready to book, with the conversation attached.
+- MyChart stays your portal: Clinekt does not replace the portal. It reaches the patients who never log in, by phone, text, and email, and books the ones MyChart was waiting for.
+
+Q: How does Clinekt work with Epic?
+A: Clinekt works alongside Epic without an Epic implementation project. The agents engage and book patients in your practice's name, your schedulers finish the booking in Cadence as they do today, and recall works from the patient list your practice provides. Health systems that want a deeper connection can add one at their pace.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside Epic. Qualified patients are delivered to your scheduling team with full context, and your team books in Epic exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your Epic schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## athenahealth Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/athenahealth-integration
+
+Clinekt is AI patient engagement software for practices on athenahealth. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. athenahealth's athenaOne is the cloud EHR and practice management system behind tens of thousands of independent practices and specialty groups. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- athenaOne stays your schedule: Your team books in athenaOne exactly as it does now. Clinekt supplies the patient, the context, and the follow-up.
+- athenaCommunicator keeps sending reminders if you want it to: Clinekt sends reminders too, and it also goes after the patients who have nothing on the schedule, which reminders cannot reach.
+
+Q: How does Clinekt work with athenahealth?
+A: Clinekt works alongside athenaOne. New patients are engaged and booked in your practice's name, your schedulers finish the booking in athenaOne the way they do today, and the Recall Agent works from the overdue list your practice provides. No athenaOne reconfiguration is needed to start.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside athenahealth. Qualified patients are delivered to your scheduling team with full context, and your team books in athenahealth exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your athenahealth schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## ModMed Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/modmed-integration
+
+Clinekt is AI patient engagement software for practices on ModMed. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. ModMed's EMA is the specialty EHR for dermatology, ophthalmology, orthopedics, ENT, plastic surgery, podiatry, urology, and gastroenterology, with ModMed Practice Management alongside it. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- EMA stays exactly as your providers know it: Nothing in the EMA workflow changes. The agents work in front of the practice: the phone, the website, the overdue list, the follow-up.
+- Specialty rules stay yours: Body-part routing in orthopedics, cosmetic and medical calendars in dermatology, surgical and clinic days in ophthalmology: the agents book by your rules, with the right provider.
+
+Q: How does Clinekt work with ModMed?
+A: Clinekt works alongside ModMed EMA and ModMed Practice Management. The agents engage and book patients in your practice's name, by specialty rules you set, and your schedulers finish the booking in ModMed the way they do today. Dermatology, ophthalmology, orthopedics, and urology practices on ModMed are live the same day.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside ModMed. Qualified patients are delivered to your scheduling team with full context, and your team books in ModMed exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your ModMed schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## NextGen Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/nextgen-integration
+
+Clinekt is AI patient engagement software for practices on NextGen. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. NextGen Healthcare's Enterprise EHR and Practice Management serve ambulatory and multi-specialty groups, with NextGen Office for smaller practices. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- NextGen stays your scheduling system: The patient arrives at your NextGen schedulers ready to book, with the right provider matched and the conversation attached, and no double entry.
+- Multi-specialty groups keep one front door: One agent answers for every service line in your practice's name and routes each patient to the right department and provider.
+
+Q: How does Clinekt work with NextGen?
+A: Clinekt works alongside NextGen Enterprise and NextGen Office. The agents engage and book patients in your practice's name, your schedulers finish the booking in NextGen the way they do today, and the Recall Agent works from the overdue list your practice provides. No NextGen project is needed to start.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside NextGen. Qualified patients are delivered to your scheduling team with full context, and your team books in NextGen exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your NextGen schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## eClinicalWorks Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/eclinicalworks-integration
+
+Clinekt is AI patient engagement software for practices on eClinicalWorks. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. eClinicalWorks is the ambulatory EHR and practice management system behind more than 150,000 providers, with healow as its patient-facing app. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- Your eCW team keeps its scheduling process: Clinekt supplies the patient, the context, and the follow-up. The booking reaches your schedulers with the conversation attached, and they finish it in eCW.
+- Proven on eClinicalWorks: Ventura Orthopedics, a five-location group on eCW, had more than 300 completed appointments and more than 200 new patients in its first month live, every one verified in eClinicalWorks.
+
+Q: How does Clinekt work with eClinicalWorks?
+A: Clinekt works alongside eClinicalWorks today, in production, at a five-location orthopedic group. The agents engage and book patients in your practice's name, your schedulers finish the booking in eCW the way they do now, and the completed visits are counted in eCW, which is how Ventura's first-month results were verified.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside eClinicalWorks. Qualified patients are delivered to your scheduling team with full context, and your team books in eClinicalWorks exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your eClinicalWorks schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## Cerner Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/cerner-integration
+
+Clinekt is AI patient engagement software for practices on Cerner. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. Oracle Health, formerly Cerner, runs hospital and health-system EHRs, with Millennium on the clinical side and ambulatory practices inside those systems. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- No admin involvement to start: Clinekt sits in front of the health system's practices, so there is nothing for the Oracle Health team to rebuild or reconfigure on day one.
+- Every location, one rollup: Service lines and locations report into one portal, so the system sees what each agent returned across the whole footprint.
+
+Q: How does Clinekt work with Cerner?
+A: Clinekt is compatible with practices and health systems running Oracle Health. The agents engage and book patients in the practice's name, schedulers finish the booking in the system they use today, and recall works from the overdue list the practice provides. A deeper connection can be added where the system wants one.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside Cerner. Qualified patients are delivered to your scheduling team with full context, and your team books in Cerner exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your Cerner schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## AdvancedMD Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/advancedmd-integration
+
+Clinekt is AI patient engagement software for practices on AdvancedMD. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. AdvancedMD is the cloud practice management and EHR suite for independent practices, with scheduling, billing, and a patient portal in one system. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- Your AdvancedMD scheduling team keeps booking: Qualified patients flow to your schedulers with everything needed to book, and they book in AdvancedMD as they do today.
+- Billing questions get answered before they reach billing: The Care Agent answers balance and statement questions and collects, so your AdvancedMD billing queue shrinks.
+
+Q: How does Clinekt work with AdvancedMD?
+A: Clinekt works alongside AdvancedMD. The agents engage and book patients in your practice's name, your schedulers finish the booking in AdvancedMD the way they do today, and the Recall Agent works from the overdue list your practice provides. Independent practices are live the same day.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside AdvancedMD. Qualified patients are delivered to your scheduling team with full context, and your team books in AdvancedMD exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your AdvancedMD schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## Greenway Health Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/greenway-integration
+
+Clinekt is AI patient engagement software for practices on Greenway Health. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. Greenway Health's Intergy and Prime Suite serve ambulatory practices across primary care and the specialties, with Greenway Patient for the portal side. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- Intergy and Prime Suite stay as they are: No configuration changes in either environment. The agents work in front of the practice and hand the booking to your schedulers.
+- Primary care volume is the fit: Same-day sick visits, chronic care recall, and the after-hours calls Greenway practices take every week are the jobs the agents take first.
+
+Q: How does Clinekt work with Greenway Health?
+A: Clinekt works alongside Greenway Intergy and Prime Suite without configuration changes. The agents engage and book patients in your practice's name, your schedulers finish the booking in Greenway the way they do today, and the Recall Agent works from the overdue list your practice provides.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside Greenway Health. Qualified patients are delivered to your scheduling team with full context, and your team books in Greenway Health exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your Greenway Health schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## Veradigm Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/veradigm-integration
+
+Clinekt is AI patient engagement software for practices on Veradigm. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. Veradigm, formerly Allscripts, runs Practice Management and the TouchWorks and Professional EHRs for ambulatory groups, with FollowMyHealth as the portal. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- Your workflow stays put: Veradigm Practice Management keeps the schedule. The agent delivers the patient, the context, and the follow-up to the people who book.
+- FollowMyHealth stays your portal: Clinekt reaches the patients who never open a portal message, by phone, text, and email, and books the visit the portal was waiting for.
+
+Q: How does Clinekt work with Veradigm?
+A: Clinekt is compatible with Veradigm (formerly Allscripts) practices. The agents engage and book patients in your practice's name, your schedulers finish the booking in Veradigm the way they do today, and the Recall Agent works from the overdue list your practice provides.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside Veradigm. Qualified patients are delivered to your scheduling team with full context, and your team books in Veradigm exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your Veradigm schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## Nextech Integration: AI Patient Engagement
+
+Source: https://clinekthealth.com/nextech-integration
+
+Clinekt is AI patient engagement software for practices on Nextech. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance, and hand your schedulers a booking-ready patient with the conversation attached. Nextech is the specialty EHR and practice management system for dermatology, ophthalmology, plastic surgery, and orthopedics, with IntelleChartPRO on the ophthalmology side. Clinekt works alongside it, with no IT project, and the first agent is live the same day.
+
+- Nextech stays your schedule: Your schedulers book in Nextech the way they do today. The agent hands them the patient, the right provider, and the conversation.
+- Cosmetic and medical calendars both covered: Dermatology and plastic surgery practices run two kinds of demand. The agents book both by your rules, and the Recall Agent brings back the annual skin check and the cosmetic rebook.
+
+Q: How does Clinekt work with Nextech?
+A: Clinekt is compatible with Nextech practices. The agents engage and book patients in your practice's name, by the specialty rules you set, and your schedulers finish the booking in Nextech the way they do today. Dermatology, ophthalmology, and orthopedic practices on Nextech are live the same day.
+Q: Does Clinekt require an API connection to our EHR?
+A: No. Clinekt works alongside Nextech. Qualified patients are delivered to your scheduling team with full context, and your team books in Nextech exactly the way it does today. Deeper integrations are available where a practice wants them.
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your Nextech schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+---
+
+## Clinekt vs Solutionreach: Patient Engagement Compared (2026)
+
+Source: https://clinekthealth.com/clinekt-vs-solutionreach
+
+Solutionreach is a patient engagement platform that began in 2000, built around reminders, recall, texting, online scheduling, and payments for dental, eye care, and medical practices, with "50k+" practices on its site. Clinekt is AI patient engagement software for specialty and primary care practices: its agents reach patients by phone, text, email, and website chat in your practice's name, book the visit, bring overdue patients back from your records, and hand your team only what needs a person. The short version: choose Solutionreach if you run a dental or eye care practice on one of the practice management systems it names and want reminders, recall, texting, scheduling, and payments from one long-standing vendor; choose Clinekt if you want the patients who never call: new patients engaged and booked on the website and the phone around the clock, overdue patients brought back by conversation rather than a reminder campaign, and your schedulers handed a booking rather than a request.
+
+Facts about Solutionreach are from its public website on November 2, 2026, vendor-reported.
+
+- Built for. Clinekt. Specialty and primary care practices: orthopedics, physical therapy, oral surgery, dentistry, dermatology, ophthalmology, urology, primary care, cardiology, pediatrics, rheumatology, and behavioral health, and health systems that run those service lines. Solutionreach. Dental, eye care, and medical practices, multi-location groups, DSOs, vision groups, and hospital medical groups, per its site.
+- Channels. Clinekt. Phone, text, email, and website chat in one thread, so a patient can start on one channel and answer on another. Voices you choose, in the languages your patients speak. Solutionreach. An AI Receptionist for calls, texting both ways, email, and voice reminders. Website chat is not named on its site; a mobile app is listed.
+- Booking and handoff. Clinekt. The agent holds the conversation until the patient has a confirmed time with the right provider, verifies insurance, and hands your schedulers the booking with the conversation attached. Anything clinical, urgent, or requested goes to a person right away. Solutionreach. Its AI Receptionist "schedules, reschedules, and cancels patient appointments directly into your practice's schedule" and routes what it cannot handle to the office. Its site says the receptionist will not "Override your scheduling rules" or "Replace your front desk team".
+- Recall and reactivation. Clinekt. The Recall Agent works from your records: recall intervals, unfinished plans of care, patients not seen in twelve months. It reaches each patient by phone, text, and email until the visit is booked or the patient says no, with nothing landing on staff. Solutionreach. Automated: "Recall patients, no calls required". The platform identifies patients who are due or overdue and sends recall by text, email, or voice.
+- New patients and after hours. Clinekt. Website chat greets and books new patients with no form or login, and the phone is answered after hours the same way it is at 9 am. 82% of patients try to book outside office hours. Solutionreach. Online scheduling from the practice website and Google; the AI Receptionist answers after hours. Website chat that books a new patient is not stated on its site.
+- Insurance, intake, referrals, reviews. Clinekt. Insurance verification, registration and intake, referrals received and routed, billing questions answered and balances collected, NPS after every visit with Google reviews asked for, medication reminders, and campaign attribution to the completed visit. Solutionreach. Insurance eligibility, digital intake, payments, reputation management, surveys, and a Refer a Friend program. Provider referral management is not stated.
+- EHR and practice systems. Clinekt. Works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner (Oracle Health), AdvancedMD, Greenway, Veradigm, Nextech, and the dental practice management systems. No IT project; the first agent is live the same day. Solutionreach. "400+ native PM/EHR integrations" including Dentrix, Eaglesoft, Open Dental, Curve, Denticon, Epic, athenahealth, NextGen, Nextech, Compulink, Eyefinity, AdvancedMD, ModMed EMA, and Tebra. Implementation time "depends on the practice management software".
+- Pricing model and contract. Clinekt. One rate per provider per month, support and tuning included, no multi-year contract. Solutionreach. Quote only, across the packages Patient Connect, Practice Efficiency, Practice Growth, and Enterprise (six or more locations), with "yearly contract options".
+
+- Choose Solutionreach if: You run a dental or eye care practice on one of the practice management systems it names and want reminders, recall, texting, scheduling, and payments from one long-standing vendor.
+- Choose Clinekt if: You want the patients who never call: new patients engaged and booked on the website and the phone around the clock, overdue patients brought back by conversation rather than a reminder campaign, and your schedulers handed a booking rather than a request.
+
+---
+
+## Clinekt vs Phreesia: Patient Engagement Compared (2026)
+
+Source: https://clinekthealth.com/clinekt-vs-phreesia
+
+Phreesia is a publicly traded patient intake and access platform (NYSE: PHR) with a history from 2005 and "4,700+" healthcare organizations on its site, now adding VoiceAI for calls. Clinekt is AI patient engagement software for specialty and primary care practices: its agents reach patients by phone, text, email, and website chat in your practice's name, book the visit, bring overdue patients back from your records, and hand your team only what needs a person. The short version: choose Phreesia if you are a health system or large group that wants intake, check-in hardware, payments, and access in one enterprise platform and can plan a six-week implementation; choose Clinekt if you want a practice-level agent that is live the same day, books new patients from your own website and phone rather than a marketplace, and brings overdue patients back by conversation, at one rate per provider.
+
+Facts about Phreesia are from its public website on November 2, 2026, vendor-reported.
+
+- Built for. Clinekt. Specialty and primary care practices: orthopedics, physical therapy, oral surgery, dentistry, dermatology, ophthalmology, urology, primary care, cardiology, pediatrics, rheumatology, and behavioral health, and health systems that run those service lines. Phreesia. Health systems, enterprise groups, and independent groups across 18 listed specialties including primary care, orthopedics, dermatology, OB/GYN, and ophthalmology. Dental is not listed.
+- Channels. Clinekt. Phone, text, email, and website chat in one thread, so a patient can start on one channel and answer on another. Voices you choose, in the languages your patients speak. Phreesia. VoiceAI for calls, plus text, email, and voice reminders in "20+ languages". Website chat is not stated. "No app or login required." In-office check-in hardware (PadX, Arrivals).
+- Booking and handoff. Clinekt. The agent holds the conversation until the patient has a confirmed time with the right provider, verifies insurance, and hands your schedulers the booking with the conversation attached. Anything clinical, urgent, or requested goes to a person right away. Phreesia. VoiceAI books: "appointments are booked and added to the calendar". Urgent and non-routine calls go to staff.
+- Recall and reactivation. Clinekt. The Recall Agent works from your records: recall intervals, unfinished plans of care, patients not seen in twelve months. It reaches each patient by phone, text, and email until the visit is booked or the patient says no, with nothing landing on staff. Phreesia. VoiceAI outbound campaigns include recall, and an automated waitlist called Appointment Accelerator fills vacancies.
+- New patients and after hours. Clinekt. Website chat greets and books new patients with no form or login, and the phone is answered after hours the same way it is at 9 am. 82% of patients try to book outside office hours. Phreesia. New patients find and book through MediFind, its patient search marketplace. After hours, VoiceAI handles calls 24/7 and PhreesiaOnCall triages to the on-call provider (included with Phreesia Intake, not sold alone).
+- Insurance, intake, referrals, reviews. Clinekt. Insurance verification, registration and intake, referrals received and routed, billing questions answered and balances collected, NPS after every visit with Google reviews asked for, medication reminders, and campaign attribution to the completed visit. Phreesia. Real-time eligibility, intake, payments (PCI DSS Level 1), referral management, and patient feedback with alerts on negative responses. Review generation is not stated.
+- EHR and practice systems. Clinekt. Works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner (Oracle Health), AdvancedMD, Greenway, Veradigm, Nextech, and the dental practice management systems. No IT project; the first agent is live the same day. Phreesia. "16+ PM/EHRs natively": AdvancedMD, athenahealth, Azalea, Compulink, eClinicalWorks, eMDs, Epic, Flatiron, Greenway, MEDITECH, ModMed, NextGen, Office Practicum, Oracle, Unlimited Systems, Veradigm. Go-live "as little as 6 weeks".
+- Pricing model and contract. Clinekt. One rate per provider per month, support and tuning included, no multi-year contract. Phreesia. Custom quote by size, workflows, and products; "predictable subscription pricing, no surprise fees or per-message charges". Contract length is not stated.
+
+- Choose Phreesia if: You are a health system or large group that wants intake, check-in hardware, payments, and access in one enterprise platform and can plan a six-week implementation.
+- Choose Clinekt if: You want a practice-level agent that is live the same day, books new patients from your own website and phone rather than a marketplace, and brings overdue patients back by conversation, at one rate per provider.
+
+---
+
+## Clinekt vs Luma Health: Patient Engagement Compared (2026)
+
+Source: https://clinekthealth.com/clinekt-vs-luma-health
+
+Luma Health is an "Operational AI for Healthcare" platform founded in 2015 in San Mateo, with "1,000+ healthcare organizations" in the US, Canada, and UK on its site. Clinekt is AI patient engagement software for specialty and primary care practices: its agents reach patients by phone, text, email, and website chat in your practice's name, book the visit, bring overdue patients back from your records, and hand your team only what needs a person. The short version: choose Luma Health if you are a health system or FQHC on Epic, Oracle, MEDITECH, athenahealth, or eCW that wants an enterprise operations platform with voice in English and Spanish; choose Clinekt if you are a specialty or primary care practice that wants the agents working your own website, phone, and overdue list in your languages, live the same day, with one rate per provider and no enterprise project.
+
+Facts about Luma Health are from its public website on November 2, 2026, vendor-reported.
+
+- Built for. Clinekt. Specialty and primary care practices: orthopedics, physical therapy, oral surgery, dentistry, dermatology, ophthalmology, urology, primary care, cardiology, pediatrics, rheumatology, and behavioral health, and health systems that run those service lines. Luma Health. Health systems, hospitals, clinics, FQHCs, and pediatrics, per its site.
+- Channels. Clinekt. Phone, text, email, and website chat in one thread, so a patient can start on one channel and answer on another. Voices you choose, in the languages your patients speak. Luma Health. Agentic voice in English or Spanish, SMS and RCS, email, and chat. Booking through Google is also offered.
+- Booking and handoff. Clinekt. The agent holds the conversation until the patient has a confirmed time with the right provider, verifies insurance, and hands your schedulers the booking with the conversation attached. Anything clinical, urgent, or requested goes to a person right away. Luma Health. Its agent books itself into the EHR schedule, and its Navigator agent "brings in a person when the situation calls for it".
+- Recall and reactivation. Clinekt. The Recall Agent works from your records: recall intervals, unfinished plans of care, patients not seen in twelve months. It reaches each patient by phone, text, and email until the visit is booked or the patient says no, with nothing landing on staff. Luma Health. Automated outreach on a cadence (for example one year after the last visit) by SMS, RCS, or an outbound AI call, "without staff calling down a list".
+- New patients and after hours. Clinekt. Website chat greets and books new patients with no form or login, and the phone is answered after hours the same way it is at 9 am. 82% of patients try to book outside office hours. Luma Health. Patient Pipeline runs Google Ads that send patients to a real open appointment; admins control which slots new patients can book. "24/7 multilingual support." Website chat that books a new patient is not stated explicitly.
+- Insurance, intake, referrals, reviews. Clinekt. Insurance verification, registration and intake, referrals received and routed, billing questions answered and balances collected, NPS after every visit with Google reviews asked for, medication reminders, and campaign attribution to the completed visit. Luma Health. Eligibility checks, intake forms, payments, review requests and reputation management, and referral coordination including fax-based referrals.
+- EHR and practice systems. Clinekt. Works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner (Oracle Health), AdvancedMD, Greenway, Veradigm, Nextech, and the dental practice management systems. No IT project; the first agent is live the same day. Luma Health. Direct with athenahealth, eClinicalWorks, Epic, Oracle Health, and MEDITECH; partners NextGen, Nextech, Greenway, PCC; ModMed is shown. Outside the US, Epic, Oracle, and MEDITECH are named.
+- Pricing model and contract. Clinekt. One rate per provider per month, support and tuning included, no multi-year contract. Luma Health. Not stated on its site; book a demo.
+
+- Choose Luma Health if: You are a health system or FQHC on Epic, Oracle, MEDITECH, athenahealth, or eCW that wants an enterprise operations platform with voice in English and Spanish.
+- Choose Clinekt if: You are a specialty or primary care practice that wants the agents working your own website, phone, and overdue list in your languages, live the same day, with one rate per provider and no enterprise project.
+
+---
+
+## Clinekt vs Artera: Patient Engagement Compared (2026)
+
+Source: https://clinekthealth.com/clinekt-vs-artera
+
+Artera is a patient communication platform founded in 2015 (formerly WELL Health) in Santa Barbara, describing itself as "the leading agentic healthcare company", with "1,000+ healthcare organizations" on its site. Clinekt is AI patient engagement software for specialty and primary care practices: its agents reach patients by phone, text, email, and website chat in your practice's name, book the visit, bring overdue patients back from your records, and hand your team only what needs a person. The short version: choose Artera if you are a health system, FQHC, or federal program that needs enterprise messaging at scale in 30+ languages with FedRAMP and HITRUST on the list; choose Clinekt if you are a specialty or primary care practice that wants a named recall program working your records, new patients booked from your website and phone, and a practice-sized price, live the same day.
+
+Facts about Artera are from its public website on November 2, 2026, vendor-reported.
+
+- Built for. Clinekt. Specialty and primary care practices: orthopedics, physical therapy, oral surgery, dentistry, dermatology, ophthalmology, urology, primary care, cardiology, pediatrics, rheumatology, and behavioral health, and health systems that run those service lines. Artera. FQHCs and community health centers, health systems, and federal agencies, across 14 listed specialties including primary care, orthopedics, dermatology, ophthalmology, oncology, and pediatrics.
+- Channels. Clinekt. Phone, text, email, and website chat in one thread, so a patient can start on one channel and answer on another. Voices you choose, in the languages your patients speak. Artera. Voice AI, SMS and RCS, email, and web chat or secure messaging, in "30+ Languages".
+- Booking and handoff. Clinekt. The agent holds the conversation until the patient has a confirmed time with the right provider, verifies insurance, and hands your schedulers the booking with the conversation attached. Anything clinical, urgent, or requested goes to a person right away. Artera. Its agent "schedules appointments in real-time" and "Routes complex requests to staff with full context". Its site notes that "Integration capabilities vary by EHR system and version".
+- Recall and reactivation. Clinekt. The Recall Agent works from your records: recall intervals, unfinished plans of care, patients not seen in twelve months. It reaches each patient by phone, text, and email until the visit is booked or the patient says no, with nothing landing on staff. Artera. The word recall does not appear on its site; a care-gap agent sends preventive-care reminders and wellness-visit outreach automatically.
+- New patients and after hours. Clinekt. Website chat greets and books new patients with no form or login, and the phone is answered after hours the same way it is at 9 am. 82% of patients try to book outside office hours. Artera. New-patient scheduling appears on its site as a demo title. Its agent "answers calls 24/7" with urgent and non-urgent triage. Website chat that books a new patient is not stated.
+- Insurance, intake, referrals, reviews. Clinekt. Insurance verification, registration and intake, referrals received and routed, billing questions answered and balances collected, NPS after every visit with Google reviews asked for, medication reminders, and campaign attribution to the completed visit. Artera. Intake, payments and payment plans, referrals, and insurance verification (mentioned as demo and custom services). A Newton Clinic case study raised a Google rating from 2.3 to 3.5 stars.
+- EHR and practice systems. Clinekt. Works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner (Oracle Health), AdvancedMD, Greenway, Veradigm, Nextech, and the dental practice management systems. No IT project; the first agent is live the same day. Artera. Epic, Oracle, MEDITECH Expanse, Veradigm, athenahealth, eClinicalWorks, Greenway, NextGen, ModMed, AdvancedMD, and myAvatar.
+- Pricing model and contract. Clinekt. One rate per provider per month, support and tuning included, no multi-year contract. Artera. Not stated on its site.
+
+- Choose Artera if: You are a health system, FQHC, or federal program that needs enterprise messaging at scale in 30+ languages with FedRAMP and HITRUST on the list.
+- Choose Clinekt if: You are a specialty or primary care practice that wants a named recall program working your records, new patients booked from your website and phone, and a practice-sized price, live the same day.
+
+---
+
+## Clinekt vs Relatient: Patient Engagement Compared (2026)
+
+Source: https://clinekthealth.com/clinekt-vs-relatient
+
+Relatient is a patient access platform founded in 2012 in Atlanta, sold as Dash, with "50,000+ providers" and more than 170 million appointments a year on its site. Clinekt is AI patient engagement software for specialty and primary care practices: its agents reach patients by phone, text, email, and website chat in your practice's name, book the visit, bring overdue patients back from your records, and hand your team only what needs a person. The short version: choose Relatient if you are a health system or large specialty group that wants self-scheduling at volume with Voice AI and chat on top of it; choose Clinekt if you are a specialty or primary care practice that wants the agents to go get the patient: new patients on your website and phone, overdue patients from your records, and one portal that traces every one to a completed visit.
+
+Facts about Relatient are from its public website on November 2, 2026, vendor-reported.
+
+- Built for. Clinekt. Specialty and primary care practices: orthopedics, physical therapy, oral surgery, dentistry, dermatology, ophthalmology, urology, primary care, cardiology, pediatrics, rheumatology, and behavioral health, and health systems that run those service lines. Relatient. Hospitals and health systems, specialty groups and practices, and FQHCs; its examples include orthopedics, urology, dermatology, pediatrics, primary care, and behavioral health.
+- Channels. Clinekt. Phone, text, email, and website chat in one thread, so a patient can start on one channel and answer on another. Voices you choose, in the languages your patients speak. Relatient. Dash agentic Voice AI, text, email, and voice reminders, and Dash Chat with a handoff from AI to live staff. A patient portal is not stated.
+- Booking and handoff. Clinekt. The agent holds the conversation until the patient has a confirmed time with the right provider, verifies insurance, and hands your schedulers the booking with the conversation attached. Anything clinical, urgent, or requested goes to a person right away. Relatient. "Patients can book and manage appointments through Voice AI during the call"; changes post to the practice system in real time, and calls are routed to the team when needed. Admins can limit AI cancellations and reschedules by provider, visit type, or location.
+- Recall and reactivation. Clinekt. The Recall Agent works from your records: recall intervals, unfinished plans of care, patients not seen in twelve months. It reaches each patient by phone, text, and email until the visit is booked or the patient says no, with nothing landing on staff. Relatient. "Automated recall reminders for follow-ups and routine care", plus health campaigns and broadcast messaging.
+- New patients and after hours. Clinekt. Website chat greets and books new patients with no form or login, and the phone is answered after hours the same way it is at 9 am. 82% of patients try to book outside office hours. Relatient. Its site reports that 70% of online bookings come from new patients; online scheduling is available 24/7 and Voice AI offers 24/7 self-service to reschedule or request. Whether every call is answered after hours is not stated.
+- Insurance, intake, referrals, reviews. Clinekt. Insurance verification, registration and intake, referrals received and routed, billing questions answered and balances collected, NPS after every visit with Google reviews asked for, medication reminders, and campaign attribution to the completed visit. Relatient. Eligibility, estimates and payments, intake and consent forms, insurance card capture, referred-appointment scheduling, and surveys. Online reviews are not stated.
+- EHR and practice systems. Clinekt. Works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner (Oracle Health), AdvancedMD, Greenway, Veradigm, Nextech, and the dental practice management systems. No IT project; the first agent is live the same day. Relatient. athenahealth, ModMed, Oracle Health, Greenway, eClinicalWorks, NextGen, Epic, and Veradigm named; logos for Qualifacts, Azalea, Compulink, AdvancedMD, Nextech, and MEDITECH. Other systems "using open standards" after contact.
+- Pricing model and contract. Clinekt. One rate per provider per month, support and tuning included, no multi-year contract. Relatient. Not stated on its site; demo request only.
+
+- Choose Relatient if: You are a health system or large specialty group that wants self-scheduling at volume with Voice AI and chat on top of it.
+- Choose Clinekt if: You are a specialty or primary care practice that wants the agents to go get the patient: new patients on your website and phone, overdue patients from your records, and one portal that traces every one to a completed visit.
+
+---
+
+## Clinekt vs Weave: Patient Engagement Compared (2026)
+
+Source: https://clinekthealth.com/clinekt-vs-weave
+
+Weave is a phones, texting, payments, and reviews platform for small and medium practices, founded in 2008 in Lehi, Utah, with "over 40,000 customer locations", taken private by Francisco Partners in October 2026. Clinekt is AI patient engagement software for specialty and primary care practices: its agents reach patients by phone, text, email, and website chat in your practice's name, book the visit, bring overdue patients back from your records, and hand your team only what needs a person. The short version: choose Weave if you run a dental or small practice that wants phones, texting, payments, and reviews in one bundle at a published monthly price; choose Clinekt if you want the agent to finish the job: a confirmed appointment with the right provider rather than a request in a queue, overdue patients worked by conversation rather than a bulk text, and a platform built for medical specialties as well as dental.
+
+Facts about Weave are from its public website on November 2, 2026, vendor-reported.
+
+- Built for. Clinekt. Specialty and primary care practices: orthopedics, physical therapy, oral surgery, dentistry, dermatology, ophthalmology, urology, primary care, cardiology, pediatrics, rheumatology, and behavioral health, and health systems that run those service lines. Weave. Small and medium practices, with industry pages for dental, medical, and plastic surgery, and customer stories in dental, veterinary, mental health, and plastic surgery.
+- Channels. Clinekt. Phone, text, email, and website chat in one thread, so a patient can start on one channel and answer on another. Voices you choose, in the languages your patients speak. Weave. Phones, texting, email marketing, and a mobile app, plus an AI Receptionist in early access that answers calls, texts, and website chats. Multiple languages are listed as coming soon.
+- Booking and handoff. Clinekt. The agent holds the conversation until the patient has a confirmed time with the right provider, verifies insurance, and hands your schedulers the booking with the conversation attached. Anything clinical, urgent, or requested goes to a person right away. Weave. Depends on the practice management system: for most offices the AI Receptionist captures appointment requests for your team to review and schedule; for qualified dental systems it books to the calendar. Online scheduling sends requests that staff approve.
+- Recall and reactivation. Clinekt. The Recall Agent works from your records: recall intervals, unfinished plans of care, patients not seen in twelve months. It reaches each patient by phone, text, and email until the visit is booked or the patient says no, with nothing landing on staff. Weave. Staff-driven: sort patients by scheduled or unscheduled, then draft a text or email to send in bulk. Recall and reactivation texts and calls are in its Coordinate bundle.
+- New patients and after hours. Clinekt. Website chat greets and books new patients with no form or login, and the phone is answered after hours the same way it is at 9 am. 82% of patients try to book outside office hours. Weave. Website appointment requests, and the AI Receptionist works 24/7. New-patient handling specifically is not stated.
+- Insurance, intake, referrals, reviews. Clinekt. Insurance verification, registration and intake, referrals received and routed, billing questions answered and balances collected, NPS after every visit with Google reviews asked for, medication reminders, and campaign attribution to the completed visit. Weave. Insurance verification through dental portals (US only), digital forms, automated review requests, and payments with CareCredit, Sunbit, and Affirm. Referral management is not stated.
+- EHR and practice systems. Clinekt. Works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner (Oracle Health), AdvancedMD, Greenway, Veradigm, Nextech, and the dental practice management systems. No IT project; the first agent is live the same day. Weave. Dentrix, Eaglesoft, Open Dental, Planet DDS, Dentrix Enterprise, Fuse, and Dentrix Ascend are named on its site. AI booking works only with qualified dental systems.
+- Pricing model and contract. Clinekt. One rate per provider per month, support and tuning included, no multi-year contract. Weave. Published: a base plan from $199 a month, Coordinate and Attract bundles at $149 a month each, the AI Receptionist price not shown, "No long-term contracts" with an annual discount.
+
+- Choose Weave if: You run a dental or small practice that wants phones, texting, payments, and reviews in one bundle at a published monthly price.
+- Choose Clinekt if: You want the agent to finish the job: a confirmed appointment with the right provider rather than a request in a queue, overdue patients worked by conversation rather than a bulk text, and a platform built for medical specialties as well as dental.
+
+---
+
+## Clinekt vs NexHealth: Patient Engagement Compared (2026)
+
+Source: https://clinekthealth.com/clinekt-vs-nexhealth
+
+NexHealth is a patient experience platform founded in 2016 in San Francisco, with "20,000+ practices" on its site, built around online booking, texting, forms, payments, and a connector to 70 practice systems. Clinekt is AI patient engagement software for specialty and primary care practices: its agents reach patients by phone, text, email, and website chat in your practice's name, book the visit, bring overdue patients back from your records, and hand your team only what needs a person. The short version: choose NexHealth if you want self-serve online booking, forms, texting, and payments with a wide list of practice systems, and your patients mostly book themselves; choose Clinekt if you want the phone answered and the conversation held: an agent that books the patient who calls at 9 pm, talks the overdue patient back onto the schedule, and verifies insurance before the visit, across medical specialties and dental.
+
+Facts about NexHealth are from its public website on November 2, 2026, vendor-reported.
+
+- Built for. Clinekt. Specialty and primary care practices: orthopedics, physical therapy, oral surgery, dentistry, dermatology, ophthalmology, urology, primary care, cardiology, pediatrics, rheumatology, and behavioral health, and health systems that run those service lines. NexHealth. Dental and medical practices, groups, DSOs, and developers; its case studies are mostly dental, with dermatology, pediatrics, direct primary care, pain care, and allergy.
+- Channels. Clinekt. Phone, text, email, and website chat in one thread, so a patient can start on one channel and answer on another. Voices you choose, in the languages your patients speak. NexHealth. Text and email, and online booking from the website, Google, social media, and QR codes. Voice AI and website chat are not stated on its site; patients need no portal or app to reply.
+- Booking and handoff. Clinekt. The agent holds the conversation until the patient has a confirmed time with the right provider, verifies insurance, and hands your schedulers the booking with the conversation attached. Anything clinical, urgent, or requested goes to a person right away. NexHealth. Online booking inserts the appointment into the practice system automatically. Phone calls are not part of its product pages.
+- Recall and reactivation. Clinekt. The Recall Agent works from your records: recall intervals, unfinished plans of care, patients not seen in twelve months. It reaches each patient by phone, text, and email until the visit is booked or the patient says no, with nothing landing on staff. NexHealth. Automated: "Set rules to automatically send 1-click recalls when patients are due", plus mass text and email campaigns.
+- New patients and after hours. Clinekt. Website chat greets and books new patients with no form or login, and the phone is answered after hours the same way it is at 9 am. 82% of patients try to book outside office hours. NexHealth. New-patient online booking; its site reports that 73% of appointments are booked after hours. After-hours call answering is not stated.
+- Insurance, intake, referrals, reviews. Clinekt. Insurance verification, registration and intake, referrals received and routed, billing questions answered and balances collected, NPS after every visit with Google reviews asked for, medication reminders, and campaign attribution to the completed visit. NexHealth. Insurance verification across 1,200+ carriers, intake and consent forms, payments, and Google review requests. Referral management is not stated.
+- EHR and practice systems. Clinekt. Works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner (Oracle Health), AdvancedMD, Greenway, Veradigm, Nextech, and the dental practice management systems. No IT project; the first agent is live the same day. NexHealth. 70 systems including Epic, athenahealth, eClinicalWorks, ModMed, NextGen, Cerner PowerChart, MEDITECH, Tebra, AdvancedMD, Dentrix, Eaglesoft, Open Dental, CareStack, Curve, Denticon, WebPT, and Jane App.
+- Pricing model and contract. Clinekt. One rate per provider per month, support and tuning included, no multi-year contract. NexHealth. Quote-based by module; monthly or yearly terms (yearly paid up front), no cancellation fees, 90 days' notice on annual plans, and an offer to buy out an existing vendor contract.
+
+- Choose NexHealth if: You want self-serve online booking, forms, texting, and payments with a wide list of practice systems, and your patients mostly book themselves.
+- Choose Clinekt if: You want the phone answered and the conversation held: an agent that books the patient who calls at 9 pm, talks the overdue patient back onto the schedule, and verifies insurance before the visit, across medical specialties and dental.
+
+---
+
 ## Patient reactivation software (category page)
 https://clinekthealth.com/patient-reactivation-software
 Patient reactivation software finds the patients a practice has already seen but has stopped seeing (the overdue recall, the unfinished plan of care, the chart that went quiet a year ago), reaches them, and books them back. Older reactivation tools send a batch of letters or texts to a list and count the sends. Clinekt's Recall Agent works from the practice's own records, holds a conversation with each patient by phone, text, and email in one thread until the visit is booked or the patient says no, checks insurance before the visit, and traces every reactivated patient from the first message to the completed visit. Recall is a patient who is due; reactivation is a patient with no visit in the prior twelve months, whom Clinekt treats as a new patient. Practices can start from an exported list and grow into the EHR connection. Results across the practices on Clinekt: +12% appointment volume after go-live, 24x average return. Priced at one simple rate per provider per month, support and tuning included, no multi-year contract. HIPAA compliant, SOC 2 Type II, BAA with every client. Specialty guides: orthopedic, physical therapy, oral surgery, dental, ophthalmology, urology, primary care (including family medicine), cardiology, pediatric, rheumatology, behavioral health.
