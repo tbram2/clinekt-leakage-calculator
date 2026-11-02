@@ -114,6 +114,85 @@ Frequently asked questions:
 - Book a Demo: https://clinekthealth.com/book-a-demo
 
 
+## How Clinekt works (capability page)
+
+Source: https://clinekthealth.com/how-it-works
+
+Clinekt is AI patient engagement software for specialty and primary care practices. Its agents talk with patients by phone, text, email, and website chat in your practice's name, hold the conversation until a visit is booked, verify insurance before the visit, and hand your team only the patients who need a person. Every conversation is remembered, and every patient is traced to a completed visit.
+
+### Five steps
+1. Connect: One script tag on your website and a phone line for the agents. Clinekt works alongside the EHR you already run, and the first agent is live the same day. (Same day)
+2. Reach: The Inbound Agent answers every new patient who calls, texts, or writes. The Recall Agent finds the overdue patients in your records and reaches out first. (Around the clock)
+3. Converse: A real conversation in your practice's name: questions answered, the right provider matched, insurance verified, the patient's own calendar worked around. (Phone, text, email, chat)
+4. Book: The conversation ends with a confirmed appointment with the right provider, reminded until the day. Your schedulers get the booking with the conversation attached. (Your schedule)
+5. Report: Every patient is followed from the first call or click to the completed visit, in one portal, so you see what each agent returned. (One portal)
+
+### What each agent handles
+- Inbound Agent: Scheduling and booking (Patients pick a real time with the right provider, day or night); Calls and website chat (Calls and messages answered the moment they arrive); Registration and intake (New patients registered and their history gathered in about two minutes); Insurance verification (Coverage checked before the visit); Referrals (Every referral received, routed, and booked)
+- Recall Agent: Recall and reactivation (Overdue patients found in your records and booked back in); Appointment reminders (Every visit confirmed by text, call, or email); No-show follow-up (Missed visits followed up and rebooked)
+- Outbound Agent: Growth campaigns (Net-new demand from every channel, traced to the visit); Marketing attribution (Every patient followed from first click to completed visit)
+- Care Agent: Reputation management (NPS after every visit, Google reviews asked for, your rating tracked); Patient retention (Monthly check-ins keep patients connected between visits); Medication adherence (Reminders to take and refill, with concerns sent to your team); Billing (Billing questions answered and balances collected)
+- Built into every agent: HIPAA compliant and SOC 2 Type II, Phone, text, email, and website chat in one thread, Customizable voices, Multiple languages, Real-time dashboard, One memory of every patient
+
+### Channels
+- Phone: Answers the call in your practice's name. In a voice you choose and the languages your patients speak. Books on the call, or texts a link when the patient prefers. After hours, the same agent answers.
+- Text: Replies to texts, and starts them. Reminders, recall outreach, and booking links go by text, and the patient can answer in a word. Replies are read and acted on, not just logged.
+- Email: Reaches the patients who prefer their inbox. Recall and follow-up by email for the patients who read it, with the same conversation carried over from phone and text.
+- Website chat: Greets every new patient on your site. Answers their questions, matches them to the right provider, and books the visit, with no form, login, or download.
+
+### Handoffs
+- Finished by the agent: Scheduling and rescheduling, hours and directions, insurance questions, referral calls, billing questions, recall outreach, reminders, and every after-hours call.
+- Sent to your team: Anything clinical, anything urgent, and anything the patient asks to take to a person. Your staff gets the patient and the conversation, not a voicemail.
+- The patient decides: The agent says what it is when asked, works around the patient's schedule, and stops the moment a patient asks it to.
+- What your staff sees: The booked visit and the conversation, in one portal and in the EHR workflow they already use. Nothing lands on them that the agent could finish.
+
+### EHR and practice management systems
+
+Clinekt works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner (Oracle Health), AdvancedMD, Greenway, Veradigm, and Nextech, and with Dentrix, Eaglesoft, Open Dental, and Denticon in dental practices. Your scheduling workflow stays as it is, and there is no IT project to start.
+
+### Security
+- HIPAA and SOC 2 Type II: We sign a BAA with every client, and compliance evidence is in our Trust Center.
+- Encrypted everywhere: AES-256 protects every conversation in transit and at rest, with keys managed and rotated in a dedicated key service.
+- Minimum necessary: The agents work from your schedule and your patient list, and data handling follows your BAA.
+
+### Results
+
+What practices on Clinekt see, across every specialty we serve. Ventura Orthopedics, a five-location group, had more than 300 completed appointments and more than 200 new patients in its first month live. Every patient is traced from first call or click to completed visit, so the numbers come from your own schedule.
+- +12%: Average lift in appointment volume after go-live
+- 1M+: Patient interactions handled by the agents
+- 82%: Of patients try to book outside office hours
+- Same day: From signed agreement to the first agent live
+
+### FAQ
+Q: How does Clinekt connect to our EHR?
+A: Clinekt works alongside Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Cerner (Oracle Health), AdvancedMD, Greenway, Veradigm, Nextech, and the other major systems. The agents work from your schedule and your patient list, and your team keeps booking in the EHR the way it does today. You can also start without an integration and add one at your pace.
+
+Q: Does the agent book the appointment, or hand it to staff?
+A: Both, in that order. The agent holds the conversation until the patient has a confirmed time with the right provider, then your schedulers get the booking with the conversation attached. Anything the agent cannot finish goes to a person right away.
+
+Q: Which channels do the agents use?
+A: Phone, text, email, and website chat, in one thread. A patient can start on one channel and answer on another, and the agent carries the whole conversation across all of them.
+
+Q: What happens after hours?
+A: The same agent answers. 82% of patients try to book outside office hours, so the Inbound Agent takes the call, text, or chat at 9 pm the same way it does at 9 am, and books the visit while the patient is still interested.
+
+Q: What does the agent hand to a person?
+A: Anything clinical, anything urgent, and anything the patient asks to take to a person. It goes to your team right away with the full conversation attached, so nobody asks the patient to start over.
+
+Q: Does it verify insurance?
+A: Yes. Coverage is checked before the visit, as part of the same conversation that books it, so the patient arrives with the answer and your front desk does not chase it.
+
+Q: How does the Recall Agent know who is overdue?
+A: From your records. It knows who is due for a recall, who stopped partway through a plan of care, and who has not been seen in twelve months, and the list refreshes itself every day. Then it reaches each patient by phone, text, and email until the visit is booked or the patient says no.
+
+Q: How fast can we go live?
+A: Same day for the website agent: one script tag and about 10 minutes of work. Phone answering is set up with you, not by you, and none of it needs an IT project, staff training, or a new workflow.
+
+Q: How is Clinekt priced?
+A: One simple rate per provider per month, with support and tuning included and no multi-year contract. Your plan is sized to your practice and grows as you add providers. Book a 15-minute demo and we will walk through pricing for your practice size.
+
+---
+
 ## Patient reactivation software (category page)
 https://clinekthealth.com/patient-reactivation-software
 Patient reactivation software finds the patients a practice has already seen but has stopped seeing (the overdue recall, the unfinished plan of care, the chart that went quiet a year ago), reaches them, and books them back. Older reactivation tools send a batch of letters or texts to a list and count the sends. Clinekt's Recall Agent works from the practice's own records, holds a conversation with each patient by phone, text, and email in one thread until the visit is booked or the patient says no, checks insurance before the visit, and traces every reactivated patient from the first message to the completed visit. Recall is a patient who is due; reactivation is a patient with no visit in the prior twelve months, whom Clinekt treats as a new patient. Practices can start from an exported list and grow into the EHR connection. Results across the practices on Clinekt: +12% appointment volume after go-live, 24x average return. Priced at one simple rate per provider per month, support and tuning included, no multi-year contract. HIPAA compliant, SOC 2 Type II, BAA with every client. Specialty guides: orthopedic, physical therapy, oral surgery, dental, ophthalmology, urology, primary care (including family medicine), cardiology, pediatric, rheumatology, behavioral health.
