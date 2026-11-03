@@ -969,7 +969,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .fcta .b2{display:inline-flex;align-items:center;height:50px;padding:0 22px;border-radius:999px;border:1px solid rgba(255,255,255,.35);color:#fff;font-size:16px;font-weight:600;transition:background .18s}
 .fcta .b2:after{content:none}
 .fcta .b2:hover{background:rgba(255,255,255,.1);text-decoration:none}
-.fgrid{display:grid;grid-template-columns:1.35fr 1fr 1.7fr 1.15fr 1fr;gap:36px;margin-top:clamp(96px,12vh,150px);padding-top:48px;border-top:1px solid rgba(255,255,255,.14);align-items:start}
+.fgrid{display:grid;grid-template-columns:1.25fr 1.05fr 1.5fr 1.25fr 1.4fr .95fr;gap:32px;margin-top:clamp(96px,12vh,150px);padding-top:48px;border-top:1px solid rgba(255,255,255,.14);align-items:start}
 .fbrand img{height:26px;width:auto;filter:brightness(0) invert(1)}
 .fbrand p{margin-top:14px;font-size:14.5px;line-height:1.5;color:rgba(255,255,255,.72);max-width:280px;text-wrap:pretty}
 .fsoc{display:flex;gap:10px;margin-top:20px}
@@ -982,6 +982,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .fcol a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
 .fcol .fl2{column-count:2;column-gap:28px}
 .fcol .fl2 a{break-inside:avoid}
+@media(min-width:1025px) and (max-width:1240px){.fgrid{grid-template-columns:1fr 1.5fr 1.2fr 1.4fr 1fr;gap:28px}.fbrand{grid-column:1 / -1;max-width:560px}}   /* laptops: six columns do not fit, the brand goes on its own row (2026-11-03) */
 .fbot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:rgba(255,255,255,.62)}
 .fbot .lg{display:flex;gap:20px;flex-wrap:wrap}
 .fbot a:hover{color:#fff}
