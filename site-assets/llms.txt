@@ -267,6 +267,7 @@ Dedicated buying guides for dentistry, physical therapy, primary care, oral surg
 - [Dermatology Patient Recall Software for Skin Checks and Biopsy Follow-Up (2026)](https://clinekthealth.com/blog/dermatology-patient-recall-software): What dermatology patient recall software does for skin cancer surveillance, biopsy follow-up, isotretinoin and biologic monitoring, with verified data.
 - [Dermatology Referral Management Software: What to Look for Before You Buy](https://clinekthealth.com/blog/dermatology-referral-management-software): Dermatology referral management software triages urgent cases, tracks Mohs referrals, and reports back to referring doctors automatically.
 - [Cardiology Patient Communications Software (2026)](https://clinekthealth.com/blog/cardiology-patient-communications-software): What cardiology patient communications software must cover across device and remote-monitoring alert follow-up, medication and anticoagulation dose-change confirmations, and cardiac rehab adherence, and why portal-only messaging fails the highest-stakes messages.
+- [Dental Patient Communications Software (2026)](https://clinekthealth.com/blog/dental-patient-communications-software): What dental patient communications software must cover across hygiene and perio recall, treatment-plan-not-scheduled follow-up, and referral coordination, and why most patients who skip a recall visit blame the practice, not their memory.
 
 ## Referral operations (added 2026-09-15)
 

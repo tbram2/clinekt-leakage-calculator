@@ -1,0 +1,14 @@
+Meta title (<=60 chars, keyword-first): Dental Patient Communications Software (2026)
+Meta description (<=155 chars): Dental patients who skip a recall visit mostly blame the practice, not their memory. What a communications platform must get right, and why.
+
+Target queries:
+- dental patient communications software
+- dental patient communication software
+- dental recall and communication platform
+- dental practice patient messaging software
+- AI patient communications for dental practices
+- dental engagement platform
+
+Slug: dental-patient-communications-software
+seo-title field value (Webflow, <=60 chars): Dental Patient Communications Software (2026)
+short-description field value (Webflow, <=155 chars): Dental patients who skip a recall visit mostly blame the practice, not their memory. What a communications platform must get right, and why.
