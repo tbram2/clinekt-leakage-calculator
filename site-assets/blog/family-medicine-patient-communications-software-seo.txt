@@ -1,0 +1,14 @@
+Meta title (<=60 chars, keyword-first): Family Medicine Patient Communications Software (2026)
+Meta description (<=155 chars): Primary care physicians field dozens of calls and messages a day. What family medicine communications software must cover, and why reminders alone fail.
+
+Target queries:
+- family medicine patient communications software
+- family medicine patient communication software
+- primary care patient messaging software
+- family medicine recall and communication platform
+- AI patient communications for primary care practices
+- primary care engagement platform
+
+Slug: family-medicine-patient-communications-software
+seo-title field value (Webflow, <=60 chars): Family Medicine Patient Communications Software (2026)
+short-description field value (Webflow, <=155 chars): Primary care physicians field dozens of calls and messages a day. What family medicine communications software must cover, and why reminders alone fail.
