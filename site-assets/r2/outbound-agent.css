@@ -1,44 +1,45 @@
 /* outbound-agent: page rules after the shared sheet. Built by webflow-push/r2/make_webflow.py; edit make_report.py. */
-/* ============ the Outbound dashboard (2026-11-04): one card, animates once when seen ============ */
-.oddash{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(16px,2vw,24px);box-shadow:0 1px 2px rgba(26,25,21,.04),0 24px 48px -28px rgba(26,25,21,.3)}
-.odhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
-.odhead b{display:block;font-size:16px;font-weight:600;color:var(--wink);letter-spacing:-.01em}.odhead span{display:block;font-size:12.5px;color:var(--wmute);margin-top:2px}
-.odseg{display:inline-flex;background:#f2f2f0;border-radius:10px;padding:3px}
-.odseg span{font-size:12.5px;font-weight:500;color:var(--wbody);padding:5px 11px;border-radius:8px}.odseg span.on{background:#fff;color:var(--wink);box-shadow:0 1px 2px rgba(26,25,21,.12)}
-.odgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.odcard,.odkpi{border:1px solid var(--line);border-radius:16px;padding:14px 16px;min-width:0}
-.odwide{grid-column:1 / -1}
-.odt span{display:block;font-size:12.5px;color:var(--wmute)}
-.odt b{display:block;font-size:clamp(28px,2.4vw,36px);font-weight:600;letter-spacing:-.03em;line-height:1;color:var(--wink);margin-top:6px;font-variant-numeric:tabular-nums}
-.odt b em,.odkpi b em,.odc b em{font-style:normal}
-.odpill{display:inline-block;font-style:normal;font-size:11.5px;font-weight:600;margin-top:8px;padding:3px 8px;border-radius:999px;background:#f2f2f0;color:var(--wbody)}
+/* ============ the market report (2026-11-04): set on the page like a broadsheet market page, no card ============ */
+.odpaper{border-top:2px solid var(--wink);padding-top:14px}
+.oddate{display:flex;flex-wrap:wrap;align-items:center;gap:6px 0;font-size:12.5px;color:var(--wmute);padding-bottom:14px;border-bottom:1px solid var(--line)}
+.oddate b{color:var(--wink);font-weight:600}
+.oddate>span:before{content:'';display:inline-block;width:1px;height:12px;background:var(--line);margin:0 12px;vertical-align:-1px}
+.odlive{margin-left:auto}.odlive:before{display:none}
+.odlive i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--c3);margin-right:7px;vertical-align:1px;box-shadow:0 0 0 0 rgba(15,191,138,.5);animation:odpulse 2.4s ease-out infinite}
+@keyframes odpulse{0%{box-shadow:0 0 0 0 rgba(15,191,138,.5)}100%{box-shadow:0 0 0 8px rgba(15,191,138,0)}}
+.odcols{display:grid;grid-template-columns:7fr 5fr;gap:0 clamp(28px,4vw,56px)}
+.odside{border-left:1px solid var(--line);padding-left:clamp(20px,3vw,40px)}
+.odmain,.odside{padding-top:22px}
+.odk{display:block;font-size:13px;font-weight:600;color:var(--wmute);letter-spacing:.01em}
+.odfig b{display:block;font-size:clamp(44px,4.6vw,68px);font-weight:500;letter-spacing:-.04em;line-height:1;color:var(--wink);margin-top:10px;font-variant-numeric:tabular-nums}
+.odfig b em,.odstats b em{font-style:normal}
+.odpill{display:inline-block;font-style:normal;font-size:12px;font-weight:600;margin-top:10px;padding:3px 9px;border-radius:999px;background:#eceae2;color:var(--wbody)}
 .odpill.up{background:rgba(15,191,138,.14);color:#0a7a59}
-.odplot{position:relative;margin-top:10px}
-.odline{display:block;width:100%;height:auto}
-.odarea{fill:rgba(0,113,227,.09);opacity:0;transition:opacity .8s ease 1.3s}
-.odnow{fill:none;stroke:var(--c1);stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s cubic-bezier(.4,0,.2,1) .2s}
+.odplot{margin-top:22px}
+.odline{display:block;width:100%;height:auto;overflow:visible}
+.odgridl line{stroke:var(--line);stroke-width:1}.odgridl text{font-size:10px;fill:var(--wmute);font-family:inherit}
 .odprev{fill:none;stroke:#b8b3a5;stroke-width:1;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s cubic-bezier(.4,0,.2,1) .2s}
-.oddash.seen .odprev{stroke-dasharray:.012 .008;stroke-dashoffset:0}
-.oddot{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:#fff;border:2.4px solid var(--c1);box-shadow:0 0 0 4px rgba(0,113,227,.15);opacity:0;transition:opacity .4s ease 1.9s}
-.oddash.seen .odnow{stroke-dashoffset:0}.oddash.seen .odarea,.oddash.seen .oddot{opacity:1}
-.odax{display:flex;justify-content:space-between;font-size:11px;color:var(--wmute);margin-top:6px}
-.odkey{display:flex;gap:14px;font-size:11.5px;color:var(--wbody);margin-top:8px}
-.odkey i{display:inline-block;width:14px;height:0;border-top:2px solid var(--c1);vertical-align:middle;margin-right:6px}.odkey i.k2{border-top:2px dashed #b8b3a5}
-.odwrap{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);gap:20px;align-items:center;margin-top:14px}
-.oddonut{position:relative;width:100%;max-width:170px}
-.oddonut svg{display:block;width:100%;height:auto;transform:rotate(-90deg)}
-.odring{fill:none;stroke:#f0efea;stroke-width:14}
-.odseg{fill:none;stroke:var(--c);stroke-width:14;stroke-dasharray:0 100;stroke-dashoffset:calc(-1 * var(--o));transition:stroke-dasharray 1.1s cubic-bezier(.4,0,.2,1) calc(.25s + var(--i) * .12s)}
-.oddash.seen .odseg{stroke-dasharray:var(--v) 100}
-.odc{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
-.odc b{font-size:26px;font-weight:600;letter-spacing:-.03em;color:var(--wink);line-height:1;font-variant-numeric:tabular-nums}.odc span{font-size:11.5px;color:var(--wmute);margin-top:3px}
-.odleg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:7px}
-.odleg li{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--wbody)}.odleg li i{width:9px;height:9px;border-radius:50%;background:var(--c);flex:none}.odleg li b{margin-left:auto;font-weight:600;color:var(--wink);font-variant-numeric:tabular-nums}
-.odbars{display:flex;align-items:flex-end;gap:5px;height:96px;margin-top:14px}
-.odbars i{flex:1;height:var(--h);border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,var(--c1),#2f8ff0);transform:scaleY(0);transform-origin:bottom;transition:transform .8s cubic-bezier(.4,0,.2,1) calc(.2s + var(--i) * .05s)}
-.oddash.seen .odbars i{transform:scaleY(1)}
-.odkpi span{display:block;font-size:12.5px;color:var(--wmute)}
-.odkpi b{display:block;font-size:clamp(28px,2.4vw,36px);font-weight:600;letter-spacing:-.03em;line-height:1;color:var(--wink);margin-top:6px;font-variant-numeric:tabular-nums}
-.shot .odnow,.shot .odprev{stroke-dashoffset:0;transition:none}.shot .odprev{stroke-dasharray:.012 .008}.shot .odarea,.shot .oddot{opacity:1;transition:none}.shot .odseg{stroke-dasharray:var(--v) 100;transition:none}.shot .odbars i{transform:none;transition:none}
-@media(prefers-reduced-motion:reduce){.odnow,.odprev{stroke-dashoffset:0;transition:none}.odprev{stroke-dasharray:.012 .008}.odarea,.oddot{opacity:1;transition:none}.odseg{stroke-dasharray:var(--v) 100;transition:none}.odbars i{transform:none;transition:none}}
-@media(max-width:640px){.odnow{stroke-width:2.2}.odprev{stroke-width:1.5}.odgrid{grid-template-columns:1fr}.oddash{border-radius:18px}.odwrap{grid-template-columns:1fr;justify-items:center}.oddonut{max-width:150px}.odleg{width:100%}}
+.odnow{fill:none;stroke:var(--wink);stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s cubic-bezier(.4,0,.2,1) .2s}
+.odend{fill:var(--c2);opacity:0;transition:opacity .4s ease 1.9s}
+.odpaper.seen .odnow{stroke-dashoffset:0}.odpaper.seen .odprev{stroke-dasharray:.006 .007;stroke-dashoffset:0}.odpaper.seen .odend{opacity:1}
+.odax{display:flex;justify-content:space-between;font-size:11.5px;color:var(--wmute);margin:8px 40px 0 0}
+.odkey{display:flex;gap:16px;font-size:12px;color:var(--wbody);margin-top:12px}
+.odkey i{display:inline-block;width:16px;height:0;border-top:1.5px solid var(--wink);vertical-align:middle;margin-right:6px}.odkey i.k2{border-top:1.5px dotted #b8b3a5}
+.odmoves{list-style:none;margin:10px 0 0;padding:0}
+.odmoves li{display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:12px;padding:13px 0;border-top:1px solid var(--line);opacity:0;transform:translateY(8px);transition:opacity .55s ease calc(.3s + var(--i) * .16s),transform .55s ease calc(.3s + var(--i) * .16s)}
+.odmoves li:first-child{border-top:0;padding-top:4px}
+.odpaper.seen .odmoves li{opacity:1;transform:none}
+.odmoves em{font-style:normal;font-size:12px;color:var(--wmute);padding-top:3px}
+.odmoves b{display:block;font-size:15px;font-weight:600;line-height:1.35;color:var(--wink);letter-spacing:-.005em}
+.odmoves span{display:block;font-size:13.5px;line-height:1.45;color:var(--wbody);margin-top:4px}
+.odmoves span:before{content:'The agent: ';color:var(--acd);font-weight:600}
+.odstats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.odstats>div{padding:18px 16px 18px 0}
+.odstats>div+div{padding-left:18px;border-left:1px solid var(--line)}
+.odstats b{display:block;font-size:clamp(28px,2.4vw,36px);font-weight:500;letter-spacing:-.04em;line-height:1;color:var(--wink);font-variant-numeric:tabular-nums}
+.odstats span{display:block;font-size:12.5px;color:var(--wbody);margin-top:7px;line-height:1.35}
+.odstats .odpill{margin-top:8px}
+.shot .odnow,.shot .odprev{stroke-dashoffset:0;transition:none}.shot .odprev{stroke-dasharray:.006 .007}.shot .odend{opacity:1;transition:none}.shot .odmoves li{opacity:1;transform:none;transition:none}.shot .odlive i{animation:none}
+@media(prefers-reduced-motion:reduce){.odnow,.odprev{stroke-dashoffset:0;transition:none}.odprev{stroke-dasharray:.006 .007}.odend{opacity:1;transition:none}.odmoves li{opacity:1;transform:none;transition:none}.odlive i{animation:none}}
+@media(max-width:900px){.odcols{grid-template-columns:1fr}.odside{border-left:0;padding-left:0;border-top:1px solid var(--line);margin-top:22px}}
+@media(max-width:640px){.odlive{margin-left:0;width:100%}.odlive:before{display:none}.odstats{grid-template-columns:1fr 1fr}.odstats>div:nth-child(3){padding-left:0;border-left:0}.odstats>div:nth-child(n+3){border-top:1px solid var(--line)}.odnow{stroke-width:2}.odprev{stroke-width:1.4}.odax{margin-right:0}}
