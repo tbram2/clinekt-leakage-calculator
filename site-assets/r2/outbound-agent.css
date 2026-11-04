@@ -25,6 +25,25 @@
 .odax{display:flex;justify-content:space-between;font-size:11.5px;color:var(--wmute);margin:8px 40px 0 0}
 .odkey{display:flex;gap:16px;font-size:12px;color:var(--wbody);margin-top:12px}
 .odkey i{display:inline-block;width:16px;height:0;border-top:1.5px solid var(--wink);vertical-align:middle;margin-right:6px}.odkey i.k2{border-top:1.5px dotted #b8b3a5}
+.odverd{list-style:none;margin:10px 0 0;padding:0;counter-reset:odv}
+.odverd li{position:relative;padding:12px 0 12px 34px;border-top:1px solid var(--line);counter-increment:odv;opacity:0;transform:translateY(8px);transition:opacity .55s ease calc(.3s + var(--i) * .16s),transform .55s ease calc(.3s + var(--i) * .16s)}
+.odverd li:first-child{border-top:0;padding-top:4px}
+.odverd li:before{content:counter(odv);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--wink);color:#fff;font-size:11.5px;font-weight:600;display:grid;place-items:center}
+.odverd li:first-child:before{top:5px}
+.odpaper.seen .odverd li{opacity:1;transform:none}
+.odverd b{display:block;font-size:15px;font-weight:600;line-height:1.35;color:var(--wink);letter-spacing:-.005em}
+.odverd span{display:block;font-size:13.5px;line-height:1.45;color:var(--wbody);margin-top:4px}
+.odverd span:before{content:'Why: ';color:var(--acd);font-weight:600}
+.odk2{margin-top:22px;padding-top:18px;border-top:1px solid var(--wink)}
+.odwho{margin-top:26px;padding-top:18px;border-top:1px solid var(--wink)}
+.odwho table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13.5px}
+.odwho th{font-size:11.5px;font-weight:600;color:var(--wmute);text-align:right;padding:6px 0 8px;border-bottom:1px solid var(--line)}
+.odwho th:first-child,.odwho td:first-child{text-align:left}
+.odwho td{padding:9px 0;border-bottom:1px solid var(--line);text-align:right;color:var(--wbody);font-variant-numeric:tabular-nums;vertical-align:middle}
+.odwho td:first-child{color:var(--wink);font-weight:500}
+.odwho tr.top td:first-child{font-weight:600}
+.odwho td .odpill{margin-top:0}
+.odnote{font-size:13px;line-height:1.45;color:var(--wbody);margin:10px 0 0}.odnote:before{content:'The model: ';color:var(--acd);font-weight:600}
 .odmoves{list-style:none;margin:10px 0 0;padding:0}
 .odmoves li{display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:12px;padding:13px 0;border-top:1px solid var(--line);opacity:0;transform:translateY(8px);transition:opacity .55s ease calc(.3s + var(--i) * .16s),transform .55s ease calc(.3s + var(--i) * .16s)}
 .odmoves li:first-child{border-top:0;padding-top:4px}
@@ -39,7 +58,7 @@
 .odstats b{display:block;font-size:clamp(28px,2.4vw,36px);font-weight:500;letter-spacing:-.04em;line-height:1;color:var(--wink);font-variant-numeric:tabular-nums}
 .odstats span{display:block;font-size:12.5px;color:var(--wbody);margin-top:7px;line-height:1.35}
 .odstats .odpill{margin-top:8px}
-.shot .odnow,.shot .odprev{stroke-dashoffset:0;transition:none}.shot .odprev{stroke-dasharray:.006 .007}.shot .odend{opacity:1;transition:none}.shot .odmoves li{opacity:1;transform:none;transition:none}.shot .odlive i{animation:none}
-@media(prefers-reduced-motion:reduce){.odnow,.odprev{stroke-dashoffset:0;transition:none}.odprev{stroke-dasharray:.006 .007}.odend{opacity:1;transition:none}.odmoves li{opacity:1;transform:none;transition:none}.odlive i{animation:none}}
+.shot .odnow,.shot .odprev{stroke-dashoffset:0;transition:none}.shot .odprev{stroke-dasharray:.006 .007}.shot .odend{opacity:1;transition:none}.shot .odmoves li,.shot .odverd li{opacity:1;transform:none;transition:none}.shot .odlive i{animation:none}
+@media(prefers-reduced-motion:reduce){.odnow,.odprev{stroke-dashoffset:0;transition:none}.odprev{stroke-dasharray:.006 .007}.odend{opacity:1;transition:none}.odmoves li,.odverd li{opacity:1;transform:none;transition:none}.odlive i{animation:none}}
 @media(max-width:900px){.odcols{grid-template-columns:1fr}.odside{border-left:0;padding-left:0;border-top:1px solid var(--line);margin-top:22px}}
 @media(max-width:640px){.odlive{margin-left:0;width:100%}.odlive:before{display:none}.odstats{grid-template-columns:1fr 1fr}.odstats>div:nth-child(3){padding-left:0;border-left:0}.odstats>div:nth-child(n+3){border-top:1px solid var(--line)}.odnow{stroke-width:2}.odprev{stroke-width:1.4}.odax{margin-right:0}}
