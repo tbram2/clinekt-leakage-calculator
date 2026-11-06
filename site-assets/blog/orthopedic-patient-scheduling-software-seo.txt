@@ -1,0 +1,16 @@
+Meta title (<=60 chars): Orthopedic Patient Scheduling Software Buying Guide
+Character count: 53
+
+Meta description (<=155 chars): Orthopedic patient scheduling software should fill slots and cut no-shows automatically. See what AI actually fixes and what to ask vendors.
+Character count: 143
+
+Slug: orthopedic-patient-scheduling-software
+
+Target queries (primary cluster, per playbook standing targeting rule "orthopedic AI software" and variants):
+- orthopedic patient scheduling software (GSC: 218 impressions, position 18.3, 0 clicks, 10/29-11/5 window pulled live 2026-11-06)
+- orthopedic scheduling software with AI (binding cluster variant, playbook-named)
+- AI software for orthopedic practices (binding cluster variant)
+- orthopedic AI scheduling software
+- orthopedic patient leakage (secondary, tied back to scheduling)
+
+Short Description (CMS field, <=155 chars): Orthopedic patient scheduling software should fill slots and cut no-shows automatically. See what AI actually fixes and what to ask vendors.
