@@ -203,7 +203,7 @@ Clinekt is AI patient engagement software for practices on Epic. Its agents talk
 - MyChart stays your portal: Clinekt does not replace the portal. It reaches the patients who never log in, by phone, text, and email, and books the ones MyChart was waiting for.
 
 Q: How does Clinekt work with Epic?
-A: Clinekt connects to Epic without an Epic implementation project. The agents engage and book patients in your practice's name, directly into your Cadence schedule, and recall works from the patient list your practice provides. Health systems that want a deeper connection can add one at their pace.
+A: Clinekt connects to Epic without an Epic implementation project. The agents engage and book patients in your practice's name, directly into your Cadence schedule, and the Recall Agent finds overdue patients in Epic automatically. Health systems that want a deeper connection can add one at their pace.
 Q: Does Clinekt require an API connection to our EHR?
 A: Clinekt connects to Epic and books the appointment directly into your Epic schedule, with the full conversation attached for your team and no IT project. Deeper integrations are available where a practice wants them.
 Q: Does the agent book the appointment, or hand it to staff?
@@ -221,7 +221,7 @@ Clinekt is AI patient engagement software for practices on athenahealth. Its age
 - athenaCommunicator keeps sending reminders if you want it to: Clinekt sends reminders too, and it also goes after the patients who have nothing on the schedule, which reminders cannot reach.
 
 Q: How does Clinekt work with athenahealth?
-A: Clinekt connects to athenaOne. New patients are engaged and booked in your practice's name, directly into your athenaOne schedule, and the Recall Agent works from the overdue list your practice provides. No athenaOne reconfiguration is needed to start.
+A: Clinekt connects to athenaOne. New patients are engaged and booked in your practice's name, directly into your athenaOne schedule, and the Recall Agent finds overdue patients in athenaOne automatically. No athenaOne reconfiguration is needed to start.
 Q: Does Clinekt require an API connection to our EHR?
 A: Clinekt connects to athenahealth and books the appointment directly into your athenahealth schedule, with the full conversation attached for your team and no IT project. Deeper integrations are available where a practice wants them.
 Q: Does the agent book the appointment, or hand it to staff?
@@ -257,7 +257,7 @@ Clinekt is AI patient engagement software for practices on NextGen. Its agents t
 - Multi-specialty groups keep one front door: One agent answers for every service line in your practice's name and routes each patient to the right department and provider.
 
 Q: How does Clinekt work with NextGen?
-A: Clinekt connects to NextGen Enterprise and NextGen Office. The agents engage and book patients in your practice's name, directly into your NextGen schedule, and the Recall Agent works from the overdue list your practice provides. No NextGen project is needed to start.
+A: Clinekt connects to NextGen Enterprise and NextGen Office. The agents engage and book patients in your practice's name, directly into your NextGen schedule, and the Recall Agent finds overdue patients in NextGen automatically. No NextGen project is needed to start.
 Q: Does Clinekt require an API connection to our EHR?
 A: Clinekt connects to NextGen and books the appointment directly into your NextGen schedule, with the full conversation attached for your team and no IT project. Deeper integrations are available where a practice wants them.
 Q: Does the agent book the appointment, or hand it to staff?
@@ -293,7 +293,7 @@ Clinekt is AI patient engagement software for practices on Cerner. Its agents ta
 - Every location, one rollup: Service lines and locations report into one portal, so the system sees what each agent returned across the whole footprint.
 
 Q: How does Clinekt work with Cerner?
-A: Clinekt is compatible with practices and health systems running Oracle Health. The agents engage and book patients in the practice's name, directly into the practice's existing EHR schedule, and recall works from the overdue list the practice provides. A deeper connection can be added where the system wants one.
+A: Clinekt is compatible with practices and health systems running Oracle Health. The agents engage and book patients in the practice's name, directly into the practice's existing EHR schedule, and the Recall Agent finds overdue patients in the system automatically. A deeper connection can be added where the system wants one.
 Q: Does Clinekt require an API connection to our EHR?
 A: Clinekt connects to Cerner and books the appointment directly into your Cerner schedule, with the full conversation attached for your team and no IT project. Deeper integrations are available where a practice wants them.
 Q: Does the agent book the appointment, or hand it to staff?
@@ -311,7 +311,7 @@ Clinekt is AI patient engagement software for practices on AdvancedMD. Its agent
 - Billing questions get answered before they reach billing: The Care Agent answers balance and statement questions and collects, so your AdvancedMD billing queue shrinks.
 
 Q: How does Clinekt work with AdvancedMD?
-A: Clinekt connects to AdvancedMD. The agents engage and book patients in your practice's name, directly into your AdvancedMD schedule, and the Recall Agent works from the overdue list your practice provides. Independent practices are live the same day.
+A: Clinekt connects to AdvancedMD. The agents engage and book patients in your practice's name, directly into your AdvancedMD schedule, and the Recall Agent finds overdue patients in AdvancedMD automatically. Independent practices are live the same day.
 Q: Does Clinekt require an API connection to our EHR?
 A: Clinekt connects to AdvancedMD and books the appointment directly into your AdvancedMD schedule, with the full conversation attached for your team and no IT project. Deeper integrations are available where a practice wants them.
 Q: Does the agent book the appointment, or hand it to staff?
@@ -329,7 +329,7 @@ Clinekt is AI patient engagement software for practices on Greenway Health. Its 
 - Primary care volume is the fit: Same-day sick visits, chronic care recall, and the after-hours calls Greenway practices take every week are the jobs the agents take first.
 
 Q: How does Clinekt work with Greenway Health?
-A: Clinekt connects to Greenway Intergy and Prime Suite without configuration changes. The agents engage and book patients in your practice's name, directly into your Greenway schedule, and the Recall Agent works from the overdue list your practice provides.
+A: Clinekt connects to Greenway Intergy and Prime Suite without configuration changes. The agents engage and book patients in your practice's name, directly into your Greenway schedule, and the Recall Agent finds overdue patients in Greenway automatically.
 Q: Does Clinekt require an API connection to our EHR?
 A: Clinekt connects to Greenway Health and books the appointment directly into your Greenway Health schedule, with the full conversation attached for your team and no IT project. Deeper integrations are available where a practice wants them.
 Q: Does the agent book the appointment, or hand it to staff?
@@ -347,7 +347,7 @@ Clinekt is AI patient engagement software for practices on Veradigm. Its agents 
 - FollowMyHealth stays your portal: Clinekt reaches the patients who never open a portal message, by phone, text, and email, and books the visit the portal was waiting for.
 
 Q: How does Clinekt work with Veradigm?
-A: Clinekt is compatible with Veradigm (formerly Allscripts) practices. The agents engage and book patients in your practice's name, directly into your Veradigm schedule, and the Recall Agent works from the overdue list your practice provides.
+A: Clinekt is compatible with Veradigm (formerly Allscripts) practices. The agents engage and book patients in your practice's name, directly into your Veradigm schedule, and the Recall Agent finds overdue patients in Veradigm automatically.
 Q: Does Clinekt require an API connection to our EHR?
 A: Clinekt connects to Veradigm and books the appointment directly into your Veradigm schedule, with the full conversation attached for your team and no IT project. Deeper integrations are available where a practice wants them.
 Q: Does the agent book the appointment, or hand it to staff?
