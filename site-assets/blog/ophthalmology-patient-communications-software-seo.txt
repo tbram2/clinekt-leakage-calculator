@@ -1,0 +1,14 @@
+Meta title (<=60 chars, keyword-first): Ophthalmology Patient Communications Software (2026)
+Meta description (<=155 chars): Ophthalmology practices juggle surgery reminders, diagnostic follow-up, and monitoring recall. What the software must cover.
+
+Target queries:
+- ophthalmology patient communications software
+- ophthalmology patient communication software
+- patient engagement ophthalmology
+- ophthalmology patient engagement platform
+- AI patient communications for ophthalmology practices
+- ophthalmology recall and communication platform
+
+Slug: ophthalmology-patient-communications-software
+seo-title field value (Webflow, <=60 chars): Ophthalmology Patient Communications Software (2026)
+short-description field value (Webflow, <=155 chars): Ophthalmology practices juggle surgery reminders, diagnostic follow-up, and monitoring recall. What the software must cover.
