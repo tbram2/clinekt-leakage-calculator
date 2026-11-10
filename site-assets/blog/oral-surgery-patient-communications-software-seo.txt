@@ -1,0 +1,14 @@
+Meta title (<=60 chars, keyword-first): Oral Surgery Patient Communications Software (2026)
+Meta description (<=155 chars): Most oral surgery patients are referred in, not self-scheduled. What a communications platform must get right before you buy.
+
+Target queries:
+- oral surgery patient communications software
+- oral surgery patient communication software
+- OMFS patient communication platform
+- oral surgery practice patient messaging software
+- AI patient communications for oral surgery practices
+- oral and maxillofacial surgery patient engagement
+
+Slug: oral-surgery-patient-communications-software
+seo-title field value (Webflow, <=60 chars): Oral Surgery Patient Communications Software (2026)
+short-description field value (Webflow, <=155 chars): Most oral surgery patients are referred in, not self-scheduled. What a communications platform must get right before you buy.
