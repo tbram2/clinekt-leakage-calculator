@@ -1,0 +1,14 @@
+Meta title (<=60 chars, keyword-first): Physical Therapy Patient Communications Software (2026)
+Meta description (<=155 chars): Most PT patients skip home exercises and miss mid-plan visits. What a communications platform must get right before you buy.
+
+Target queries:
+- physical therapy patient communications software
+- physical therapy patient communication software
+- PT patient communication platform
+- patient intake software for physical therapy clinics
+- AI receptionist for physical therapy
+- physical therapy practice patient messaging software
+
+Slug: physical-therapy-patient-communications-software
+seo-title field value (Webflow, <=60 chars): Physical Therapy Patient Communications Software (2026)
+short-description field value (Webflow, <=155 chars): Most PT patients skip home exercises and miss mid-plan visits. What a communications platform must get right before you buy.
