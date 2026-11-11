@@ -99,6 +99,7 @@ What the agents handle: scheduling and booking, appointment reminders, inbound c
 - [Ventura Orthopedics case study](https://clinekthealth.com/case-studies/ventura-orthopedics-ai-case-study): 300+ completed appointments and 200+ new patients in the first month live across five locations, verified in eClinicalWorks
 - [Baldwin Bone & Joint case study](https://clinekthealth.com/case-studies/baldwin-bone-joint-ai-case-study): 263 qualified surgical leads and 159 booked appointments in one quarter
 - [All customer stories](https://clinekthealth.com/case-studies)
+- Trusted by leading practices and partners, including OrthoAlabama, Ventura Orthopedics, University Orthopaedic Clinic, Assort Health, HighFive Healthcare, Baldwin Bone and Joint, Mobile Oral and Facial Surgery, Athelas, Paradigm Health System, Bramlett Orthopedic Clinic, and Northeast Orthopedic Sports Clinic and Physical Therapy.
 
 ## Guides and comparisons (all posts)
 
