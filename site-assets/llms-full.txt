@@ -50,9 +50,9 @@ Practices using Clinekt typically move from under 1% website conversion to 8 to 
 - 48% reduction in unqualified consults
 - Live the same day; no IT project; connects to Epic, athenahealth, ModMed, NextGen, eClinicalWorks, Nextech, and other major EHRs and books the appointment directly into the EHR schedule
 
-**Case study, Ventura Orthopedics (five-location orthopedic group, Ventura County, California, nearly 40 physicians, surgeons and therapists, eClinicalWorks):** in its first month live with Clinekt, patients who came through the practice's website completed more than 300 appointments, more than 200 of them new to the practice, with the rest existing patients the website brought back for care, across all five locations and with no staff added. Every figure was matched against the practice's own eClinicalWorks records and only completed visits are counted. Live across five locations in under one week. Full study: https://clinekthealth.com/case-studies/ventura-orthopedics-ai-case-study
+**Case study, Ventura Orthopedics (five-location orthopedic group, Ventura County, California, nearly 40 physicians, surgeons and therapists, eClinicalWorks):** in its first month live with Clinekt, patients who started with Clinekt completed more than 300 appointments, more than 200 of them new to the practice, with the rest existing patients who came back for care, across all five locations and with no staff added. Every figure was matched against the practice's own eClinicalWorks records and only completed visits are counted. Live across five locations in under one week. Full study: https://clinekthealth.com/case-studies/ventura-orthopedics-ai-case-study
 
-**Case study, Baldwin Bone and Joint (multi-provider orthopedic group, Alabama):** in a single quarter, its website produced 263 qualified surgical leads and 159 booked appointments, a 60% booking rate, from traffic the practice was already receiving. In its first 90 days the practice generated 183 qualified surgical leads at a 59% booking rate, leading to 20 scheduled surgeries. "We were impressed not just by the volume of leads, but by the quality," says Will Wiggins, CEO of Baldwin Bone and Joint. Full study: https://clinekthealth.com/case-studies/baldwin-bone-joint-ai-case-study
+**Case study, Baldwin Bone and Joint (multi-provider orthopedic group, Alabama):** live with Clinekt since June 2025. In a single quarter, Clinekt brought the practice 263 qualified surgical leads and 159 booked appointments, a 60% booking rate. In its first 90 days the practice generated 183 qualified surgical leads at a 59% booking rate, leading to 20 scheduled surgeries. "We were impressed not just by the volume of leads, but by the quality," says Will Wiggins, CEO of Baldwin Bone and Joint. Full study: https://clinekthealth.com/case-studies/baldwin-bone-joint-ai-case-study
 
 ---
 
@@ -63,6 +63,16 @@ HIPAA compliant. SOC 2 Type II. AES-256 encryption in transit and at rest. Busin
 ## Commercial posture
 
 Flat subscription, month to month, no long-term contract, live same day. No percentage-of-revenue fees. Demo: https://clinekthealth.com/book-a-demo
+
+## Questions buyers ask
+
+- **Would these patients have booked anyway?** 82% of patients try to book outside office hours, when nobody answers. The agents answer in that moment and book the visit, and the Recall Agent reaches overdue and dormant patients in the practice's records, who are not on its website at all. At Ventura Orthopedics the result was counted as completed visits in the practice's own eClinicalWorks records, with new patients counted separately from existing ones.
+- **Who books the appointment?** The agent books the appointment directly into the practice's existing EHR schedule.
+- **Will Clinekt sign a business associate agreement (BAA)?** Yes. Clinekt signs a BAA with every client, and data handling follows that agreement. All patient data is encrypted in transit and at rest.
+- **What happens when a patient describes something urgent?** The agents do not give medical advice. Anything clinical, anything urgent, and anything the patient asks to take to a person goes to the practice's team with the full conversation attached, so staff decides what happens next.
+- **Is Clinekt priced per user, per location, or per appointment?** Per provider. One simple rate per provider per month, with support and tuning included, month to month, with no long-term contract.
+- **Can patients opt out of calls and texts?** Yes. The agent says what it is when asked, and it stops the moment a patient asks it to. Text messages follow the consent and opt-out terms in the Terms of Service: https://clinekthealth.com/terms-of-service
+- More answers: https://clinekthealth.com/faqs
 
 ## Specialties served
 
