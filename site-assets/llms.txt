@@ -62,6 +62,8 @@ What the agents handle: scheduling and booking, appointment reminders, inbound c
 - [Pediatrics](https://clinekthealth.com/pediatrics)
 - [Rheumatology](https://clinekthealth.com/rheumatology)
 - [Behavioral Health](https://clinekthealth.com/behavioral-health)
+- [OB/GYN](https://clinekthealth.com/obgyn)
+- [Gastroenterology](https://clinekthealth.com/gastroenterology)
 - [Health systems and multi-site groups](https://clinekthealth.com/health-systems)
 
 ## Learn
