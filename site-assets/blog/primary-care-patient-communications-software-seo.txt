@@ -1,0 +1,14 @@
+Meta title (<=60 chars, keyword-first): Primary Care Patient Communications Software (2026)
+Meta description (<=155 chars): Family medicine physicians field the heaviest patient-message load of any primary care specialty. What a communications platform must get right.
+
+Target queries:
+- primary care patient communications software
+- primary care patient communication software
+- AI receptionist primary care
+- primary care practice patient messaging software
+- in-basket message triage primary care
+- primary care no-show rate
+
+Slug: primary-care-patient-communications-software
+seo-title field value (Webflow, <=60 chars): Primary Care Patient Communications Software (2026)
+short-description field value (Webflow, <=155 chars): Family medicine physicians field the heaviest patient-message load of any primary care specialty. What a communications platform must get right.
