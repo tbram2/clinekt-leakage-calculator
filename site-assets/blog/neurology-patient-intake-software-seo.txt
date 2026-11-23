@@ -1,0 +1,13 @@
+slug: neurology-patient-intake-software
+name (H1): Neurology patient intake software: referral to check-in (2026)
+seo-title (<=60 chars): Neurology Patient Intake Software (2026)
+short-description (<=155 chars): What neurology patient intake software should cover, from seizure and headache history to outside records and insurance before the visit.
+target queries: neurology patient intake software, neurology new patient intake, seizure diary intake, headache questionnaire neurology, neurology prior authorization intake
+category: Blog
+thumbnail: standing wordmark card only (fileId 6ab2e9883f43dcf6eefd56e1, per RULES 2026-10-12)
+internal links used: /patient-engagement-software, /blog/neurology-patient-engagement-software, /blog/orthopedic-patient-intake-software, /blog/neurology-patient-communications-software, /inbound-agent, /recall-agent, /care-agent, /case-studies/baldwin-bone-joint-ai-case-study, /platform, /leakage-calculator, /book-a-demo
+external citations:
+  - https://www.brainandlife.org/articles/study-finds-long-wait-times-to-see-neurologist (Neurology journal 2026 wait-time study)
+  - https://pubmed.ncbi.nlm.nih.gov/39804477/ (Medicare neurology referral wait-time study)
+  - https://patients.aan.com/practice/prior-authorization (AAN citing 2024 AMA physician survey)
+topic selection rationale: specialty x job-type content matrix gap. Sitemap audit (2026-11-23) showed 12 of 14 specialties with a dedicated patient-intake-software guide (behavioral-health, cardiology, dental, dermatology, ophthalmology, oral-surgery, orthopedic, pediatric, physical-therapy, primary-care, rheumatology, urology); neurology and family-medicine were the only two specialties with 5 other content types live (engagement, communications, reactivation, receptionist, referral-management for neurology) but no intake guide. Neurology chosen over family-medicine since family medicine = primary care per RULES 2026-10-12 (primary-care-patient-intake-software already covers that ground), making neurology the cleaner, non-redundant gap. No cannibalization: no existing neurology-patient-intake-software content found live or in CMS.
