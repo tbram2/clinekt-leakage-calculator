@@ -1,0 +1,13 @@
+slug: neurology-patient-recall-software
+name (H1): Neurology Patient Recall Software for Epilepsy, Infusion, and Migraine Follow-Up (2026)
+seo-title (<=60 chars): Neurology Patient Recall Software (2026)
+short-description (<=155 chars): What neurology patient recall software should track, from epilepsy checks to MS infusion intervals and migraine follow-up, with verified data.
+target queries: neurology patient recall software, neurology recall list, MS infusion scheduling reminder, epilepsy follow-up recall, migraine Botox recall
+category: Blog
+thumbnail: standing wordmark card only (fileId 6ab2e9883f43dcf6eefd56e1, per RULES 2026-10-12)
+internal links used: /blog/what-is-patient-recall, /blog/neurology-patient-engagement-software, /blog/neurology-patient-intake-software, /blog/ai-receptionist-for-neurology-practice, /leakage-calculator, /book-a-demo
+external citations:
+  - Song N, Dunse M. "Who Shows Up? Attendance Trends Across Different Neurology Clinics at an Urban Safety-Net Hospital." AAN 2025 poster (data April 2022-March 2024). https://index.mirasmart.com/AAN2025/PDFfiles/AAN2025-005665.html
+  - Sheinson D, Bonine N. Retrospective claims analysis, 1,710 DMT patients, Neurology and Therapy, 2022. https://link.springer.com/article/10.1007/s40120-021-00319-3
+  - Elkhider et al., UAMS retrospective, ~71,000 appointments, ~16% no-show (already-established family canon, reused from sibling neurology posts)
+topic selection rationale: specialty-family gap-fill, not a primary target cluster. Live Webflow CMS slug audit (2026-11-24) confirmed the patient-recall-software family covers 12 of 14 specialties with neurology and family-medicine both open. Family-medicine was skipped per RULES 2026-10-12 (family medicine = primary care; primary-care-patient-recall-software already exists, so a family-medicine version would be redundant and needs a Taylor decision first, same caution already on file for the intake-software family). Neurology has no such redundancy and was the clean pick. No work order addressed to blog-engine existed in recent flags/ or queue/ directories; the four current PRIMARY TARGET CLUSTERS (orthopedic patient engagement software, patient reactivation software, referral management software, AI receptionist/front desk) do not include patient recall or no-show-rates, so this is routine family-completion work, not cluster-cluster-priority work.

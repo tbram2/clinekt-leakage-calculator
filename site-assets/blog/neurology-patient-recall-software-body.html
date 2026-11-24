@@ -1,0 +1,47 @@
+<p><strong>Neurology patient recall software finds patients whose epilepsy medication check, MS infusion, migraine follow-up, or post-stroke visit is due, reaches them automatically, and gets them back on the schedule.</strong> A neurology practice's recall list is not one list. It is five or six different clocks running at once: anticonvulsant level checks, EEG re-evaluations, disease-modifying therapy (DMT) infusion intervals, migraine injection cycles, and post-stroke or cognitive follow-up windows. A generic reminder tool that only confirms already-booked visits does nothing for the patient who has no visit booked yet.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Follow-up neurology patients show up far more reliably than new patients. A 2025 safety-net hospital study found seizure-clinic follow-up no-shows at 26%, versus 66% for new patients and 71% for ED referrals.</li>
+<li>Missed doses compound. A 2022 claims analysis of 1,710 multiple sclerosis patients found that those who missed a disease-modifying therapy dose were more likely to miss the next one, with 24-month adherence ranging from 35% to 80% depending on the route of administration.</li>
+<li>Neurology recall needs separate tracks for epilepsy, MS/DMT infusion, migraine injection, and cognitive or stroke follow-up. One blended list misses all of them.</li>
+<li>An AI Recall agent runs these tracks on autopilot: it finds who is due, reaches them on their preferred channel, and books the visit without adding front-desk work.</li>
+</ul>
+<h2>What Is Neurology Patient Recall Software?</h2>
+<p>Patient recall software finds people who are due for care and have not yet booked, then reaches them until they do. That is different from a reminder, which only confirms a visit someone already scheduled, and different from reactivation, which wins back patients who have gone fully dormant. In neurology, recall runs against a clinical interval: an anticonvulsant level due at 3 months, an EEG due at 6 or 12 months, a migraine Botox cycle due at 12 weeks, an ocrelizumab infusion due at 6 months, or a post-stroke cognitive check due at 90 days. Recall software reads those intervals, builds the due list automatically, and works it continuously instead of waiting for someone on staff to notice a gap.</p>
+<h2>Why Do Follow-Up Patients Show Up More Than New Ones?</h2>
+<p>A 2025 American Academy of Neurology poster from an urban safety-net hospital (Song and Dunse, "Who Shows Up? Attendance Trends Across Different Neurology Clinics at an Urban Safety-Net Hospital," data April 2022 to March 2024) compared no-show rates across a general neurology clinic and two subspecialty clinics. In general neurology, follow-up patients no-showed at 33%, against 52% for new patients. In the seizure clinic specifically, follow-up patients no-showed at just 26%, against 66% for new patients and 71% for ED-referred patients. The authors attributed the seizure clinic's better attendance to its disease-specific need for ongoing medication management. That is the mechanism recall software is built to use: patients who need an ongoing clinical track show up for it once they are asked. The gap is not motivation. It is that nobody asked.</p>
+<h2>What Should Neurology Recall Software Actually Track?</h2>
+<p>A blended recall list that treats every neurology patient the same misses the clinical reality. Separate tracks, at minimum:</p>
+<ul>
+<li><strong>Epilepsy and seizure management.</strong> Anticonvulsant level and side-effect checks, EEG re-evaluation intervals, and the first post-diagnosis follow-up window, where attendance is historically strongest but still worth automating.</li>
+<li><strong>MS and other disease-modifying therapy.</strong> Infusion scheduling for drugs like ocrelizumab, typically every 6 months, or natalizumab, typically every 4 weeks, plus the safety labs and MRI that need to land before the next infusion.</li>
+<li><strong>Migraine and headache.</strong> Botox injection cycles, which run on a fixed roughly 12-week interval and lapse quietly once a patient feels better.</li>
+<li><strong>Post-stroke and cognitive follow-up.</strong> 90-day and annual cognitive or functional re-checks that are easy to let slide once the acute event is behind the patient.</li>
+<li><strong>General follow-up and medication management.</strong> Any patient whose next visit was never booked because the front desk could not reach them before they walked out.</li>
+</ul>
+<h2>Why a Missed Infusion or Medication Check Compounds</h2>
+<p>A 2022 retrospective claims analysis in Neurology and Therapy (Sheinson and Bonine, 1,710 patients on disease-modifying therapy) found that patients who missed a dose were more likely to miss the next one, and that 24-month adherence ranged from 80% for ocrelizumab down to 35% for injectable therapies depending on the route of administration. A missed infusion is not a one-time gap. It is the first domino. The earlier a recall system catches the first missed interval, the less likely it compounds into a second and third. Across general neurology, a separate retrospective study of roughly 71,000 appointments at a single academic center found an overall no-show rate near 16% (Elkhider et al.), with younger age, longer scheduling lead time, and Medicare coverage all raising the odds. Recall software cannot fix insurance or transportation. It can shorten the lead time between "due" and "contacted," which is the one lever a practice actually controls.</p>
+<h2>How an AI Recall Agent Closes the Gap</h2>
+<ol>
+<li><strong>Build the due list automatically.</strong> The Recall agent reads a practice's own recall intervals by track (epilepsy, MS/DMT, migraine, stroke, general) directly from the EHR on a read-only connection, so no one has to run a manual report.</li>
+<li><strong>Reach patients on their channel.</strong> Text, call, or email, whichever a patient has actually responded to before, instead of one blast to everyone.</li>
+<li><strong>Handle the back-and-forth.</strong> The agent answers scheduling questions and offers real open slots, without a staff member picking up the phone.</li>
+<li><strong>Book directly into the schedule.</strong> A confirmed recall visit lands on the calendar, not in a callback queue.</li>
+<li><strong>Keep working the list.</strong> Patients who do not respond the first time get a second and third touch on a cadence the practice sets, instead of falling off after one missed callback.</li>
+</ol>
+<h2>What This Looks Like in Practice</h2>
+<p>Clinekt's agents already run this pattern across specialty practices. At Baldwin Bone &amp; Joint, the Recall agent and its sibling agents generated 263 qualified surgical leads and 159 booked appointments in a single quarter, a 60% booking rate. Patients try to reach a practice outside the 8-to-5 window more often than not: 82% of patients attempt to book outside normal office hours, which is exactly when a neurology practice's own front desk is not there to catch the message. A neurology-specific recall track runs on the same model: find who is due, reach them when they are actually available, and book the visit without adding staff.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>What is the difference between patient recall and a reminder?</h3>
+<p>A reminder confirms a visit someone already booked. Recall finds a patient who is due for care and has not booked anything yet, then reaches out to get them scheduled.</p>
+<h3>How often should a neurology practice run recall for MS infusion patients?</h3>
+<p>On the therapy's own interval. Most infusion DMTs run every 4 to 6 months; the recall list should flag a patient as due as soon as their safety labs and prior infusion date put them inside that window, not after the date has already passed.</p>
+<h3>Does recall software replace EEG or lab scheduling staff?</h3>
+<p>No. It removes the manual work of finding who is due and chasing them down, and gives staff a smaller, confirmed list to manage instead of a growing backlog.</p>
+<h3>Can recall software work without integrating with every neurology-specific system?</h3>
+<p>Yes. Clinekt connects to a practice's existing EHR on a read-only basis and goes live the same day, without a separate neurology-specific build.</p>
+<h3>What happens to patients who do not respond to the first recall outreach?</h3>
+<p>They stay on the list and get a second and third touch on a cadence the practice sets, instead of being marked as a lost cause after one missed callback.</p>
+<p>See what a neurology practice's own recall and follow-up gap is worth with <a href="https://clinekthealth.com/leakage-calculator">Clinekt's leakage calculator</a>, or <a href="https://clinekthealth.com/book-a-demo">book a demo</a> to see the Recall agent run against a real schedule.</p>
+<h2>For more on the neurology agent stack</h2>
+<p>See <a href="https://clinekthealth.com/blog/neurology-patient-engagement-software">neurology patient engagement software</a>, <a href="https://clinekthealth.com/blog/neurology-patient-intake-software">neurology patient intake software</a>, and <a href="https://clinekthealth.com/blog/ai-receptionist-for-neurology-practice">AI receptionist for a neurology practice</a>.</p>
