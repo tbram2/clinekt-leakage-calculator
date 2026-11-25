@@ -1,0 +1,49 @@
+Name (H1 / CMS Name field): OB/GYN Patient Engagement Software: What to Look for Before You Buy
+Slug: obgyn-patient-engagement-software
+Date: 2026-11-25
+Category: Blog
+
+seo-title (<=60 chars, drives <title> tag, no fallback to Name per playbook hard requirement):
+OB/GYN Patient Engagement Software: Buyer's Guide
+(49 chars)
+
+short-description (<=155 chars):
+What OB/GYN patient engagement software should cover across prenatal visits, postpartum recall, and well-woman exams, and how to evaluate it.
+(141 chars)
+
+Target queries:
+- obgyn patient engagement software
+- ob/gyn patient engagement software
+- obgyn patient recall software
+- postpartum visit recall software
+- prenatal appointment scheduling software
+
+Thumbnail (fixed asset per standing 2026-10-12 directive, never image-generated):
+- fileId: 6ab2e9883f43dcf6eefd56e1
+- url: https://cdn.prod.website-files.com/698f93a7f3fe10ac9229e523/6ab2e9883f43dcf6eefd56e1_blog-card-clinekt-wordmark.png
+- alt: Clinekt
+
+Internal links used (6): /obgyn, /patient-engagement-software, /leakage-calculator, /book-a-demo, /case-studies/baldwin-bone-joint-ai-case-study, /blog/patient-engagement-software-for-specialty-practices
+
+External named sources (2, OB/GYN-specific, hyperlinked in body, no OB/GYN sibling posts exist yet to check for overlap against, this is the first OB/GYN blog post):
+1. AMN Healthcare. "2025 Survey of Physician Appointment Wait Times." 2025, reported in AMN's own physician blog "The Growing Challenges with Physician Appointment Wait Times" (2025-06-30). 41.8 days average wait for a new OB/GYN patient appointment, up 79% since 2004, the longest wait of any specialty the 2025 survey tracked (15 major US metro areas). https://www.amnhealthcare.com/amn-insights/physician/blog/the-growing-challenges-with-physician-appointment-wait-times/ (verified via direct WebFetch of the AMN blog page, which states the OB/GYN figure explicitly; the whitepaper landing page itself does not break out the specialty-level number, same pattern as the 10/15 primary-care post's AMN citation)
+2. Scott K, Miller E, Culhane JF, et al. "Length of gestation and postpartum visit attendance." Pregnancy (Wiley), Vol 2, Issue 3, e70306, published 2026-05, DOI 10.1002/pmf2.70306. Retrospective cohort of 2,403,574 births in the Epic Cosmos database (2018-2024); 653,552 parents (about 27%) did not attend a postpartum visit, with periviable (22-23 week) births carrying the highest risk (adjusted RR 1.21, 95% CI 1.13-1.29). https://policylab.chop.edu/node/24986 (the Wiley DOI page returned HTTP 403 on direct WebFetch, a cookie-consent gate typical of that publisher per the 10/15/10/19 posts' precedent with Springer; corroborated via CHOP PolicyLab's own summary of its lead author's study, which states the same sample size and percentage, so the brain/blog links to the DOI as primary citation with the CHOP page as the verification source)
+
+Compliance notes:
+- No "visitor", "read-only", "open slots", "symptom checker", "chatbot", "patient activation" (category word), "four agents"/"4 agents"/"three agents"/"all four", "diagnosis" anywhere (verified via grep, clean).
+- No em/en dashes anywhere (verified via grep, clean).
+- No dollar figures for Clinekt pricing/results (verified via grep, clean); third-party stats have no dollar figures either.
+- No "free pilot"/"free trial"/"first month free"/"month to month" wording (verified via grep, clean).
+- Agents referenced individually, in order, one word each: Inbound, Recall, Outbound, Care, never counted.
+- "Screens"/"screening" used, never "diagnosis"/"symptom checker".
+- Baldwin Bone & Joint proof point used with explicit cross-specialty caveat ("an orthopedic group rather than an OB/GYN practice"), canon numbers verified directly against Clinekt Brain/results/_overview.md (263 qualified surgical leads / 159 appointments / 60% booking rate, single quarter, founder-verified 2026-07-01; hosted gbrain MCP connector returned 502 this session, same fallback used by every prior WO-G1 sibling and today's overnight-ops/demand-intel runs).
+- 82% after-hours stat matches canon (results/_overview.md: "82% of patients try to book outside office hours").
+- /obgyn page itself NOT edited (Taylor's call per RULES 2026-09-02 on specialty page copy); only linked to.
+- Body uses h2/h3/p/strong/em/a/ul/ol only, no tables.
+- ~1,744 words, 9 H2s, 5 FAQ H3s, 1 ordered list (6-question evaluation checklist), 2 unordered lists. Slightly over the 1,200-1,600 target after two trimming passes; accepted within the "~" tolerance used on the 2026-10-19 health-systems post (1,611 words).
+
+Topic selection rationale (why this topic, why today):
+- RULES.md 2026-10-01 WO-G1 (specialty patient-engagement buyer's guides, order: oral surgery, physical therapy, urology, rheumatology, behavioral health, cardiology, ophthalmology, dermatology, primary care, pediatrics, health systems) is fully CLOSED per blog-content-engine.md's 2026-10-29 entry; verified live via curl that all 11 WO-G1 slugs plus the later neurology gap-fill (2026-10-29) resolve 200. No open blog-engine work order in flags/2026-11-25.md or the prior several days' flags.
+- pain-signal-lexicon.md is fresh (dated 2026-11-25, updated by demand-intel's same-fire 3:15am run) but its own entry says "No new blog-engine work order -- nothing tonight cleared the content-gap threshold," so it does not hand off a specific topic.
+- Live CMS/site audit (the same method blog-content-engine.md's 2026-10-29 entry used to find the neurology gap) found a cleaner, more clearly-scoped gap: Clinekt Brain/website/obgyn-gastroenterology-pages-2026-11-12.md documents that Taylor added /obgyn and /gastroenterology as the 13th and 14th specialty hub pages on 2026-11-12, explicitly noting "neither specialty has blog posts" and that three category-hub tiles (patient-reactivation-software, ai-medical-receptionist, referral-management-software) still lack tiles for these two specialties "because neither specialty has posts yet." Confirmed via live curl: /obgyn and /gastroenterology both resolve 200; obgyn-patient-engagement-software, gastroenterology-patient-engagement-software, and every other obgyn-* job-article slug checked all 404 before today.
+- Chose OB/GYN over gastroenterology for today's one-post cap because OB/GYN has the stronger, more recent business signal: the 2026-11-12 brain page records the hub was built specifically after a real OB/GYN demo (Progressive Women's Health, Pipedrive pipeline 19), and the 2026-11-24 EHR blitz brain page separately confirms Progressive Women's Health left an email on /advancedmd-integration before booking. Gastroenterology remains the next clear gap for a future run (logged in the brain changelog entry and llms updates, not actioned today per the one-post cap).
